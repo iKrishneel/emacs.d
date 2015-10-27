@@ -1,0 +1,128 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("libkerneldesc.h" include nil nil [33 59])
+            ("boost/thread.hpp" include (:system-flag t) nil [82 109])
+            ("boost/thread/locks.hpp" include (:system-flag t) nil [110 143])
+            ("stdlib.h" include (:system-flag t) nil [144 163])
+            ("boost/filesystem/operations.hpp" include (:system-flag t) nil [259 301])
+            ("boost/filesystem/fstream.hpp" include (:system-flag t) nil [340 379])
+            ("frame" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [418 448])
+            ("m" variable
+               (:typemodifiers ("static")
+                :type ("boost::mutex" type (:type "class") nil nil))
+                nil [449 471])
+            ("model_name" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "model_names[MODEL_TYPE]"
+                :type "char")
+                nil [472 521])
+            ("model_file" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "model_files[MODEL_TYPE]"
+                :type "char")
+                nil [522 571])
+            ("model_var" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "model_vars[MODEL_TYPE]"
+                :type "char")
+                nil [572 619])
+            ("param_file" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "param_files[MODEL_TYPE]"
+                :type "char")
+                nil [620 669])
+            ("USE_GRABCUT" variable (:constant-flag t) nil [679 690])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [713 753])
+            ("FRAME_WIDTH_LIVE" variable (:constant-flag t) nil [770 786])
+            ("FRAME_HEIGHT_LIVE" variable (:constant-flag t) nil [802 819])
+            ("run_grab_cut" variable
+               (:default-value "false"
+                :type "bool")
+                nil [828 852])
+            ("use_classification_momemtum" variable
+               (:default-value "true"
+                :type "bool")
+                nil [853 891])
+            ("CLASSIFICATION_MOMEMTUM" variable
+               (:constant-flag t
+                :default-value "3"
+                :type "double")
+                nil [892 931])
+            ("object_name" variable (:type ("string" type (:type "class") nil nil)) nil [933 952])
+            ("font" variable (:type ("CvFont" type (:type "class") nil nil)) nil [954 966])
+            ("font_s" variable (:type ("CvFont" type (:type "class") nil nil)) nil [968 982])
+            ("capture" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CvCapture" type (:type "class") nil nil))
+                nil [984 1010])
+            ("ClearCinBufferFlags" function (:type "void") nil [1012 1123])
+            ("SetupFont" function
+               (:arguments 
+                  ( ("font" variable
+                       (:reference 1
+                        :type ("CvFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1140 1153]))                  
+                :type "void")
+                nil [1124 1432])
+            ("ThreadCaptureFrame" function (:type "void") nil [1435 2395])
+            ("ThreadRunDescriptors" function (:type "void") nil [2396 5706])
+            ("GetFileListFromDirectory" function
+               (:arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5737 5757])
+                    ("directory" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5758 5780]))                  
+                :type "void")
+                nil [5707 6264])
+            ("DataSetDemo" function (:type "void") nil [6265 7205])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7215 7224])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7225 7238]))                  
+                :type "int")
+                nil [7206 8212]))          
+      :file "kernelmain.cc"
+      :pointmax 8213
+      :fsize 8212
+      :lastmodtime '(20720 31980 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("USE_GRABCUT" . ((number "1" 691 . 692)))
+          ("FRAME_HEIGHT_LIVE" . 
+              ((number "120" 821 . 824) (punctuation "*" 824 . 825) (number "2" 825 . 826)))
+          ("FRAME_WIDTH_LIVE" . 
+              ((number "160" 788 . 791) (punctuation "*" 791 . 792) (number "2" 792 . 793)))
+          )
+))
+  :file "!home!krishneel!.cache!.fr-rln54v!KernelDescriptors_C_v1_2!KernelDescriptors_CPU!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

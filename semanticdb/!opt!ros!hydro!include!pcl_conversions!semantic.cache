@@ -1,0 +1,1129 @@
+;; Object pcl_conversions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pcl_conversions/"
+  :tables
+  (list
+    (semanticdb-table "pcl_conversions.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PCL_CONVERSIONS_H__" variable (:constant-flag t) nil [1722 1741])
+            ("vector" include (:system-flag t) nil [1743 1760])
+            ("ros/ros.h" include (:system-flag t) nil [1762 1782])
+            ("pcl/conversions.h" include (:system-flag t) nil [1784 1812])
+            ("pcl/PCLHeader.h" include (:system-flag t) nil [1814 1840])
+            ("std_msgs/Header.h" include (:system-flag t) nil [1841 1869])
+            ("pcl/PCLImage.h" include (:system-flag t) nil [1871 1896])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1897 1927])
+            ("pcl/PCLPointField.h" include (:system-flag t) nil [1929 1959])
+            ("sensor_msgs/PointField.h" include (:system-flag t) nil [1960 1995])
+            ("pcl/PCLPointCloud2.h" include (:system-flag t) nil [1997 2028])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [2029 2065])
+            ("pcl/PointIndices.h" include (:system-flag t) nil [2067 2096])
+            ("pcl_msgs/PointIndices.h" include (:system-flag t) nil [2097 2131])
+            ("pcl/ModelCoefficients.h" include (:system-flag t) nil [2133 2167])
+            ("pcl_msgs/ModelCoefficients.h" include (:system-flag t) nil [2168 2207])
+            ("pcl/Vertices.h" include (:system-flag t) nil [2209 2234])
+            ("pcl_msgs/Vertices.h" include (:system-flag t) nil [2235 2265])
+            ("pcl/PolygonMesh.h" include (:system-flag t) nil [2267 2295])
+            ("pcl_msgs/PolygonMesh.h" include (:system-flag t) nil [2296 2329])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [2331 2357])
+            ("Eigen/StdVector" include (:system-flag t) nil [2359 2385])
+            ("Eigen/Geometry" include (:system-flag t) nil [2386 2411])
+            ("pcl_conversions" type
+               (:members 
+                  ( ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2498 2531])
+                            ("header" variable
+                               (:reference 1
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2532 2557]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2476 2718])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2742 2773])
+                            ("pcl_header" variable
+                               (:reference 1
+                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2774 2801]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2722 2963])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3001 3034]))                          
+                        :type ("std_msgs::Header" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2967 3123])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3157 3188]))                          
+                        :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3127 3281])
+                    ("copyPCLImageMetaData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3350 3381])
+                            ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3382 3408]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3315 3656])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3682 3713])
+                            ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3714 3740]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3660 3825])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_image" variable
+                               (:reference 1
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3855 3880])
+                            ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3881 3907]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3829 3996])
+                    ("copyImageMetaData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4032 4064])
+                            ("pcl_image" variable
+                               (:reference 1
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4065 4090]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4000 4336])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4360 4392])
+                            ("pcl_image" variable
+                               (:reference 1
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4393 4418]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4340 4500])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4528 4554])
+                            ("pcl_image" variable
+                               (:reference 1
+                                :type ("pcl::PCLImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4555 4580]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4504 4666])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLPointField" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4732 4765])
+                            ("pf" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointField" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4766 4794]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4710 4924])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pfs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PCLPointField" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4950 4997])
+                            ("pfs" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("sensor_msgs::PointField" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4998 5040]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4928 5249])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointField" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5273 5307])
+                            ("pcl_pf" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointField" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5308 5335]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5253 5465])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pfs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("sensor_msgs::PointField" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5489 5537])
+                            ("pcl_pfs" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PCLPointField" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5538 5579]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5469 5787])
+                    ("copyPCLPointCloud2MetaData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pc2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5874 5909])
+                            ("pc2" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5910 5940]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5833 6254])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pc2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6280 6315])
+                            ("pc2" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6316 6346]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6258 6429])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pc2" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6459 6488])
+                            ("pc2" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6489 6519]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6433 6606])
+                    ("copyPointCloud2MetaData" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pc2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6648 6684])
+                            ("pcl_pc2" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6685 6714]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6610 7024])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pc2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7048 7084])
+                            ("pcl_pc2" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7085 7114]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7028 7194])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pc2" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7222 7252])
+                            ("pcl_pc2" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7253 7282]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7198 7366])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7448 7480])
+                            ("pi" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7481 7508]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7426 7588])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_pi" variable
+                               (:reference 1
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7618 7644])
+                            ("pi" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7645 7672]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7592 7756])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl_msgs::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7780 7813])
+                            ("pcl_pi" variable
+                               (:reference 1
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7814 7840]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7760 7918])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pi" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7946 7973])
+                            ("pcl_pi" variable
+                               (:reference 1
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7974 8000]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7922 8082])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_mc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8174 8211])
+                            ("mc" variable
+                               (:reference 1
+                                :type ("pcl_msgs::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8212 8244]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8152 8322])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_mc" variable
+                               (:reference 1
+                                :type ("pcl::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8352 8383])
+                            ("mc" variable
+                               (:reference 1
+                                :type ("pcl_msgs::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8384 8416]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8326 8498])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl_msgs::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8522 8560])
+                            ("pcl_mc" variable
+                               (:reference 1
+                                :type ("pcl::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8561 8592]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8502 8668])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mc" variable
+                               (:reference 1
+                                :type ("pcl_msgs::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8696 8728])
+                            ("pcl_mc" variable
+                               (:reference 1
+                                :type ("pcl::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8729 8760]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8672 8840])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_vert" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8914 8944])
+                            ("vert" variable
+                               (:reference 1
+                                :type ("pcl_msgs::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8945 8970]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8892 9017])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_verts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9043 9087])
+                            ("verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl_msgs::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9088 9127]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9021 9412])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_vert" variable
+                               (:reference 1
+                                :type ("pcl::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9442 9466])
+                            ("vert" variable
+                               (:reference 1
+                                :type ("pcl_msgs::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9467 9492]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9416 9543])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9569 9607])
+                            ("verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl_msgs::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9608 9647]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9547 9930])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("vert" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl_msgs::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9954 9985])
+                            ("pcl_vert" variable
+                               (:reference 1
+                                :type ("pcl::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9986 10010]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9934 10057])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("verts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl_msgs::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10081 10126])
+                            ("pcl_verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10127 10165]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10061 10448])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("vert" variable
+                               (:reference 1
+                                :type ("pcl_msgs::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10476 10501])
+                            ("pcl_vert" variable
+                               (:reference 1
+                                :type ("pcl::Vertices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10502 10526]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10452 10577])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl_msgs::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10605 10644])
+                            ("pcl_verts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::Vertices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10645 10683]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10581 10964])
+                    ("fromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_mesh" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11044 11077])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11078 11106]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11022 11245])
+                    ("moveFromPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pcl_mesh" variable
+                               (:reference 1
+                                :type ("pcl::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11275 11302])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11303 11331]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11249 11472])
+                    ("toPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl_msgs::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11496 11530])
+                            ("pcl_mesh" variable
+                               (:reference 1
+                                :type ("pcl::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11531 11558]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11476 11691])
+                    ("moveToPCL" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :type ("pcl_msgs::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11719 11747])
+                            ("pcl_mesh" variable
+                               (:reference 1
+                                :type ("pcl::PolygonMesh" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11748 11775]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11695 11916]))                  
+                :type "namespace")
+                nil [2413 11919])
+            ("pcl" type
+               (:members 
+                  ( ("getFieldIndex" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12033 12071])
+                            ("field_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12072 12102]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12008 12311])
+                    ("getFieldsList" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12387 12425]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12354 12647])
+                    ("toROSMsg" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12707 12745])
+                            ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12746 12772]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12684 12991])
+                    ("moveToROSMsg" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13022 13054])
+                            ("image" variable
+                               (:reference 1
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13055 13081]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12995 13304])
+                    ("toROSMsg" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("pcl_cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13430 13466])
+                            ("cloud" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13467 13499]))                          )
+                        (reparse-symbol namespacesubparts) [13393 13637])
+                    ("fromROSMsg" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13680 13718])
+                            ("pcl_cloud" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13719 13749]))                          )
+                        (reparse-symbol namespacesubparts) [13641 13883])
+                    ("moveFromROSMsg" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13930 13962])
+                            ("pcl_cloud" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13963 13993]))                          )
+                        (reparse-symbol namespacesubparts) [13887 14131])
+                    ("createMapping" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("msg_fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("sensor_msgs::PointField" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14221 14276])
+                            ("field_map" variable
+                               (:reference 1
+                                :type ("MsgFieldMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14277 14300]))                          )
+                        (reparse-symbol namespacesubparts) [14174 14477])
+                    ("io" type
+                       (:members 
+                          ( ("savePCDFile" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14571 14600])
+                                    ("cloud" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14601 14639])
+                                    ("origin" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Eigen::Vector4f::Zero ()"
+                                        :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14656 14712])
+                                    ("orientation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Eigen::Quaternionf::Identity ()"
+                                        :type ("Eigen::Quaternionf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14730 14801])
+                                    ("binary_mode" variable
+                                       (:constant-flag t
+                                        :default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [14819 14849]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [14544 15038])
+                            ("destructiveSavePCDFile" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15082 15111])
+                                    ("cloud" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15112 15144])
+                                    ("origin" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Eigen::Vector4f::Zero ()"
+                                        :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15172 15228])
+                                    ("orientation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Eigen::Quaternionf::Identity ()"
+                                        :type ("Eigen::Quaternionf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15257 15328])
+                                    ("binary_mode" variable
+                                       (:constant-flag t
+                                        :default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [15357 15387]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15044 15580])
+                            ("loadPCDFile" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15652 15681])
+                                    ("cloud" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15682 15714]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15629 15895]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [14481 15900])
+                    ("concatenatePointCloud" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cloud1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15982 16021])
+                            ("cloud2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16052 16091])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16122 16158]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [15945 19872]))                  
+                :type "namespace")
+                nil [11950 19875])
+            ("ros" type
+               (:members 
+                  ( ("DefaultMessageCreator" type
+                       (:type "struct"
+                        :members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("pcl::PCLPointCloud2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [19983 20142]))                          
+                        :template-specifier 
+                          ( ("pcl::PCLPointCloud2" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [19912 20147])
+                    ("message_traits" type
+                       (:members 
+                          ( ("MD5Sum" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [20246 20326])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20358 20385]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [20333 20405])
+                                    ("MD5Sum::static_value1" variable (:type "int") (reparse-symbol classsubparts) [20451 20499])
+                                    ("MD5Sum::static_value2" variable (:type "int") (reparse-symbol classsubparts) [20544 20592])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("static_value1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20713 20728])
+                                            ("" variable (:type ("0x1158d486dd51d683ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20730 20752]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [20695 20753])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("static_value2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20778 20793])
+                                            ("" variable (:type ("0xce2f1be655c3c181ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20795 20817]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [20760 20818]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointCloud2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [20184 20825])
+                            ("DataType" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [20895 20977])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21009 21036]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [20984 21056]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointCloud2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [20831 21063])
+                            ("Definition" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [21135 21219])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21251 21278]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [21226 21298]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointCloud2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [21069 21305])
+                            ("HasHeader" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("TrueType" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointCloud2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [21311 21374]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [20151 21378])
+                    ("serialization" type
+                       (:members 
+                          ( ("Serializer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21647 21662])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21663 21692]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [21590 22175])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22239 22254])
+                                            ("m" variable
+                                               (:reference 1
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22255 22278]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [22183 22757])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22805 22834]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22765 23480]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointCloud2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [21524 23487])
+                            ("Serializer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23691 23706])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointField" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23707 23735]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [23634 23874])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23938 23953])
+                                            ("m" variable
+                                               (:reference 1
+                                                :type ("pcl::PCLPointField" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23954 23976]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [23882 24115])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLPointField" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24163 24191]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [24123 24456]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLPointField" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [23569 24463])
+                            ("Serializer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24659 24674])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24675 24699]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [24602 24822])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24886 24901])
+                                            ("m" variable
+                                               (:reference 1
+                                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24902 24920]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [24830 25041])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PCLHeader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25089 25113]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [25049 25308]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PCLHeader" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [24541 25315]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [21415 25319]))                  
+                :type "namespace")
+                nil [19894 25354]))          
+      :file "pcl_conversions.h"
+      :pointmax 25407
+      :fsize 25406
+      :lastmodtime '(21341 64849 0 0)
+      :unmatched-syntax '((punctuation 20793 . 20794) (punctuation 20792 . 20793) (punctuation 20728 . 20729) (punctuation 20727 . 20728) (punctuation 20542 . 20543) (symbol 20528 . 20541) (symbol 20519 . 20527) (CONST 20513 . 20518) (STATIC 20506 . 20512) (punctuation 20449 . 20450) (symbol 20435 . 20448) (symbol 20426 . 20434) (CONST 20420 . 20425) (STATIC 20413 . 20419))
+      :lexical-table 
+        '(("PCL_CONVERSIONS_H__")
+          )
+))
+  :file "!opt!ros!hydro!include!pcl_conversions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

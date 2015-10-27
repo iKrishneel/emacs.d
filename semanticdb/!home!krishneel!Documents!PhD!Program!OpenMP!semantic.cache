@@ -1,0 +1,44 @@
+;; Object OpenMP/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "OpenMP/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("complex" include (:system-flag t) nil [21 39])
+            ("cstdio" include (:system-flag t) nil [40 57])
+            ("ctime" include (:system-flag t) nil [58 74])
+            ("complex" type
+               (:typedef ("std::complex" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [76 113])
+            ("MandelbrotCalculate" function
+               (:arguments 
+                  ( ("c" variable (:type ("complex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141 151])
+                    ("maxiter" variable (:type "int") (reparse-symbol arg-sub-list) [152 164]))                  
+                :type "int")
+                nil [117 429])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [440 449])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [450 463]))                  
+                :type "int")
+                nil [431 1685]))          
+      :file "main.cpp"
+      :pointmax 1686
+      :fsize 1685
+      :lastmodtime '(21652 11945 762848 140000)
+      :unmatched-syntax '((number 647 . 648) (number 643 . 645) (punctuation 642 . 643) (number 647 . 648) (number 643 . 645) (punctuation 642 . 643))))
+  :file "!home!krishneel!Documents!PhD!Program!OpenMP!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

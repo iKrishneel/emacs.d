@@ -1,0 +1,97 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("pcl_filter_utils/pcl_filter_utils.h" include (:system-flag t) nil [52 98])
+            ("PointCloudFilterUtils" function
+               (:constructor-flag t
+                :parent "PointCloudFilterUtils"
+                :type ("PointCloudFilterUtils" type (:type "class") nil nil))
+                nil [100 228])
+            ("onInit" function
+               (:parent "PointCloudFilterUtils"
+                :type "void")
+                nil [230 342])
+            ("subsribe" function
+               (:parent "PointCloudFilterUtils"
+                :type "void")
+                nil [344 710])
+            ("cloudCallback" function
+               (:parent "PointCloudFilterUtils"
+                :arguments 
+                  ( ("cloud_msgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [759 812]))                  
+                :type "void")
+                nil [712 1207])
+            ("pclDistanceFilter" function
+               (:parent "PointCloudFilterUtils"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointCloud2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1260 1311])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1316 1352]))                  
+                :type "void")
+                nil [1209 1655])
+            ("configCallback" function
+               (:parent "PointCloudFilterUtils"
+                :arguments 
+                  ( ("config" variable
+                       (:reference 1
+                        :type ("pcl_filter_utils::PointCloudFilterUtilsConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1705 1759])
+                    ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1760 1775]))                  
+                :type "void")
+                nil [1657 1963])
+            ("readPCDFiles" function
+               (:parent "PointCloudFilterUtils"
+                :type "void")
+                nil [1965 3285])
+            ("convertNumber2String" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c_frame" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3369 3379]))                  
+                :parent "PointCloudFilterUtils")
+                nil [3287 3506])
+            ("timeToStr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ros_t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3571 3579]))                  
+                :parent "PointCloudFilterUtils")
+                nil [3508 3894])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3905 3914])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3915 3928]))                  
+                :type "int")
+                nil [3896 4043]))          
+      :file "pcl_filter_utils_node.cpp"
+      :pointmax 4044
+      :fsize 4043
+      :lastmodtime '(21998 51100 893087 206000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!pcl_filter_utils!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

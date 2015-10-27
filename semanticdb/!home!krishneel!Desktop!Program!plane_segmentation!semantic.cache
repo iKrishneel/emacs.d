@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("exception" include (:system-flag t) nil [21 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [42 62])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [64 90])
+            ("pcl/point_types.h" include (:system-flag t) nil [91 119])
+            ("pcl/visualization/cloud_viewer.h" include (:system-flag t) nil [120 163])
+            ("pcl/visualization/mouse_event.h" include (:system-flag t) nil [164 206])
+            ("pcl/visualization/point_picking_event.h" include (:system-flag t) nil [207 257])
+            ("pcl/visualization/pcl_visualizer.h" include (:system-flag t) nil [258 303])
+            ("pcl/features/normal_3d.h" include (:system-flag t) nil [304 339])
+            ("pcl/features/pfh.h" include (:system-flag t) nil [340 369])
+            ("pcl/features/vfh.h" include (:system-flag t) nil [370 399])
+            ("pcl/features/fpfh.h" include (:system-flag t) nil [400 430])
+            ("pcl/visualization/histogram_visualizer.h" include (:system-flag t) nil [431 482])
+            ("pcl/sample_consensus/sac_model_sphere.h" include (:system-flag t) nil [483 533])
+            ("pcl/sample_consensus/ransac.h" include (:system-flag t) nil [534 574])
+            ("pcl/filters/project_inliers.h" include (:system-flag t) nil [575 615])
+            ("pcl/surface/convex_hull.h" include (:system-flag t) nil [616 652])
+            ("pcl/segmentation/extract_polygonal_prism_data.h" include (:system-flag t) nil [653 711])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [712 752])
+            ("PointT" type
+               (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                :type "typedef")
+                nil [754 786])
+            ("pcl_indices" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [787 811])
+            ("gCloud" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud" type
+                         (:template-specifier 
+                            ( ("PointT" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [899 923]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [858 924])
+            ("saveSelectedPointCloud" function
+               (:prototype-flag t
+                :type "void")
+                nil [1048 1079])
+            ("pointAreaCallBack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::visualization::AreaPickingEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1104 1149])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1150 1157]))                  
+                :type "void")
+                nil [1080 1158])
+            ("computeSurfaceNormal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1215 1244]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [1159 1245])
+            ("pointFeatureHistogram" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1273 1308])
+                    ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1309 1344]))                  
+                :type "void")
+                nil [1246 1345])
+            ("viewPointFeatureHistorgram" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1378 1407])
+                    ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1408 1442]))                  
+                :type "void")
+                nil [1346 1443])
+            ("fastPointFeatureHistogram" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1475 1504])
+                    ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1505 1539]))                  
+                :type "void")
+                nil [1444 1540])
+            ("pclModelSphere" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1601]))                  
+                :type ("Eigen::VectorXf" type (:type "class") nil nil))
+                nil [1541 1602])
+            ("planeSegmentation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1650 1679]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [1603 1680])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1813 1822])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1823 1842]))                  
+                :type "int")
+                nil [1803 4195])
+            ("planeSegmentation" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4526 4561]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [4479 5749])
+            ("saveSelectedPointCloud" function (:type "void") nil [5935 6572])
+            ("pointAreaCallBack" function
+               (:arguments 
+                  ( ("aEvent" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::visualization::AreaPickingEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6718 6769])
+                    ("viewer_void" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6770 6788]))                  
+                :type "void")
+                nil [6694 7031])
+            ("computeSurfaceNormal" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7404 7439]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [7348 7820])
+            ("pointFeatureHistogram" function
+               (:arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8143 8184])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8185 8227]))                  
+                :type "void")
+                nil [8116 8918])
+            ("viewPointFeatureHistorgram" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9247 9282])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9283 9325]))                  
+                :type "void")
+                nil [9215 9952])
+            ("fastPointFeatureHistogram" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10281 10316])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10317 10359]))                  
+                :type "void")
+                nil [10250 11054])
+            ("pclModelSphere" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11385 11420]))                  
+                :type ("Eigen::VectorXf" type (:type "class") nil nil))
+                nil [11354 11877]))          
+      :file "main.cpp"
+      :pointmax 11878
+      :fsize 11877
+      :lastmodtime '(21642 28916 0 0)
+      :unmatched-syntax '((NEW 895 . 898))))
+  :file "!home!krishneel!Desktop!Program!plane_segmentation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

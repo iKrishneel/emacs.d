@@ -1,0 +1,186 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_IMAGE_OPTICAL_FLOW_H_" variable (:constant-flag t) nil [40 62])
+            ("ros/ros.h" include (:system-flag t) nil [148 168])
+            ("ros/console.h" include (:system-flag t) nil [169 193])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [195 224])
+            ("opencv2/opencv_modules.hpp" include (:system-flag t) nil [225 262])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [263 301])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [302 340])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [341 373])
+            ("opencv2/video/tracking.hpp" include (:system-flag t) nil [374 411])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [412 456])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [457 498])
+            ("opencv2/legacy/legacy.hpp" include (:system-flag t) nil [499 535])
+            ("opencv2/videostab/videostab.hpp" include (:system-flag t) nil [536 578])
+            ("opencv2/videostab/global_motion.hpp" include (:system-flag t) nil [579 625])
+            ("opencv2/videostab/optical_flow.hpp" include (:system-flag t) nil [626 671])
+            ("opencv2/video/video.hpp" include (:system-flag t) nil [672 706])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [708 738])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [739 779])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [780 816])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [817 849])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [850 883])
+            ("ImageOpticalFlow" type
+               (:members 
+                  ( ("FeatureInfo" type
+                       (:members 
+                          ( ("image" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [943 957])
+                            ("descriptor" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [965 984])
+                            ("keypoints" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("cv::KeyPoint" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [992 1028]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [915 1035])
+                    ("private" label nil (reparse-symbol classsubparts) [1041 1049])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1054 1076])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1081 1106])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1111 1138])
+                    ("prev_image_" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1144 1164])
+                    ("prev_pts_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Point2f" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1169 1204])
+                    ("icounter" variable (:type "int") (reparse-symbol classsubparts) [1209 1222])
+                    ("prev_info_" variable (:type ("FeatureInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1228 1251])
+                    ("detector_" variable (:type ("cv::Ptr" type
+                         (:template-specifier 
+                            ( ("cv::FeatureDetector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1256 1295])
+                    ("descriptor_" variable (:type ("cv::Ptr" type
+                         (:template-specifier 
+                            ( ("cv::DescriptorExtractor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1300 1345])
+                    ("public" label nil (reparse-symbol classsubparts) [1351 1358])
+                    ("ImageOpticalFlow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ImageOpticalFlow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1363 1382])
+                    ("imageCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1422 1459]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1387 1460])
+                    ("buildImagePyramid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1500 1516])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1517 1540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1469 1541])
+                    ("getOpticalFlow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1573 1589])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1590 1606])
+                            ("nextPts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Point2f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1613 1647])
+                            ("prevPts" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Point2f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1654 1688])
+                            ("status" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uchar" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1695 1722]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1546 1723])
+                    ("forwardBackwardMatchingAndFeatureCorrespondance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1790 1804])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1805 1819])
+                            ("" variable
+                               (:reference 1
+                                :type ("FeatureInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1820 1834]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1729 1835])
+                    ("protected" label nil (reparse-symbol classsubparts) [1841 1851])
+                    ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1856 1875])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1880 1901])
+                    ("sub_image_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1906 1933])
+                    ("pub_image_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1938 1964]))                  
+                :type "class")
+                nil [885 1967]))          
+      :file "image_optical_flow.h"
+      :pointmax 2004
+      :fsize 2003
+      :lastmodtime '(21908 9632 648880 157000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_IMAGE_OPTICAL_FLOW_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!image_optical_flow!include!image_optical_flow!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

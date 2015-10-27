@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1607 1644])
+            ("\"\"\"
+Serialization of sensor_msgs.PointCloud2 messages.
+
+Author: Tim Field
+\"\"\"" code nil nil [1646 1723])
+            ("ctypes" include nil nil [1725 1738])
+            ("math" include nil nil [1739 1750])
+            ("struct" include nil nil [1751 1764])
+            ("roslib.message" include nil nil [1766 1787])
+            ("sensor_msgs.msg" include nil nil [1788 1839])
+            ("_DATATYPES" variable nil nil [1841 1856])
+            ("_DATATYPES" variable nil nil [1857 1898])
+            ("_DATATYPES" variable nil nil [1899 1940])
+            ("_DATATYPES" variable nil nil [1941 1982])
+            ("_DATATYPES" variable nil nil [1983 2024])
+            ("_DATATYPES" variable nil nil [2025 2066])
+            ("_DATATYPES" variable nil nil [2067 2108])
+            ("_DATATYPES" variable nil nil [2109 2150])
+            ("_DATATYPES" variable nil nil [2151 2192])
+            ("read_points" function
+               (:documentation "
+    Read points from a L{sensor_msgs.PointCloud2} message.
+
+    @param cloud: The point cloud to read from.
+    @type  cloud: L{sensor_msgs.PointCloud2}
+    @param field_names: The names of fields to read. If None, read all fields. [default: None]
+    @type  field_names: iterable
+    @param skip_nans: If True, then don't return any point with a NaN value.
+    @type  skip_nans: bool [default: False]
+    @param uvs: If specified, then only return the points at the given coordinates. [default: empty list]
+    @type  uvs: iterable
+    @return: Generator which yields a list of values for each point.
+    @rtype:  generator
+    "
+                :arguments 
+                  ( ("cloud" variable nil (reparse-symbol function_parameters) [2210 2215])
+                    ("field_names" variable nil (reparse-symbol function_parameters) [2217 2228])
+                    ("skip_nans" variable nil (reparse-symbol function_parameters) [2235 2244])
+                    ("uvs" variable nil (reparse-symbol function_parameters) [2252 2255]))                  )
+                nil [2194 4488])
+            ("create_cloud" function
+               (:documentation "
+    Create a L{sensor_msgs.msg.PointCloud2} message.
+
+    @param header: The point cloud header.
+    @type  header: L{std_msgs.msg.Header}
+    @param fields: The point cloud fields.
+    @type  fields: iterable of L{sensor_msgs.msg.PointField}
+    @param points: The point cloud points.
+    @type  points: list of iterables, i.e. one iterable for each point, with the
+                   elements of each iterable being the values of the fields for 
+                   that point (in the same order as the fields parameter)
+    @return: The point cloud.
+    @rtype:  L{sensor_msgs.msg.PointCloud2}
+    "
+                :arguments 
+                  ( ("header" variable nil (reparse-symbol function_parameters) [4506 4512])
+                    ("fields" variable nil (reparse-symbol function_parameters) [4514 4520])
+                    ("points" variable nil (reparse-symbol function_parameters) [4522 4528]))                  )
+                nil [4489 5844])
+            ("create_cloud_xyz32" function
+               (:documentation "
+    Create a L{sensor_msgs.msg.PointCloud2} message with 3 float32 fields (x, y, z).
+
+    @param header: The point cloud header.
+    @type  header: L{std_msgs.msg.Header}
+    @param points: The point cloud points.
+    @type  points: iterable
+    @return: The point cloud.
+    @rtype:  L{sensor_msgs.msg.PointCloud2}
+    "
+                :arguments 
+                  ( ("header" variable nil (reparse-symbol function_parameters) [5868 5874])
+                    ("points" variable nil (reparse-symbol function_parameters) [5876 5882]))                  )
+                nil [5845 6436])
+            ("_get_struct_fmt" function (:arguments 
+              ( ("is_bigendian" variable nil (reparse-symbol function_parameters) [6457 6469])
+                ("fields" variable nil (reparse-symbol function_parameters) [6471 6477])
+                ("field_names" variable nil (reparse-symbol function_parameters) [6479 6490]))              ) nil [6437 7132]))          
+      :file "point_cloud2.py"
+      :pointmax 7132
+      :fsize 7131
+      :lastmodtime '(21263 56210 0 0)
+      :unmatched-syntax '((NAME 6502 . 6505) (IF 6512 . 6514) (ELSE 6528 . 6532))))
+  :file "!opt!ros!hydro!lib!python2.7!dist-packages!sensor_msgs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

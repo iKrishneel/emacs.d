@@ -1,0 +1,70 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_TEMP_ROBOT_NODE_H_" variable (:constant-flag t) nil [38 57])
+            ("ros/ros.h" include (:system-flag t) nil [59 79])
+            ("ros/console.h" include (:system-flag t) nil [80 104])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [106 135])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [137 170])
+            ("image_geometry/pinhole_camera_model.h" include (:system-flag t) nil [172 220])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [221 251])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [252 292])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [293 329])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [330 362])
+            ("point_cloud_scene_decomposer/signal.h" include (:system-flag t) nil [364 412])
+            ("RobotNode" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [438 445])
+                    ("RobotNode" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RobotNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [455 467])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [473 495])
+                    ("subsribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [500 524])
+                    ("signalCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("point_cloud_scene_decomposer::signal" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [566 611]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [530 612])
+                    ("protected" label nil (reparse-symbol classsubparts) [619 629])
+                    ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [634 653])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [658 679])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [684 711])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [716 742])
+                    ("private" label nil (reparse-symbol classsubparts) [749 757])
+                    ("processing_counter_" variable (:type "int") (reparse-symbol classsubparts) [762 786]))                  
+                :type "class")
+                nil [414 789]))          
+      :file "temp_robot_node.h"
+      :pointmax 822
+      :fsize 821
+      :lastmodtime '(22034 3556 711793 438000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_TEMP_ROBOT_NODE_H_")
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!temp_robot_node!include!temp_robot_node!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

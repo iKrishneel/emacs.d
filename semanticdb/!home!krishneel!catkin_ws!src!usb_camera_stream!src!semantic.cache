@@ -1,0 +1,98 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [1 21])
+            ("ros/console.h" include (:system-flag t) nil [22 46])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [47 91])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [92 124])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [125 165])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [166 204])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [205 243])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [244 279])
+            ("camera_info_manager/camera_info_manager.h" include (:system-flag t) nil [280 332])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [334 354])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [355 374])
+            ("quit_signal" variable
+               (:typemodifiers ("volatile")
+                :default-value "0"
+                :type "int")
+                nil [440 469])
+            ("signal.h" include (:system-flag t) nil [486 505])
+            ("quit_signal_handler" function
+               (:arguments 
+                  ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [542 553]))                  
+                :type "void")
+                nil [517 695])
+            ("convertNumber2String" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c_frame" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [766 776]))                  
+                :typemodifiers ("inline"))
+                nil [705 899])
+            ("width" variable
+               (:default-value "640"
+                :type "int")
+                nil [902 918])
+            ("height" variable
+               (:default-value "480"
+                :type "int")
+                nil [919 936])
+            ("fps" variable
+               (:default-value "30"
+                :type "int")
+                nil [937 950])
+            ("skip_frames" variable
+               (:default-value "0"
+                :type "int")
+                nil [951 971])
+            ("frames_to_skip" variable
+               (:default-value "0"
+                :type "int")
+                nil [972 995])
+            ("cam_indx" variable
+               (:default-value "0"
+                :type "int")
+                nil [996 1013])
+            ("rotate" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1029 1050])
+            ("ad_url" variable
+               (:default-value "\"/usb_camera/rgb/image_raw\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1052 1106])
+            ("caminfo_url" variable
+               (:default-value "\"/usb_camera/camera_info\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1107 1159])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1170 1179])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1180 1193]))                  
+                :type "int")
+                nil [1161 3684]))          
+      :file "main.cpp"
+      :pointmax 3685
+      :fsize 3648
+      :lastmodtime '(21680 53614 857769 950000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!usb_camera_stream!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

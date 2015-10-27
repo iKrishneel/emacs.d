@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("Square" type
+               (:prototype t
+                :type "class")
+                nil [43 56])
+            ("Rectangle" type
+               (:members 
+                  ( ("width" variable (:type "int") (reparse-symbol classsubparts) [80 98])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [80 98])
+                    ("public" label nil (reparse-symbol classsubparts) [101 108])
+                    ("area" function (:type "int") (reparse-symbol classsubparts) [113 157])
+                    ("convert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("Square" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175 184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [162 185])
+                    ("private" label nil (reparse-symbol classsubparts) [188 196])
+                    ("x" variable (:type "int") (reparse-symbol classsubparts) [201 207]))                  
+                :type "class")
+                nil [58 210])
+            ("Square" type
+               (:superclasses 
+                  ( ("Rectangle" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Rectangle" friend nil (reparse-symbol classsubparts) [247 269])
+                    ("private" label nil (reparse-symbol classsubparts) [274 282])
+                    ("side" variable (:type "int") (reparse-symbol classsubparts) [288 297])
+                    ("public" label nil (reparse-symbol classsubparts) [301 308])
+                    ("side" function
+                       (:arguments 
+                          ( ("" variable (:type ("a" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [342 344]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [337 354]))                  
+                :type "class")
+                nil [212 357])
+            ("convert" function
+               (:parent "Rectangle"
+                :arguments 
+                  ( ("a" variable (:type ("Square" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 392]))                  
+                :type "void")
+                nil [359 433])
+            ("main" function (:type "int") nil [437 613]))          
+      :file "main.cpp"
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(21964 4103 514143 653000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!friends!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

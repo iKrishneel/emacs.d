@@ -1,0 +1,1413 @@
+;; Object image_transport/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "image_transport/"
+  :tables
+  (list
+    (semanticdb-table "image_transport.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_IMAGE_TRANSPORT_H" variable (:constant-flag t) nil [1826 1859])
+            ("image_transport/publisher.h" include nil nil [1861 1899])
+            ("image_transport/subscriber.h" include nil nil [1900 1939])
+            ("image_transport/camera_publisher.h" include nil nil [1940 1985])
+            ("image_transport/camera_subscriber.h" include nil nil [1986 2032])
+            ("image_transport" type
+               (:members 
+                  ( ("ImageTransport" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2322 2329])
+                            ("ImageTransport" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2356 2382]))                                  
+                                :type ("ImageTransport" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2341 2383])
+                            ("ImageTransport" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2387 2405])
+                            ("advertise" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2495 2525])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2526 2546])
+                                    ("latch" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2547 2565]))                                  
+                                :type ("Publisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2475 2567])
+                            ("advertise" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2673 2703])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2704 2724])
+                                    ("connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2747 2790])
+                                    ("disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "SubscriberStatusCallback()"
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2813 2887])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::VoidPtr()"
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2911 2962])
+                                    ("latch" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2964 2982]))                                  
+                                :type ("Publisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2653 2984])
+                            ("subscribe" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3108 3138])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3139 3159])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3183 3205])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3205 3244])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3247 3256])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::VoidPtr()"
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3280 3331])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3356 3412]))                                  
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3087 3414])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3519 3549])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3550 3570])
+                                    ("fp" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3604 3638]))                                          
+                                        :type "void")
+                                        nil nil)
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3663 3719]))                                  
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3498 3911])
+                            ("subscribe" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Subscriber" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4062 4092])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4093 4113])
+                                    (nil variable (:pointer (("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4150 4184])) :type "void") (reparse-symbol arg-sub-list) [4137 4185])
+                                    ("obj" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4186 4193])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4217 4273]))                                  )
+                                (reparse-symbol classsubparts) [4021 4387])
+                            ("subscribe" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Subscriber" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4536 4566])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4567 4587])
+                                    (nil variable (:pointer (("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4624 4658])) :type "void") (reparse-symbol arg-sub-list) [4611 4659])
+                                    ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4683 4715])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4739 4795]))                                  )
+                                (reparse-symbol classsubparts) [4495 4904])
+                            ("advertiseCamera" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5041 5071])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5072 5092])
+                                    ("latch" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5093 5111]))                                  
+                                :type ("CameraPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5009 5113])
+                            ("advertiseCamera" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5272 5302])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5303 5323])
+                                    ("image_connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5358 5407])
+                                    ("image_disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "SubscriberStatusCallback()"
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5442 5522])
+                                    ("info_connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::SubscriberStatusCallback()"
+                                        :type ("ros::SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5558 5644])
+                                    ("info_disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::SubscriberStatusCallback()"
+                                        :type ("ros::SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5680 5769])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::VoidPtr()"
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5805 5856])
+                                    ("latch" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5858 5876]))                                  
+                                :type ("CameraPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5240 5878])
+                            ("subscribeCamera" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6211 6241])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6242 6262])
+                                    ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraSubscriber::Callback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6298 6341])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::VoidPtr()"
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6377 6428])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6465 6521]))                                  
+                                :type ("CameraSubscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6178 6523])
+                            ("subscribeCamera" function
+                               (:arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6671 6701])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6702 6722])
+                                    ("fp" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6768 6802])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("sensor_msgs::CameraInfoConstPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6848 6887]))                                          
+                                        :type "void")
+                                        nil nil)
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6924 6980]))                                  
+                                :type ("CameraSubscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6638 7133])
+                            ("subscribeCamera" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("CameraSubscriber" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7332 7362])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7363 7383])
+                                    (nil variable (:pointer (("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7432 7466]) ("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::CameraInfoConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7515 7554])) :type "void") (reparse-symbol arg-sub-list) [7419 7555])
+                                    ("obj" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7556 7563])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7599 7655]))                                  )
+                                (reparse-symbol classsubparts) [7279 7806])
+                            ("subscribeCamera" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("CameraSubscriber" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8003 8033])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8034 8054])
+                                    (nil variable (:pointer (("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8103 8137]) ("" variable (:reference 1 :constant-flag t :type ("sensor_msgs::CameraInfoConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8186 8225])) :type "void") (reparse-symbol arg-sub-list) [8090 8226])
+                                    ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8262 8294])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8330 8386]))                                  )
+                                (reparse-symbol classsubparts) [7950 8532])
+                            ("getDeclaredTransports" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [8684 8739])
+                            ("getLoadableTransports" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [8836 8891])
+                            ("private" label nil (reparse-symbol classsubparts) [8893 8901])
+                            ("Impl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [8904 8916])
+                            ("ImplPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8919 8959])
+                            ("ImplWPtr" type
+                               (:typedef ("boost::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8962 9001])
+                            ("impl_" variable (:type ("ImplPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9005 9019]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2299 9022]))                  
+                :type "namespace")
+                nil [2034 9025]))          
+      :file "image_transport.h"
+      :pointmax 9062
+      :fsize 9061
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 3245 . 3246) (punctuation 3244 . 3245) (semantic-list 3209 . 3244) (punctuation 3204 . 3205) (EXPLICIT 2332 . 2340))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_IMAGE_TRANSPORT_H")
+          )
+)
+    (semanticdb-table "publisher.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_PUBLISHER_H" variable (:constant-flag t) nil [1820 1847])
+            ("ros/ros.h" include (:system-flag t) nil [1849 1869])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1870 1900])
+            ("image_transport/single_subscriber_publisher.h" include nil nil [1901 1957])
+            ("image_transport/exception.h" include nil nil [1958 1996])
+            ("image_transport/loader_fwds.h" include nil nil [1997 2037])
+            ("image_transport" type
+               (:members 
+                  ( ("Publisher" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3089 3096])
+                            ("Publisher" function
+                               (:constructor-flag t
+                                :type ("Publisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3099 3113])
+                            ("getNumSubscribers" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3304 3339])
+                            ("getTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3409 3438])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3542 3576]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3529 3583])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3687 3729]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3674 3736])
+                            ("shutdown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3824 3840])
+                            ("<" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Publisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3886 3907]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3870 3944])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Publisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3963 3984]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3947 4021])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Publisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4040 4061]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4024 4098])
+                            ("private" label nil (reparse-symbol classsubparts) [4100 4108])
+                            ("Publisher" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4121 4141])
+                                    ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4142 4172])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4173 4193])
+                                    ("connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4206 4249])
+                                    ("disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4262 4308])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4321 4356])
+                                    ("latch" variable (:type "bool") (reparse-symbol arg-sub-list) [4357 4368])
+                                    ("loader" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PubLoaderPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4381 4408]))                                  
+                                :type ("Publisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4111 4409])
+                            ("Impl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [4413 4425])
+                            ("ImplPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4428 4468])
+                            ("ImplWPtr" type
+                               (:typedef ("boost::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4471 4510])
+                            ("impl_" variable (:type ("ImplPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4516 4530])
+                            ("weakSubscriberCb" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("impl_wptr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ImplWPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4563 4589])
+                                    ("plugin_pub" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SingleSubscriberPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4621 4665])
+                                    ("user_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4697 4737]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4534 4738])
+                            ("rebindCB" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("user_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4778 4818]))                                  
+                                :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4744 4819])
+                            ("ImageTransport" friend nil (reparse-symbol classsubparts) [4825 4852]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3071 4856]))                  
+                :type "namespace")
+                nil [2039 4859]))          
+      :file "publisher.h"
+      :pointmax 4896
+      :fsize 4895
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 4852 . 4853) (punctuation 3866 . 3867) (CONST 3861 . 3866) (semantic-list 3858 . 3860) (punctuation 3857 . 3858) (VOID 3853 . 3857) (OPERATOR 3844 . 3852))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_PUBLISHER_H")
+          )
+)
+    (semanticdb-table "subscriber.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_SUBSCRIBER_H" variable (:constant-flag t) nil [1821 1849])
+            ("ros/ros.h" include (:system-flag t) nil [1851 1871])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1872 1902])
+            ("image_transport/transport_hints.h" include nil nil [1903 1947])
+            ("image_transport/exception.h" include nil nil [1948 1986])
+            ("image_transport/loader_fwds.h" include nil nil [1987 2027])
+            ("image_transport" type
+               (:members 
+                  ( ("Subscriber" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2837 2844])
+                            ("Subscriber" function
+                               (:constructor-flag t
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2847 2862])
+                            ("getTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3044 3073])
+                            ("getNumPublishers" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3167 3201])
+                            ("getTransport" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3275 3308])
+                            ("shutdown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3396 3412])
+                            ("<" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Subscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3458 3480]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3442 3517])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Subscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3536 3558]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3520 3595])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Subscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3614 3636]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3598 3673])
+                            ("private" label nil (reparse-symbol classsubparts) [3677 3685])
+                            ("Subscriber" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3699 3719])
+                                    ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3720 3750])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3751 3771])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3785 3807])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3807 3846])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3849 3858])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3872 3907])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3908 3946])
+                                    ("loader" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubLoaderPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3960 3987]))                                  
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3688 3988])
+                            ("Impl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3994 4006])
+                            ("ImplPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4009 4049])
+                            ("ImplWPtr" type
+                               (:typedef ("boost::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4052 4091])
+                            ("impl_" variable (:type ("ImplPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4097 4111])
+                            ("ImageTransport" friend nil (reparse-symbol classsubparts) [4115 4142]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2818 4146]))                  
+                :type "namespace")
+                nil [2029 4149]))          
+      :file "subscriber.h"
+      :pointmax 4186
+      :fsize 4185
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 4142 . 4143) (punctuation 3847 . 3848) (punctuation 3846 . 3847) (semantic-list 3811 . 3846) (punctuation 3806 . 3807) (punctuation 3438 . 3439) (CONST 3433 . 3438) (semantic-list 3430 . 3432) (punctuation 3429 . 3430) (VOID 3425 . 3429) (OPERATOR 3416 . 3424))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_SUBSCRIBER_H")
+          )
+)
+    (semanticdb-table "camera_publisher.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_CAMERA_PUBLISHER_H" variable (:constant-flag t) nil [1827 1861])
+            ("ros/ros.h" include (:system-flag t) nil [1863 1883])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1884 1914])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [1915 1950])
+            ("image_transport/single_subscriber_publisher.h" include nil nil [1951 2007])
+            ("image_transport" type
+               (:members 
+                  ( ("ImageTransport" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2038 2059])
+                    ("CameraPublisher" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2881 2888])
+                            ("CameraPublisher" function
+                               (:constructor-flag t
+                                :type ("CameraPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2891 2911])
+                            ("getNumSubscribers" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3104 3139])
+                            ("getTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3223 3252])
+                            ("getInfoTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3335 3368])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3491 3523])
+                                    ("info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3524 3560]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3478 3567])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3690 3730])
+                                    ("info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfoConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3746 3790]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3677 3797])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4059 4085])
+                                    ("info" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4086 4116])
+                                    ("stamp" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4117 4133]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4046 4140])
+                            ("shutdown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4228 4244])
+                            ("<" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4290 4317]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4274 4354])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4373 4400]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4357 4437])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4456 4483]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4440 4520])
+                            ("private" label nil (reparse-symbol classsubparts) [4522 4530])
+                            ("CameraPublisher" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("image_it" variable
+                                       (:reference 1
+                                        :type ("ImageTransport" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4549 4574])
+                                    ("info_nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4575 4600])
+                                    ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4619 4649])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4650 4670])
+                                    ("image_connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4689 4738])
+                                    ("image_disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4757 4809])
+                                    ("info_connect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4828 4881])
+                                    ("info_disconnect_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::SubscriberStatusCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4900 4956])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4975 5010])
+                                    ("latch" variable (:type "bool") (reparse-symbol arg-sub-list) [5011 5022]))                                  
+                                :type ("CameraPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4533 5023])
+                            ("Impl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [5029 5041])
+                            ("ImplPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5044 5084])
+                            ("ImplWPtr" type
+                               (:typedef ("boost::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5087 5126])
+                            ("impl_" variable (:type ("ImplPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5132 5146])
+                            ("ImageTransport" friend nil (reparse-symbol classsubparts) [5150 5177]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2857 5181]))                  
+                :type "namespace")
+                nil [2009 5184]))          
+      :file "camera_publisher.h"
+      :pointmax 5221
+      :fsize 5220
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 5177 . 5178) (punctuation 4270 . 4271) (CONST 4265 . 4270) (semantic-list 4262 . 4264) (punctuation 4261 . 4262) (VOID 4257 . 4261) (OPERATOR 4248 . 4256))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_CAMERA_PUBLISHER_H")
+          )
+)
+    (semanticdb-table "camera_subscriber.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_CAMERA_SUBSCRIBER_H" variable (:constant-flag t) nil [1828 1863])
+            ("ros/ros.h" include (:system-flag t) nil [1865 1885])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [1886 1921])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1922 1952])
+            ("image_transport/transport_hints.h" include nil nil [1953 1997])
+            ("image_transport" type
+               (:members 
+                  ( ("ImageTransport" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2028 2049])
+                    ("CameraSubscriber" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2810 2817])
+                            ("Callback" variable (:type "int") (reparse-symbol classsubparts) [2956 2965])
+                            ("CameraSubscriber" function
+                               (:constructor-flag t
+                                :type ("CameraSubscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2971 2992])
+                            ("getTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3078 3107])
+                            ("getInfoTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3162 3195])
+                            ("getNumPublishers" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3289 3323])
+                            ("getTransport" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3397 3430])
+                            ("shutdown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3522 3538])
+                            ("<" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraSubscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3584 3612]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3568 3649])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraSubscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3668 3696]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3652 3733])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CameraSubscriber" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3752 3780]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3736 3817])
+                            ("private" label nil (reparse-symbol classsubparts) [3821 3829])
+                            ("CameraSubscriber" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("image_it" variable
+                                       (:reference 1
+                                        :type ("ImageTransport" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3849 3874])
+                                    ("info_nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3875 3900])
+                                    ("base_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3920 3950])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3951 3971])
+                                    ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Callback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3991 4016])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::VoidPtr()"
+                                        :type ("ros::VoidPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4036 4087])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "TransportHints()"
+                                        :type ("TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4108 4164]))                                  
+                                :type ("CameraSubscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3832 4166])
+                            ("Impl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [4172 4184])
+                            ("ImplPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4187 4227])
+                            ("ImplWPtr" type
+                               (:typedef ("boost::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Impl" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4230 4269])
+                            ("impl_" variable (:type ("ImplPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4275 4289])
+                            ("ImageTransport" friend nil (reparse-symbol classsubparts) [4293 4320]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2785 4324]))                  
+                :type "namespace")
+                nil [1999 4327]))          
+      :file "camera_subscriber.h"
+      :pointmax 4364
+      :fsize 4363
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 4320 . 4321) (punctuation 3564 . 3565) (CONST 3559 . 3564) (semantic-list 3556 . 3558) (punctuation 3555 . 3556) (VOID 3551 . 3555) (OPERATOR 3542 . 3550) (punctuation 2954 . 2955) (semantic-list 2848 . 2954) (VOID 2844 . 2848) (punctuation 2843 . 2844) (symbol 2835 . 2843) (punctuation 2834 . 2835) (punctuation 2833 . 2834) (symbol 2828 . 2833) (TYPEDEF 2820 . 2827))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_CAMERA_SUBSCRIBER_H")
+          )
+)
+    (semanticdb-table "single_subscriber_publisher.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_SINGLE_SUBSCRIBER_PUBLISHER" variable (:constant-flag t) nil [1836 1879])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1881 1913])
+            ("boost/function.hpp" include (:system-flag t) nil [1914 1943])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1944 1974])
+            ("image_transport" type
+               (:members 
+                  ( ("SingleSubscriberPublisher" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2191 2198])
+                            ("GetNumSubscribersFn" variable (:type "int") (reparse-symbol classsubparts) [2237 2257])
+                            ("PublishFn" variable (:type "int") (reparse-symbol classsubparts) [2317 2327])
+                            ("SingleSubscriberPublisher" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("caller_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2359 2388])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2389 2414])
+                                    ("num_subscribers_fn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GetNumSubscribersFn" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2443 2489])
+                                    ("publish_fn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PublishFn" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2518 2546]))                                  
+                                :type ("SingleSubscriberPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2333 2547])
+                            ("getSubscriberName" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2553 2591])
+                            ("getTopic" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2595 2624])
+                            ("getNumSubscribers" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2628 2663])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2680 2714]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2667 2721])
+                            ("publish" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2737 2779]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2724 2786])
+                            ("private" label nil (reparse-symbol classsubparts) [2788 2796])
+                            ("caller_id_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2799 2822])
+                            ("topic_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2825 2844])
+                            ("num_subscribers_fn_" variable (:type ("GetNumSubscribersFn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2847 2887])
+                            ("publish_fn_" variable (:type ("PublishFn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2890 2912])
+                            ("Publisher" friend nil (reparse-symbol classsubparts) [2916 2938]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2136 2973])
+                    ("SubscriberStatusCallback" variable (:type "int") (reparse-symbol namespacesubparts) [3039 3064]))                  
+                :type "namespace")
+                nil [1976 3067]))          
+      :file "single_subscriber_publisher.h"
+      :pointmax 3104
+      :fsize 3103
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax '((punctuation 3037 . 3038) (semantic-list 3003 . 3037) (VOID 2999 . 3003) (punctuation 2998 . 2999) (symbol 2990 . 2998) (punctuation 2989 . 2990) (punctuation 2988 . 2989) (symbol 2983 . 2988) (TYPEDEF 2975 . 2982) (punctuation 2938 . 2939) (punctuation 2315 . 2316) (semantic-list 2288 . 2315) (VOID 2284 . 2288) (punctuation 2283 . 2284) (symbol 2275 . 2283) (punctuation 2274 . 2275) (punctuation 2273 . 2274) (symbol 2268 . 2273) (TYPEDEF 2260 . 2267) (punctuation 2235 . 2236) (semantic-list 2233 . 2235) (symbol 2225 . 2233) (punctuation 2224 . 2225) (symbol 2216 . 2224) (punctuation 2215 . 2216) (punctuation 2214 . 2215) (symbol 2209 . 2214) (TYPEDEF 2201 . 2208))
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_SINGLE_SUBSCRIBER_PUBLISHER")
+          )
+)
+    (semanticdb-table "exception.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_EXCEPTION_H" variable (:constant-flag t) nil [1820 1847])
+            ("stdexcept" include (:system-flag t) nil [1849 1869])
+            ("image_transport" type
+               (:members 
+                  ( ("Exception" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2048 2055])
+                            ("Exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2068 2095]))                                  
+                                :type ("Exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2058 2128]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2002 2131])
+                    ("TransportLoadException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2289 2296])
+                            ("TransportLoadException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("transport" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2322 2351])
+                                    ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2352 2379]))                                  
+                                :type ("TransportLoadException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2299 2526])
+                            ("getTransport" function
+                               (:methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2530 2585])
+                            ("protected" label nil (reparse-symbol classsubparts) [2587 2597])
+                            ("transport_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2600 2623]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2239 2626]))                  
+                :type "namespace")
+                nil [1871 2629]))          
+      :file "exception.h"
+      :pointmax 2666
+      :fsize 2665
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_EXCEPTION_H")
+          )
+)
+    (semanticdb-table "loader_fwds.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_LOADER_FWDS_H" variable (:constant-flag t) nil [1822 1851])
+            ("pluginlib" type
+               (:members 
+                  ( ("ClassLoader" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1994 2030]))                  
+                :type "namespace")
+                nil [1970 2032])
+            ("image_transport" type
+               (:members 
+                  ( ("PublisherPlugin" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2064 2086])
+                    ("SubscriberPlugin" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2089 2112])
+                    ("PubLoader" type
+                       (:typedef ("pluginlib::ClassLoader" type
+                             (:template-specifier 
+                                ( ("PublisherPlugin" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2116 2174])
+                    ("PubLoaderPtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("PubLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2177 2227])
+                    ("SubLoader" type
+                       (:typedef ("pluginlib::ClassLoader" type
+                             (:template-specifier 
+                                ( ("SubscriberPlugin" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2231 2290])
+                    ("SubLoaderPtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("SubLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2293 2343]))                  
+                :type "namespace")
+                nil [2034 2345]))          
+      :file "loader_fwds.h"
+      :pointmax 2354
+      :fsize 2353
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_LOADER_FWDS_H")
+          )
+)
+    (semanticdb-table "transport_hints.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("IMAGE_TRANSPORT_TRANSPORT_HINTS_H" variable (:constant-flag t) nil [1826 1859])
+            ("ros/ros.h" include (:system-flag t) nil [1861 1881])
+            ("image_transport" type
+               (:members 
+                  ( ("TransportHints" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2012 2019])
+                            ("TransportHints" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("default_transport" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"raw\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2716 2760])
+                                    ("ros_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::TransportHints()"
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2779 2839])
+                                    ("parameter_nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::NodeHandle(\"~\")"
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2858 2916])
+                                    ("parameter_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"image_transport\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2935 2988]))                                  
+                                :type ("TransportHints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2701 3126])
+                            ("getTransport" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3130 3200])
+                            ("getRosHints" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("ros::TransportHints" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3204 3281])
+                            ("getParameterNH" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3285 3364])
+                            ("private" label nil (reparse-symbol classsubparts) [3368 3376])
+                            ("transport_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3379 3402])
+                            ("ros_hints_" variable (:type ("ros::TransportHints" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3405 3436])
+                            ("parameter_nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3439 3469]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1989 3472]))                  
+                :type "namespace")
+                nil [1883 3475]))          
+      :file "transport_hints.h"
+      :pointmax 3512
+      :fsize 3511
+      :lastmodtime '(21534 41539 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IMAGE_TRANSPORT_TRANSPORT_HINTS_H")
+          )
+))
+  :file "!opt!ros!hydro!include!image_transport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

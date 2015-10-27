@@ -1,0 +1,2627 @@
+;; Object LinearMath/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "LinearMath/"
+  :tables
+  (list
+    (semanticdb-table "Transform.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("tfTransform_H" variable (:constant-flag t) nil [946 959])
+            ("Matrix3x3.h" include nil nil [962 984])
+            ("tf" type
+               (:members 
+                  ( ("TransformData" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1010 1023])
+                    ("Transform" type
+                       (:members 
+                          ( ("m_basis" variable (:type ("Matrix3x3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1308 1326])
+                            ("m_origin" variable (:type ("Vector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1361 1380])
+                            ("public" label nil (reparse-symbol classsubparts) [1382 1389])
+                            ("Transform" function
+                               (:constructor-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1438 1452])
+                            ("Transform" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1650 1670])
+                                    ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Vector3(tfScalar(0), tfScalar(0), tfScalar(0))"
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1674 1739]))                                  
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1620 1775])
+                            ("Transform" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1967 1986])
+                                    ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Vector3(tfScalar(0), tfScalar(0), tfScalar(0))"
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1990 2055]))                                  
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1937 2090])
+                            ("Transform" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2155 2178]))                                  
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2124 2239])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2317 2340]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2296 2418])
+                            ("mult" function
+                               (:arguments 
+                                  ( ("t1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2629 2649])
+                                    ("t2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2650 2670]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2619 2745])
+                            ("()" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3044 3061]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3025 3201])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3292 3309]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3274 3342])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3440 3460]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3419 3500])
+                            ("getBasis" function (:type ("Matrix3x3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3579 3635])
+                            ("getBasis" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3713 3769])
+                            ("getOrigin" function (:type ("Vector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3844 3901])
+                            ("getOrigin" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3975 4032])
+                            ("getRotation" function
+                               (:methodconst-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4096 4186])
+                            ("setFromOpenGLMatrix" function
+                               (:arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4365 4383]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4340 4466])
+                            ("getOpenGLMatrix" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4648 4660]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4627 4803])
+                            ("setOrigin" function
+                               (:arguments 
+                                  ( ("origin" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4942 4964]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4927 4993])
+                            ("invXform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("inVec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5033 5054]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5016 5061])
+                            ("setBasis" function
+                               (:arguments 
+                                  ( ("basis" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5154 5177]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5140 5203])
+                            ("setRotation" function
+                               (:arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5299 5319]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5282 5351])
+                            ("setIdentity" function (:type "void") (reparse-symbol classsubparts) [5410 5525])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5658 5677]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5636 5760])
+                            ("inverse" function
+                               (:methodconst-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5815 5928])
+                            ("inverseTimes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6106 6125]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6083 6132])
+                            ("" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transform" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6223 6242]))                                  
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6203 6249])
+                            ("getIdentity" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6296 6437])
+                            ("serialize" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("dataOut" variable
+                                       (:reference 1
+                                        :type ("TransformDoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6455 6485]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6440 6492])
+                            ("serializeFloat" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("dataOut" variable
+                                       (:reference 1
+                                        :type ("TransformFloatData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6515 6550]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6495 6557])
+                            ("deSerialize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformDoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6577 6612]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6560 6613])
+                            ("deSerializeDouble" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformDoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6639 6680]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6616 6681])
+                            ("deSerializeFloat" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformFloatData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6706 6746]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6684 6747]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1257 6751])
+                    ("invXform" function
+                       (:methodconst-flag t
+                        :parent "Transform"
+                        :arguments 
+                          ( ("inVec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6802 6823]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6774 6899])
+                    ("inverseTimes" function
+                       (:methodconst-flag t
+                        :parent "Transform"
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6956 6975]))                          
+                        :type ("Transform" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6921 7097])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :parent "Transform"
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7151 7170]))                          
+                        :type ("Transform" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7119 7244])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7342 7362])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7363 7383]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7326 7482])
+                    ("TransformFloatData" type
+                       (:members 
+                          ( ("m_basis" variable (:type ("Matrix3x3FloatData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7535 7562])
+                            ("m_origin" variable (:type ("Vector3FloatData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7564 7590]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7506 7593])
+                    ("TransformDoubleData" type
+                       (:members 
+                          ( ("m_basis" variable (:type ("Matrix3x3DoubleData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7625 7653])
+                            ("m_origin" variable (:type ("Vector3DoubleData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7655 7682]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7595 7685])
+                    ("serialize" function
+                       (:methodconst-flag t
+                        :parent "Transform"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("TransformDoubleData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7735 7758]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7709 7844])
+                    ("serializeFloat" function
+                       (:methodconst-flag t
+                        :parent "Transform"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("TransformFloatData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7897 7925]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7866 8021])
+                    ("deSerialize" function
+                       (:parent "Transform"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TransformDoubleData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8072 8100]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8044 8182])
+                    ("deSerializeFloat" function
+                       (:parent "Transform"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TransformFloatData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8237 8270]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8204 8362])
+                    ("deSerializeDouble" function
+                       (:parent "Transform"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TransformDoubleData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8418 8452]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8384 8546]))                  
+                :type "namespace")
+                nil [986 8549]))          
+      :file "Transform.h"
+      :pointmax 8564
+      :fsize 8563
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((symbol 8364 . 8383) (symbol 8184 . 8203) (symbol 8024 . 8043) (symbol 7846 . 7865) (symbol 7689 . 7708) (symbol 7306 . 7325) (symbol 7099 . 7118) (symbol 6901 . 6920) (symbol 6754 . 6773) (symbol 5262 . 5281) (symbol 5120 . 5139) (symbol 4996 . 5015) (symbol 4907 . 4926) (symbol 3955 . 3974) (symbol 3824 . 3843) (symbol 3693 . 3712) (symbol 3559 . 3578) (symbol 3399 . 3418) (symbol 3254 . 3273) (symbol 3005 . 3024) (symbol 2599 . 2618) (symbol 2276 . 2295) (EXPLICIT 1928 . 1936) (EXPLICIT 1611 . 1619))
+      :lexical-table 
+        '(("tfTransform_H")
+          ("TransformData" . ((symbol "TransformDoubleData" 1024 . 1043)))
+          )
+)
+    (semanticdb-table "Matrix3x3.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_MATRIX3x3_H" variable (:constant-flag t) nil [946 960])
+            ("Vector3.h" include nil nil [962 982])
+            ("Quaternion.h" include nil nil [983 1006])
+            ("tf" type
+               (:members 
+                  ( ("Matrix3x3Data" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1033 1046])
+                    ("Matrix3x3" type
+                       (:members 
+                          ( ("m_el" variable
+                               (:dereference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1376 1392])
+                            ("public" label nil (reparse-symbol classsubparts) [1394 1401])
+                            ("Matrix3x3" function
+                               (:constructor-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1447 1462])
+                            ("Matrix3x3" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1601 1621]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1591 1641])
+                            ("Matrix3x3" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("xx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1860 1879])
+                                    ("xy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1880 1899])
+                                    ("xz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1900 1919])
+                                    ("yx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1922 1941])
+                                    ("yy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1942 1961])
+                                    ("yz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1962 1981])
+                                    ("zx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1984 2003])
+                                    ("zy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2004 2023])
+                                    ("zz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2024 2043]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1850 2106])
+                            ("Matrix3x3" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2171 2194]))                                  
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2140 2281])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2361 2384]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2340 2487])
+                            ("getColumn" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2621 2627]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2603 2691])
+                            ("getRow" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2823 2829]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2801 2892])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3045 3051]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3024 3110])
+                            ("[]" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3266 3272]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3240 3336])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3496 3515]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3474 3516])
+                            ("setFromOpenGLSubMatrix" function
+                               (:arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3662 3680]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3634 3796])
+                            ("setValue" function
+                               (:arguments 
+                                  ( ("xx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4112 4131])
+                                    ("xy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4132 4151])
+                                    ("xz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4152 4171])
+                                    ("yx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4175 4194])
+                                    ("yy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4195 4214])
+                                    ("yz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4215 4234])
+                                    ("zx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4238 4257])
+                                    ("zy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4258 4277])
+                                    ("zz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4278 4297]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4098 4393])
+                            ("setRotation" function
+                               (:arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4500 4520]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4483 5033])
+                            ("setEulerZYX" function
+                               (:arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5240 5260])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5261 5283])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5284 5305]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5223 5372])
+                            ("setEulerYPR" function
+                               (:arguments 
+                                  ( ("eulerZ" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5733 5749])
+                                    ("eulerY" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5750 5766])
+                                    ("eulerX" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5766 5782]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5716 6217])
+                            ("setRPY" function
+                               (:arguments 
+                                  ( ("roll" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6425 6439])
+                                    ("pitch" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6440 6455])
+                                    ("yaw" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6455 6468]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6413 6520])
+                            ("setIdentity" function (:type "void") (reparse-symbol classsubparts) [6568 6749])
+                            ("getIdentity" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6752 7004])
+                            ("getOpenGLSubMatrix" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7134 7146]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7110 7536])
+                            ("getRotation" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7659 7673]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7642 8556])
+                            ("getEulerZYX" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8868 8882])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8883 8899])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8900 8915])
+                                    ("solution_number" variable
+                                       (:default-value "1"
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [8916 8948]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8851 9011])
+                            ("getEulerYPR" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9227 9241])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9242 9258])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9259 9274])
+                                    ("solution_number" variable
+                                       (:default-value "1"
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [9275 9307]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9210 10991])
+                            ("getRPY" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("roll" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11285 11300])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11301 11317])
+                                    ("yaw" variable
+                                       (:reference 1
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11318 11332])
+                                    ("solution_number" variable
+                                       (:default-value "1"
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [11333 11365]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11273 11427])
+                            ("scaled" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11575 11592]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11558 11819])
+                            ("determinant" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11873 11913])
+                            ("adjoint" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11962 11988])
+                            ("absolute" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12051 12078])
+                            ("transpose" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12129 12157])
+                            ("inverse" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12206 12232])
+                            ("transposeTimes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12261 12280]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12236 12287])
+                            ("timesTranspose" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12314 12333]))                                  
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12289 12340])
+                            ("tdotx" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12378 12395]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12363 12482])
+                            ("tdoty" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12519 12536]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12504 12623])
+                            ("tdotz" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12660 12677]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12645 12764])
+                            ("diagonalize" function
+                               (:arguments 
+                                  ( ("rot" variable
+                                       (:reference 1
+                                        :type ("Matrix3x3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13315 13330])
+                                    ("threshold" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13331 13350])
+                                    ("maxSteps" variable (:type "int") (reparse-symbol arg-sub-list) [13351 13364]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13298 15152])
+                            ("cofac" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("r1" variable (:type "int") (reparse-symbol arg-sub-list) [15558 15565])
+                                    ("c1" variable (:type "int") (reparse-symbol arg-sub-list) [15566 15573])
+                                    ("r2" variable (:type "int") (reparse-symbol arg-sub-list) [15574 15581])
+                                    ("c2" variable (:type "int") (reparse-symbol arg-sub-list) [15582 15589]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15543 15670])
+                            ("serialize" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("dataOut" variable
+                                       (:reference 1
+                                        :type ("Matrix3x3DoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15688 15718]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15673 15725])
+                            ("serializeFloat" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("dataOut" variable
+                                       (:reference 1
+                                        :type ("Matrix3x3FloatData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15748 15783]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15728 15790])
+                            ("deSerialize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3DoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15810 15845]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15793 15846])
+                            ("deSerializeFloat" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3FloatData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15871 15911]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15849 15912])
+                            ("deSerializeDouble" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dataIn" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix3x3DoubleData" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15938 15979]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15915 15980]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1288 15984])
+                    ("=" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :parent "Matrix3x3"
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16041 16060]))                          
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16007 16256])
+                    ("determinant" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16278 16377])
+                    ("absolute" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16400 16657])
+                    ("transpose" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16679 16863])
+                    ("adjoint" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16885 17121])
+                    ("inverse" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17143 17559])
+                    ("transposeTimes" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17618 17637]))                          
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17581 18351])
+                    ("timesTranspose" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18410 18429]))                          
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18373 18637])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18678 18697])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18698 18715]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18659 18776])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18817 18834])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18835 18854]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18799 18911])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("m1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18954 18974])
+                            ("m2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18975 18995]))                          
+                        :type ("Matrix3x3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18933 19187])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("m1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20024 20044])
+                            ("m2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20045 20065]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20008 20299])
+                    ("Matrix3x3FloatData" type
+                       (:members 
+                          ( ("m_el" variable
+                               (:dereference 1
+                                :type ("Vector3FloatData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20351 20376]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [20322 20379])
+                    ("Matrix3x3DoubleData" type
+                       (:members 
+                          ( ("m_el" variable
+                               (:dereference 1
+                                :type ("Vector3DoubleData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20432 20458]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [20402 20461])
+                    ("serialize" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("Matrix3x3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20513 20543]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20487 20614])
+                    ("serializeFloat" function
+                       (:methodconst-flag t
+                        :parent "Matrix3x3"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("Matrix3x3FloatData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20667 20702]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20636 20778])
+                    ("deSerialize" function
+                       (:parent "Matrix3x3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20829 20864]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20801 20930])
+                    ("deSerializeFloat" function
+                       (:parent "Matrix3x3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3FloatData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20985 21025]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20952 21096])
+                    ("deSerializeDouble" function
+                       (:parent "Matrix3x3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix3x3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21152 21193]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21118 21265]))                  
+                :type "namespace")
+                nil [1008 21268]))          
+      :file "Matrix3x3.h"
+      :pointmax 21295
+      :fsize 21294
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((symbol 21098 . 21117) (symbol 20932 . 20951) (symbol 20781 . 20800) (symbol 20616 . 20635) (symbol 20467 . 20486) (symbol 19988 . 20007) (symbol 18913 . 18932) (symbol 18779 . 18798) (symbol 18639 . 18658) (symbol 18353 . 18372) (symbol 17561 . 17580) (symbol 17123 . 17142) (symbol 16865 . 16884) (symbol 16659 . 16678) (symbol 16380 . 16399) (symbol 16258 . 16277) (symbol 15987 . 16006) (symbol 12625 . 12644) (symbol 12484 . 12503) (symbol 12343 . 12362) (punctuation 9011 . 9012) (symbol 3220 . 3239) (symbol 3004 . 3023) (symbol 2781 . 2800) (symbol 2583 . 2602) (symbol 2320 . 2339) (EXPLICIT 1582 . 1590))
+      :lexical-table 
+        '(("Matrix3x3Data" . ((symbol "Matrix3x3DoubleData" 1047 . 1066)))
+          ("TF_MATRIX3x3_H")
+          )
+)
+    (semanticdb-table "Vector3.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_VECTOR3_H" variable (:constant-flag t) nil [945 957])
+            ("Scalar.h" include nil nil [960 979])
+            ("MinMax.h" include nil nil [980 999])
+            ("tf" type
+               (:members 
+                  ( ("Vector3Data" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1024 1035])
+                    ("Vector3DataName" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1062 1077])
+                    ("Vector3" variable (:type "int") (reparse-symbol namespacesubparts) [1485 11650])
+                    ("+" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11751 11769])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11770 11788]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11732 11909])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12009 12027])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12028 12046]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11990 12167])
+                    ("-" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12263 12281])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12282 12300]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12244 12420])
+                    ("-" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12507 12524]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12488 12593])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12677 12694])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12695 12713]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12658 12791])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12875 12893])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12894 12911]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12856 12932])
+                    ("/" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13025 13042])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13043 13061]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13007 13133])
+                    ("/" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13226 13244])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13245 13263]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13208 13381])
+                    ("tfDot" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13475 13493])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13494 13512]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13459 13539])
+                    ("tfDistance2" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13644 13662])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13663 13681]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13623 13714])
+                    ("tfDistance" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13810 13828])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13829 13847]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13790 13879])
+                    ("tfAngle" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13968 13986])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13987 14005]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13951 14034])
+                    ("tfCross" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14126 14144])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14145 14163]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14109 14192])
+                    ("tfTriple" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14232 14250])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14251 14269])
+                            ("v3" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14270 14288]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14214 14319])
+                    ("lerp" function
+                       (:arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14551 14569])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14570 14588])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14589 14607]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14537 14635])
+                    ("distance2" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14687 14704]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14659 14745])
+                    ("distance" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14794 14811]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14767 14851])
+                    ("normalized" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14873 14938])
+                    ("rotate" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("wAxis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14986 15007])
+                            ("angle" variable
+                               (:constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15008 15030]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14961 15243])
+                    ("tfVector4" type
+                       (:superclasses 
+                          ( ("Vector3" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [15280 15287])
+                            ("tfVector4" function
+                               (:constructor-flag t
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15290 15324])
+                            ("tfVector4" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15358 15376])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15377 15395])
+                                    ("z" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15396 15414])
+                                    ("w" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15414 15432]))                                  
+                                :type ("TFSIMD_FORCE_INLINE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15328 15477])
+                            ("absolute4" function
+                               (:methodconst-flag t
+                                :type ("tfVector4" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15501 15654])
+                            ("getW" function
+                               (:methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15659 15703])
+                            ("maxAxis4" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [15728 16163])
+                            ("minAxis4" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [16187 16614])
+                            ("closestAxis4" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [16638 16702])
+                            ("setValue" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17113 17131])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17132 17150])
+                                    ("z" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17151 17169])
+                                    ("w" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17169 17187]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17099 17267]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15245 17272])
+                    ("tfSwapScalarEndian" function
+                       (:arguments 
+                          ( ("sourceVal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17419 17445])
+                            ("destVal" variable
+                               (:reference 1
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17446 17464]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17395 17743])
+                    ("tfSwapVector3Endian" function
+                       (:arguments 
+                          ( ("sourceVec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17889 17914])
+                            ("destVec" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17915 17932]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17864 18013])
+                    ("tfUnSwapVector3Endian" function
+                       (:arguments 
+                          ( ("vector" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18164 18180]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18137 18304])
+                    ("tfPlaneSpace1" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18346 18363])
+                            ("p" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18364 18375])
+                            ("q" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18376 18387]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18326 18856])
+                    ("Vector3FloatData" type
+                       (:members 
+                          ( ("m_floats" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [18886 18904]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [18859 18907])
+                    ("Vector3DoubleData" type
+                       (:members 
+                          ( ("m_floats" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol classsubparts) [18937 18956]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [18909 18960])
+                    ("serializeFloat" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("Vector3FloatData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19011 19044]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18982 19173])
+                    ("deSerializeFloat" function
+                       (:parent "Vector3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3FloatData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19226 19264]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19195 19337])
+                    ("serializeDouble" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("Vector3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19390 19424]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19360 19554])
+                    ("deSerializeDouble" function
+                       (:parent "Vector3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19608 19647]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19576 19720])
+                    ("serialize" function
+                       (:methodconst-flag t
+                        :parent "Vector3"
+                        :arguments 
+                          ( ("dataOut" variable
+                               (:reference 1
+                                :type ("Vector3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19767 19795]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19743 19917])
+                    ("deSerialize" function
+                       (:parent "Vector3"
+                        :arguments 
+                          ( ("dataIn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3DoubleData" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19965 19998]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19939 20061]))                  
+                :type "namespace")
+                nil [1001 20064]))          
+      :file "Vector3.h"
+      :pointmax 20093
+      :fsize 20092
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((symbol 19919 . 19938) (symbol 19723 . 19742) (symbol 19556 . 19575) (symbol 19340 . 19359) (symbol 19175 . 19194) (symbol 18962 . 18981) (symbol 18306 . 18325) (symbol 18117 . 18136) (symbol 17844 . 17863) (symbol 17375 . 17394) (symbol 17079 . 17098) (symbol 16618 . 16637) (symbol 16167 . 16186) (symbol 15708 . 15727) (symbol 15481 . 15500) (symbol 14941 . 14960) (symbol 14853 . 14872) (symbol 14747 . 14766) (symbol 14639 . 14658) (symbol 14517 . 14536) (symbol 14194 . 14213) (symbol 14089 . 14108) (symbol 13931 . 13950) (symbol 13770 . 13789) (symbol 13603 . 13622) (symbol 13439 . 13458) (symbol 13188 . 13207) (symbol 12987 . 13006) (symbol 12836 . 12855) (symbol 12638 . 12657) (symbol 12468 . 12487) (symbol 12224 . 12243) (symbol 11970 . 11989) (symbol 11712 . 11731) (semantic-list 1477 . 1484) (symbol 1458 . 1477))
+      :lexical-table 
+        '(("Vector3DataName" . ((string "\"Vector3DoubleData\"" 1078 . 1097)))
+          ("TF_VECTOR3_H")
+          ("Vector3Data" . ((symbol "Vector3DoubleData" 1036 . 1053)))
+          )
+)
+    (semanticdb-table "Quaternion.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_QUATERNION_H_" variable (:constant-flag t) nil [949 965])
+            ("Vector3.h" include nil nil [968 988])
+            ("QuadWord.h" include nil nil [989 1010])
+            ("tf" type
+               (:members 
+                  ( ("Quaternion" type
+                       (:superclasses 
+                          ( ("QuadWord" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1205 1212])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1259 1274])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1432 1450])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1451 1469])
+                                    ("z" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1470 1488])
+                                    ("w" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1489 1507]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1421 1538])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("axis" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1719 1739])
+                                    ("angle" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1740 1762]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1708 1799])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2083 2103])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2104 2126])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2127 2148]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2072 2285])
+                            ("setRotation" function
+                               (:arguments 
+                                  ( ("axis" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2471 2491])
+                                    ("angle" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2492 2514]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2454 2719])
+                            ("setEuler" function
+                               (:arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2884 2904])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2905 2927])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2928 2949]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2870 3608])
+                            ("setRPY" function
+                               (:arguments 
+                                  ( ("roll" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3774 3795])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3796 3818])
+                                    ("yaw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3819 3839]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3762 4591])
+                            ("setEulerZYX" function
+                               (:arguments 
+                                  ( ("yaw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4761 4781])
+                                    ("pitch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4782 4804])
+                                    ("roll" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4805 4826]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4744 4896])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5024 5044]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5001 5164])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5286 5306]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5263 5427])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5527 5545]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5504 5641])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5796 5816]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5773 6239])
+                            ("dot" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6363 6383]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6350 6499])
+                            ("length2" function
+                               (:methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6561 6612])
+                            ("length" function
+                               (:methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6666 6723])
+                            ("normalize" function (:type ("Quaternion" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6807 6865])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6999 7017]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6977 7094])
+                            ("/" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7226 7244]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7205 7326])
+                            ("/=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7430 7448]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7407 7524])
+                            ("normalized" function
+                               (:methodconst-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7589 7652])
+                            ("angle" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7787 7807]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7772 7929])
+                            ("angleShortestPath" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8084 8104]))                                  
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8057 8387])
+                            ("getAngle" function
+                               (:methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8464 8559])
+                            ("getAngleShortestPath" function
+                               (:methodconst-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8659 8845])
+                            ("getAxis" function
+                               (:methodconst-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8925 9254])
+                            ("inverse" function
+                               (:methodconst-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9309 9417])
+                            ("+" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("q2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9562 9583]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9540 9732])
+                            ("-" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("q2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9889 9910]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9867 10059])
+                            ("-" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10175 10313])
+                            ("farthest" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("qd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10397 10418]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10376 10563])
+                            ("nearest" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("qd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10646 10667]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10626 10812])
+                            ("slerp" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11184 11204])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tfScalar" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11205 11223]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11167 12354])
+                            ("getIdentity" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12357 12517])
+                            ("getW" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12540 12592]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1168 12598])
+                    ("-" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12691 12711]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12670 12767])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("q1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12863 12884])
+                            ("q2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12885 12906]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12842 13221])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13264 13284])
+                            ("w" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13285 13302]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13243 13523])
+                    ("" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("w" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13566 13583])
+                            ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13584 13604]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13545 13825])
+                    ("dot" function
+                       (:arguments 
+                          ( ("q1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13924 13945])
+                            ("q2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13946 13967]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13910 13994])
+                    ("length" function
+                       (:arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14080 14100]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14064 14127])
+                    ("angle" function
+                       (:arguments 
+                          ( ("q1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14228 14249])
+                            ("q2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14250 14271]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14213 14300])
+                    ("angleShortestPath" function
+                       (:arguments 
+                          ( ("q1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14411 14432])
+                            ("q2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14433 14454]))                          
+                        :type ("tfScalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14384 14495])
+                    ("inverse" function
+                       (:arguments 
+                          ( ("q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14583 14603]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14564 14629])
+                    ("slerp" function
+                       (:arguments 
+                          ( ("q1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14957 14978])
+                            ("q2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14979 15000])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tfScalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15001 15019]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14940 15049])
+                    ("quatRotate" function
+                       (:arguments 
+                          ( ("rotation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15091 15118])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15119 15136]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15071 15242])
+                    ("shortestArcQuat" function
+                       (:arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15292 15310])
+                            ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15311 15329]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15264 15767])
+                    ("shortestArcQuatNormalize2" function
+                       (:arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15827 15839])
+                            ("v1" variable
+                               (:reference 1
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15839 15851]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15789 15921]))                  
+                :type "namespace")
+                nil [1012 15924]))          
+      :file "Quaternion.h"
+      :pointmax 15936
+      :fsize 15935
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((symbol 15769 . 15788) (symbol 15244 . 15263) (symbol 15051 . 15070) (symbol 14920 . 14939) (symbol 14544 . 14563) (symbol 14364 . 14383) (symbol 14193 . 14212) (symbol 14044 . 14063) (symbol 13890 . 13909) (symbol 13525 . 13544) (symbol 13223 . 13242) (symbol 12822 . 12841) (symbol 12650 . 12669) (symbol 12520 . 12539) (symbol 10606 . 10625) (symbol 10356 . 10375) (symbol 10155 . 10174) (symbol 9847 . 9866) (symbol 9520 . 9539) (symbol 6957 . 6976) (symbol 4981 . 5000))
+      :lexical-table 
+        '(("TF_QUATERNION_H_")
+          )
+)
+    (semanticdb-table "Scalar.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_SCALAR_H" variable (:constant-flag t) nil [914 925])
+            ("math.h" include (:system-flag t) nil [1028 1045])
+            ("stdlib.h" include (:system-flag t) nil [1046 1065])
+            ("cstdlib" include (:system-flag t) nil [1087 1105])
+            ("cfloat" include (:system-flag t) nil [1106 1123])
+            ("float.h" include (:system-flag t) nil [1124 1142])
+            ("TFSIMD_FORCE_INLINE" variable (:constant-flag t) nil [3628 3647])
+            ("ATTRIBUTE_ALIGNED16" variable (:constant-flag t) nil [3944 3963])
+            ("ATTRIBUTE_ALIGNED64" variable (:constant-flag t) nil [3979 3998])
+            ("ATTRIBUTE_ALIGNED128" variable (:constant-flag t) nil [4014 4034])
+            ("assert.h" include (:system-flag t) nil [4057 4078])
+            ("tfAssert" variable (:constant-flag t) nil [4170 4178])
+            ("tfFullAssert" variable (:constant-flag t) nil [4247 4259])
+            ("tfLikely" variable (:constant-flag t) nil [4273 4281])
+            ("tfUnlikely" variable (:constant-flag t) nil [4300 4310])
+            ("tfScalar" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [4495 4519])
+            ("TF_LARGE_FLOAT" variable (:constant-flag t) nil [4578 4592])
+            ("TF_DECLARE_ALIGNED_ALLOCATOR" variable (:constant-flag t) nil [4609 4637])
+            ("tfSqrt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5408 5419]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5372 5439])
+            ("tfFabs" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5476 5487]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5440 5507])
+            ("tfCos" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5543 5554]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5508 5573])
+            ("tfSin" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5609 5620]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5574 5639])
+            ("tfTan" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5675 5686]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5640 5705])
+            ("tfAcos" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5742 5753]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5706 5843])
+            ("tfAsin" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5880 5891]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5844 5981])
+            ("tfAtan" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6018 6029]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [5982 6049])
+            ("tfAtan2" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6087 6098])
+                    ("y" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6099 6110]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6050 6134])
+            ("tfExp" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6170 6181]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6135 6200])
+            ("tfLog" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6236 6247]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6201 6266])
+            ("tfPow" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6302 6313])
+                    ("y" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6313 6324]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6267 6345])
+            ("tfFmod" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6382 6393])
+                    ("y" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6393 6404]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6346 6426])
+            ("TFSIMD_2_PI" variable (:constant-flag t) nil [6437 6448])
+            ("TFSIMD_PI" variable (:constant-flag t) nil [6496 6505])
+            ("TFSIMD_HALF_PI" variable (:constant-flag t) nil [6554 6568])
+            ("TFSIMD_RADS_PER_DEG" variable (:constant-flag t) nil [6613 6632])
+            ("TFSIMD_DEGS_PER_RAD" variable (:constant-flag t) nil [6673 6692])
+            ("TFSIMDSQRT12" variable (:constant-flag t) nil [6734 6746])
+            ("tfRecipSqrt" variable (:constant-flag t) nil [6803 6814])
+            ("TFSIMD_EPSILON" variable (:constant-flag t) nil [6906 6920])
+            ("TFSIMD_INFINITY" variable (:constant-flag t) nil [6946 6961])
+            ("tfAtan2Fast" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("y" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7016 7027])
+                    ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7028 7039]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [6975 7382])
+            ("tfFuzzyZero" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7426 7437]))                  
+                :type "bool")
+                nil [7384 7476])
+            ("tfEqual" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7511 7522])
+                    ("eps" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7523 7536]))                  
+                :type "bool")
+                nil [7478 7581])
+            ("tfGreaterEqual" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7623 7634])
+                    ("eps" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7635 7648]))                  
+                :type "bool")
+                nil [7582 7677])
+            ("tfIsNegative" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7723 7734]))                  
+                :type "int")
+                nil [7680 7776])
+            ("tfRadians" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7817 7828]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [7778 7864])
+            ("tfDegrees" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7904 7915]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [7865 7951])
+            ("TF_DECLARE_HANDLE" variable (:constant-flag t) nil [7961 7978])
+            ("tfFsel" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8083 8094])
+                    ("b" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8095 8106])
+                    ("c" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8107 8118]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [8047 8146])
+            ("tfFsels" variable (:constant-flag t) nil [8162 8169])
+            ("tfMachineIsLittleEndian" function
+               (:typemodifiers ("inline")
+                :type "bool")
+                nil [8203 8430])
+            ("tfSelect" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("condition" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8700 8719])
+                    ("valueIfConditionNonZero" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8720 8753])
+                    ("valueIfConditionZero" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8754 8784]))                  
+                :type "unsigned int")
+                nil [8662 9310])
+            ("tfSelect" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("condition" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9344 9363])
+                    ("valueIfConditionNonZero" variable (:type "int") (reparse-symbol arg-sub-list) [9364 9392])
+                    ("valueIfConditionZero" variable (:type "int") (reparse-symbol arg-sub-list) [9393 9418]))                  
+                :type "int")
+                nil [9311 9631])
+            ("tfSelect" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("condition" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9667 9686])
+                    ("valueIfConditionNonZero" variable (:type "float") (reparse-symbol arg-sub-list) [9687 9717])
+                    ("valueIfConditionZero" variable (:type "float") (reparse-symbol arg-sub-list) [9718 9745]))                  
+                :type "float")
+                nil [9632 9979])
+            ("tfSwap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10034 10039])
+                    ("b" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10040 10045]))                  
+                :typemodifiers ("inline"))
+                nil [9981 10079])
+            ("tfSwapEndian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("val" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10157 10170]))                  
+                :type "unsigned int")
+                nil [10115 10298])
+            ("tfSwapEndian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("val" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [10348 10367]))                  
+                :type "unsigned short")
+                nil [10300 10455])
+            ("tfSwapEndian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [10499 10507]))                  
+                :type "unsigned int")
+                nil [10457 10548])
+            ("tfSwapEndian" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("val" variable (:type "short") (reparse-symbol arg-sub-list) [10598 10608]))                  
+                :type "unsigned short")
+                nil [10550 10656])
+            ("tfSwapEndianFloat" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("d" variable (:type "float") (reparse-symbol arg-sub-list) [11343 11351]))                  
+                :type "unsigned int")
+                nil [11291 11570])
+            ("tfUnswapEndianFloat" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11648 11663]))                  
+                :type "float")
+                nil [11602 11880])
+            ("tfSwapEndianDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("d" variable (:type "double") (reparse-symbol arg-sub-list) [11956 11965])
+                    ("dst" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [11966 11985]))                  
+                :type "void")
+                nil [11911 12205])
+            ("tfUnswapEndianDouble" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12285 12310]))                  
+                :type "double")
+                nil [12237 12562])
+            ("tfNormalizeAngle" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("angleInRadians" variable (:type ("tfScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12671 12695]))                  
+                :type ("tfScalar" type (:type "class") nil nil))
+                nil [12625 12952])
+            ("tfTypedObject" type
+               (:members 
+                  ( ("tfTypedObject" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("objectType" variable (:type "int") (reparse-symbol arg-sub-list) [13034 13049]))                          
+                        :type ("tfTypedObject" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [13020 13083])
+                    ("m_objectType" variable (:type "int") (reparse-symbol classsubparts) [13085 13102])
+                    ("getObjectType" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [13104 13165]))                  
+                :type "struct")
+                nil [12996 13168]))          
+      :file "Scalar.h"
+      :pointmax 13196
+      :fsize 13195
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("tfFullAssert" (spp-arg-list ("x") 4259 . 4262))
+          ("tfUnlikely" (spp-arg-list ("_c") 4310 . 4314) . ((symbol "_c" 4315 . 4317)))
+          ("TFSIMD_RADS_PER_DEG" . ((semantic-list "(TFSIMD_2_PI / tfScalar(360.0))" 6633 . 6664)))
+          ("TFSIMD_DEGS_PER_RAD" . ((semantic-list "(tfScalar(360.0) / TFSIMD_2_PI)" 6694 . 6725)))
+          ("TFSIMDSQRT12" . ((symbol "tfScalar" 6747 . 6755) (semantic-list "(0.7071067811865475244008443621048490)" 6755 . 6793)))
+          ("TFSIMD_PI" . ((semantic-list "(TFSIMD_2_PI * tfScalar(0.5))" 6516 . 6545)))
+          ("ATTRIBUTE_ALIGNED128" (spp-arg-list ("a") 4034 . 4037) . ((symbol "a" 4038 . 4039)))
+          ("tfAssert" (spp-arg-list ("x") 4178 . 4181))
+          ("ATTRIBUTE_ALIGNED16" (spp-arg-list ("a") 3963 . 3966) . ((symbol "a" 3967 . 3968)))
+          ("ATTRIBUTE_ALIGNED64" (spp-arg-list ("a") 3998 . 4001) . ((symbol "a" 4002 . 4003)))
+          ("tfFsels" (spp-arg-list ("a" "b" "c") 8169 . 8176) . 
+              ((semantic-list "(tfScalar)" 8177 . 8187) (symbol "tfFsel" 8187 . 8193) (semantic-list "(a,b,c)" 8193 . 8200)))
+          ("TFSIMD_HALF_PI" . ((semantic-list "(TFSIMD_2_PI * tfScalar(0.25))" 6574 . 6604)))
+          ("TFSIMD_EPSILON" . ((symbol "DBL_EPSILON" 6926 . 6937)))
+          ("TF_DECLARE_ALIGNED_ALLOCATOR" (spp-arg-list nil 4637 . 4639) . 
+              ((symbol "TFSIMD_FORCE_INLINE" 4645 . 4664) (VOID "void" 4665 . 4669) (punctuation "*" 4669 . 4670) (OPERATOR "operator" 4671 . 4679) (NEW "new" 4680 . 4683) (semantic-list "(size_t sizeInBytes)" 4683 . 4703) (semantic-list "{ return tfAlignedAlloc(sizeInBytes,16); }" 4706 . 4748) (symbol "TFSIMD_FORCE_INLINE" 4756 . 4775) (VOID "void" 4776 . 4780) (OPERATOR "operator" 4782 . 4790) (DELETE "delete" 4791 . 4797) (semantic-list "(void* ptr)" 4797 . 4808) (semantic-list "{ tfAlignedFree(ptr); }" 4817 . 4840) (symbol "TFSIMD_FORCE_INLINE" 4848 . 4867) (VOID "void" 4868 . 4872) (punctuation "*" 4872 . 4873) (OPERATOR "operator" 4874 . 4882) (NEW "new" 4883 . 4886) (semantic-list "(size_t, void* ptr)" 4886 . 4905) (semantic-list "{ return ptr; }" 4908 . 4923) (symbol "TFSIMD_FORCE_INLINE" 4931 . 4950) (VOID "void" 4951 . 4955) (OPERATOR "operator" 4957 . 4965) (DELETE "delete" 4966 . 4972) (semantic-list "(void*, void*)" 4972 . 4986) (semantic-list "{ }" 4992 . 4995) (symbol "TFSIMD_FORCE_INLINE" 5003 . 5022) (VOID "void" 5023 . 5027) (punctuation "*" 5027 . 5028) (OPERATOR "operator" 5029 . 5037) (NEW "new" 5038 . 5041) (semantic-list "[]" 5041 . 5043) (semantic-list "(size_t sizeInBytes)" 5043 . 5063) (semantic-list "{ return tfAlignedAlloc(sizeInBytes,16); }" 5066 . 5108) (symbol "TFSIMD_FORCE_INLINE" 5116 . 5135) (VOID "void" 5136 . 5140) (OPERATOR "operator" 5142 . 5150) (DELETE "delete" 5151 . 5157) (semantic-list "[]" 5157 . 5159) (semantic-list "(void* ptr)" 5159 . 5170) (semantic-list "{ tfAlignedFree(ptr); }" 5179 . 5202) (symbol "TFSIMD_FORCE_INLINE" 5210 . 5229) (VOID "void" 5230 . 5234) (punctuation "*" 5234 . 5235) (OPERATOR "operator" 5236 . 5244) (NEW "new" 5245 . 5248) (semantic-list "[]" 5248 . 5250) (semantic-list "(size_t, void* ptr)" 5250 . 5269) (semantic-list "{ return ptr; }" 5272 . 5287) (symbol "TFSIMD_FORCE_INLINE" 5295 . 5314) (VOID "void" 5315 . 5319) (OPERATOR "operator" 5321 . 5329) (DELETE "delete" 5330 . 5336) (semantic-list "[]" 5336 . 5338) (semantic-list "(void*, void*)" 5338 . 5352) (semantic-list "{ }" 5358 . 5361)))
+          ("TF_LARGE_FLOAT" . ((number "1e30" 4593 . 4597)))
+          ("TF_SCALAR_H")
+          ("TFSIMD_2_PI" . ((symbol "tfScalar" 6457 . 6465) (semantic-list "(6.283185307179586232)" 6465 . 6487)))
+          ("tfRecipSqrt" (spp-arg-list ("x") 6814 . 6817) . ((semantic-list "((tfScalar)(tfScalar(1.0)/tfSqrt(tfScalar(x))))" 6818 . 6865)))
+          ("TF_DECLARE_HANDLE" (spp-arg-list ("name") 7978 . 7984) . 
+              ((TYPEDEF "typedef" 7985 . 7992) (STRUCT "struct" 7993 . 7999) (spp-symbol-merge ((symbol "name" 8000 . 8004) (symbol "__" 8006 . 8008)) 8000 . 8008) (semantic-list "{ int unused; }" 8009 . 8024) (punctuation "*" 8025 . 8026) (symbol "name" 8026 . 8030)))
+          ("TFSIMD_FORCE_INLINE" . ((INLINE "inline" 3648 . 3654)))
+          ("tfLikely" (spp-arg-list ("_c") 4281 . 4285) . ((symbol "_c" 4287 . 4289)))
+          ("TFSIMD_INFINITY" . ((symbol "DBL_MAX" 6966 . 6973)))
+          )
+)
+    (semanticdb-table "MinMax.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_MINMAX_H" variable (:constant-flag t) nil [944 955])
+            ("tfMin" function
+               (:constant-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1011 1022])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1023 1034]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [996 1064])
+            ("tfMax" function
+               (:constant-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1120 1131])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1132 1143]))                  
+                :type ("T" type (:type "class") nil nil))
+                nil [1105 1173])
+            ("tfSetMin" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1229 1234])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1235 1246]))                  
+                :type "void")
+                nil [1215 1282])
+            ("tfSetMax" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1337 1342])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1343 1354]))                  
+                :type "void")
+                nil [1323 1390]))          
+      :file "MinMax.h"
+      :pointmax 1400
+      :fsize 1399
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((symbol 1303 . 1322) (punctuation 1301 . 1302) (symbol 1300 . 1301) (CLASS 1294 . 1299) (punctuation 1293 . 1294) (TEMPLATE 1284 . 1292) (symbol 1195 . 1214) (punctuation 1193 . 1194) (symbol 1192 . 1193) (CLASS 1186 . 1191) (punctuation 1185 . 1186) (TEMPLATE 1176 . 1184) (symbol 1085 . 1104) (punctuation 1083 . 1084) (symbol 1082 . 1083) (CLASS 1076 . 1081) (punctuation 1075 . 1076) (TEMPLATE 1066 . 1074) (symbol 976 . 995) (punctuation 974 . 975) (symbol 973 . 974) (CLASS 967 . 972) (punctuation 966 . 967) (TEMPLATE 957 . 965))
+      :lexical-table 
+        '(("TF_MINMAX_H")
+          )
+)
+    (semanticdb-table "QuadWord.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TF_QUADWORD_H" variable (:constant-flag t) nil [945 958])
+            ("Scalar.h" include nil nil [960 979])
+            ("MinMax.h" include nil nil [980 999])
+            ("tf" type
+               (:members 
+                  ( ("QuadWord" variable (:type "int") (reparse-symbol namespacesubparts) [1317 5976]))                  
+                :type "namespace")
+                nil [1080 5979]))          
+      :file "QuadWord.h"
+      :pointmax 6008
+      :fsize 6007
+      :lastmodtime '(21390 50981 0 0)
+      :unmatched-syntax '((semantic-list 1309 . 1316) (symbol 1290 . 1309))
+      :lexical-table 
+        '(("TF_QUADWORD_H")
+          )
+))
+  :file "!opt!ros!hydro!include!tf!LinearMath!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

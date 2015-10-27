@@ -1,0 +1,671 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("parameters.h" include nil nil [218 241])
+            ("capture.h" include nil nil [242 262])
+            ("iostream" include (:system-flag t) nil [264 283])
+            ("fstream" include (:system-flag t) nil [284 302])
+            ("string" include (:system-flag t) nil [303 320])
+            ("vector" include (:system-flag t) nil [321 338])
+            ("cv.h" include nil nil [340 355])
+            ("cxcore.h" include nil nil [356 375])
+            ("cvaux.h" include nil nil [376 394])
+            ("highgui.h" include nil nil [395 415])
+            ("features.h" include nil nil [417 438])
+            ("fern.h" include nil nil [439 456])
+            ("utilities.h" include nil nil [457 479])
+            ("sys/stat.h" include (:system-flag t) nil [481 502])
+            ("STEP_WIDTH" variable (:constant-flag t) nil [512 522])
+            ("SHIFT_TO_CENTER" variable (:constant-flag t) nil [533 548])
+            ("SEARCH_WINDOW" variable (:constant-flag t) nil [557 570])
+            ("GRABCUT_ROUNDS" variable (:constant-flag t) nil [582 596])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [600 620])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [621 640])
+            ("update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ferns" variable
+                       (:reference 1
+                        :type ("Ferns" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [654 667])
+                    ("ft" variable
+                       (:reference 1
+                        :type ("Features" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [668 681])
+                    ("ROI" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [682 698])
+                    ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [699 718])
+                    ("center" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [719 739])
+                    ("mask" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [740 750]))                  
+                :type "void")
+                nil [642 751])
+            ("showResult" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [768 779])
+                    ("backprojected" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [780 799])
+                    ("ROI" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [800 816])
+                    ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [817 836])
+                    ("frameNr" variable (:type "int") (reparse-symbol arg-sub-list) [837 849])
+                    ("seq_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [850 871]))                  
+                :type "void")
+                nil [752 872])
+            ("showSegmentation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("backproject" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [895 912])
+                    ("title" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [913 931]))                  
+                :type "void")
+                nil [873 932])
+            ("centerOfMass" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mask" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 962]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [933 963])
+            ("squarify" function
+               (:prototype-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("object" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [985 997])
+                    ("searchFactor" variable (:type "double") (reparse-symbol arg-sub-list) [998 1018]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [964 1019])
+            ("getBoundingBox" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("backproject" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1040 1057]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [1020 1058])
+            ("makeBinarySegmentation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("backproject" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1087 1104]))                  
+                :type "void")
+                nil [1059 1105])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1118 1127])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1128 1141]))                  
+                :type "int")
+                nil [1107 7219])
+            ("configfilename" variable
+               (:default-value "std::string ( argv[1] )"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1248 1301])
+            ("std::endl" variable (:type "int") nil [1395 1405])
+            ("std::endl" variable (:type "int") nil [1465 1475])
+            ("hp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("configfilename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1494 1510]))                  
+                :type ("Parameters" type (:type "class") nil nil))
+                nil [1478 1511])
+            ("seq_name" variable
+               (:default-value "hp.readStringParameter(\"Tracker.Name\")"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1513 1575])
+            ("maxScale" variable
+               (:default-value "static_cast<float>(hp.readDoubleParameter(\"Tracker.maxScale\"))"
+                :type "float")
+                nil [1577 1657])
+            ("backProjectRadius" variable
+               (:default-value "0.5"
+                :type "float")
+                nil [1659 1689])
+            ("backProjectminProb" variable
+               (:default-value "0.5"
+                :type "float")
+                nil [1691 1722])
+            ("capture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1741 1744]))                  
+                :type ("Capture" type (:type "class") nil nil))
+                nil [1725 1754])
+            ("loadFrame" function
+               (:prototype-flag t
+                :type "int")
+                nil [1764 1776])
+            ("object" variable (:type ("Rect" type (:type "class") nil nil)) nil [1778 1790])
+            ("object" variable
+               (:default-value "hp.readRectParameter(\"Tracker.startRegion\")"
+                :type "int")
+                nil [1840 1893])
+            ("object" variable
+               (:default-value "capture.markRegion()"
+                :type "int")
+                nil [1902 1932])
+            ("frame" variable
+               (:default-value "capture.getFrame()"
+                :type ("Mat" type (:type "class") nil nil))
+                nil [1936 1967])
+            ("namedWindow" function
+               (:prototype-flag t
+                :type "int")
+                nil [1969 1991])
+            ("max_object" variable (:type ("Rect" type (:type "class") nil nil)) nil [1994 2010])
+            ("imgSize" variable
+               (:default-value "Size(frame.cols, frame.rows)"
+                :type ("Size" type (:type "class") nil nil))
+                nil [2012 2056])
+            ("baseSize" variable
+               (:default-value "12"
+                :type "int")
+                nil [2058 2076])
+            ("imgRect" variable
+               (:default-value "Rect(baseSize/2, baseSize/2, imgSize.width-baseSize, imgSize.height-baseSize)"
+                :type ("Rect" type (:type "class") nil nil))
+                nil [2078 2171])
+            ("trackedPositions" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("Rect" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [2173 2208])
+            ("ft" variable (:type ("Features" type (:type "class") nil nil)) nil [2212 2224])
+            ("setImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("frame" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2244]))                  
+                :type "int")
+                nil [2229 2245])
+            ("result" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("imgSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2258 2266])
+                    ("" variable (:type ("height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2266 2273])
+                    ("" variable (:type ("imgSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2274 2282])
+                    ("" variable (:type ("width" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2282 2288])
+                    ("" variable (:type ("CV_32FC1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2298])
+                    ("" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2299 2311]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [2247 2313])
+            ("backproject" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("imgSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2333 2341])
+                    ("" variable (:type ("height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2341 2348])
+                    ("" variable (:type ("imgSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2349 2357])
+                    ("" variable (:type ("width" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2357 2363])
+                    ("" variable (:type ("CV_8UC1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2364 2372])
+                    ("" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2373 2387]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [2316 2390])
+            ("rectangle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("backproject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2402 2414])
+                    ("" variable (:type ("cvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2415 2448])
+                    ("" variable (:type ("cvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2450 2510])
+                    ("" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2529]))                  
+                :type "int")
+                nil [2392 2535])
+            ("rectangle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("backproject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2547 2559])
+                    ("" variable (:type ("cvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2560 2587])
+                    ("" variable (:type ("cvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2589 2643])
+                    ("" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2645 2659]))                  
+                :type "int")
+                nil [2537 2665])
+            ("ferns" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2685 2709])
+                    ("" variable (:type ("ft" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2714 2717])
+                    ("" variable (:type ("getNumChannels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2717 2733]))                  
+                :type ("Ferns" type (:type "class") nil nil))
+                nil [2669 2735])
+            ("max_object" variable
+               (:default-value "intersect( imgRect, squarify(object, maxScale))"
+                :type "int")
+                nil [2739 2800])
+            ("minVal" variable (:type "double") nil [2802 2831])
+            ("maxVal" variable
+               (:default-value "6.0f"
+                :type "double")
+                nil [2802 2831])
+            ("minLoc" variable (:type ("Point" type (:type "class") nil nil)) nil [2833 2854])
+            ("maxLoc" variable (:type ("Point" type (:type "class") nil nil)) nil [2833 2854])
+            ("translation" variable (:type ("Point" type (:type "class") nil nil)) nil [2856 2874])
+            ("center" variable
+               (:default-value "getCenter(object)"
+                :type ("Point" type (:type "class") nil nil))
+                nil [2876 2909])
+            ("maxLoc" variable
+               (:default-value "center"
+                :type "int")
+                nil [2911 2927])
+            ("std::endl" variable (:type "int") nil [3046 3056])
+            ("updateRegion" variable
+               (:default-value "intersect(max_object + Size(40,40) - Point(20,20), imgRect)"
+                :type ("Rect" type (:type "class") nil nil))
+                nil [3059 3139])
+            ("update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ferns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3192 3198])
+                    ("" variable (:type ("ft" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3199 3202])
+                    ("" variable (:type ("updateRegion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3203 3216])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3217 3224])
+                    ("" variable (:type ("center" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3225 3232])
+                    ("" variable (:type ("backproject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3233 3245]))                  
+                :type "int")
+                nil [3185 3246])
+            ("push_back" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3275 3282]))                  
+                :type "int")
+                nil [3265 3283])
+            ("mkdir" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("seq_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3293 3302])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3302 3309]))                  
+                :type "int")
+                nil [3286 3317])
+            ("display" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("frame" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3331 3337]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [3319 3338])
+            ("rectangle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3350 3358])
+                    ("" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3359 3384])
+                    ("" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3386 3438])
+                    ("" variable (:type ("CV_RGB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3440 3455]))                  
+                :type "int")
+                nil [3340 3461])
+            ("filename" variable
+               (:default-value "createFilename((seq_name + \"/init-\"), 0, \".jpg\")"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3463 3535])
+            ("imwrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("filename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3545 3554])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3554 3561])
+                    ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3563 3571]))                  
+                :type "int")
+                nil [3537 3572])
+            ("frameNr" variable
+               (:default-value "0"
+                :type "int")
+                nil [3575 3591])
+            ("Point" function
+               (:prototype-flag t
+                :type "int")
+                nil [3662 3701])
+            ("ft_clocks" variable
+               (:default-value "0"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3705 3727])
+            ("det_clocks" variable
+               (:default-value "0"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3729 3752])
+            ("bp_clocks" variable
+               (:default-value "0"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3754 3776])
+            ("seg_clocks" variable
+               (:default-value "0"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3778 3801])
+            ("up_clocks" variable
+               (:default-value "0"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3803 3825])
+            ("clocks_start" variable (:type ("clock_t" type (:type "class") nil nil)) nil [3829 3850])
+            ("std::endl" variable (:type "int") nil [3887 3897])
+            ("std::endl" variable (:type "int") nil [6664 6674])
+            ("std::endl" variable (:type "int") nil [6768 6778])
+            ("std::endl" variable (:type "int") nil [6863 6873])
+            ("std::endl" variable (:type "int") nil [6962 6972])
+            ("std::endl" variable (:type "int") nil [7060 7070])
+            ("std::endl" variable (:type "int") nil [7164 7174])
+            ("writeResult" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("trackedPositions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7189 7206])
+                    ("" variable (:type ("seq_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7207 7216]))                  
+                :type "int")
+                nil [7177 7217])
+            ("display" variable
+               (:pointer 1
+                :default-value "cvCreateImage(Size(backproject.cols, backproject.rows), IPL_DEPTH_8U, 3 )"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [7283 7377])
+            ("cvZero" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7386 7394]))                  
+                :type "int")
+                nil [7379 7395])
+            ("cvNamedWindow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("title" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8294 8300])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8300 8307]))                  
+                :type "int")
+                nil [8280 8309])
+            ("cvShowImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("title" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8323 8329])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8329 8336])
+                    ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8338 8346]))                  
+                :type "int")
+                nil [8311 8347])
+            ("cvReleaseImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8365 8373]))                  
+                :type "int")
+                nil [8349 8374])
+            ("updates" variable
+               (:pointer 1
+                :default-value "cvCreateImage(ft.getSize(), IPL_DEPTH_8U, 3)"
+                :type ("IplImage" type (:type "class") nil nil))
+                nil [8492 8557])
+            ("cvZero" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("updates" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8566 8574]))                  
+                :type "int")
+                nil [8559 8575])
+            ("numPos" variable
+               (:default-value "0"
+                :type "int")
+                nil [8578 8593])
+            ("numNeg" variable
+               (:default-value "0"
+                :type "int")
+                nil [8595 8610])
+            ("forget" function
+               (:prototype-flag t
+                :type "int")
+                nil [9158 9171])
+            ("cvNamedWindow" function
+               (:prototype-flag t
+                :type "int")
+                nil [9173 9198])
+            ("cvShowImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("updates" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9223 9231]))                  
+                :type "int")
+                nil [9200 9232])
+            ("cvReleaseImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("updates" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9250 9258]))                  
+                :type "int")
+                nil [9234 9259])
+            ("std::endl" variable (:type "int") nil [9359 9369])
+            ("display" variable
+               (:default-value "frame.clone()"
+                :type ("Mat" type (:type "class") nil nil))
+                nil [9494 9522])
+            ("overlay" variable
+               (:default-value "backproject.clone()"
+                :type ("Mat" type (:type "class") nil nil))
+                nil [9525 9559])
+            ("contour" variable
+               (:default-value "overlay.clone()"
+                :type ("Mat" type (:type "class") nil nil))
+                nil [9852 9882])
+            ("erode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9890 9898])
+                    ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9899 9907])
+                    ("" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9908 9913])
+                    ("" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9915 9928]))                  
+                :type "int")
+                nil [9884 9933])
+            ("dilate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9942 9950])
+                    ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9951 9959])
+                    ("" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9960 9965])
+                    ("" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9967 9980]))                  
+                :type "int")
+                nil [9935 9985])
+            ("erode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9993 10001])
+                    ("" variable (:type ("contour" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10002 10010])
+                    ("" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10011 10016])
+                    ("" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10018 10031]))                  
+                :type "int")
+                nil [9987 10036])
+            ("overlay" variable (:type "int") nil [10049 10057])
+            ("namedWindow" function
+               (:prototype-flag t
+                :type "int")
+                nil [10580 10604])
+            ("imshow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10625 10633]))                  
+                :type "int")
+                nil [10606 10634])
+            ("filename" variable
+               (:default-value "createFilename((seq_name + \"/track-\"), frameNr, \".jpg\")"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [10636 10715])
+            ("imwrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("filename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10725 10734])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10734 10741])
+                    ("" variable (:type ("display" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10743 10751]))                  
+                :type "int")
+                nil [10717 10752])
+            ("c_x" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [10789 10806])
+            ("c_y" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [10808 10825])
+            ("c_n" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [10827 10844])
+            ("Point" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("static_cast" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [11092 11124])
+                    ("" variable (:type ("static_cast" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [11126 11158]))                  
+                :type "int")
+                nil [11085 11160])
+            ("len" variable
+               (:default-value "max(object.width * searchFactor, object.height * searchFactor)"
+                :type "int")
+                nil [11222 11295])
+            ("Rect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11310 11317])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11317 11320])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11321 11328])
+                    ("" variable (:type ("width" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11328 11334])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11338 11342])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11345 11352])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11352 11355])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11356 11363])
+                    ("" variable (:type ("height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11363 11370])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11374 11378])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11381 11385])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11386 11391]))                  
+                :type "int")
+                nil [11304 11392])
+            ("min" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("backproject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11447 11459])
+                    ("" variable (:type ("cols" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11459 11464])
+                    ("" variable (:type ("backproject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11464 11476])
+                    ("" variable (:type ("rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11476 11481]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [11437 11482])
+            ("max" function
+               (:prototype-flag t
+                :type ("Point" type (:type "class") nil nil))
+                nil [11484 11499])
+            ("Rect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("min" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11852 11856])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11856 11858])
+                    ("" variable (:type ("min" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11859 11863])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11863 11865])
+                    ("" variable (:type ("max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11866 11870])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11870 11873])
+                    ("" variable (:type ("min" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11874 11878])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11878 11880])
+                    ("" variable (:type ("max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11881 11885])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11885 11888])
+                    ("" variable (:type ("min" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11889 11893])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11893 11895]))                  
+                :type "int")
+                nil [11847 11896])
+            ("rawTime" variable
+               (:default-value "time ( NULL )"
+                :type ("time_t" type (:type "class") nil nil))
+                nil [12559 12590])
+            ("locTime" variable
+               (:pointer 1
+                :default-value "localtime ( &rawTime )"
+                :type ("tm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12592 12636])
+            ("timeStamp" variable
+               (:dereference 1
+                :type "char")
+                nil [12638 12657])
+            ("strftime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timeStamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12670 12680])
+                    ("" variable (:type ("locTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12700 12709]))                  
+                :type "int")
+                nil [12659 12710])
+            ("fileName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12737 12752]))                  
+                :type ("stringstream" type (:type "class") nil nil))
+                nil [12713 12753])
+            ("outFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fileName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12836 12845])
+                    ("" variable (:type ("str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12845 12850])
+                    ("" variable (:type ("c_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12851 12858])
+                    ("" variable (:type ("ios::binary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12860 12873]))                  
+                :type ("ofstream" type (:type "class") nil nil))
+                nil [12816 12874])
+            ("std::endl" variable (:type "int") nil [12958 12968])
+            ("it" function
+               (:prototype-flag t
+                :constructor-flag t
+                :arguments 
+                  ( ("" variable (:type ("trackedPositions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13186 13203])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13203 13210]))                  
+                :type ("std::vector::const_iterator" type (:type "class") nil nil))
+                nil [13145 13245])
+            ("std::endl" variable (:type "int") nil [13414 13424])
+            ("close" function
+               (:prototype-flag t
+                :type "int")
+                nil [13435 13443]))          
+      :file "main.cpp"
+      :pointmax 13446
+      :fsize 13442
+      :lastmodtime '(20116 14156 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STEP_WIDTH" . ((number "1" 523 . 524)))
+          ("SHIFT_TO_CENTER")
+          ("GRABCUT_ROUNDS" . ((number "3" 597 . 598)))
+          ("SEARCH_WINDOW" . ((number "20" 571 . 573)))
+          )
+))
+  :file "!home!krishneel!.cache!.fr-bOK4Kk!HoughTrack1.0!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

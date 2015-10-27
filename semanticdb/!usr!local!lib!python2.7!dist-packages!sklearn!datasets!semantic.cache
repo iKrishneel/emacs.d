@@ -1,0 +1,1082 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Generate samples of synthetic data sets.
+\"\"\"" code nil nil [1 49])
+            ("numbers" include nil nil [181 195])
+            ("warnings" include nil nil [196 211])
+            ("numpy" include nil nil [212 230])
+            ("scipy" include nil nil [231 255])
+            ("MultiLabelBinarizer" include nil nil [278 304])
+            ("check_random_state" include nil nil [318 352])
+            ("array2d" include nil nil [318 352])
+            ("shuffle" include nil nil [366 396])
+            ("astype" include nil nil [416 429])
+            ("sample_without_replacement" include nil nil [450 483])
+            ("six" include nil nil [501 511])
+            ("map" variable nil nil [512 531])
+            ("zip" variable nil nil [532 551])
+            ("_generate_hypercube" function
+               (:documentation "Returns distinct binary samples of length dimensions
+    "
+                :arguments 
+                  ( ("samples" variable nil (reparse-symbol function_parameters) [578 585])
+                    ("dimensions" variable nil (reparse-symbol function_parameters) [587 597])
+                    ("rng" variable nil (reparse-symbol function_parameters) [599 602]))                  )
+                nil [554 1107])
+            ("make_classification" function
+               (:documentation "Generate a random n-class classification problem.
+
+    This initially creates clusters of points normally distributed (std=1)
+    about vertices of a `2 * class_sep`-sided hypercube, and assigns an equal
+    number of clusters to each class. It introduces interdependence between
+    these features and adds various types of further noise to the data.
+
+    Prior to shuffling, `X` stacks a number of these primary \"informative\"
+    features, \"redundant\" linear combinations of these, \"repeated\" duplicates
+    of sampled features, and arbitrary noise for and remaining features.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=20)
+        The total number of features. These comprise `n_informative`
+        informative features, `n_redundant` redundant features, `n_repeated`
+        duplicated features and `n_features-n_informative-n_redundant-
+        n_repeated` useless features drawn at random.
+
+    n_informative : int, optional (default=2)
+        The number of informative features. Each class is composed of a number
+        of gaussian clusters each located around the vertices of a hypercube
+        in a subspace of dimension `n_informative`. For each cluster,
+        informative features are drawn independently from  N(0, 1) and then
+        randomly linearly combined within each cluster in order to add
+        covariance. The clusters are then placed on the vertices of the
+        hypercube.
+
+    n_redundant : int, optional (default=2)
+        The number of redundant features. These features are generated as
+        random linear combinations of the informative features.
+
+    n_repeated : int, optional (default=0)
+        The number of duplicated features, drawn randomly from the informative
+        and the redundant features.
+
+    n_classes : int, optional (default=2)
+        The number of classes (or labels) of the classification problem.
+
+    n_clusters_per_class : int, optional (default=2)
+        The number of clusters per class.
+
+    weights : list of floats or None (default=None)
+        The proportions of samples assigned to each class. If None, then
+        classes are balanced. Note that if `len(weights) == n_classes - 1`,
+        then the last class weight is automatically inferred.
+        More than `n_samples` samples may be returned if the sum of `weights`
+        exceeds 1.
+
+    flip_y : float, optional (default=0.01)
+        The fraction of samples whose class are randomly exchanged.
+
+    class_sep : float, optional (default=1.0)
+        The factor multiplying the hypercube dimension.
+
+    hypercube : boolean, optional (default=True)
+        If True, the clusters are put on the vertices of a hypercube. If
+        False, the clusters are put on the vertices of a random polytope.
+
+    shift : float, array of shape [n_features] or None, optional (default=0.0)
+        Shift features by the specified value. If None, then features
+        are shifted by a random value drawn in [-class_sep, class_sep].
+
+    scale : float, array of shape [n_features] or None, optional (default=1.0)
+        Multiply features by the specified value. If None, then features
+        are scaled by a random value drawn in [1, 100]. Note that scaling
+        happens after shifting.
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples and the features.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The generated samples.
+
+    y : array of shape [n_samples]
+        The integer labels for class membership of each sample.
+
+    Notes
+    -----
+    The algorithm is adapted from Guyon [1] and was designed to generate
+    the \"Madelon\" dataset.
+
+    References
+    ----------
+    .. [1] I. Guyon, \"Design of experiments for the NIPS 2003 variable
+           selection benchmark\", 2003.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [1133 1142])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [1148 1158])
+                    ("n_informative" variable nil (reparse-symbol function_parameters) [1163 1176])
+                    ("n_redundant" variable nil (reparse-symbol function_parameters) [1204 1215])
+                    ("n_repeated" variable nil (reparse-symbol function_parameters) [1219 1229])
+                    ("n_classes" variable nil (reparse-symbol function_parameters) [1233 1242])
+                    ("n_clusters_per_class" variable nil (reparse-symbol function_parameters) [1270 1290])
+                    ("weights" variable nil (reparse-symbol function_parameters) [1294 1301])
+                    ("flip_y" variable nil (reparse-symbol function_parameters) [1308 1314])
+                    ("class_sep" variable nil (reparse-symbol function_parameters) [1345 1354])
+                    ("hypercube" variable nil (reparse-symbol function_parameters) [1360 1369])
+                    ("shift" variable nil (reparse-symbol function_parameters) [1376 1381])
+                    ("scale" variable nil (reparse-symbol function_parameters) [1387 1392])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [1422 1429])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [1436 1448]))                  )
+                nil [1109 9455])
+            ("make_multilabel_classification" function
+               (:documentation "Generate a random multilabel classification problem.
+
+    For each sample, the generative process is:
+        - pick the number of labels: n ~ Poisson(n_labels)
+        - n times, choose a class c: c ~ Multinomial(theta)
+        - pick the document length: k ~ Poisson(length)
+        - k times, choose a word: w ~ Multinomial(theta_c)
+
+    In the above process, rejection sampling is used to make sure that
+    n is never zero or more than `n_classes`, and that the document length
+    is never zero. Likewise, we reject classes which have already been chosen.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=20)
+        The total number of features.
+
+    n_classes : int, optional (default=5)
+        The number of classes of the classification problem.
+
+    n_labels : int, optional (default=2)
+        The average number of labels per instance. Number of labels follows
+        a Poisson distribution that never takes the value 0.
+
+    length : int, optional (default=50)
+        Sum of the features (number of words if documents).
+
+    allow_unlabeled : bool, optional (default=True)
+        If ``True``, some instances might not belong to any class.
+
+    return_indicator : bool, optional (default=False),
+        If ``True``, return ``Y`` in the binary indicator format, else
+        return a tuple of lists of labels.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The generated samples.
+
+    Y : tuple of lists or array of shape [n_samples, n_classes]
+        The label sets.
+
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [9492 9501])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [9507 9517])
+                    ("n_classes" variable nil (reparse-symbol function_parameters) [9522 9531])
+                    ("n_labels" variable nil (reparse-symbol function_parameters) [9570 9578])
+                    ("length" variable nil (reparse-symbol function_parameters) [9582 9588])
+                    ("allow_unlabeled" variable nil (reparse-symbol function_parameters) [9593 9608])
+                    ("return_indicator" variable nil (reparse-symbol function_parameters) [9650 9666])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [9674 9686]))                  )
+                nil [9457 13602])
+            ("make_hastie_10_2" function
+               (:documentation "Generates data for binary classification used in
+    Hastie et al. 2009, Example 10.2.
+
+    The ten features are standard independent Gaussian and
+    the target ``y`` is defined by::
+
+      y[i] = 1 if np.sum(X[i] ** 2) > 9.34 else -1
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=12000)
+        The number of samples.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 10]
+        The input samples.
+
+    y : array of shape [n_samples]
+        The output values.
+
+    References
+    ----------
+    .. [1] T. Hastie, R. Tibshirani and J. Friedman, \"Elements of Statistical
+           Learning Ed. 2\", Springer, 2009.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [13625 13634])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [13642 13654]))                  )
+                nil [13604 14880])
+            ("make_regression" function
+               (:documentation "Generate a random regression problem.
+
+    The input set can either be well conditioned (by default) or have a low
+    rank-fat tail singular profile. See the `make_low_rank_matrix` for
+    more details.
+
+    The output is generated by applying a (potentially biased) random linear
+    regression model with `n_informative` nonzero regressors to the previously
+    generated input and some gaussian centered noise with some adjustable
+    scale.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=100)
+        The number of features.
+
+    n_informative : int, optional (default=10)
+        The number of informative features, i.e., the number of features used
+        to build the linear model used to generate the output.
+
+    n_targets : int, optional (default=1)
+        The number of regression targets, i.e., the dimension of the y output
+        vector associated with a sample. By default, the output is a scalar.
+
+    bias : float, optional (default=0.0)
+        The bias term in the underlying linear model.
+
+    effective_rank : int or None, optional (default=None)
+        if not None:
+            The approximate number of singular vectors required to explain most
+            of the input data by linear combinations. Using this kind of
+            singular spectrum in the input allows the generator to reproduce
+            the correlations often observed in practice.
+        if None:
+            The input set is well conditioned, centered and gaussian with
+            unit variance.
+
+    tail_strength : float between 0.0 and 1.0, optional (default=0.5)
+        The relative importance of the fat noisy tail of the singular values
+        profile if `effective_rank` is not None.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise applied to the output.
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples and the features.
+
+    coef : boolean, optional (default=False)
+        If True, the coefficients of the underlying linear model are returned.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The input samples.
+
+    y : array of shape [n_samples] or [n_samples, n_targets]
+        The output values.
+
+    coef : array of shape [n_features] or [n_features, n_targets], optional
+        The coefficient of the underlying linear model. It is returned only if
+        coef is True.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [14902 14911])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [14917 14927])
+                    ("n_informative" variable nil (reparse-symbol function_parameters) [14933 14946])
+                    ("n_targets" variable nil (reparse-symbol function_parameters) [14971 14980])
+                    ("bias" variable nil (reparse-symbol function_parameters) [14984 14988])
+                    ("effective_rank" variable nil (reparse-symbol function_parameters) [14994 15008])
+                    ("tail_strength" variable nil (reparse-symbol function_parameters) [15035 15048])
+                    ("noise" variable nil (reparse-symbol function_parameters) [15054 15059])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [15065 15072])
+                    ("coef" variable nil (reparse-symbol function_parameters) [15079 15083])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [15111 15123]))                  )
+                nil [14882 19523])
+            ("make_circles" function
+               (:documentation "Make a large circle containing a smaller circle in 2d.
+
+    A simple toy dataset to visualize clustering and classification
+    algorithms.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The total number of points generated.
+
+    shuffle: bool, optional (default=True)
+        Whether to shuffle the samples.
+
+    noise : double or None (default=None)
+        Standard deviation of Gaussian noise added to the data.
+
+    factor : double < 1 (default=.8)
+        Scale factor between inner and outer circle.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 2]
+        The generated samples.
+
+    y : array of shape [n_samples]
+        The integer labels (0 or 1) for class membership of each sample.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [19542 19551])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [19557 19564])
+                    ("noise" variable nil (reparse-symbol function_parameters) [19571 19576])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [19583 19595])
+                    ("factor" variable nil (reparse-symbol function_parameters) [19619 19625]))                  )
+                nil [19525 21265])
+            ("make_moons" function
+               (:documentation "Make two interleaving half circles
+
+    A simple toy dataset to visualize clustering and classification
+    algorithms.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The total number of points generated.
+
+    shuffle : bool, optional (default=True)
+        Whether to shuffle the samples.
+
+    noise : double or None (default=None)
+        Standard deviation of Gaussian noise added to the data.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 2]
+        The generated samples.
+
+    y : array of shape [n_samples]
+        The integer labels (0 or 1) for class membership of each sample.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [21282 21291])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [21297 21304])
+                    ("noise" variable nil (reparse-symbol function_parameters) [21311 21316])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [21323 21335]))                  )
+                nil [21267 22805])
+            ("make_blobs" function
+               (:documentation "Generate isotropic Gaussian blobs for clustering.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The total number of points equally divided among clusters.
+
+    n_features : int, optional (default=2)
+        The number of features for each sample.
+
+    centers : int or array of shape [n_centers, n_features], optional
+        (default=3)
+        The number of centers to generate, or the fixed center locations.
+
+    cluster_std: float or sequence of floats, optional (default=1.0)
+        The standard deviation of the clusters.
+
+    center_box: pair of floats (min, max), optional (default=(-10.0, 10.0))
+        The bounding box for each cluster center when centers are
+        generated at random.
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The generated samples.
+
+    y : array of shape [n_samples]
+        The integer labels for cluster membership of each sample.
+
+    Examples
+    --------
+    >>> from sklearn.datasets.samples_generator import make_blobs
+    >>> X, y = make_blobs(n_samples=10, centers=3, n_features=2,
+    ...                   random_state=0)
+    >>> print(X.shape)
+    (10, 2)
+    >>> y
+    array([0, 0, 1, 0, 2, 2, 2, 1, 1, 0])
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [22822 22831])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [22837 22847])
+                    ("centers" variable nil (reparse-symbol function_parameters) [22851 22858])
+                    ("cluster_std" variable nil (reparse-symbol function_parameters) [22862 22873])
+                    ("center_box" variable nil (reparse-symbol function_parameters) [22894 22904])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [22920 22927])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [22934 22946]))                  )
+                nil [22807 25538])
+            ("make_friedman1" function
+               (:documentation "Generate the \"Friedman \\#1\" regression problem
+
+    This dataset is described in Friedman [1] and Breiman [2].
+
+    Inputs `X` are independent features uniformly distributed on the interval
+    [0, 1]. The output `y` is created according to the formula::
+
+        y(X) = 10 * sin(pi * X[:, 0] * X[:, 1]) + 20 * (X[:, 2] - 0.5) ** 2 \\
++ 10 * X[:, 3] + 5 * X[:, 4] + noise * N(0, 1).
+
+    Out of the `n_features` features, only 5 are actually used to compute
+    `y`. The remaining features are independent of `y`.
+
+    The number of features has to be >= 5.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=10)
+        The number of features. Should be at least 5.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise applied to the output.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The input samples.
+
+    y : array of shape [n_samples]
+        The output values.
+
+    References
+    ----------
+    .. [1] J. Friedman, \"Multivariate adaptive regression splines\", The Annals
+           of Statistics 19 (1), pages 1-67, 1991.
+
+    .. [2] L. Breiman, \"Bagging predictors\", Machine Learning 24,
+           pages 123-140, 1996.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [25559 25568])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [25574 25584])
+                    ("noise" variable nil (reparse-symbol function_parameters) [25589 25594])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [25600 25612]))                  )
+                nil [25540 27625])
+            ("make_friedman2" function
+               (:documentation "Generate the \"Friedman \\#2\" regression problem
+
+    This dataset is described in Friedman [1] and Breiman [2].
+
+    Inputs `X` are 4 independent features uniformly distributed on the
+    intervals::
+
+        0 <= X[:, 0] <= 100,
+        40 * pi <= X[:, 1] <= 560 * pi,
+        0 <= X[:, 2] <= 1,
+        1 <= X[:, 3] <= 11.
+
+    The output `y` is created according to the formula::
+
+        y(X) = (X[:, 0] ** 2 + (X[:, 1] * X[:, 2] \\
+ - 1 / (X[:, 1] * X[:, 3])) ** 2) ** 0.5 + noise * N(0, 1).
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise applied to the output.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 4]
+        The input samples.
+
+    y : array of shape [n_samples]
+        The output values.
+
+    References
+    ----------
+    .. [1] J. Friedman, \"Multivariate adaptive regression splines\", The Annals
+           of Statistics 19 (1), pages 1-67, 1991.
+
+    .. [2] L. Breiman, \"Bagging predictors\", Machine Learning 24,
+           pages 123-140, 1996.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [27646 27655])
+                    ("noise" variable nil (reparse-symbol function_parameters) [27661 27666])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [27672 27684]))                  )
+                nil [27627 29528])
+            ("make_friedman3" function
+               (:documentation "Generate the \"Friedman \\#3\" regression problem
+
+    This dataset is described in Friedman [1] and Breiman [2].
+
+    Inputs `X` are 4 independent features uniformly distributed on the
+    intervals::
+
+        0 <= X[:, 0] <= 100,
+        40 * pi <= X[:, 1] <= 560 * pi,
+        0 <= X[:, 2] <= 1,
+        1 <= X[:, 3] <= 11.
+
+    The output `y` is created according to the formula::
+
+        y(X) = arctan((X[:, 1] * X[:, 2] - 1 / (X[:, 1] * X[:, 3])) \\
+/ X[:, 0]) + noise * N(0, 1).
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise applied to the output.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 4]
+        The input samples.
+
+    y : array of shape [n_samples]
+        The output values.
+
+    References
+    ----------
+    .. [1] J. Friedman, \"Multivariate adaptive regression splines\", The Annals
+           of Statistics 19 (1), pages 1-67, 1991.
+
+    .. [2] L. Breiman, \"Bagging predictors\", Machine Learning 24,
+           pages 123-140, 1996.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [29549 29558])
+                    ("noise" variable nil (reparse-symbol function_parameters) [29564 29569])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [29575 29587]))                  )
+                nil [29530 31402])
+            ("make_low_rank_matrix" function
+               (:documentation "Generate a mostly low rank matrix with bell-shaped singular values
+
+    Most of the variance can be explained by a bell-shaped curve of width
+    effective_rank: the low rank part of the singular values profile is::
+
+        (1 - tail_strength) * exp(-1.0 * (i / effective_rank) ** 2)
+
+    The remaining singular values' tail is fat, decreasing as::
+
+        tail_strength * exp(-0.1 * i / effective_rank).
+
+    The low rank part of the profile can be considered the structured
+    signal part of the data while the tail can be considered the noisy
+    part of the data that cannot be summarized by a low number of linear
+    components (singular vectors).
+
+    This kind of singular profiles is often seen in practice, for instance:
+     - gray level pictures of faces
+     - TF-IDF vectors of text documents crawled from the web
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=100)
+        The number of features.
+
+    effective_rank : int, optional (default=10)
+        The approximate number of singular vectors required to explain most of
+        the data by linear combinations.
+
+    tail_strength : float between 0.0 and 1.0, optional (default=0.5)
+        The relative importance of the fat noisy tail of the singular values
+        profile.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The matrix.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [31429 31438])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [31444 31454])
+                    ("effective_rank" variable nil (reparse-symbol function_parameters) [31460 31474])
+                    ("tail_strength" variable nil (reparse-symbol function_parameters) [31504 31517])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [31523 31535]))                  )
+                nil [31404 34018])
+            ("make_sparse_coded_signal" function
+               (:documentation "Generate a signal as a sparse combination of dictionary elements.
+
+    Returns a matrix Y = DX, such as D is (n_features, n_components),
+    X is (n_components, n_samples) and each column of X has exactly
+    n_nonzero_coefs non-zero elements.
+
+    Parameters
+    ----------
+    n_samples : int
+        number of samples to generate
+
+    n_components:  int,
+        number of components in the dictionary
+
+    n_features : int
+        number of features of the dataset to generate
+
+    n_nonzero_coefs : int
+        number of active (non-zero) coefficients in each sample
+
+    random_state: int or RandomState instance, optional (default=None)
+        seed used by the pseudo random number generator
+
+    Returns
+    -------
+    data: array of shape [n_features, n_samples]
+        The encoded signal (Y).
+
+    dictionary: array of shape [n_features, n_components]
+        The dictionary with normalized components (D).
+
+    code: array of shape [n_components, n_samples]
+        The sparse code such that each column of this matrix has exactly
+        n_nonzero_coefs non-zero items (X).
+
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [34049 34058])
+                    ("n_components" variable nil (reparse-symbol function_parameters) [34060 34072])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [34074 34084])
+                    ("n_nonzero_coefs" variable nil (reparse-symbol function_parameters) [34115 34130])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [34132 34144]))                  )
+                nil [34020 35761])
+            ("make_sparse_uncorrelated" function
+               (:documentation "Generate a random regression problem with sparse uncorrelated design
+
+    This dataset is described in Celeux et al [1]. as::
+
+        X ~ N(0, 1)
+        y(X) = X[:, 0] + 2 * X[:, 1] - 2 * X[:, 2] - 1.5 * X[:, 3]
+
+    Only the first 4 features are informative. The remaining features are
+    useless.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+
+    n_features : int, optional (default=10)
+        The number of features.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The input samples.
+
+    y : array of shape [n_samples]
+        The output values.
+
+    References
+    ----------
+    .. [1] G. Celeux, M. El Anbari, J.-M. Marin, C. P. Robert,
+           \"Regularization in regression: comparing Bayesian and frequentist
+           methods in a poorly informative situation\", 2009.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [35792 35801])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [35807 35817])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [35822 35834]))                  )
+                nil [35763 37411])
+            ("make_spd_matrix" function
+               (:documentation "Generate a random symmetric, positive-definite matrix.
+
+    Parameters
+    ----------
+    n_dim : int
+        The matrix dimension.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_dim, n_dim]
+        The random symmetric, positive-definite matrix.
+    "
+                :arguments 
+                  ( ("n_dim" variable nil (reparse-symbol function_parameters) [37433 37438])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [37440 37452]))                  )
+                nil [37413 38272])
+            ("make_sparse_spd_matrix" function
+               (:documentation "Generate a sparse symmetric definite positive matrix.
+
+    Parameters
+    ----------
+    dim: integer, optional (default=1)
+        The size of the random  (matrix to generate.
+
+    alpha: float between 0 and 1, optional (default=0.95)
+        The probability that a coefficient is non zero (see notes).
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    prec: array of shape = [dim, dim]
+
+    Notes
+    -----
+    The sparsity is actually imposed on the cholesky factor of the matrix.
+    Thus alpha does not translate directly into the filling fraction of
+    the matrix itself.
+    "
+                :arguments 
+                  ( ("dim" variable nil (reparse-symbol function_parameters) [38301 38304])
+                    ("alpha" variable nil (reparse-symbol function_parameters) [38308 38313])
+                    ("norm_diag" variable nil (reparse-symbol function_parameters) [38320 38329])
+                    ("smallest_coef" variable nil (reparse-symbol function_parameters) [38364 38377])
+                    ("largest_coef" variable nil (reparse-symbol function_parameters) [38382 38394])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [38426 38438]))                  )
+                nil [38274 40055])
+            ("make_swiss_roll" function
+               (:documentation "Generate a swiss roll dataset.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of sample points on the S curve.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 3]
+        The points.
+
+    t : array of shape [n_samples]
+        The univariate position of the sample according to the main dimension
+        of the points in the manifold.
+
+    Notes
+    -----
+    The algorithm is from Marsland [1].
+
+    References
+    ----------
+    .. [1] S. Marsland, \"Machine Learning: An Algorithmic Perpsective\",
+           Chapter 10, 2009.
+           http://www-ist.massey.ac.nz/smarsland/Code/10/lle.py
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [40077 40086])
+                    ("noise" variable nil (reparse-symbol function_parameters) [40092 40097])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [40103 40115]))                  )
+                nil [40057 41553])
+            ("make_s_curve" function
+               (:documentation "Generate an S curve dataset.
+
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of sample points on the S curve.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, 3]
+        The points.
+
+    t : array of shape [n_samples]
+        The univariate position of the sample according to the main dimension
+        of the points in the manifold.
+    "
+                :arguments 
+                  ( ("n_samples" variable nil (reparse-symbol function_parameters) [41572 41581])
+                    ("noise" variable nil (reparse-symbol function_parameters) [41587 41592])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [41598 41610]))                  )
+                nil [41555 42797])
+            ("make_gaussian_quantiles" function
+               (:documentation "Generate isotropic Gaussian and label samples by quantile
+
+    This classification dataset is constructed by taking a multi-dimensional
+    standard normal distribution and defining classes separated by nested
+    concentric multi-dimensional spheres such that roughly equal numbers of
+    samples are in each class (quantiles of the :math:`\\chi^2` distribution).
+
+    Parameters
+    ----------
+    mean : array of shape [n_features], optional (default=None)
+        The mean of the multi-dimensional normal distribution.
+        If None then use the origin (0, 0, ...).
+
+    cov : float, optional (default=1.)
+        The covariance matrix will be this value times the unit matrix. This
+        dataset only produces symmetric normal distributions.
+
+    n_samples : int, optional (default=100)
+        The total number of points equally divided among classes.
+
+    n_features : int, optional (default=2)
+        The number of features for each sample.
+
+    n_classes : int, optional (default=3)
+        The number of classes
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape [n_samples, n_features]
+        The generated samples.
+
+    y : array of shape [n_samples]
+        The integer labels for quantile membership of each sample.
+
+    Notes
+    -----
+    The dataset is from Zhu et al [1].
+
+    References
+    ----------
+    .. [1] J. Zhu, H. Zou, S. Rosset, T. Hastie, \"Multi-class AdaBoost\", 2009.
+
+    "
+                :arguments 
+                  ( ("mean" variable nil (reparse-symbol function_parameters) [42827 42831])
+                    ("cov" variable nil (reparse-symbol function_parameters) [42838 42841])
+                    ("n_samples" variable nil (reparse-symbol function_parameters) [42846 42855])
+                    ("n_features" variable nil (reparse-symbol function_parameters) [42889 42899])
+                    ("n_classes" variable nil (reparse-symbol function_parameters) [42903 42912])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [42944 42951])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [42958 42970]))                  )
+                nil [42799 45635])
+            ("_shuffle" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [45650 45654])
+                ("random_state" variable nil (reparse-symbol function_parameters) [45656 45668]))              ) nil [45637 45920])
+            ("make_biclusters" function
+               (:documentation "Generate an array with constant block diagonal structure for
+    biclustering.
+
+    Parameters
+    ----------
+    shape : iterable (n_rows, n_cols)
+        The shape of the result.
+
+    n_clusters : integer
+        The number of biclusters.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise.
+
+    minval : int, optional (default=10)
+        Minimum value of a bicluster.
+
+    maxval : int, optional (default=100)
+        Maximum value of a bicluster.
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape `shape`
+        The generated array.
+
+    rows : array of shape (n_clusters, X.shape[0],)
+        The indicators for cluster membership of each row.
+
+    cols : array of shape (n_clusters, X.shape[1],)
+        The indicators for cluster membership of each column.
+
+    References
+    ----------
+
+    .. [1] Dhillon, I. S. (2001, August). Co-clustering documents and
+        words using bipartite spectral graph partitioning. In Proceedings
+        of the seventh ACM SIGKDD international conference on Knowledge
+        discovery and data mining (pp. 269-274). ACM.
+
+    "
+                :arguments 
+                  ( ("shape" variable nil (reparse-symbol function_parameters) [45942 45947])
+                    ("n_clusters" variable nil (reparse-symbol function_parameters) [45949 45959])
+                    ("noise" variable nil (reparse-symbol function_parameters) [45961 45966])
+                    ("minval" variable nil (reparse-symbol function_parameters) [45972 45978])
+                    ("maxval" variable nil (reparse-symbol function_parameters) [46003 46009])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [46015 46022])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [46029 46041]))                  )
+                nil [45922 48997])
+            ("make_checkerboard" function
+               (:documentation "Generate an array with block checkerboard structure for
+    biclustering.
+
+    Parameters
+    ----------
+    shape : iterable (n_rows, n_cols)
+        The shape of the result.
+
+    n_clusters : integer or iterable (n_row_clusters, n_column_clusters)
+        The number of row and column clusters.
+
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise.
+
+    minval : int, optional (default=10)
+        Minimum value of a bicluster.
+
+    maxval : int, optional (default=100)
+        Maximum value of a bicluster.
+
+    shuffle : boolean, optional (default=True)
+        Shuffle the samples.
+
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+
+    Returns
+    -------
+    X : array of shape `shape`
+        The generated array.
+
+    rows : array of shape (n_clusters, X.shape[0],)
+        The indicators for cluster membership of each row.
+
+    cols : array of shape (n_clusters, X.shape[1],)
+        The indicators for cluster membership of each column.
+
+
+    References
+    ----------
+
+    .. [1] Kluger, Y., Basri, R., Chang, J. T., & Gerstein, M. (2003).
+        Spectral biclustering of microarray data: coclustering genes
+        and conditions. Genome research, 13(4), 703-716.
+
+    "
+                :arguments 
+                  ( ("shape" variable nil (reparse-symbol function_parameters) [49021 49026])
+                    ("n_clusters" variable nil (reparse-symbol function_parameters) [49028 49038])
+                    ("noise" variable nil (reparse-symbol function_parameters) [49040 49045])
+                    ("minval" variable nil (reparse-symbol function_parameters) [49051 49057])
+                    ("maxval" variable nil (reparse-symbol function_parameters) [49084 49090])
+                    ("shuffle" variable nil (reparse-symbol function_parameters) [49096 49103])
+                    ("random_state" variable nil (reparse-symbol function_parameters) [49110 49122]))                  )
+                nil [48999 52428]))          
+      :file "samples_generator.py"
+      :pointmax 52428
+      :fsize 52427
+      :lastmodtime '(21710 64086 0 0)
+      :unmatched-syntax '((PERIOD 490 . 491) (FROM 484 . 488) (PERIOD 489 . 490) (PERIOD 436 . 437) (FROM 430 . 434) (PERIOD 435 . 436) (PERIOD 403 . 404) (FROM 397 . 401) (PERIOD 402 . 403) (PERIOD 359 . 360) (FROM 353 . 357) (PERIOD 358 . 359) (PERIOD 311 . 312) (FROM 305 . 309) (PERIOD 310 . 311) (PERIOD 263 . 264) (FROM 257 . 261) (PERIOD 262 . 263))))
+  :file "!usr!local!lib!python2.7!dist-packages!sklearn!datasets!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

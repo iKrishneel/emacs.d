@@ -1,0 +1,479 @@
+;; Object cv_bridge/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cv_bridge/"
+  :tables
+  (list
+    (semanticdb-table "cv_bridge.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CV_BRIDGE_CV_BRIDGE_H" variable (:constant-flag t) nil [1810 1831])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1833 1863])
+            ("ros/static_assert.h" include (:system-flag t) nil [1864 1894])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [1895 1927])
+            ("stdexcept" include (:system-flag t) nil [1928 1948])
+            ("cv_bridge" type
+               (:members 
+                  ( ("Exception" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2019 2026])
+                            ("Exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("description" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2039 2070]))                                  
+                                :type ("Exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2029 2107]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1973 2110])
+                    ("CvImage" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2112 2126])
+                    ("CvImagePtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("CvImage" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2128 2174])
+                    ("CvImageConstPtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("CvImage" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2175 2232])
+                    ("CvImage" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2406 2413])
+                            ("header" variable (:type ("std_msgs::Header" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2416 2440])
+                            ("encoding" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2459 2480])
+                            ("image" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2530 2544])
+                            ("CvImage" function
+                               (:constructor-flag t
+                                :type ("CvImage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2637 2649])
+                            ("CvImage" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("header" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_msgs::Header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2698 2729])
+                                    ("encoding" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2730 2758])
+                                    ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "cv::Mat()"
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2769 2801]))                                  
+                                :type ("CvImage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2690 2865])
+                            ("toImageMsg" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("sensor_msgs::ImagePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3038 3079])
+                            ("toImageMsg" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("ros_image" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3344 3374]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3328 3381])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CvImage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3385 3424])
+                            ("ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CvImage" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3427 3477])
+                            ("protected" label nil (reparse-symbol classsubparts) [3479 3489])
+                            ("tracked_object_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("void" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3492 3538])
+                            ("toCvShare" function
+                               (:prototype-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("source" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3629 3662])
+                                    ("tracked_object" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("void" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3691 3743])
+                                    ("encoding" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3772 3800]))                                  
+                                :type ("CvImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3594 3801]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2390 3819])
+                    ("toCvCopy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4341 4382])
+                            ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "std::string()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4403 4446]))                          
+                        :type ("CvImagePtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4321 4448])
+                    ("toCvCopy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5262 5295])
+                            ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "std::string()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5316 5359]))                          
+                        :type ("CvImagePtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5242 5361])
+                    ("toCvShare" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6146 6187])
+                            ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "std::string()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6214 6257]))                          
+                        :type ("CvImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6120 6259])
+                    ("toCvShare" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7289 7322])
+                            ("tracked_object" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("void" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7349 7401])
+                            ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "std::string()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7428 7471]))                          
+                        :type ("CvImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7263 7473])
+                    ("cvtColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CvImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7584 7614])
+                            ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7635 7663]))                          
+                        :type ("CvImagePtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7564 7664])
+                    ("getCvType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("encoding" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7792 7820]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7778 7821]))                  
+                :type "namespace")
+                nil [1950 7824])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("MD5Sum" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [8352 8426])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8454 8480]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [8429 8500])
+                                    ("MD5Sum::static_value1" variable (:type "int") (reparse-symbol classsubparts) [8542 8584])
+                                    ("MD5Sum::static_value2" variable (:type "int") (reparse-symbol classsubparts) [8625 8667])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("MD5Sum" type
+                                                 (:template-specifier 
+                                                    ( ("sensor_msgs::Image" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [8776 8803])
+                                            ("" variable (:type ("static_value1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8804 8819])
+                                            ("" variable (:type ("0x060021388200f6f0ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8821 8843]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8758 8844])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("MD5Sum" type
+                                                 (:template-specifier 
+                                                    ( ("sensor_msgs::Image" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [8865 8892])
+                                            ("" variable (:type ("static_value2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8893 8908])
+                                            ("" variable (:type ("0xf447d0fcd9c64743ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8910 8932]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8847 8933]))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8303 8936])
+                            ("DataType" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [8989 9065])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9093 9119]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [9068 9139]))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8938 9142])
+                            ("Definition" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [9197 9275])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9303 9329]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [9278 9349]))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9144 9352])
+                            ("HasHeader" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("TrueType" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9354 9416]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [8275 9419])
+                    ("serialization" type
+                       (:members 
+                          ( ("Serializer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9631 9646])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9647 9675]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [9578 10119])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10175 10190])
+                                            ("m" variable
+                                               (:reference 1
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10191 10213]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [10123 10732])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10776 10804]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10736 10955]))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9481 10958]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [9454 10961])
+                    ("message_operations" type
+                       (:members 
+                          ( ("Printer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("stream" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11124 11134])
+                                            ("indent" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11135 11161])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11162 11190]))                                          
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [11077 11254]))                                  
+                                :template-specifier 
+                                  ( ("cv_bridge::CvImage" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11027 11257]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [10995 11260]))                  
+                :type "namespace")
+                nil [8258 11300])
+            ("cv_bridge" type
+               (:members 
+                  ( ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11374 11390])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CvImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11391 11408]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11342 11487]))                  
+                :type "namespace")
+                nil [11319 11490]))          
+      :file "cv_bridge.h"
+      :pointmax 11536
+      :fsize 11535
+      :lastmodtime '(21396 30085 0 0)
+      :unmatched-syntax '((punctuation 8908 . 8909) (punctuation 8907 . 8908) (punctuation 8892 . 8893) (punctuation 8891 . 8892) (punctuation 8819 . 8820) (punctuation 8818 . 8819) (punctuation 8803 . 8804) (punctuation 8802 . 8803) (punctuation 8623 . 8624) (symbol 8609 . 8622) (symbol 8600 . 8608) (CONST 8594 . 8599) (STATIC 8587 . 8593) (punctuation 8540 . 8541) (symbol 8526 . 8539) (symbol 8517 . 8525) (CONST 8511 . 8516) (STATIC 8504 . 8510))
+      :lexical-table 
+        '(("CV_BRIDGE_CV_BRIDGE_H")
+          )
+))
+  :file "!opt!ros!hydro!include!cv_bridge!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

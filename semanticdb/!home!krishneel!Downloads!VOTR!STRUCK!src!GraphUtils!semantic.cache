@@ -1,0 +1,272 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRAPH_UTILS_H" variable (:constant-flag t) nil [394 407])
+            ("setCustomGraphColor" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("R" variable (:type "int") (reparse-symbol arg-sub-list) [3738 3744])
+                    ("B" variable (:type "int") (reparse-symbol arg-sub-list) [3745 3751])
+                    ("G" variable (:type "int") (reparse-symbol arg-sub-list) [3752 3758]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3713 3759])
+            ("setGraphColor" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("index" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3623 3643]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3604 3645])
+            ("showImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3456 3476])
+                    ("delay_ms" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3477 3500])
+                    ("name" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3502 3523]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3441 3525])
+            ("showUCharGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3245 3262])
+                    ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3263 3285])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [3286 3303])
+                    ("delay_ms" variable
+                       (:default-value "DEFAULT(500)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3304 3329])
+                    ("background" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3331 3362]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3225 3364])
+            ("showIntGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2820 2837])
+                    ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2838 2858])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [2859 2876])
+                    ("delay_ms" variable
+                       (:default-value "DEFAULT(500)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2877 2902])
+                    ("background" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2904 2935]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2802 2937])
+            ("showFloatGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2407 2424])
+                    ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2425 2447])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [2448 2465])
+                    ("delay_ms" variable
+                       (:default-value "DEFAULT(500)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2466 2491])
+                    ("background" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2493 2524]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2387 2526])
+            ("drawUCharGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("IplImage" type (:type "class") nil nil)
+                :arguments 
+                  ( ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1889 1911])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [1912 1929])
+                    ("imageDst" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1930 1959])
+                    ("minV" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1961 1980])
+                    ("maxV" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1982 2001])
+                    ("width" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2003 2023])
+                    ("height" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2025 2046])
+                    ("graphLabel" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2048 2075])
+                    ("showScale" variable
+                       (:default-value "DEFAULT(true)"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2077 2105]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1864 2107])
+            ("drawIntGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("IplImage" type (:type "class") nil nil)
+                :arguments 
+                  ( ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1476 1496])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [1497 1514])
+                    ("imageDst" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1515 1544])
+                    ("minV" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1546 1565])
+                    ("maxV" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1567 1586])
+                    ("width" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1588 1608])
+                    ("height" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1610 1631])
+                    ("graphLabel" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1633 1660])
+                    ("showScale" variable
+                       (:default-value "DEFAULT(true)"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1662 1690]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1453 1692])
+            ("drawFloatGraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("IplImage" type (:type "class") nil nil)
+                :arguments 
+                  ( ("arraySrc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1057 1079])
+                    ("nArrayLength" variable (:type "int") (reparse-symbol arg-sub-list) [1080 1097])
+                    ("imageDst" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1127])
+                    ("minV" variable
+                       (:default-value "DEFAULT(0.0)"
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1129 1152])
+                    ("maxV" variable
+                       (:default-value "DEFAULT(0.0)"
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1154 1177])
+                    ("width" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1179 1199])
+                    ("height" variable
+                       (:default-value "DEFAULT(0)"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1201 1222])
+                    ("graphLabel" variable
+                       (:pointer 1
+                        :default-value "DEFAULT(0)"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1224 1251])
+                    ("showScale" variable
+                       (:default-value "DEFAULT(true)"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1253 1281]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1032 1283])
+            ("DEFAULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [619 626]))          
+      :file "GraphUtils.h"
+      :pointmax 3823
+      :fsize 3894
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEFAULT" (spp-arg-list ("val") 626 . 631) . ((punctuation "=" 632 . 633) (symbol "val" 634 . 637)))
+          ("GRAPH_UTILS_H")
+          )
+))
+  :file "!home!krishneel!Downloads!VOTR!STRUCK!src!GraphUtils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cluster_point_indices_image/cluster_point_indices_image.h" include (:system-flag t) nil [2 70])
+            ("ClusterPointIndicesToImage" function
+               (:constructor-flag t
+                :parent "ClusterPointIndicesToImage"
+                :type ("ClusterPointIndicesToImage" type (:type "class") nil nil))
+                nil [72 175])
+            ("onInit" function
+               (:parent "ClusterPointIndicesToImage"
+                :type "void")
+                nil [177 476])
+            ("subscribe" function
+               (:parent "ClusterPointIndicesToImage"
+                :type "void")
+                nil [478 1025])
+            ("unsubscribe" function
+               (:parent "ClusterPointIndicesToImage"
+                :type "void")
+                nil [1027 1151])
+            ("callback" function
+               (:parent "ClusterPointIndicesToImage"
+                :arguments 
+                  ( ("indices_mgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("jsk_recognition_msgs::ClusterPointIndicesConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1200 1269])
+                    ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1274 1326]))                  
+                :type "void")
+                nil [1153 1819])
+            ("clusterPointIndicesToPointIndices" function
+               (:parent "ClusterPointIndicesToImage"
+                :arguments 
+                  ( ("indices_mgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("jsk_recognition_msgs::ClusterPointIndicesConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1924 1993]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("pcl::PointIndices::Ptr" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1821 2463])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2474 2483])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2484 2497]))                  
+                :type "int")
+                nil [2465 2629]))          
+      :file "cluster_point_indices_image_node.cpp"
+      :pointmax 2630
+      :fsize 2629
+      :lastmodtime '(21924 42375 59229 30000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!cluster_point_indices_image!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

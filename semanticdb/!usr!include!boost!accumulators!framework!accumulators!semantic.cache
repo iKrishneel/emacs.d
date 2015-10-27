@@ -1,0 +1,876 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_EXTERNAL_ACCUMULATOR_HPP_EAN_01_12_2005" variable (:constant-flag t) nil [399 480])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [482 519])
+            ("boost/parameter/keyword.hpp" include (:system-flag t) nil [520 558])
+            ("boost/accumulators/framework/extractor.hpp" include (:system-flag t) nil [559 612])
+            ("boost/accumulators/framework/depends_on.hpp" include (:system-flag t) nil [613 667])
+            ("boost/accumulators/framework/accumulator_base.hpp" include (:system-flag t) nil [687 747])
+            ("boost/accumulators/framework/accumulators/reference_accumulator.hpp" include (:system-flag t) nil [748 826])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("impl" type
+                               (:members 
+                                  ( ("external_impl" type
+                                       (:template 
+                                          ( ("Accumulator" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("result_type" type
+                                               (:typedef ("Accumulator::result_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1132 1186])
+                                            ("feature_tag" type
+                                               (:typedef ("detail::feature_tag::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1195 1263])
+                                            ("external_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1287 1297]))                                                  
+                                                :type ("external_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1273 1300])
+                                            ("result" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("result_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1361 1378]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1310 1487])
+                                            ("private" label nil (reparse-symbol classsubparts) [1493 1501])
+                                            ("extract_" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("result_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1571 1588])
+                                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1589 1593]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [1511 1850])
+                                            ("extract_" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil)
+                                                    ("AccumulatorSet" type (:type "class") nil nil))                                                  
+                                                :type ("result_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1945 1958])
+                                                    ("acc" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("AccumulatorSet" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1959 1985]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [1860 2202]))                                          
+                                        :superclasses 
+                                          ( ("accumulator_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1023 2209]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [871 2212])
+                            ("tag" type
+                               (:members 
+                                  ( ("external" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil)
+                                            ("AccumulatorSet" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("impl" type
+                                               (:typedef ("accumulators::impl::external_impl" type
+                                                     (:template-specifier 
+                                                        ( ("detail::to_accumulator" type (:template-specifier 
+                                                            ( ("Feature" type nil nil nil)
+                                                              ("mpl::_1" type nil nil nil)
+                                                              ("mpl::_2" type nil nil nil))                                                            ) nil nil)
+                                                          ("Tag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2499 2667]))                                          
+                                        :superclasses 
+                                          ( ("depends_on" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2347 2674])
+                                    ("external" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("impl" type
+                                               (:typedef ("accumulators::impl::external_impl" type
+                                                     (:template-specifier 
+                                                        ( ("detail::to_accumulator" type (:template-specifier 
+                                                            ( ("Feature" type nil nil nil)
+                                                              ("mpl::_1" type nil nil nil)
+                                                              ("mpl::_2" type nil nil nil))                                                            ) nil nil)
+                                                          ("Tag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2796 2964]))                                          
+                                        :superclasses 
+                                          ( ("depends_on" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("Feature" type nil nil nil)
+                                            ("Tag" type nil nil nil)
+                                            ("void" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2680 2971]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2232 2973])
+                            ("feature_of" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil)
+                                    ("Tag" type (:type "class") nil nil)
+                                    ("AccumulatorSet" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("feature_of" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("tag::external" type (:template-specifier 
+                                      ( ("Feature" type nil nil nil)
+                                        ("Tag" type nil nil nil)
+                                        ("AccumulatorSet" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3110 3268])
+                            ("tag::external" using (:type ("tag::external" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3538 3558]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [846 3561]))                  
+                :type "namespace")
+                nil [828 3562]))          
+      :file "external_accumulator.hpp"
+      :pointmax 3604
+      :fsize 3603
+      :lastmodtime '(20225 54184 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_EXTERNAL_ACCUMULATOR_HPP_EAN_01_12_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_DROPPABLE_ACCUMULATOR_HPP_EAN_13_12_2005" variable (:constant-flag t) nil [401 483])
+            ("new" include (:system-flag t) nil [485 499])
+            ("boost/assert.hpp" include (:system-flag t) nil [500 527])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [528 558])
+            ("boost/aligned_storage.hpp" include (:system-flag t) nil [559 595])
+            ("boost/accumulators/framework/depends_on.hpp" include (:system-flag t) nil [596 650])
+            ("boost/accumulators/framework/parameters/accumulator.hpp" include (:system-flag t) nil [669 735])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("droppable_accumulator" type
+                               (:template 
+                                  ( ("Accumulator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [804 868])
+                            ("detail" type
+                               (:members 
+                                  ( ("add_ref_visitor" type
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("add_ref_visitor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1189 1206]))                                                  
+                                                :type ("add_ref_visitor" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1173 1262])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Accumulator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("acc" variable
+                                                       (:reference 1
+                                                        :type ("Accumulator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1336 1353]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1276 1765])
+                                            ("private" label nil (reparse-symbol classsubparts) [1775 1783])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("add_ref_visitor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1824 1848]))                                                  
+                                                :type ("add_ref_visitor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1796 1849])
+                                            ("args_" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1862 1880]))                                          )
+                                        (reparse-symbol namespacesubparts) [1087 1891])
+                                    ("make_add_ref_visitor" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("add_ref_visitor" type
+                                             (:template-specifier 
+                                                ( ("Args" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1976 1993]))                                          )
+                                        (reparse-symbol namespacesubparts) [1901 2061])
+                                    ("drop_visitor" type
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("drop_visitor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2343 2360]))                                                  
+                                                :type ("drop_visitor" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2330 2416])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Accumulator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("acc" variable
+                                                       (:reference 1
+                                                        :type ("Accumulator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2490 2507]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [2430 3033])
+                                            ("private" label nil (reparse-symbol classsubparts) [3043 3051])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("drop_visitor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3089 3110]))                                                  
+                                                :type ("drop_visitor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3064 3111])
+                                            ("args_" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3124 3142]))                                          )
+                                        (reparse-symbol namespacesubparts) [2247 3153])
+                                    ("make_drop_visitor" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("drop_visitor" type
+                                             (:template-specifier 
+                                                ( ("Args" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3232 3249]))                                          )
+                                        (reparse-symbol namespacesubparts) [3163 3314]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [874 3320])
+                            ("droppable_accumulator_base" type
+                               (:template 
+                                  ( ("Accumulator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("base" type
+                                       (:typedef ("droppable_accumulator_base" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3542 3582])
+                                    ("is_droppable" type
+                                       (:typedef ("mpl::true_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3591 3623])
+                                    ("result_type" type
+                                       (:typedef ("Accumulator::result_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3632 3686])
+                                    ("droppable_accumulator_base" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("droppable_accumulator_base" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3755 3772]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [3696 3848])
+                                    ("()" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3907 3924]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [3858 4062])
+                                    ("add_ref" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4117 4130]))                                          )
+                                        (reparse-symbol classsubparts) [4072 4182])
+                                    ("drop" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4234 4251]))                                          )
+                                        (reparse-symbol classsubparts) [4192 4505])
+                                    ("is_dropped" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4515 4600])
+                                    ("private" label nil (reparse-symbol classsubparts) [4606 4614])
+                                    ("ref_count_" variable (:type "int") (reparse-symbol classsubparts) [4623 4638]))                                  
+                                :superclasses 
+                                  ( ("Accumulator" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3439 4645])
+                            ("droppable_accumulator" type
+                               (:template 
+                                  ( ("Accumulator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("droppable_accumulator" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("droppable_accumulator" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5013 5030]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [4959 5096]))                                  
+                                :superclasses 
+                                  ( ("droppable_accumulator_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4833 5103])
+                            ("with_cached_result" type
+                               (:template 
+                                  ( ("Accumulator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("result_type" type
+                                       (:typedef ("Accumulator::result_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5309 5363])
+                                    ("with_cached_result" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("with_cached_result" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5424 5441]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [5373 5511])
+                                    ("with_cached_result" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("that" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("with_cached_result" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5540 5571]))                                          
+                                        :type ("with_cached_result" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5521 5778])
+                                    ("with_cached_result" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5788 6217])
+                                    ("on_drop" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6272 6289]))                                          )
+                                        (reparse-symbol classsubparts) [6227 6485])
+                                    ("result" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("result_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6546 6563]))                                          
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [6495 6676])
+                                    ("private" label nil (reparse-symbol classsubparts) [6682 6690])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("with_cached_result" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6730 6757]))                                          
+                                        :type ("with_cached_result" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6699 6758])
+                                    ("set" function
+                                       (:arguments 
+                                          ( ("r" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("result_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6777 6798]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6768 6875])
+                                    ("get" function
+                                       (:methodconst-flag t
+                                        :type ("result_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6885 7012])
+                                    ("has_result" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7022 7274])
+                                    ("cache" variable (:type ("aligned_storage" type
+                                         (:template-specifier (((7306 . 7319)))
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [7284 7327]))                                  
+                                :superclasses 
+                                  ( ("Accumulator" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5214 7334])
+                            ("tag" type
+                               (:members 
+                                  ( ("as_droppable" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("droppable" type
+                                                     (:template-specifier 
+                                                        ( ("Feature" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7445 7477]))                                          )
+                                        (reparse-symbol namespacesubparts) [7368 7488])
+                                    ("as_droppable" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("droppable" type
+                                                     (:template-specifier 
+                                                        ( ("Feature" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7596 7628]))                                          
+                                        :template-specifier 
+                                          ( ("droppable" type (:template-specifier 
+                                              ( ("Feature" type nil nil nil))                                              ) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [7498 7639])
+                                    ("droppable" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("feature_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7903 7921])
+                                            ("tmp_dependencies_" type
+                                               (:typedef ("feature_type::dependencies" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7934 7996])
+                                            ("dependencies" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8176 8206])
+                                            ("impl" type
+                                               (:members 
+                                                  ( ("apply" type
+                                                       (:template 
+                                                          ( ("Sample" type (:type "class") nil nil)
+                                                            ("Weight" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [8573 8578]))                                                          )
+                                                        (reparse-symbol classsubparts) [8262 8597]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [8220 8612]))                                          
+                                        :superclasses 
+                                          ( ("as_feature::type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [7753 8623]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [7340 8629])
+                            ("as_feature" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [8834 8839]))                                  
+                                :template-specifier 
+                                  ( ("tag::droppable" type (:template-specifier 
+                                      ( ("Feature" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8686 8846])
+                            ("as_weighted_feature" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [9130 9135]))                                  
+                                :template-specifier 
+                                  ( ("tag::droppable" type (:template-specifier 
+                                      ( ("Feature" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8964 9142])
+                            ("feature_of" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("feature_of" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("tag::droppable" type (:template-specifier 
+                                      ( ("Feature" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9267 9382])
+                            ("tag::droppable" using (:type ("tag::droppable" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [9674 9695]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [774 9698]))                  
+                :type "namespace")
+                nil [756 9699]))          
+      :file "droppable_accumulator.hpp"
+      :pointmax 9741
+      :fsize 9740
+      :lastmodtime '(20225 54184 0 0)
+      :unmatched-syntax '((punctuation 9128 . 9129) (symbol 9124 . 9128) (punctuation 9123 . 9124) (punctuation 9122 . 9123) (punctuation 9121 . 9122) (symbol 9114 . 9121) (punctuation 9113 . 9114) (symbol 9094 . 9113) (TYPENAME 9085 . 9093) (punctuation 9084 . 9085) (symbol 9075 . 9084) (punctuation 9074 . 9075) (punctuation 9073 . 9074) (symbol 9070 . 9073) (TYPEDEF 9062 . 9069) (punctuation 8832 . 8833) (symbol 8828 . 8832) (punctuation 8827 . 8828) (punctuation 8826 . 8827) (punctuation 8825 . 8826) (symbol 8818 . 8825) (punctuation 8817 . 8818) (symbol 8807 . 8817) (TYPENAME 8798 . 8806) (punctuation 8797 . 8798) (symbol 8788 . 8797) (punctuation 8787 . 8788) (punctuation 8786 . 8787) (symbol 8783 . 8786) (TYPEDEF 8775 . 8782) (punctuation 8551 . 8552) (symbol 8522 . 8526) (punctuation 8521 . 8522) (punctuation 8520 . 8521) (punctuation 8519 . 8520) (symbol 8513 . 8519) (punctuation 8511 . 8512) (symbol 8505 . 8511) (punctuation 8503 . 8504) (symbol 8499 . 8503) (punctuation 8498 . 8499) (punctuation 8497 . 8498) (symbol 8485 . 8497) (TYPENAME 8476 . 8484) (punctuation 8475 . 8476) (symbol 8469 . 8475) (punctuation 8468 . 8469) (punctuation 8467 . 8468) (symbol 8464 . 8467) (TYPENAME 8455 . 8463) (punctuation 8425 . 8426) (symbol 8404 . 8425) (TYPEDEF 8372 . 8379) (punctuation 8551 . 8552) (symbol 8522 . 8526) (punctuation 8521 . 8522) (punctuation 8520 . 8521) (punctuation 8519 . 8520) (symbol 8513 . 8519) (punctuation 8511 . 8512) (symbol 8505 . 8511) (punctuation 8503 . 8504) (symbol 8499 . 8503) (punctuation 8498 . 8499) (punctuation 8497 . 8498) (symbol 8485 . 8497) (TYPENAME 8476 . 8484) (punctuation 8475 . 8476) (symbol 8469 . 8475) (punctuation 8468 . 8469) (punctuation 8467 . 8468) (symbol 8464 . 8467) (TYPENAME 8455 . 8463) (punctuation 8425 . 8426) (symbol 8404 . 8425) (TYPEDEF 8372 . 8379) (punctuation 8175 . 8176) (punctuation 8174 . 8175) (punctuation 8173 . 8174) (punctuation 8155 . 8156) (symbol 8153 . 8155) (punctuation 8152 . 8153) (punctuation 8151 . 8152) (symbol 8148 . 8151) (punctuation 8147 . 8148) (symbol 8135 . 8147) (punctuation 8133 . 8134) (symbol 8102 . 8114) (punctuation 8101 . 8102) (punctuation 8100 . 8101) (symbol 8088 . 8100) (TYPENAME 8079 . 8087) (punctuation 8057 . 8058) (symbol 8048 . 8057) (punctuation 8047 . 8048) (punctuation 8046 . 8047) (symbol 8043 . 8046) (TYPENAME 8034 . 8042) (TYPEDEF 8010 . 8017) (punctuation 7902 . 7903) (punctuation 7901 . 7902) (punctuation 7900 . 7901) (symbol 7893 . 7900) (punctuation 7892 . 7893) (symbol 7882 . 7892) (TYPENAME 7873 . 7881) (TYPEDEF 7865 . 7872) (EXPLICIT 2321 . 2329) (EXPLICIT 1164 . 1172))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_DROPPABLE_ACCUMULATOR_HPP_EAN_13_12_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_REFERENCE_ACCUMULATOR_HPP_EAN_03_23_2006" variable (:constant-flag t) nil [401 483])
+            ("boost/ref.hpp" include (:system-flag t) nil [485 509])
+            ("boost/mpl/always.hpp" include (:system-flag t) nil [510 541])
+            ("boost/parameter/keyword.hpp" include (:system-flag t) nil [542 580])
+            ("boost/accumulators/framework/depends_on.hpp" include (:system-flag t) nil [581 635])
+            ("boost/accumulators/framework/accumulator_base.hpp" include (:system-flag t) nil [655 715])
+            ("boost/accumulators/framework/extractor.hpp" include (:system-flag t) nil [716 769])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("impl" type
+                               (:members 
+                                  ( ("reference_accumulator_impl" type
+                                       (:template 
+                                          ( ("Referent" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("result_type" variable (:type ("Referent" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1083 1105])
+                                            ("reference_accumulator_impl" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("reference_accumulator_impl" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1174 1191]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1115 1265])
+                                            ("result" function
+                                               (:methodconst-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1294 1304]))                                                  
+                                                :type ("result_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1275 1360])
+                                            ("private" label nil (reparse-symbol classsubparts) [1366 1374])
+                                            ("ref" variable (:type ("reference_wrapper" type
+                                                 (:template-specifier 
+                                                    ( ("Referent" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1383 1415]))                                          
+                                        :superclasses 
+                                          ( ("accumulator_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [956 1422]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [815 1424])
+                            ("tag" type
+                               (:members 
+                                  ( ("reference_tag" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1564 1624])
+                                    ("reference" type
+                                       (:template 
+                                          ( ("Referent" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("impl" type
+                                               (:typedef ("mpl::always" type
+                                                     (:template-specifier 
+                                                        ( ("accumulators::impl::reference_accumulator_impl" type (:template-specifier 
+                                                            ( ("Referent" type nil nil nil)
+                                                              ("Tag" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1862 1951]))                                          
+                                        :superclasses 
+                                          ( ("depends_on" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1726 1958]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1444 1960])
+                            ("extract" type (:type "namespace") (reparse-symbol namespacesubparts) [1962 2133])
+                            ("extract::reference" using (:type ("extract::reference" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2135 2160])
+                            ("extract::reference_tag" using (:type ("extract::reference_tag" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2161 2190])
+                            ("feature_of" type
+                               (:template 
+                                  ( ("ValueType" type (:type "class") nil nil)
+                                    ("Tag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("feature_of" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("tag::reference" type (:template-specifier 
+                                      ( ("ValueType" type nil nil nil)
+                                        ("Tag" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2350 2489]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [789 2492]))                  
+                :type "namespace")
+                nil [771 2493]))          
+      :file "reference_accumulator.hpp"
+      :pointmax 2535
+      :fsize 2534
+      :lastmodtime '(20225 54184 0 0)
+      :unmatched-syntax '((semantic-list 2099 . 2131) (symbol 2064 . 2099) (semantic-list 2120 . 2130) (semantic-list 2021 . 2059) (symbol 1986 . 2021) (semantic-list 2048 . 2058) (semantic-list 2038 . 2048) (TYPEDEF 1075 . 1082))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_REFERENCE_ACCUMULATOR_HPP_EAN_03_23_2006")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_VALUE_ACCUMULATOR_HPP_EAN_03_23_2006" variable (:constant-flag t) nil [408 486])
+            ("boost/mpl/always.hpp" include (:system-flag t) nil [488 519])
+            ("boost/parameter/keyword.hpp" include (:system-flag t) nil [520 558])
+            ("boost/accumulators/framework/depends_on.hpp" include (:system-flag t) nil [559 613])
+            ("boost/accumulators/framework/accumulator_base.hpp" include (:system-flag t) nil [633 693])
+            ("boost/accumulators/framework/extractor.hpp" include (:system-flag t) nil [694 747])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("impl" type
+                               (:members 
+                                  ( ("value_accumulator_impl" type
+                                       (:template 
+                                          ( ("ValueType" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("result_type" type
+                                               (:typedef ("ValueType" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1040 1070])
+                                            ("value_accumulator_impl" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("value_accumulator_impl" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1135 1152]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1080 1226])
+                                            ("result" function
+                                               (:methodconst-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1255 1265]))                                                  
+                                                :type ("result_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1236 1321])
+                                            ("private" label nil (reparse-symbol classsubparts) [1327 1335])
+                                            ("val" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1344 1358]))                                          
+                                        :superclasses 
+                                          ( ("accumulator_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [924 1365]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [793 1368])
+                            ("tag" type
+                               (:members 
+                                  ( ("value_tag" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1504 1560])
+                                    ("value" type
+                                       (:template 
+                                          ( ("ValueType" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("impl" type
+                                               (:typedef ("mpl::always" type
+                                                     (:template-specifier 
+                                                        ( ("accumulators::impl::value_accumulator_impl" type (:template-specifier 
+                                                            ( ("ValueType" type nil nil nil)
+                                                              ("Tag" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1791 1877]))                                          
+                                        :superclasses 
+                                          ( ("depends_on" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1658 1884]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1388 1886])
+                            ("extract" type (:type "namespace") (reparse-symbol namespacesubparts) [1888 2051])
+                            ("extract::value" using (:type ("extract::value" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2053 2074])
+                            ("extract::value_tag" using (:type ("extract::value_tag" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2075 2100])
+                            ("feature_of" type
+                               (:template 
+                                  ( ("ValueType" type (:type "class") nil nil)
+                                    ("Tag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("feature_of" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("tag::value" type (:template-specifier 
+                                      ( ("ValueType" type nil nil nil)
+                                        ("Tag" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2241 2372]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [767 2375]))                  
+                :type "namespace")
+                nil [749 2376]))          
+      :file "value_accumulator.hpp"
+      :pointmax 2418
+      :fsize 2417
+      :lastmodtime '(20225 54184 0 0)
+      :unmatched-syntax '((semantic-list 2021 . 2049) (symbol 1986 . 2021) (semantic-list 2038 . 2048) (semantic-list 1947 . 1981) (symbol 1912 . 1947) (semantic-list 1970 . 1980) (semantic-list 1960 . 1970))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_VALUE_ACCUMULATOR_HPP_EAN_03_23_2006")
+          )
+))
+  :file "!usr!include!boost!accumulators!framework!accumulators!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

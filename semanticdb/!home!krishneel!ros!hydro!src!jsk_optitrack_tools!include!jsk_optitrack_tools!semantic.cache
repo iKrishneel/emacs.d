@@ -1,0 +1,886 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("VRPN_CONNECTION_H" variable (:constant-flag t) nil [38 55])
+            ("stdio.h" include (:system-flag t) nil [57 75])
+            ("vrpn_Shared.h" include nil nil [112 136])
+            ("vrpn_HANDLERPARAM" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("type" variable (:type "long") (reparse-symbol classsubparts) [372 383])
+                          ("sender" variable (:type "long") (reparse-symbol classsubparts) [385 398])
+                          ("msg_time" variable (:type ("timeval" type
+                               (:prototype t
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [400 424])
+                          ("payload_len" variable (:type "int") (reparse-symbol classsubparts) [426 443])
+                          ("buffer" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [445 464]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [354 485])
+            ("vrpn_MESSAGEHANDLER" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [522 537])
+                    ("p" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [538 558]))                  
+                :type "int")
+                nil [494 559])
+            ("vrpn_ALIGN" variable (:constant-flag t) nil [611 621])
+            ("vrpn_CONNECTION_MAX_SENDERS" variable (:constant-flag t) nil [884 911])
+            ("vrpn_CONNECTION_MAX_TYPES" variable (:constant-flag t) nil [925 950])
+            ("vrpn_ANY_SENDER" variable (:constant-flag t) nil [1065 1080])
+            ("vrpn_ANY_TYPE" variable (:constant-flag t) nil [1199 1212])
+            ("vrpn_CONNECTION_TCP_BUFLEN" variable (:constant-flag t) nil [1307 1333])
+            ("vrpn_CONNECTION_UDP_BUFLEN" variable (:constant-flag t) nil [1350 1376])
+            ("vrpn_CONNECTION_SENDER_DESCRIPTION" variable (:constant-flag t) nil [1417 1451])
+            ("vrpn_CONNECTION_TYPE_DESCRIPTION" variable (:constant-flag t) nil [1465 1497])
+            ("vrpn_CONNECTION_UDP_DESCRIPTION" variable (:constant-flag t) nil [1511 1542])
+            ("vrpn_CONNECTION_LOG_DESCRIPTION" variable (:constant-flag t) nil [1557 1588])
+            ("vrpn_CONNECTION_RELIABLE" variable (:constant-flag t) nil [1855 1879])
+            ("vrpn_CONNECTION_FIXED_LATENCY" variable (:constant-flag t) nil [1896 1925])
+            ("vrpn_CONNECTION_LOW_LATENCY" variable (:constant-flag t) nil [1942 1969])
+            ("vrpn_CONNECTION_FIXED_THROUGHPUT" variable (:constant-flag t) nil [1986 2018])
+            ("vrpn_CONNECTION_HIGH_THROUGHPUT" variable (:constant-flag t) nil [2034 2065])
+            ("vrpn_LOG_NONE" variable (:constant-flag t) nil [2098 2111])
+            ("vrpn_LOG_INCOMING" variable (:constant-flag t) nil [2127 2144])
+            ("vrpn_LOG_OUTGOING" variable (:constant-flag t) nil [2162 2179])
+            ("SOCKET" variable (:constant-flag t) nil [2214 2220])
+            ("vrpn_DEFAULT_LISTEN_PORT_NO" variable (:constant-flag t) nil [2284 2311])
+            ("vrpn_got_first_connection" variable (:constant-flag t) nil [2516 2541])
+            ("vrpn_got_connection" variable (:constant-flag t) nil [2589 2608])
+            ("vrpn_dropped_connection" variable (:constant-flag t) nil [2650 2673])
+            ("vrpn_dropped_last_connection" variable (:constant-flag t) nil [2724 2752])
+            ("vrpn_CONTROL" variable (:constant-flag t) nil [3074 3086])
+            ("cName" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [3103 3128])
+            ("vrpnMsgCallbackEntry" type
+               (:members 
+                  ( ("handler" variable (:type ("vrpn_MESSAGEHANDLER" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3215 3243])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3265 3283])
+                    ("sender" variable (:type "long") (reparse-symbol classsubparts) [3302 3316])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("vrpnMsgCallbackEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3343 3371]))                  
+                :type "struct")
+                nil [3183 3391])
+            ("vrpn_Connection" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3419 3426])
+                    ("vrpn_Connection" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3720 3725]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3694 3726])
+                    ("doing_okay" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3802 3807]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3779 3833])
+                    ("connected" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3858 3863]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3835 3870])
+                    ("mainloop" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4325 4330]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4304 4331])
+                    ("register_sender" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4476 4494]))                          
+                        :type "long")
+                        (reparse-symbol classsubparts) [4446 4495])
+                    ("register_message_type" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4533 4551]))                          
+                        :type "long")
+                        (reparse-symbol classsubparts) [4497 4552])
+                    ("register_handler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable (:type "long") (reparse-symbol arg-sub-list) [4868 4878])
+                            ("handler" variable (:type ("vrpn_MESSAGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4879 4907])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4911 4926])
+                            ("sender" variable
+                               (:default-value "vrpn_ANY_SENDER"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [4927 4956]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4839 4958])
+                    ("unregister_handler" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable (:type "long") (reparse-symbol arg-sub-list) [4991 5001])
+                            ("handler" variable (:type ("vrpn_MESSAGEHANDLER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5002 5030])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5034 5049])
+                            ("sender" variable
+                               (:default-value "vrpn_ANY_SENDER"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [5050 5079]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4960 5081])
+                    ("pack_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5249 5257])
+                            ("time" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5258 5278])
+                            ("type" variable (:type "long") (reparse-symbol arg-sub-list) [5284 5294])
+                            ("sender" variable (:type "long") (reparse-symbol arg-sub-list) [5295 5307])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5308 5328])
+                            ("class_of_service" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5334 5365]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5224 5366])
+                    ("time_since_connection_open" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("elapsed_time" variable
+                               (:pointer 1
+                                :type ("timeval" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5523 5553]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5458 5554])
+                    ("sender_name" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :arguments 
+                          ( ("sender" variable (:type "long") (reparse-symbol arg-sub-list) [5730 5742]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [5696 5743])
+                    ("message_type_name" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :arguments 
+                          ( ("type" variable (:type "long") (reparse-symbol arg-sub-list) [5785 5795]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [5745 5796])
+                    ("protected" label nil (reparse-symbol classsubparts) [5800 5810])
+                    ("vrpn_Connection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("listen_port_no" variable
+                               (:default-value "vrpn_DEFAULT_LISTEN_PORT_NO"
+                                :type "unsigned short")
+                                (reparse-symbol arg-sub-list) [6060 6130]))                          
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6043 6132])
+                    ("vrpn_Connection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("server_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6377 6402])
+                            ("port" variable
+                               (:default-value "vrpn_DEFAULT_LISTEN_PORT_NO"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6428 6466])
+                            ("local_logfile_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6493 6531])
+                            ("local_log_mode" variable
+                               (:default-value "vrpn_LOG_NONE"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [6558 6593])
+                            ("remote_logfile_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6620 6659])
+                            ("remote_log_mode" variable
+                               (:default-value "vrpn_LOG_NONE"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [6686 6722]))                          
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6360 6724])
+                    ("status" variable (:type "int") (reparse-symbol classsubparts) [6746 6757])
+                    ("vrpn_OneConnection" type
+                       (:members 
+                          ( ("vrpn_OneConnection" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7014 7019]))                                  
+                                :type ("vrpn_OneConnection" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [6994 7020])
+                            ("vrpn_OneConnection" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7051 7064])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7065 7078]))                                  
+                                :type ("vrpn_OneConnection" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7031 7079])
+                            ("tcp_sock" variable (:type "int") (reparse-symbol classsubparts) [7091 7107])
+                            ("udp_sock" variable (:type "int") (reparse-symbol classsubparts) [7118 7134])
+                            ("rhostname" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [7145 7166]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [6955 7177])
+                    ("endpoint" variable (:type ("vrpn_OneConnection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7229 7257])
+                    ("udp_inbound" variable (:type "int") (reparse-symbol classsubparts) [7259 7279])
+                    ("udp_portnum" variable (:type "unsigned short") (reparse-symbol classsubparts) [7281 7308])
+                    ("num_live_connections" variable (:type "int") (reparse-symbol classsubparts) [7433 7458])
+                    ("listen_udp_sock" variable (:type "int") (reparse-symbol classsubparts) [7530 7550])
+                    ("vrpnLocalMapping" type
+                       (:members 
+                          ( ("name" variable
+                               (:pointer 1
+                                :type ("cName" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7728 7743])
+                            ("who_cares" variable
+                               (:pointer 1
+                                :type ("vrpnMsgCallbackEntry" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7763 7796])
+                            ("cCares" variable (:type "int") (reparse-symbol classsubparts) [7812 7825]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [7700 7847])
+                    ("my_senders" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("cName" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7849 7900])
+                    ("num_my_senders" variable (:type "int") (reparse-symbol classsubparts) [7902 7923])
+                    ("my_types" variable
+                       (:dereference 1
+                        :type ("vrpnLocalMapping" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7925 7979])
+                    ("num_my_types" variable (:type "int") (reparse-symbol classsubparts) [7981 8000])
+                    ("generic_callbacks" variable
+                       (:pointer 1
+                        :type ("vrpnMsgCallbackEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8034 8075])
+                    ("cRemoteMapping" type
+                       (:members 
+                          ( ("name" variable
+                               (:pointer 1
+                                :type ("cName" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8291 8304])
+                            ("local_id" variable (:type "int") (reparse-symbol classsubparts) [8307 8320]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [8265 8324])
+                    ("other_senders" variable
+                       (:dereference 1
+                        :type ("cRemoteMapping" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8326 8385])
+                    ("num_other_senders" variable (:type "int") (reparse-symbol classsubparts) [8387 8410])
+                    ("other_types" variable
+                       (:dereference 1
+                        :type ("cRemoteMapping" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8412 8467])
+                    ("num_other_types" variable (:type "int") (reparse-symbol classsubparts) [8469 8490])
+                    ("tcp_outbuf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8540 8585])
+                    ("udp_outbuf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8587 8632])
+                    ("tcp_num_out" variable (:type "int") (reparse-symbol classsubparts) [8634 8650])
+                    ("udp_num_out" variable (:type "int") (reparse-symbol classsubparts) [8652 8668])
+                    ("handle_udp_messages" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [8757 8764]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8732 8765])
+                    ("handle_tcp_messages" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [8792 8799]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8767 8800])
+                    ("handle_sender_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [8878 8894])
+                            ("p" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8895 8915]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8844 8916])
+                    ("handle_type_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [8950 8966])
+                            ("p" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8967 8987]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8918 8988])
+                    ("handle_UDP_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9021 9037])
+                            ("p" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9038 9058]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8990 9059])
+                    ("handle_log_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9092 9108])
+                            ("p" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9109 9129]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9061 9130])
+                    ("system_messages" variable
+                       (:dereference 1
+                        :type ("vrpn_MESSAGEHANDLER" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9182 9246])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9268 9273]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9249 9274])
+                    ("send_pending_reports" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9341 9346]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9307 9347])
+                    ("check_connection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9380 9385]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9349 9386])
+                    ("setup_for_new_connection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9426 9431]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9388 9432])
+                    ("setup_new_connection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("logmode" variable
+                               (:default-value "0L"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [9485 9502])
+                            ("logfile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9543 9570]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9451 9572])
+                    ("drop_connection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9624 9629]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9594 9630])
+                    ("pack_sender_description" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("which" variable (:type "int") (reparse-symbol arg-sub-list) [9669 9679]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9632 9680])
+                    ("pack_type_description" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("which" variable (:type "int") (reparse-symbol arg-sub-list) [9717 9727]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9682 9728])
+                    ("pack_udp_description" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("portno" variable (:type "int") (reparse-symbol arg-sub-list) [9764 9775]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9730 9776])
+                    ("pack_log_description" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mode" variable (:type "long") (reparse-symbol arg-sub-list) [9812 9822])
+                            ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9869 9891]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9778 9892])
+                    ("outbound_udp_open" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9924 9929]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9894 9975])
+                    ("marshall_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("outbuf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10007 10021])
+                            ("outbuf_size" variable (:type "int") (reparse-symbol arg-sub-list) [10022 10038])
+                            ("initial_out" variable (:type "int") (reparse-symbol arg-sub-list) [10043 10059])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10060 10068])
+                            ("time" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol arg-sub-list) [10069 10089])
+                            ("type" variable (:type "long") (reparse-symbol arg-sub-list) [10094 10104])
+                            ("sender" variable (:type "long") (reparse-symbol arg-sub-list) [10105 10117])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10118 10138]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9977 10139])
+                    ("connect_tcp_to" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10170 10187]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10142 10188])
+                    ("do_callbacks_for" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable (:type "long") (reparse-symbol arg-sub-list) [10221 10231])
+                            ("sender" variable (:type "long") (reparse-symbol arg-sub-list) [10232 10244])
+                            ("time" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol arg-sub-list) [10249 10269])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10270 10278])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10304 10324]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10191 10325])
+                    ("message_type_is_registered" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10412 10425]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10379 10432])
+                    ("tvClockOffset" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10617 10646])
+                    ("d_TCPbuflen" variable (:type "int") (reparse-symbol classsubparts) [10716 10732])
+                    ("d_TCPbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10734 10750])
+                    ("d_UDPinbufToAlignRight" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [10752 10831])
+                    ("d_UDPinbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10833 10850])
+                    ("vrpn_LOGLIST" type
+                       (:members 
+                          ( ("data" variable (:type ("vrpn_HANDLERPARAM" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10908 10931])
+                            ("next" variable
+                               (:pointer 1
+                                :type ("vrpn_LOGLIST" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10935 10955])
+                            ("prev" variable
+                               (:pointer 1
+                                :type ("vrpn_LOGLIST" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10959 10979]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [10883 10983])
+                    ("d_logbuffer" variable
+                       (:pointer 1
+                        :type ("vrpn_LOGLIST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10986 11013])
+                    ("d_first_log_entry" variable
+                       (:pointer 1
+                        :type ("vrpn_LOGLIST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11037 11070])
+                    ("d_logname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11095 11112])
+                    ("d_logmode" variable (:type "long") (reparse-symbol classsubparts) [11157 11172])
+                    ("d_logfile_handle" variable (:type "int") (reparse-symbol classsubparts) [11226 11247])
+                    ("d_logfile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11249 11266])
+                    ("log_message" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("payload_len" variable (:type "int") (reparse-symbol arg-sub-list) [11294 11310])
+                            ("time" variable (:type ("timeval" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol arg-sub-list) [11311 11331])
+                            ("type" variable (:type "long") (reparse-symbol arg-sub-list) [11358 11368])
+                            ("sender" variable (:type "long") (reparse-symbol arg-sub-list) [11369 11381])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11382 11402]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11269 11403])
+                    ("close_log" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11428 11433]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11405 11434])
+                    ("open_log" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11458 11463]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11436 11464])
+                    ("start_time" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11500 11526]))                  
+                :type "class")
+                nil [3393 11530])
+            ("vrpn_Clock_Server" type
+               (:prototype t
+                :type "class")
+                nil [11549 11573])
+            ("vrpn_Clock_Remote" type
+               (:prototype t
+                :type "class")
+                nil [11574 11598])
+            ("vrpn_Synchronized_Connection" type
+               (:superclasses 
+                  ( ("vrpn_Connection" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12215 12222])
+                    ("vrpn_Synchronized_Connection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("listen_port_no" variable
+                               (:default-value "vrpn_DEFAULT_LISTEN_PORT_NO"
+                                :type "unsigned short")
+                                (reparse-symbol arg-sub-list) [12348 12411]))                          
+                        :type ("vrpn_Synchronized_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12318 12413])
+                    ("pClockServer" variable
+                       (:pointer 1
+                        :type ("vrpn_Clock_Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12418 12451])
+                    ("vrpn_Synchronized_Connection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("server_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12852 12877])
+                            ("port" variable
+                               (:default-value "vrpn_DEFAULT_LISTEN_PORT_NO"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [12888 12926])
+                            ("local_logfile_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12938 12976])
+                            ("local_log_mode" variable
+                               (:default-value "vrpn_LOG_NONE"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [12988 13023])
+                            ("remote_logfile_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13035 13074])
+                            ("remote_log_mode" variable
+                               (:default-value "vrpn_LOG_NONE"
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [13086 13122])
+                            ("dFreq" variable
+                               (:default-value "4.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [13127 13145])
+                            ("cOffsetWindow" variable
+                               (:default-value "2"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [13151 13172]))                          
+                        :type ("vrpn_Synchronized_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12820 13174])
+                    ("fullSync" function
+                       (:prototype-flag t
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13293 13319])
+                    ("pClockRemote" variable
+                       (:pointer 1
+                        :type ("vrpn_Clock_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13324 13357])
+                    ("mainloop" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13384 13389]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13362 13390]))                  
+                :type "class")
+                nil [12151 13393])
+            ("vrpn_get_connection_by_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13587 13606])
+                    ("local_logfile_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "NULL"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13617 13655])
+                    ("local_log_mode" variable
+                       (:default-value "vrpn_LOG_NONE"
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [13667 13702])
+                    ("remote_logfile_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "NULL"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13714 13753])
+                    ("remote_log_mode" variable
+                       (:default-value "vrpn_LOG_NONE"
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [13765 13801])
+                    ("dFreq" variable
+                       (:default-value "1.0"
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [13806 13824])
+                    ("cSyncWindow" variable
+                       (:default-value "3"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13826 13845]))                  
+                :type ("vrpn_Connection" type (:type "class") nil nil))
+                nil [13531 13847])
+            ("vrpn_copy_service_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fullname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14041 14063]))                  
+                :type "char")
+                nil [14010 14064])
+            ("vrpn_copy_service_location" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fullname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14100 14122]))                  
+                :type "char")
+                nil [14065 14123])
+            ("vrpn_copy_file_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filespecifier" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14277 14304]))                  
+                :type "char")
+                nil [14249 14305])
+            ("vrpn_copy_machine_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("hostspecifier" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14493 14520]))                  
+                :type "char")
+                nil [14462 14521])
+            ("vrpn_get_port_number" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hostspecifier" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14548 14575]))                  
+                :type "int")
+                nil [14522 14576]))          
+      :file "vrpn_Connection.h"
+      :pointmax 14606
+      :fsize 14605
+      :lastmodtime '(21998 40757 948043 414000)
+      :unmatched-syntax '((TYPEDEF 486 . 493))
+      :lexical-table 
+        '(("VRPN_CONNECTION_H")
+          ("vrpn_CONNECTION_UDP_BUFLEN" . ((semantic-list "(1500)" 1377 . 1383)))
+          ("vrpn_got_connection" . ((string "\"VRPN Connection Got Connection\"" 2609 . 2641)))
+          ("SOCKET" . ((INT "int" 2221 . 2224)))
+          ("vrpn_CONNECTION_MAX_SENDERS" . ((semantic-list "(10)" 912 . 916)))
+          ("vrpn_ANY_SENDER" . ((semantic-list "(-1)" 1081 . 1085)))
+          ("vrpn_CONNECTION_TCP_BUFLEN" . ((semantic-list "(64000)" 1334 . 1341)))
+          ("vrpn_CONNECTION_UDP_DESCRIPTION" . ((semantic-list "(-3)" 1544 . 1548)))
+          ("vrpn_got_first_connection" . ((string "\"VRPN Connection Got First Connection\"" 2542 . 2580)))
+          ("vrpn_CONNECTION_MAX_TYPES" . ((semantic-list "(2000)" 951 . 957)))
+          ("vrpn_CONNECTION_TYPE_DESCRIPTION" . ((semantic-list "(-2)" 1498 . 1502)))
+          ("vrpn_ANY_TYPE" . ((semantic-list "(-1)" 1213 . 1217)))
+          ("vrpn_LOG_INCOMING" . ((semantic-list "(1<<0)" 2147 . 2153)))
+          ("vrpn_LOG_OUTGOING" . ((semantic-list "(1<<1)" 2182 . 2188)))
+          ("vrpn_dropped_connection" . ((string "\"VRPN Connection Dropped Last Connection\"" 2674 . 2715)))
+          ("vrpn_dropped_last_connection" . ((string "\"VRPN Connection Dropped Connection\"" 2753 . 2789)))
+          ("vrpn_CONNECTION_RELIABLE" . ((semantic-list "(1<<0)" 1881 . 1887)))
+          ("vrpn_CONNECTION_FIXED_THROUGHPUT" . ((semantic-list "(1<<3)" 2019 . 2025)))
+          ("vrpn_CONNECTION_LOW_LATENCY" . ((semantic-list "(1<<2)" 1971 . 1977)))
+          ("vrpn_LOG_NONE" . ((semantic-list "(0)" 2115 . 2118)))
+          ("vrpn_ALIGN" . ((semantic-list "(8)" 644 . 647)))
+          ("vrpn_CONNECTION_HIGH_THROUGHPUT" . ((semantic-list "(1<<4)" 2067 . 2073)))
+          ("vrpn_DEFAULT_LISTEN_PORT_NO" . ((semantic-list "(4500)" 2324 . 2330)))
+          ("vrpn_CONTROL" . ((string "\"VRPN Control\"" 3087 . 3101)))
+          ("vrpn_CONNECTION_SENDER_DESCRIPTION" . ((semantic-list "(-1)" 1452 . 1456)))
+          ("vrpn_CONNECTION_LOG_DESCRIPTION" . ((semantic-list "(-4)" 1590 . 1594)))
+          ("vrpn_CONNECTION_FIXED_LATENCY" . ((semantic-list "(1<<1)" 1927 . 1933)))
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!jsk_optitrack_tools!include!jsk_optitrack_tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

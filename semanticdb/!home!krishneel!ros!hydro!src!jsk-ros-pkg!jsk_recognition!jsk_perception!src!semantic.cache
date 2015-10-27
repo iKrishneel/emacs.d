@@ -1,0 +1,548 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_perception/skeletonization.h" include (:system-flag t) nil [1809 1852])
+            ("jsk_perception" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "Skeletonization"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1889 2069])
+                    ("subscribe" function
+                       (:parent "Skeletonization"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2078 2228])
+                    ("unsubscribe" function
+                       (:parent "Skeletonization"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2234 2370])
+                    ("imageCallback" function
+                       (:parent "Skeletonization"
+                        :arguments 
+                          ( ("image_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2420 2466]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2376 3157])
+                    ("skeletonization" function
+                       (:parent "Skeletonization"
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3209 3224]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3163 3847])
+                    ("iterativeThinning" function
+                       (:parent "Skeletonization"
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3901 3914])
+                            ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3915 3924]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3853 5549]))                  
+                :type "namespace")
+                nil [1854 5551])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [5572 5612])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_perception::Skeletonization" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5637 5669])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5670 5687]))                  
+                :type "int")
+                nil [5613 5688]))          
+      :file "skeletonization_nodelet.cpp"
+      :pointmax 5689
+      :fsize 5688
+      :lastmodtime '(21839 23790 824336 295000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_perception/fisheye_to_panorama.h" include nil nil [1808 1855])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [1856 1888])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1889 1919])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [1920 1960])
+            ("algorithm" include (:system-flag t) nil [1961 1981])
+            ("math.h" include (:system-flag t) nil [1982 1999])
+            ("PI" variable (:constant-flag t) nil [2010 2012])
+            ("jsk_perception" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "FisheyeToPanorama"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2052 2777])
+                    ("configCallback" function
+                       (:parent "FisheyeToPanorama"
+                        :arguments 
+                          ( ("new_config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2820 2839])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2840 2855]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2781 3021])
+                    ("subscribe" function
+                       (:parent "FisheyeToPanorama"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3026 3150])
+                    ("unsubscribe" function
+                       (:parent "FisheyeToPanorama"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3154 3226])
+                    ("rectify" function
+                       (:parent "FisheyeToPanorama"
+                        :arguments 
+                          ( ("image_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3263 3309]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3231 11148]))                  
+                :type "namespace")
+                nil [2023 11150])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [11153 11193])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_perception::FisheyeToPanorama" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11218 11252])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11253 11270]))                  
+                :type "int")
+                nil [11194 11271]))          
+      :file "fisheye_to_panorama.cpp"
+      :pointmax 11272
+      :fsize 11271
+      :lastmodtime '(21821 44675 841702 690000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PI" . ((number "3.141592" 2013 . 2021)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_perception/sliding_window_object_detector.h" include (:system-flag t) nil [38 96])
+            ("jsk_recognition_msgs/Rect.h" include (:system-flag t) nil [97 135])
+            ("jsk_perception/NonMaximumSuppression.h" include (:system-flag t) nil [136 185])
+            ("jsk_perception" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [217 2689])
+                    ("subscribe" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2694 2892])
+                    ("unsubscribe" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2900 3046])
+                    ("imageCb" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3096 3134]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3054 6524])
+                    ("runSlidingWindowDetector" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6631 6652])
+                            ("wsize" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6653 6674])
+                            ("scale" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [6675 6693])
+                            ("scale_counter" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6700 6724])
+                            ("incrementor" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6725 6747]))                          
+                        :type ("std::multimap" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("cv::Rect_" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6529 7312])
+                    ("objectRecognizer" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7375 7396])
+                            ("detection_info" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7397 7451])
+                            ("wsize" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7458 7479])
+                            ("incrementor" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7480 7502]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7317 8950])
+                    ("computeHSHistogram" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9068 9081])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9082 9096])
+                            ("hBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [9097 9112])
+                            ("sBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [9113 9128])
+                            ("is_norm" variable (:type "bool") (reparse-symbol arg-sub-list) [9129 9142]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9008 9656])
+                    ("pyramidialScaling" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("wsize" variable
+                               (:reference 1
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9723 9739])
+                            ("scale" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [9740 9758]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9664 10134])
+                    ("nonMaximumSuppression" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("detection_info" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10226 10280])
+                            ("nms_threshold" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [10287 10313]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Rect_" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10139 11599])
+                    ("convertCvRectToJSKRectArray" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("bounding_boxes" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11673 11724])
+                            ("jsk_rects" variable
+                               (:reference 1
+                                :type ("jsk_recognition_msgs::RectArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11731 11774])
+                            ("downsize" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [11781 11800])
+                            ("img_sz" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11801 11823]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11604 12216])
+                    ("loadTrainedDetectorModel" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12224 12974])
+                    ("readTrainingManifestFromDirectory" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12982 14253])
+                    ("setBoundingBoxLabel" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("im" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14319 14331])
+                            ("rect" variable (:type ("cv::Rect_" type
+                                 (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [14332 14352])
+                            ("label" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14353 14377]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14258 14984])
+                    ("configCallback" function
+                       (:parent "SlidingWindowObjectDetector"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("jsk_perception::SlidingWindowObjectDetectorConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15048 15106])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15107 15122]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14992 15567]))                  
+                :type "namespace")
+                nil [187 15569])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [15600 15640])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_perception::SlidingWindowObjectDetector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15664 15708])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15709 15726]))                  
+                :type "int")
+                nil [15641 15727]))          
+      :file "sliding_window_object_detector.cpp"
+      :pointmax 15728
+      :fsize 15727
+      :lastmodtime '(22055 53267 659733 802000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_topic_tools/log_utils.h" include (:system-flag t) nil [1 39])
+            ("jsk_perception/sliding_window_object_detector_trainer.h" include (:system-flag t) nil [40 106])
+            ("iostream" include (:system-flag t) nil [108 127])
+            ("jsk_perception" type
+               (:members 
+                  ( ("SlidingWindowObjectDetectorTrainer" function
+                       (:constructor-flag t
+                        :parent "SlidingWindowObjectDetectorTrainer"
+                        :type ("SlidingWindowObjectDetectorTrainer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [158 1318])
+                    ("trainObjectClassifier" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("pfilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1396 1418])
+                            ("nfilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1419 1441]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1326 2218])
+                    ("readDataset" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2283 2304])
+                            ("topic_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2305 2328])
+                            ("featureMD" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2329 2348])
+                            ("labelMD" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2355 2372])
+                            ("is_usr_label" variable (:type "bool") (reparse-symbol arg-sub-list) [2373 2391])
+                            ("usr_label" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2392 2412]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2223 3759])
+                    ("extractFeatures" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3884 3897])
+                            ("featureMD" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3898 3917]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3820 4480])
+                    ("trainBinaryClassSVM" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("featureMD" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4553 4578])
+                            ("labelMD" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4579 4602]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4485 5791])
+                    ("concatenateCVMat" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("mat_1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5861 5882])
+                            ("mat_2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5883 5904])
+                            ("featureMD" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5911 5930])
+                            ("iscolwise" variable (:type "bool") (reparse-symbol arg-sub-list) [5931 5946]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5796 6858])
+                    ("writeTrainingManifestToDirectory" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("fs" variable
+                               (:reference 1
+                                :type ("cv::FileStorage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6947 6967]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6866 7778])
+                    ("computeHSHistogram" function
+                       (:parent "SlidingWindowObjectDetectorTrainer"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7853 7866])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7867 7881])
+                            ("hBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7882 7897])
+                            ("sBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7898 7913])
+                            ("is_norm" variable (:type "bool") (reparse-symbol arg-sub-list) [7914 7927]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7786 8441]))                  
+                :type "namespace")
+                nil [128 8443])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8483 8492])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8493 8506]))                  
+                :type "int")
+                nil [8474 8769]))          
+      :file "sliding_window_object_detector_trainer_node.cpp"
+      :pointmax 8770
+      :fsize 10315
+      :lastmodtime '(21947 29847 988419 383000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_perception/apply_mask_image.h" include nil nil [1808 1852])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [1853 1893])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [1894 1923])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [1924 1956])
+            ("jsk_perception/image_utils.h" include nil nil [1957 1996])
+            ("jsk_perception" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "ApplyMaskImage"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2027 2314])
+                    ("subscribe" function
+                       (:parent "ApplyMaskImage"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2318 2948])
+                    ("unsubscribe" function
+                       (:parent "ApplyMaskImage"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2952 3053])
+                    ("apply" function
+                       (:parent "ApplyMaskImage"
+                        :arguments 
+                          ( ("image_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3089 3135])
+                            ("mask_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3140 3185]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3057 5520]))                  
+                :type "namespace")
+                nil [1998 5522])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [5524 5564])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_perception::ApplyMaskImage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5589 5620])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5621 5638]))                  
+                :type "int")
+                nil [5565 5639]))          
+      :file "apply_mask_image.cpp"
+      :pointmax 5640
+      :fsize 6154
+      :lastmodtime '(21846 12623 760692 464000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!jsk-ros-pkg!jsk_recognition!jsk_perception!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

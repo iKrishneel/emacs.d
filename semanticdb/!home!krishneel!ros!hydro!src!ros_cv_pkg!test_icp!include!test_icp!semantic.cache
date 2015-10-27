@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_TEST_ICP_H_" variable (:constant-flag t) nil [32 44])
+            ("ros/ros.h" include (:system-flag t) nil [47 67])
+            ("ros/console.h" include (:system-flag t) nil [68 92])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [94 130])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [131 160])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [162 188])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [189 233])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [234 262])
+            ("pcl/point_types.h" include (:system-flag t) nil [263 291])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [292 328])
+            ("pcl/kdtree/kdtree.h" include (:system-flag t) nil [329 359])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [360 396])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [397 436])
+            ("TestICP" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [458 465])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [470 502])
+                    ("TestICP" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("TestICP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [507 517])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 592]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [522 593])
+                    ("protected" label nil (reparse-symbol classsubparts) [599 609])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [614 628])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [633 650])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [655 674])
+                    ("private" label nil (reparse-symbol classsubparts) [680 688])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [693 713])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [718 744])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [749 776]))                  
+                :type "class")
+                nil [438 779]))          
+      :file "test_icp.h"
+      :pointmax 806
+      :fsize 805
+      :lastmodtime '(22043 41960 665680 228000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_TEST_ICP_H_")
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!test_icp!include!test_icp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

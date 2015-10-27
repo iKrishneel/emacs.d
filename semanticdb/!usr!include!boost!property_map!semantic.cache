@@ -1,0 +1,1202 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PROPERTY_MAP_HPP" variable (:constant-flag t) nil [404 426])
+            ("boost/assert.hpp" include (:system-flag t) nil [428 455])
+            ("boost/config.hpp" include (:system-flag t) nil [456 483])
+            ("boost/pending/cstddef.hpp" include (:system-flag t) nil [484 520])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [521 557])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [558 592])
+            ("boost/concept_archetype.hpp" include (:system-flag t) nil [593 631])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [632 663])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [664 691])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [692 720])
+            ("boost/mpl/has_xxx.hpp" include (:system-flag t) nil [721 753])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [754 794])
+            ("boost" type
+               (:members 
+                  ( ("is_property_map" type
+                       (:template 
+                          ( ("PA" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("boost::mpl::and_" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1088 1265])
+                    ("default_property_traits" type
+                       (:template 
+                          ( ("PA" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("key_type" type
+                               (:typedef ("PA::key_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1332 1371])
+                            ("value_type" type
+                               (:typedef ("PA::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1376 1419])
+                            ("reference" type
+                               (:typedef ("PA::reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1424 1465])
+                            ("category" type
+                               (:typedef ("PA::category" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1470 1511]))                          )
+                        (reparse-symbol namespacesubparts) [1270 1516])
+                    ("null_property_traits" type (:type "struct") (reparse-symbol namespacesubparts) [1521 1552])
+                    ("property_traits" type
+                       (:template 
+                          ( ("PA" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("boost::mpl::if_::type" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1557 1722])
+                    ("detail" type
+                       (:members 
+                          ( ("ePropertyMapID" type
+                               (:members 
+                                  ( ("READABLE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2141 2153])
+                                    ("WRITABLE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2154 2166])
+                                    ("READ_WRITE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2194 2208])
+                                    ("LVALUE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2209 2219])
+                                    ("OP_BRACKET_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2220 2234])
+                                    ("RAND_ACCESS_ITER_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2262 2282])
+                                    ("LAST_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2283 2292]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2119 2293]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2096 2297])
+                    ("readable_property_map_tag" type
+                       (:members 
+                          ( ("" type
+                               (:members 
+                                  ( ("id" variable
+                                       (:constant-flag t
+                                        :default-value (2347 2353)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2342 2353])
+                                    ("READABLE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2355 2368]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2335 2369]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2300 2372])
+                    ("writable_property_map_tag" type
+                       (:members 
+                          ( ("" type
+                               (:members 
+                                  ( ("id" variable
+                                       (:constant-flag t
+                                        :default-value (2422 2428)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2417 2428])
+                                    ("WRITABLE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2430 2443]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2410 2444]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2375 2447])
+                    ("read_write_property_map_tag" type
+                       (:superclasses 
+                          ( ("readable_property_map_tag" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("writable_property_map_tag" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("id" variable
+                                       (:constant-flag t
+                                        :default-value (2578 2584)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2573 2584])
+                                    ("READ_WRITE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2586 2601]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2566 2602]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2450 2605])
+                    ("lvalue_property_map_tag" type
+                       (:superclasses 
+                          ( ("read_write_property_map_tag" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("id" variable
+                                       (:constant-flag t
+                                        :default-value (2693 2699)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2688 2699])
+                                    ("LVALUE_PA" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2701 2712]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2681 2713]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2609 2716])
+                    ("property_traits" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4843 4864])
+                            ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4877 4899])
+                            ("key_type" type
+                               (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4904 4936])
+                            ("category" type
+                               (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4941 4982]))                          
+                        :template-specifier 
+                          ( ("T" type (:pointer 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4789 4987])
+                    ("property_traits" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5050 5071])
+                            ("reference" variable
+                               (:constant-flag t
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5084 5112])
+                            ("key_type" type
+                               (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5117 5149])
+                            ("category" type
+                               (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5154 5195]))                          
+                        :template-specifier 
+                          ( ("T" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4990 5200]))                  
+                :type "namespace")
+                nil [796 5402])
+            ("put" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("pa" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5602 5608])
+                    ("k" variable (:type ("std::ptrdiff_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5609 5626])
+                    ("val" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("V" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5627 5640]))                  
+                :typemodifiers ("inline"))
+                nil [5556 5658])
+            ("get" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pa" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5703 5715])
+                    ("k" variable (:type ("std::ptrdiff_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5716 5733]))                  
+                :constant-flag t
+                :typemodifiers ("inline"))
+                nil [5662 5751])
+            ("ReadablePropertyMapConcept" type
+               (:template 
+                  ( ("PMap" type (:type "class") nil nil)
+                    ("Key" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6094 6112])
+                    ("reference" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6157 6177])
+                    ("Category" variable (:type ("category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6222 6240])
+                    ("ReadableTag" type
+                       (:typedef ("boost::readable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6245 6298])
+                    ("constraints" function (:type "void") (reparse-symbol classsubparts) [6303 6428])
+                    ("pmap" variable (:type ("PMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6433 6443])
+                    ("k" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6448 6454])
+                    ("val" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6491 6506]))                  )
+                nil [5977 6511])
+            ("readable_property_map_archetype" type
+               (:template 
+                  ( ("KeyArchetype" type (:type "class") nil nil)
+                    ("ValueArchetype" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("KeyArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6619 6649])
+                    ("value_type" type
+                       (:typedef ("ValueArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6654 6688])
+                    ("reference" type
+                       (:typedef ("convertible_to_archetype" type
+                             (:template-specifier 
+                                ( ("ValueArchetype" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6693 6752])
+                    ("category" type
+                       (:typedef ("readable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6757 6800]))                  )
+                nil [6514 6805])
+            ("get" function
+               (:arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("readable_property_map_archetype" type
+                             (:template-specifier 
+                                ( ("K" type nil nil nil)
+                                  ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6914 6958])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("readable_property_map_archetype" type
+                             (:template-specifier 
+                                ( ("K" type nil nil nil)
+                                  ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6966 7018])
+                    ("" variable
+                       (:reference 1
+                        :type ("key_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7019 7029]))                  
+                :type ("reference" type (:type "class") nil nil))
+                nil [6897 7145])
+            ("WritablePropertyMapConcept" type
+               (:template 
+                  ( ("PMap" type (:type "class") nil nil)
+                    ("Key" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7267 7285])
+                    ("Category" variable (:type ("category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7330 7348])
+                    ("WritableTag" type
+                       (:typedef ("boost::writable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7353 7406])
+                    ("constraints" function (:type "void") (reparse-symbol classsubparts) [7411 7534])
+                    ("pmap" variable (:type ("PMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7539 7549])
+                    ("k" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7554 7560])
+                    ("val" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7597 7612]))                  )
+                nil [7150 7617])
+            ("writable_property_map_archetype" type
+               (:template 
+                  ( ("KeyArchetype" type (:type "class") nil nil)
+                    ("ValueArchetype" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("KeyArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7725 7755])
+                    ("value_type" type
+                       (:typedef ("ValueArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7760 7794])
+                    ("reference" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7799 7822])
+                    ("category" type
+                       (:typedef ("writable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7827 7870]))                  )
+                nil [7620 7875])
+            ("put" function
+               (:template 
+                  ( ("K" type (:type "class") nil nil)
+                    ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("writable_property_map_archetype" type
+                             (:template-specifier 
+                                ( ("K" type nil nil nil)
+                                  ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7923 7967])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("writable_property_map_archetype" type
+                             (:template-specifier 
+                                ( ("K" type nil nil nil)
+                                  ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7980 8032])
+                    ("" variable
+                       (:reference 1
+                        :type ("key_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8033 8043])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("writable_property_map_archetype" type
+                             (:template-specifier 
+                                ( ("K" type nil nil nil)
+                                  ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8056 8108])
+                    ("" variable
+                       (:reference 1
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8109 8121]))                  )
+                nil [7878 8125])
+            ("ReadWritePropertyMapConcept" type
+               (:template 
+                  ( ("PMap" type (:type "class") nil nil)
+                    ("Key" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("Category" variable (:type ("category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8248 8266])
+                    ("ReadWriteTag" type
+                       (:typedef ("boost::read_write_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8271 8327])
+                    ("constraints" function (:type "void") (reparse-symbol classsubparts) [8332 8567]))                  )
+                nil [8130 8572])
+            ("read_write_property_map_archetype" type
+               (:template 
+                  ( ("KeyArchetype" type (:type "class") nil nil)
+                    ("ValueArchetype" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("KeyArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8835 8865])
+                    ("value_type" type
+                       (:typedef ("ValueArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8870 8904])
+                    ("reference" type
+                       (:typedef ("convertible_to_archetype" type
+                             (:template-specifier 
+                                ( ("ValueArchetype" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8909 8968])
+                    ("category" type
+                       (:typedef ("read_write_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [8973 9018]))                  
+                :superclasses 
+                  ( ("readable_property_map_archetype" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("writable_property_map_archetype" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [8575 9023])
+            ("LvaluePropertyMapConcept" type
+               (:template 
+                  ( ("PMap" type (:type "class") nil nil)
+                    ("Key" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("Category" variable (:type ("category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9143 9161])
+                    ("LvalueTag" type
+                       (:typedef ("boost::lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9166 9215])
+                    ("reference" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9260 9280])
+                    ("constraints" function (:type "void") (reparse-symbol classsubparts) [9286 9778])
+                    ("pmap" variable (:type ("PMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9783 9793])
+                    ("k" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9798 9804]))                  )
+                nil [9028 9809])
+            ("lvalue_property_map_archetype" type
+               (:template 
+                  ( ("KeyArchetype" type (:type "class") nil nil)
+                    ("ValueArchetype" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("KeyArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9992 10022])
+                    ("value_type" type
+                       (:typedef ("ValueArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [10027 10061])
+                    ("reference" variable
+                       (:constant-flag t
+                        :type ("ValueArchetype" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10074 10106])
+                    ("category" type
+                       (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [10111 10152])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("key_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10186 10202]))                          
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10157 10263]))                  
+                :superclasses 
+                  ( ("readable_property_map_archetype" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [9812 10268])
+            ("Mutable_LvaluePropertyMapConcept" type
+               (:template 
+                  ( ("PMap" type (:type "class") nil nil)
+                    ("Key" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("Category" variable (:type ("category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10395 10413])
+                    ("LvalueTag" type
+                       (:typedef ("boost::lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [10418 10467])
+                    ("reference" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10512 10532])
+                    ("constraints" function (:type "void") (reparse-symbol classsubparts) [10537 10933])
+                    ("pmap" variable (:type ("PMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10938 10948])
+                    ("k" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10953 10959]))                  )
+                nil [10272 10964])
+            ("mutable_lvalue_property_map_archetype" type
+               (:template 
+                  ( ("KeyArchetype" type (:type "class") nil nil)
+                    ("ValueArchetype" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("KeyArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11231 11261])
+                    ("value_type" type
+                       (:typedef ("ValueArchetype" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11266 11300])
+                    ("reference" variable (:type ("ValueArchetype" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11313 11339])
+                    ("category" type
+                       (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11344 11385])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("key_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11413 11429]))                          
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11390 11491]))                  
+                :superclasses 
+                  ( ("readable_property_map_archetype" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("writable_property_map_archetype" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [10967 11496])
+            ("typed_identity_property_map" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :prototype t)
+                nil [11500 11559])
+            ("put_get_helper" type
+               (:template 
+                  ( ("Reference" type (:type "class") nil nil)
+                    ("LvaluePropertyMap" type (:type "class") nil nil))                  
+                :type "struct")
+                nil [11661 11741])
+            ("get" function
+               (:template 
+                  ( ("PropertyMap" type (:type "class") nil nil)
+                    ("Reference" type (:type "class") nil nil)
+                    ("K" type (:type "class") nil nil))                  
+                :type ("Reference" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pa" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("put_get_helper" type
+                             (:template-specifier 
+                                ( ("Reference" type nil nil nil)
+                                  ("PropertyMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11825 11874])
+                    ("k" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("K" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11875 11886]))                  
+                :typemodifiers ("inline"))
+                nil [11745 11966])
+            ("put" function
+               (:template 
+                  ( ("PropertyMap" type (:type "class") nil nil)
+                    ("Reference" type (:type "class") nil nil)
+                    ("K" type (:type "class") nil nil)
+                    ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("pa" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("put_get_helper" type
+                             (:template-specifier 
+                                ( ("Reference" type nil nil nil)
+                                  ("PropertyMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12053 12102])
+                    ("k" variable (:type ("K" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12103 12107])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("V" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12108 12119]))                  
+                :typemodifiers ("inline"))
+                nil [11969 12175])
+            ("iterator_property_map" type
+               (:superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12772 12779])
+                    ("key_type" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12828 12846])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12851 12872])
+                    ("reference" type
+                       (:typedef ("R" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12877 12897])
+                    ("category" type
+                       (:typedef ("boost::lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12902 12950])
+                    ("iterator_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("cc" variable
+                               (:default-value "RandomAccessIterator()"
+                                :type ("RandomAccessIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12992 13040])
+                            ("_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "IndexMap()"
+                                :type ("IndexMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13049 13081]))                          
+                        :type ("iterator_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12956 13117])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13142 13153]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13122 13196])
+                    ("protected" label nil (reparse-symbol classsubparts) [13199 13209])
+                    ("iter" variable (:type ("RandomAccessIterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13214 13240])
+                    ("index" variable (:type ("IndexMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13245 13260]))                  
+                :type "class")
+                nil [12620 13265])
+            ("make_iterator_property_map" function
+               (:template 
+                  ( ("RAIter" type (:type "class") nil nil)
+                    ("Value" type (:type "class") nil nil)
+                    ("ID" type (:type "class") nil nil))                  
+                :type ("iterator_property_map" type
+                     (:template-specifier 
+                        ( ("RAIter" type nil nil nil)
+                          ("ID" type nil nil nil)
+                          ("Value" type nil nil nil)
+                          ("Value" type (:reference 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("iter" variable (:type ("RAIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13959 13971])
+                    ("id" variable (:type ("ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13972 13978])
+                    ("" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13979 13985]))                  
+                :typemodifiers ("inline"))
+                nil [13825 14149])
+            ("safe_iterator_property_map" type
+               (:superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14613 14620])
+                    ("key_type" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14669 14687])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [14693 14714])
+                    ("reference" type
+                       (:typedef ("R" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [14719 14739])
+                    ("category" type
+                       (:typedef ("boost::lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [14744 14792])
+                    ("safe_iterator_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("first" variable (:type ("RandomAccessIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14839 14866])
+                            ("n_" variable
+                               (:default-value "0"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14874 14892])
+                            ("_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "IndexMap()"
+                                :type ("IndexMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14901 14933]))                          
+                        :type ("safe_iterator_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14798 14979])
+                    ("safe_iterator_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("safe_iterator_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14984 15023])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15048 15059]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15028 15151])
+                    ("size" function
+                       (:methodconst-flag t
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15192 15229])
+                    ("protected" label nil (reparse-symbol classsubparts) [15232 15242])
+                    ("iter" variable (:type ("RandomAccessIterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15247 15273])
+                    ("n" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15314 15327])
+                    ("index" variable (:type ("IndexMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15332 15347]))                  
+                :type "class")
+                nil [14451 15352])
+            ("make_safe_iterator_property_map" function
+               (:template 
+                  ( ("RAIter" type (:type "class") nil nil)
+                    ("Value" type (:type "class") nil nil)
+                    ("ID" type (:type "class") nil nil))                  
+                :type ("safe_iterator_property_map" type
+                     (:template-specifier 
+                        ( ("RAIter" type nil nil nil)
+                          ("ID" type nil nil nil)
+                          ("Value" type nil nil nil)
+                          ("Value" type (:reference 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("iter" variable (:type ("RAIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16141 16153])
+                    ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16154 16168])
+                    ("id" variable (:type ("ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16169 16175])
+                    ("" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16176 16182]))                  
+                :typemodifiers ("inline"))
+                nil [15997 16354])
+            ("make_assoc_property_map" function
+               (:template 
+                  ( ("UniquePairAssociativeContainer" type (:type "class") nil nil))                  
+                :type ("associative_property_map" type
+                     (:template-specifier 
+                        ( ("UniquePairAssociativeContainer" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("c" variable
+                       (:reference 1
+                        :type ("UniquePairAssociativeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17405 17439]))                  )
+                nil [17272 17519])
+            ("const_associative_property_map" type
+               (:template 
+                  ( ("UniquePairAssociativeContainer" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("C" type
+                       (:typedef ("UniquePairAssociativeContainer" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [17809 17850])
+                    ("public" label nil (reparse-symbol classsubparts) [17853 17860])
+                    ("key_type" type
+                       (:typedef ("C::key_type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [17865 17903])
+                    ("value_type" type
+                       (:typedef ("C::value_type::second_type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [17908 17963])
+                    ("reference" variable
+                       (:constant-flag t
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17976 18004])
+                    ("category" type
+                       (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [18009 18050])
+                    ("const_associative_property_map" function
+                       (:constructor-flag t
+                        :type ("const_associative_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18055 18100])
+                    ("const_associative_property_map" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18136 18147]))                          
+                        :type ("const_associative_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18105 18161])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("k" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("key_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18187 18205]))                          
+                        :type ("reference" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18166 18254])
+                    ("private" label nil (reparse-symbol classsubparts) [18257 18265])
+                    ("m_c" variable
+                       (:pointer 1
+                        :type ("C" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18270 18283]))                  
+                :superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [17523 18288])
+            ("make_assoc_property_map" function
+               (:template 
+                  ( ("UniquePairAssociativeContainer" type (:type "class") nil nil))                  
+                :type ("const_associative_property_map" type
+                     (:template-specifier 
+                        ( ("UniquePairAssociativeContainer" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("c" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("UniquePairAssociativeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18433 18473]))                  )
+                nil [18294 18559])
+            ("static_property_map" type
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("value" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18861 18877])
+                    ("public" label nil (reparse-symbol classsubparts) [18880 18887])
+                    ("key_type" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [18892 18914])
+                    ("value_type" type
+                       (:typedef ("ValueType" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [18919 18948])
+                    ("reference" type
+                       (:typedef ("ValueType" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [18953 18981])
+                    ("category" type
+                       (:typedef ("readable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [18986 19029])
+                    ("static_property_map" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("v" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19054 19066]))                          
+                        :type ("static_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19034 19080])
+                    ("[]" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("reference" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19143 19145]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t
+                        :methodconst-flag t)
+                        (reparse-symbol classsubparts) [19090 19169]))                  
+                :superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [18712 19174])
+            ("ref_property_map" type
+               (:template 
+                  ( ("KeyType" type (:type "class") nil nil)
+                    ("ValueType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("ValueType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19505 19522])
+                    ("public" label nil (reparse-symbol classsubparts) [19525 19532])
+                    ("key_type" type
+                       (:typedef ("KeyType" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [19537 19562])
+                    ("value_type" type
+                       (:typedef ("ValueType" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [19567 19596])
+                    ("reference" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19609 19630])
+                    ("category" type
+                       (:typedef ("lvalue_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [19635 19676])
+                    ("ref_property_map" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("ValueType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19698 19711]))                          
+                        :type ("ref_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19681 19726])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("key_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19753 19769]))                          
+                        :type ("ValueType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19731 19794]))                  
+                :superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [19333 19799])
+            ("typed_identity_property_map" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("key_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [20060 20079])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [20084 20105])
+                    ("reference" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [20110 20130])
+                    ("category" type
+                       (:typedef ("boost::readable_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [20135 20185])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("key_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20220 20238]))                          
+                        :type ("value_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20191 20258]))                  
+                :superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [19922 20263])
+            ("identity_property_map" type
+               (:typedef ("typed_identity_property_map" type
+                     (:template-specifier 
+                        ( ("std::size_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [20410 20481])
+            ("detail" type
+               (:members 
+                  ( ("dummy_pmap_reference" type
+                       (:members 
+                          ( ("=" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("dummy_pmap_reference" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20794 20803]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [20737 20821]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [20701 20863]))                  
+                :type "namespace")
+                nil [20678 20867])
+            ("dummy_property_map" type
+               (:superclasses 
+                  ( ("boost::put_get_helper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [20998 21005])
+                    ("key_type" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [21010 21032])
+                    ("value_type" type
+                       (:typedef ("int")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [21038 21061])
+                    ("reference" type
+                       (:typedef ("detail::dummy_pmap_reference" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [21066 21113])
+                    ("category" type
+                       (:typedef ("boost::read_write_property_map_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [21118 21170])
+                    ("dummy_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("dummy_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21175 21213])
+                    ("dummy_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("cc" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21244 21258]))                          
+                        :type ("dummy_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21218 21270])
+                    ("dummy_property_map" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("dummy_property_map" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21301 21329]))                          
+                        :type ("dummy_property_map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21275 21348])
+                    ("[]" function
+                       (:template 
+                          ( ("Vertex" type (:type "class") nil nil))                          
+                        :type ("reference" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21409 21416]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t
+                        :methodconst-flag t)
+                        (reparse-symbol classsubparts) [21353 21446])
+                    ("protected" label nil (reparse-symbol classsubparts) [21450 21460])
+                    ("c" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21465 21478]))                  
+                :type "class")
+                nil [20870 21483])
+            ("property_map_function" type
+               (:template 
+                  ( ("PropMap" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("pm" variable (:type ("PropMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21611 21622])
+                    ("param_type" variable (:type ("key_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21670 21690])
+                    ("public" label nil (reparse-symbol classsubparts) [21695 21702])
+                    ("property_map_function" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pm" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PropMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21738 21756]))                          
+                        :type ("property_map_function" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21716 21767])
+                    ("result_type" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21815 21838])
+                    ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("k" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("param_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21866 21886]))                          
+                        :type ("result_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21843 21913]))                  )
+                nil [21547 21918])
+            ("make_property_map_function" function
+               (:template 
+                  ( ("PropMap" type (:type "class") nil nil))                  
+                :type ("property_map_function" type
+                     (:template-specifier 
+                        ( ("PropMap" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("pm" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PropMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22012 22030]))                  )
+                nil [21922 22083])
+            ("boost/property_map/vector_property_map.hpp" include (:system-flag t) nil [29956 30009]))          
+      :file "property_map.hpp"
+      :pointmax 30048
+      :fsize 30047
+      :lastmodtime '(20225 54170 0 0)
+      :unmatched-syntax '((close-paren 22085 . 22086) (punctuation 21814 . 21815) (punctuation 21813 . 21814) (punctuation 21812 . 21813) (symbol 21805 . 21812) (punctuation 21804 . 21805) (symbol 21789 . 21804) (TYPENAME 21780 . 21788) (TYPEDEF 21772 . 21779) (EXPLICIT 21707 . 21715) (punctuation 21669 . 21670) (punctuation 21668 . 21669) (punctuation 21667 . 21668) (symbol 21660 . 21667) (punctuation 21659 . 21660) (symbol 21644 . 21659) (TYPENAME 21635 . 21643) (TYPEDEF 21627 . 21634) (semantic-list 20843 . 20856) (semantic-list 20840 . 20842) (INT 20837 . 20840) (OPERATOR 20828 . 20836) (TYPEDEF 19601 . 19608) (TYPEDEF 17968 . 17975) (punctuation 17267 . 17268) (semantic-list 16824 . 17267) (punctuation 16820 . 16821) (punctuation 16818 . 16819) (symbol 16788 . 16818) (punctuation 16787 . 16788) (symbol 16763 . 16787) (punctuation 16754 . 16755) (punctuation 16753 . 16754) (symbol 16742 . 16753) (punctuation 16741 . 16742) (punctuation 16740 . 16741) (symbol 16730 . 16740) (punctuation 16729 . 16730) (punctuation 16728 . 16729) (symbol 16698 . 16728) (TYPENAME 16689 . 16697) (punctuation 16680 . 16681) (symbol 16666 . 16680) (punctuation 16665 . 16666) (punctuation 16664 . 16665) (symbol 16659 . 16664) (PUBLIC 16652 . 16658) (punctuation 16650 . 16651) (symbol 16621 . 16645) (CLASS 16615 . 16620) (punctuation 16611 . 16612) (symbol 16581 . 16611) (TYPENAME 16572 . 16580) (punctuation 16571 . 16572) (TEMPLATE 16562 . 16570) (punctuation 15313 . 15314) (punctuation 15312 . 15313) (punctuation 15311 . 15312) (symbol 15303 . 15311) (punctuation 15302 . 15303) (symbol 15287 . 15302) (TYPENAME 15278 . 15286) (punctuation 15191 . 15192) (punctuation 15190 . 15191) (punctuation 15189 . 15190) (symbol 15181 . 15189) (punctuation 15180 . 15181) (symbol 15165 . 15180) (TYPENAME 15156 . 15164) (punctuation 14668 . 14669) (punctuation 14667 . 14668) (punctuation 14666 . 14667) (symbol 14658 . 14666) (punctuation 14657 . 14658) (symbol 14642 . 14657) (TYPENAME 14633 . 14641) (TYPEDEF 14625 . 14632) (punctuation 14447 . 14448) (symbol 14425 . 14434) (punctuation 14424 . 14425) (punctuation 14423 . 14424) (punctuation 14422 . 14423) (symbol 14402 . 14422) (punctuation 14401 . 14402) (symbol 14386 . 14401) (punctuation 14385 . 14386) (punctuation 14384 . 14385) (symbol 14381 . 14384) (TYPENAME 14372 . 14380) (punctuation 14370 . 14371) (symbol 14368 . 14369) (CLASS 14362 . 14367) (punctuation 14360 . 14361) (symbol 14345 . 14355) (punctuation 14344 . 14345) (punctuation 14343 . 14344) (punctuation 14342 . 14343) (symbol 14322 . 14342) (punctuation 14321 . 14322) (symbol 14306 . 14321) (punctuation 14305 . 14306) (punctuation 14304 . 14305) (symbol 14301 . 14304) (TYPENAME 14292 . 14300) (punctuation 14290 . 14291) (symbol 14288 . 14289) (CLASS 14282 . 14287) (punctuation 14280 . 14281) (symbol 14202 . 14210) (CLASS 14196 . 14201) (punctuation 14189 . 14190) (symbol 14169 . 14189) (CLASS 14163 . 14168) (punctuation 14162 . 14163) (TEMPLATE 14153 . 14161) (punctuation 12827 . 12828) (punctuation 12826 . 12827) (punctuation 12825 . 12826) (symbol 12817 . 12825) (punctuation 12816 . 12817) (symbol 12801 . 12816) (TYPENAME 12792 . 12800) (TYPEDEF 12784 . 12791) (punctuation 12616 . 12617) (symbol 12594 . 12603) (punctuation 12593 . 12594) (punctuation 12592 . 12593) (punctuation 12591 . 12592) (symbol 12571 . 12591) (punctuation 12570 . 12571) (symbol 12555 . 12570) (punctuation 12554 . 12555) (punctuation 12553 . 12554) (symbol 12550 . 12553) (TYPENAME 12541 . 12549) (punctuation 12539 . 12540) (symbol 12537 . 12538) (CLASS 12531 . 12536) (punctuation 12529 . 12530) (symbol 12514 . 12524) (punctuation 12513 . 12514) (punctuation 12512 . 12513) (punctuation 12511 . 12512) (symbol 12491 . 12511) (punctuation 12490 . 12491) (symbol 12475 . 12490) (punctuation 12474 . 12475) (punctuation 12473 . 12474) (symbol 12470 . 12473) (TYPENAME 12461 . 12469) (punctuation 12459 . 12460) (symbol 12457 . 12458) (CLASS 12451 . 12456) (punctuation 12449 . 12450) (symbol 12371 . 12379) (CLASS 12365 . 12370) (punctuation 12358 . 12359) (symbol 12338 . 12358) (CLASS 12332 . 12337) (punctuation 12331 . 12332) (TEMPLATE 12322 . 12330) (TYPEDEF 11305 . 11312) (punctuation 10511 . 10512) (punctuation 10510 . 10511) (punctuation 10509 . 10510) (symbol 10505 . 10509) (punctuation 10504 . 10505) (symbol 10489 . 10504) (TYPENAME 10480 . 10488) (TYPEDEF 10472 . 10479) (punctuation 10394 . 10395) (punctuation 10393 . 10394) (punctuation 10392 . 10393) (symbol 10388 . 10392) (punctuation 10387 . 10388) (symbol 10372 . 10387) (TYPENAME 10363 . 10371) (TYPEDEF 10355 . 10362) (TYPEDEF 10066 . 10073) (punctuation 9259 . 9260) (punctuation 9258 . 9259) (punctuation 9257 . 9258) (symbol 9253 . 9257) (punctuation 9252 . 9253) (symbol 9237 . 9252) (TYPENAME 9228 . 9236) (TYPEDEF 9220 . 9227) (punctuation 9142 . 9143) (punctuation 9141 . 9142) (punctuation 9140 . 9141) (symbol 9136 . 9140) (punctuation 9135 . 9136) (symbol 9120 . 9135) (TYPENAME 9111 . 9119) (TYPEDEF 9103 . 9110) (punctuation 8247 . 8248) (punctuation 8246 . 8247) (punctuation 8245 . 8246) (symbol 8241 . 8245) (punctuation 8240 . 8241) (symbol 8225 . 8240) (TYPENAME 8216 . 8224) (TYPEDEF 8208 . 8215) (punctuation 8108 . 8109) (punctuation 8107 . 8108) (punctuation 8032 . 8033) (punctuation 8031 . 8032) (punctuation 7596 . 7597) (punctuation 7595 . 7596) (punctuation 7594 . 7595) (symbol 7590 . 7594) (punctuation 7589 . 7590) (symbol 7574 . 7589) (TYPENAME 7565 . 7573) (punctuation 7329 . 7330) (punctuation 7328 . 7329) (punctuation 7327 . 7328) (symbol 7323 . 7327) (punctuation 7322 . 7323) (symbol 7307 . 7322) (TYPENAME 7298 . 7306) (TYPEDEF 7290 . 7297) (punctuation 7266 . 7267) (punctuation 7265 . 7266) (punctuation 7264 . 7265) (symbol 7260 . 7264) (punctuation 7259 . 7260) (symbol 7244 . 7259) (TYPENAME 7235 . 7243) (TYPEDEF 7227 . 7234) (punctuation 7018 . 7019) (punctuation 7017 . 7018) (punctuation 6896 . 6897) (punctuation 6895 . 6896) (punctuation 6894 . 6895) (symbol 6893 . 6894) (punctuation 6892 . 6893) (symbol 6891 . 6892) (punctuation 6890 . 6891) (symbol 6859 . 6890) (TYPENAME 6850 . 6858) (CONST 6844 . 6849) (punctuation 6840 . 6841) (symbol 6839 . 6840) (TYPENAME 6830 . 6838) (punctuation 6828 . 6829) (symbol 6827 . 6828) (TYPENAME 6818 . 6826) (punctuation 6817 . 6818) (TEMPLATE 6808 . 6816) (punctuation 6490 . 6491) (punctuation 6489 . 6490) (punctuation 6488 . 6489) (symbol 6484 . 6488) (punctuation 6483 . 6484) (symbol 6468 . 6483) (TYPENAME 6459 . 6467) (punctuation 6221 . 6222) (punctuation 6220 . 6221) (punctuation 6219 . 6220) (symbol 6215 . 6219) (punctuation 6214 . 6215) (symbol 6199 . 6214) (TYPENAME 6190 . 6198) (TYPEDEF 6182 . 6189) (punctuation 6156 . 6157) (punctuation 6155 . 6156) (punctuation 6154 . 6155) (symbol 6150 . 6154) (punctuation 6149 . 6150) (symbol 6134 . 6149) (TYPENAME 6125 . 6133) (TYPEDEF 6117 . 6124) (punctuation 6093 . 6094) (punctuation 6092 . 6093) (punctuation 6091 . 6092) (symbol 6087 . 6091) (punctuation 6086 . 6087) (symbol 6071 . 6086) (TYPENAME 6062 . 6070) (TYPEDEF 6054 . 6061) (TYPEDEF 5076 . 5083) (TYPEDEF 4869 . 4876) (punctuation 2700 . 2701) (punctuation 2699 . 2700) (punctuation 2700 . 2701) (punctuation 2699 . 2700) (punctuation 2585 . 2586) (punctuation 2584 . 2585) (punctuation 2585 . 2586) (punctuation 2584 . 2585) (punctuation 2429 . 2430) (punctuation 2428 . 2429) (punctuation 2429 . 2430) (punctuation 2428 . 2429) (punctuation 2354 . 2355) (punctuation 2353 . 2354) (punctuation 2354 . 2355) (punctuation 2353 . 2354) (semantic-list 1073 . 1083) (symbol 1046 . 1073) (semantic-list 1032 . 1043) (symbol 1005 . 1032) (semantic-list 990 . 1002) (symbol 963 . 990) (semantic-list 950 . 960) (symbol 923 . 950))
+      :lexical-table 
+        '(("BOOST_PROPERTY_MAP_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("VECTOR_PROPERTY_MAP_HPP_VP_2003_03_04" variable (:constant-flag t) nil [341 378])
+            ("boost/property_map/property_map.hpp" include (:system-flag t) nil [380 426])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [427 458])
+            ("vector" include (:system-flag t) nil [459 476])
+            ("boost" type
+               (:members 
+                  ( ("make_vector_property_map" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("IndexMap" type (:type "class") nil nil))                          
+                        :type ("vector_property_map" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("IndexMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("index" variable (:type ("IndexMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3180 3195]))                          )
+                        (reparse-symbol namespacesubparts) [3074 3263]))                  
+                :type "namespace")
+                nil [478 3265]))          
+      :file "vector_property_map.hpp"
+      :pointmax 6594
+      :fsize 6593
+      :lastmodtime '(20225 54170 0 0)
+      :unmatched-syntax '((punctuation 3063 . 3064) (semantic-list 800 . 3063) (punctuation 794 . 795) (punctuation 792 . 793) (symbol 784 . 792) (punctuation 782 . 783) (symbol 781 . 782) (punctuation 780 . 781) (symbol 761 . 780) (punctuation 745 . 746) (symbol 736 . 745) (punctuation 735 . 736) (punctuation 734 . 735) (punctuation 733 . 734) (symbol 724 . 732) (punctuation 723 . 724) (punctuation 722 . 723) (punctuation 721 . 722) (symbol 720 . 721) (punctuation 719 . 720) (symbol 713 . 719) (punctuation 712 . 713) (punctuation 711 . 712) (symbol 708 . 711) (TYPENAME 699 . 707) (punctuation 678 . 679) (symbol 663 . 678) (punctuation 662 . 663) (punctuation 661 . 662) (symbol 658 . 661) (TYPENAME 649 . 657) (punctuation 632 . 633) (symbol 618 . 632) (punctuation 617 . 618) (punctuation 616 . 617) (symbol 611 . 616) (PUBLIC 604 . 610) (punctuation 602 . 603) (symbol 574 . 593) (CLASS 568 . 573) (punctuation 562 . 563) (symbol 541 . 562) (punctuation 539 . 540) (symbol 530 . 538) (TYPENAME 521 . 529) (punctuation 519 . 520) (symbol 518 . 519) (TYPENAME 509 . 517) (punctuation 508 . 509) (TEMPLATE 500 . 508))
+      :lexical-table 
+        '(("VECTOR_PROPERTY_MAP_HPP_VP_2003_03_04")
+          )
+))
+  :file "!usr!include!boost!property_map!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

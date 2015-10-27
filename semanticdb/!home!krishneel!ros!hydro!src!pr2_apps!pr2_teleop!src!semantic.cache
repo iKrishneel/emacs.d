@@ -1,0 +1,102 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("termios.h" include (:system-flag t) nil [1658 1678])
+            ("signal.h" include (:system-flag t) nil [1679 1698])
+            ("math.h" include (:system-flag t) nil [1699 1716])
+            ("stdio.h" include (:system-flag t) nil [1717 1735])
+            ("stdlib.h" include (:system-flag t) nil [1736 1755])
+            ("ros/ros.h" include (:system-flag t) nil [1757 1777])
+            ("geometry_msgs/Twist.h" include (:system-flag t) nil [1778 1810])
+            ("KEYCODE_A" variable (:constant-flag t) nil [1820 1829])
+            ("KEYCODE_D" variable (:constant-flag t) nil [1843 1852])
+            ("KEYCODE_S" variable (:constant-flag t) nil [1866 1875])
+            ("KEYCODE_W" variable (:constant-flag t) nil [1889 1898])
+            ("KEYCODE_Q" variable (:constant-flag t) nil [1913 1922])
+            ("KEYCODE_E" variable (:constant-flag t) nil [1936 1945])
+            ("KEYCODE_A_CAP" variable (:constant-flag t) nil [1960 1973])
+            ("KEYCODE_D_CAP" variable (:constant-flag t) nil [1987 2000])
+            ("KEYCODE_S_CAP" variable (:constant-flag t) nil [2014 2027])
+            ("KEYCODE_W_CAP" variable (:constant-flag t) nil [2041 2054])
+            ("KEYCODE_Q_CAP" variable (:constant-flag t) nil [2068 2081])
+            ("KEYCODE_E_CAP" variable (:constant-flag t) nil [2095 2108])
+            ("TeleopPR2Keyboard" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [2143 2151])
+                    ("walk_vel" variable (:type "double") (reparse-symbol classsubparts) [2154 2203])
+                    ("run_vel" variable (:type "double") (reparse-symbol classsubparts) [2154 2203])
+                    ("yaw_rate" variable (:type "double") (reparse-symbol classsubparts) [2154 2203])
+                    ("yaw_rate_run" variable (:type "double") (reparse-symbol classsubparts) [2154 2203])
+                    ("cmd" variable (:type ("geometry_msgs::Twist" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2206 2231])
+                    ("n_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2235 2254])
+                    ("vel_pub_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2257 2281])
+                    ("public" label nil (reparse-symbol classsubparts) [2285 2292])
+                    ("init" function (:type "void") (reparse-symbol classsubparts) [2295 2670])
+                    ("TeleopPR2Keyboard" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2676 2702])
+                    ("keyboardLoop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2705 2725]))                  
+                :type "class")
+                nil [2115 2729])
+            ("kfd" variable
+               (:default-value "0"
+                :type "int")
+                nil [2731 2743])
+            ("cooked" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2744 2771])
+            ("raw" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2744 2771])
+            ("quit" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [2783 2791]))                  
+                :type "void")
+                nil [2773 2842])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2853 2862])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2863 2875]))                  
+                :type "int")
+                nil [2844 3026])
+            ("keyboardLoop" function
+               (:parent "TeleopPR2Keyboard"
+                :type "void")
+                nil [3028 4918]))          
+      :file "teleop_pr2_keyboard.cpp"
+      :pointmax 4919
+      :fsize 4918
+      :lastmodtime '(21752 20687 772234 635000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("KEYCODE_A" . ((number "0x61" 1830 . 1834)))
+          ("KEYCODE_D_CAP" . ((number "0x44" 2001 . 2005)))
+          ("KEYCODE_Q_CAP" . ((number "0x51" 2082 . 2086)))
+          ("KEYCODE_D" . ((number "0x64" 1853 . 1857)))
+          ("KEYCODE_Q" . ((number "0x71" 1923 . 1927)))
+          ("KEYCODE_E_CAP" . ((number "0x45" 2109 . 2113)))
+          ("KEYCODE_E" . ((number "0x65" 1946 . 1950)))
+          ("KEYCODE_A_CAP" . ((number "0x41" 1974 . 1978)))
+          ("KEYCODE_S" . ((number "0x73" 1876 . 1880)))
+          ("KEYCODE_W_CAP" . ((number "0x57" 2055 . 2059)))
+          ("KEYCODE_S_CAP" . ((number "0x53" 2028 . 2032)))
+          ("KEYCODE_W" . ((number "0x77" 1899 . 1903)))
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!pr2_apps!pr2_teleop!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

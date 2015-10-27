@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2 22])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [23 67])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [68 100])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [101 141])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [142 180])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [181 219])
+            ("string" include (:system-flag t) nil [220 237])
+            ("OPENCV_WINDOW" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Image window\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [239 295])
+            ("ImageConverter" type
+               (:members 
+                  ( ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 344])
+                    ("it_" variable (:type ("image_transport::ImageTransport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [349 385])
+                    ("image_sub_" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [390 429])
+                    ("image_pub_" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [434 472])
+                    ("public" label nil (reparse-symbol classsubparts) [478 485])
+                    ("it_" function
+                       (:arguments 
+                          ( ("" variable (:type ("nh_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [520 524]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [516 747])
+                    ("ImageConverter" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [752 816])
+                    ("imageCb" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [835 873]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [822 1451]))                  
+                :type "class")
+                nil [297 1455])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1466 1475])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1476 1488]))                  
+                :type "int")
+                nil [1457 1592]))          
+      :file "ros_service_node.cpp"
+      :pointmax 1593
+      :fsize 1592
+      :lastmodtime '(21749 6488 683208 857000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_service!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,126 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [1 21])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [22 66])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [67 99])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [100 140])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [141 179])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [180 218])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [219 238])
+            ("ImageConvertor" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [264 272])
+                    ("__nodeHandle__" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [295 326])
+                    ("__imageTransport__" variable (:type ("image_transport::ImageTransport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [330 381])
+                    ("__imageSubscriber__" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [414 462])
+                    ("__imagePublisher__" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [466 512])
+                    ("__depthSubscriber__" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [538 586])
+                    ("depthImage__" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [591 608])
+                    ("minValue__" variable (:type "double") (reparse-symbol classsubparts) [616 634])
+                    ("maxValue__" variable (:type "double") (reparse-symbol classsubparts) [638 656])
+                    ("public" label nil (reparse-symbol classsubparts) [661 668])
+                    ("ImageConvertor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("rgb_node__" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [687 705])
+                            ("depth_node__" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [706 726]))                          
+                        :type ("ImageConvertor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [672 1104])
+                    ("rosImage2OpenCVImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1135 1170]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1109 1171])
+                    ("rosImage2OpenCVDepth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1201 1236]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1175 1237])
+                    ("imageDistanceFilter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1267 1273])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1274 1280])
+                            ("" variable (:type "float") (reparse-symbol arg-sub-list) [1281 1287])
+                            ("" variable (:type "float") (reparse-symbol arg-sub-list) [1288 1294]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1242 1295]))                  
+                :type "class")
+                nil [241 1302])
+            ("rosImage2OpenCVDepth" function
+               (:parent "ImageConvertor"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1677 1715]))                  
+                :type "void")
+                nil [1635 2548])
+            ("rosImage2OpenCVImage" function
+               (:parent "ImageConvertor"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2925 2963]))                  
+                :type "void")
+                nil [2883 3564])
+            ("imageDistanceFilter" function
+               (:parent "ImageConvertor"
+                :arguments 
+                  ( ("rgbImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3963 3977])
+                    ("depthImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4019 4035])
+                    ("minValue__" variable (:type "float") (reparse-symbol arg-sub-list) [4077 4094])
+                    ("maxValue__" variable (:type "float") (reparse-symbol arg-sub-list) [4136 4153]))                  
+                :type "void")
+                nil [3922 4802])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5115 5124])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5125 5137]))                  
+                :type "int")
+                nil [5106 5430]))          
+      :file "main.cpp"
+      :pointmax 5431
+      :fsize 5430
+      :lastmodtime '(21621 17466 0 0)
+      :unmatched-syntax nil))
+  :file "!media!KRISHNEEL!All Files!w540!catkin_ws!src!boundary_estimation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

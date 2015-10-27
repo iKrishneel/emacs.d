@@ -1,0 +1,1369 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"\\
+A library of useful helper classes to the SAX classes, for the
+convenience of application and driver writers.
+\"\"\"" code nil nil [1 119])
+            ("types" include nil nil [121 155])
+            ("urllib" include nil nil [121 155])
+            ("urlparse" include nil nil [121 155])
+            ("os" include nil nil [121 155])
+            ("handler" include nil nil [156 170])
+            ("xmlreader" include nil nil [171 187])
+            ("try" code nil nil [189 312])
+            ("try" code nil nil [378 557])
+            ("__dict_replace" function
+               (:documentation "Replace substrings of a string using a dictionary."
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [577 578])
+                    ("d" variable nil (reparse-symbol function_parameters) [580 581]))                  )
+                nil [558 725])
+            ("escape" function
+               (:documentation "Escape &, <, and > in a string of data.
+
+    You can escape other strings of data by passing a dictionary as
+    the optional entities parameter.  The keys and values must all be
+    strings; each key will be replaced with its corresponding value.
+    "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [737 741])
+                    ("entities" variable nil (reparse-symbol function_parameters) [743 751]))                  )
+                nil [726 1242])
+            ("unescape" function
+               (:documentation "Unescape &amp;, &lt;, and &gt; in a string of data.
+
+    You can unescape other strings of data by passing a dictionary as
+    the optional entities parameter.  The keys and values must all be
+    strings; each key will be replaced with its corresponding value.
+    "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [1256 1260])
+                    ("entities" variable nil (reparse-symbol function_parameters) [1262 1270]))                  )
+                nil [1243 1757])
+            ("quoteattr" function
+               (:documentation "Escape and quote an attribute value.
+
+    Escape &, <, and > in a string of data, then quote it for use as
+    an attribute value.  The \\\" character will be escaped as well, if
+    necessary.
+
+    You can escape other strings of data by passing a dictionary as
+    the optional entities parameter.  The keys and values must all be
+    strings; each key will be replaced with its corresponding value.
+    "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [1772 1776])
+                    ("entities" variable nil (reparse-symbol function_parameters) [1778 1786]))                  )
+                nil [1758 2539])
+            ("XMLGenerator" type
+               (:superclasses ("handler.ContentHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [2651 2719])
+                            ("handler" code nil (reparse-symbol indented_block_body) [2727 2764])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2773 2788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2797 2821])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2861 2906])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2915 2944])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2953 2978]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2603 2607])
+                            ("out" variable nil (reparse-symbol function_parameters) [2609 2612])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [2619 2627]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2590 2979])
+                    ("_write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2995 2999])
+                            ("text" variable nil (reparse-symbol function_parameters) [3001 3005]))                          )
+                        (reparse-symbol indented_block_body) [2984 3164])
+                    ("_qname" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3180 3184])
+                            ("name" variable nil (reparse-symbol function_parameters) [3186 3190]))                          
+                        :documentation "Builds a qualified name from a (ns_url, localname) pair")
+                        (reparse-symbol indented_block_body) [3169 3963])
+                    ("startDocument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4016 4020]))                          )
+                        (reparse-symbol indented_block_body) [3998 4125])
+                    ("startPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4153 4157])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [4159 4165])
+                            ("uri" variable nil (reparse-symbol function_parameters) [4167 4170]))                          )
+                        (reparse-symbol indented_block_body) [4130 4335])
+                    ("endPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4361 4365])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [4367 4373]))                          )
+                        (reparse-symbol indented_block_body) [4340 4464])
+                    ("startElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4486 4490])
+                            ("name" variable nil (reparse-symbol function_parameters) [4492 4496])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [4498 4503]))                          )
+                        (reparse-symbol indented_block_body) [4469 4668])
+                    ("endElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4688 4692])
+                            ("name" variable nil (reparse-symbol function_parameters) [4694 4698]))                          )
+                        (reparse-symbol indented_block_body) [4673 4737])
+                    ("startElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4761 4765])
+                            ("name" variable nil (reparse-symbol function_parameters) [4767 4771])
+                            ("qname" variable nil (reparse-symbol function_parameters) [4773 4778])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [4780 4785]))                          )
+                        (reparse-symbol indented_block_body) [4742 5229])
+                    ("endElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5251 5255])
+                            ("name" variable nil (reparse-symbol function_parameters) [5257 5261])
+                            ("qname" variable nil (reparse-symbol function_parameters) [5263 5268]))                          )
+                        (reparse-symbol indented_block_body) [5234 5320])
+                    ("characters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5340 5344])
+                            ("content" variable nil (reparse-symbol function_parameters) [5346 5353]))                          )
+                        (reparse-symbol indented_block_body) [5325 5393])
+                    ("ignorableWhitespace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5422 5426])
+                            ("content" variable nil (reparse-symbol function_parameters) [5428 5435]))                          )
+                        (reparse-symbol indented_block_body) [5398 5467])
+                    ("processingInstruction" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5498 5502])
+                            ("target" variable nil (reparse-symbol function_parameters) [5504 5510])
+                            ("data" variable nil (reparse-symbol function_parameters) [5512 5516]))                          )
+                        (reparse-symbol indented_block_body) [5472 5569]))                  
+                :type "class")
+                nil [2541 5569])
+            ("XMLFilterBase" type
+               (:documentation "This class is designed to sit between an XMLReader and the
+    client application's event handlers.  By default, it does nothing
+    but pass requests up to the reader and events on to the handlers
+    unmodified, but subclasses can override specific methods to modify
+    the event stream or the configuration requests as they pass
+    through."
+                :superclasses ("xmlreader.XMLReader")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("xmlreader" code nil (reparse-symbol indented_block_body) [6017 6051])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6060 6081]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5987 5991])
+                            ("parent" variable nil (reparse-symbol function_parameters) [5993 5999]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5974 6082])
+                    ("error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6125 6129])
+                            ("exception" variable nil (reparse-symbol function_parameters) [6131 6140]))                          )
+                        (reparse-symbol indented_block_body) [6115 6186])
+                    ("fatalError" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6206 6210])
+                            ("exception" variable nil (reparse-symbol function_parameters) [6212 6221]))                          )
+                        (reparse-symbol indented_block_body) [6191 6272])
+                    ("warning" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6289 6293])
+                            ("exception" variable nil (reparse-symbol function_parameters) [6295 6304]))                          )
+                        (reparse-symbol indented_block_body) [6277 6352])
+                    ("setDocumentLocator" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6410 6414])
+                            ("locator" variable nil (reparse-symbol function_parameters) [6416 6423]))                          )
+                        (reparse-symbol indented_block_body) [6387 6481])
+                    ("startDocument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6504 6508]))                          )
+                        (reparse-symbol indented_block_body) [6486 6554])
+                    ("endDocument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6575 6579]))                          )
+                        (reparse-symbol indented_block_body) [6559 6623])
+                    ("startPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6651 6655])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [6657 6663])
+                            ("uri" variable nil (reparse-symbol function_parameters) [6665 6668]))                          )
+                        (reparse-symbol indented_block_body) [6628 6730])
+                    ("endPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6756 6760])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [6762 6768]))                          )
+                        (reparse-symbol indented_block_body) [6735 6823])
+                    ("startElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6845 6849])
+                            ("name" variable nil (reparse-symbol function_parameters) [6851 6855])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [6857 6862]))                          )
+                        (reparse-symbol indented_block_body) [6828 6918])
+                    ("endElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6938 6942])
+                            ("name" variable nil (reparse-symbol function_parameters) [6944 6948]))                          )
+                        (reparse-symbol indented_block_body) [6923 6995])
+                    ("startElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7019 7023])
+                            ("name" variable nil (reparse-symbol function_parameters) [7025 7029])
+                            ("qname" variable nil (reparse-symbol function_parameters) [7031 7036])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [7038 7043]))                          )
+                        (reparse-symbol indented_block_body) [7000 7108])
+                    ("endElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7130 7134])
+                            ("name" variable nil (reparse-symbol function_parameters) [7136 7140])
+                            ("qname" variable nil (reparse-symbol function_parameters) [7142 7147]))                          )
+                        (reparse-symbol indented_block_body) [7113 7203])
+                    ("characters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7223 7227])
+                            ("content" variable nil (reparse-symbol function_parameters) [7229 7236]))                          )
+                        (reparse-symbol indented_block_body) [7208 7286])
+                    ("ignorableWhitespace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7315 7319])
+                            ("chars" variable nil (reparse-symbol function_parameters) [7321 7326]))                          )
+                        (reparse-symbol indented_block_body) [7291 7383])
+                    ("processingInstruction" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7414 7418])
+                            ("target" variable nil (reparse-symbol function_parameters) [7420 7426])
+                            ("data" variable nil (reparse-symbol function_parameters) [7428 7432]))                          )
+                        (reparse-symbol indented_block_body) [7388 7498])
+                    ("skippedEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7521 7525])
+                            ("name" variable nil (reparse-symbol function_parameters) [7527 7531]))                          )
+                        (reparse-symbol indented_block_body) [7503 7581])
+                    ("notationDecl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7629 7633])
+                            ("name" variable nil (reparse-symbol function_parameters) [7635 7639])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [7641 7649])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [7651 7659]))                          )
+                        (reparse-symbol indented_block_body) [7612 7727])
+                    ("unparsedEntityDecl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7755 7759])
+                            ("name" variable nil (reparse-symbol function_parameters) [7761 7765])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [7767 7775])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [7777 7785])
+                            ("ndata" variable nil (reparse-symbol function_parameters) [7787 7792]))                          )
+                        (reparse-symbol indented_block_body) [7732 7873])
+                    ("resolveEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7926 7930])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [7932 7940])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [7942 7950]))                          )
+                        (reparse-symbol indented_block_body) [7908 8020])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8060 8064])
+                            ("source" variable nil (reparse-symbol function_parameters) [8066 8072]))                          )
+                        (reparse-symbol indented_block_body) [8050 8284])
+                    ("setLocale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8303 8307])
+                            ("locale" variable nil (reparse-symbol function_parameters) [8309 8315]))                          )
+                        (reparse-symbol indented_block_body) [8289 8357])
+                    ("getFeature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8377 8381])
+                            ("name" variable nil (reparse-symbol function_parameters) [8383 8387]))                          )
+                        (reparse-symbol indented_block_body) [8362 8435])
+                    ("setFeature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8455 8459])
+                            ("name" variable nil (reparse-symbol function_parameters) [8461 8465])
+                            ("state" variable nil (reparse-symbol function_parameters) [8467 8472]))                          )
+                        (reparse-symbol indented_block_body) [8440 8520])
+                    ("getProperty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8541 8545])
+                            ("name" variable nil (reparse-symbol function_parameters) [8547 8551]))                          )
+                        (reparse-symbol indented_block_body) [8525 8600])
+                    ("setProperty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8621 8625])
+                            ("name" variable nil (reparse-symbol function_parameters) [8627 8631])
+                            ("value" variable nil (reparse-symbol function_parameters) [8633 8638]))                          )
+                        (reparse-symbol indented_block_body) [8605 8687])
+                    ("getParent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8731 8735]))                          )
+                        (reparse-symbol indented_block_body) [8717 8766])
+                    ("setParent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8785 8789])
+                            ("parent" variable nil (reparse-symbol function_parameters) [8791 8797]))                          )
+                        (reparse-symbol indented_block_body) [8771 8830]))                  
+                :type "class")
+                nil [5571 8830])
+            ("prepare_input_source" function
+               (:documentation "This function takes an InputSource and an optional base URL and
+    returns a fully resolved InputSource object ready for reading."
+                :arguments 
+                  ( ("source" variable nil (reparse-symbol function_parameters) [8881 8887])
+                    ("base" variable nil (reparse-symbol function_parameters) [8889 8893]))                  )
+                nil [8856 9824]))          
+      :file "saxutils.py"
+      :pointmax 9824
+      :fsize 9823
+      :lastmodtime '(21651 11957 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+This module contains the core classes of version 2.0 of SAX for Python.
+This file provides only default classes with absolutely minimum
+functionality, from which drivers and applications can be subclassed.
+
+Many of these classes are empty and are included only as documentation
+of the interfaces.
+
+$Id$
+\"\"\"" code nil nil [1 311])
+            ("version" variable nil nil [313 332])
+            ("ErrorHandler" type
+               (:documentation "Basic interface for SAX error handlers.
+
+    If you create an object that implements this interface, then
+    register the object with your XMLReader, the parser will call the
+    methods in your object to report all warnings and errors. There
+    are three levels of errors available: warnings, (possibly)
+    recoverable errors, and unrecoverable errors. All methods take a
+    SAXParseException as the only parameter."
+                :members 
+                  ( ("error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1010 1014])
+                            ("exception" variable nil (reparse-symbol function_parameters) [1016 1025]))                          )
+                        (reparse-symbol indented_block_body) [1000 1090])
+                    ("fatalError" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1110 1114])
+                            ("exception" variable nil (reparse-symbol function_parameters) [1116 1125]))                          )
+                        (reparse-symbol indented_block_body) [1095 1194])
+                    ("warning" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1211 1215])
+                            ("exception" variable nil (reparse-symbol function_parameters) [1217 1226]))                          )
+                        (reparse-symbol indented_block_body) [1199 1281]))                  
+                :type "class")
+                nil [544 1281])
+            ("ContentHandler" type
+               (:documentation "Interface for receiving logical document content events.
+
+    This is the main callback interface in SAX, and the one most
+    important to applications. The order of events in this interface
+    mirrors the order of the information in the document."
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1628 1648]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1613 1617]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1600 1649])
+                    ("setDocumentLocator" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1677 1681])
+                            ("locator" variable nil (reparse-symbol function_parameters) [1683 1690]))                          
+                        :documentation "Called by the parser to give the application a locator for
+        locating the origin of document events.
+
+        SAX parsers are strongly encouraged (though not absolutely
+        required) to supply a locator: if it does so, it must supply
+        the locator to the application by invoking this method before
+        invoking any of the other methods in the DocumentHandler
+        interface.
+
+        The locator allows the application to determine the end
+        position of any document-related event, even if the parser is
+        not reporting an error. Typically, the application will use
+        this information for reporting its own errors (such as
+        character content that does not match an application's
+        business rules). The information returned by the locator is
+        probably not sufficient for use with a search engine.
+
+        Note that the locator will return correct information only
+        during the invocation of the events in this interface. The
+        application should not attempt to use it at any other time.")
+                        (reparse-symbol indented_block_body) [1654 2799])
+                    ("startDocument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2822 2826]))                          
+                        :documentation "Receive notification of the beginning of a document.
+
+        The SAX parser will invoke this method only once, before any
+        other methods in this interface or in DTDHandler (except for
+        setDocumentLocator).")
+                        (reparse-symbol indented_block_body) [2804 3064])
+                    ("endDocument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3085 3089]))                          
+                        :documentation "Receive notification of the end of a document.
+
+        The SAX parser will invoke this method only once, and it will
+        be the last method invoked during the parse. The parser shall
+        not invoke this method until it has either abandoned parsing
+        (because of an unrecoverable error) or reached the end of
+        input.")
+                        (reparse-symbol indented_block_body) [3069 3444])
+                    ("startPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3472 3476])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [3478 3484])
+                            ("uri" variable nil (reparse-symbol function_parameters) [3486 3489]))                          
+                        :documentation "Begin the scope of a prefix-URI Namespace mapping.
+
+        The information from this event is not necessary for normal
+        Namespace processing: the SAX XML reader will automatically
+        replace prefixes for element and attribute names when the
+        http://xml.org/sax/features/namespaces feature is true (the
+        default).
+
+        There are cases, however, when applications need to use
+        prefixes in character data or in attribute values, where they
+        cannot safely be expanded automatically; the
+        start/endPrefixMapping event supplies the information to the
+        application to expand prefixes in those contexts itself, if
+        necessary.
+
+        Note that start/endPrefixMapping events are not guaranteed to
+        be properly nested relative to each-other: all
+        startPrefixMapping events will occur before the corresponding
+        startElement event, and all endPrefixMapping events will occur
+        after the corresponding endElement event, but their order is
+        not guaranteed.")
+                        (reparse-symbol indented_block_body) [3449 4550])
+                    ("endPrefixMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4576 4580])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [4582 4588]))                          
+                        :documentation "End the scope of a prefix-URI mapping.
+
+        See startPrefixMapping for details. This event will always
+        occur after the corresponding endElement event, but the order
+        of endPrefixMapping events is not otherwise guaranteed.")
+                        (reparse-symbol indented_block_body) [4555 4846])
+                    ("startElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4868 4872])
+                            ("name" variable nil (reparse-symbol function_parameters) [4874 4878])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [4880 4885]))                          
+                        :documentation "Signals the start of an element in non-namespace mode.
+
+        The name parameter contains the raw XML 1.0 name of the
+        element type as a string and the attrs parameter holds an
+        instance of the Attributes class containing the attributes of
+        the element.")
+                        (reparse-symbol indented_block_body) [4851 5179])
+                    ("endElement" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5199 5203])
+                            ("name" variable nil (reparse-symbol function_parameters) [5205 5209]))                          
+                        :documentation "Signals the end of an element in non-namespace mode.
+
+        The name parameter contains the name of the element type, just
+        as with the startElement event.")
+                        (reparse-symbol indented_block_body) [5184 5391])
+                    ("startElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5415 5419])
+                            ("name" variable nil (reparse-symbol function_parameters) [5421 5425])
+                            ("qname" variable nil (reparse-symbol function_parameters) [5427 5432])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [5434 5439]))                          
+                        :documentation "Signals the start of an element in namespace mode.
+
+        The name parameter contains the name of the element type as a
+        (uri, localname) tuple, the qname parameter the raw XML 1.0
+        name used in the source document, and the attrs parameter
+        holds an instance of the Attributes class containing the
+        attributes of the element.
+
+        The uri part of the name tuple is None for elements which have
+        no namespace.")
+                        (reparse-symbol indented_block_body) [5396 5906])
+                    ("endElementNS" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5928 5932])
+                            ("name" variable nil (reparse-symbol function_parameters) [5934 5938])
+                            ("qname" variable nil (reparse-symbol function_parameters) [5940 5945]))                          
+                        :documentation "Signals the end of an element in namespace mode.
+
+        The name parameter contains the name of the element type, just
+        as with the startElementNS event.")
+                        (reparse-symbol indented_block_body) [5911 6125])
+                    ("characters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6145 6149])
+                            ("content" variable nil (reparse-symbol function_parameters) [6151 6158]))                          
+                        :documentation "Receive notification of character data.
+
+        The Parser will call this method to report each chunk of
+        character data. SAX parsers may return all contiguous
+        character data in a single chunk, or they may split it into
+        several chunks; however, all of the characters in any single
+        event must come from the same external entity so that the
+        Locator provides useful information.")
+                        (reparse-symbol indented_block_body) [6130 6591])
+                    ("ignorableWhitespace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6620 6624])
+                            ("whitespace" variable nil (reparse-symbol function_parameters) [6626 6636]))                          
+                        :documentation "Receive notification of ignorable whitespace in element content.
+
+        Validating Parsers must use this method to report each chunk
+        of ignorable whitespace (see the W3C XML 1.0 recommendation,
+        section 2.10): non-validating parsers may also use this method
+        if they are capable of parsing and using content models.
+
+        SAX parsers may return all contiguous whitespace in a single
+        chunk, or they may split it into several chunks; however, all
+        of the characters in any single event must come from the same
+        external entity, so that the Locator provides useful
+        information.")
+                        (reparse-symbol indented_block_body) [6596 7285])
+                    ("processingInstruction" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7316 7320])
+                            ("target" variable nil (reparse-symbol function_parameters) [7322 7328])
+                            ("data" variable nil (reparse-symbol function_parameters) [7330 7334]))                          
+                        :documentation "Receive notification of a processing instruction.
+
+        The Parser will invoke this method once for each processing
+        instruction found: note that processing instructions may occur
+        before or after the main document element.
+
+        A SAX parser should never report an XML declaration (XML 1.0,
+        section 2.8) or a text declaration (XML 1.0, section 4.3.1)
+        using this method.")
+                        (reparse-symbol indented_block_body) [7290 7758])
+                    ("skippedEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7781 7785])
+                            ("name" variable nil (reparse-symbol function_parameters) [7787 7791]))                          
+                        :documentation "Receive notification of a skipped entity.
+
+        The Parser will invoke this method once for each entity
+        skipped. Non-validating processors may skip entities if they
+        have not seen the declarations (because, for example, the
+        entity was declared in an external DTD subset). All processors
+        may skip external entities, depending on the values of the
+        http://xml.org/sax/features/external-general-entities and the
+        http://xml.org/sax/features/external-parameter-entities
+        properties.")
+                        (reparse-symbol indented_block_body) [7763 8342]))                  
+                :type "class")
+                nil [1313 8342])
+            ("DTDHandler" type
+               (:documentation "Handle DTD events.
+
+    This interface specifies only those DTD events required for basic
+    parsing (unparsed entities and attributes)."
+                :members 
+                  ( ("notationDecl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8558 8562])
+                            ("name" variable nil (reparse-symbol function_parameters) [8564 8568])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [8570 8578])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [8580 8588]))                          )
+                        (reparse-symbol indented_block_body) [8541 8638])
+                    ("unparsedEntityDecl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8666 8670])
+                            ("name" variable nil (reparse-symbol function_parameters) [8672 8676])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [8678 8686])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [8688 8696])
+                            ("ndata" variable nil (reparse-symbol function_parameters) [8698 8703]))                          )
+                        (reparse-symbol indented_block_body) [8643 8761]))                  
+                :type "class")
+                nil [8370 8761])
+            ("EntityResolver" type
+               (:documentation "Basic interface for resolving entities. If you create an object
+    implementing this interface, then register the object with your
+    Parser, the parser will call the method in your object to
+    resolve all external entities. Note that DefaultHandler implements
+    this interface with the default behaviour."
+                :members 
+                  ( ("resolveEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9160 9164])
+                            ("publicId" variable nil (reparse-symbol function_parameters) [9166 9174])
+                            ("systemId" variable nil (reparse-symbol function_parameters) [9176 9184]))                          
+                        :documentation "Resolve the system identifier of an entity and return either
+        the system identifier to read from as a string, or an InputSource
+        to read from.")
+                        (reparse-symbol indented_block_body) [9142 9382]))                  
+                :type "class")
+                nil [8793 9382])
+            ("feature_namespaces" variable nil nil [9561 9622])
+            ("feature_namespace_prefixes" variable nil nil [9823 9900])
+            ("feature_string_interning" variable nil nil [10197 10270])
+            ("feature_validation" variable nil nil [10548 10609])
+            ("feature_external_ges" variable nil nil [10823 10901])
+            ("feature_external_pes" variable nil nil [11064 11144])
+            ("all_features" variable nil nil [11390 11623])
+            ("property_lexical_handler" variable nil nil [11805 11879])
+            ("property_declaration_handler" variable nil nil [12025 12107])
+            ("property_dom_node" variable nil nil [12298 12358])
+            ("property_xml_string" variable nil nil [12618 12682])
+            ("property_encoding" variable nil nil [12830 12897])
+            ("property_interning_dict" variable nil nil [13293 13372])
+            ("all_properties" variable nil nil [13674 13921]))          
+      :file "handler.py"
+      :pointmax 13922
+      :fsize 13921
+      :lastmodtime '(21651 11957 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"An XML Reader is the SAX 2 name for an XML parser. XML Parsers
+should be based on this code. \"\"\"" code nil nil [1 100])
+            ("handler" include nil nil [102 116])
+            ("_exceptions" include nil nil [118 193])
+            ("XMLReader" type
+               (:documentation "Interface for reading an XML document using callbacks.
+
+    XMLReader is the interface that an XML parser's SAX2 driver must
+    implement. This interface allows an application to set and query
+    features and properties in the parser, to register event handlers
+    for document processing, and to initiate a document parse.
+
+    All SAX interfaces are assumed to be synchronous: the parse
+    methods must not return until parsing is complete, and readers
+    must wait for an event-handler callback to return before reporting
+    the next event."
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [831 876])
+                            ("self" variable nil (reparse-symbol indented_block_body) [885 925])
+                            ("self" variable nil (reparse-symbol indented_block_body) [934 978])
+                            ("self" variable nil (reparse-symbol indented_block_body) [987 1029]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [816 820]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [803 1030])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1045 1049])
+                            ("source" variable nil (reparse-symbol function_parameters) [1051 1057]))                          )
+                        (reparse-symbol indented_block_body) [1035 1206])
+                    ("getContentHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1233 1237]))                          )
+                        (reparse-symbol indented_block_body) [1211 1320])
+                    ("setContentHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1347 1351])
+                            ("handler" variable nil (reparse-symbol function_parameters) [1353 1360]))                          )
+                        (reparse-symbol indented_block_body) [1325 1469])
+                    ("getDTDHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1492 1496]))                          )
+                        (reparse-symbol indented_block_body) [1474 1575])
+                    ("setDTDHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1598 1602])
+                            ("handler" variable nil (reparse-symbol function_parameters) [1604 1611]))                          )
+                        (reparse-symbol indented_block_body) [1580 1716])
+                    ("getEntityResolver" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1743 1747]))                          )
+                        (reparse-symbol indented_block_body) [1721 1829])
+                    ("setEntityResolver" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1856 1860])
+                            ("resolver" variable nil (reparse-symbol function_parameters) [1862 1870]))                          )
+                        (reparse-symbol indented_block_body) [1834 1969])
+                    ("getErrorHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1994 1998]))                          )
+                        (reparse-symbol indented_block_body) [1974 2078])
+                    ("setErrorHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2103 2107])
+                            ("handler" variable nil (reparse-symbol function_parameters) [2109 2116]))                          )
+                        (reparse-symbol indented_block_body) [2083 2217])
+                    ("setLocale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2236 2240])
+                            ("locale" variable nil (reparse-symbol function_parameters) [2242 2248]))                          
+                        :documentation "Allow an application to set the locale for errors and warnings.
+
+        SAX parsers are not required to provide localization for errors
+        and warnings; if they cannot support the requested locale,
+        however, they must throw a SAX exception. Applications may
+        request a locale change in the middle of a parse.")
+                        (reparse-symbol indented_block_body) [2222 2667])
+                    ("getFeature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2687 2691])
+                            ("name" variable nil (reparse-symbol function_parameters) [2693 2697]))                          )
+                        (reparse-symbol indented_block_body) [2672 2838])
+                    ("setFeature" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2858 2862])
+                            ("name" variable nil (reparse-symbol function_parameters) [2864 2868])
+                            ("state" variable nil (reparse-symbol function_parameters) [2870 2875]))                          )
+                        (reparse-symbol indented_block_body) [2843 3000])
+                    ("getProperty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3021 3025])
+                            ("name" variable nil (reparse-symbol function_parameters) [3027 3031]))                          )
+                        (reparse-symbol indented_block_body) [3005 3174])
+                    ("setProperty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3195 3199])
+                            ("name" variable nil (reparse-symbol function_parameters) [3201 3205])
+                            ("value" variable nil (reparse-symbol function_parameters) [3207 3212]))                          )
+                        (reparse-symbol indented_block_body) [3179 3339]))                  
+                :type "class")
+                nil [221 3339])
+            ("IncrementalParser" type
+               (:documentation "This interface adds three extra methods to the XMLReader
+    interface that allow XML parsers to support incremental
+    parsing. Support for this interface is optional, since not all
+    underlying XML parsers support this functionality.
+
+    When the parser is instantiated it is ready to begin accepting
+    data from the feed method immediately. After parsing has been
+    finished with a call to close the reset method must be called to
+    make the parser ready to accept new data, either from feed or
+    using the parse method.
+
+    Note that these methods must _not_ be called during parsing, that
+    is, after parse has been called and before it returns.
+
+    By default, the class also implements the parse method of the XMLReader
+    interface using the feed, close and reset methods of the
+    IncrementalParser interface as a convenience to SAX 2.0 driver
+    writers."
+                :superclasses ("XMLReader")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4318 4341])
+                            ("XMLReader" code nil (reparse-symbol indented_block_body) [4350 4374]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4288 4292])
+                            ("bufsize" variable nil (reparse-symbol function_parameters) [4294 4301]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4275 4375])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4390 4394])
+                            ("source" variable nil (reparse-symbol function_parameters) [4396 4402]))                          )
+                        (reparse-symbol indented_block_body) [4380 4725])
+                    ("feed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4739 4743])
+                            ("data" variable nil (reparse-symbol function_parameters) [4745 4749]))                          
+                        :documentation "This method gives the raw XML data in the data parameter to
+        the parser and makes it parse the data, emitting the
+        corresponding events. It is allowed for XML constructs to be
+        split across several calls to feed.
+
+        feed may raise SAXException.")
+                        (reparse-symbol indented_block_body) [4730 5108])
+                    ("prepareParser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5131 5135])
+                            ("source" variable nil (reparse-symbol function_parameters) [5137 5143]))                          
+                        :documentation "This method is called by the parse implementation to allow
+        the SAX 2.0 driver to prepare itself for parsing.")
+                        (reparse-symbol indented_block_body) [5113 5348])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5363 5367]))                          
+                        :documentation "This method is called when the entire XML document has been
+        passed to the parser through the feed method, to notify the
+        parser that there are no more data. This allows the parser to
+        do the final checks on the document and empty the internal
+        data buffer.
+
+        The parser will not be ready to parse another document until
+        the reset method has been called.
+
+        close may raise SAXException.")
+                        (reparse-symbol indented_block_body) [5353 5891])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5906 5910]))                          
+                        :documentation "This method is called after close has been called to reset
+        the parser so that it is ready to parse new documents. The
+        results of calling parse or feed after close without calling
+        reset are undefined.")
+                        (reparse-symbol indented_block_body) [5896 6221]))                  
+                :type "class")
+                nil [3340 6221])
+            ("Locator" type
+               (:documentation "Interface for associating a SAX event with a document
+    location. A locator object will return valid results only during
+    calls to DocumentHandler methods; at any other time, the
+    results are unpredictable."
+                :members 
+                  ( ("getColumnNumber" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6510 6514]))                          )
+                        (reparse-symbol indented_block_body) [6490 6600])
+                    ("getLineNumber" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6623 6627]))                          )
+                        (reparse-symbol indented_block_body) [6605 6711])
+                    ("getPublicId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6732 6736]))                          )
+                        (reparse-symbol indented_block_body) [6716 6821])
+                    ("getSystemId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6842 6846]))                          )
+                        (reparse-symbol indented_block_body) [6826 6931]))                  
+                :type "class")
+                nil [6245 6931])
+            ("InputSource" type
+               (:documentation "Encapsulation of the information needed by the XMLReader to
+    read entities.
+
+    This class may include information about the public identifier,
+    system identifier, byte stream (possibly with character encoding
+    information) and/or the character stream of an entity.
+
+    Applications will create objects of this class for use in the
+    XMLReader.parse method and for returning from
+    EntityResolver.resolveEntity.
+
+    An InputSource belongs to the application, the XMLReader is not
+    allowed to modify InputSource objects passed to it from the
+    application, although it may make copies and modify those."
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7662 7690])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7699 7722])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7731 7754])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7763 7786])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7795 7818]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7629 7633])
+                            ("system_id" variable nil (reparse-symbol function_parameters) [7635 7644]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7616 7819])
+                    ("setPublicId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7840 7844])
+                            ("public_id" variable nil (reparse-symbol function_parameters) [7846 7855]))                          )
+                        (reparse-symbol indented_block_body) [7824 7953])
+                    ("getPublicId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7974 7978]))                          )
+                        (reparse-symbol indented_block_body) [7958 8074])
+                    ("setSystemId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8095 8099])
+                            ("system_id" variable nil (reparse-symbol function_parameters) [8101 8110]))                          )
+                        (reparse-symbol indented_block_body) [8079 8208])
+                    ("getSystemId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8229 8233]))                          )
+                        (reparse-symbol indented_block_body) [8213 8329])
+                    ("setEncoding" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8350 8354])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [8356 8364]))                          
+                        :documentation "Sets the character encoding of this InputSource.
+
+        The encoding must be a string acceptable for an XML encoding
+        declaration (see section 4.3.3 of the XML recommendation).
+
+        The encoding attribute of the InputSource is ignored if the
+        InputSource also contains a character stream.")
+                        (reparse-symbol indented_block_body) [8334 8725])
+                    ("getEncoding" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8746 8750]))                          )
+                        (reparse-symbol indented_block_body) [8730 8842])
+                    ("setByteStream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8865 8869])
+                            ("bytefile" variable nil (reparse-symbol function_parameters) [8871 8879]))                          
+                        :documentation "Set the byte stream (a Python file-like object which does
+        not perform byte-to-character conversion) for this input
+        source.
+
+        The SAX parser will ignore this if there is also a character
+        stream specified, but it will use a byte stream in preference
+        to opening a URI connection itself.
+
+        If the application knows the character encoding of the byte
+        stream, it should set it with the setEncoding method.")
+                        (reparse-symbol indented_block_body) [8847 9385])
+                    ("getByteStream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9408 9412]))                          
+                        :documentation "Get the byte stream for this input source.
+
+        The getEncoding method will return the character encoding for
+        this byte stream, or None if unknown.")
+                        (reparse-symbol indented_block_body) [9390 9620])
+                    ("setCharacterStream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9648 9652])
+                            ("charfile" variable nil (reparse-symbol function_parameters) [9654 9662]))                          
+                        :documentation "Set the character stream for this input source. (The stream
+        must be a Python 2.0 Unicode-wrapped file-like that performs
+        conversion to Unicode strings.)
+
+        If there is a character stream specified, the SAX parser will
+        ignore any byte stream and will not attempt to open a URI
+        connection to the system identifier.")
+                        (reparse-symbol indented_block_body) [9625 10065])
+                    ("getCharacterStream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10093 10097]))                          )
+                        (reparse-symbol indented_block_body) [10070 10189]))                  
+                :type "class")
+                nil [6959 10189])
+            ("AttributesImpl" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Non-NS-aware implementation.
+
+        attrs should be of the form {name : value}.\"\"\"" code nil (reparse-symbol indented_block_body) [10282 10369])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10378 10397]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10260 10264])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [10266 10271]))                          
+                        :documentation "Non-NS-aware implementation.
+
+        attrs should be of the form {name : value}."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10247 10398])
+                    ("getLength" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10417 10421]))                          )
+                        (reparse-symbol indented_block_body) [10403 10456])
+                    ("getType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10473 10477])
+                            ("name" variable nil (reparse-symbol function_parameters) [10479 10483]))                          )
+                        (reparse-symbol indented_block_body) [10461 10509])
+                    ("getValue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10527 10531])
+                            ("name" variable nil (reparse-symbol function_parameters) [10533 10537]))                          )
+                        (reparse-symbol indented_block_body) [10514 10573])
+                    ("getValueByQName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10598 10602])
+                            ("name" variable nil (reparse-symbol function_parameters) [10604 10608]))                          )
+                        (reparse-symbol indented_block_body) [10578 10644])
+                    ("getNameByQName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10668 10672])
+                            ("name" variable nil (reparse-symbol function_parameters) [10674 10678]))                          )
+                        (reparse-symbol indented_block_body) [10649 10770])
+                    ("getQNameByName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10794 10798])
+                            ("name" variable nil (reparse-symbol function_parameters) [10800 10804]))                          )
+                        (reparse-symbol indented_block_body) [10775 10896])
+                    ("getNames" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10914 10918]))                          )
+                        (reparse-symbol indented_block_body) [10901 10955])
+                    ("getQNames" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10974 10978]))                          )
+                        (reparse-symbol indented_block_body) [10960 11015])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11032 11036]))                          )
+                        (reparse-symbol indented_block_body) [11020 11071])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11092 11096])
+                            ("name" variable nil (reparse-symbol function_parameters) [11098 11102]))                          )
+                        (reparse-symbol indented_block_body) [11076 11138])
+                    ("keys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11152 11156]))                          )
+                        (reparse-symbol indented_block_body) [11143 11193])
+                    ("has_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11210 11214])
+                            ("name" variable nil (reparse-symbol function_parameters) [11216 11220]))                          )
+                        (reparse-symbol indented_block_body) [11198 11258])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11280 11284])
+                            ("name" variable nil (reparse-symbol function_parameters) [11286 11290]))                          )
+                        (reparse-symbol indented_block_body) [11263 11328])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11341 11345])
+                            ("name" variable nil (reparse-symbol function_parameters) [11347 11351])
+                            ("alternative" variable nil (reparse-symbol function_parameters) [11353 11364]))                          )
+                        (reparse-symbol indented_block_body) [11333 11422])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11436 11440]))                          )
+                        (reparse-symbol indented_block_body) [11427 11486])
+                    ("items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11501 11505]))                          )
+                        (reparse-symbol indented_block_body) [11491 11543])
+                    ("values" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11559 11563]))                          )
+                        (reparse-symbol indented_block_body) [11548 11602]))                  
+                :type "class")
+                nil [10220 11602])
+            ("AttributesNSImpl" type
+               (:superclasses ("AttributesImpl")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"NS-aware implementation.
+
+        attrs should be of the form {(ns_uri, lname): value, ...}.
+        qnames of the form {(ns_uri, lname): qname, ...}.\"\"\"" code nil (reparse-symbol indented_block_body) [11723 11879])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11888 11907])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11916 11937]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11693 11697])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [11699 11704])
+                            ("qnames" variable nil (reparse-symbol function_parameters) [11706 11712]))                          
+                        :documentation "NS-aware implementation.
+
+        attrs should be of the form {(ns_uri, lname): value, ...}.
+        qnames of the form {(ns_uri, lname): qname, ...}."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11680 11938])
+                    ("getValueByQName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11963 11967])
+                            ("name" variable nil (reparse-symbol function_parameters) [11969 11973]))                          )
+                        (reparse-symbol indented_block_body) [11943 12132])
+                    ("getNameByQName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12156 12160])
+                            ("name" variable nil (reparse-symbol function_parameters) [12162 12166]))                          )
+                        (reparse-symbol indented_block_body) [12137 12312])
+                    ("getQNameByName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12336 12340])
+                            ("name" variable nil (reparse-symbol function_parameters) [12342 12346]))                          )
+                        (reparse-symbol indented_block_body) [12317 12383])
+                    ("getQNames" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12402 12406]))                          )
+                        (reparse-symbol indented_block_body) [12388 12446])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12460 12464]))                          )
+                        (reparse-symbol indented_block_body) [12451 12524]))                  
+                :type "class")
+                nil [11635 12524])
+            ("_test" function nil nil [12526 12593])
+            ("if" code nil nil [12594 12633]))          
+      :file "xmlreader.py"
+      :pointmax 12633
+      :fsize 12632
+      :lastmodtime '(21651 11957 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Different kinds of SAX Exceptions\"\"\"" code nil nil [1 40])
+            ("sys" include nil nil [41 51])
+            ("if" code nil nil [52 119])
+            ("del" code nil nil [119 126])
+            ("SAXException" type
+               (:documentation "Encapsulate an XML error or warning. This class can contain
+    basic error or warning information from either the XML parser or
+    the application: you can subclass it to provide additional
+    functionality, or to add localization. Note that although you will
+    receive a SAXException as the argument to the handlers in the
+    ErrorHandler interface, you are not actually required to throw
+    the exception; instead, you can simply read the information in
+    it."
+                :superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Creates an exception. The message is required, but the exception
+        is optional.\"\"\"" code nil (reparse-symbol indented_block_body) [722 813])
+                            ("self" variable nil (reparse-symbol indented_block_body) [822 837])
+                            ("self" variable nil (reparse-symbol indented_block_body) [846 873])
+                            ("Exception" code nil (reparse-symbol indented_block_body) [882 911]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [686 690])
+                            ("msg" variable nil (reparse-symbol function_parameters) [692 695])
+                            ("exception" variable nil (reparse-symbol function_parameters) [697 706]))                          
+                        :documentation "Creates an exception. The message is required, but the exception
+        is optional."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [673 912])
+                    ("getMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [932 936]))                          )
+                        (reparse-symbol indented_block_body) [917 1011])
+                    ("getException" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1033 1037]))                          )
+                        (reparse-symbol indented_block_body) [1016 1139])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1156 1160]))                          )
+                        (reparse-symbol indented_block_body) [1144 1247])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1268 1272])
+                            ("ix" variable nil (reparse-symbol function_parameters) [1274 1276]))                          
+                        :documentation "Avoids weird error messages if someone does exception[ix] by
+        mistake, since Exception has __getitem__ defined.")
+                        (reparse-symbol indented_block_body) [1252 1456]))                  
+                :type "class")
+                nil [156 1456])
+            ("SAXParseException" type
+               (:documentation "Encapsulate an XML parse error or warning.
+
+    This exception will include information for locating the error in
+    the original XML document. Note that although the application will
+    receive a SAXParseException as the argument to the handlers in the
+    ErrorHandler interface, the application is not actually required
+    to throw the exception; instead, it can simply read the
+    information in it and take a different action.
+
+    Since this exception is a subclass of SAXException, it inherits
+    the ability to wrap another exception."
+                :superclasses ("SAXException")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"Creates the exception. The exception parameter is allowed to be None.\"" code nil (reparse-symbol indented_block_body) [2146 2217])
+                            ("SAXException" code nil (reparse-symbol indented_block_body) [2226 2269])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2278 2301])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2540 2584])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2593 2639])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2648 2693]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2106 2110])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2112 2115])
+                            ("exception" variable nil (reparse-symbol function_parameters) [2117 2126])
+                            ("locator" variable nil (reparse-symbol function_parameters) [2128 2135]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2093 2694])
+                    ("getColumnNumber" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2719 2723]))                          
+                        :documentation "The column number of the end of the text where the exception
+        occurred.")
+                        (reparse-symbol indented_block_body) [2699 2847])
+                    ("getLineNumber" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2870 2874]))                          )
+                        (reparse-symbol indented_block_body) [2852 2985])
+                    ("getPublicId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3006 3010]))                          )
+                        (reparse-symbol indented_block_body) [2990 3136])
+                    ("getSystemId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3157 3161]))                          )
+                        (reparse-symbol indented_block_body) [3141 3274])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3291 3295]))                          )
+                        (reparse-symbol indented_block_body) [3279 3703]))                  
+                :type "class")
+                nil [1491 3703])
+            ("SAXNotRecognizedException" type
+               (:documentation "Exception class for an unrecognized identifier.
+
+    An XMLReader will raise this exception when it is confronted with an
+    unrecognized feature or property. SAX applications and extensions may
+    use this class for similar purposes."
+                :superclasses ("SAXException")
+                :type "class")
+                nil [3746 4040])
+            ("SAXNotSupportedException" type
+               (:documentation "Exception class for an unsupported operation.
+
+    An XMLReader will raise this exception when a service it cannot
+    perform is requested (specifically setting a state or value). SAX
+    applications and extensions may use this class for similar
+    purposes."
+                :superclasses ("SAXException")
+                :type "class")
+                nil [4082 4400])
+            ("SAXReaderNotAvailable" type
+               (:documentation "Exception class for a missing driver.
+
+    An XMLReader module (driver) should raise this exception when it
+    is first imported, e.g. when a support module cannot be imported.
+    It also may be raised during parsing, e.g. if executing an external
+    program is not permitted."
+                :superclasses ("SAXNotSupportedException")
+                :type "class")
+                nil [4441 4786]))          
+      :file "_exceptions.py"
+      :pointmax 4786
+      :fsize 4785
+      :lastmodtime '(21651 11957 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!lib!python2.7!xml!sax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,244 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONSOLE_BRIDGE_CONSOLE_" variable (:constant-flag t) nil [1849 1872])
+            ("string" include (:system-flag t) nil [1874 1891])
+            ("logError" variable (:constant-flag t) nil [2796 2804])
+            ("logWarn" variable (:constant-flag t) nil [2927 2934])
+            ("logInform" variable (:constant-flag t) nil [3058 3067])
+            ("logDebug" variable (:constant-flag t) nil [3189 3197])
+            ("console_bridge" type
+               (:members 
+                  ( ("LogLevel" type
+                       (:members 
+                          ( ("CONSOLE_BRIDGE_LOG_DEBUG" variable
+                               (:constant-flag t
+                                :default-value (3646 3647)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3619 3647])
+                            ("CONSOLE_BRIDGE_LOG_INFO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3653 3677])
+                            ("CONSOLE_BRIDGE_LOG_WARN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3682 3706])
+                            ("CONSOLE_BRIDGE_LOG_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3711 3736])
+                            ("CONSOLE_BRIDGE_LOG_NONE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3741 3768]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3597 3769])
+                    ("OutputHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4062 4069])
+                            ("OutputHandler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4089 4094]))                                  
+                                :type ("OutputHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4075 4102])
+                            ("OutputHandler" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4131 4136]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4108 4144])
+                            ("log" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4300 4324])
+                                    ("level" variable (:type ("LogLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4325 4340])
+                                    ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4341 4362])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [4363 4372]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4283 4377]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4040 4380])
+                    ("OutputHandlerSTD" type
+                       (:superclasses 
+                          ( ("OutputHandler" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4532 4539])
+                            ("OutputHandlerSTD" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4562 4567]))                                  
+                                :type ("OutputHandlerSTD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4545 4593])
+                            ("log" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4616 4640])
+                                    ("level" variable (:type ("LogLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4641 4656])
+                                    ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4657 4678])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [4679 4688]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4599 4689]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4484 4695])
+                    ("OutputHandlerFile" type
+                       (:superclasses 
+                          ( ("OutputHandler" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4823 4830])
+                            ("OutputHandlerFile" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4925 4946]))                                  
+                                :type ("OutputHandlerFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4907 4947])
+                            ("OutputHandlerFile" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4980 4985]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4953 4986])
+                            ("log" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5009 5033])
+                                    ("level" variable (:type ("LogLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5034 5049])
+                                    ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5050 5071])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [5072 5081]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4992 5082])
+                            ("private" label nil (reparse-symbol classsubparts) [5086 5094])
+                            ("file_" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5136 5148]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4774 5154])
+                    ("noOutputHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5295 5300]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5274 5301])
+                    ("restorePreviousOutputHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5414 5419]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5380 5420])
+                    ("useOutputHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("oh" variable
+                               (:pointer 1
+                                :type ("OutputHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5545 5563]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5523 5564])
+                    ("getOutputHandler" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5715 5720]))                          
+                        :type ("OutputHandler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5683 5721])
+                    ("setLogLevel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("level" variable (:type ("LogLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5865 5880]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5848 5881])
+                    ("getLogLevel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6024 6029]))                          
+                        :type ("LogLevel" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6003 6030])
+                    ("log" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6276 6293])
+                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [6294 6303])
+                            ("level" variable (:type ("LogLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6304 6319])
+                            ("m" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6320 6334])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [6335 6339]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6267 6340]))                  
+                :type "namespace")
+                nil [3514 6342]))          
+      :file "console.h"
+      :pointmax 6352
+      :fsize 6351
+      :lastmodtime '(20929 29922 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("logDebug" (spp-arg-list ("fmt" "...") 3197 . 3207) . 
+              ((symbol "console_bridge" 3209 . 3223) (punctuation ":" 3223 . 3224) (punctuation ":" 3224 . 3225) (symbol "log" 3225 . 3228) (semantic-list "(__FILE__, __LINE__, console_bridge::CONSOLE_BRIDGE_LOG_DEBUG, fmt, ##__VA_ARGS__)" 3228 . 3310)))
+          ("CONSOLE_BRIDGE_CONSOLE_")
+          ("logWarn" (spp-arg-list ("fmt" "...") 2934 . 2944) . 
+              ((symbol "console_bridge" 2947 . 2961) (punctuation ":" 2961 . 2962) (punctuation ":" 2962 . 2963) (symbol "log" 2963 . 2966) (semantic-list "(__FILE__, __LINE__, console_bridge::CONSOLE_BRIDGE_LOG_WARN,  fmt, ##__VA_ARGS__)" 2966 . 3048)))
+          ("logInform" (spp-arg-list ("fmt" "...") 3067 . 3077) . 
+              ((symbol "console_bridge" 3078 . 3092) (punctuation ":" 3092 . 3093) (punctuation ":" 3093 . 3094) (symbol "log" 3094 . 3097) (semantic-list "(__FILE__, __LINE__, console_bridge::CONSOLE_BRIDGE_LOG_INFO,  fmt, ##__VA_ARGS__)" 3097 . 3179)))
+          ("logError" (spp-arg-list ("fmt" "...") 2804 . 2814) . 
+              ((symbol "console_bridge" 2816 . 2830) (punctuation ":" 2830 . 2831) (punctuation ":" 2831 . 2832) (symbol "log" 2832 . 2835) (semantic-list "(__FILE__, __LINE__, console_bridge::CONSOLE_BRIDGE_LOG_ERROR, fmt, ##__VA_ARGS__)" 2835 . 2917)))
+          )
+))
+  :file "!opt!ros!hydro!include!console_bridge!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

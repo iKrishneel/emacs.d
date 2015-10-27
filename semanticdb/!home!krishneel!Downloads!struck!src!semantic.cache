@@ -1,0 +1,364 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("HaarFeature.h" include nil nil [1007 1031])
+            ("Sample.h" include nil nil [1032 1051])
+            ("cassert" include (:system-flag t) nil [1053 1071])
+            ("iostream" include (:system-flag t) nil [1072 1091])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1093 1113])
+            ("HaarFeature" function
+               (:constructor-flag t
+                :parent "HaarFeature"
+                :arguments 
+                  ( ("bb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1140 1160])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1161 1170]))                  
+                :type ("HaarFeature" type (:type "class") nil nil))
+                nil [1115 3501])
+            ("HaarFeature" function
+               (:destructor-flag t
+                :parent "HaarFeature"
+                :type "void")
+                nil [3503 3534])
+            ("Eval" function
+               (:methodconst-flag t
+                :parent "HaarFeature"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sample" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3560 3576]))                  
+                :type "float")
+                nil [3536 4045]))          
+      :file "HaarFeature.cpp"
+      :pointmax 4045
+      :fsize 4168
+      :lastmodtime '(20193 26246 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "HaarFeature.h"
+      :fsize 1429
+      :lastmodtime '(20184 33252 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SAMPLE_H" variable (:constant-flag t) nil [1032 1040])
+            ("ImageRep.h" include nil nil [1042 1063])
+            ("Rect.h" include nil nil [1064 1081])
+            ("vector" include (:system-flag t) nil [1083 1100])
+            ("Sample" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1117 1124])
+                    ("Sample" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ImageRep" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1133 1155])
+                            ("roi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FloatRect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1156 1177]))                          
+                        :type ("Sample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1126 1216])
+                    ("GetImage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1220 1279])
+                    ("GetROI" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1281 1337])
+                    ("private" label nil (reparse-symbol classsubparts) [1339 1347])
+                    ("m_image" variable
+                       (:constant-flag t
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1349 1373])
+                    ("m_roi" variable (:type ("FloatRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1375 1391]))                  
+                :type "class")
+                nil [1102 1394])
+            ("MultiSample" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1416 1423])
+                    ("MultiSample" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ImageRep" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1437 1459])
+                            ("rects" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("FloatRect" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1460 1496]))                          
+                        :type ("MultiSample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1425 1539])
+                    ("GetImage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1543 1602])
+                    ("GetRects" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("FloatRect" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1604 1677])
+                    ("GetSample" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1703 1709]))                          
+                        :type ("Sample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1679 1755])
+                    ("private" label nil (reparse-symbol classsubparts) [1757 1765])
+                    ("m_image" variable
+                       (:constant-flag t
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1767 1791])
+                    ("m_rects" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("FloatRect" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1793 1824]))                  
+                :type "class")
+                nil [1396 1827]))          
+      :file "Sample.h"
+      :pointmax 1836
+      :fsize 1906
+      :lastmodtime '(20184 33306 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SAMPLE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Tracker.h" include nil nil [1008 1028])
+            ("Config.h" include nil nil [1029 1048])
+            ("iostream" include (:system-flag t) nil [1050 1069])
+            ("fstream" include (:system-flag t) nil [1070 1088])
+            ("opencv/cv.h" include (:system-flag t) nil [1090 1112])
+            ("opencv/highgui.h" include (:system-flag t) nil [1113 1140])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1142 1162])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1163 1182])
+            ("kLiveBoxWidth" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "80"
+                :type "int")
+                nil [1184 1220])
+            ("kLiveBoxHeight" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "80"
+                :type "int")
+                nil [1221 1258])
+            ("rectangle" function
+               (:arguments 
+                  ( ("rMat" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1275 1285])
+                    ("rRect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1286 1309])
+                    ("rColour" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Scalar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1310 1332]))                  
+                :type "void")
+                nil [1260 1436])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1447 1456])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1457 1470]))                  
+                :type "int")
+                nil [1438 6564]))          
+      :file "main.cpp"
+      :pointmax 6565
+      :fsize 6830
+      :lastmodtime '(20249 5952 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Tracker.h"
+      :fsize 2002
+      :lastmodtime '(20184 34224 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "Config.h"
+      :fsize 2151
+      :lastmodtime '(20184 33270 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("HistogramFeatures.h" include nil nil [1007 1037])
+            ("Config.h" include nil nil [1038 1057])
+            ("Sample.h" include nil nil [1058 1077])
+            ("Rect.h" include nil nil [1078 1095])
+            ("iostream" include (:system-flag t) nil [1097 1116])
+            ("Eigen" using (:type ("Eigen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1118 1140])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1141 1160])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1161 1181])
+            ("kNumBins" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "16"
+                :type "int")
+                nil [1183 1214])
+            ("kNumLevels" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [1215 1247])
+            ("kNumCellsX" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [1248 1280])
+            ("kNumCellsY" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [1281 1313])
+            ("HistogramFeatures" function
+               (:constructor-flag t
+                :parent "HistogramFeatures"
+                :arguments 
+                  ( ("conf" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1352 1371]))                  
+                :type ("HistogramFeatures" type (:type "class") nil nil))
+                nil [1315 1548])
+            ("UpdateFeatureVector" function
+               (:parent "HistogramFeatures"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sample" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1594 1610]))                  
+                :type "void")
+                nil [1550 2370]))          
+      :file "HistogramFeatures.cpp"
+      :pointmax 2371
+      :fsize 2455
+      :lastmodtime '(20184 33342 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "HistogramFeatures.h"
+      :fsize 1316
+      :lastmodtime '(20184 33274 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "Rect.h"
+      :fsize 3812
+      :lastmodtime '(20193 31244 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "ImageRep.h"
+      :fsize 1750
+      :lastmodtime '(20184 33278 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("HaarFeatures.h" include nil nil [1007 1032])
+            ("Config.h" include nil nil [1033 1052])
+            ("kSystematicFeatureCount" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "192"
+                :type "int")
+                nil [1054 1101])
+            ("HaarFeatures" function
+               (:constructor-flag t
+                :parent "HaarFeatures"
+                :arguments 
+                  ( ("conf" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1130 1149]))                  
+                :type ("HaarFeatures" type (:type "class") nil nil))
+                nil [1103 1212])
+            ("GenerateSystematic" function
+               (:parent "HaarFeatures"
+                :type "void")
+                nil [1214 1640])
+            ("UpdateFeatureVector" function
+               (:parent "HaarFeatures"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sample" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1681 1697]))                  
+                :type "void")
+                nil [1642 1789]))          
+      :file "HaarFeatures.cpp"
+      :pointmax 1790
+      :fsize 1855
+      :lastmodtime '(20184 33336 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "HaarFeatures.h"
+      :fsize 1414
+      :lastmodtime '(20184 33256 0 0)))
+  :file "!home!krishneel!Downloads!struck!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,810 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CLASS_LOADER_CLASS_LOADER_H_DEFINED" variable (:constant-flag t) nil [1665 1700])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [1702 1733])
+            ("boost/thread/recursive_mutex.hpp" include (:system-flag t) nil [1734 1777])
+            ("boost/bind.hpp" include (:system-flag t) nil [1778 1803])
+            ("vector" include (:system-flag t) nil [1804 1821])
+            ("string" include (:system-flag t) nil [1822 1839])
+            ("console_bridge/console.h" include (:system-flag t) nil [1840 1875])
+            ("class_loader/class_loader_register_macro.h" include nil nil [1876 1929])
+            ("class_loader/class_loader_core.h" include nil nil [1930 1973])
+            ("class_loader" type
+               (:members 
+                  ( ("systemLibrarySuffix" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2058 2092])
+                    ("ClassLoader" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2437 2444])
+                            ("ClassLoader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("library_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2727 2759])
+                                    ("ondemand_load_unload" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2760 2793]))                                  
+                                :type ("ClassLoader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2715 2795])
+                            ("ClassLoader" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2929 2952])
+                            ("getAvailableClasses" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3161 3328])
+                            ("getLibraryPath" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3451 3503])
+                            ("createInstance" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Base" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("derived_class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4035 4073]))                                  )
+                                (reparse-symbol classsubparts) [3966 5065])
+                            ("createUnmanagedInstance" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("Base" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("derived_class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5601 5639]))                                  
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [5545 5967])
+                            ("isClassAvailable" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6268 6298]))                                  )
+                                (reparse-symbol classsubparts) [6220 6506])
+                            ("isLibraryLoaded" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7060 7083])
+                            ("isLibraryLoadedByAnyClassloader" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7355 7394])
+                            ("isOnDemandLoadUnloadEnabled" function (:type "bool") (reparse-symbol classsubparts) [7626 7692])
+                            ("loadLibrary" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [8115 8134])
+                            ("unloadLibrary" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [9091 9111])
+                            ("private" label nil (reparse-symbol classsubparts) [9115 9123])
+                            ("onPluginDeletion" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9334 9344]))                                  )
+                                (reparse-symbol classsubparts) [9282 10178])
+                            ("hasUnmanagedInstanceBeenCreated" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10284 10330])
+                            ("unloadLibraryInternal" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("lock_plugin_ref_count" variable (:type "bool") (reparse-symbol arg-sub-list) [10937 10964]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10911 10965])
+                            ("private" label nil (reparse-symbol classsubparts) [10969 10977])
+                            ("ondemand_load_unload_" variable (:type "bool") (reparse-symbol classsubparts) [10983 11010])
+                            ("library_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11015 11041])
+                            ("load_ref_count_" variable (:type "int") (reparse-symbol classsubparts) [11046 11066])
+                            ("load_ref_count_mutex_" variable (:type ("boost::recursive_mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11073 11118])
+                            ("plugin_ref_count_" variable (:type "int") (reparse-symbol classsubparts) [11123 11145])
+                            ("plugin_ref_count_mutex_" variable (:type ("boost::recursive_mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11150 11197])
+                            ("has_unmananged_instance_been_created_" variable
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11202 11252]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2415 11255]))                  
+                :type "namespace")
+                nil [1975 11258]))          
+      :file "class_loader.h"
+      :pointmax 11268
+      :fsize 11267
+      :lastmodtime '(21270 6612 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CLASS_LOADER_CLASS_LOADER_H_DEFINED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CLASS_LOADER_REGISTER_MACRO_H_DEFINED" variable (:constant-flag t) nil [1667 1704])
+            ("class_loader_core.h" include nil nil [1706 1736])
+            ("console_bridge/console.h" include (:system-flag t) nil [1737 1772])
+            ("CLASS_LOADER_REGISTER_CLASS_INTERNAL_WITH_MESSAGE" variable (:constant-flag t) nil [1782 1831])
+            ("CLASS_LOADER_REGISTER_CLASS_INTERNAL_HOP1_WITH_MESSAGE" variable (:constant-flag t) nil [2268 2322])
+            ("CLASS_LOADER_REGISTER_CLASS_WITH_MESSAGE" variable (:constant-flag t) nil [2598 2638])
+            ("CLASS_LOADER_REGISTER_CLASS" variable (:constant-flag t) nil [3330 3357]))          
+      :file "class_loader_register_macro.h"
+      :pointmax 3443
+      :fsize 3442
+      :lastmodtime '(21270 6612 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CLASS_LOADER_REGISTER_MACRO_H_DEFINED")
+          ("CLASS_LOADER_REGISTER_CLASS" (spp-arg-list ("Derived" "Base") 3357 . 3372) . ((symbol "CLASS_LOADER_REGISTER_CLASS_WITH_MESSAGE" 3374 . 3414) (semantic-list "(Derived, Base, \"\")" 3414 . 3433)))
+          ("CLASS_LOADER_REGISTER_CLASS_WITH_MESSAGE" (spp-arg-list ("Derived" "Base" "Message") 2638 . 2662) . ((symbol "CLASS_LOADER_REGISTER_CLASS_INTERNAL_HOP1_WITH_MESSAGE" 2664 . 2718) (semantic-list "(Derived, Base, __COUNTER__, Message)" 2718 . 2755)))
+          ("CLASS_LOADER_REGISTER_CLASS_INTERNAL_HOP1_WITH_MESSAGE" (spp-arg-list ("Derived" "Base" "UniqueID" "Message") 2322 . 2356) . ((symbol "CLASS_LOADER_REGISTER_CLASS_INTERNAL_WITH_MESSAGE" 2357 . 2406) (semantic-list "(Derived, Base, UniqueID, Message)" 2406 . 2440)))
+          ("CLASS_LOADER_REGISTER_CLASS_INTERNAL_WITH_MESSAGE" (spp-arg-list ("Derived" "Base" "UniqueID" "Message") 1831 . 1865) . ((NAMESPACE "namespace" 1868 . 1877) (semantic-list "{\\
+  struct ProxyExec##UniqueID \\
+  {\\
+    typedef  Derived _derived; \\
+    typedef  Base    _base; \\
+    ProxyExec##UniqueID() \\
+    { \\
+      if(std::string(Message)!=\"\")\\
+        logInform(\"%s\", Message);\\
+      class_loader::class_loader_private::registerPlugin<_derived, _base>(#Derived, #Base); \\
+    }\\
+  };\\
+  static ProxyExec##UniqueID g_register_plugin_##UniqueID;\\
+}" 1880 . 2257)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("class_loader_private_H_DEFINED" variable (:constant-flag t) nil [1660 1690])
+            ("Poco/SharedLibrary.h" include (:system-flag t) nil [1692 1723])
+            ("boost/thread/recursive_mutex.hpp" include (:system-flag t) nil [1724 1767])
+            ("map" include (:system-flag t) nil [1788 1802])
+            ("typeinfo" include (:system-flag t) nil [1803 1822])
+            ("string" include (:system-flag t) nil [1823 1840])
+            ("class_loader/meta_object.h" include nil nil [1841 1878])
+            ("class_loader/class_loader_exceptions.h" include nil nil [1879 1928])
+            ("cstdio" include (:system-flag t) nil [1929 1946])
+            ("class_loader" type
+               (:members 
+                  ( ("ClassLoader" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2105 2123])
+                    ("class_loader_private" type
+                       (:members 
+                          ( ("LibraryPath" type
+                               (:typedef ("std::string" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2272 2304])
+                            ("ClassName" type
+                               (:typedef ("std::string" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2305 2335])
+                            ("BaseClassName" type
+                               (:typedef ("std::string" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2336 2370])
+                            ("FactoryMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("ClassName" type nil nil nil)
+                                          ("class_loader_private::AbstractMetaObjectBase" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2371 2457])
+                            ("BaseToFactoryMapMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("BaseClassName" type nil nil nil)
+                                          ("FactoryMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2458 2522])
+                            ("LibraryPair" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("LibraryPath" type nil nil nil)
+                                          ("Poco::SharedLibrary" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2523 2588])
+                            ("LibraryVector" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("LibraryPair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2589 2636])
+                            ("MetaObjectVector" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractMetaObjectBase" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2637 2699])
+                            ("printDebugInfoToScreen" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2790 2820])
+                            ("getGlobalPluginBaseToFactoryMapMap" function
+                               (:prototype-flag t
+                                :type ("BaseToFactoryMapMap" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3426 3484])
+                            ("getLoadedLibraryVector" function
+                               (:prototype-flag t
+                                :type ("LibraryVector" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3735 3775])
+                            ("getCurrentlyLoadingLibraryName" function
+                               (:prototype-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4029 4074])
+                            ("setCurrentlyLoadingLibraryName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("library_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4394 4426]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4358 4427])
+                            ("getCurrentlyActiveClassLoader" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("ClassLoader" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4589 4634])
+                            ("setCurrentlyActiveClassLoader" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4837 4857]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4802 4858])
+                            ("getFactoryMapForBaseClass" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("typeid_base_class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5314 5356]))                                  
+                                :type ("FactoryMap" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5276 5357])
+                            ("getFactoryMapForBaseClass" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("FactoryMap" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5566 5694])
+                            ("getLoadedLibraryVectorMutex" function
+                               (:prototype-flag t
+                                :type ("boost::recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5994 6048])
+                            ("getPluginBaseToFactoryMapMapMutex" function
+                               (:prototype-flag t
+                                :type ("boost::recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6049 6109])
+                            ("hasANonPurePluginLibraryBeenOpened" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6303 6345])
+                            ("hasANonPurePluginLibraryBeenOpened" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("hasIt" variable (:type "bool") (reparse-symbol arg-sub-list) [6541 6552]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6501 6553])
+                            ("registerPlugin" function
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7431 7461])
+                                    ("base_class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7462 7497]))                                  )
+                                (reparse-symbol namespacesubparts) [7367 10280])
+                            ("createInstance" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("Base" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("derived_class_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10711 10749])
+                                    ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10750 10770]))                                  
+                                :pointer 1)
+                                (reparse-symbol namespacesubparts) [10664 12342])
+                            ("getAvailableClasses" function
+                               (:template 
+                                  ( ("Base" type (:type "class") nil nil))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12730 12750]))                                  )
+                                (reparse-symbol namespacesubparts) [12659 13535])
+                            ("getAllLibrariesUsedByClassLoader" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("loader" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13883 13909]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [13825 13910])
+                            ("isLibraryLoaded" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("library_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14317 14349])
+                                    ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14350 14370]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [14296 14371])
+                            ("isLibraryLoadedByAnybody" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("library_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14626 14658]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [14596 14659])
+                            ("loadLibrary" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("library_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14953 14985])
+                                    ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14986 15006]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14936 15007])
+                            ("unloadLibrary" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("library_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15317 15349])
+                                    ("loader" variable
+                                       (:pointer 1
+                                        :type ("ClassLoader" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15350 15370]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [15298 15371]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2147 15375]))                  
+                :type "namespace")
+                nil [2079 15414]))          
+      :file "class_loader_core.h"
+      :pointmax 15452
+      :fsize 15451
+      :lastmodtime '(21270 6612 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("class_loader_private_H_DEFINED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PLUGINS_PRIVATE_META_OBJECT_DEFINED" variable (:constant-flag t) nil [1796 1831])
+            ("console_bridge/console.h" include (:system-flag t) nil [1833 1868])
+            ("vector" include (:system-flag t) nil [1869 1886])
+            ("typeinfo" include (:system-flag t) nil [1887 1906])
+            ("class_loader" type
+               (:members 
+                  ( ("ClassLoader" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1934 1952])
+                    ("class_loader_private" type
+                       (:members 
+                          ( ("ClassLoaderVector" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("class_loader::ClassLoader" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2011 2077])
+                            ("AbstractMetaObjectBase" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2277 2284])
+                                    ("AbstractMetaObjectBase" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2369 2399])
+                                            ("base_class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2400 2435]))                                          
+                                        :type ("AbstractMetaObjectBase" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2346 2436])
+                                    ("AbstractMetaObjectBase" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2693 2719])
+                                    ("className" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2851 2881])
+                                    ("baseClassName" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2975 3009])
+                                    ("typeidBaseClassName" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3116 3156])
+                                    ("getAssociatedLibraryPath" function
+                                       (:prototype-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3295 3334])
+                                    ("setAssociatedLibraryPath" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("library_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3458 3483]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3428 3484])
+                                    ("addOwningClassLoader" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("loader" variable
+                                               (:pointer 1
+                                                :type ("ClassLoader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3651 3671]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3625 3672])
+                                    ("removeOwningClassLoader" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("loader" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("ClassLoader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3848 3874]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3819 3875])
+                                    ("isOwnedBy" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("loader" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("ClassLoader" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4051 4077]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4036 4078])
+                                    ("isOwnedByAnybody" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4185 4209])
+                                    ("getAssociatedClassLoaders" function
+                                       (:prototype-flag t
+                                        :type ("ClassLoaderVector" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4289 4335])
+                                    ("protected" label nil (reparse-symbol classsubparts) [4339 4349])
+                                    ("dummyMethod" function
+                                       (:typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4444 4472])
+                                    ("protected" label nil (reparse-symbol classsubparts) [4476 4486])
+                                    ("associated_class_loaders_" variable (:type ("ClassLoaderVector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4491 4535])
+                                    ("associated_library_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4544 4581])
+                                    ("base_class_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4586 4615])
+                                    ("class_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4620 4644])
+                                    ("typeid_base_class_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4649 4685]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2242 4688])
+                            ("AbstractMetaObject" type
+                               (:template 
+                                  ( ("B" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4977 4984])
+                                    ("AbstractMetaObject" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5117 5147])
+                                            ("base_class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5148 5183]))                                          
+                                        :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5098 5343])
+                                    ("create" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5518 5548])
+                                    ("private" label nil (reparse-symbol classsubparts) [5635 5643])
+                                    ("AbstractMetaObject" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5648 5669])
+                                    ("AbstractMetaObject" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5693 5719]))                                          
+                                        :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5674 5720])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5757 5783]))                                          
+                                        :type ("AbstractMetaObject" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5725 5784]))                                  
+                                :superclasses 
+                                  ( ("AbstractMetaObjectBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4897 5787])
+                            ("MetaObject" type
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6028 6035])
+                                    ("MetaObject" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6107 6137])
+                                            ("base_class_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6138 6173]))                                          
+                                        :type ("MetaObject" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6096 6242])
+                                    ("create" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6505 6553]))                                  
+                                :superclasses 
+                                  ( ("AbstractMetaObject" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5949 6556]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1976 6559]))                  
+                :type "namespace")
+                nil [1908 6599]))          
+      :file "meta_object.h"
+      :pointmax 6639
+      :fsize 6638
+      :lastmodtime '(21270 6612 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PLUGINS_PRIVATE_META_OBJECT_DEFINED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("exception" include (:system-flag t) nil [1613 1633])
+            ("class_loader" type
+               (:members 
+                  ( ("ClassLoaderException" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1857 1864])
+                            ("ClassLoaderException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("error_desc" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1890 1919]))                                  
+                                :type ("ClassLoaderException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1869 1955]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1799 1958])
+                    ("LibraryLoadException" type
+                       (:superclasses 
+                          ( ("ClassLoaderException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2149 2156])
+                            ("LibraryLoadException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("error_desc" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2182 2211]))                                  
+                                :type ("LibraryLoadException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2161 2249]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2089 2252])
+                    ("LibraryUnloadException" type
+                       (:superclasses 
+                          ( ("ClassLoaderException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2449 2456])
+                            ("LibraryUnloadException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("error_desc" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2484 2513]))                                  
+                                :type ("LibraryUnloadException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2461 2551]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2387 2554])
+                    ("CreateClassException" type
+                       (:superclasses 
+                          ( ("ClassLoaderException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2738 2745])
+                            ("CreateClassException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("error_desc" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2771 2800]))                                  
+                                :type ("CreateClassException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2750 2838]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2678 2841])
+                    ("NoClassLoaderExistsException" type
+                       (:superclasses 
+                          ( ("ClassLoaderException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3067 3074])
+                            ("NoClassLoaderExistsException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("error_desc" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3108 3137]))                                  
+                                :type ("NoClassLoaderExistsException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3079 3175]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2999 3178]))                  
+                :type "namespace")
+                nil [1635 3181]))          
+      :file "class_loader_exceptions.h"
+      :pointmax 3182
+      :fsize 3181
+      :lastmodtime '(21270 6612 0 0)
+      :unmatched-syntax nil))
+  :file "!opt!ros!hydro!include!class_loader!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

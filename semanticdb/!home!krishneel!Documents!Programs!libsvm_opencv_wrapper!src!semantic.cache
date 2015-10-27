@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [245 274])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [275 313])
+            ("include/svm.h" include (:system-flag t) nil [315 339])
+            ("iostream" include (:system-flag t) nil [340 359])
+            ("string" include (:system-flag t) nil [360 377])
+            ("libSVMWrapper" function
+               (:arguments 
+                  ( ("feature_mat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [417 444])
+                    ("label_mat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [445 470])
+                    ("param" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [475 502]))                  
+                :type ("svm_problem" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [379 1534])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1545 1554])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1555 1568]))                  
+                :type "int")
+                nil [1536 4585]))          
+      :file "main.cpp"
+      :pointmax 4586
+      :fsize 4585
+      :lastmodtime '(21830 2735 48079 939000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!Programs!libsvm_opencv_wrapper!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

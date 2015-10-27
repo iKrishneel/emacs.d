@@ -1,0 +1,64 @@
+;; Object min_max_cut/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "min_max_cut/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("limits.h" include (:system-flag t) nil [21 40])
+            ("string.h" include (:system-flag t) nil [41 60])
+            ("queue" include (:system-flag t) nil [61 77])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [79 99])
+            ("V" variable (:constant-flag t) nil [146 147])
+            ("bfs" function
+               (:arguments 
+                  ( ("rGraph" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [286 303])
+                    ("s" variable (:type "int") (reparse-symbol arg-sub-list) [304 310])
+                    ("t" variable (:type "int") (reparse-symbol arg-sub-list) [311 317])
+                    ("parent" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [318 331]))                  
+                :type "bool")
+                nil [277 1120])
+            ("fordFulkerson" function
+               (:arguments 
+                  ( ("graph" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1200 1216])
+                    ("s" variable (:type "int") (reparse-symbol arg-sub-list) [1217 1223])
+                    ("t" variable (:type "int") (reparse-symbol arg-sub-list) [1224 1230]))                  
+                :type "int")
+                nil [1182 2825])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2879 2888])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2889 2908]))                  
+                :type "int")
+                nil [2870 3392]))          
+      :file "main.cpp"
+      :pointmax 3393
+      :fsize 3392
+      :lastmodtime '(21649 17052 780129 111000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("V" . ((number "6" 148 . 149)))
+          )
+))
+  :file "!home!krishneel!Documents!PhD!Program!min_max_cut!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

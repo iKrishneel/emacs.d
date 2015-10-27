@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("capture.h" include nil nil [218 238])
+            ("boost/foreach.hpp" include (:system-flag t) nil [239 267])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [269 289])
+            ("cv_mouse_event" function
+               (:arguments 
+                  ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [313 323])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [324 330])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [331 337])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [338 348])
+                    ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [349 362]))                  
+                :type "void")
+                nil [291 989])
+            ("Capture" function
+               (:constructor-flag t
+                :parent "Capture"
+                :arguments 
+                  ( ("hp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1031])
+                    ("captureName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1032 1057]))                  
+                :type ("Capture" type (:type "class") nil nil))
+                nil [991 2909])
+            ("Capture" function
+               (:destructor-flag t
+                :parent "Capture"
+                :type "void")
+                nil [2911 2960])
+            ("loadFrame" function
+               (:parent "Capture"
+                :type "bool")
+                nil [2962 3689])
+            ("hasMoreFrames" function
+               (:parent "Capture"
+                :type "bool")
+                nil [3691 3792])
+            ("markRegion" function
+               (:parent "Capture"
+                :type ("cv::Rect" type (:type "class") nil nil))
+                nil [3794 4558]))          
+      :file "capture.cpp"
+      :pointmax 4560
+      :fsize 4559
+      :lastmodtime '(20017 29996 0 0)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!.cache!.fr-RBnMzj!HoughTrack1.0!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

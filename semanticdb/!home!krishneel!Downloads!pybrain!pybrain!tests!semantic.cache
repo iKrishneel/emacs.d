@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Script to run the pybrain testsuite.\"\"\"" code nil nil [49 91])
+            ("__author__" variable nil nil [93 138])
+            ("__version__" variable nil nil [139 159])
+            ("doctest" include nil nil [162 176])
+            ("logging" include nil nil [177 191])
+            ("os" include nil nil [192 201])
+            ("sys" include nil nil [202 212])
+            ("copy" include nil nil [213 234])
+            ("unittest" include nil nil [236 294])
+            ("setUpLogging" function nil nil [297 421])
+            ("testImport" function
+               (:documentation "Tell wether a module can be imported.
+
+    This function has a cache, so modules are only tested once on
+    importability.
+    "
+                :arguments 
+                  ( ("module_name" variable nil (reparse-symbol function_parameters) [438 449]))                  )
+                nil [423 871])
+            ("testImport" variable nil nil [871 892])
+            ("missingDependencies" function
+               (:documentation "Returns a list of dependencies of the module that the current
+    interpreter cannot import.
+
+    This does not inspect the code, but instead check for a list of strings
+    called _dependencies in the target_module. This list should contain module
+    names that the module depends on."
+                :arguments 
+                  ( ("target_module" variable nil (reparse-symbol function_parameters) [969 982]))                  )
+                nil [945 1403])
+            ("getSubDirectories" function
+               (:documentation "Recursively builds a list of all subdirectories in the test suite."
+                :arguments 
+                  ( ("testdir" variable nil (reparse-symbol function_parameters) [1426 1433]))                  )
+                nil [1404 1780])
+            ("make_test_suite" function (:documentation "Load unittests placed in pybrain/tests/unittests, then return a
+    TestSuite object of those.") nil [1781 4264])
+            ("if" code nil nil [4266 4376]))          
+      :file "runtests.py"
+      :pointmax 4376
+      :fsize 4375
+      :lastmodtime '(21709 3712 86508 883000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Downloads!pybrain!pybrain!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

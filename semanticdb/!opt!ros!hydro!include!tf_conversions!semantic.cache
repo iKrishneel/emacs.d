@@ -1,0 +1,168 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONVERSIONS_TF_EIGEN_H" variable (:constant-flag t) nil [1694 1716])
+            ("tf/transform_datatypes.h" include nil nil [1718 1753])
+            ("Eigen/Core" include nil nil [1754 1775])
+            ("Eigen/Geometry" include nil nil [1776 1801])
+            ("tf" type
+               (:members 
+                  ( ("matrixTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1893 1916])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Matrix3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1917 1936]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1872 1937])
+                    ("matrixEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Matrix3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2013 2038])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Matrix3x3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2039 2056]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1992 2057])
+                    ("poseTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2124 2142])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2143 2162]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2105 2163])
+                    ("poseEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2235 2260])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2261 2273]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2216 2274])
+                    ("quaternionTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2355 2379])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Quaterniond" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2380 2402]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2330 2403])
+                    ("quaternionEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Quaterniond" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2484 2512])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2513 2531]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2459 2532])
+                    ("transformTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2609 2632])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2633 2652]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2585 2653])
+                    ("transformEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2730 2755])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2756 2773]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2706 2774])
+                    ("vectorTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2846 2867])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2868 2887]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2825 2888])
+                    ("vectorEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2960 2985])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2986 3001]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2939 3002]))                  
+                :type "namespace")
+                nil [1803 3005]))          
+      :file "tf_eigen.h"
+      :pointmax 3030
+      :fsize 3029
+      :lastmodtime '(21390 50985 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONVERSIONS_TF_EIGEN_H")
+          )
+))
+  :file "!opt!ros!hydro!include!tf_conversions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,698 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Histogram_of_Oriented_Gradients.h" include nil nil [199 251])
+            ("Headers/Autonomous_Boundary_Estimation.h" include nil nil [252 303])
+            ("Headers/Color_Histogram_Descriptors.h" include nil nil [304 352])
+            ("Headers/Handheld_Object_Learning.h" include nil nil [353 398])
+            ("Headers/Graph-Cut_Segementation.h" include nil nil [399 443])
+            ("Headers/Support_Vector_Machine.h" include nil nil [444 487])
+            ("Headers/Placement_Tracker.h" include nil nil [488 526])
+            ("Headers/Particle_Filter.h" include nil nil [527 563])
+            ("Headers/Object_Boundary.h" include nil nil [564 600])
+            ("Headers/Segmentation.h" include nil nil [601 634])
+            ("Headers/Mean_Shift.h" include nil nil [635 666])
+            ("Headers/constants.h" include nil nil [667 697])
+            ("Headers/Tracker.h" include nil nil [698 726])
+            ("Headers/image_similarity.h" include nil nil [727 764])
+            ("fileDirectory" variable
+               (:default-value "new FileDirectory()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("FileDirectory" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [887 973])
+            ("objectBoundary" variable
+               (:default-value "new ObjectBoundary()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("ObjectBoundary" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1036 1123])
+            ("colorHistogramDescriptors" variable
+               (:default-value "new ColorHistogramDescriptors()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("ColorHistogramDescriptors" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1183 1281])
+            ("hogFeatureDescriptors" variable
+               (:default-value "new HOGFeatureDescriptors()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("HOGFeatureDescriptors" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1282 1376])
+            ("supportVectorMachine" variable
+               (:default-value "new SupportVectorMachine()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("SupportVectorMachine" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1377 1470])
+            ("objectInitialization" variable
+               (:default-value "new HandheldObjectInitialization()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("HandheldObjectInitialization" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1471 1572])
+            ("graphCutSegmentation" variable
+               (:default-value "new GraphCutSegmentation()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("GraphCutSegmentation" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1573 1666])
+            ("particleFilter" variable
+               (:default-value "new ParticleFilter()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("ParticleFilter" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1667 1754])
+            ("boundaryEstimation" variable
+               (:default-value "new AutonomousBoundaryEstimation()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("AutonomousBoundaryEstimation" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1755 1856])
+            ("placementTracker" variable
+               (:default-value "new PlacementTracker()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("PlacementTracker" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1857 1946])
+            ("ReadSkeletonJointPosition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2113 2117])
+                    ("" variable
+                       (:reference 1
+                        :type ("Point3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2118 2128])
+                    ("CV_DEFAULT" variable (:type "int") (reparse-symbol arg-sub-list) [2129 2162]))                  
+                :type "void")
+                nil [2069 2164])
+            ("initialization" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2279 2285])
+                    ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2286 2293]))                  
+                :type "void")
+                nil [2235 2294])
+            ("searchSpaceBoundary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2436 2442])
+                    ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2443 2450])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2451 2455]))                  
+                :type "bool")
+                nil [2392 2456])
+            ("classificationWindow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2614 2620]))                  
+                :type "void")
+                nil [2570 2621])
+            ("backgroundLayerEvaluation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2749 2755])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2756 2776]))                  
+                :type "void")
+                nil [2705 2777])
+            ("objectLayerEvaluation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2890])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2891 2911]))                  
+                :type "void")
+                nil [2840 2912])
+            ("skeletonJointMotionProbability" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3070 3074])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3075 3079]))                  
+                :type "double")
+                nil [3026 3080])
+            ("normalizedCrossCorrelationMatching" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3201 3207])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3208 3214]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [3157 3215])
+            ("objectPatchOpticalFlow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3309 3321])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3322 3334])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3335 3353]))                  
+                :type "void")
+                nil [3265 3354])
+            ("computeHistogramDistances" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3441 3447])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3448 3462])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3463 3469]))                  
+                :type "double")
+                nil [3397 3470])
+            ("boundingBoxAlignment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3593 3619])
+                    ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3620 3627]))                  
+                :type "void")
+                nil [3549 3628])
+            ("boundingBoxScaling" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [3743 3750])
+                    ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3751 3758]))                  
+                :type "void")
+                nil [3699 3759])
+            ("objectPlacementDetection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3865 3872])
+                    ("" variable
+                       (:reference 1
+                        :type ("Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3873 3883]))                  
+                :type "bool")
+                nil [3821 3884])
+            ("_pixelWiseClassification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4003 4015])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4016 4036]))                  
+                :type "void")
+                nil [3959 4037])
+            ("nearestNeighborPatchAlignment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4119 4139])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Patch" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4140 4156]))                  
+                :type "void")
+                nil [4075 4157])
+            ("segmentedModelSaveDirectory" function
+               (:prototype-flag t
+                :type ("string" type (:type "class") nil nil))
+                nil [4208 4254])
+            ("saveModelRegion" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4388 4394])
+                    ("" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4395 4402])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4403 4407])
+                    ("CV_DEFAULT" variable (:type "bool") (reparse-symbol arg-sub-list) [4408 4429]))                  
+                :type "void")
+                nil [4344 4431])
+            ("estimatedObjectBoundary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("CV_DEFAULT" variable (:type "bool") (reparse-symbol arg-sub-list) [4534 4555])
+                    ("CV_DEFAULT" variable (:type "int") (reparse-symbol arg-sub-list) [4557 4578])
+                    ("CV_DEFAULT" variable (:type "int") (reparse-symbol arg-sub-list) [4580 4599]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [4490 4601])
+            ("groundTruthEvalation" function
+               (:prototype-flag t
+                :type "void")
+                nil [4646 4692])
+            ("OBJECT_CONSTANT" variable (:constant-flag t) nil [4869 4884])
+            ("SCALAR_ADJUSTMENT" variable (:constant-flag t) nil [4902 4919])
+            ("tempHandPos" variable (:type ("Point" type (:type "class") nil nil)) nil [4958 4976])
+            ("templ_img" variable (:type ("Mat" type (:type "class") nil nil)) nil [4977 4991])
+            ("previousFrame" variable (:type ("Mat" type (:type "class") nil nil)) nil [5084 5102])
+            ("background_patch_hist" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Mat" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [5151 5185])
+            ("foreground_patch_hist" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Mat" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [5267 5301])
+            ("patchHOG" variable (:type ("Mat" type (:type "class") nil nil)) nil [5370 5383])
+            ("patchColor" variable (:type ("Mat" type (:type "class") nil nil)) nil [5384 5399])
+            ("bounding_box" variable (:type ("Rect" type (:type "class") nil nil)) nil [5471 5489])
+            ("prev_bounding_box" variable (:type ("Rect" type (:type "class") nil nil)) nil [5490 5513])
+            ("dynamics" variable (:type ("Mat" type (:type "class") nil nil)) nil [5554 5567])
+            ("particles" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Particle" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [5568 5595])
+            ("previous_particle_location" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Point2f" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [5596 5639])
+            ("randomNum" variable
+               (:default-value "RNG()"
+                :type ("RNG" type (:type "class") nil nil))
+                nil [5680 5702])
+            ("object_scale_factor" variable
+               (:default-value "1.0"
+                :type "double")
+                nil [5743 5776])
+            ("writerCounter" variable
+               (:default-value "START"
+                :type "int")
+                nil [5778 5804])
+            ("copyHumanMap" variable (:type ("Mat" type (:type "class") nil nil)) nil [5805 5822])
+            ("modelSaveCounter" variable
+               (:default-value "1"
+                :type "int")
+                nil [5859 5884])
+            ("saveDirectoryPath" variable (:type ("string" type (:type "class") nil nil)) nil [5919 5944])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6078 6087])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6088 6101]))                  
+                :type "int")
+                nil [6068 10454])
+            ("initialization" function
+               (:arguments 
+                  ( ("img_scene" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11015 11030])
+                    ("objRegion" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11031 11047]))                  
+                :type "void")
+                nil [10995 12210])
+            ("searchSpaceBoundary" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12953 12964])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12965 12976])
+                    ("icounter" variable (:type "int") (reparse-symbol arg-sub-list) [12977 12990]))                  
+                :type "bool")
+                nil [12928 14953])
+            ("ReadSkeletonJointPosition" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15569 15579])
+                    ("handPosition" variable
+                       (:reference 1
+                        :type ("Point3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15580 15602])
+                    ("skeletonJointType" variable (:type "int") (reparse-symbol arg-sub-list) [15603 15625]))                  
+                :type "void")
+                nil [15538 16664])
+            ("classificationWindow" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17335 17346]))                  
+                :type "void")
+                nil [17309 17806])
+            ("backgroundLayerEvaluation" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18574 18585])
+                    ("g_hist" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18586 18612]))                  
+                :type "void")
+                nil [18543 21816])
+            ("computeHistogramDistances" function
+               (:arguments 
+                  ( ("hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22469 22479])
+                    ("hist_MD" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22480 22511])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22501 22517])
+                    ("h_D" variable
+                       (:pointer 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22519 22538])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22528 22544]))                  
+                :type "double")
+                nil [22436 23197])
+            ("objectLayerEvaluation" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23978 23987])
+                    ("img_patch" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23988 24017]))                  
+                :type "void")
+                nil [23951 30767])
+            ("normalizedCrossCorrelationMatching" function
+               (:arguments 
+                  ( ("templ" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31333 31344])
+                    ("background" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31345 31361]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [31292 31940])
+            ("drawFlowField" function
+               (:arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32478 32489])
+                    ("nextPts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32490 32521])
+                    ("prevPts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32522 32553]))                  
+                :type "void")
+                nil [32459 33464])
+            ("objectPatchOpticalFlow" function
+               (:arguments 
+                  ( ("prevFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34093 34114])
+                    ("curFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34115 34135])
+                    ("previousPoint" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34136 34167]))                  
+                :type "void")
+                nil [34065 34904])
+            ("boundingBoxAlignment" function
+               (:arguments 
+                  ( ("img_patch" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35486 35521])
+                    ("previous_bounding" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35522 35546]))                  
+                :type "void")
+                nil [35460 35957])
+            ("objectPlacementDetection" function
+               (:arguments 
+                  ( ("hand_region" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36677 36695])
+                    ("tracker_rect_center" variable
+                       (:reference 1
+                        :type ("Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36696 36725]))                  
+                :type "bool")
+                nil [36647 37188])
+            ("boundingBoxScaling" function
+               (:arguments 
+                  ( ("objectScale" variable (:type "double") (reparse-symbol arg-sub-list) [37774 37793])
+                    ("boundingBox" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37794 37812]))                  
+                :type "void")
+                nil [37750 38127])
+            ("_pixelWiseClassification" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38780 38795])
+                    ("img_patch" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38796 38825]))                  
+                :type "void")
+                nil [38750 40392])
+            ("nearestNeighborPatchAlignment" function
+               (:arguments 
+                  ( ("img_patch" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Histogram" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40909 40938])
+                    ("ncc_patch" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Patch" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40939 40964]))                  
+                :type "void")
+                nil [40874 41528])
+            ("skeletonJointMotionProbability" function
+               (:arguments 
+                  ( ("fileNum" variable (:type "int") (reparse-symbol arg-sub-list) [42007 42019])
+                    ("jointhand" variable (:type "int") (reparse-symbol arg-sub-list) [42020 42034]))                  
+                :type "double")
+                nil [41969 42593])
+            ("directoryExists" function
+               (:arguments 
+                  ( ("pzPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42982 43002]))                  
+                :type "bool")
+                nil [42960 43254])
+            ("segmentedModelSaveDirectory" function (:type ("string" type (:type "class") nil nil)) nil [43607 44340])
+            ("saveModelRegion" function
+               (:arguments 
+                  ( ("model" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44806 44817])
+                    ("region" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44818 44831])
+                    ("counter" variable (:type "int") (reparse-symbol arg-sub-list) [44832 44844])
+                    ("writeModel" variable (:type "bool") (reparse-symbol arg-sub-list) [44845 44861]))                  
+                :type "void")
+                nil [44785 45369])
+            ("estimatedObjectBoundary" function
+               (:arguments 
+                  ( ("automatic" variable (:type "bool") (reparse-symbol arg-sub-list) [45860 45875])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [45876 45886])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [45887 45895]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [45831 47257])
+            ("groundTruthEvalation" function (:type "void") nil [47747 48975]))          
+      :file "main.cpp"
+      :pointmax 48977
+      :fsize 48976
+      :lastmodtime '(21734 22328 164182 691000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OBJECT_CONSTANT" . ((punctuation "-" 4835 . 4836) (number "1.0" 4836 . 4839)))
+          ("SCALAR_ADJUSTMENT" . ((number "2.0" 4868 . 4871)))
+          )
+))
+  :file "!home!krishneel!Documents!STAM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

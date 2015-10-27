@@ -1,0 +1,202 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("hierarchical_object_learning/hierarchical_object_learning.h" include (:system-flag t) nil [92 162])
+            ("HierarchicalObjectLearning" function
+               (:constructor-flag t
+                :parent "HierarchicalObjectLearning"
+                :type ("HierarchicalObjectLearning" type (:type "class") nil nil))
+                nil [164 598])
+            ("onInit" function
+               (:parent "HierarchicalObjectLearning"
+                :type "void")
+                nil [600 1046])
+            ("subscribe" function
+               (:parent "HierarchicalObjectLearning"
+                :type "void")
+                nil [1048 1624])
+            ("unsubscribe" function
+               (:parent "HierarchicalObjectLearning"
+                :type "void")
+                nil [1626 1748])
+            ("callback" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("info_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1797 1847])
+                    ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1852 1898])
+                    ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1903 1955]))                  
+                :type "void")
+                nil [1750 2705])
+            ("pointFeaturesBOWDescriptor" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2772 2813])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2818 2866])
+                    ("cluster_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2871 2894]))                  
+                :type "void")
+                nil [2707 3898])
+            ("computePointFPFH" function
+               (:methodconst-flag t
+                :parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3955 3996])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4001 4049])
+                    ("histogram" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4054 4073])
+                    ("is_norm" variable (:type "bool") (reparse-symbol arg-sub-list) [4074 4087]))                  
+                :type "void")
+                nil [3900 5157])
+            ("pointIntensityFeature" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5237 5278])
+                    ("histogram" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5283 5302])
+                    ("search_dim" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5303 5322])
+                    ("is_knn" variable (:type "bool") (reparse-symbol arg-sub-list) [5323 5335]))                  
+                :parent "HierarchicalObjectLearning")
+                nil [5159 6843])
+            ("globalPointCloudFeatures" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6908 6949])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6954 7002])
+                    ("featureMD" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7007 7025]))                  
+                :type "void")
+                nil [6845 7746])
+            ("estimatePointCloudNormals" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7830 7865])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7870 7912])
+                    ("k" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7917 7927])
+                    ("use_knn" variable (:type "bool") (reparse-symbol arg-sub-list) [7928 7941]))                  
+                :parent "HierarchicalObjectLearning"
+                :methodconst-flag t)
+                nil [7748 8479])
+            ("read_rosbag_file" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("path_to_bag" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8536 8566])
+                    ("topic" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8571 8595]))                  
+                :type "void")
+                nil [8481 9688])
+            ("extractObjectSurfelFeatures" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9756 9797])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9802 9850])
+                    ("featureMD" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9855 9873])
+                    ("cluster_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9874 9897]))                  
+                :type "void")
+                nil [9690 10086])
+            ("extractPointLevelFeatures" function
+               (:parent "HierarchicalObjectLearning"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10152 10193])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10198 10246])
+                    ("featureMD" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10251 10269])
+                    ("leaf_size" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [10270 10292])
+                    ("cluster_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10293 10316]))                  
+                :type "void")
+                nil [10088 10793])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10805 10814])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10815 10828]))                  
+                :type "int")
+                nil [10796 10958]))          
+      :file "hierarchical_object_learning_node.cpp"
+      :pointmax 10959
+      :fsize 10958
+      :lastmodtime '(22060 47622 208389 598000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!hierarchical_object_learning!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

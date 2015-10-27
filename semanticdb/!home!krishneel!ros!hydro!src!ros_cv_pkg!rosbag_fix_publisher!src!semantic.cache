@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("rosbag_fix_publisher/rosbag_fix_publisher.h" include (:system-flag t) nil [2 56])
+            ("ROSBagFixPublisher" function
+               (:constructor-flag t
+                :parent "ROSBagFixPublisher"
+                :type ("ROSBagFixPublisher" type (:type "class") nil nil))
+                nil [58 250])
+            ("onInit" function
+               (:parent "ROSBagFixPublisher"
+                :type "void")
+                nil [252 429])
+            ("subscribe" function
+               (:parent "ROSBagFixPublisher"
+                :type "void")
+                nil [431 475])
+            ("unsubscribe" function
+               (:parent "ROSBagFixPublisher"
+                :type "void")
+                nil [477 523])
+            ("processRosBag" function (:type "void") nil [525 553])
+            ("callback" function
+               (:parent "ROSBagFixPublisher"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [594 647]))                  
+                :type "void")
+                nil [555 656])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [668 677])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [678 691]))                  
+                :type "int")
+                nil [659 806]))          
+      :file "rosbag_fix_publisher_node.cpp"
+      :pointmax 807
+      :fsize 806
+      :lastmodtime '(21992 15362 860240 725000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!rosbag_fix_publisher!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

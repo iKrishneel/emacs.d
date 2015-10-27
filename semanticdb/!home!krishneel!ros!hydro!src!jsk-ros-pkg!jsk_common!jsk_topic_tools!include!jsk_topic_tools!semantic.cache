@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_DIAGNOSTIC_NODELET_" variable (:constant-flag t) nil [1867 1902])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1904 1954])
+            ("diagnostic_updater/publisher.h" include (:system-flag t) nil [1955 1996])
+            ("jsk_topic_tools/vital_checker.h" include (:system-flag t) nil [1997 2039])
+            ("jsk_topic_tools/connection_based_nodelet.h" include nil nil [2041 2094])
+            ("jsk_topic_tools/diagnostic_utils.h" include nil nil [2095 2140])
+            ("jsk_topic_tools/timered_diagnostic_updater.h" include nil nil [2141 2196])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("DiagnosticNodelet" type
+                       (:superclasses 
+                          ( ("ConnectionBasedNodelet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2288 2295])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("DiagnosticNodelet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2300 2349])
+                            ("DiagnosticNodelet" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2372 2396]))                                  
+                                :type ("DiagnosticNodelet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2354 2397])
+                            ("protected" label nil (reparse-symbol classsubparts) [2401 2411])
+                            ("onInit" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2416 2438])
+                            ("updateDiagnostic" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2480 2530]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2443 2531])
+                            ("name_" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2537 2561])
+                            ("diagnostic_updater_" variable (:type ("TimeredDiagnosticUpdater::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2566 2616])
+                            ("vital_checker_" variable (:type ("jsk_topic_tools::VitalChecker::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2621 2671])
+                            ("private" label nil (reparse-symbol classsubparts) [2675 2683]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2227 2693]))                  
+                :type "namespace")
+                nil [2197 2695]))          
+      :file "diagnostic_nodelet.h"
+      :pointmax 2704
+      :fsize 2703
+      :lastmodtime '(21752 20686 20234 556000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_DIAGNOSTIC_NODELET_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONNECTION_BASED_NODELET_H_" variable (:constant-flag t) nil [1859 1886])
+            ("ros/ros.h" include (:system-flag t) nil [1888 1908])
+            ("nodelet/nodelet.h" include (:system-flag t) nil [1909 1937])
+            ("boost/thread.hpp" include (:system-flag t) nil [1938 1965])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("ConnectionBasedNodelet" type
+                       (:superclasses 
+                          ( ("nodelet::Nodelet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2118 2125])
+                            ("ConnectionBasedNodelet" function
+                               (:constructor-flag t
+                                :type ("ConnectionBasedNodelet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2130 2178])
+                            ("protected" label nil (reparse-symbol classsubparts) [2181 2191])
+                            ("onInit" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2196 2218])
+                            ("connectionCallback" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pub" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::SingleSubscriberPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2255 2297]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2223 2298])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2303 2332])
+                            ("unsubscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2337 2368])
+                            ("advertise" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("ros::Publisher" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2425 2445])
+                                    ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2460 2478])
+                                    ("queue_size" variable (:type "int") (reparse-symbol arg-sub-list) [2479 2494]))                                  )
+                                (reparse-symbol classsubparts) [2378 2989])
+                            ("connection_mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2999 3030])
+                            ("publishers_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3035 3075])
+                            ("pnh_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::NodeHandle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3080 3120])
+                            ("subscribed_" variable (:type "bool") (reparse-symbol classsubparts) [3125 3142])
+                            ("private" label nil (reparse-symbol classsubparts) [3145 3153]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2058 3163]))                  
+                :type "namespace")
+                nil [1967 3165]))          
+      :file "connection_based_nodelet.h"
+      :pointmax 3174
+      :fsize 3173
+      :lastmodtime '(21752 20686 20234 556000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONNECTION_BASED_NODELET_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_utils.h"
+      :fsize 3075
+      :lastmodtime '(21752 20686 20234 556000))
+    (semanticdb-table "semanticdb-table"
+      :file "timered_diagnostic_updater.h"
+      :fsize 3017
+      :lastmodtime '(21752 20686 20234 556000)))
+  :file "!home!krishneel!ros!hydro!src!jsk-ros-pkg!jsk_common!jsk_topic_tools!include!jsk_topic_tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

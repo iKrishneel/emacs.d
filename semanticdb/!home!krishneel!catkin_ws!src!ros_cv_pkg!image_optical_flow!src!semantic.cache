@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("image_optical_flow/image_optical_flow.h" include (:system-flag t) nil [85 135])
+            ("vector" include (:system-flag t) nil [136 153])
+            ("ImageOpticalFlow" function
+               (:constructor-flag t
+                :parent "ImageOpticalFlow"
+                :type ("ImageOpticalFlow" type (:type "class") nil nil))
+                nil [155 413])
+            ("onInit" function
+               (:parent "ImageOpticalFlow"
+                :type "void")
+                nil [415 534])
+            ("subscribe" function
+               (:parent "ImageOpticalFlow"
+                :type "void")
+                nil [536 679])
+            ("unsubscribe" function
+               (:parent "ImageOpticalFlow"
+                :type "void")
+                nil [681 754])
+            ("imageCallback" function
+               (:parent "ImageOpticalFlow"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [798 844]))                  
+                :type "void")
+                nil [756 1790])
+            ("buildImagePyramid" function
+               (:parent "ImageOpticalFlow"
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1838 1859])
+                    ("pyramid" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1864 1894]))                  
+                :type "void")
+                nil [1792 2179])
+            ("getOpticalFlow" function
+               (:parent "ImageOpticalFlow"
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2224 2245])
+                    ("prevFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2246 2271])
+                    ("nextPts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2276 2310])
+                    ("prevPts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2311 2345])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("uchar" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2350 2377]))                  
+                :type "void")
+                nil [2181 3215])
+            ("forwardBackwardMatchingAndFeatureCorrespondance" function
+               (:parent "ImageOpticalFlow"
+                :arguments 
+                  ( ("img1" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3294 3313])
+                    ("img2" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3314 3333])
+                    ("info" variable
+                       (:reference 1
+                        :type ("FeatureInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3334 3352]))                  
+                :type "void")
+                nil [3218 6487])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6500 6509])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6510 6523]))                  
+                :type "int")
+                nil [6491 6619]))          
+      :file "image_optical_flow_node.cpp"
+      :pointmax 6620
+      :fsize 6619
+      :lastmodtime '(21908 11401 76854 525000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!image_optical_flow!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

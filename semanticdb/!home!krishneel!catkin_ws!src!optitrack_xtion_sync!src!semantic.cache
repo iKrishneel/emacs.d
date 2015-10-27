@@ -1,0 +1,100 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("optitrack_xtion_sync/optitrack_xtion_sync.h" include (:system-flag t) nil [92 146])
+            ("string" include (:system-flag t) nil [147 164])
+            ("OptiTrackXtionSync" function
+               (:constructor-flag t
+                :parent "OptiTrackXtionSync"
+                :type ("OptiTrackXtionSync" type (:type "class") nil nil))
+                nil [166 230])
+            ("onInit" function
+               (:parent "OptiTrackXtionSync"
+                :type "void")
+                nil [232 292])
+            ("subscribe" function
+               (:parent "OptiTrackXtionSync"
+                :type "void")
+                nil [294 445])
+            ("unsubscribe" function
+               (:parent "OptiTrackXtionSync"
+                :type "void")
+                nil [447 493])
+            ("callback" function
+               (:parent "OptiTrackXtionSync"
+                :arguments 
+                  ( ("pose_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::PoseStampedConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [534 585]))                  
+                :type "void")
+                nil [495 1461])
+            ("getXtionToObjectWorld" function
+               (:parent "OptiTrackXtionSync"
+                :arguments 
+                  ( ("parent" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1516 1541])
+                    ("child" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1542 1566])
+                    ("now" variable
+                       (:constant-flag t
+                        :type ("ros::Time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1571 1591])
+                    ("transform" variable
+                       (:reference 1
+                        :type ("tf::StampedTransform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1592 1624]))                  
+                :type "void")
+                nil [1464 1947])
+            ("sendNewTFFrame" function
+               (:parent "OptiTrackXtionSync"
+                :arguments 
+                  ( ("trans" variable
+                       (:constant-flag t
+                        :type ("tf::Vector3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1994 2018])
+                    ("quaternion" variable
+                       (:constant-flag t
+                        :type ("tf::Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2051])
+                    ("now" variable
+                       (:constant-flag t
+                        :type ("ros::Time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2056 2076])
+                    ("parent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2077 2096])
+                    ("new_frame" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2097 2119])
+                    ("is_inverse" variable (:type "bool") (reparse-symbol arg-sub-list) [2124 2140]))                  
+                :type "void")
+                nil [1949 2709])
+            ("adjustmentXtionWorldToXtion" function
+               (:parent "OptiTrackXtionSync"
+                :type "void")
+                nil [2711 3222])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3233 3242])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3243 3256]))                  
+                :type "int")
+                nil [3224 3371]))          
+      :file "optitrack_xtion_sync_node.cpp"
+      :pointmax 3372
+      :fsize 3371
+      :lastmodtime '(22001 11796 952394 676000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!optitrack_xtion_sync!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

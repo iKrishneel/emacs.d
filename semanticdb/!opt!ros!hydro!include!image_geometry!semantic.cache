@@ -1,0 +1,638 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("IMAGE_GEOMETRY_PINHOLE_CAMERA_MODEL_H" variable (:constant-flag t) nil [55 92])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [94 129])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [130 162])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [163 201])
+            ("opencv2/calib3d/calib3d.hpp" include (:system-flag t) nil [202 240])
+            ("stdexcept" include (:system-flag t) nil [241 261])
+            ("image_geometry" type
+               (:members 
+                  ( ("Exception" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [337 344])
+                            ("Exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("description" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [357 388]))                                  
+                                :type ("Exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [347 425]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [291 428])
+                    ("PinholeCameraModel" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [573 580])
+                            ("PinholeCameraModel" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PinholeCameraModel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [586 607])
+                            ("PinholeCameraModel" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PinholeCameraModel" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [630 662]))                                  
+                                :type ("PinholeCameraModel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [611 663])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PinholeCameraModel" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [697 729]))                                  
+                                :type ("PinholeCameraModel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [667 730])
+                            ("fromCameraInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [845 880]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [825 881])
+                            ("fromCameraInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfoConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [996 1039]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [976 1040])
+                            ("tfFrame" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1119 1147])
+                            ("stamp" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1229 1253])
+                            ("fullResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1484 1516])
+                            ("reducedResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1809 1844])
+                            ("toFullResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("uv_reduced" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point2d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1877 1907]))                                  
+                                :type ("cv::Point2d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1848 1914])
+                            ("toFullResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("roi_reduced" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1944 1972]))                                  
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1918 1979])
+                            ("toReducedResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("uv_full" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point2d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2015 2042]))                                  
+                                :type ("cv::Point2d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1983 2049])
+                            ("toReducedResolution" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("roi_full" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2082 2107]))                                  
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2053 2114])
+                            ("rawRoi" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2205 2229])
+                            ("rectifiedRoi" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2313 2343])
+                            ("project3dToPixel" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("xyz" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point3d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2618 2641]))                                  
+                                :type ("cv::Point2d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2589 2648])
+                            ("projectPixelTo3dRay" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("uv_rect" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point2d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3111 3138]))                                  
+                                :type ("cv::Point3d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3079 3145])
+                            ("rectifyImage" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3219 3238])
+                                    ("rectified" variable
+                                       (:reference 1
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3239 3258])
+                                    ("interpolation" variable
+                                       (:default-value "CV_INTER_LINEAR"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3279 3314]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3201 3322])
+                            ("unrectifyImage" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("rectified" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3416 3441])
+                                    ("raw" variable
+                                       (:reference 1
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3442 3455])
+                                    ("interpolation" variable
+                                       (:default-value "CV_INTER_LINEAR"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3478 3513]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3396 3521])
+                            ("rectifyPoint" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("uv_raw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point2d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3643 3669]))                                  
+                                :type ("cv::Point2d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3618 3676])
+                            ("unrectifyPoint" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("uv_rect" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Point2d" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3800 3827]))                                  
+                                :type ("cv::Point2d" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3773 3834])
+                            ("rectifyRoi" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("roi_raw" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3932 3956]))                                  
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3912 3963])
+                            ("unrectifyRoi" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("roi_rect" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Rect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4063 4088]))                                  
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4041 4095])
+                            ("cameraInfo" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4171 4221])
+                            ("intrinsicMatrix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4285 4333])
+                            ("distortionCoeffs" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4398 4447])
+                            ("rotationMatrix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4504 4551])
+                            ("projectionMatrix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4610 4659])
+                            ("fullIntrinsicMatrix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4743 4795])
+                            ("fullProjectionMatrix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :type ("cv::Mat_" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4874 4927])
+                            ("fx" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5028 5046])
+                            ("fy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5147 5165])
+                            ("cx" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5241 5259])
+                            ("cy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5335 5353])
+                            ("Tx" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5438 5456])
+                            ("Ty" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [5541 5559])
+                            ("binningX" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5630 5656])
+                            ("binningY" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5724 5750])
+                            ("getDeltaU" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("deltaX" variable (:type "double") (reparse-symbol arg-sub-list) [6014 6028])
+                                    ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [6029 6038]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [5997 6045])
+                            ("getDeltaV" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("deltaY" variable (:type "double") (reparse-symbol arg-sub-list) [6307 6321])
+                                    ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [6322 6331]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [6290 6338])
+                            ("getDeltaX" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("deltaU" variable (:type "double") (reparse-symbol arg-sub-list) [6601 6615])
+                                    ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [6616 6625]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [6584 6632])
+                            ("getDeltaY" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("deltaV" variable (:type "double") (reparse-symbol arg-sub-list) [6895 6909])
+                                    ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [6910 6919]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [6878 6926])
+                            ("initialized" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7002 7051])
+                            ("protected" label nil (reparse-symbol classsubparts) [7053 7063])
+                            ("cam_info_" variable (:type ("sensor_msgs::CameraInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7066 7100])
+                            ("D_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7103 7127])
+                            ("R_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7103 7127])
+                            ("K_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7170 7194])
+                            ("P_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7170 7194])
+                            ("K_full_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7257 7291])
+                            ("P_full_" variable (:type ("cv::Mat_" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7257 7291])
+                            ("Cache" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [7418 7431])
+                            ("cache_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("Cache" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7434 7466])
+                            ("initRectificationMaps" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7508 7543])
+                            ("StereoCameraModel" friend nil (reparse-symbol classsubparts) [7547 7577]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [546 7581])
+                    ("tfFrame" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7615 7736])
+                    ("stamp" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type ("ros::Time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7738 7852])
+                    ("cameraInfo" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7854 7953])
+                    ("intrinsicMatrix" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7954 8044])
+                    ("distortionCoeffs" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8045 8135])
+                    ("rotationMatrix" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8136 8226])
+                    ("projectionMatrix" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8227 8317])
+                    ("fullIntrinsicMatrix" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8318 8417])
+                    ("fullProjectionMatrix" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("cv::Mat_" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8418 8517])
+                    ("fx" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8519 8583])
+                    ("fy" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8584 8648])
+                    ("cx" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8649 8713])
+                    ("cy" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8714 8778])
+                    ("Tx" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8779 8843])
+                    ("Ty" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8844 8908])
+                    ("binningX" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8910 8994])
+                    ("binningY" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8995 9079])
+                    ("getDeltaU" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("deltaX" variable (:type "double") (reparse-symbol arg-sub-list) [9125 9139])
+                            ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [9140 9149]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [9081 9214])
+                    ("getDeltaV" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("deltaY" variable (:type "double") (reparse-symbol arg-sub-list) [9260 9274])
+                            ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [9275 9284]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [9216 9349])
+                    ("getDeltaX" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("deltaU" variable (:type "double") (reparse-symbol arg-sub-list) [9395 9409])
+                            ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [9410 9419]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [9351 9484])
+                    ("getDeltaY" function
+                       (:methodconst-flag t
+                        :parent "PinholeCameraModel"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("deltaV" variable (:type "double") (reparse-symbol arg-sub-list) [9530 9544])
+                            ("Z" variable (:type "double") (reparse-symbol arg-sub-list) [9545 9554]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [9486 9619]))                  
+                :type "namespace")
+                nil [263 9622]))          
+      :file "pinhole_camera_model.h"
+      :pointmax 9658
+      :fsize 9657
+      :lastmodtime '(21396 30083 0 0)
+      :unmatched-syntax '((punctuation 7577 . 7578))
+      :lexical-table 
+        '(("IMAGE_GEOMETRY_PINHOLE_CAMERA_MODEL_H")
+          )
+))
+  :file "!opt!ros!hydro!include!image_geometry!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

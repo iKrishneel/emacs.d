@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ROSBAG_FIX_PUBLISHER_H_" variable (:constant-flag t) nil [43 67])
+            ("ros/ros.h" include (:system-flag t) nil [69 89])
+            ("ros/console.h" include (:system-flag t) nil [90 114])
+            ("rosbag/bag.h" include (:system-flag t) nil [115 138])
+            ("rosbag/view.h" include (:system-flag t) nil [139 163])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [165 201])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [202 235])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [237 281])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [282 310])
+            ("pcl/point_types.h" include (:system-flag t) nil [311 339])
+            ("pcl/common/common.h" include (:system-flag t) nil [340 370])
+            ("pcl/common/transforms.h" include (:system-flag t) nil [371 405])
+            ("pcl/filters/filter.h" include (:system-flag t) nil [406 437])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [438 464])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [465 505])
+            ("pcl/segmentation/extract_clusters.h" include (:system-flag t) nil [506 552])
+            ("jsk_recognition_msgs/ClusterPointIndices.h" include (:system-flag t) nil [554 607])
+            ("geometry_msgs/PolygonStamped.h" include (:system-flag t) nil [608 649])
+            ("geometry_msgs/PoseStamped.h" include (:system-flag t) nil [650 688])
+            ("ROSBagFixPublisher" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [719 727])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [732 764])
+                    ("is_process_" variable (:type "bool") (reparse-symbol classsubparts) [770 787])
+                    ("dataset_bag_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("rosbag::Bag" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [792 836])
+                    ("bag_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [841 863])
+                    ("protected" label nil (reparse-symbol classsubparts) [869 879])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [884 898])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [903 920])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [925 944])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [950 971])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [976 1003])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1008 1034])
+                    ("public" label nil (reparse-symbol classsubparts) [1037 1044])
+                    ("ROSBagFixPublisher" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ROSBagFixPublisher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1049 1070])
+                    ("callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1096 1139]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1075 1140]))                  
+                :type "class")
+                nil [690 1143]))          
+      :file "rosbag_fix_publisher.h"
+      :pointmax 1181
+      :fsize 1180
+      :lastmodtime '(21992 15137 500232 313000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ROSBAG_FIX_PUBLISHER_H_")
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!rosbag_fix_publisher!include!rosbag_fix_publisher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

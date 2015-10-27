@@ -1,0 +1,137 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/graph/adjacency_list.hpp" include (:system-flag t) nil [2 43])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [44 76])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [78 107])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [108 146])
+            ("boost/config.hpp" include (:system-flag t) nil [148 175])
+            ("iostream" include (:system-flag t) nil [176 195])
+            ("vector" include (:system-flag t) nil [196 213])
+            ("string" include (:system-flag t) nil [214 231])
+            ("set" include (:system-flag t) nil [232 246])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [249 269])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [270 289])
+            ("name" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+    \"Jeanie\", \"Debbie\", \"Rick\", \"John\", \"Amanda\", \"Margaret\", \"Benjamin\" }"
+                :type "char")
+                nil [292 390])
+            ("VertexProperty" type
+               (:members 
+                  ( ("v_index" variable (:type "int") (reparse-symbol classsubparts) [420 432])
+                    ("v_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [437 456])
+                    ("VertexProperty" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("i" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [486 496])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"default\""
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [498 526]))                          
+                        :type ("VertexProperty" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [462 557]))                  
+                :type "struct")
+                nil [392 560])
+            ("EdgeProperty" type
+               (:typedef ("boost::property" type
+                     (:template-specifier 
+                        ( ("boost::edge_weight_t" type nil nil nil)
+                          ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [561 627])
+            ("Graph" type
+               (:typedef ("boost::adjacency_list" type
+                     (:template-specifier 
+                        ( ("boost::vecS" type nil nil nil)
+                          ("boost::vecS" type nil nil nil)
+                          ("boost::undirectedS" type nil nil nil)
+                          ("VertexProperty" type nil nil nil)
+                          ("EdgeProperty" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [628 905])
+            ("AdjacencyIterator" type
+               (:typedef ("boost::graph_traits::adjacency_iterator" type (:type "class") nil nil)
+                :type "typedef")
+                nil [906 994])
+            ("IndexMap" type
+               (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                :type "typedef")
+                nil [995 1083])
+            ("EdgeDescriptor" type
+               (:typedef ("boost::graph_traits::edge_descriptor" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1084 1166])
+            ("EdgePropertyAccess" type
+               (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1167 1264])
+            ("EdgeValue" type
+               (:typedef ("boost::property_traits::value_type" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1265 1395])
+            ("VectorIterator" type
+               (:typedef ("boost::graph_traits::vertex_iterator" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1396 1478])
+            ("VertexDescriptor" type
+               (:typedef ("boost::graph_traits::vertex_descriptor" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1479 1565])
+            ("updateRAG" function
+               (:arguments 
+                  ( ("graph" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1612 1631])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1632 1642]))                  
+                :type "void")
+                nil [1597 1913])
+            ("regionMergingGraph" function (:type "void") nil [1955 5285])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5309 5318])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5319 5338]))                  
+                :type "int")
+                nil [5300 6698]))          
+      :file "main.cpp"
+      :pointmax 6699
+      :fsize 6698
+      :lastmodtime '(21790 46958 774818 266000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!rag!backup!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "sliding_window_object_detector.h"
+      :fsize 3693
+      :lastmodtime '(22002 36590 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_HISTOGRAM_OF_ORIENTED_GRADIENTS_H_" variable (:constant-flag t) nil [54 89])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [119 148])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [149 187])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [188 226])
+            ("string" include (:system-flag t) nil [228 245])
+            ("vector" include (:system-flag t) nil [246 263])
+            ("HOGFeatureDescriptor" type
+               (:members 
+                  ( ("N_BINS" variable (:constant-flag t) (reparse-symbol classsubparts) [336 342])
+                    ("ANGLE" variable (:constant-flag t) (reparse-symbol classsubparts) [353 358])
+                    ("BINS_ANGLE" variable (:constant-flag t) (reparse-symbol classsubparts) [373 383])
+                    ("CELL" variable (:constant-flag t) (reparse-symbol classsubparts) [409 413])
+                    ("BLOCK" variable (:constant-flag t) (reparse-symbol classsubparts) [424 429])
+                    ("private" label nil (reparse-symbol classsubparts) [434 442])
+                    ("bilinearBinVoting" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [486 500])
+                            ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [501 507])
+                            ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [508 514]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [447 515])
+                    ("imageGradient" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [555 571])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [572 582]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [520 583])
+                    ("blockGradient" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [626 636])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [637 647])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [648 658]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 659])
+                    ("orientationistogram" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [708 723])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [724 736])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [737 749])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [750 762]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [664 764])
+                    ("getHOG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [797 813])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [814 824])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [825 835]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [769 836])
+                    ("computeHOGHistogramDistances" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [905 921])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [922 945])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [953 986]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [841 988])
+                    ("public" label nil (reparse-symbol classsubparts) [994 1001])
+                    ("HOGFeatureDescriptor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("HOGFeatureDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1006 1029])
+                    ("computeHOG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1069 1085]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1034 1086]))                  
+                :type "class")
+                nil [265 1089]))          
+      :file "histogram_of_oriented_gradients.h"
+      :pointmax 1138
+      :fsize 1137
+      :lastmodtime '(22002 36590 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ANGLE" . ((number "180.0" 359 . 364)))
+          ("BLOCK" . ((number "2" 430 . 431)))
+          ("CELL" . ((number "8" 414 . 415)))
+          ("_HISTOGRAM_OF_ORIENTED_GRADIENTS_H_")
+          ("BINS_ANGLE" . ((semantic-list "(ANGLE / N_BINS)" 384 . 400)))
+          ("N_BINS" . ((number "9" 343 . 344)))
+          )
+))
+  :file "!opt!ros!hydro!include!jsk_perception!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

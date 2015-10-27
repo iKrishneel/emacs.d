@@ -1,0 +1,209 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FUSION_CONVERT_ITERATOR_05062005_1218" variable (:constant-flag t) nil [421 458])
+            ("boost/fusion/support/is_iterator.hpp" include (:system-flag t) nil [460 507])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [508 535])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [536 565])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("mpl_iterator" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [608 661])
+                            ("convert_iterator" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [869 1029])
+                                    ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1068 1079])
+                                            ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1080 1091]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1039 1133])
+                                    ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1179 1194])
+                                            ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1207]))                                          
+                                        :type ("mpl_iterator" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1143 1265])
+                                    ("call" function
+                                       (:typemodifiers ("static" "typename")
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1441 1452]))                                          
+                                        :type ("mpl::if_::type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1275 1525]))                                  )
+                                (reparse-symbol namespacesubparts) [805 1532]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [585 1534]))                  
+                :type "namespace")
+                nil [567 1535]))          
+      :file "convert_iterator.hpp"
+      :pointmax 1544
+      :fsize 1543
+      :lastmodtime '(20225 54186 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_CONVERT_ITERATOR_05062005_1218")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FUSION_FUSION_ITERATOR_10012005_1551" variable (:constant-flag t) nil [421 457])
+            ("boost/fusion/iterator/value_of.hpp" include (:system-flag t) nil [459 504])
+            ("boost/fusion/iterator/next.hpp" include (:system-flag t) nil [505 546])
+            ("boost/fusion/iterator/prior.hpp" include (:system-flag t) nil [547 589])
+            ("boost/fusion/iterator/advance.hpp" include (:system-flag t) nil [590 634])
+            ("boost/fusion/iterator/distance.hpp" include (:system-flag t) nil [635 680])
+            ("boost/fusion/support/category_of.hpp" include (:system-flag t) nil [681 728])
+            ("boost/mpl/next_prior.hpp" include (:system-flag t) nil [729 764])
+            ("boost/mpl/advance_fwd.hpp" include (:system-flag t) nil [765 801])
+            ("boost/mpl/distance_fwd.hpp" include (:system-flag t) nil [802 839])
+            ("boost/mpl/iterator_tags.hpp" include (:system-flag t) nil [840 878])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [879 911])
+            ("boost/type_traits/is_base_of.hpp" include (:system-flag t) nil [912 955])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("to_mpl_category" type
+                                       (:template 
+                                          ( ("Category" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1068 1394]))                                          )
+                                        (reparse-symbol namespacesubparts) [1014 1397]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [994 1400]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [975 1401]))                  
+                :type "namespace")
+                nil [957 1402])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("fusion_iterator" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("fusion::result_of::value_of::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1512 1578])
+                                    ("fusion_category" type
+                                       (:typedef ("fusion::traits::category_of::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1587 1664])
+                                    ("category" type
+                                       (:typedef ("fusion::detail::to_mpl_category::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1673 1754])
+                                    ("iterator" type
+                                       (:typedef ("Iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1763 1789]))                                  )
+                                (reparse-symbol namespacesubparts) [1442 1796])
+                            ("next" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [1963 1968]))                                  
+                                :template-specifier 
+                                  ( ("fusion_iterator" type (:template-specifier 
+                                      ( ("Iterator" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1802 1975])
+                            ("prior" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2144 2149]))                                  
+                                :template-specifier 
+                                  ( ("fusion_iterator" type (:template-specifier 
+                                      ( ("Iterator" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1981 2156])
+                            ("advance" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil)
+                                    ("N" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2346 2351]))                                  
+                                :template-specifier 
+                                  ( ("fusion_iterator" type (:template-specifier 
+                                      ( ("Iterator" type nil nil nil))                                      ) nil nil)
+                                    ("N" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2162 2358])
+                            ("distance" type
+                               (:template 
+                                  ( ("First" type (:type "class") nil nil)
+                                    ("Last" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("fusion::result_of::distance" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("fusion_iterator" type (:template-specifier 
+                                      ( ("First" type nil nil nil))                                      ) nil nil)
+                                    ("fusion_iterator" type (:template-specifier 
+                                      ( ("Last" type nil nil nil))                                      ) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2364 2531]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1422 2534]))                  
+                :type "namespace")
+                nil [1404 2535]))          
+      :file "fusion_iterator.hpp"
+      :pointmax 2546
+      :fsize 2545
+      :lastmodtime '(20225 54186 0 0)
+      :unmatched-syntax '((punctuation 2344 . 2345) (symbol 2340 . 2344) (punctuation 2339 . 2340) (punctuation 2338 . 2339) (punctuation 2337 . 2338) (symbol 2336 . 2337) (punctuation 2334 . 2335) (symbol 2326 . 2334) (punctuation 2325 . 2326) (symbol 2318 . 2325) (punctuation 2317 . 2318) (punctuation 2316 . 2317) (symbol 2307 . 2316) (punctuation 2306 . 2307) (punctuation 2305 . 2306) (symbol 2299 . 2305) (TYPENAME 2290 . 2298) (punctuation 2289 . 2290) (symbol 2274 . 2289) (TYPEDEF 2266 . 2273) (punctuation 2142 . 2143) (symbol 2138 . 2142) (punctuation 2137 . 2138) (punctuation 2136 . 2137) (punctuation 2135 . 2136) (symbol 2127 . 2135) (punctuation 2126 . 2127) (symbol 2121 . 2126) (punctuation 2120 . 2121) (punctuation 2119 . 2120) (symbol 2110 . 2119) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (symbol 2102 . 2108) (TYPENAME 2093 . 2101) (punctuation 2092 . 2093) (symbol 2077 . 2092) (TYPEDEF 2069 . 2076) (punctuation 1961 . 1962) (symbol 1957 . 1961) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (punctuation 1954 . 1955) (symbol 1946 . 1954) (punctuation 1945 . 1946) (symbol 1941 . 1945) (punctuation 1940 . 1941) (punctuation 1939 . 1940) (symbol 1930 . 1939) (punctuation 1929 . 1930) (punctuation 1928 . 1929) (symbol 1922 . 1928) (TYPENAME 1913 . 1921) (punctuation 1912 . 1913) (symbol 1897 . 1912) (TYPEDEF 1889 . 1896))
+      :lexical-table 
+        '(("FUSION_FUSION_ITERATOR_10012005_1551")
+          )
+))
+  :file "!usr!include!boost!fusion!iterator!mpl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

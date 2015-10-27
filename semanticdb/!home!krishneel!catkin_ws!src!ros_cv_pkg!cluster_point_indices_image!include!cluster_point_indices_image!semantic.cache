@@ -1,0 +1,154 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_CLUSTER_POINT_INDICES_IMAGE_H_" variable (:constant-flag t) nil [50 81])
+            ("ros/ros.h" include (:system-flag t) nil [83 103])
+            ("ros/console.h" include (:system-flag t) nil [104 128])
+            ("message_filters/subscriber.h" include (:system-flag t) nil [130 169])
+            ("message_filters/synchronizer.h" include (:system-flag t) nil [170 211])
+            ("message_filters/sync_policies/approximate_time.h" include (:system-flag t) nil [212 271])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [273 303])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [304 344])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [345 381])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [382 414])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [416 448])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [449 493])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [494 535])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [536 574])
+            ("opencv2/nonfree/nonfree.hpp" include (:system-flag t) nil [575 613])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [614 643])
+            ("opencv2/video/video.hpp" include (:system-flag t) nil [644 678])
+            ("opencv2/video/background_segm.hpp" include (:system-flag t) nil [679 723])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [725 758])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [760 804])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [805 833])
+            ("pcl/point_types.h" include (:system-flag t) nil [834 862])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [863 889])
+            ("pcl/correspondence.h" include (:system-flag t) nil [890 921])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [922 961])
+            ("pcl/features/shot_omp.h" include (:system-flag t) nil [962 996])
+            ("pcl/features/board.h" include (:system-flag t) nil [997 1028])
+            ("pcl/keypoints/uniform_sampling.h" include (:system-flag t) nil [1029 1072])
+            ("pcl/recognition/cg/hough_3d.h" include (:system-flag t) nil [1073 1113])
+            ("pcl/recognition/cg/geometric_consistency.h" include (:system-flag t) nil [1114 1167])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [1168 1204])
+            ("pcl/kdtree/impl/kdtree_flann.hpp" include (:system-flag t) nil [1205 1248])
+            ("pcl/common/transforms.h" include (:system-flag t) nil [1249 1283])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [1284 1324])
+            ("pcl/segmentation/segment_differences.h" include (:system-flag t) nil [1325 1374])
+            ("pcl/octree/octree.h" include (:system-flag t) nil [1375 1405])
+            ("pcl/surface/concave_hull.h" include (:system-flag t) nil [1406 1443])
+            ("pcl/segmentation/extract_clusters.h" include (:system-flag t) nil [1444 1490])
+            ("pcl/filters/filter.h" include (:system-flag t) nil [1491 1522])
+            ("pcl/common/centroid.h" include (:system-flag t) nil [1523 1555])
+            ("jsk_recognition_msgs/ClusterPointIndices.h" include (:system-flag t) nil [1557 1610])
+            ("ClusterPointIndicesToImage" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1648 1656])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1661 1693])
+                    ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1698 1718])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1744])
+                    ("SyncPolicy" type
+                       (:typedef ("message_filters::sync_policies::ApproximateTime" type
+                             (:template-specifier 
+                                ( ("jsk_recognition_msgs::ClusterPointIndices" type nil nil nil)
+                                  ("sensor_msgs::PointCloud2" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1749 1901])
+                    ("sub_indices_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("jsk_recognition_msgs::ClusterPointIndices" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1907 1998])
+                    ("sub_cloud_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("sensor_msgs::PointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2003 2068])
+                    ("sub_select_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("sensor_msgs::PointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2073 2139])
+                    ("sync_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("message_filters::Synchronizer" type (:template-specifier 
+                                ( ("SyncPolicy" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2144 2211])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2217 2243])
+                    ("pub_image_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2248 2274])
+                    ("protected" label nil (reparse-symbol classsubparts) [2277 2287])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2292 2306])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2311 2328])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2329 2348])
+                    ("public" label nil (reparse-symbol classsubparts) [2351 2358])
+                    ("ClusterPointIndicesToImage" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ClusterPointIndicesToImage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2363 2392])
+                    ("callback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndicesConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2427 2485])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2493 2536]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2397 2537])
+                    ("clusterPointIndicesToPointIndices" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndicesConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2632 2690]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2542 2691]))                  
+                :type "class")
+                nil [1612 2694]))          
+      :file "cluster_point_indices_image.h"
+      :pointmax 2740
+      :fsize 2772
+      :lastmodtime '(21923 43677 179819 293000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CLUSTER_POINT_INDICES_IMAGE_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!cluster_point_indices_image!include!cluster_point_indices_image!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

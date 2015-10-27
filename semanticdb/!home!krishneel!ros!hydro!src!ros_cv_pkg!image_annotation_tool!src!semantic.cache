@@ -1,0 +1,257 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("image_annotation_tool/image_annotation_tool.h" include (:system-flag t) nil [2 58])
+            ("ImageAnnotationTool" function
+               (:constructor-flag t
+                :parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("_path" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101 125]))                  
+                :type ("ImageAnnotationTool" type (:type "class") nil nil))
+                nil [60 1347])
+            ("subscribe" function
+               (:parent "ImageAnnotationTool"
+                :type "void")
+                nil [1349 1661])
+            ("imageCb" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1702 1740]))                  
+                :type "void")
+                nil [1663 4824])
+            ("screenRectangleCb" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("pt_msgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::PolygonStamped::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4876 4926]))                  
+                :type "void")
+                nil [4826 5199])
+            ("cvTemplateMatching" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5255 5276])
+                    ("template_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5282 5310])
+                    ("match_method" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5316 5339]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [5201 6958])
+            ("processFrame" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7007 7028])
+                    ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7029 7050]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [6960 7597])
+            ("segmentationProbabilityMap" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("colorProb" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7660 7679])
+                    ("shapeProb" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7684 7703]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [7599 7826])
+            ("shapeProbabilityMap" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7877 7896]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [7828 9252])
+            ("pixelWiseClassification" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9312 9331]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [9254 10767])
+            ("constructColorModel" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10820 10839])
+                    ("rect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10844 10865])
+                    ("isbackground" variable (:type "bool") (reparse-symbol arg-sub-list) [10870 10888]))                  
+                :type "void")
+                nil [10769 11368])
+            ("computeHistogram" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11418 11437])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11442 11456])
+                    ("isNormalized" variable (:type "bool") (reparse-symbol arg-sub-list) [11461 11479]))                  
+                :type "void")
+                nil [11370 11950])
+            ("cvMorphologicalOperation" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("depth" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12008 12023])
+                    ("erosion_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12028 12051])
+                    ("errode" variable (:type "bool") (reparse-symbol arg-sub-list) [12056 12068]))                  
+                :type "void")
+                nil [11952 12433])
+            ("graphCutSegmentation" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12490 12511])
+                    ("obj_mask" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12516 12534])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12539 12560]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [12435 13510])
+            ("createMaskImage" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("obj_mask" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13563 13581]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [13513 13964])
+            ("modelResize" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14019 14038]))                  
+                :type ("cv::Rect_" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13966 14907])
+            ("convertNumber2String" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c_frame" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14989 14999]))                  
+                :parent "ImageAnnotationTool")
+                nil [14909 15126])
+            ("directoryExists" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("pzPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15176 15195]))                  
+                :type "bool")
+                nil [15129 15426])
+            ("saveDirectoryHandler" function
+               (:parent "ImageAnnotationTool"
+                :arguments 
+                  ( ("folder_name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15480 15510])
+                    ("save_folder" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15511 15536]))                  
+                :type "bool")
+                nil [15428 16080])
+            ("timeToStr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ros_t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16143 16151]))                  
+                :parent "ImageAnnotationTool")
+                nil [16082 16466])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16477 16486])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16487 16500]))                  
+                :type "int")
+                nil [16468 16688]))          
+      :file "image_annotation_tool_node.cpp"
+      :pointmax 16689
+      :fsize 16688
+      :lastmodtime '(21954 57560 658286 693000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!image_annotation_tool!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,408 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("incremental_icp_registeration/incremental_icp_registeration.h" include (:system-flag t) nil [2 74])
+            ("IncrementalICPRegisteration" function
+               (:constructor-flag t
+                :parent "IncrementalICPRegisteration"
+                :type ("IncrementalICPRegisteration" type (:type "class") nil nil))
+                nil [76 422])
+            ("onInit" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [424 764])
+            ("subscribe" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [766 918])
+            ("unsubscribe" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [920 1004])
+            ("callback" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1054 1106]))                  
+                :type "void")
+                nil [1006 3872])
+            ("icpAlignPointCloud" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("source" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3932 3974])
+                    ("target" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3979 4021])
+                    ("output" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4026 4062])
+                    ("final_transform" variable
+                       (:reference 1
+                        :type ("Eigen::Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4063 4096]))                  
+                :type "bool")
+                nil [3874 6756])
+            ("ROS_WARN" function
+               (:prototype-flag t
+                :type "int")
+                nil [6529 6563])
+            ("true" variable (:type "int") nil [6749 6754])
+            ("grid" variable (:type ("pcl::VoxelGrid" type
+                 (:template-specifier 
+                    ( ("PointT" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [6925 6953])
+            ("setLeafSize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("leaf_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6975 6985])
+                    ("" variable (:type ("leaf_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6986 6996])
+                    ("" variable (:type ("leaf_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6997 7007]))                  
+                :type "int")
+                nil [6963 7008])
+            ("setInputCloud" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("input" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7032 7038]))                  
+                :type "int")
+                nil [7018 7039])
+            ("filter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("output" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7057 7064]))                  
+                :type "int")
+                nil [7049 7065])
+            ("norm_est" variable (:type ("pcl::NormalEstimation" type
+                 (:template-specifier 
+                    ( ("PointT" type nil nil nil)
+                      ("pcl::PointNormal" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [7243 7300])
+            ("tree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::search::KdTree" type
+                         (:template-specifier 
+                            ( ("PointT" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7347 7376]))                  
+                :type ("pcl::search::KdTree::Ptr" type (:type "class") nil nil))
+                nil [7305 7378])
+            ("setSearchMethod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7408 7413]))                  
+                :type "int")
+                nil [7392 7414])
+            ("setKSearch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("k" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7439 7441]))                  
+                :type "int")
+                nil [7428 7442])
+            ("setInputCloud" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("input" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7470 7476]))                  
+                :type "int")
+                nil [7456 7477])
+            ("compute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("normal_out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7500 7511]))                  
+                :type "int")
+                nil [7491 7512])
+            ("init" function
+               (:prototype-flag t
+                :parent "ros"
+                :arguments 
+                  ( ("" variable (:type ("argc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7566 7571])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7572 7577]))                  
+                :type "int")
+                nil [7556 7611])
+            ("iicpr" variable (:type ("IncrementalICPRegisteration" type (:type "class") nil nil)) nil [7616 7650])
+            ("spin" function
+               (:prototype-flag t
+                :parent "ros"
+                :type "int")
+                nil [7655 7667]))          
+      :file "incremental_icp_registeration_node.cpp"
+      :pointmax 7684
+      :fsize 7683
+      :lastmodtime '(22046 22610 31881 262000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("incremental_icp_registeration/feature_based_registeration.h" include (:system-flag t) nil [2 72])
+            ("FeatureBasedRegisteration" function
+               (:constructor-flag t
+                :parent "FeatureBasedRegisteration"
+                :type ("FeatureBasedRegisteration" type (:type "class") nil nil))
+                nil [74 462])
+            ("onInit" function
+               (:parent "FeatureBasedRegisteration"
+                :type "void")
+                nil [464 798])
+            ("subscribe" function
+               (:parent "FeatureBasedRegisteration"
+                :type "void")
+                nil [800 1054])
+            ("unsubscribe" function
+               (:parent "FeatureBasedRegisteration"
+                :type "void")
+                nil [1056 1138])
+            ("imageCallback" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("img_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1191 1235]))                  
+                :type "void")
+                nil [1140 1466])
+            ("callback" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1514 1566]))                  
+                :type "void")
+                nil [1468 6742])
+            ("keypointsFrom2DImage" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6802 6843])
+                    ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6844 6863])
+                    ("keypoints" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6868 6905])
+                    ("descriptor" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6906 6926]))                  
+                :type "void")
+                nil [6744 7431])
+            ("getPointCloudKeypoints" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7493 7534])
+                    ("cloud_normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7539 7592])
+                    ("result" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7597 7646])
+                    ("min_scale" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7651 7673])
+                    ("n_octaves" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7674 7694])
+                    ("n_scales_per_octave" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7699 7729])
+                    ("min_contrast" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7730 7755]))                  
+                :type "void")
+                nil [7433 8449])
+            ("estimatePointCloudNormals" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8533 8574])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8579 8626])
+                    ("k" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8631 8641])
+                    ("use_knn" variable (:type "bool") (reparse-symbol arg-sub-list) [8642 8655]))                  
+                :parent "FeatureBasedRegisteration"
+                :methodconst-flag t)
+                nil [8452 9119])
+            ("computePointFPFH" function
+               (:methodconst-flag t
+                :parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9175 9216])
+                    ("normals" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9221 9274])
+                    ("keypoints" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9279 9337])
+                    ("feature_fpfh" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9342 9398]))                  
+                :type "void")
+                nil [9121 10551])
+            ("featureCorrespondenceEstimate2D" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10623 10664])
+                    ("prev_img" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10669 10692])
+                    ("prev_keypoints" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10693 10740])
+                    ("prev_descriptor" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10745 10775])
+                    ("img" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10776 10794])
+                    ("keypoints" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10799 10841])
+                    ("descriptor" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10842 10867])
+                    ("correspondences" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("pcl::Correspondences" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10872 10928]))                  
+                :type "void")
+                nil [10554 12893])
+            ("draw2DFinalCorrespondence" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("prev_img" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12959 12982])
+                    ("prev_keypoints" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::KeyPoint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [12983 13024])
+                    ("img" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13029 13047])
+                    ("keypoints" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::KeyPoint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [13048 13084])
+                    ("correspondences" variable
+                       (:constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("pcl::Correspondences" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13089 13151]))                  
+                :type "void")
+                nil [12896 13851])
+            ("featureCorrespondenceEstimate" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("source" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13921 13971])
+                    ("target" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13976 14026])
+                    ("correspondences" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("pcl::Correspondences" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [14031 14087]))                  
+                :type "void")
+                nil [13854 15444])
+            ("convertFPFHEstimationToMat" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("source" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15511 15567])
+                    ("descriptor" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15572 15592]))                  
+                :type "void")
+                nil [15447 15992])
+            ("voxelGridFilter" function
+               (:parent "FeatureBasedRegisteration"
+                :arguments 
+                  ( ("input" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16047 16088])
+                    ("output" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16093 16129])
+                    ("leaf_size" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [16130 16152]))                  
+                :type "void")
+                nil [15994 16301])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16313 16322])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16323 16336]))                  
+                :type "int")
+                nil [16304 16450]))          
+      :file "feature_based_registeration_node.cpp"
+      :pointmax 16451
+      :fsize 16450
+      :lastmodtime '(22047 49845 640377 464000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!incremental_icp_registeration!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

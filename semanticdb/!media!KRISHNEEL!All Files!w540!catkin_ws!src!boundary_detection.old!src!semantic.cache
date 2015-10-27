@@ -1,0 +1,369 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("ros/ros.h" include (:system-flag t) nil [22 42])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [67 103])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [104 144])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [171 215])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [216 244])
+            ("pcl/point_types.h" include (:system-flag t) nil [245 273])
+            ("pcl/filters/voxel_grid.h" include (:system-flag t) nil [274 309])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [310 346])
+            ("pcl/PCLPointCloud2.h" include (:system-flag t) nil [347 378])
+            ("pcl/features/normal_3d.h" include (:system-flag t) nil [379 414])
+            ("pcl/point_types_conversion.h" include (:system-flag t) nil [415 454])
+            ("pcl/filters/conditional_removal.h" include (:system-flag t) nil [455 499])
+            ("pcl/filters/radius_outlier_removal.h" include (:system-flag t) nil [500 547])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [548 588])
+            ("pcl/features/fpfh.h" include (:system-flag t) nil [589 619])
+            ("pcl/registration/ia_ransac.h" include (:system-flag t) nil [620 659])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [660 686])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [687 723])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [726 746])
+            ("pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [749 768])
+            ("pub_image" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [769 794])
+            ("PointT" type
+               (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                :type "typedef")
+                nil [796 828])
+            ("PATH_TOMATO_MODEL" variable
+               (:default-value "\"/home/krishneel/Documents/Tomato/tomato_model.pcd\""
+                :type ("string" type (:type "class") nil nil))
+                nil [869 948])
+            ("TemplateCloudPoint" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1198 1206])
+                    ("t_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1210 1247])
+                    ("searchMethod" variable (:type ("pcl::search::KdTree::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1251 1297])
+                    ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1301 1342])
+                    ("features" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1346 1398])
+                    ("normal_radius" variable (:type "float") (reparse-symbol classsubparts) [1428 1448])
+                    ("features_radius" variable (:type "float") (reparse-symbol classsubparts) [1452 1474])
+                    ("protected" label nil (reparse-symbol classsubparts) [1476 1486])
+                    ("computeLocalFeatures" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1494 1522])
+                    ("computeSurfaceNormal" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1526 1554])
+                    ("public" label nil (reparse-symbol classsubparts) [1559 1566])
+                    ("TemplateCloudPoint" function
+                       (:constructor-flag t
+                        :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1570 1704])
+                    ("TemplateCloudPoint" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1709 1733])
+                    ("setInputCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1804 1833]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1785 1834])
+                    ("loadTemplatePointCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1921 1934]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1893 1935])
+                    ("computePointCloudFeatures" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1991 2024])
+                    ("getPointCloud" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2077 2128])
+                    ("getSurfaceNormal" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2173 2232])
+                    ("getLocalFeature" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2267 2334]))                  
+                :type "class")
+                nil [1171 2341])
+            ("getPointCloud" function
+               (:methodconst-flag t
+                :parent "TemplateCloudPoint"
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [2556 2656])
+            ("getSurfaceNormal" function
+               (:methodconst-flag t
+                :parent "TemplateCloudPoint"
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [2885 2993])
+            ("getLocalFeature" function
+               (:methodconst-flag t
+                :parent "TemplateCloudPoint"
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [3218 3336])
+            ("setInputCloud" function
+               (:parent "TemplateCloudPoint"
+                :arguments 
+                  ( ("input" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3583 3618]))                  
+                :type "void")
+                nil [3544 3686])
+            ("loadTemplatePointCloud" function
+               (:parent "TemplateCloudPoint"
+                :arguments 
+                  ( ("__path_to_template__" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3969 4003]))                  
+                :type "bool")
+                nil [3921 4140])
+            ("computeLocalFeatures" function
+               (:parent "TemplateCloudPoint"
+                :type "void")
+                nil [4357 4896])
+            ("computeSurfaceNormal" function
+               (:parent "TemplateCloudPoint"
+                :type "void")
+                nil [5122 5561])
+            ("computePointCloudFeatures" function
+               (:parent "TemplateCloudPoint"
+                :type "void")
+                nil [5778 5900])
+            ("TemplateAlignment" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [5929 5937])
+                    ("__templates__" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("TemplateCloudPoint" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5941 5982])
+                    ("___target__" variable (:type ("TemplateCloudPoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5986 6017])
+                    ("sac_ia_" variable (:type ("pcl::SampleConsensusInitialAlignment::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6082 6170])
+                    ("_min_sample_distance_" variable (:type "float") (reparse-symbol classsubparts) [6174 6202])
+                    ("_max_correspondence_distance_" variable (:type "float") (reparse-symbol classsubparts) [6206 6242])
+                    ("_nr_iterations__" variable (:type "int") (reparse-symbol classsubparts) [6246 6267])
+                    ("public" label nil (reparse-symbol classsubparts) [6272 6279])
+                    ("Result" type
+                       (:members 
+                          ( ("_fitness_score_" variable (:type "float") (reparse-symbol classsubparts) [6353 6375])
+                            ("_final_transformation_" variable (:type ("Eigen::Matrix4f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6382 6421]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [6328 6465])
+                    ("TemplateAlignment" function
+                       (:constructor-flag t
+                        :type ("TemplateAlignment" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6470 6884])
+                    ("TemplateAlignment" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6889 6911])
+                    ("setTargetCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6936 6957]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6916 6958])
+                    ("addTemplateCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6984 7005]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6962 7006])
+                    ("align" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7022 7043])
+                            ("" variable
+                               (:reference 1
+                                :type ("TemplateAlignment::Result" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7044 7072]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7010 7073])
+                    ("findBestAlignment" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TemplateAlignment::Result" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7100 7128]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7077 7129]))                  
+                :type "class")
+                nil [5903 7132])
+            ("setTargetCloud" function
+               (:parent "TemplateAlignment"
+                :arguments 
+                  ( ("target_cloud" variable
+                       (:reference 1
+                        :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7174 7207]))                  
+                :type "void")
+                nil [7135 7446])
+            ("addTemplateCloud" function
+               (:parent "TemplateAlignment"
+                :arguments 
+                  ( ("template_cloud" variable
+                       (:reference 1
+                        :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7490 7525]))                  
+                :type "void")
+                nil [7448 7579])
+            ("align" function
+               (:parent "TemplateAlignment"
+                :arguments 
+                  ( ("template_cloud" variable
+                       (:reference 1
+                        :type ("TemplateCloudPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7612 7647])
+                    ("result" variable
+                       (:reference 1
+                        :type ("TemplateAlignment::Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7648 7682]))                  
+                :type "void")
+                nil [7581 8112])
+            ("findBestAlignment" function
+               (:parent "TemplateAlignment"
+                :arguments 
+                  ( ("result" variable
+                       (:reference 1
+                        :type ("TemplateAlignment::Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8156 8190]))                  
+                :type "int")
+                nil [8114 8339])
+            ("cloudCallBack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8582 8622]))                  
+                :type "void")
+                nil [8550 8623])
+            ("distanceFilter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8656 8678])
+                    ("" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8679 8701])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8702 8722])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8724 8744]))                  
+                :type "void")
+                nil [8624 8746])
+            ("convertPCL2PointCloud" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8779 8801])
+                    ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8802 8831])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [8832 8843]))                  
+                :type "void")
+                nil [8747 8845])
+            ("readModelPCD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8878 8907]))                  
+                :type "void")
+                nil [8846 8908])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9102 9111])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9112 9124]))                  
+                :type "int")
+                nil [9092 9579])
+            ("cloudCallBack" function
+               (:arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9813 9863]))                  
+                :type "void")
+                nil [9793 11653])
+            ("distanceFilter" function
+               (:arguments 
+                  ( ("cloud" variable
+                       (:pointer 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11894 11921])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11922 11958])
+                    ("minZ" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11959 11978])
+                    ("maxZ" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11979 11998]))                  
+                :type "void")
+                nil [11873 12330])
+            ("convertPCL2PointCloud" function
+               (:arguments 
+                  ( ("cloud" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12583 12610])
+                    ("pcl_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12611 12650])
+                    ("toPCL" variable (:type "bool") (reparse-symbol arg-sub-list) [12651 12662]))                  
+                :type "void")
+                nil [12555 12886])
+            ("readModelPCD" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13125 13160]))                  
+                :type "void")
+                nil [13107 13455]))          
+      :file "main.cpp"
+      :pointmax 13456
+      :fsize 13455
+      :lastmodtime '(21590 61696 0 0)
+      :unmatched-syntax '((symbol 6428 . 6459) (symbol 6428 . 6459))))
+  :file "!media!KRISHNEEL!All Files!w540!catkin_ws!src!boundary_detection.old!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

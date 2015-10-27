@@ -1,0 +1,1083 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_SET_HPP_EAN_28_10_2005" variable (:constant-flag t) nil [376 439])
+            ("boost/version.hpp" include (:system-flag t) nil [441 469])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [470 500])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [501 532])
+            ("boost/mpl/protect.hpp" include (:system-flag t) nil [533 565])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [566 599])
+            ("boost/mpl/is_sequence.hpp" include (:system-flag t) nil [600 636])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [637 677])
+            ("boost/type_traits/is_base_and_derived.hpp" include (:system-flag t) nil [678 730])
+            ("boost/parameter/parameters.hpp" include (:system-flag t) nil [731 772])
+            ("boost/preprocessor/repetition/repeat_from_to.hpp" include (:system-flag t) nil [773 832])
+            ("boost/preprocessor/repetition/enum_binary_params.hpp" include (:system-flag t) nil [833 896])
+            ("boost/accumulators/accumulators_fwd.hpp" include (:system-flag t) nil [897 947])
+            ("boost/accumulators/framework/depends_on.hpp" include (:system-flag t) nil [948 1002])
+            ("boost/accumulators/framework/accumulator_concept.hpp" include (:system-flag t) nil [1003 1066])
+            ("boost/accumulators/framework/parameters/accumulator.hpp" include (:system-flag t) nil [1067 1133])
+            ("boost/accumulators/framework/parameters/sample.hpp" include (:system-flag t) nil [1134 1195])
+            ("boost/accumulators/framework/accumulators/external_accumulator.hpp" include (:system-flag t) nil [1196 1273])
+            ("boost/accumulators/framework/accumulators/droppable_accumulator.hpp" include (:system-flag t) nil [1274 1352])
+            ("boost/fusion/include/any.hpp" include (:system-flag t) nil [1353 1392])
+            ("boost/fusion/include/find_if.hpp" include (:system-flag t) nil [1393 1436])
+            ("boost/fusion/include/for_each.hpp" include (:system-flag t) nil [1437 1481])
+            ("boost/fusion/include/filter_view.hpp" include (:system-flag t) nil [1482 1529])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("accumulator_visitor" type
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("accumulator_visitor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1883 1897]))                                                  
+                                                :type ("accumulator_visitor" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1863 1937])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Accumulator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("accumulator" variable
+                                                       (:reference 1
+                                                        :type ("Accumulator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2003 2028]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1947 2091])
+                                            ("private" label nil (reparse-symbol classsubparts) [2097 2105])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("accumulator_visitor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2146 2174]))                                                  
+                                                :type ("accumulator_visitor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2114 2175])
+                                            ("args" variable (:type ("Args" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2184 2201]))                                          )
+                                        (reparse-symbol namespacesubparts) [1785 2208])
+                                    ("make_accumulator_visitor" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("accumulator_visitor" type
+                                             (:template-specifier 
+                                                ( ("Args" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2306 2323]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2214 2383])
+                                    ("accumulator_params" type
+                                       (:typedef ("parameter::parameters" type
+                                             (:template-specifier 
+                                                ( ("parameter::required" type (:template-specifier 
+                                                    ( ("tag::accumulator" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("tag::sample" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [2389 2616])
+                                    ("accumulator_set_base" type (:type "struct") (reparse-symbol namespacesubparts) [2734 2774])
+                                    ("is_accumulator_set" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("is_base_and_derived" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2890 3006]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1575 3009])
+                            ("accumulator_set" type
+                               (:template 
+                                  ( ("Sample" type (:type "class") nil nil)
+                                    ("Features" type (:type "class") nil nil)
+                                    ("Weight" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("sample_type" type
+                                       (:typedef ("Sample" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3778 3805])
+                                    ("features_type" type
+                                       (:typedef ("Features" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3868 3899])
+                                    ("weight_type" type
+                                       (:typedef ("Weight" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3969 3996])
+                                    ("accumulators_mpl_vector" type
+                                       (:typedef ("detail::make_accumulator_tuple::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4111 4271])
+                                    ("accumulators_type" type
+                                       (:typedef ("detail::meta::make_acc_list::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4354 4482])
+                                    ("accumulator_set" function
+                                       (:constructor-flag t
+                                        :type ("accumulator_set" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [4719 5146])
+                                    ("accumulator_set" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("a1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("A1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5309 5322]))                                          
+                                        :type ("accumulator_set" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5293 5736])
+                                    ("BOOST_ACCUMULATORS_ACCUMULATOR_SET_CTOR" variable (:constant-flag t) (reparse-symbol classsubparts) [5837 5876])
+                                    ("visit" function
+                                       (:template 
+                                          ( ("UnaryFunction" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("func" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("UnaryFunction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7949 7975]))                                          )
+                                        (reparse-symbol classsubparts) [7901 8039])
+                                    ("visit_if" function
+                                       (:template 
+                                          ( ("FilterPred" type (:type "class") nil nil)
+                                            ("UnaryFunction" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("func" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("UnaryFunction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8391 8417]))                                          )
+                                        (reparse-symbol classsubparts) [8319 8570])
+                                    ("result_type" type
+                                       (:typedef ("void")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [8725 8750])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8941 9115])
+                                    ("()" function
+                                       (:template 
+                                          ( ("A1" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("a1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("A1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9164 9177]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [9121 9337])
+                                    ("BOOST_ACCUMULATORS_ACCUMULATOR_SET_FUN_OP" variable (:constant-flag t) (reparse-symbol classsubparts) [9438 9479])
+                                    ("extract" function (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11323 11438])
+                                    ("extract" function
+                                       (:methodconst-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11518 11645])
+                                    ("drop" function
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11748 12570])
+                                    ("private" label nil (reparse-symbol classsubparts) [12572 12580])
+                                    ("accumulators" variable (:type ("accumulators_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12586 12617]))                                  
+                                :superclasses 
+                                  ( ("detail::accumulator_set_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3654 12620])
+                            ("find_accumulator" function
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil)
+                                    ("AccumulatorSet" type (:type "class") nil nil))                                  
+                                :type ("mpl::apply::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("acc" variable
+                                       (:reference 1
+                                        :type ("AccumulatorSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12963 13027])
+                                    ("" variable (:type ("BOOST_ACCUMULATORS_PROTO_DISABLE_IF_IS_CONST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12983 13043]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol namespacesubparts) [12841 13092])
+                            ("find_accumulator" function
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil)
+                                    ("AccumulatorSet" type (:type "class") nil nil))                                  
+                                :type ("mpl::apply::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("acc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AccumulatorSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13236 13262]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol namespacesubparts) [13108 13310])
+                            ("BOOST_ACCUMULATORS_EXTRACT_RESULT_FUN" variable (:constant-flag t) (reparse-symbol namespacesubparts) [13486 13523]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1549 15004]))                  
+                :type "namespace")
+                nil [1531 15005]))          
+      :file "accumulator_set.hpp"
+      :pointmax 15047
+      :fsize 15046
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax '((semantic-list 14904 . 15001) (symbol 14889 . 14904) (semantic-list #("{                                                                       \\
+        return find_accumulator<Feature>(acc).result(                       \\
+            detail::accumulator_params()(                                   \\
+                acc                                                         \\
+                BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                    \\
+            )                                                               \\
+        );                                                                  \\
+    }" 0 1 (macros (("_") ("n") ("z")))) 14956 . 14997) (semantic-list #("(                                                         \\
+        AccumulatorSet const &acc                                           \\
+        BOOST_PP_ENUM_TRAILING_BINARY_PARAMS_Z(z, n, A, const &a)           \\
+    )" 0 1 (macros (("_") ("n") ("z")))) 14956 . 14997) (punctuation ">" 14956 . 14997) (semantic-list #("(z, n, typename A)" 0 1 (macros (("_") ("n") ("z")))) 14956 . 14997) (punctuation "<" 14956 . 14997) (TEMPLATE "template" 14956 . 14997) (semantic-list 14922 . 14951) (semantic-list 13027 . 13043) (punctuation 11517 . 11518) (punctuation 11516 . 11517) (punctuation 11515 . 11516) (symbol 11508 . 11515) (punctuation 11507 . 11508) (symbol 11502 . 11507) (TYPENAME 11493 . 11501) (punctuation 11487 . 11488) (symbol 11480 . 11487) (TYPENAME 11471 . 11479) (punctuation 11470 . 11471) (TEMPLATE 11462 . 11470) (punctuation 11322 . 11323) (punctuation 11321 . 11322) (punctuation 11320 . 11321) (symbol 11313 . 11320) (punctuation 11312 . 11313) (symbol 11307 . 11312) (TYPENAME 11298 . 11306) (punctuation 11292 . 11293) (symbol 11285 . 11292) (TYPENAME 11276 . 11284) (punctuation 11275 . 11276) (TEMPLATE 11267 . 11275) (punctuation 11157 . 11158) (semantic-list 11150 . 11157) (punctuation 11144 . 11145) (symbol 11131 . 11135) (punctuation 11130 . 11131) (punctuation 11129 . 11130) (punctuation 11128 . 11129) (punctuation 11114 . 11115) (symbol 11107 . 11114) (punctuation 11106 . 11107) (symbol 11091 . 11106) (punctuation 11090 . 11091) (punctuation 11089 . 11090) (symbol 11083 . 11089) (punctuation 11081 . 11082) (symbol 11049 . 11066) (punctuation 11031 . 11032) (symbol 11024 . 11031) (punctuation 11023 . 11024) (punctuation 11022 . 11023) (symbol 11013 . 11022) (punctuation 11012 . 11013) (punctuation 11011 . 11012) (symbol 11005 . 11011) (TYPENAME 10996 . 11004) (punctuation 10982 . 10983) (symbol 10974 . 10982) (punctuation 10973 . 10974) (punctuation 10972 . 10973) (symbol 10963 . 10972) (punctuation 10962 . 10963) (punctuation 10961 . 10962) (symbol 10955 . 10961) (punctuation 10953 . 10954) (symbol 10941 . 10946) (STRUCT 10934 . 10940) (punctuation 10928 . 10929) (symbol 10921 . 10928) (TYPENAME 10912 . 10920) (punctuation 10911 . 10912) (TEMPLATE 10903 . 10911) (semantic-list 10484 . 10611) (symbol 10461 . 10484) (semantic-list #("{                                                                                   \\
+        this->visit(                                                                    \\
+            detail::make_accumulator_visitor(                                           \\
+                detail::accumulator_params()(                                           \\
+                    *this BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                      \\
+                )                                                                       \\
+            )                                                                           \\
+        );                                                                              \\
+    }" 0 1 (macros (("_") ("n") ("z")))) 10554 . 10603) (semantic-list #("(BOOST_PP_ENUM_BINARY_PARAMS_Z(z, n, A, const &a))" 0 1 (macros (("_") ("n") ("z")))) 10554 . 10603) (semantic-list #("()" 0 1 (macros (("_") ("n") ("z")))) 10554 . 10603) (OPERATOR "operator" 10554 . 10603) (punctuation ">" 10554 . 10603) (semantic-list #("(z, n, typename A)" 0 1 (macros (("_") ("n") ("z")))) 10554 . 10603) (punctuation "<" 10554 . 10603) (TEMPLATE "template" 10554 . 10603) (semantic-list 10516 . 10545) (number 10494 . 10495) (semantic-list 7333 . 7458) (symbol 7310 . 7333) (semantic-list #("{                                                                                   \\
+        /* Add-ref the Features that the user has specified */                          \\
+        this->template visit_if<detail::contains_feature_of_<Features> >(               \\
+            detail::make_add_ref_visitor(detail::accumulator_params()(*this))           \\
+        );                                                                              \\
+    }" 0 1 (macros (("_") ("n") ("z")))) 7403 . 7450) (semantic-list #("(                                                                   \\
+            detail::make_acc_list(                                                      \\
+                accumulators_mpl_vector()                                               \\
+              , detail::accumulator_params()(                                           \\
+                    *this BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                      \\
+                )                                                                       \\
+            )                                                                           \\
+        )" 0 1 (macros (("_") ("n") ("z")))) 7403 . 7450) (punctuation ":" 7403 . 7450) (semantic-list #("(BOOST_PP_ENUM_BINARY_PARAMS_Z(z, n, A, const &a))" 0 1 (macros (("_") ("n") ("z")))) 7403 . 7450) (punctuation ">" 7403 . 7450) (semantic-list #("(z, n, typename A)" 0 1 (macros (("_") ("n") ("z")))) 7403 . 7450) (punctuation "<" 7403 . 7450) (TEMPLATE "template" 7403 . 7450) (semantic-list 7365 . 7394) (number 7343 . 7344) (EXPLICIT 5284 . 5292) (punctuation 5278 . 5279) (symbol 5276 . 5278) (TYPENAME 5267 . 5275) (punctuation 5266 . 5267) (TEMPLATE 5258 . 5266) (EXPLICIT 1854 . 1862))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_ACCUMULATOR_SET_FUN_OP" (spp-arg-list ("z" "n" "_") 9479 . 9488) . 
+              ((TEMPLATE "template" 9524 . 9532) (punctuation "<" 9532 . 9533) (symbol "BOOST_PP_ENUM_PARAMS_Z" 9533 . 9555) (semantic-list "(z, n, typename A)" 9555 . 9573) (punctuation ">" 9573 . 9574) (VOID "void" 9614 . 9618) (OPERATOR "operator" 9619 . 9627) (semantic-list "()" 9628 . 9630) (semantic-list "(BOOST_PP_ENUM_BINARY_PARAMS_Z(z, n, A, const &a))" 9630 . 9680) (semantic-list "{                                                                                   \\
+        this->visit(                                                                    \\
+            detail::make_accumulator_visitor(                                           \\
+                detail::accumulator_params()(                                           \\
+                    *this BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                      \\
+                )                                                                       \\
+            )                                                                           \\
+        );                                                                              \\
+    }" 9704 . 10425)))
+          ("BOOST_ACCUMULATORS_EXTRACT_RESULT_FUN" (spp-arg-list ("z" "n" "_") 13523 . 13532) . 
+              ((TEMPLATE "template" 13560 . 13568) (punctuation "<" 13568 . 13569) (TYPENAME "typename" 13642 . 13650) (symbol "Feature" 13651 . 13658) (punctuation "," 13718 . 13719) (TYPENAME "typename" 13720 . 13728) (symbol "AccumulatorSet" 13729 . 13743) (symbol "BOOST_PP_ENUM_TRAILING_PARAMS_Z" 13798 . 13829) (semantic-list "(z, n, typename A)" 13829 . 13847) (punctuation ">" 13872 . 13873) (TYPENAME "typename" 13950 . 13958) (symbol "mpl" 13959 . 13962) (punctuation ":" 13962 . 13963) (punctuation ":" 13963 . 13964) (symbol "apply" 13964 . 13969) (punctuation "<" 13969 . 13970) (symbol "AccumulatorSet" 13970 . 13984) (punctuation "," 13984 . 13985) (symbol "Feature" 13986 . 13993) (punctuation ">" 13993 . 13994) (punctuation ":" 13994 . 13995) (punctuation ":" 13995 . 13996) (symbol "type" 13996 . 14000) (punctuation ":" 14000 . 14001) (punctuation ":" 14001 . 14002) (symbol "result_type" 14002 . 14013) (symbol "extract_result" 14028 . 14042) (semantic-list "(                                                         \\
+        AccumulatorSet const &acc                                           \\
+        BOOST_PP_ENUM_TRAILING_BINARY_PARAMS_Z(z, n, A, const &a)           \\
+    )" 14042 . 14263) (semantic-list "{                                                                       \\
+        return find_accumulator<Feature>(acc).result(                       \\
+            detail::accumulator_params()(                                   \\
+                acc                                                         \\
+                BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                    \\
+            )                                                               \\
+        );                                                                  \\
+    }" 14340 . 14887)))
+          ("BOOST_ACCUMULATORS_ACCUMULATOR_SET_CTOR" (spp-arg-list ("z" "n" "_") 5876 . 5885) . 
+              ((TEMPLATE "template" 5923 . 5931) (punctuation "<" 5931 . 5932) (symbol "BOOST_PP_ENUM_PARAMS_Z" 5932 . 5954) (semantic-list "(z, n, typename A)" 5954 . 5972) (punctuation ">" 5972 . 5973) (symbol "accumulator_set" 6013 . 6028) (semantic-list "(BOOST_PP_ENUM_BINARY_PARAMS_Z(z, n, A, const &a))" 6028 . 6078) (punctuation ":" 6105 . 6106) (symbol "accumulators" 6107 . 6119) (semantic-list "(                                                                   \\
+            detail::make_acc_list(                                                      \\
+                accumulators_mpl_vector()                                               \\
+              , detail::accumulator_params()(                                           \\
+                    *this BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a)                      \\
+                )                                                                       \\
+            )                                                                           \\
+        )" 6119 . 6738) (semantic-list "{                                                                                   \\
+        /* Add-ref the Features that the user has specified */                          \\
+        this->template visit_if<detail::contains_feature_of_<Features> >(               \\
+            detail::make_add_ref_visitor(detail::accumulator_params()(*this))           \\
+        );                                                                              \\
+    }" 6823 . 7274)))
+          ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_SET_HPP_EAN_28_10_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_CONCEPT_HPP_EAN_28_10_2005" variable (:constant-flag t) nil [384 451])
+            ("boost/concept_check.hpp" include (:system-flag t) nil [453 487])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("accumulator_concept" type
+                               (:template 
+                                  ( ("Stat" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("constraints" function (:type "void") (reparse-symbol classsubparts) [590 661])
+                                    ("stat" variable (:type ("Stat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [667 677]))                                  )
+                                (reparse-symbol namespacesubparts) [533 680]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [507 683]))                  
+                :type "namespace")
+                nil [489 684]))          
+      :file "accumulator_concept.hpp"
+      :pointmax 726
+      :fsize 725
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATOR_CONCEPT_HPP_EAN_28_10_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_BASE_HPP_EAN_28_10_2005" variable (:constant-flag t) nil [379 444])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [446 483])
+            ("boost/mpl/joint_view.hpp" include (:system-flag t) nil [484 519])
+            ("boost/mpl/single_view.hpp" include (:system-flag t) nil [520 556])
+            ("boost/mpl/fold.hpp" include (:system-flag t) nil [557 586])
+            ("boost/mpl/contains.hpp" include (:system-flag t) nil [587 620])
+            ("boost/mpl/empty_sequence.hpp" include (:system-flag t) nil [621 660])
+            ("boost/accumulators/framework/accumulator_concept.hpp" include (:system-flag t) nil [661 724])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("void_" type
+                                       (:typedef ("void")
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [793 812]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [770 814])
+                            ("dont_care" type
+                               (:members 
+                                  ( ("dont_care" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil))                                          
+                                        :type ("dont_care" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [973 986]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [935 998]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [912 1001])
+                            ("accumulator_base" type
+                               (:members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1206 1216]))                                          
+                                        :type ("detail::void_" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1180 1228])
+                                    ("is_droppable" type
+                                       (:typedef ("mpl::false_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1234 1267])
+                                    ("add_ref" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1295 1305]))                                          
+                                        :type ("detail::void_" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1273 1317])
+                                    ("drop" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1342 1352]))                                          
+                                        :type ("detail::void_" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1323 1364])
+                                    ("on_drop" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("dont_care" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1402]))                                          
+                                        :type ("detail::void_" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1370 1414]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1106 1417]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [744 1420]))                  
+                :type "namespace")
+                nil [726 1421]))          
+      :file "accumulator_base.hpp"
+      :pointmax 1463
+      :fsize 1462
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_ACCUMULATORS_BASE_HPP_EAN_28_10_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_EXTRACTOR_HPP_EAN_28_10_2005" variable (:constant-flag t) nil [364 421])
+            ("boost/preprocessor/tuple/rem.hpp" include (:system-flag t) nil [423 466])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [467 511])
+            ("boost/preprocessor/array/data.hpp" include (:system-flag t) nil [512 556])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [557 601])
+            ("boost/preprocessor/seq/to_array.hpp" include (:system-flag t) nil [602 648])
+            ("boost/preprocessor/seq/transform.hpp" include (:system-flag t) nil [649 696])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [697 753])
+            ("boost/preprocessor/repetition/enum_trailing_params.hpp" include (:system-flag t) nil [754 819])
+            ("boost/preprocessor/repetition/enum_trailing_binary_params.hpp" include (:system-flag t) nil [820 892])
+            ("boost/parameter/binding.hpp" include (:system-flag t) nil [893 931])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [932 962])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [963 995])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [996 1045])
+            ("boost/accumulators/accumulators_fwd.hpp" include (:system-flag t) nil [1046 1096])
+            ("boost/accumulators/framework/parameters/accumulator.hpp" include (:system-flag t) nil [1097 1163])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("accumulator_set_result" type
+                                       (:template 
+                                          ( ("AccumulatorSet" type (:type "class") nil nil)
+                                            ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("feature_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1370 1388])
+                                            ("type" type
+                                               (:typedef ("mpl::apply::type::result_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1397 1479]))                                          )
+                                        (reparse-symbol namespacesubparts) [1232 1486])
+                                    ("extractor_result" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::eval_if" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1779 2024])
+                                    ("do_extract" function
+                                       (:arguments 
+                                          ( ("acc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("AccumulatorSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2158 2184])
+                                            ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2196]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2138 2323])
+                                    ("do_extract" function
+                                       (:arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2437 2454])
+                                            ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2455 2467]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2417 2623]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1209 2626])
+                            ("extractor" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("this_type" type
+                                       (:typedef ("extractor" type
+                                             (:template-specifier 
+                                                ( ("Feature" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2863 2900])
+                                    ("result" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol classsubparts) [2988 3027])
+                                    ("detail::extractor_result" variable (:type "int") (reparse-symbol classsubparts) [3096 3146])
+                                    ("()" function
+                                       (:template 
+                                          ( ("Arg1" type (:type "class") nil nil))                                          
+                                        :type ("detail::extractor_result::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("arg1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Arg1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3406 3423]))                                          
+                                        :typemodifiers ("typename")
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [3307 3655])
+                                    ("()" function
+                                       (:template 
+                                          ( ("AccumulatorSet" type (:type "class") nil nil)
+                                            ("A1" type (:type "class") nil nil))                                          
+                                        :type ("detail::extractor_result::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("acc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("AccumulatorSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3915 3941])
+                                            ("a1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("A1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3942 3955]))                                          
+                                        :typemodifiers ("typename")
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [3783 4164])
+                                    ("BOOST_ACCUMULATORS_EXTRACTOR_FUN_OP" variable (:constant-flag t) (reparse-symbol classsubparts) [4265 4300]))                                  )
+                                (reparse-symbol namespacesubparts) [2813 6336])
+                            ("BOOST_ACCUMULATORS_ARRAY_REM" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6368 6396])
+                            ("BOOST_ACCUMULATORS_SEQ_REM" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6577 6603])
+                            ("BOOST_ACCUMULATORS_ARGS_OP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6763 6789])
+                            ("BOOST_ACCUMULATORS_PARAMS_OP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6899 6927])
+                            ("BOOST_ACCUMULATORS_MAKE_FEATURE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7040 7071])
+                            ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN_IMPL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7579 7623])
+                            ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN" variable (:constant-flag t) (reparse-symbol namespacesubparts) [9342 9381])
+                            ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [10063 10098]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1183 10573]))                  
+                :type "namespace")
+                nil [1165 10574]))          
+      :file "extractor.hpp"
+      :pointmax 10616
+      :fsize 10615
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax '((semantic-list 5913 . 6034) (symbol 5890 . 5913) (semantic-list #("{                                                                                   \\
+        BOOST_MPL_ASSERT((detail::is_accumulator_set<AccumulatorSet>));                 \\
+        typedef typename as_feature<Feature>::type feature_type;                        \\
+        return extract_result<feature_type>(acc BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a));\\
+    }" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (CONST "const" 5983 . 6026) (semantic-list #("(                                                                        \\
+        AccumulatorSet const &acc                                                       \\
+        BOOST_PP_ENUM_TRAILING_BINARY_PARAMS_Z(z, n, A, const &a)                       \\
+    )" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (semantic-list #("()" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (OPERATOR "operator" 5983 . 6026) (punctuation ">" 5983 . 6026) (semantic-list #("(z, n, typename A)" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (punctuation "<" 5983 . 6026) (TEMPLATE "template" 5983 . 6026) (punctuation ";" 5983 . 6026) (semantic-list #("{}" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (punctuation ":" 5983 . 6026) (punctuation ">" 5983 . 6026) (semantic-list #("(BOOST_PP_ENUM_PARAMS_Z(z, n, A))" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (punctuation "<" 5983 . 6026) (punctuation ">" 5983 . 6026) (semantic-list #("(z, n, typename A)" 0 1 (macros (("_") ("n") ("z")))) 5983 . 6026) (punctuation "<" 5983 . 6026) (TEMPLATE "template" 5983 . 6026) (semantic-list 5945 . 5974) (number 5923 . 5924) (punctuation 3094 . 3095) (punctuation 3086 . 3087) (semantic-list 3082 . 3086) (symbol 3073 . 3082) (punctuation 3072 . 3073) (symbol 3066 . 3072) (STRUCT 3059 . 3065) (punctuation 3053 . 3054) (symbol 3051 . 3053) (TYPENAME 3042 . 3050) (punctuation 3041 . 3042) (TEMPLATE 3033 . 3041) (punctuation 2416 . 2417) (punctuation 2415 . 2416) (punctuation 2414 . 2415) (symbol 2407 . 2414) (punctuation 2405 . 2406) (symbol 2401 . 2405) (punctuation 2400 . 2401) (symbol 2384 . 2400) (TYPENAME 2375 . 2383) (punctuation 2369 . 2370) (symbol 2365 . 2369) (TYPENAME 2356 . 2364) (punctuation 2354 . 2355) (symbol 2347 . 2354) (TYPENAME 2338 . 2346) (punctuation 2337 . 2338) (TEMPLATE 2329 . 2337) (punctuation 2137 . 2138) (punctuation 2136 . 2137) (punctuation 2135 . 2136) (symbol 2128 . 2135) (punctuation 2126 . 2127) (symbol 2112 . 2126) (punctuation 2111 . 2112) (symbol 2095 . 2111) (TYPENAME 2086 . 2094) (punctuation 2080 . 2081) (symbol 2066 . 2080) (TYPENAME 2057 . 2065) (punctuation 2055 . 2056) (symbol 2048 . 2055) (TYPENAME 2039 . 2047) (punctuation 2038 . 2039) (TEMPLATE 2030 . 2038) (punctuation 1772 . 1773) (semantic-list 1765 . 1772) (punctuation 1759 . 1760) (symbol 1743 . 1750) (punctuation 1741 . 1742) (symbol 1726 . 1730) (punctuation 1725 . 1726) (punctuation 1724 . 1725) (punctuation 1723 . 1724) (symbol 1706 . 1710) (punctuation 1705 . 1706) (punctuation 1704 . 1705) (punctuation 1703 . 1704) (symbol 1692 . 1703) (punctuation 1691 . 1692) (punctuation 1690 . 1691) (symbol 1687 . 1690) (punctuation 1685 . 1686) (symbol 1681 . 1685) (punctuation 1680 . 1681) (symbol 1673 . 1680) (punctuation 1672 . 1673) (punctuation 1671 . 1672) (symbol 1662 . 1671) (TYPENAME 1653 . 1661) (punctuation 1635 . 1636) (symbol 1619 . 1635) (TYPENAME 1610 . 1618) (punctuation 1596 . 1597) (symbol 1574 . 1596) (punctuation 1572 . 1573) (symbol 1545 . 1565) (STRUCT 1538 . 1544) (punctuation 1532 . 1533) (symbol 1525 . 1532) (TYPENAME 1516 . 1524) (punctuation 1514 . 1515) (symbol 1510 . 1514) (TYPENAME 1501 . 1509) (punctuation 1500 . 1501) (TEMPLATE 1492 . 1500) (punctuation 1369 . 1370) (punctuation 1368 . 1369) (punctuation 1367 . 1368) (symbol 1360 . 1367) (punctuation 1359 . 1360) (symbol 1349 . 1359) (TYPENAME 1340 . 1348) (TYPEDEF 1332 . 1339))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_MAKE_FEATURE" (spp-arg-list ("Tag" "Feature" "ParamsSeq") 7071 . 7096) . 
+              ((symbol "Tag" 7138 . 7141) (punctuation ":" 7141 . 7142) (punctuation ":" 7142 . 7143) (symbol "Feature" 7143 . 7150) (punctuation "<" 7150 . 7151) (symbol "BOOST_ACCUMULATORS_SEQ_REM" 7244 . 7270) (semantic-list "(                                                                 \\
+            BOOST_PP_SEQ_TRANSFORM(BOOST_ACCUMULATORS_ARGS_OP, ~, ParamsSeq)                        \\
+        )" 7270 . 7449) (punctuation ">" 7546 . 7547)))
+          ("BOOST_ACCUMULATORS_ARGS_OP" (spp-arg-list ("s" "data" "elem") 6789 . 6804) . ((spp-symbol-merge ((symbol "T" 6861 . 6862) (symbol "s" 6866 . 6867)) 6861 . 6867)))
+          ("BOOST_ACCUMULATORS_FRAMEWORK_EXTRACTOR_HPP_EAN_28_10_2005")
+          ("BOOST_ACCUMULATORS_SEQ_REM" (spp-arg-list ("Seq") 6603 . 6608) . ((symbol "BOOST_ACCUMULATORS_ARRAY_REM" 6675 . 6703) (semantic-list "(BOOST_PP_SEQ_TO_ARRAY(Seq))" 6703 . 6731)))
+          ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN_IMPL" (spp-arg-list ("z" "n" "Tag" "Feature" "ParamsSeq") 7623 . 7654) . 
+              ((TEMPLATE "template" 7677 . 7685) (punctuation "<" 7685 . 7686) (symbol "BOOST_ACCUMULATORS_SEQ_REM" 7783 . 7809) (semantic-list "(                                                                 \\
+            BOOST_PP_SEQ_TRANSFORM(BOOST_ACCUMULATORS_PARAMS_OP, ~, ParamsSeq)                      \\
+        )" 7809 . 7988) (punctuation "," 8087 . 8088) (TYPENAME "typename" 8089 . 8097) (symbol "Arg1" 8098 . 8102) (symbol "BOOST_PP_ENUM_TRAILING_PARAMS_Z" 8191 . 8222) (semantic-list "(z, n, typename A)" 8222 . 8240) (punctuation ">" 8289 . 8290) (TYPENAME "typename" 8391 . 8399) (symbol "boost" 8400 . 8405) (punctuation ":" 8405 . 8406) (punctuation ":" 8406 . 8407) (symbol "accumulators" 8407 . 8419) (punctuation ":" 8419 . 8420) (punctuation ":" 8420 . 8421) (symbol "detail" 8421 . 8427) (punctuation ":" 8427 . 8428) (punctuation ":" 8428 . 8429) (symbol "extractor_result" 8429 . 8445) (punctuation "<" 8445 . 8446) (symbol "Arg1" 8497 . 8501) (punctuation "," 8597 . 8598) (symbol "BOOST_ACCUMULATORS_MAKE_FEATURE" 8599 . 8630) (semantic-list "(Tag, Feature, ParamsSeq)" 8630 . 8655) (punctuation ">" 8697 . 8698) (punctuation ":" 8698 . 8699) (punctuation ":" 8699 . 8700) (symbol "type" 8700 . 8704) (symbol "Feature" 8799 . 8806) (semantic-list "(Arg1 const &arg1 BOOST_PP_ENUM_TRAILING_BINARY_PARAMS_Z(z, n, A, const &a) )" 8806 . 8883) (semantic-list "{                                                                                               \\
+        typedef BOOST_ACCUMULATORS_MAKE_FEATURE(Tag, Feature, ParamsSeq) feature_type;              \\
+        return boost::accumulators::extractor<feature_type>()(                                      \\
+            arg1 BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a));                                         \\
+    }" 8901 . 9310)))
+          ("BOOST_ACCUMULATORS_ARRAY_REM" (spp-arg-list ("Array") 6396 . 6403) . ((symbol "BOOST_PP_TUPLE_REM_CTOR" 6466 . 6489) (semantic-list "(BOOST_PP_ARRAY_SIZE(Array), BOOST_PP_ARRAY_DATA(Array))" 6489 . 6545)))
+          ("BOOST_ACCUMULATORS_PARAMS_OP" (spp-arg-list ("s" "data" "elem") 6927 . 6942) . ((symbol "elem" 6997 . 7001) (spp-symbol-merge ((symbol "T" 7002 . 7003) (symbol "s" 7007 . 7008)) 7002 . 7008)))
+          ("BOOST_ACCUMULATORS_EXTRACTOR_FUN_OP" (spp-arg-list ("z" "n" "_") 4300 . 4309) . 
+              ((TEMPLATE "template" 4351 . 4359) (punctuation "<" 4359 . 4360) (symbol "BOOST_PP_ENUM_PARAMS_Z" 4360 . 4382) (semantic-list "(z, n, typename A)" 4382 . 4400) (punctuation ">" 4400 . 4401) (STRUCT "struct" 4441 . 4447) (symbol "result" 4448 . 4454) (punctuation "<" 4454 . 4455) (symbol "this_type" 4455 . 4464) (semantic-list "(BOOST_PP_ENUM_PARAMS_Z(z, n, A))" 4464 . 4497) (punctuation ">" 4497 . 4498) (punctuation ":" 4533 . 4534) (symbol "detail" 4535 . 4541) (punctuation ":" 4541 . 4542) (punctuation ":" 4542 . 4543) (symbol "extractor_result" 4543 . 4559) (punctuation "<" 4559 . 4560) (symbol "A1" 4560 . 4562) (punctuation "," 4562 . 4563) (symbol "Feature" 4564 . 4571) (punctuation ">" 4571 . 4572) (semantic-list "{}" 4621 . 4623) (punctuation ";" 4623 . 4624) (TEMPLATE "template" 4711 . 4719) (punctuation "<" 4719 . 4720) (TYPENAME "typename" 4805 . 4813) (symbol "AccumulatorSet" 4814 . 4828) (symbol "BOOST_PP_ENUM_TRAILING_PARAMS_Z" 4895 . 4926) (semantic-list "(z, n, typename A)" 4926 . 4944) (punctuation ">" 4981 . 4982) (TYPENAME "typename" 5071 . 5079) (symbol "detail" 5080 . 5086) (punctuation ":" 5086 . 5087) (punctuation ":" 5087 . 5088) (symbol "extractor_result" 5088 . 5104) (punctuation "<" 5104 . 5105) (symbol "AccumulatorSet" 5105 . 5119) (punctuation "," 5119 . 5120) (symbol "Feature" 5121 . 5128) (punctuation ">" 5128 . 5129) (punctuation ":" 5129 . 5130) (punctuation ":" 5130 . 5131) (symbol "type" 5131 . 5135) (OPERATOR "operator" 5161 . 5169) (semantic-list "()" 5170 . 5172) (semantic-list "(                                                                        \\
+        AccumulatorSet const &acc                                                       \\
+        BOOST_PP_ENUM_TRAILING_BINARY_PARAMS_Z(z, n, A, const &a)                       \\
+    )" 5172 . 5432) (CONST "const" 5433 . 5438) (semantic-list "{                                                                                   \\
+        BOOST_MPL_ASSERT((detail::is_accumulator_set<AccumulatorSet>));                 \\
+        typedef typename as_feature<Feature>::type feature_type;                        \\
+        return extract_result<feature_type>(acc BOOST_PP_ENUM_TRAILING_PARAMS_Z(z, n, a));\\
+    }" 5521 . 5884)))
+          ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN" (spp-arg-list ("z" "n" "_") 9381 . 9390) . ((symbol "BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN_IMPL" 9440 . 9484) (semantic-list "(                                                   \\
+        z                                                                                           \\
+      , n                                                                                           \\
+      , BOOST_PP_ARRAY_ELEM(0, _)                                                                   \\
+      , BOOST_PP_ARRAY_ELEM(1, _)                                                                   \\
+      , BOOST_PP_ARRAY_ELEM(2, _)                                                                   \\
+    )" 9484 . 10053)))
+          ("BOOST_ACCUMULATORS_DEFINE_EXTRACTOR" (spp-arg-list ("Tag" "Feature" "ParamSeq") 10098 . 10122) . ((symbol "BOOST_PP_REPEAT" 10161 . 10176) (semantic-list "(                                                                                \\
+        BOOST_PP_INC(BOOST_ACCUMULATORS_MAX_ARGS)                                                   \\
+      , BOOST_ACCUMULATORS_DEFINE_EXTRACTOR_FUN                                                     \\
+      , (3, (Tag, Feature, ParamSeq))                                                               \\
+    )" 10176 . 10570)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_EXTERNAL_HPP_EAN_01_12_2005" variable (:constant-flag t) nil [362 418])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [420 450])
+            ("boost/accumulators/framework/accumulators/external_accumulator.hpp" include (:system-flag t) nil [451 528]))          
+      :file "external.hpp"
+      :pointmax 783
+      :fsize 782
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_EXTERNAL_HPP_EAN_01_12_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_STATISTICS_STATS_HPP_EAN_08_12_2005" variable (:constant-flag t) nil [360 414])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [416 472])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [473 504])
+            ("boost/accumulators/accumulators_fwd.hpp" include (:system-flag t) nil [505 555])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type (:type "namespace") (reparse-symbol namespacesubparts) [575 881]))                  
+                :type "namespace")
+                nil [557 882]))          
+      :file "features.hpp"
+      :pointmax 924
+      :fsize 923
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax '((punctuation 877 . 878) (semantic-list 874 . 877) (punctuation 872 . 873) (semantic-list 830 . 872) (symbol 810 . 830) (punctuation 809 . 810) (symbol 803 . 809) (punctuation 802 . 803) (punctuation 801 . 802) (symbol 798 . 801) (punctuation 796 . 797) (symbol 785 . 793) (STRUCT 778 . 784) (punctuation 776 . 777) (semantic-list 725 . 776) (symbol 705 . 725) (punctuation 704 . 705) (TEMPLATE 696 . 704))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_STATISTICS_STATS_HPP_EAN_08_12_2005")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_ACCUMULATORS_FRAMEWORK_DEPENDS_ON_HPP_EAN_28_10_2005" variable (:constant-flag t) nil [366 424])
+            ("boost/version.hpp" include (:system-flag t) nil [426 454])
+            ("boost/mpl/end.hpp" include (:system-flag t) nil [455 483])
+            ("boost/mpl/map.hpp" include (:system-flag t) nil [484 512])
+            ("boost/mpl/fold.hpp" include (:system-flag t) nil [513 542])
+            ("boost/mpl/size.hpp" include (:system-flag t) nil [543 572])
+            ("boost/mpl/sort.hpp" include (:system-flag t) nil [573 602])
+            ("boost/mpl/insert.hpp" include (:system-flag t) nil [603 634])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [635 666])
+            ("boost/mpl/remove.hpp" include (:system-flag t) nil [667 698])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [699 730])
+            ("boost/mpl/inherit.hpp" include (:system-flag t) nil [731 763])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [764 797])
+            ("boost/mpl/equal_to.hpp" include (:system-flag t) nil [798 831])
+            ("boost/mpl/contains.hpp" include (:system-flag t) nil [832 865])
+            ("boost/mpl/transform.hpp" include (:system-flag t) nil [866 900])
+            ("boost/mpl/is_sequence.hpp" include (:system-flag t) nil [901 937])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [938 975])
+            ("boost/mpl/insert_range.hpp" include (:system-flag t) nil [976 1013])
+            ("boost/mpl/transform_view.hpp" include (:system-flag t) nil [1014 1053])
+            ("boost/mpl/inherit_linearly.hpp" include (:system-flag t) nil [1054 1095])
+            ("boost/type_traits/is_base_and_derived.hpp" include (:system-flag t) nil [1096 1148])
+            ("boost/preprocessor/repetition/repeat.hpp" include (:system-flag t) nil [1149 1200])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [1201 1257])
+            ("boost/preprocessor/facilities/intercept.hpp" include (:system-flag t) nil [1258 1312])
+            ("boost/accumulators/accumulators_fwd.hpp" include (:system-flag t) nil [1313 1363])
+            ("boost/fusion/include/next.hpp" include (:system-flag t) nil [1364 1404])
+            ("boost/fusion/include/equal_to.hpp" include (:system-flag t) nil [1405 1449])
+            ("boost/fusion/include/value_of.hpp" include (:system-flag t) nil [1450 1494])
+            ("boost/fusion/include/mpl.hpp" include (:system-flag t) nil [1495 1534])
+            ("boost/fusion/include/end.hpp" include (:system-flag t) nil [1535 1574])
+            ("boost/fusion/include/begin.hpp" include (:system-flag t) nil [1575 1616])
+            ("boost/fusion/include/cons.hpp" include (:system-flag t) nil [1617 1657])
+            ("boost" type
+               (:members 
+                  ( ("accumulators" type
+                       (:members 
+                          ( ("as_feature" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Feature" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1867 1888]))                                  )
+                                (reparse-symbol namespacesubparts) [1804 1895])
+                            ("as_weighted_feature" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Feature" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2077 2098]))                                  )
+                                (reparse-symbol namespacesubparts) [2005 2105])
+                            ("feature_of" type
+                               (:template 
+                                  ( ("Feature" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Feature" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2272 2293]))                                  )
+                                (reparse-symbol namespacesubparts) [2209 2300])
+                            ("detail" type
+                               (:members 
+                                  ( ("feature_tag" type
+                                       (:template 
+                                          ( ("Accumulator" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("Accumulator::feature_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2524 2571]))                                          )
+                                        (reparse-symbol namespacesubparts) [2444 2582])
+                                    ("undroppable" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("Feature" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2668 2689]))                                          )
+                                        (reparse-symbol namespacesubparts) [2592 2700])
+                                    ("undroppable" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("Feature" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2812 2833]))                                          
+                                        :template-specifier 
+                                          ( ("tag::droppable" type (:template-specifier 
+                                              ( ("Feature" type nil nil nil))                                              ) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2710 2844])
+                                    ("type" variable (:type "int") (reparse-symbol namespacesubparts) [3652 3677]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2306 3683])
+                            ("detail" type
+                               (:members 
+                                  ( ("matches_feature" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4443 4844])
+                                    ("contains_feature_of" type
+                                       (:template 
+                                          ( ("Features" type (:type "class") nil nil)
+                                            ("Accumulator" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("features_list" type
+                                               (:typedef ("mpl::transform_view" type
+                                                     (:template-specifier 
+                                                        ( ("Features" type nil nil nil)
+                                                          ("feature_of" type (:template-specifier 
+                                                            ( ("as_feature" type (:template-specifier 
+                                                                ( ("mpl::_" type nil nil nil))                                                                ) nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4961 5075])
+                                            ("the_feature" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5175 5204])
+                                            ("type" type
+                                               (:typedef ("mpl::contains::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5218 5316]))                                          )
+                                        (reparse-symbol namespacesubparts) [4854 5327])
+                                    ("contains_feature_of_" type
+                                       (:template 
+                                          ( ("Features" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Accumulator" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("contains_feature_of" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  )
+                                                (reparse-symbol classsubparts) [5621 5751]))                                          )
+                                        (reparse-symbol namespacesubparts) [5535 5762])
+                                    ("build_acc_list" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5929 5951])
+                                    ("build_acc_list" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("fusion::nil" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6072 6097])
+                                            ("call" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("fusion::nil" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6183 6196])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("First" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6197 6210])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Last" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6211 6223]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6111 6289]))                                          
+                                        :template-specifier 
+                                          ( ("First" type nil nil nil)
+                                            ("Last" type nil nil nil)
+                                            ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5961 6300])
+                                    ("build_acc_list" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("next_build_acc_list" variable (:type "int") (reparse-symbol classsubparts) [6526 6546])
+                                            ("type" variable (:type "int") (reparse-symbol classsubparts) [6712 6717])
+                                            ("call" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6796 6813])
+                                                    ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("First" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6814 6829])
+                                                    ("l" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Last" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6830 6844]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6731 6960]))                                          
+                                        :template-specifier 
+                                          ( ("First" type nil nil nil)
+                                            ("Last" type nil nil nil)
+                                            ("false" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6310 6971])
+                                    ("meta" type (:type "namespace") (reparse-symbol namespacesubparts) [6981 7292])
+                                    ("make_acc_list" function
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil)
+                                            ("Args" type (:type "class") nil nil))                                          
+                                        :type ("meta::make_acc_list::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("seq" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7420 7440])
+                                            ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7441 7458]))                                          
+                                        :typemodifiers ("typename"))
+                                        (reparse-symbol namespacesubparts) [7302 7578])
+                                    ("checked_as_weighted_feature" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("feature_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7841 7859])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7924 7934])
+                                            ("BOOST_MPL_ASSERT" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8029 8218]))                                          )
+                                        (reparse-symbol namespacesubparts) [7711 8229])
+                                    ("as_feature_list" type
+                                       (:template 
+                                          ( ("Features" type (:type "class") nil nil)
+                                            ("Weight" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::transform_view" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8350 8527])
+                                    ("as_feature_list" type
+                                       (:template 
+                                          ( ("Features" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::transform_view" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("Features" type nil nil nil)
+                                            ("void" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8537 8696])
+                                    ("accumulator_wrapper" type
+                                       (:template 
+                                          ( ("Accumulator" type (:type "class") nil nil)
+                                            ("Feature" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("feature_tag" type
+                                               (:typedef ("Feature" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8951 8979])
+                                            ("accumulator_wrapper" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("that" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("accumulator_wrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9013 9045]))                                                  
+                                                :type ("accumulator_wrapper" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [8993 9143])
+                                            ("accumulator_wrapper" function
+                                               (:template 
+                                                  ( ("Args" type (:type "class") nil nil))                                                  
+                                                :type ("accumulator_wrapper" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("args" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9213 9230]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [9157 9292]))                                          
+                                        :superclasses 
+                                          ( ("Accumulator" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8821 9303])
+                                    ("to_accumulator" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil)
+                                            ("Sample" type (:type "class") nil nil)
+                                            ("Weight" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [9726 9731]))                                          )
+                                        (reparse-symbol namespacesubparts) [9423 9742])
+                                    ("to_accumulator" type
+                                       (:template 
+                                          ( ("Feature" type (:type "class") nil nil)
+                                            ("Sample" type (:type "class") nil nil)
+                                            ("Weight" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil)
+                                            ("AccumulatorSet" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_MPL_ASSERT" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [9966 10005])
+                                            ("BOOST_MPL_ASSERT" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [10018 10068])
+                                            ("accumulator_type" variable (:type "int") (reparse-symbol classsubparts) [10272 10289])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10564 10586]))                                          
+                                        :template-specifier 
+                                          ( ("Feature" type nil nil nil)
+                                            ("Sample" type nil nil nil)
+                                            ("tag::external" type (:template-specifier 
+                                              ( ("Weight" type nil nil nil)
+                                                ("Tag" type nil nil nil)
+                                                ("AccumulatorSet" type nil nil nil))                                              ) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9752 10597])
+                                    ("insert_sequence" type
+                                       (:template 
+                                          ( ("FeatureMap" type (:type "class") nil nil)
+                                            ("Features" type (:type "class") nil nil)
+                                            ("Weight" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::fold" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [11458 11807])
+                                    ("make_accumulator_tuple" type
+                                       (:template 
+                                          ( ("Features" type (:type "class") nil nil)
+                                            ("Sample" type (:type "class") nil nil)
+                                            ("Weight" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("feature_map" type
+                                               (:typedef ("mpl::fold::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [11939 12342])
+                                            ("feature_map_with_dependencies" type
+                                               (:typedef ("mpl::fold::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12426 12679])
+                                            ("feature_vector_with_dependencies" type
+                                               (:typedef ("mpl::insert_range::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12753 13053])
+                                            ("sorted_feature_vector" type
+                                               (:typedef ("mpl::sort::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [13141 13350])
+                                            ("type" type
+                                               (:typedef ("mpl::transform::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [13443 13635]))                                          )
+                                        (reparse-symbol namespacesubparts) [11817 13646]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [4412 13653]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1677 13676]))                  
+                :type "namespace")
+                nil [1659 13677]))          
+      :file "depends_on.hpp"
+      :pointmax 13719
+      :fsize 13718
+      :lastmodtime '(20225 54173 0 0)
+      :unmatched-syntax '((punctuation 11447 . 11448) (semantic-list 11436 . 11447) (punctuation 11426 . 11427) (punctuation 11412 . 11413) (symbol 11389 . 11395) (punctuation 11387 . 11388) (symbol 11366 . 11368) (punctuation 11365 . 11366) (punctuation 11364 . 11365) (symbol 11361 . 11364) (punctuation 11359 . 11360) (punctuation 11339 . 11340) (symbol 11337 . 11339) (punctuation 11336 . 11337) (punctuation 11335 . 11336) (symbol 11332 . 11335) (punctuation 11330 . 11331) (symbol 11328 . 11330) (punctuation 11327 . 11328) (punctuation 11326 . 11327) (symbol 11323 . 11326) (punctuation 11322 . 11323) (symbol 11308 . 11322) (punctuation 11286 . 11287) (symbol 11267 . 11286) (punctuation 11265 . 11266) (symbol 11240 . 11250) (punctuation 11238 . 11239) (punctuation 11222 . 11223) (symbol 11216 . 11222) (punctuation 11214 . 11215) (symbol 11202 . 11214) (punctuation 11201 . 11202) (punctuation 11200 . 11201) (symbol 11193 . 11200) (TYPENAME 11184 . 11192) (punctuation 11183 . 11184) (symbol 11168 . 11183) (punctuation 11150 . 11151) (symbol 11146 . 11150) (punctuation 11145 . 11146) (punctuation 11144 . 11145) (symbol 11141 . 11144) (punctuation 11139 . 11140) (symbol 11109 . 11128) (STRUCT 11102 . 11108) (punctuation 11092 . 11093) (symbol 11086 . 11092) (TYPENAME 11077 . 11085) (punctuation 11075 . 11076) (symbol 11068 . 11075) (TYPENAME 11059 . 11067) (punctuation 11057 . 11058) (symbol 11047 . 11057) (TYPENAME 11038 . 11046) (punctuation 11037 . 11038) (TEMPLATE 11029 . 11037) (punctuation 11018 . 11019) (semantic-list 11007 . 11018) (punctuation 10997 . 10998) (punctuation 10983 . 10984) (punctuation 10981 . 10982) (symbol 10974 . 10981) (punctuation 10972 . 10973) (symbol 10968 . 10972) (punctuation 10967 . 10968) (punctuation 10966 . 10967) (punctuation 10965 . 10966) (symbol 10958 . 10965) (punctuation 10957 . 10958) (symbol 10947 . 10957) (TYPENAME 10938 . 10946) (punctuation 10937 . 10938) (symbol 10933 . 10937) (punctuation 10932 . 10933) (punctuation 10931 . 10932) (symbol 10928 . 10931) (punctuation 10926 . 10927) (symbol 10916 . 10926) (punctuation 10915 . 10916) (symbol 10909 . 10915) (punctuation 10908 . 10909) (punctuation 10907 . 10908) (symbol 10904 . 10907) (punctuation 10902 . 10903) (punctuation 10886 . 10887) (symbol 10876 . 10886) (punctuation 10875 . 10876) (symbol 10867 . 10875) (punctuation 10866 . 10867) (punctuation 10865 . 10866) (symbol 10862 . 10865) (punctuation 10860 . 10861) (punctuation 10844 . 10845) (symbol 10840 . 10844) (punctuation 10839 . 10840) (punctuation 10838 . 10839) (punctuation 10837 . 10838) (symbol 10830 . 10837) (punctuation 10829 . 10830) (symbol 10819 . 10829) (TYPENAME 10810 . 10818) (punctuation 10808 . 10809) (symbol 10798 . 10808) (punctuation 10797 . 10798) (symbol 10790 . 10797) (punctuation 10789 . 10790) (punctuation 10788 . 10789) (symbol 10785 . 10788) (punctuation 10767 . 10768) (symbol 10760 . 10767) (punctuation 10759 . 10760) (punctuation 10758 . 10759) (symbol 10755 . 10758) (punctuation 10753 . 10754) (symbol 10728 . 10742) (STRUCT 10721 . 10727) (punctuation 10711 . 10712) (symbol 10704 . 10711) (TYPENAME 10695 . 10703) (punctuation 10693 . 10694) (symbol 10683 . 10693) (TYPENAME 10674 . 10682) (punctuation 10673 . 10674) (TEMPLATE 10665 . 10673) (punctuation 10563 . 10564) (punctuation 10562 . 10563) (punctuation 10561 . 10562) (symbol 10528 . 10544) (punctuation 10526 . 10527) (punctuation 10506 . 10507) (symbol 10499 . 10506) (punctuation 10497 . 10498) (punctuation 10496 . 10497) (symbol 10489 . 10496) (punctuation 10488 . 10489) (punctuation 10487 . 10488) (symbol 10484 . 10487) (punctuation 10482 . 10483) (symbol 10466 . 10482) (punctuation 10465 . 10466) (symbol 10452 . 10465) (punctuation 10451 . 10452) (punctuation 10450 . 10451) (symbol 10446 . 10450) (punctuation 10445 . 10446) (symbol 10426 . 10445) (punctuation 10424 . 10425) (symbol 10384 . 10405) (punctuation 10383 . 10384) (punctuation 10382 . 10383) (symbol 10375 . 10382) (TYPENAME 10366 . 10374) (punctuation 10344 . 10345) (symbol 10341 . 10344) (punctuation 10340 . 10341) (punctuation 10339 . 10340) (symbol 10336 . 10339) (TYPENAME 10327 . 10335) (TYPEDEF 10303 . 10310) (punctuation 10258 . 10259) (symbol 10234 . 10241) (punctuation 10232 . 10233) (symbol 10209 . 10213) (punctuation 10208 . 10209) (punctuation 10207 . 10208) (punctuation 10206 . 10207) (symbol 10200 . 10206) (punctuation 10198 . 10199) (symbol 10192 . 10198) (punctuation 10190 . 10191) (symbol 10186 . 10190) (punctuation 10185 . 10186) (punctuation 10184 . 10185) (symbol 10177 . 10184) (TYPENAME 10168 . 10176) (punctuation 10167 . 10168) (symbol 10161 . 10167) (punctuation 10160 . 10161) (punctuation 10159 . 10160) (symbol 10156 . 10159) (TYPENAME 10147 . 10155) (punctuation 10125 . 10126) (symbol 10106 . 10125) (TYPEDEF 10082 . 10089) (semantic-list 10035 . 10066) (semantic-list 9983 . 10003) (punctuation 9712 . 9713) (symbol 9688 . 9695) (punctuation 9686 . 9687) (symbol 9663 . 9667) (punctuation 9662 . 9663) (punctuation 9661 . 9662) (punctuation 9660 . 9661) (symbol 9654 . 9660) (punctuation 9652 . 9653) (symbol 9646 . 9652) (punctuation 9644 . 9645) (symbol 9640 . 9644) (punctuation 9639 . 9640) (punctuation 9638 . 9639) (symbol 9631 . 9638) (TYPENAME 9622 . 9630) (punctuation 9621 . 9622) (symbol 9615 . 9621) (punctuation 9614 . 9615) (punctuation 9613 . 9614) (symbol 9610 . 9613) (TYPENAME 9601 . 9609) (punctuation 9579 . 9580) (symbol 9560 . 9579) (TYPEDEF 9536 . 9543) (semantic-list 8046 . 8216) (punctuation 7923 . 7924) (punctuation 7922 . 7923) (punctuation 7921 . 7922) (symbol 7909 . 7921) (punctuation 7908 . 7909) (symbol 7889 . 7908) (TYPENAME 7880 . 7888) (TYPEDEF 7872 . 7879) (punctuation 7840 . 7841) (punctuation 7839 . 7840) (punctuation 7838 . 7839) (symbol 7831 . 7838) (punctuation 7830 . 7831) (symbol 7820 . 7830) (TYPENAME 7811 . 7819) (TYPEDEF 7803 . 7810) (punctuation 7281 . 7282) (semantic-list 7279 . 7281) (punctuation 7265 . 7266) (symbol 7244 . 7248) (punctuation 7243 . 7244) (punctuation 7242 . 7243) (punctuation 7241 . 7242) (symbol 7233 . 7241) (punctuation 7232 . 7233) (symbol 7229 . 7232) (punctuation 7228 . 7229) (punctuation 7227 . 7228) (symbol 7218 . 7227) (punctuation 7217 . 7218) (punctuation 7216 . 7217) (symbol 7210 . 7216) (TYPENAME 7201 . 7209) (punctuation 7199 . 7200) (symbol 7176 . 7180) (punctuation 7175 . 7176) (punctuation 7174 . 7175) (punctuation 7173 . 7174) (symbol 7165 . 7173) (punctuation 7164 . 7165) (symbol 7159 . 7164) (punctuation 7158 . 7159) (punctuation 7157 . 7158) (symbol 7148 . 7157) (punctuation 7147 . 7148) (punctuation 7146 . 7147) (symbol 7140 . 7146) (TYPENAME 7131 . 7139) (punctuation 7109 . 7110) (symbol 7095 . 7109) (punctuation 7093 . 7094) (symbol 7065 . 7078) (STRUCT 7058 . 7064) (punctuation 7044 . 7045) (symbol 7036 . 7044) (TYPENAME 7027 . 7035) (punctuation 7026 . 7027) (TEMPLATE 7018 . 7026) (punctuation 6698 . 6699) (symbol 6694 . 6698) (punctuation 6693 . 6694) (punctuation 6692 . 6693) (symbol 6673 . 6692) (TYPENAME 6664 . 6672) (punctuation 6662 . 6663) (symbol 6643 . 6647) (punctuation 6642 . 6643) (punctuation 6641 . 6642) (punctuation 6640 . 6641) (symbol 6635 . 6640) (punctuation 6634 . 6635) (symbol 6626 . 6634) (punctuation 6625 . 6626) (punctuation 6624 . 6625) (symbol 6615 . 6624) (punctuation 6614 . 6615) (punctuation 6613 . 6614) (symbol 6607 . 6613) (TYPENAME 6598 . 6606) (punctuation 6580 . 6581) (symbol 6576 . 6580) (punctuation 6575 . 6576) (punctuation 6574 . 6575) (symbol 6568 . 6574) (TYPEDEF 6560 . 6567) (punctuation 6512 . 6513) (symbol 6508 . 6512) (punctuation 6506 . 6507) (symbol 6502 . 6506) (punctuation 6501 . 6502) (punctuation 6500 . 6501) (punctuation 6499 . 6500) (symbol 6494 . 6499) (punctuation 6493 . 6494) (symbol 6489 . 6493) (punctuation 6488 . 6489) (punctuation 6487 . 6488) (symbol 6478 . 6487) (punctuation 6477 . 6478) (punctuation 6476 . 6477) (symbol 6470 . 6476) (TYPENAME 6461 . 6469) (punctuation 6460 . 6461) (symbol 6446 . 6460) (TYPEDEF 6422 . 6429) (punctuation 5919 . 5920) (symbol 5905 . 5910) (punctuation 5904 . 5905) (punctuation 5903 . 5904) (punctuation 5902 . 5903) (symbol 5898 . 5902) (punctuation 5896 . 5897) (symbol 5891 . 5896) (punctuation 5890 . 5891) (symbol 5882 . 5890) (punctuation 5881 . 5882) (punctuation 5880 . 5881) (symbol 5871 . 5880) (punctuation 5870 . 5871) (punctuation 5869 . 5870) (symbol 5863 . 5869) (punctuation 5861 . 5862) (symbol 5852 . 5860) (BOOL 5847 . 5851) (punctuation 5845 . 5846) (symbol 5830 . 5834) (TYPENAME 5821 . 5829) (punctuation 5819 . 5820) (symbol 5803 . 5808) (TYPENAME 5794 . 5802) (punctuation 5780 . 5781) (TEMPLATE 5772 . 5780) (punctuation 5174 . 5175) (punctuation 5173 . 5174) (punctuation 5172 . 5173) (symbol 5168 . 5172) (punctuation 5167 . 5168) (punctuation 5166 . 5167) (punctuation 5165 . 5166) (symbol 5154 . 5165) (punctuation 5153 . 5154) (symbol 5142 . 5153) (TYPENAME 5133 . 5141) (punctuation 5132 . 5133) (symbol 5122 . 5132) (TYPENAME 5113 . 5121) (TYPEDEF 5089 . 5096) (punctuation 4832 . 4833) (semantic-list 4830 . 4832) (punctuation 4816 . 4817) (symbol 4795 . 4799) (punctuation 4794 . 4795) (punctuation 4793 . 4794) (punctuation 4792 . 4793) (symbol 4788 . 4792) (punctuation 4787 . 4788) (punctuation 4786 . 4787) (punctuation 4785 . 4786) (symbol 4781 . 4785) (punctuation 4780 . 4781) (punctuation 4779 . 4780) (punctuation 4778 . 4779) (symbol 4767 . 4778) (punctuation 4766 . 4767) (symbol 4755 . 4766) (TYPENAME 4746 . 4754) (punctuation 4745 . 4746) (symbol 4735 . 4745) (TYPENAME 4726 . 4734) (punctuation 4725 . 4726) (symbol 4715 . 4725) (TYPENAME 4706 . 4714) (punctuation 4704 . 4705) (symbol 4681 . 4685) (punctuation 4680 . 4681) (punctuation 4679 . 4680) (punctuation 4678 . 4679) (symbol 4674 . 4678) (punctuation 4673 . 4674) (punctuation 4672 . 4673) (punctuation 4671 . 4672) (symbol 4664 . 4671) (punctuation 4663 . 4664) (symbol 4653 . 4663) (TYPENAME 4644 . 4652) (punctuation 4643 . 4644) (symbol 4633 . 4643) (TYPENAME 4624 . 4632) (punctuation 4602 . 4603) (symbol 4595 . 4602) (punctuation 4593 . 4594) (symbol 4573 . 4578) (STRUCT 4566 . 4572) (punctuation 4552 . 4553) (symbol 4541 . 4552) (TYPENAME 4532 . 4540) (punctuation 4531 . 4532) (TEMPLATE 4523 . 4531) (punctuation 4405 . 4406) (semantic-list 4124 . 4405) (punctuation 4118 . 4119) (symbol 4105 . 4109) (punctuation 4104 . 4105) (punctuation 4103 . 4104) (punctuation 4102 . 4103) (punctuation 4088 . 4089) (symbol 4086 . 4088) (punctuation 4085 . 4086) (punctuation 4084 . 4085) (symbol 4081 . 4084) (punctuation 4080 . 4081) (symbol 4070 . 4080) (punctuation 4068 . 4069) (punctuation 4052 . 4053) (semantic-list 4010 . 4052) (symbol 3990 . 4010) (punctuation 3989 . 3990) (symbol 3983 . 3989) (punctuation 3982 . 3983) (punctuation 3981 . 3982) (symbol 3978 . 3981) (punctuation 3960 . 3961) (symbol 3951 . 3960) (punctuation 3950 . 3951) (punctuation 3949 . 3950) (symbol 3946 . 3949) (TYPENAME 3937 . 3945) (punctuation 3923 . 3924) (symbol 3908 . 3923) (punctuation 3907 . 3908) (punctuation 3906 . 3907) (symbol 3900 . 3906) (punctuation 3898 . 3899) (symbol 3881 . 3891) (STRUCT 3874 . 3880) (punctuation 3868 . 3869) (semantic-list 3817 . 3868) (symbol 3797 . 3817) (punctuation 3796 . 3797) (TEMPLATE 3788 . 3796) (punctuation 3651 . 3652) (punctuation 3650 . 3651) (punctuation 3649 . 3650) (punctuation 3635 . 3636) (punctuation 3617 . 3618) (symbol 3615 . 3617) (punctuation 3614 . 3615) (punctuation 3613 . 3614) (symbol 3610 . 3613) (punctuation 3608 . 3609) (symbol 3606 . 3608) (punctuation 3605 . 3606) (punctuation 3604 . 3605) (symbol 3601 . 3604) (punctuation 3600 . 3601) (symbol 3593 . 3600) (punctuation 3592 . 3593) (punctuation 3591 . 3592) (symbol 3588 . 3591) (punctuation 3586 . 3587) (symbol 3565 . 3567) (punctuation 3564 . 3565) (punctuation 3563 . 3564) (symbol 3560 . 3563) (punctuation 3558 . 3559) (punctuation 3538 . 3539) (symbol 3536 . 3538) (punctuation 3535 . 3536) (punctuation 3534 . 3535) (symbol 3531 . 3534) (punctuation 3529 . 3530) (symbol 3527 . 3529) (punctuation 3526 . 3527) (punctuation 3525 . 3526) (symbol 3522 . 3525) (punctuation 3521 . 3522) (symbol 3506 . 3521) (punctuation 3484 . 3485) (symbol 3481 . 3484) (punctuation 3480 . 3481) (punctuation 3479 . 3480) (symbol 3476 . 3479) (punctuation 3474 . 3475) (symbol 3398 . 3402) (punctuation 3397 . 3398) (punctuation 3396 . 3397) (punctuation 3395 . 3396) (punctuation 3393 . 3394) (symbol 3391 . 3393) (punctuation 3390 . 3391) (punctuation 3389 . 3390) (symbol 3386 . 3389) (punctuation 3384 . 3385) (symbol 3382 . 3384) (punctuation 3381 . 3382) (punctuation 3380 . 3381) (symbol 3377 . 3380) (punctuation 3376 . 3377) (symbol 3361 . 3376) (punctuation 3359 . 3360) (symbol 3351 . 3359) (punctuation 3350 . 3351) (symbol 3346 . 3350) (punctuation 3345 . 3346) (punctuation 3344 . 3345) (symbol 3341 . 3344) (TYPENAME 3332 . 3340) (punctuation 3314 . 3315) (symbol 3298 . 3314) (punctuation 3297 . 3298) (punctuation 3296 . 3297) (symbol 3293 . 3296) (punctuation 3291 . 3292) (symbol 3265 . 3280) (STRUCT 3258 . 3264) (punctuation 3248 . 3249) (symbol 3240 . 3248) (TYPENAME 3231 . 3239) (punctuation 3230 . 3231) (TEMPLATE 3222 . 3230) (punctuation 3211 . 3212) (semantic-list 3209 . 3211) (punctuation 3199 . 3200) (symbol 3182 . 3186) (punctuation 3181 . 3182) (punctuation 3180 . 3181) (punctuation 3179 . 3180) (symbol 3178 . 3179) (punctuation 3177 . 3178) (symbol 3166 . 3177) (TYPENAME 3157 . 3165) (punctuation 3155 . 3156) (symbol 3136 . 3140) (punctuation 3135 . 3136) (punctuation 3134 . 3135) (punctuation 3133 . 3134) (symbol 3132 . 3133) (punctuation 3131 . 3132) (symbol 3120 . 3131) (TYPENAME 3111 . 3119) (punctuation 3093 . 3094) (symbol 3074 . 3093) (punctuation 3072 . 3073) (symbol 3046 . 3061) (STRUCT 3039 . 3045) (punctuation 3029 . 3030) (symbol 3028 . 3029) (TYPENAME 3019 . 3027) (punctuation 3017 . 3018) (symbol 3016 . 3017) (TYPENAME 3007 . 3015) (punctuation 3006 . 3007) (TEMPLATE 2998 . 3006))
+      :lexical-table 
+        '(("BOOST_ACCUMULATORS_FRAMEWORK_DEPENDS_ON_HPP_EAN_28_10_2005")
+          )
+))
+  :file "!usr!include!boost!accumulators!framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

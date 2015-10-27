@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/thread/thread.hpp" include (:system-flag t) nil [22 56])
+            ("pcl/common/common_headers.h" include (:system-flag t) nil [58 96])
+            ("pcl/range_image/range_image.h" include (:system-flag t) nil [97 137])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [138 164])
+            ("pcl/visualization/range_image_visualizer.h" include (:system-flag t) nil [165 218])
+            ("pcl/visualization/pcl_visualizer.h" include (:system-flag t) nil [219 264])
+            ("pcl/console/parse.h" include (:system-flag t) nil [265 295])
+            ("PointType" type
+               (:typedef ("pcl::PointXYZ" type (:type "class") nil nil)
+                :type "typedef")
+                nil [297 329])
+            ("angular_resolution_x" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [403 488])
+            ("angular_resolution_y" variable
+               (:default-value "angular_resolution_x"
+                :type "float")
+                nil [403 488])
+            ("pcl::RangeImage::CAMERA_FRAME" variable (:type "int") nil [541 571])
+            ("live_update" variable
+               (:default-value "false"
+                :type "bool")
+                nil [572 597])
+            ("printUsage" function
+               (:arguments 
+                  ( ("progName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [671 692]))                  
+                :type "void")
+                nil [653 1325])
+            ("setViewerPose" function
+               (:arguments 
+                  ( ("viewer" variable
+                       (:reference 1
+                        :type ("pcl::visualization::PCLVisualizer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1348 1390])
+                    ("viewer_pose" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1391 1426]))                  
+                :type "void")
+                nil [1327 1913])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1980 1989])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1990 2002]))                  
+                :type "int")
+                nil [1969 7168]))          
+      :file "main.cpp"
+      :pointmax 7169
+      :fsize 7168
+      :lastmodtime '(21606 51338 0 0)
+      :unmatched-syntax '((punctuation 539 . 540) (symbol 522 . 538) (symbol 506 . 521) (punctuation 505 . 506) (punctuation 504 . 505) (symbol 494 . 504) (punctuation 493 . 494) (punctuation 492 . 493) (symbol 489 . 492))))
+  :file "!home!krishneel!Desktop!Program!range_image!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

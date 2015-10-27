@@ -1,0 +1,85 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [1 21])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [22 58])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [59 103])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [104 132])
+            ("pcl/point_types.h" include (:system-flag t) nil [133 161])
+            ("dynamic_reconfigure/server.h" include (:system-flag t) nil [162 201])
+            ("drc_task_common/SwitchInputCloudConfig.h" include (:system-flag t) nil [202 253])
+            ("SwitchInputCloud" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [279 287])
+                    ("n" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [290 308])
+                    ("passthrough_sub" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [311 343])
+                    ("raw_sub" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [346 370])
+                    ("point_pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [373 398])
+                    ("pub_msg" variable (:type ("sensor_msgs::PointCloud2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [401 434])
+                    ("server" variable (:type ("dynamic_reconfigure::Server" type
+                         (:template-specifier 
+                            ( ("drc_task_common::SwitchInputCloudConfig" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [437 513])
+                    ("f" variable (:type ("dynamic_reconfigure::Server::CallbackType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [516 601])
+                    ("debug_flag" variable (:type "bool") (reparse-symbol classsubparts) [604 620])
+                    ("public" label nil (reparse-symbol classsubparts) [624 631])
+                    ("SwitchInputCloud" function
+                       (:constructor-flag t
+                        :type ("SwitchInputCloud" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [634 1055])
+                    ("SwitchInputCloud" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1058 1082])
+                    ("dynamic_reconfigure_cb" function
+                       (:arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("drc_task_common::SwitchInputCloudConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1195])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1196 1211]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1119 1337])
+                    ("passthrough_cb" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1421 1465]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1401 1536])
+                    ("raw_cb" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1602 1646]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1590 1716]))                  
+                :type "class")
+                nil [255 1719])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1731 1740])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1741 1753]))                  
+                :type "int")
+                nil [1722 1903]))          
+      :file "input_cloud_switching.cpp"
+      :pointmax 1904
+      :fsize 1903
+      :lastmodtime '(21802 16584 975408 365000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!jsk-ros-pkg!jsk_demos!jsk_2015_06_hrp_drc!drc_task_common!src!drc_task_common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

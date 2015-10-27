@@ -1,0 +1,197 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [152 171])
+            ("vector" include (:system-flag t) nil [172 189])
+            ("fstream" include (:system-flag t) nil [190 208])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [210 239])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [240 278])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [279 323])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [324 365])
+            ("opencv2/legacy/legacy.hpp" include (:system-flag t) nil [366 402])
+            ("opencv2/objdetect/objdetect.hpp" include (:system-flag t) nil [403 445])
+            ("opencv2/gpu/gpu.hpp" include (:system-flag t) nil [446 476])
+            ("opencv2/ml/ml.hpp" include (:system-flag t) nil [477 505])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [507 526])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [527 547])
+            ("N_BIN" variable (:constant-flag t) nil [557 562])
+            ("THETA" variable (:constant-flag t) nil [573 578])
+            ("CELL_SIZE" variable (:constant-flag t) nil [602 611])
+            ("BLOCK_SIZE" variable (:constant-flag t) nil [622 632])
+            ("R" variable (:constant-flag t) nil [643 644])
+            ("calculateIntegralHOG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [711 728]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Mat" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [678 729])
+            ("calculateHOGInCell" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hogCell" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [754 767])
+                    ("roi" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [768 777])
+                    ("integrals" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [778 807]))                  
+                :type "void")
+                nil [730 808])
+            ("getHOG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pt" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [820 829])
+                    ("integrals" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [830 859]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [809 860])
+            ("getImages" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [877 889])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [890 897])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [898 915])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [916 922]))                  
+                :type "void")
+                nil [862 923])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [935 944])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [945 965]))                  
+                :type "int")
+                nil [926 3299])
+            ("getImages" function
+               (:arguments 
+                  ( ("textPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3316 3337])
+                    ("dir" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3338 3349])
+                    ("directory" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3350 3376])
+                    ("label" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3377 3388]))                  
+                :type "void")
+                nil [3301 3983])
+            ("calculateIntegralHOG" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4018 4035]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Mat" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3985 4937])
+            ("calculateHOGInCell" function
+               (:arguments 
+                  ( ("hogCell" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4963 4976])
+                    ("roi" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4977 4986])
+                    ("integrals" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4987 5016]))                  
+                :type "void")
+                nil [4939 5435])
+            ("getHOG" function
+               (:arguments 
+                  ( ("pt" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5448 5457])
+                    ("integrals" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5458 5487]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [5437 6114]))          
+      :file "main.cpp"
+      :pointmax 6114
+      :fsize 6113
+      :lastmodtime '(21134 48070 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("THETA" . ((semantic-list "(180 / N_BIN)" 579 . 592)))
+          ("R" . ((semantic-list "(CELL_SIZE * (BLOCK_SIZE)* 0.5)" 645 . 676)))
+          ("CELL_SIZE" . ((number "8" 612 . 613)))
+          ("N_BIN" . ((number "9" 563 . 564)))
+          ("BLOCK_SIZE" . ((number "2" 633 . 634)))
+          )
+))
+  :file "!media!KRISHNEEL!MacBook Back-Up!chaudharykrishneel!Desktop!Master Course!Research Programs!HOG!HOG!HOG!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

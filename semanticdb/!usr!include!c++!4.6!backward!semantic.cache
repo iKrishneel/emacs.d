@@ -1,0 +1,196 @@
+;; Object backward/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "backward/"
+  :tables
+  (list
+    (semanticdb-table "auto_ptr.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_BACKWARD_AUTO_PTR_H" variable (:constant-flag t) nil [1303 1323])
+            ("bits/c++config.h" include (:system-flag t) nil [1327 1354])
+            ("debug/debug.h" include (:system-flag t) nil [1355 1379])
+            ("std" type
+               (:members 
+                  ( ("auto_ptr_ref" type
+                       (:template 
+                          ( ("_Tp1" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("_M_ptr" variable
+                               (:pointer 1
+                                :type ("_Tp1" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1809 1822])
+                            ("auto_ptr_ref" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__p" variable
+                                       (:pointer 1
+                                        :type ("_Tp1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1864 1874]))                                  
+                                :type ("auto_ptr_ref" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1851 1891]))                          )
+                        (reparse-symbol namespacesubparts) [1749 1918])
+                    ("auto_ptr" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [3208 3216])
+                            ("_M_ptr" variable
+                               (:pointer 1
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3223 3235])
+                            ("public" label nil (reparse-symbol classsubparts) [3247 3254])
+                            ("element_type" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3292 3317])
+                            ("auto_ptr" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__p" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("element_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3574 3595]))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3565 3622])
+                            ("auto_ptr" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("auto_ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3910 3924]))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3901 3960])
+                            ("auto_ptr" function
+                               (:template 
+                                  ( ("_Tp1" type (:type "class") nil nil))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("auto_ptr" type
+                                             (:template-specifier 
+                                                ( ("_Tp1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4394 4414]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4353 4450])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("auto_ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4809 4823]))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4783 4885])
+                            ("=" function
+                               (:template 
+                                  ( ("_Tp1" type (:type "class") nil nil))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("auto_ptr" type
+                                             (:template-specifier 
+                                                ( ("_Tp1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5382 5402]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [5322 5465])
+                            ("auto_ptr" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5943 5973])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type ("element_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6335 6452])
+                            ("->" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :pointer 1
+                                :type ("element_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6664 6781])
+                            ("get" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("element_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7151 7209])
+                            ("release" function
+                               (:pointer 1
+                                :type ("element_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7651 7763])
+                            ("reset" function
+                               (:arguments 
+                                  ( ("__p" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("element_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8043 8064]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8026 8158])
+                            ("auto_ptr" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__ref" variable (:type ("auto_ptr_ref" type
+                                         (:template-specifier 
+                                            ( ("element_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8575 8608]))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8566 8649])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("__ref" variable (:type ("auto_ptr_ref" type
+                                         (:template-specifier 
+                                            ( ("element_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8689 8722]))                                  
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8663 8853])
+                            ("auto_ptr_ref" function
+                               (:template-specifier 
+                                  ( ("_Tp1" type nil nil nil))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [8908 8992])
+                            ("auto_ptr" function
+                               (:template-specifier 
+                                  ( ("_Tp1" type nil nil nil))                                  
+                                :constructor-flag t
+                                :type ("auto_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9041 9117]))                          )
+                        (reparse-symbol namespacesubparts) [3156 9144])
+                    ("auto_ptr" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9278 9285])
+                            ("element_type" type
+                               (:typedef ("void")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9292 9318]))                          
+                        :template-specifier 
+                          ( ("void" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9232 9345]))                  
+                :type "namespace")
+                nil [1381 9379]))          
+      :file "auto_ptr.h"
+      :pointmax 9428
+      :fsize 9427
+      :lastmodtime '(20363 23316 0 0)
+      :unmatched-syntax '((symbol 9369 . 9377) (OPERATOR 9032 . 9040) (punctuation 9022 . 9023) (symbol 9018 . 9022) (TYPENAME 9009 . 9017) (punctuation 9008 . 9009) (TEMPLATE 9000 . 9008) (OPERATOR 8899 . 8907) (punctuation 8889 . 8890) (symbol 8885 . 8889) (TYPENAME 8876 . 8884) (punctuation 8875 . 8876) (TEMPLATE 8867 . 8875) (EXPLICIT 3550 . 3558) (EXPLICIT 1836 . 1844) (symbol 1426 . 1458))
+      :lexical-table 
+        '(("_BACKWARD_AUTO_PTR_H" . ((number "1" 1324 . 1325)))
+          )
+))
+  :file "!usr!include!c++!4.6!backward!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,414 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_RECOGNITION_UTILS_PCL_CONVERSION_UTIL_H_" variable (:constant-flag t) nil [1869 1913])
+            ("pcl/point_types.h" include (:system-flag t) nil [1914 1942])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [1943 1971])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [1972 2016])
+            ("geometry_msgs/Point32.h" include (:system-flag t) nil [2017 2051])
+            ("eigen_conversions/eigen_msg.h" include (:system-flag t) nil [2052 2092])
+            ("tf_conversions/tf_eigen.h" include (:system-flag t) nil [2093 2129])
+            ("pcl/range_image/range_image_planar.h" include (:system-flag t) nil [2130 2177])
+            ("visualization_msgs/Marker.h" include (:system-flag t) nil [2178 2216])
+            ("PCLIndicesMsg" type
+               (:typedef ("pcl::PointIndices" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2392 2432])
+            ("PCLModelCoefficientMsg" type
+               (:typedef ("pcl::ModelCoefficients" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2433 2487])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [2496 2525])
+            ("jsk_recognition_utils" type
+               (:members 
+                  ( ("rangeImageToCvMat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("range_image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::RangeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2848 2883])
+                            ("mat" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2909 2922]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2825 2923])
+                    ("pointFromXYZToVector" function
+                       (:template 
+                          ( ("FromT" type (:type "class") nil nil)
+                            ("ToT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FromT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2990 3007])
+                            ("p" variable
+                               (:reference 1
+                                :type ("ToT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3036 3043]))                          )
+                        (reparse-symbol namespacesubparts) [2929 3097])
+                    ("pointFromVectorToXYZ" function
+                       (:template 
+                          ( ("FromT" type (:type "class") nil nil)
+                            ("ToT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FromT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3162 3177])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("ToT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3206 3215]))                          )
+                        (reparse-symbol namespacesubparts) [3101 3269])
+                    ("pointFromXYZToXYZ" function
+                       (:template 
+                          ( ("FromT" type (:type "class") nil nil)
+                            ("ToT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FromT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3331 3349])
+                            ("to" variable
+                               (:reference 1
+                                :type ("ToT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3375 3383]))                          )
+                        (reparse-symbol namespacesubparts) [3273 3440])
+                    ("pointFromVectorToVector" function
+                       (:template 
+                          ( ("FromT" type (:type "class") nil nil)
+                            ("ToT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FromT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3508 3526])
+                            ("to" variable
+                               (:reference 1
+                                :type ("ToT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3558 3566]))                          )
+                        (reparse-symbol namespacesubparts) [3444 3629])
+                    ("convertMatrix4" function
+                       (:template 
+                          ( ("FromT" type (:type "class") nil nil)
+                            ("ToT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FromT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3688 3706])
+                            ("to" variable
+                               (:reference 1
+                                :type ("ToT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3737]))                          )
+                        (reparse-symbol namespacesubparts) [3633 3866])
+                    ("convertEigenAffine3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3895 3923])
+                            ("to" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3951 3971]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3870 3972])
+                    ("convertEigenAffine3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4000 4028])
+                            ("to" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4056 4076]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3975 4077])
+                    ("markerMsgToPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("input_marker" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("visualization_msgs::Marker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4134 4181])
+                            ("sample_nums" variable (:type "int") (reparse-symbol arg-sub-list) [4211 4227])
+                            ("output_cloud" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4257 4295]))                          )
+                        (reparse-symbol namespacesubparts) [4081 7413])
+                    ("isValidPoint" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointXYZ" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7442 7465]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7417 7527]))                  
+                :type "namespace")
+                nil [2527 7530])
+            ("pcl_conversions" type
+               (:members 
+                  ( ("convertToPCLPointIndices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cluster_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("PCLIndicesMsg" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7690 7740]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7627 7741])
+                    ("convertToPCLModelCoefficients" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("PCLModelCoefficientMsg" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7823 7879]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::ModelCoefficients::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7745 7880])
+                    ("convertToROSPointIndices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cluster_indices" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7945 8003])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8008 8039]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("PCLIndicesMsg" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7886 8040])
+                    ("convertToROSPointIndices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cluster_indices" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8103 8156])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8161 8192]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("PCLIndicesMsg" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8044 8193])
+                    ("convertToROSModelCoefficients" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8270 8331])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8336 8367]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("PCLModelCoefficientMsg" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8197 8368]))                  
+                :type "namespace")
+                nil [7595 8371])
+            ("tf" type
+               (:members 
+                  ( ("poseMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8431 8462])
+                            ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8463 8486]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8411 8487])
+                    ("poseEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8510 8533])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8534 8559]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8490 8560])
+                    ("transformMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8588 8624])
+                            ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8625 8648]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8563 8649])
+                    ("transformEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8677 8700])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8701 8731]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8652 8732])
+                    ("transformTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8759 8782])
+                            ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8783 8806]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8735 8807])
+                    ("transformEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eigen" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8834 8858])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8859 8876]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8810 8877])
+                    ("vectorTFToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8901 8922])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8923 8942]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8880 8943])
+                    ("vectorEigenToTF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8967 8992])
+                            ("t" variable
+                               (:reference 1
+                                :type ("tf::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8993 9008]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8946 9009]))                  
+                :type "namespace")
+                nil [8373 9011]))          
+      :file "pcl_conversion_util.h"
+      :pointmax 9020
+      :fsize 9019
+      :lastmodtime '(22002 36576 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_RECOGNITION_UTILS_PCL_CONVERSION_UTIL_H_")
+          )
+))
+  :file "!opt!ros!hydro!include!jsk_recognition_utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,631 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Particle_Filter.h" include nil nil [175 211])
+            ("state_transition" function
+               (:parent "ParticleFilter"
+                :type ("Mat" type (:type "class") nil nil))
+                nil [214 1377])
+            ("initialize_particles" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("rng" variable
+                       (:reference 1
+                        :type ("RNG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1433 1442])
+                    ("lowerX" variable (:type "double") (reparse-symbol arg-sub-list) [1443 1457])
+                    ("lowerY" variable (:type "double") (reparse-symbol arg-sub-list) [1458 1472])
+                    ("upperX" variable (:type "double") (reparse-symbol arg-sub-list) [1473 1487])
+                    ("upperY" variable (:type "double") (reparse-symbol arg-sub-list) [1488 1502]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Particle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1379 1934])
+            ("transition" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2085 2105])
+                    ("dynamics" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2106 2120])
+                    ("rng" variable
+                       (:reference 1
+                        :type ("RNG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2121 2130]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Particle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2041 3212])
+            ("evaluate_gaussian" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("N" variable (:type "double") (reparse-symbol arg-sub-list) [3281 3290])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [3291 3300]))                  
+                :type "double")
+                nil [3240 3450])
+            ("normalizeWeight" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("z" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3523 3541]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3476 3810])
+            ("gaussianNoise" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [3910 3919])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [3920 3929]))                  
+                :type "double")
+                nil [3873 3984])
+            ("cumulativeSum" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("nWeights" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4102 4127]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4057 4344])
+            ("reSampling" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("x_P" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4406 4428])
+                    ("xP_Update" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4429 4457])
+                    ("nWeights" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4458 4483]))                  
+                :type "void")
+                nil [4374 5103])
+            ("meanArr" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("xP_Update" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5206 5234]))                  
+                :type ("Particle" type (:type "class") nil nil))
+                nil [5173 5900])
+            ("printParticles" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5938 5947])
+                    ("p" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5948 5968]))                  
+                :type "void")
+                nil [5902 6139]))          
+      :file "Particle_Filter.cpp"
+      :pointmax 6140
+      :fsize 6139
+      :lastmodtime '(21688 36396 820413 197000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Autonomous_Boundary_Estimation.h" include nil nil [191 242])
+            ("estimatedObjectBoundary" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("rgbImg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [621 639])
+                    ("depthImg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [640 660])
+                    ("icounter" variable (:type "int") (reparse-symbol arg-sub-list) [661 674])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [675 686]))                  
+                :type "bool")
+                nil [562 1823])
+            ("depthImageSkinSubtraction" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("depth" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2181 2192])
+                    ("filter" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2193 2205]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [2120 2549])
+            ("dilate_Errode_Image" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("depth" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2895])
+                    ("erosion_size" variable (:type "int") (reparse-symbol arg-sub-list) [2896 2913])
+                    ("errode" variable (:type "bool") (reparse-symbol arg-sub-list) [2914 2926]))                  
+                :type "void")
+                nil [2829 3371])
+            ("contourSmoothing" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("depth" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3713 3724]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [3661 5460])
+            ("kNearestNeigborSearch" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("featureMD" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5840 5855])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5856 5869])
+                    ("handPosition" variable
+                       (:reference 1
+                        :type ("Point3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5870 5892]))                  
+                :type "float")
+                nil [5782 6340])
+            ("humanBodyRegion" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6652 6662]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [6601 7499])
+            ("isRegionConnected" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("object" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7847 7859])
+                    ("h_boundary" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7860 7876]))                  
+                :type "bool")
+                nil [7794 8191])
+            ("ReadSkeletonJointPosition" function
+               (:parent "AutonomousBoundaryEstimation"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8532 8542])
+                    ("handPosition" variable
+                       (:reference 1
+                        :type ("Point3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8543 8565])
+                    ("skeletonJointType" variable (:type "int") (reparse-symbol arg-sub-list) [8566 8588]))                  
+                :type "void")
+                nil [8471 9731]))          
+      :file "Autonomous_Boundary_Estimation.cpp"
+      :pointmax 9732
+      :fsize 9731
+      :lastmodtime '(21688 36396 892413 199000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Histogram_of_Oriented_Gradients.h" include nil nil [192 244])
+            ("bilinear_interpolation" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("angle" variable (:type "float") (reparse-symbol arg-sub-list) [520 532])
+                    ("lower_index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [533 550])
+                    ("higher_index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [551 569]))                  
+                :type "void")
+                nil [469 1139])
+            ("image_gradient" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1412 1423])
+                    ("hog_bins" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1424 1438]))                  
+                :type "void")
+                nil [1369 3485])
+            ("blockGradient" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("col" variable (:type "int") (reparse-symbol arg-sub-list) [3625 3633])
+                    ("row" variable (:type "int") (reparse-symbol arg-sub-list) [3634 3642])
+                    ("bins" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3643 3653]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [3584 4224])
+            ("orientation_histogram" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4276 4291])
+                    ("minVal" variable (:type "int") (reparse-symbol arg-sub-list) [4292 4303])
+                    ("maxVal" variable (:type "int") (reparse-symbol arg-sub-list) [4304 4315])
+                    ("normed" variable (:type "bool") (reparse-symbol arg-sub-list) [4316 4329]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [4227 4806])
+            ("getHOG" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5079 5090])
+                    ("bins" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5091 5101])
+                    ("featureMD" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5102 5117]))                  
+                :type "void")
+                nil [5044 5885])
+            ("computeHOG" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5974 5989]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [5936 6421])
+            ("computeHOGHistogramDistances" function
+               (:parent "HOGFeatureDescriptors"
+                :arguments 
+                  ( ("patch" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6482 6493])
+                    ("imageHOG" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6494 6515]))                  
+                :type "double")
+                nil [6423 6931]))          
+      :file "Histogram_of_Oriented_Gradients.cpp"
+      :pointmax 6933
+      :fsize 6932
+      :lastmodtime '(21688 36396 920413 200000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Graph-Cut_Segementation.h" include nil nil [184 228])
+            ("graphCutSegmentation" function
+               (:parent "GraphCutSegmentation"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [702 711])
+                    ("objMask" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [712 725])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [726 737])
+                    ("iteration" variable (:type "int") (reparse-symbol arg-sub-list) [738 752]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [655 2000])
+            ("createMaskImage" function
+               (:parent "GraphCutSegmentation"
+                :arguments 
+                  ( ("objMask" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2308 2321]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [2266 2809])
+            ("model_resize" function
+               (:parent "GraphCutSegmentation"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3126 3135]))                  
+                :type ("Rect" type (:type "class") nil nil))
+                nil [3086 4205]))          
+      :file "Graph-Cut_Segementation.cpp"
+      :pointmax 4206
+      :fsize 4205
+      :lastmodtime '(21688 36396 856413 198000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/constants.h" include nil nil [177 207])
+            ("FileDirectory" function
+               (:constructor-flag t
+                :parent "FileDirectory"
+                :type ("FileDirectory" type (:type "class") nil nil))
+                nil [233 726]))          
+      :file "constants.cpp"
+      :pointmax 727
+      :fsize 726
+      :lastmodtime '(21919 29635 496195 920000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Support_Vector_Machine.h" include nil nil [183 226])
+            ("SupportVectorMachine" function
+               (:constructor-flag t
+                :parent "SupportVectorMachine"
+                :type ("SupportVectorMachine" type (:type "class") nil nil))
+                nil [251 371])
+            ("train_SupportVectorMachine" function
+               (:parent "SupportVectorMachine"
+                :arguments 
+                  ( ("train__" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [580 599])
+                    ("labels" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [600 618]))                  
+                :type "void")
+                nil [526 2099]))          
+      :file "Support_Vector_Machine.cpp"
+      :pointmax 2100
+      :fsize 2099
+      :lastmodtime '(21688 36396 832413 197000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Color_Histogram_Descriptors.h" include nil nil [188 236])
+            ("computeHistogramDescriptor" function
+               (:parent "ColorHistogramDescriptors"
+                :arguments 
+                  ( ("imageMAT" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [473 493])
+                    ("featureMD" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [494 509]))                  
+                :type "void")
+                nil [414 860])
+            ("HueSaturationHistogram" function
+               (:parent "ColorHistogramDescriptors"
+                :arguments 
+                  ( ("image" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1180 1190])
+                    ("bin" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1191 1200]))                  
+                :type "void")
+                nil [1125 2549])
+            ("imageHistogram" function
+               (:parent "ColorHistogramDescriptors"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2768 2777])
+                    ("bin" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2778 2787])
+                    ("ch1" variable (:type "int") (reparse-symbol arg-sub-list) [2788 2796])
+                    ("ch2" variable (:type "int") (reparse-symbol arg-sub-list) [2797 2805])
+                    ("ch3" variable (:type "int") (reparse-symbol arg-sub-list) [2806 2814]))                  
+                :type "void")
+                nil [2721 4814])
+            ("computeHistogram" function
+               (:parent "ColorHistogramDescriptors"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5024 5033])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5034 5044])
+                    ("hBin" variable (:type "int") (reparse-symbol arg-sub-list) [5045 5054])
+                    ("sBin" variable (:type "int") (reparse-symbol arg-sub-list) [5055 5064])
+                    ("isNormalized" variable (:type "bool") (reparse-symbol arg-sub-list) [5065 5083]))                  
+                :type "void")
+                nil [4975 5510])
+            ("grayLevelHistogram" function
+               (:parent "ColorHistogramDescriptors"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5748 5757])
+                    ("bin" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5758 5767]))                  
+                :type "void")
+                nil [5697 6265]))          
+      :file "Color_Histogram_Descriptors.cpp"
+      :pointmax 6266
+      :fsize 6265
+      :lastmodtime '(21688 36396 836413 197000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers/Handheld_Object_Learning.h" include nil nil [185 230])
+            ("objectInitialization" function
+               (:parent "HandheldObjectInitialization"
+                :arguments 
+                  ( ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [465 483])
+                    ("scene" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [484 501])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [502 513]))                  
+                :type "void")
+                nil [409 834])
+            ("buildObjectBackgroundFeatures" function
+               (:parent "HandheldObjectInitialization"
+                :arguments 
+                  ( ("object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1078 1096])
+                    ("scene" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1097 1114])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1115 1126]))                  
+                :type "void")
+                nil [1013 1768])
+            ("computeBlockFeatures" function
+               (:parent "HandheldObjectInitialization"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2039 2056])
+                    ("hogMD" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2057 2076])
+                    ("colorMD" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2077 2098]))                  
+                :type "void")
+                nil [1983 3398])
+            ("featureVectorConcatenation" function
+               (:parent "HandheldObjectInitialization"
+                :arguments 
+                  ( ("mat_1" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3629 3640])
+                    ("mat_2" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3641 3652])
+                    ("featureMD" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3653 3668])
+                    ("iscolwise" variable (:type "bool") (reparse-symbol arg-sub-list) [3669 3684]))                  
+                :type "void")
+                nil [3567 4827]))          
+      :file "Handheld_Object_Learning.cpp"
+      :pointmax 4830
+      :fsize 4829
+      :lastmodtime '(21688 36396 908413 200000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!STAM!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

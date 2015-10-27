@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("object_recognition/point_cloud_object_detection.h" include (:system-flag t) nil [2 62])
+            ("vector" include (:system-flag t) nil [63 80])
+            ("iostream" include (:system-flag t) nil [81 100])
+            ("PointCloudObjectDetection" function
+               (:constructor-flag t
+                :parent "PointCloudObjectDetection"
+                :type ("PointCloudObjectDetection" type (:type "class") nil nil))
+                nil [102 370])
+            ("subscribe" function
+               (:parent "PointCloudObjectDetection"
+                :type "void")
+                nil [372 742])
+            ("unsubscribe" function
+               (:parent "PointCloudObjectDetection"
+                :type "void")
+                nil [744 876])
+            ("cloudCallback" function
+               (:parent "PointCloudObjectDetection"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [929 981]))                  
+                :type "void")
+                nil [878 1642])
+            ("jskRectArrayCb" function
+               (:parent "PointCloudObjectDetection"
+                :arguments 
+                  ( ("rect_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("jsk_recognition_msgs::RectArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1696 1744]))                  
+                :type "void")
+                nil [1644 2126])
+            ("extractPointCloudIndicesFromJSKRect" function
+               (:parent "PointCloudObjectDetection"
+                :arguments 
+                  ( ("rect" variable (:type ("jsk_recognition_msgs::Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2228 2260])
+                    ("pt_indices" variable (:type ("pcl::PointIndices::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2261 2295]))                  
+                :type "void")
+                nil [2155 3032]))          
+      :file "point_cloud_object_detection.cpp"
+      :pointmax 3033
+      :fsize 3032
+      :lastmodtime '(21841 59791 31952 610000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!object_recognition!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

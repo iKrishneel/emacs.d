@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2 22])
+            ("dynamic_reconfigure/server.h" include (:system-flag t) nil [24 63])
+            ("dynamic_tutorials/TutorialsConfig.h" include (:system-flag t) nil [64 110])
+            ("callback" function
+               (:arguments 
+                  ( ("config" variable
+                       (:reference 1
+                        :type ("dynamic_tutorials::TutorialsConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130 173])
+                    ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174 189]))                  
+                :type "void")
+                nil [112 405])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [416 425])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [426 438]))                  
+                :type "int")
+                nil [407 779]))          
+      :file "server.cpp"
+      :pointmax 780
+      :fsize 779
+      :lastmodtime '(21775 6619 998231 627000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!dynamic_tutorials!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

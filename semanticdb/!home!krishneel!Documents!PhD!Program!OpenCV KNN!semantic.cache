@@ -1,0 +1,76 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("opencv/cv.h" include (:system-flag t) nil [119 141])
+            ("iostream" include (:system-flag t) nil [153 172])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [188 207])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [208 228])
+            ("numData" variable
+               (:default-value "5"
+                :type "int")
+                nil [230 246])
+            ("numQueries" variable
+               (:default-value "2"
+                :type "int")
+                nil [247 266])
+            ("numDimensions" variable
+               (:default-value "1"
+                :type "int")
+                nil [267 289])
+            ("k" variable
+               (:default-value "1"
+                :type "int")
+                nil [290 300])
+            ("Mean" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [301 319])
+            ("Variance" variable
+               (:default-value "1.0f"
+                :type "float")
+                nil [320 342])
+            ("printHelpMessage" function
+               (:arguments 
+                  ( ("program" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [366 380]))                  
+                :type "void")
+                nil [344 1312])
+            ("parseInput" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1330 1339])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1340 1352]))                  
+                :type "bool")
+                nil [1314 2601])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2620 2629])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2630 2642]))                  
+                :type "int")
+                nil [2611 4734]))          
+      :file "cvKnn.cpp"
+      :pointmax 4735
+      :fsize 4734
+      :lastmodtime '(21702 4447 814832 970000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!PhD!Program!OpenCV KNN!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1030 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("IMAGE_REP_H" variable (:constant-flag t) nil [1035 1046])
+            ("Rect.h" include nil nil [1048 1065])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [1067 1099])
+            ("vector" include (:system-flag t) nil [1100 1117])
+            ("Eigen/Core" include (:system-flag t) nil [1119 1140])
+            ("ImageRep" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1159 1166])
+                    ("ImageRep" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rImage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1177 1199])
+                            ("computeIntegral" variable (:type "bool") (reparse-symbol arg-sub-list) [1200 1221])
+                            ("computeIntegralHists" variable (:type "bool") (reparse-symbol arg-sub-list) [1222 1248])
+                            ("colour" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1249 1268]))                          
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1168 1270])
+                    ("Sum" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("rRect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IntRect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1282 1303])
+                            ("channel" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1304 1319]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1274 1327])
+                    ("Hist" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("rRect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IntRect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1339 1360])
+                            ("h" variable
+                               (:reference 1
+                                :type ("Eigen::VectorXd" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1361 1380]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1329 1387])
+                    ("GetImage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("channel" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1422 1437]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1391 1474])
+                    ("GetRect" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("IntRect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1476 1532])
+                    ("private" label nil (reparse-symbol classsubparts) [1534 1542])
+                    ("m_images" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1544 1574])
+                    ("m_integralImages" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1576 1614])
+                    ("m_integralHistImages" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1616 1658])
+                    ("m_channels" variable (:type "int") (reparse-symbol classsubparts) [1660 1675])
+                    ("m_rect" variable (:type ("IntRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1677 1692]))                  
+                :type "class")
+                nil [1142 1695]))          
+      :file "ImageRep.h"
+      :pointmax 1704
+      :fsize 1760
+      :lastmodtime '(21993 53718 885147 97000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IMAGE_REP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("RECT_H" variable (:constant-flag t) nil [1030 1036])
+            ("iostream" include (:system-flag t) nil [1038 1057])
+            ("algorithm" include (:system-flag t) nil [1058 1078])
+            ("Rect" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1115 1122])
+                    ("Rect" function
+                       (:constructor-flag t
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1124 1192])
+                    ("Rect" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("xMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1201 1208])
+                            ("yMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1209 1216])
+                            ("width" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1217 1225])
+                            ("height" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1235]))                          
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1196 1312])
+                    ("Rect" function
+                       (:template 
+                          ( ("T2" type (:type "class") nil nil))                          
+                        :type ("Rect" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rOther" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Rect" type
+                                     (:template-specifier 
+                                        ( ("T2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1345 1368]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [1316 1493])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("xMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1512 1519])
+                            ("yMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1520 1527])
+                            ("width" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1536])
+                            ("height" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1537 1546]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1496 1626])
+                    ("XMin" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1630 1670])
+                    ("SetXMin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1692 1698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1672 1716])
+                    ("YMin" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1718 1758])
+                    ("SetYMin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1780 1786]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1760 1804])
+                    ("Width" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1806 1848])
+                    ("SetWidth" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1871 1877]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1850 1896])
+                    ("Height" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1898 1942])
+                    ("SetHeight" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1966 1972]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1944 1992])
+                    ("Translate" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2018 2022])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2023 2027]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1996 2057])
+                    ("XMax" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2060 2110])
+                    ("YMax" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2112 2163])
+                    ("XCentre" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [2165 2240])
+                    ("YCentre" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [2242 2318])
+                    ("Area" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2320 2372])
+                    ("<<" function
+                       (:template 
+                          ( ("T2" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rOS" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2433 2451])
+                            ("rRect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Rect" type
+                                     (:template-specifier 
+                                        ( ("T2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2452 2474]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2376 2475])
+                    ("Overlap" function
+                       (:template 
+                          ( ("T2" type (:type "class") nil nil))                          
+                        :type "float"
+                        :arguments 
+                          ( ("rOther" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Rect" type
+                                     (:template-specifier 
+                                        ( ("T2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2517 2540]))                          
+                        :methodconst-flag t
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2479 2547])
+                    ("IsInside" function
+                       (:template 
+                          ( ("T2" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("rOther" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Rect" type
+                                     (:template-specifier 
+                                        ( ("T2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2589 2612]))                          
+                        :methodconst-flag t
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2551 2619])
+                    ("private" label nil (reparse-symbol classsubparts) [2621 2629])
+                    ("m_xMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2631 2640])
+                    ("m_yMin" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2642 2651])
+                    ("m_width" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2653 2663])
+                    ("m_height" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2665 2676]))                  )
+                nil [1080 2679])
+            ("IntRect" type
+               (:typedef ("Rect" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [2681 2707])
+            ("FloatRect" type
+               (:typedef ("Rect" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [2708 2738])
+            ("<<" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::ostream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("rOS" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2788 2806])
+                    ("rRect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2807 2828]))                  
+                :operator-flag t)
+                nil [2740 2973])
+            ("Overlap" function
+               (:template 
+                  ( ("T2" type (:type "class") nil nil))                  
+                :type "float"
+                :arguments 
+                  ( ("rOther" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type
+                             (:template-specifier 
+                                ( ("T2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3043 3066]))                  
+                :parent "Rect"
+                :methodconst-flag t)
+                nil [2997 3451])
+            ("IsInside" function
+               (:template 
+                  ( ("T2" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("rOther" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Rect" type
+                             (:template-specifier 
+                                ( ("T2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3521 3544]))                  
+                :parent "Rect"
+                :methodconst-flag t)
+                nil [3475 3668]))          
+      :file "Rect.h"
+      :pointmax 3677
+      :fsize 3812
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax '((punctuation 3473 . 3474) (symbol 3472 . 3473) (TYPENAME 3463 . 3471) (punctuation 3462 . 3463) (TEMPLATE 3453 . 3461) (punctuation 2995 . 2996) (symbol 2994 . 2995) (TYPENAME 2985 . 2993) (punctuation 2984 . 2985) (TEMPLATE 2975 . 2983))
+      :lexical-table 
+        '(("RECT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Tracker.h" include nil nil [1008 1028])
+            ("Config.h" include nil nil [1029 1048])
+            ("iostream" include (:system-flag t) nil [1050 1069])
+            ("fstream" include (:system-flag t) nil [1070 1088])
+            ("opencv/cv.h" include (:system-flag t) nil [1090 1112])
+            ("opencv/highgui.h" include (:system-flag t) nil [1113 1140])
+            ("vot.hpp" include nil nil [1142 1160])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1162 1182])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1183 1202])
+            ("kLiveBoxWidth" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "80"
+                :type "int")
+                nil [1204 1240])
+            ("kLiveBoxHeight" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "80"
+                :type "int")
+                nil [1241 1278])
+            ("rectangle" function
+               (:arguments 
+                  ( ("rMat" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1295 1305])
+                    ("rRect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1306 1329])
+                    ("rColour" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Scalar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1330 1352]))                  
+                :type "void")
+                nil [1280 1456])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1467 1476])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1477 1490]))                  
+                :type "int")
+                nil [1458 8226]))          
+      :file "main.cpp"
+      :pointmax 8227
+      :fsize 8555
+      :lastmodtime '(22006 45010 652430 330000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TRACKER_H" variable (:constant-flag t) nil [1033 1042])
+            ("Rect.h" include nil nil [1044 1061])
+            ("vector" include (:system-flag t) nil [1063 1080])
+            ("Eigen/Core" include (:system-flag t) nil [1081 1102])
+            ("opencv/cv.h" include (:system-flag t) nil [1103 1125])
+            ("Config" type
+               (:prototype t
+                :type "class")
+                nil [1127 1140])
+            ("Features" type
+               (:prototype t
+                :type "class")
+                nil [1141 1156])
+            ("Kernel" type
+               (:prototype t
+                :type "class")
+                nil [1157 1170])
+            ("LaRank" type
+               (:prototype t
+                :type "class")
+                nil [1171 1184])
+            ("ImageRep" type
+               (:prototype t
+                :type "class")
+                nil [1185 1200])
+            ("Tracker" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1218 1225])
+                    ("Tracker" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("conf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1235 1254]))                          
+                        :type ("Tracker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1227 1255])
+                    ("Tracker" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1257 1268])
+                    ("Initialise" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1288 1309])
+                            ("bb" variable (:type ("FloatRect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1310 1323]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1272 1324])
+                    ("Reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1326 1339])
+                    ("Track" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1352 1373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1341 1374])
+                    ("Debug" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1376 1389])
+                    ("GetBB" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1393 1447])
+                    ("IsInitialised" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1449 1508])
+                    ("private" label nil (reparse-symbol classsubparts) [1511 1519])
+                    ("m_config" variable
+                       (:constant-flag t
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1521 1544])
+                    ("m_initialised" variable (:type "bool") (reparse-symbol classsubparts) [1546 1565])
+                    ("m_features" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Features" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1567 1601])
+                    ("m_kernels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Kernel" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1603 1634])
+                    ("m_pLearner" variable
+                       (:pointer 1
+                        :type ("LaRank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1636 1655])
+                    ("m_bb" variable (:type ("FloatRect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1657 1672])
+                    ("m_debugImage" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1674 1695])
+                    ("m_needsIntegralImage" variable (:type "bool") (reparse-symbol classsubparts) [1697 1723])
+                    ("m_needsIntegralHist" variable (:type "bool") (reparse-symbol classsubparts) [1725 1750])
+                    ("UpdateLearner" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ImageRep" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1773 1795]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1754 1796])
+                    ("UpdateDebugImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("samples" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("FloatRect" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1820 1858])
+                            ("centre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FloatRect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1859 1883])
+                            ("scores" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1918]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1798 1919]))                  
+                :type "class")
+                nil [1202 1922]))          
+      :file "Tracker.h"
+      :pointmax 1931
+      :fsize 2002
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRACKER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONFIG_H" variable (:constant-flag t) nil [1032 1040])
+            ("vector" include (:system-flag t) nil [1042 1059])
+            ("string" include (:system-flag t) nil [1060 1077])
+            ("ostream" include (:system-flag t) nil [1078 1096])
+            ("VERBOSE" variable (:constant-flag t) nil [1106 1113])
+            ("Config" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1134 1141])
+                    ("Config" function
+                       (:constructor-flag t
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1143 1170])
+                    ("Config" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1179 1203]))                          
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1172 1204])
+                    ("FeatureType" type
+                       (:members 
+                          ( ("kFeatureTypeHaar" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1230 1247])
+                            ("kFeatureTypeRaw" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1250 1266])
+                            ("kFeatureTypeHistogram" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1269 1293]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1208 1294])
+                    ("KernelType" type
+                       (:members 
+                          ( ("kKernelTypeLinear" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1318 1336])
+                            ("kKernelTypeGaussian" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1339 1359])
+                            ("kKernelTypeIntersection" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1362 1386])
+                            ("kKernelTypeChi2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1389 1407]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1297 1408])
+                    ("FeatureKernelPair" type
+                       (:members 
+                          ( ("feature" variable (:type ("FeatureType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1441 1461])
+                            ("kernel" variable (:type ("KernelType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1464 1482])
+                            ("params" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1485 1512]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1411 1516])
+                    ("quietMode" variable (:type "bool") (reparse-symbol classsubparts) [1520 1541])
+                    ("debugMode" variable (:type "bool") (reparse-symbol classsubparts) [1543 1564])
+                    ("sequenceBasePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1568 1602])
+                    ("sequenceName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1604 1634])
+                    ("resultsPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1636 1665])
+                    ("frameWidth" variable (:type "int") (reparse-symbol classsubparts) [1669 1691])
+                    ("frameHeight" variable (:type "int") (reparse-symbol classsubparts) [1693 1716])
+                    ("seed" variable (:type "int") (reparse-symbol classsubparts) [1720 1736])
+                    ("searchRadius" variable (:type "int") (reparse-symbol classsubparts) [1738 1762])
+                    ("svmC" variable (:type "double") (reparse-symbol classsubparts) [1764 1782])
+                    ("svmBudgetSize" variable (:type "int") (reparse-symbol classsubparts) [1784 1809])
+                    ("features" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("FeatureKernelPair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1811 1851])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1888 1906])
+                            ("conf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1907 1926]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1855 1927])
+                    ("private" label nil (reparse-symbol classsubparts) [1930 1938])
+                    ("SetDefaults" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1940 1959])
+                    ("FeatureName" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("f" variable (:type ("FeatureType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2006]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1961 2007])
+                    ("KernelName" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("k" variable (:type ("KernelType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2039 2052]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2009 2053]))                  
+                :type "class")
+                nil [1119 2056]))          
+      :file "Config.h"
+      :pointmax 2064
+      :fsize 2151
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VERBOSE" . ((semantic-list "(0)" 1114 . 1117)))
+          ("CONFIG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CPP_VOT_H" variable (:constant-flag t) nil [211 220])
+            ("string" include (:system-flag t) nil [222 239])
+            ("fstream" include (:system-flag t) nil [240 258])
+            ("iostream" include (:system-flag t) nil [259 278])
+            ("opencv2/opencv.hpp" include nil nil [279 308])
+            ("VOT" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [322 329])
+                    ("VOT" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("region_file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [338 370])
+                            ("images" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [371 398])
+                            ("ouput" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [399 425]))                          
+                        :type ("VOT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [334 1219])
+                    ("VOT" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1225 1342])
+                    ("getInitRectangle" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("cv::Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1348 1427])
+                    ("outputBoundingBox" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("bbox" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1463 1485]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1433 1599])
+                    ("getNextImage" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1629 1643]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1605 1922])
+                    ("p_init_rectangle" variable (:type ("cv::Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1928 1954])
+                    ("p_region_stream" variable (:type ("std::ifstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1959 1989])
+                    ("p_images_stream" variable (:type ("std::ifstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1994 2024])
+                    ("p_output_stream" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2029 2059]))                  
+                :type "class")
+                nil [310 2063]))          
+      :file "vot.hpp"
+      :pointmax 2084
+      :fsize 2083
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CPP_VOT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Tracker.h" include nil nil [1007 1027])
+            ("Config.h" include nil nil [1028 1047])
+            ("ImageRep.h" include nil nil [1048 1069])
+            ("Sampler.h" include nil nil [1070 1090])
+            ("Sample.h" include nil nil [1091 1110])
+            ("GraphUtils/GraphUtils.h" include nil nil [1111 1145])
+            ("HaarFeatures.h" include nil nil [1147 1172])
+            ("RawFeatures.h" include nil nil [1173 1197])
+            ("HistogramFeatures.h" include nil nil [1198 1228])
+            ("MultiFeatures.h" include nil nil [1229 1255])
+            ("Kernels.h" include nil nil [1257 1277])
+            ("LaRank.h" include nil nil [1279 1298])
+            ("opencv/cv.h" include (:system-flag t) nil [1300 1322])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [1323 1361])
+            ("Eigen/Core" include (:system-flag t) nil [1363 1384])
+            ("vector" include (:system-flag t) nil [1386 1403])
+            ("algorithm" include (:system-flag t) nil [1404 1424])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1426 1445])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1446 1466])
+            ("Eigen" using (:type ("Eigen" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1467 1489])
+            ("Tracker" function
+               (:constructor-flag t
+                :parent "Tracker"
+                :arguments 
+                  ( ("conf" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1508 1527]))                  
+                :type ("Tracker" type (:type "class") nil nil))
+                nil [1491 1699])
+            ("Tracker" function
+               (:destructor-flag t
+                :parent "Tracker"
+                :type "void")
+                nil [1701 1847])
+            ("Reset" function
+               (:parent "Tracker"
+                :type "void")
+                nil [1849 3476])
+            ("Initialise" function
+               (:parent "Tracker"
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3505 3526])
+                    ("bb" variable (:type ("FloatRect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3527 3540]))                  
+                :type "void")
+                nil [3480 3857])
+            ("Track" function
+               (:parent "Tracker"
+                :arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3879 3900]))                  
+                :type "void")
+                nil [3859 4766])
+            ("UpdateDebugImage" function
+               (:parent "Tracker"
+                :arguments 
+                  ( ("samples" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FloatRect" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4799 4832])
+                    ("centre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FloatRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4833 4857])
+                    ("scores" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4858 4887]))                  
+                :type "void")
+                nil [4768 5314])
+            ("Debug" function
+               (:parent "Tracker"
+                :type "void")
+                nil [5316 5397])
+            ("UpdateLearner" function
+               (:parent "Tracker"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ImageRep" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5427 5449]))                  
+                :type "void")
+                nil [5399 6049]))          
+      :file "Tracker.cpp"
+      :pointmax 6050
+      :fsize 6246
+      :lastmodtime '(22006 44359 888433 828000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Sampler.h"
+      :fsize 1368
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "Sample.h"
+      :fsize 1906
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "HaarFeatures.h"
+      :fsize 1414
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "RawFeatures.h"
+      :fsize 1342
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "HistogramFeatures.h"
+      :fsize 1316
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "MultiFeatures.h"
+      :fsize 1378
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "Kernels.h"
+      :fsize 3535
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :file "LaRank.h"
+      :fsize 2851
+      :lastmodtime '(21993 53560 257153 98000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ImageRep.h" include nil nil [1007 1028])
+            ("cassert" include (:system-flag t) nil [1030 1048])
+            ("opencv/highgui.h" include (:system-flag t) nil [1050 1077])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [1078 1116])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1118 1138])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1139 1158])
+            ("kNumBins" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "16"
+                :type "int")
+                nil [1160 1191])
+            ("ImageRep" function
+               (:constructor-flag t
+                :parent "ImageRep"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1212 1229])
+                    ("computeIntegral" variable (:type "bool") (reparse-symbol arg-sub-list) [1230 1251])
+                    ("computeIntegralHist" variable (:type "bool") (reparse-symbol arg-sub-list) [1252 1277])
+                    ("colour" variable (:type "bool") (reparse-symbol arg-sub-list) [1278 1290]))                  
+                :type ("ImageRep" type (:type "class") nil nil))
+                nil [1193 2669])
+            ("Sum" function
+               (:methodconst-flag t
+                :parent "ImageRep"
+                :arguments 
+                  ( ("rRect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IntRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2689 2710])
+                    ("channel" variable (:type "int") (reparse-symbol arg-sub-list) [2711 2723]))                  
+                :type "int")
+                nil [2671 3126])
+            ("Hist" function
+               (:methodconst-flag t
+                :parent "ImageRep"
+                :arguments 
+                  ( ("rRect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IntRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3148 3169])
+                    ("h" variable
+                       (:reference 1
+                        :type ("Eigen::VectorXd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3170 3189]))                  
+                :type "void")
+                nil [3128 3682]))          
+      :file "ImageRep.cpp"
+      :pointmax 3683
+      :fsize 3811
+      :lastmodtime '(21993 53560 257153 98000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Downloads!VOTR!STRUCK!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

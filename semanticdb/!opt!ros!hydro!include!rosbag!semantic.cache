@@ -1,0 +1,1066 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_BAG_H" variable (:constant-flag t) nil [1803 1815])
+            ("rosbag/macros.h" include nil nil [1817 1843])
+            ("rosbag/buffer.h" include nil nil [1845 1871])
+            ("rosbag/chunked_file.h" include nil nil [1872 1904])
+            ("rosbag/constants.h" include nil nil [1905 1934])
+            ("rosbag/exceptions.h" include nil nil [1935 1965])
+            ("rosbag/structures.h" include nil nil [1966 1996])
+            ("ros/header.h" include nil nil [1998 2021])
+            ("ros/time.h" include nil nil [2022 2043])
+            ("ros/message_traits.h" include nil nil [2044 2075])
+            ("ros/message_event.h" include nil nil [2076 2106])
+            ("ros/serialization.h" include nil nil [2107 2137])
+            ("ios" include (:system-flag t) nil [2188 2202])
+            ("map" include (:system-flag t) nil [2203 2217])
+            ("queue" include (:system-flag t) nil [2218 2234])
+            ("set" include (:system-flag t) nil [2235 2249])
+            ("stdexcept" include (:system-flag t) nil [2250 2270])
+            ("boost/format.hpp" include (:system-flag t) nil [2272 2299])
+            ("boost/iterator/iterator_facade.hpp" include (:system-flag t) nil [2300 2345])
+            ("console_bridge/console.h" include nil nil [2347 2382])
+            ("rosbag" type
+               (:members 
+                  ( ("bagmode" type
+                       (:members 
+                          ( ("BagMode" type
+                               (:members 
+                                  ( ("Write" variable
+                                       (:constant-flag t
+                                        :default-value (2509 2510)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2499 2510])
+                                    ("Read" variable
+                                       (:constant-flag t
+                                        :default-value (2530 2531)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2520 2531])
+                                    ("Append" variable
+                                       (:constant-flag t
+                                        :default-value (2551 2552)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2541 2552]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2472 2559]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2404 2561])
+                    ("BagMode" type
+                       (:typedef ("bagmode::BagMode" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2562 2595])
+                    ("MessageInstance" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2597 2619])
+                    ("View" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2620 2631])
+                    ("Query" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2632 2644])
+                    ("Bag" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2646 11808]))                  
+                :type "namespace")
+                nil [2384 11811])
+            ("rosbag/message_instance.h" include nil nil [11833 11869])
+            ("rosbag" type
+               (:members 
+                  ( ("write" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11958 11983])
+                            ("event" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11984 12018]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [11924 12119])
+                    ("write" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12155 12180])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12181 12203])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12204 12217])
+                            ("connection_header" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::M_string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12218 12269]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [12121 12323])
+                    ("write" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12359 12384])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12385 12407])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("T" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12408 12446])
+                            ("connection_header" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::M_string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12447 12498]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [12325 12553])
+                    ("write" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12589 12614])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12615 12637])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12638 12670])
+                            ("connection_header" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::M_string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12671 12722]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [12555 12777])
+                    ("toHeaderString" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("field" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12832 12847]))                          
+                        :parent "Bag"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [12779 12907])
+                    ("readField" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::M_string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12950 12978])
+                            ("field_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12979 13009])
+                            ("required" variable (:type "bool") (reparse-symbol arg-sub-list) [13010 13024])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13025 13033]))                          
+                        :parent "Bag"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [12909 13255])
+                    ("readMessageDataIntoStream" function
+                       (:template 
+                          ( ("Stream" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("index_entry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IndexEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13319 13349])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13350 13365]))                          
+                        :parent "Bag"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [13257 14198])
+                    ("instantiateBuffer" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("index_entry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IndexEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14262 14292]))                          
+                        :parent "Bag"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [14200 18158])
+                    ("doWrite" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18196 18221])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18222 18244])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18245 18258])
+                            ("connection_header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("ros::M_string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18259 18317]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [18160 22969])
+                    ("writeMessageDataRecord" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("conn_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23022 23039])
+                            ("time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23040 23062])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23063 23076]))                          
+                        :parent "Bag")
+                        (reparse-symbol namespacesubparts) [22971 24878]))                  
+                :type "namespace")
+                nil [11871 24881]))          
+      :file "bag.h"
+      :pointmax 24910
+      :fsize 24909
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_BAG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_MACROS_H_" variable (:constant-flag t) nil [1623 1639])
+            ("ros/macros.h" include (:system-flag t) nil [1641 1664])
+            ("ROSBAG_DECL" variable (:constant-flag t) nil [2090 2101]))          
+      :file "macros.h"
+      :pointmax 2140
+      :fsize 2139
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_DECL")
+          ("ROSBAG_MACROS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_BUFFER_H" variable (:constant-flag t) nil [1805 1820])
+            ("stdint.h" include (:system-flag t) nil [1822 1841])
+            ("macros.h" include nil nil [1842 1861])
+            ("rosbag" type
+               (:members 
+                  ( ("Buffer" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1883 2206]))                  
+                :type "namespace")
+                nil [1863 2209]))          
+      :file "buffer.h"
+      :pointmax 2238
+      :fsize 2237
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_BUFFER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_CHUNKED_FILE_H" variable (:constant-flag t) nil [1811 1832])
+            ("ios" include (:system-flag t) nil [1834 1848])
+            ("stdint.h" include (:system-flag t) nil [1849 1868])
+            ("string" include (:system-flag t) nil [1869 1886])
+            ("macros.h" include nil nil [1887 1906])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [1907 1938])
+            ("bzlib.h" include (:system-flag t) nil [1940 1958])
+            ("rosbag/stream.h" include nil nil [1960 1986])
+            ("rosbag" type
+               (:members 
+                  ( ("ChunkedFile" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2117 4672]))                  
+                :type "namespace")
+                nil [1988 4675]))          
+      :file "chunked_file.h"
+      :pointmax 4704
+      :fsize 4703
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_CHUNKED_FILE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_CONSTANTS_H" variable (:constant-flag t) nil [1809 1827])
+            ("string" include (:system-flag t) nil [1829 1846])
+            ("stdint.h" include (:system-flag t) nil [1847 1866])
+            ("rosbag" type
+               (:members 
+                  ( ("VERSION" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"2.0\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1917 1958])
+                    ("FIELD_DELIM" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "'='"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [1986 2031])
+                    ("OP_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"op\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2058 2118])
+                    ("TOPIC_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"topic\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2119 2182])
+                    ("VER_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"ver\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2183 2244])
+                    ("COUNT_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"count\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2245 2308])
+                    ("INDEX_POS_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"index_pos\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2309 2376])
+                    ("CONNECTION_COUNT_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"conn_count\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2389 2457])
+                    ("CHUNK_COUNT_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"chunk_count\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2469 2538])
+                    ("CONNECTION_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"conn\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2549 2611])
+                    ("COMPRESSION_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"compression\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2629 2698])
+                    ("SIZE_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"size\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2709 2771])
+                    ("TIME_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"time\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2789 2851])
+                    ("START_TIME_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"start_time\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2869 2937])
+                    ("END_TIME_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"end_time\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2949 3015])
+                    ("CHUNK_POS_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"chunk_pos\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3029 3096])
+                    ("MD5_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"md5\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3134 3187])
+                    ("TYPE_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"type\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3206 3260])
+                    ("DEF_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"def\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3278 3331])
+                    ("SEC_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"sec\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3350 3403])
+                    ("NSEC_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"nsec\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3422 3476])
+                    ("LATCHING_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"latching\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3494 3552])
+                    ("CALLERID_FIELD_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"callerid\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3566 3624])
+                    ("OP_MSG_DATA" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x02"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3668 3717])
+                    ("OP_FILE_HEADER" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x03"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3718 3767])
+                    ("OP_INDEX_DATA" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x04"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3768 3817])
+                    ("OP_CHUNK" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x05"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3818 3867])
+                    ("OP_CHUNK_INFO" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x06"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3868 3917])
+                    ("OP_CONNECTION" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x07"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3918 3967])
+                    ("OP_MSG_DEF" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0x01"
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [3997 4046])
+                    ("FILE_HEADER_LENGTH" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "4 * 1024"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4095 4147])
+                    ("INDEX_VERSION" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "1"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4187 4227])
+                    ("CHUNK_INFO_VERSION" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "1"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4267 4312])
+                    ("COMPRESSION_NONE" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"none\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4335 4386])
+                    ("COMPRESSION_BZ2" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"bz2\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4387 4437]))                  
+                :type "namespace")
+                nil [1868 4440]))          
+      :file "constants.h"
+      :pointmax 4469
+      :fsize 4468
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_CONSTANTS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_EXCEPTIONS_H" variable (:constant-flag t) nil [1810 1829])
+            ("ros/exception.h" include (:system-flag t) nil [1831 1857])
+            ("rosbag" type
+               (:members 
+                  ( ("BagException" type
+                       (:superclasses 
+                          ( ("ros::Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1961 1968])
+                            ("BagException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1986 2009]))                                  
+                                :type ("BagException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1973 2035]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1916 2038])
+                    ("BagIOException" type
+                       (:superclasses 
+                          ( ("BagException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2126 2133])
+                            ("BagIOException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2153 2176]))                                  
+                                :type ("BagIOException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2138 2200]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2081 2203])
+                    ("BagFormatException" type
+                       (:superclasses 
+                          ( ("BagException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2310 2317])
+                            ("BagFormatException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2341 2364]))                                  
+                                :type ("BagFormatException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2322 2388]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2261 2391])
+                    ("BagUnindexedException" type
+                       (:superclasses 
+                          ( ("BagException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2500 2507])
+                            ("BagUnindexedException" function
+                               (:constructor-flag t
+                                :type ("BagUnindexedException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2512 2571]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2448 2574]))                  
+                :type "namespace")
+                nil [1859 2577]))          
+      :file "exceptions.h"
+      :pointmax 2606
+      :fsize 2605
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_EXCEPTIONS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_STRUCTURES_H" variable (:constant-flag t) nil [1842 1861])
+            ("map" include (:system-flag t) nil [1863 1877])
+            ("vector" include (:system-flag t) nil [1878 1895])
+            ("ros/time.h" include nil nil [1897 1918])
+            ("ros/datatypes.h" include nil nil [1919 1945])
+            ("macros.h" include nil nil [1946 1965])
+            ("rosbag" type
+               (:members 
+                  ( ("ConnectionInfo" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [1987 2224])
+                    ("ChunkInfo" type
+                       (:members 
+                          ( ("start_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2249 2272])
+                            ("end_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2329 2350])
+                            ("pos" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2407 2423])
+                            ("connection_counts" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("uint32_t" type nil nil nil)
+                                      ("uint32_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2492 2539]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2226 2606])
+                    ("ChunkHeader" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2608 2910])
+                    ("IndexEntry" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2912 3297])
+                    ("IndexEntryCompare" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [3299 3520]))                  
+                :type "namespace")
+                nil [1967 3523]))          
+      :file "structures.h"
+      :pointmax 3552
+      :fsize 3551
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_STRUCTURES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_MESSAGE_INSTANCE_H" variable (:constant-flag t) nil [1816 1841])
+            ("ros/message_traits.h" include (:system-flag t) nil [1843 1874])
+            ("ros/serialization.h" include (:system-flag t) nil [1875 1905])
+            ("ros/time.h" include (:system-flag t) nil [1929 1950])
+            ("rosbag/structures.h" include nil nil [1952 1982])
+            ("rosbag/macros.h" include nil nil [1983 2009])
+            ("rosbag" type
+               (:members 
+                  ( ("Bag" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2031 2041])
+                    ("MessageInstance" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2360 3627]))                  
+                :type "namespace")
+                nil [2011 3631])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("MD5Sum" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rosbag::MessageInstance" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3778 3811]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [3753 3845]))                                  
+                                :template-specifier 
+                                  ( ("rosbag::MessageInstance" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3697 3848])
+                            ("DataType" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rosbag::MessageInstance" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3933 3966]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [3908 4002]))                                  
+                                :template-specifier 
+                                  ( ("rosbag::MessageInstance" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3850 4005])
+                            ("Definition" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rosbag::MessageInstance" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4092 4125]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [4067 4170]))                                  
+                                :template-specifier 
+                                  ( ("rosbag::MessageInstance" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4007 4173]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3669 4176])
+                    ("serialization" type
+                       (:members 
+                          ( ("Serializer" type
+                               (:type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4348 4363])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rosbag::MessageInstance" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4364 4397]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [4293 4430])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rosbag::MessageInstance" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4476 4509]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4436 4542]))                                  
+                                :template-specifier 
+                                  ( ("rosbag::MessageInstance" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4233 4545]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4206 4548]))                  
+                :type "namespace")
+                nil [3653 4578])
+            ("rosbag/bag.h" include nil nil [4597 4620])
+            ("rosbag" type
+               (:members 
+                  ( ("isType" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :parent "MessageInstance"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [4642 4830])
+                    ("instantiate" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :parent "MessageInstance"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [4832 5026])
+                    ("write" function
+                       (:template 
+                          ( ("Stream" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5082 5097]))                          
+                        :parent "MessageInstance"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [5028 5166]))                  
+                :type "namespace")
+                nil [4622 5169]))          
+      :file "message_instance.h"
+      :pointmax 5198
+      :fsize 5197
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_MESSAGE_INSTANCE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_STREAM_H" variable (:constant-flag t) nil [1805 1820])
+            ("ios" include (:system-flag t) nil [1822 1836])
+            ("stdint.h" include (:system-flag t) nil [1837 1856])
+            ("string" include (:system-flag t) nil [1857 1874])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [1876 1907])
+            ("bzlib.h" include (:system-flag t) nil [1909 1927])
+            ("rosbag/exceptions.h" include nil nil [1929 1959])
+            ("rosbag/macros.h" include nil nil [1960 1986])
+            ("rosbag" type
+               (:members 
+                  ( ("compression" type
+                       (:members 
+                          ( ("CompressionType" type
+                               (:members 
+                                  ( ("Uncompressed" variable
+                                       (:constant-flag t
+                                        :default-value (2086 2087)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2071 2087])
+                                    ("BZ2" variable
+                                       (:constant-flag t
+                                        :default-value (2112 2113)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2097 2113]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2036 2121]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2008 2123])
+                    ("CompressionType" type
+                       (:typedef ("compression::CompressionType" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2124 2177])
+                    ("ChunkedFile" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2179 2197])
+                    ("Stream" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2199 3062])
+                    ("StreamFactory" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [3064 3321])
+                    ("Stream" variable (:type "int") (reparse-symbol namespacesubparts) [3369 3662])
+                    ("Stream" variable (:type "int") (reparse-symbol namespacesubparts) [3813 4675]))                  
+                :type "namespace")
+                nil [1988 4678]))          
+      :file "stream.h"
+      :pointmax 4707
+      :fsize 4706
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax '((PUBLIC 3806 . 3812) (punctuation 3804 . 3805) (symbol 3794 . 3803) (symbol 3782 . 3793) (CLASS 3776 . 3781) (PUBLIC 3362 . 3368) (punctuation 3360 . 3361) (symbol 3341 . 3359) (symbol 3329 . 3340) (CLASS 3323 . 3328))
+      :lexical-table 
+        '(("ROSBAG_STREAM_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_VIEW_H" variable (:constant-flag t) nil [1804 1817])
+            ("boost/function.hpp" include (:system-flag t) nil [1819 1848])
+            ("boost/iterator/iterator_facade.hpp" include (:system-flag t) nil [1849 1894])
+            ("rosbag/message_instance.h" include nil nil [1896 1932])
+            ("rosbag/query.h" include nil nil [1933 1958])
+            ("rosbag/macros.h" include nil nil [1959 1985])
+            ("rosbag/structures.h" include nil nil [1986 2016])
+            ("rosbag" type
+               (:members 
+                  ( ("View" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2038 6368]))                  
+                :type "namespace")
+                nil [2018 6371]))          
+      :file "view.h"
+      :pointmax 6400
+      :fsize 6399
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_VIEW_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSBAG_QUERY_H" variable (:constant-flag t) nil [1805 1819])
+            ("ros/time.h" include nil nil [1821 1842])
+            ("vector" include (:system-flag t) nil [1844 1861])
+            ("map" include (:system-flag t) nil [1862 1876])
+            ("set" include (:system-flag t) nil [1877 1891])
+            ("boost/function.hpp" include (:system-flag t) nil [1893 1922])
+            ("rosbag/macros.h" include nil nil [1923 1949])
+            ("rosbag/structures.h" include nil nil [1950 1980])
+            ("rosbag" type
+               (:members 
+                  ( ("Bag" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2002 2012])
+                    ("Query" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2014 2778])
+                    ("TopicQuery" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2780 3018])
+                    ("TypeQuery" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [3020 3252])
+                    ("BagQuery" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [3329 3509])
+                    ("MessageRange" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [3511 4027])
+                    ("ViewIterHelper" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [4068 4329])
+                    ("ViewIterHelperCompare" variable (:type ("ROSBAG_DECL" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [4331 4447]))                  
+                :type "namespace")
+                nil [1982 4450]))          
+      :file "query.h"
+      :pointmax 4479
+      :fsize 4478
+      :lastmodtime '(21665 43651 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROSBAG_QUERY_H")
+          )
+))
+  :file "!opt!ros!hydro!include!rosbag!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

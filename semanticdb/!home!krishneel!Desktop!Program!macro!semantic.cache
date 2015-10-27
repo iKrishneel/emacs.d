@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("PRINT_RED" variable (:constant-flag t) nil [31 40])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [143 152])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [153 166]))                  
+                :type "int")
+                nil [134 241]))          
+      :file "main.cpp"
+      :pointmax 242
+      :fsize 241
+      :lastmodtime '(21984 22112 60318 534000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PRINT_RED" (spp-arg-list ("X") 40 . 43) . ((semantic-list "((std::cout<< \"\\033[1m\\033[35m\" << X << \" \\033[0m\" << std::endl), \\
+    (void) 0)" 50 . 131)))
+          )
+))
+  :file "!home!krishneel!Desktop!Program!macro!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

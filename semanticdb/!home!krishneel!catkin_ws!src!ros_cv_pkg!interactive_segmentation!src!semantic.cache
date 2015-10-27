@@ -1,0 +1,239 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("interactive_segmentation/interactive_segmentation.h" include (:system-flag t) nil [2 64])
+            ("vector" include (:system-flag t) nil [65 82])
+            ("InteractiveSegmentation" function
+               (:constructor-flag t
+                :parent "InteractiveSegmentation"
+                :type ("InteractiveSegmentation" type (:type "class") nil nil))
+                nil [84 181])
+            ("onInit" function
+               (:parent "InteractiveSegmentation"
+                :type "void")
+                nil [183 467])
+            ("subscribe" function
+               (:parent "InteractiveSegmentation"
+                :type "void")
+                nil [469 1013])
+            ("unsubscribe" function
+               (:parent "InteractiveSegmentation"
+                :type "void")
+                nil [1015 1134])
+            ("callback" function
+               (:parent "InteractiveSegmentation"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1180 1226])
+                    ("edge_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1231 1276])
+                    ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1333]))                  
+                :type "void")
+                nil [1136 2062])
+            ("pointCloudEdge" function
+               (:parent "InteractiveSegmentation"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2114 2149])
+                    ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2154 2175])
+                    ("edge_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2176 2200])
+                    ("contour_thresh" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2205 2230]))                  
+                :type "void")
+                nil [2064 6000])
+            ("computeEdgeCurvature" function
+               (:parent "InteractiveSegmentation"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6058 6079])
+                    ("contours" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6084 6137])
+                    ("tangents" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6142 6189])
+                    ("normal_points" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("EdgeNormalDirectionPoint" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6194 6261]))                  
+                :type "void")
+                nil [6002 8757])
+            ("estimatePointCloudNormals" function
+               (:methodconst-flag t
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8838 8879])
+                    ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8884 8926])
+                    ("k" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8931 8941])
+                    ("use_knn" variable (:type "bool") (reparse-symbol arg-sub-list) [8942 8955]))                  
+                :type "int")
+                nil [8807 9414])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9425 9434])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9435 9448]))                  
+                :type "int")
+                nil [9416 9570]))          
+      :file "interactive_segmentation_node.cpp"
+      :pointmax 9571
+      :fsize 11844
+      :lastmodtime '(21947 14864 171960 460000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("interactive_segmentation/supervoxel_segmentation.h" include (:system-flag t) nil [2 63])
+            ("map" include (:system-flag t) nil [64 78])
+            ("SupervoxelSegmentation" function
+               (:constructor-flag t
+                :parent "SupervoxelSegmentation"
+                :type ("SupervoxelSegmentation" type (:type "class") nil nil))
+                nil [80 419])
+            ("supervoxelSegmentation" function
+               (:parent "SupervoxelSegmentation"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [478 519])
+                    ("supervoxel_clusters" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("pcl::Supervoxel::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [524 595])
+                    ("supervoxel_adjacency" variable
+                       (:reference 1
+                        :type ("std::multimap" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [600 656]))                  
+                :type "void")
+                nil [421 1311])
+            ("publishSupervoxel" function
+               (:parent "SupervoxelSegmentation"
+                :arguments 
+                  ( ("supervoxel_clusters" variable
+                       (:constant-flag t
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("pcl::Supervoxel::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1365 1440])
+                    ("ros_cloud" variable
+                       (:reference 1
+                        :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1445 1481])
+                    ("ros_indices" variable
+                       (:reference 1
+                        :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1486 1541])
+                    ("header" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std_msgs::Header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1546 1577]))                  
+                :type "void")
+                nil [1313 2540])
+            ("convertToROSPointIndices" function
+               (:parent "SupervoxelSegmentation"
+                :arguments 
+                  ( ("cluster_indices" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2632 2685])
+                    ("header" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std_msgs::Header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2690 2721]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("pcl_msgs::PointIndices" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2542 3005])
+            ("configCallback" function
+               (:parent "SupervoxelSegmentation"
+                :arguments 
+                  ( ("config" variable
+                       (:reference 1
+                        :type ("Config" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3056 3071])
+                    ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3072 3087]))                  
+                :type "void")
+                nil [3007 3427]))          
+      :file "supervoxel_segmentation.cpp"
+      :pointmax 3428
+      :fsize 3427
+      :lastmodtime '(21947 14864 171960 460000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!interactive_segmentation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,389 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/constants.h" include nil nil [170 203])
+            ("../include/Point_Cloud_Processing.h" include nil nil [204 250])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [415 424])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [425 437]))                  
+                :type "int")
+                nil [406 546]))          
+      :file "driver.cpp"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(21678 25741 307549 265000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/Point_Cloud_Processing.h" include nil nil [189 235])
+            ("makeObjectTemplates" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [549 564]))                  
+                :type "void")
+                nil [502 1742])
+            ("fileExists" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2054 2082]))                  
+                :type "bool")
+                nil [2016 2202])
+            ("imageCallBack" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2521 2559]))                  
+                :type "void")
+                nil [2480 2776])
+            ("cloudCallBack" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3076 3126]))                  
+                :type "void")
+                nil [3035 6869])
+            ("pclDistanceFilter" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("pcl::PCLPointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7201 7246])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7292 7328]))                  
+                :type "void")
+                nil [7156 7607])
+            ("processRGBDImage" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("kframe" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7965 7977])
+                    ("rgbImg" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8022 8034])
+                    ("depthImg" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8079 8093]))                  
+                :type "bool")
+                nil [7921 9104])
+            ("pointCloud2RGBDImage" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9446 9482])
+                    ("rgbImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9531 9545])
+                    ("depthImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9594 9610]))                  
+                :type "void")
+                nil [9398 11090])
+            ("setFilteredIndexFromDepth" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("indices" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11417 11438]))                  
+                :type "void")
+                nil [11364 11474])
+            ("getPointCloudRegion" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11805 11840])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [11888 11894]))                  
+                :type "void")
+                nil [11758 12456])
+            ("filterPointCloudby2DIndices" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12820 12862])
+                    ("isProcess" variable (:type "bool") (reparse-symbol arg-sub-list) [12943 12958]))                  
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [12740 13712])
+            ("pointCloudObjectRegionSegmentation" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14331 14367])
+                    ("_region" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14430 14443])
+                    ("_depthImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14506 14523])
+                    ("_isMaskDepth" variable (:type "bool") (reparse-symbol arg-sub-list) [14586 14604]))                  
+                :type "void")
+                nil [14269 17541])
+            ("projectRGBDContour2PointCloud" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17913 17949])
+                    ("_contours" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:template-specifier 
+                                    ( ("Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18007 18041]))                  
+                :type "bool")
+                nil [17856 18606])
+            ("getContourFromSelectedObjectRegion" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_depthImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18955 18972])
+                    ("_rect" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19035 19046])
+                    ("_contours" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:template-specifier 
+                                    ( ("Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19110 19144]))                  
+                :type "void")
+                nil [18893 19693])
+            ("process3DObjectPointCloud" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20063 20099]))                  
+                :type "void")
+                nil [20010 21297])
+            ("pclObjectCentroidBroadcast" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21654 21690])
+                    ("rect" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21691 21701]))                  
+                :type "void")
+                nil [21600 22888]))          
+      :file "Point_Cloud_Processing.cpp"
+      :pointmax 22890
+      :fsize 22889
+      :lastmodtime '(21681 26586 618495 48000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/RGBD_Image_Processing.h" include nil nil [189 234])
+            ("slidingWindowDetector" function
+               (:parent "RGBDImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 585]))                  
+                :type "void")
+                nil [522 3811])
+            ("getFeatureMat" function
+               (:parent "RGBDImageProcessing"
+                :arguments 
+                  ( ("roi" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4138 4147])
+                    ("colorMD_hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4148 4166])
+                    ("hogMD_hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4167 4183])
+                    ("isHog" variable (:type "bool") (reparse-symbol arg-sub-list) [4184 4195]))                  
+                :type "void")
+                nil [4098 4444])
+            ("loadTemplateModel" function
+               (:parent "RGBDImageProcessing"
+                :type "void")
+                nil [4736 5459])
+            ("estimateObjectRegion" function
+               (:parent "RGBDImageProcessing"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5788 5799])
+                    ("probabilityMap" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5800 5820]))                  
+                :type "void")
+                nil [5741 6727])
+            ("getObjectRegion" function
+               (:parent "RGBDImageProcessing"
+                :arguments 
+                  ( ("detected_region" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Rect" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7057 7087])
+                    ("region_contours" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:template-specifier 
+                                    ( ("Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7088 7128]))                  
+                :type "void")
+                nil [7015 7270])
+            ("GaussianKernel" function
+               (:parent "RGBDImageProcessing"
+                :arguments 
+                  ( ("d" variable (:type "double") (reparse-symbol arg-sub-list) [7576 7585])
+                    ("sigma" variable (:type "double") (reparse-symbol arg-sub-list) [7586 7599])
+                    ("s" variable (:type "double") (reparse-symbol arg-sub-list) [7600 7609]))                  
+                :type "double")
+                nil [7533 7767]))          
+      :file "RGBD_Image_Processing.cpp"
+      :pointmax 7769
+      :fsize 7768
+      :lastmodtime '(21681 26576 702494 604000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/Point_Cloud_Analysis.h" include nil nil [184 228])
+            ("getInputPointCloud" function
+               (:parent "PointCloudDataAnalysis"
+                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                nil [497 599])
+            ("getFilteredPointCloudIndex" function
+               (:parent "PointCloudDataAnalysis"
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [874 965])
+            ("removeNaNPointCloud" function
+               (:parent "PointCloudDataAnalysis"
+                :type "void")
+                nil [1236 1519])
+            ("setInputPointCloud" function
+               (:parent "PointCloudDataAnalysis"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1851 1887]))                  
+                :type "void")
+                nil [1803 2032])
+            ("computePointCloudSurfaceNormal" function
+               (:parent "PointCloudDataAnalysis"
+                :arguments 
+                  ( ("_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2364 2406])
+                    ("_knn" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2467 2482])
+                    ("_radius" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2543 2564])
+                    ("isKNN" variable (:type "bool") (reparse-symbol arg-sub-list) [2625 2636]))                  
+                :type "void")
+                nil [2304 3217])
+            ("objectIntraBoundaryEstimation" function
+               (:parent "PointCloudDataAnalysis"
+                :arguments 
+                  ( ("_normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3571 3614])
+                    ("_boundary_vals" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3681 3712]))                  
+                :type "void")
+                nil [3512 5684])
+            ("computeVectorScalarProduct" function
+               (:parent "PointCloudDataAnalysis"
+                :arguments 
+                  ( ("_normal_vector" variable
+                       (:constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6009 6046])
+                    ("_reference_vector" variable
+                       (:constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6104 6144]))                  
+                :type "float")
+                nil [5952 6349])
+            ("pclNearestNeigbourSearch" function
+               (:parent "PointCloudDataAnalysis"
+                :arguments 
+                  ( ("pointIndices" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6691 6726])
+                    ("isNeighborBased" variable (:type "bool") (reparse-symbol arg-sub-list) [6788 6809])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6871 6883])
+                    ("radius" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6945 6965]))                  
+                :type "void")
+                nil [6637 7895]))          
+      :file "Point_Cloud_Analysis.cpp"
+      :pointmax 7898
+      :fsize 7897
+      :lastmodtime '(21654 53466 760303 515000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!boundary_estimation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

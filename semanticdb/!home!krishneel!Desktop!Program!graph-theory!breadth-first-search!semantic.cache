@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("Node" type
+               (:members 
+                  ( ("info" variable (:type "int") (reparse-symbol classsubparts) [67 76])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [103 114]))                  
+                :type "struct")
+                nil [49 149])
+            ("Graph" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [166 174])
+                    ("n" variable (:type "int") (reparse-symbol classsubparts) [179 185])
+                    ("A" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol classsubparts) [226 234])
+                    ("public" label nil (reparse-symbol classsubparts) [240 247])
+                    ("Graph" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [267 280]))                          
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [261 282])
+                    ("isConnected" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [304 308])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [309 313]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [287 314])
+                    ("addEdge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [332 336])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [337 341]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [319 342])
+                    ("BFS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [356 360]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [347 361]))                  
+                :type "class")
+                nil [151 364])
+            ("Graph" function
+               (:constructor-flag t
+                :parent "Graph"
+                :arguments 
+                  ( ("size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [402 417]))                  
+                :type ("Graph" type (:type "class") nil nil))
+                nil [389 746])
+            ("isConnected" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [863 869])
+                    ("v" variable (:type "int") (reparse-symbol arg-sub-list) [870 876]))                  
+                :type "bool")
+                nil [839 927])
+            ("addEdge" function
+               (:parent "Graph"
+                :arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [989 995])
+                    ("v" variable (:type "int") (reparse-symbol arg-sub-list) [996 1002]))                  
+                :type "void")
+                nil [969 1064])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1100 1109])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1110 1123]))                  
+                :type "int")
+                nil [1091 1147]))          
+      :file "main.cpp"
+      :pointmax 1148
+      :fsize 1067
+      :lastmodtime '(21757 62590 950627 933000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!graph-theory!breadth-first-search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

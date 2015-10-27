@@ -1,0 +1,341 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_HOME_KRISHNEEL_DESKTOP_PROGRAM_CC_LABELING_CONNECTED_H_" variable (:constant-flag t) nil [75 131])
+            ("vector" include (:system-flag t) nil [134 151])
+            ("algorithm" include (:system-flag t) nil [152 172])
+            ("constant" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("T" type (:typevar "V") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("T" function
+                       (:methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [229 263]))                  )
+                nil [174 266])
+            ("ConnectedComponents" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [297 304])
+                    ("ConnectedComponents" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("soft_maxlabels" variable (:type "int") (reparse-symbol arg-sub-list) [338 357]))                          
+                        :type ("ConnectedComponents" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [318 407])
+                    ("clear" function (:type "void") (reparse-symbol classsubparts) [412 520])
+                    ("connected" function
+                       (:template 
+                          ( ("Tin" type (:type "class") nil nil)
+                            ("Tlabel" type (:type "class") nil nil)
+                            ("Comparator" type (:type "class") nil nil)
+                            ("Boolean" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Tin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [618 630])
+                            ("" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [631 640])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [641 645])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [646 650])
+                            ("" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [651 662])
+                            ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [663 671]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [525 672])
+                    ("private" label nil (reparse-symbol classsubparts) [675 683])
+                    ("Similarity" type
+                       (:members 
+                          ( ("Similarity" function
+                               (:constructor-flag t
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [715 749])
+                            ("Similarity" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [768 776])
+                                    ("_sameas" variable (:type "int") (reparse-symbol arg-sub-list) [777 789]))                                  
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [757 819])
+                            ("Similarity" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [847 855]))                                  
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [836 881])
+                            ("id" variable (:type "int") (reparse-symbol classsubparts) [889 909])
+                            ("sameas" variable (:type "int") (reparse-symbol classsubparts) [889 909])
+                            ("tag" variable (:type "int") (reparse-symbol classsubparts) [889 909]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [688 916])
+                    ("is_root_label" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [941 948]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [922 998])
+                    ("root_of" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1022]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1003 1196])
+                    ("is_equivalent" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1220 1227])
+                            ("as" variable (:type "int") (reparse-symbol arg-sub-list) [1228 1235]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1201 1288])
+                    ("merge" function
+                       (:arguments 
+                          ( ("id1" variable (:type "int") (reparse-symbol arg-sub-list) [1304 1312])
+                            ("id2" variable (:type "int") (reparse-symbol arg-sub-list) [1313 1321]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1293 1475])
+                    ("new_label" function (:type "int") (reparse-symbol classsubparts) [1480 1729])
+                    ("label_image" function
+                       (:template 
+                          ( ("Tin" type (:type "class") nil nil)
+                            ("Tlabel" type (:type "class") nil nil)
+                            ("Comparator" type (:type "class") nil nil)
+                            ("Boolean" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("img" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Tin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1822 1837])
+                            ("out" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1838 1850])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1872 1882])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1883 1894])
+                            ("" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1895 1906])
+                            ("K8_connectivity" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1928 1952]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1734 1953])
+                    ("relabel_image" function
+                       (:template 
+                          ( ("Tlabel" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("out" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2003 2015])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2016 2026])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2027 2038]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1958 2039])
+                    ("labels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Similarity" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2048 2079])
+                    ("highest_label" variable (:type "int") (reparse-symbol classsubparts) [2084 2102]))                  
+                :type "class")
+                nil [268 2105])
+            ("connected" function
+               (:template 
+                  ( ("Tin" type (:type "class") nil nil)
+                    ("Tlabel" type (:type "class") nil nil)
+                    ("Comparator" type (:type "class") nil nil)
+                    ("Boolean" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Tin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2224 2239])
+                    ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2245 2262])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2268 2278])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2284 2295])
+                    ("SAME" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2301 2317])
+                    ("K8_connectivity" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2347]))                  
+                :parent "ConnectedComponents")
+                nil [2107 2486])
+            ("label_image" function
+               (:template 
+                  ( ("Tin" type (:type "class") nil nil)
+                    ("Tlabel" type (:type "class") nil nil)
+                    ("Comparator" type (:type "class") nil nil)
+                    ("Boolean" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Tin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2607 2622])
+                    ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2627 2644])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2650 2660])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2666 2677])
+                    ("SAME" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2683 2699])
+                    ("K8_CONNECTIVITY" variable
+                       (:constant-flag t
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2705 2735]))                  
+                :parent "ConnectedComponents")
+                nil [2488 4340])
+            ("relabel_image" function
+               (:template 
+                  ( ("Tlabel" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4411 4428])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4434 4444])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [4450 4461]))                  
+                :parent "ConnectedComponents")
+                nil [4343 4744]))          
+      :file "connected.h"
+      :pointmax 4814
+      :fsize 4813
+      :lastmodtime '(21766 27734 795293 787000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_HOME_KRISHNEEL_DESKTOP_PROGRAM_CC_LABELING_CONNECTED_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [2 31])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [32 70])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [71 109])
+            ("stdlib.h" include (:system-flag t) nil [111 130])
+            ("stdio.h" include (:system-flag t) nil [131 149])
+            ("ctime" include (:system-flag t) nil [150 166])
+            ("functional" include (:system-flag t) nil [167 188])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [190 209])
+            ("connected.h" include nil nil [211 233])
+            ("contour_thinning.h" include nil nil [234 263])
+            ("cvLabelImageRegion" function
+               (:arguments 
+                  ( ("in_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [371 393])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [418 435]))                  
+                :type "void")
+                nil [347 1502])
+            ("cvMorphologicalOperations" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1540 1559])
+                    ("erosion_dst" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1564 1585]))                  
+                :type "void")
+                nil [1504 2057])
+            ("cvGetImageGrid" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2097 2116])
+                    ("img_cells" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2121 2153])
+                    ("cell_size" variable
+                       (:default-value "cv::Size(80, 60)"
+                        :type ("cv::Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2158 2195]))                  
+                :type "void")
+                nil [2072 2903])
+            ("colorRegion" function
+               (:arguments 
+                  ( ("labelMD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2922 2945])
+                    ("regionMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2946 2964]))                  
+                :type "void")
+                nil [2905 3567])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3579 3588])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3589 3602]))                  
+                :type "int")
+                nil [3570 4920]))          
+      :file "main.cpp"
+      :pointmax 4923
+      :fsize 4922
+      :lastmodtime '(21767 38541 519574 858000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [1 39])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [40 78])
+            ("thinningIteration" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("im" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [303 315])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [316 325]))                  
+                :type "void")
+                nil [273 1465])
+            ("thinning" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("im" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1594 1606]))                  
+                :type "void")
+                nil [1573 1901]))          
+      :file "contour_thinning.h"
+      :pointmax 1902
+      :fsize 1901
+      :lastmodtime '(21765 31704 867695 975000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!cc_labeling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

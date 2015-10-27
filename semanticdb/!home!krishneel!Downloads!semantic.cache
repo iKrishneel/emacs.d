@@ -1,0 +1,158 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("MAINFILE" variable (:default-value ("$(shell grep -l \"\\\\\\\\documentclass\" *.tex)")) nil [3220 3272])
+            ("FIGRAW" variable (:default-value ("figs_orig")) nil [3272 3289])
+            ("FIGDIR" variable (:default-value ("figs")) nil [3289 3301])
+            ("TMPDIR" variable (:default-value ("tmp")) nil [3302 3313])
+            ("CONVERT" variable (:default-value ("convert")) nil [3399 3415])
+            ("UPLOAD_USER" variable (:default-value ("$(SSH_USER)")) nil [3434 3458])
+            ("UPLOAD_DIR" variable (:default-value ("/home/jsk/$(UPLOAD_USER)/public_html/pdf")) nil [3458 3510])
+            ("UPLOAD_LATEST_DIR" variable (:default-value ("/home/jsk/$(UPLOAD_USER)/public_html/pdf")) nil [3510 3569])
+            ("UPLOAD_PREFIX" variable (:default-value ("$(UPLOAD_USER)-mthesis-")) nil [3569 3607])
+            ("UPLOAD_TIME" variable (:default-value ("$(shell date +%s)")) nil [3607 3637])
+            ("UPLOAD_SERVER" variable (:default-value ("$(SSH_USER)@www.jsk.t.u-tokyo.ac.jp")) nil [3637 3687])
+            ("UPLOAD_PATH" variable (:default-value ("$(UPLOAD_DIR)/$(UPLOAD_PREFIX)$(UPLOAD_TIME).pdf")) nil [3688 3749])
+            ("UPLOAD_LATEST_PATH" variable (:default-value ("$(UPLOAD_LATEST_DIR)/$(UPLOAD_PREFIX)latest.pdf")) nil [3749 3816])
+            ("TEXFILESPRE" variable (:default-value ("$(shell grep \"\\\\\\\\include{\" $(MAINFILE) | sed 's/.*{\\([^}]*\\)}.*/\\1/g')" "$(shell egrep \"\\\\\\\\input{.*\\.tex}\" $(MAINFILE) | sed 's/.*{\\([^}]*\\).tex}.*/\\1/g')")) nil [4315 4491])
+            ("MUTE" variable (:default-value ("@")) nil [4824 4831])
+            ("SILENT" variable nil nil [4838 4860])
+            ("VERYSILENT" variable nil nil [4869 4907])
+            ("MAKE" variable (:default-value ("make" "--no-print-directory")) nil [4908 4939])
+            ("LS" variable (:default-value ("ls" "-1" "--color=none")) nil [4939 4961])
+            ("CP" variable (:default-value ("cp")) nil [4961 4967])
+            ("LATEX" variable (:default-value ("./scripts/platex.sh")) nil [4968 4994])
+            ("BIBTEX" variable (:default-value ("./scripts/bibtex.sh")) nil [4994 5021])
+            ("MSG_LAB_CHANGED" variable (:default-value ("\"LaTeX Warning: Label(s) may have changed\"")) nil [5022 5081])
+            ("MSG_REF_UNDEFINED" variable (:default-value ("\"LaTeX Warning: Reference.*undefined on input line.*\"")) nil [5081 5153])
+            ("MSG_CIT_UNDEFINED" variable (:default-value ("\"LaTeX Warning: Citation.*undefined on input\"")) nil [5153 5217])
+            ("FIND_BIB_FILE" variable (:default-value ("$(shell \\
+	sed -e \"s/\\\\\\\\%//g\" $(1) | \\
+	sed -e \"s/\\([^%]*\\).*/\\1/g\" | \\
+	grep \"\\\\\\\\bibliography{\"  | \\
+        sed 's/.*{\\([^}^ ]*\\)}.*/\\1/g').bib")) nil [5268 5430])
+            ("BIBFILE" variable (:default-value ("$(call FIND_BIB_FILE, $(TEXFILES:=.tex))")) nil [5431 5481])
+            ("FIGS" variable (:default-value ("$(sort $(shell grep -e $(FIGDIR)/ $(TEXFILES:=.tex) \\
+		    | sed \"s/.*{$(FIGDIR)\\/\\([^}]*\\).*/\\1/g\" ))")) nil [5865 5974])
+            ("EPS_TO" variable (:default-value (".pdf")) nil [6062 6074])
+            ("PDF_TO" variable (:default-value (".pdf")) nil [6074 6086])
+            ("PNG_TO" variable (:default-value (".png")) nil [6086 6098])
+            ("JPG_TO" variable (:default-value (".png")) nil [6098 6110])
+            ("DIA_TO" variable (:default-value (".pdf")) nil [6110 6122])
+            ("SVG_TO" variable (:default-value (".pdf")) nil [6122 6134])
+            ("DOT_TO" variable (:default-value (".pdf")) nil [6134 6146])
+            ("XCF_TO" variable (:default-value (".png")) nil [6146 6158])
+            ("FIGSRCEPS" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .eps, $(FIGS))))")) nil [6269 6343])
+            ("FIGSRCJPG" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .jpg, $(FIGS))))")) nil [6343 6417])
+            ("FIGSRCPNG" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .png, $(FIGS))))")) nil [6417 6491])
+            ("FIGSRCPDF" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .pdf, $(FIGS))))")) nil [6491 6565])
+            ("FIGSRCDIA" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .dia, $(FIGS))))")) nil [6565 6639])
+            ("FIGSRCSVG" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .svg, $(FIGS))))")) nil [6639 6713])
+            ("FIGSRCDOT" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .dot, $(FIGS))))")) nil [6713 6787])
+            ("FIGSRCXCF" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(addsuffix .xcf, $(FIGS))))")) nil [6787 6861])
+            ("FIGSRCEPST" variable (:default-value ("$(wildcard $(addprefix $(FIGRAW)/, $(FIGS:.eps_t=.fig)))")) nil [6861 6929])
+            ("FIGDEPEPS" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCEPS:.eps=$(EPS_TO)))")) nil [6992 7063])
+            ("FIGDEPJPG" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCJPG:.jpg=$(JPG_TO)))")) nil [7063 7134])
+            ("FIGDEPPNG" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCPNG:.png=$(PNG_TO)))")) nil [7134 7205])
+            ("FIGDEPPDF" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCPDF:.pdf=$(PDF_TO)))")) nil [7205 7276])
+            ("FIGDEPDIA" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCDIA:.dia=$(DIA_TO)))")) nil [7276 7347])
+            ("FIGDEPSVG" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCSVG:.svg=$(SVG_TO)))")) nil [7347 7418])
+            ("FIGDEPDOT" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCDOT:.dot=$(DOT_TO)))")) nil [7418 7489])
+            ("FIGDEPXCF" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCXCF:.xcf=$(XCF_TO)))")) nil [7489 7560])
+            ("FIGDEPEPST" variable (:default-value ("$(subst $(FIGRAW)/, $(FIGDIR)/, $(FIGSRCEPST:.fig=.eps_t))")) nil [7560 7630])
+            ("ALLFIGSRC" variable (:default-value ("$(FIGSRCJPG)" "$(FIGSRCPNG)" "$(FIGSRCPDF)" "$(FIGSRCEPST)" "$(FIGSRCEPS)" "$(FIGSRCDIA)" "$(FIGSRCSVG)" "$(FIGSRCDOT)" "$(FIGSRCXCF)")) nil [7631 7759])
+            ("ALLFIGS" variable (:default-value ("$(FIGDEPJPG)" "$(FIGDEPPNG)" "$(FIGDEPPDF)" "$(FIGDEPEPST)" "$(FIGDEPEPS)" "$(FIGDEPDIA)" "$(FIGDEPSVG)" "$(FIGDEPDOT)" "$(FIGDEPXCF)")) nil [7759 7885])
+            ("FIGSUBDIRS" variable (:default-value ("$(shell find ${FIGRAW} -type d -print | sed \"s/$(FIGRAW)/$(FIGDIR)/g\")")) nil [7885 7970])
+            ("clear_valid" variable (:default-value ("( [ ! -e .valid ] || $(RM) .valid )")) nil [8196 8244])
+            ("check_undef_citations" variable (:default-value ("( egrep $(MSG_CIT_UNDEFINED) $(TMPDIR)/$(MAINFILE:.tex=.log) > /dev/null )")) nil [8244 8345])
+            ("pdf" function (:arguments ("$(MAINFILE:.tex=.pdf)")) nil [11925 11952])
+            ("ps" function (:arguments ("$(MAINFILE:.tex=.dvi)")) nil [11953 11980])
+            ("dvi" function (:arguments ("$(MAINFILE:.tex=.ps)")) nil [11981 12007])
+            ("$(MAINFILE:.tex=.pdf)" function (:arguments ("$(TMPDIR)/$(MAINFILE:.tex=.pdf)")) nil [12010 12153])
+            ("$(TMPDIR)" function (:arguments ("$(TMPDIR)/docinfo.txt" ".compilesource")) nil [12154 12363])
+            ("$(TMPDIR)" function (:arguments ("scripts/out2uni" "docinfo.txt")) nil [12364 12599])
+            ("scripts/out2uni" function (:arguments ("scripts/out2uni.c")) nil [12600 12690])
+            ("$(MAINFILE:.tex=.dvi)" function (:arguments (".force")) nil [12763 13047])
+            ("%.ps" function (:arguments ("%.dvi")) nil [13048 13140])
+            (".compilesource" function (:arguments (".force")) nil [13141 14321])
+            (".figs" function (:arguments ("makefigdir" "$(ALLFIGS)")) nil [14322 14371])
+            ("makefigdir" function nil nil [14372 14415])
+            ("clean" function nil nil [14416 14685])
+            ("figclean" function nil nil [14686 14787])
+            ("distclean" function (:arguments ("clean" "figclean")) nil [14788 14893])
+            ("open" function (:arguments ("$(MAINFILE:.tex=.pdf)")) nil [14894 14935])
+            ("view" function (:arguments ("$(MAINFILE:.tex=.pdf)")) nil [14936 14992])
+            ("viewdvi" function (:arguments ("$(MAINFILE:.tex=.dvi)")) nil [14993 15060])
+            ("viewps" function (:arguments ("$(MAINFILE:.tex=.ps)")) nil [15061 15124])
+            ("info" function nil nil [15125 15443])
+            (".valid" function (:arguments (".figs" "$(TEXFILES:=.tex)")) nil [15465 15515])
+            (".citations" function (:arguments (".citediff" "$(BIBFILE)")) nil [15579 15826])
+            (".citediff" function (:arguments (".force")) nil [15827 15870])
+            (".compiled" function (:arguments ("$(TEXFILES:=.tex)" "$(TMPDIR)/$(BBL)" ".figs")) nil [15898 16075])
+            (".force" function nil nil [16076 16084])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.png")) nil [16303 16355])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.jpg")) nil [16356 16408])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.dia")) nil [16409 16457])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.svg")) nil [16458 16517])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.dot")) nil [16518 16577])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.xcf")) nil [16578 16637])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.pdf")) nil [16638 16690])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.eps")) nil [16691 16738])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.png")) nil [16739 16799])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.jpg")) nil [16800 16860])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.eps")) nil [16861 16927])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.dia")) nil [16928 17037])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.svg")) nil [17038 17072])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.dot")) nil [17190 17224])
+            ("$(FIGDIR)" function (:arguments ("$(FIGRAW)/%.pdf")) nil [17338 17393])
+            ("$(FIGDEPEPST)" function (:arguments ("$(FIGDIR)/%.eps_t" ":" "$(FIGRAW)/%.fig")) nil [17394 17587])
+            ("watch" function nil nil [17588 18855])
+            ("count" function (:arguments ("$(MAINFILE:.tex=.pdf)")) nil [18856 19081])
+            ("compress" function (:arguments ("$(MAINFILE:.tex=)_s.pdf")) nil [19082 19116])
+            ("$(MAINFILE:.tex=)" function (:arguments ("$(MAINFILE:.tex=.pdf)")) nil [19117 19243])
+            ("UPLOAD_TIME" variable (:default-value ("$(shell date +%s)")) nil [19702 19732])
+            ("upload" function (:arguments ("$(MAINFILE:.tex=)_s.pdf")) nil [19732 19917]))          
+      :file "Makefile"
+      :pointmax 19918
+      :fsize 1964
+      :lastmodtime '(17570 61144 0 0)
+      :unmatched-syntax '((shell-command 17330 . 17336) (bol 17329 . 17329) (shell-command 17304 . 17328) (bol 17303 . 17303) (shell-command 17182 . 17188) (bol 17181 . 17181) (shell-command 17152 . 17180) (bol 17151 . 17151) (symbol 11756 . 11761) (bol 11756 . 11756) (semantic-list 11160 . 11755) (bol 11160 . 11160) (symbol 11153 . 11159) (symbol 11146 . 11152) (bol 11146 . 11146) (symbol 11056 . 11061) (bol 11056 . 11056) (semantic-list 10355 . 11055) (bol 10353 . 10353) (symbol 10342 . 10352) (symbol 10335 . 10341) (bol 10335 . 10335) (symbol 10234 . 10239) (bol 10234 . 10234) (shell-command 9632 . 10233) (bol 9631 . 9631) (symbol 9617 . 9630) (symbol 9610 . 9616) (bol 9610 . 9610) (symbol 9471 . 9476) (bol 9471 . 9471) (shell-command 8888 . 9470) (bol 8887 . 8887) (symbol 8872 . 8886) (symbol 8865 . 8871) (bol 8865 . 8865) (symbol 8815 . 8820) (bol 8815 . 8815) (shell-command 8415 . 8814) (bol 8414 . 8414) (symbol 8393 . 8413) (symbol 8386 . 8392) (bol 8386 . 8386) (semantic-list 5613 . 5622) (punctuation 5612 . 5613) (punctuation 5611 . 5612) (punctuation 5610 . 5611) (symbol 5607 . 5610) (bol 5605 . 5605) (ENDIF 5594 . 5599) (bol 5592 . 5592) (semantic-list 5582 . 5591) (punctuation 5581 . 5582) (punctuation 5580 . 5581) (punctuation 5579 . 5580) (symbol 5576 . 5579) (bol 5572 . 5572) (ELSE 5567 . 5571) (bol 5565 . 5565) (semantic-list 5544 . 5564) (punctuation 5543 . 5544) (punctuation 5542 . 5543) (punctuation 5541 . 5542) (symbol 5538 . 5541) (bol 5534 . 5534) (semantic-list 5513 . 5533) (IFNEQ 5507 . 5512) (bol 5505 . 5505) (semantic-list 4802 . 4815) (punctuation 4801 . 4802) (semantic-list 4784 . 4800) (punctuation 4783 . 4784) (punctuation 4782 . 4783) (punctuation 4781 . 4782) (symbol 4773 . 4781) (bol 4771 . 4771) (semantic-list 4675 . 4765) (punctuation 4674 . 4675) (semantic-list 4588 . 4667) (punctuation 4587 . 4588) (semantic-list 4568 . 4581) (punctuation 4567 . 4568) (semantic-list 4545 . 4561) (punctuation 4544 . 4545) (punctuation 4537 . 4538) (punctuation 4536 . 4537) (symbol 4528 . 4536) (bol 4526 . 4526) (semantic-list 4034 . 4170) (punctuation 4033 . 4034) (bol 4033 . 4033)))
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PCL_REGISTRATION_IMPL_CORRESPONDENCE_REJECTION_SAMPLE_CONSENSUS_HPP_" variable (:constant-flag t) nil [1879 1947])
+            ("pcl/registration/boost.h" include (:system-flag t) nil [1949 1984])
+            ("getRemainingCorrespondences" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("original_correspondences" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::Correspondences" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2214 2267])
+                    ("remaining_correspondences" variable
+                       (:reference 1
+                        :type ("pcl::Correspondences" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2273 2321]))                  
+                :parent "pcl::registration::CorrespondenceRejectorSampleConsensus")
+                nil [2081 5379]))          
+      :file "correspondence_rejection_sample_consensus.hpp"
+      :pointmax 5463
+      :fsize 5462
+      :lastmodtime '(22047 41897 935105 845000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PCL_REGISTRATION_IMPL_CORRESPONDENCE_REJECTION_SAMPLE_CONSENSUS_HPP_")
+          )
+))
+  :file "!home!krishneel!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

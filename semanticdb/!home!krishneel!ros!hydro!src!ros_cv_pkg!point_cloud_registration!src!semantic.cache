@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("point_cloud_registration/point_cloud_registration.h" include (:system-flag t) nil [2 64])
+            ("PointCloudRegistration" function
+               (:constructor-flag t
+                :parent "PointCloudRegistration"
+                :type ("PointCloudRegistration" type (:type "class") nil nil))
+                nil [66 132])
+            ("onInit" function
+               (:parent "PointCloudRegistration"
+                :type "void")
+                nil [134 294])
+            ("subscribe" function
+               (:parent "PointCloudRegistration"
+                :type "void")
+                nil [296 443])
+            ("unsubscribe" function
+               (:parent "PointCloudRegistration"
+                :type "void")
+                nil [445 496])
+            ("cloudCallback" function
+               (:parent "PointCloudRegistration"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [546 599]))                  
+                :type "void")
+                nil [498 894])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [906 915])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [916 929]))                  
+                :type "int")
+                nil [897 1051]))          
+      :file "point_cloud_registration_node.cpp"
+      :pointmax 1052
+      :fsize 1051
+      :lastmodtime '(22043 48923 733642 803000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!point_cloud_registration!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

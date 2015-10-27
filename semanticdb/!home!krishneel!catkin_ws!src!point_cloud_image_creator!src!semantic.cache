@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("point_cloud_image_creator/point_cloud_image_creator.h" include (:system-flag t) nil [2 66])
+            ("iostream" include (:system-flag t) nil [67 86])
+            ("string" include (:system-flag t) nil [87 104])
+            ("vector" include (:system-flag t) nil [105 122])
+            ("PointCloudImageCreator" function
+               (:constructor-flag t
+                :parent "PointCloudImageCreator"
+                :type ("PointCloudImageCreator" type (:type "class") nil nil))
+                nil [124 219])
+            ("onInit" function
+               (:parent "PointCloudImageCreator"
+                :type "void")
+                nil [221 412])
+            ("subsribe" function
+               (:parent "PointCloudImageCreator"
+                :type "void")
+                nil [414 700])
+            ("cloudCallback" function
+               (:parent "PointCloudImageCreator"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [750 802]))                  
+                :type "void")
+                nil [702 1450])
+            ("cameraInfoCallback" function
+               (:parent "PointCloudImageCreator"
+                :arguments 
+                  ( ("info_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1505 1555]))                  
+                :type "void")
+                nil [1452 1637])
+            ("projectPointCloudToImagePlane" function
+               (:parent "PointCloudImageCreator"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1706 1747])
+                    ("camera_info" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1752 1805]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [1639 3662])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3674 3683])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3684 3697]))                  
+                :type "int")
+                nil [3665 3808]))          
+      :file "point_cloud_image_creator_node.cpp"
+      :pointmax 3809
+      :fsize 3808
+      :lastmodtime '(21838 10416 116684 605000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!point_cloud_image_creator!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

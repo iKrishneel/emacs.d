@@ -1,0 +1,99 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [2 31])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [32 70])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [71 109])
+            ("stdlib.h" include (:system-flag t) nil [111 130])
+            ("stdio.h" include (:system-flag t) nil [131 149])
+            ("ctime" include (:system-flag t) nil [150 166])
+            ("functional" include (:system-flag t) nil [167 188])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [190 209])
+            ("include/connected.h" include nil nil [211 241])
+            ("include/contour_thinning.h" include nil nil [242 279])
+            ("cvLabelImageRegion" function
+               (:arguments 
+                  ( ("in_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [387 409])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [434 451]))                  
+                :type "void")
+                nil [363 1518])
+            ("cvMorphologicalOperations" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1556 1575])
+                    ("erosion_dst" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1580 1601]))                  
+                :type "void")
+                nil [1520 2073])
+            ("cvGetImageGrid" function
+               (:arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2113 2132])
+                    ("img_cells" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2137 2169])
+                    ("cell_size" variable
+                       (:default-value "cv::Size(80, 60)"
+                        :type ("cv::Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2174 2211]))                  
+                :type "void")
+                nil [2088 2919])
+            ("colorRegion" function
+               (:arguments 
+                  ( ("labelMD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2938 2961])
+                    ("regionMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2962 2980]))                  
+                :type "void")
+                nil [2921 3583])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3595 3604])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3605 3618]))                  
+                :type "int")
+                nil [3586 4936]))          
+      :file "main.cpp"
+      :pointmax 4939
+      :fsize 4938
+      :lastmodtime '(21853 61052 103778 126000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!Programs!connected_components_analysis!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

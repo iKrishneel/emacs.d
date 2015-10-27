@@ -1,0 +1,2644 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_SUBSCRIBER_H" variable (:constant-flag t) nil [1817 1845])
+            ("ros/ros.h" include (:system-flag t) nil [1847 1867])
+            ("boost/signals.hpp" include (:system-flag t) nil [1869 1897])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1898 1931])
+            ("connection.h" include nil nil [1933 1956])
+            ("simple_filter.h" include nil nil [1957 1983])
+            ("message_filters" type
+               (:members 
+                  ( ("SubscriberBase" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2037 2044])
+                            ("SubscriberBase" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2047 2075])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2527 2547])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2548 2573])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2594])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::TransportHints()"
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2595 2661])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2663 2710]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2504 2716])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2842 2871])
+                            ("unsubscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2963 2994]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2014 2997])
+                    ("SubscriberBasePtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("SubscriberBase" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2998 3058])
+                    ("Subscriber" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3779 3786])
+                            ("MConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3789 3834])
+                            ("EventType" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3837 3882])
+                            ("Subscriber" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4307 4327])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4328 4353])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4374])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::TransportHints()"
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4375 4441])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4443 4490]))                                  
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4296 4570])
+                            ("Subscriber" function
+                               (:constructor-flag t
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4657 4677])
+                            ("Subscriber" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4681 4721])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5166 5186])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5187 5212])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5213 5233])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "ros::TransportHints()"
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5234 5300])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5302 5349]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5151 5677])
+                            ("subscribe" function (:type "void") (reparse-symbol classsubparts) [5804 5923])
+                            ("unsubscribe" function (:type "void") (reparse-symbol classsubparts) [6016 6063])
+                            ("getTopic" function
+                               (:methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6067 6126])
+                            ("getSubscriber" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("ros::Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6198 6259])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6411 6416]))                                  )
+                                (reparse-symbol classsubparts) [6370 6424])
+                            ("add" function
+                               (:arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("EventType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6544 6563]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6535 6571])
+                            ("private" label nil (reparse-symbol classsubparts) [6573 6581])
+                            ("cb" function
+                               (:arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("EventType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6593 6612]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6585 6648])
+                            ("sub_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6652 6673])
+                            ("ops_" variable (:type ("ros::SubscribeOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6676 6703])
+                            ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6706 6726]))                          
+                        :superclasses 
+                          ( ("SubscriberBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("SimpleFilter" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3694 6729]))                  
+                :type "namespace")
+                nil [1985 6732]))          
+      :file "subscriber.h"
+      :pointmax 6741
+      :fsize 6740
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MESSAGE_FILTERS_SUBSCRIBER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_SYNCHRONIZER_H" variable (:constant-flag t) nil [1819 1849])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [1851 1883])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [1884 1915])
+            ("boost/function.hpp" include (:system-flag t) nil [1916 1945])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1946 1979])
+            ("boost/signals.hpp" include (:system-flag t) nil [1980 2008])
+            ("boost/bind.hpp" include (:system-flag t) nil [2009 2034])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [2035 2075])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [2076 2108])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [2109 2136])
+            ("boost/mpl/at.hpp" include (:system-flag t) nil [2137 2164])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [2165 2196])
+            ("boost/function_types/function_arity.hpp" include (:system-flag t) nil [2197 2247])
+            ("boost/function_types/is_nonmember_callable_builtin.hpp" include (:system-flag t) nil [2248 2313])
+            ("connection.h" include nil nil [2315 2338])
+            ("null_types.h" include nil nil [2339 2362])
+            ("signal9.h" include nil nil [2363 2383])
+            ("ros/message_traits.h" include (:system-flag t) nil [2384 2415])
+            ("ros/message_event.h" include (:system-flag t) nil [2416 2446])
+            ("deque" include (:system-flag t) nil [2448 2464])
+            ("vector" include (:system-flag t) nil [2465 2482])
+            ("string" include (:system-flag t) nil [2483 2500])
+            ("message_filters" type
+               (:members 
+                  ( ("mpl" type
+                       (:kind alias
+                        :members 
+                          ( ("boost::mpl" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2531 2558])
+                    ("Synchronizer" type
+                       (:template 
+                          ( ("Policy" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2647 2654])
+                            ("Messages" type
+                               (:typedef ("Policy::Messages" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2657 2700])
+                            ("Events" type
+                               (:typedef ("Policy::Events" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2703 2742])
+                            ("Signal" type
+                               (:typedef ("Policy::Signal" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2745 2784])
+                            ("M0" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2787 2836])
+                            ("M1" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2839 2888])
+                            ("M2" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2891 2940])
+                            ("M3" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2943 2992])
+                            ("M4" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2995 3044])
+                            ("M5" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3047 3096])
+                            ("M6" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3099 3148])
+                            ("M7" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3151 3200])
+                            ("M8" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3203 3252])
+                            ("M0Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3255 3307])
+                            ("M1Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3310 3362])
+                            ("M2Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3365 3417])
+                            ("M3Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3420 3472])
+                            ("M4Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3475 3527])
+                            ("M5Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3530 3582])
+                            ("M6Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3585 3637])
+                            ("M7Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3640 3692])
+                            ("M8Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3695 3747])
+                            ("MAX_MESSAGES" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "9"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3751 3789])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3837 3844])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3845 3852]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [3793 3898])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3956 3963])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3964 3971])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3972 3979]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [3902 4029])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4097 4104])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4105 4112])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4113 4120])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4121 4128]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4033 4182])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4260 4267])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4268 4275])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4276 4283])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4284 4291])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4292 4299]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4186 4357])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4445 4452])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4453 4460])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4461 4468])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4469 4476])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4477 4484])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4485 4492]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4361 4554])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4652 4659])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4660 4667])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4668 4675])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4676 4683])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4684 4691])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4692 4699])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4700 4707]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4558 4773])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4881 4888])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4889 4896])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4897 4904])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4905 4912])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4913 4920])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4921 4928])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4929 4936])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4937 4944]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [4777 5014])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil)
+                                    ("F8" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5132 5139])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5140 5147])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5148 5155])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5156 5163])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5164 5171])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5172 5179])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5180 5187])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5188 5195])
+                                    ("f8" variable
+                                       (:reference 1
+                                        :type ("F8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5196 5203]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5018 5277])
+                            ("Synchronizer" function
+                               (:constructor-flag t
+                                :type ("Synchronizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5281 5315])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5363 5384])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5385 5392])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5393 5400]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5319 5465])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5523 5544])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5545 5552])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5553 5560])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5561 5568]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5469 5637])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5705 5726])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5727 5734])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5735 5742])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5743 5750])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5751 5758]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5641 5831])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5909 5930])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5931 5938])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5939 5946])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5947 5954])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5955 5962])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5963 5970]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5835 6047])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6135 6156])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6157 6164])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6165 6172])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6173 6180])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6181 6188])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6189 6196])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6197 6204]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [6051 6285])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6383 6404])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6405 6412])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6413 6420])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6421 6428])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6429 6436])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6437 6444])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6445 6452])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6453 6460]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [6289 6545])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6653 6674])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6675 6682])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6683 6690])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6691 6698])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6699 6706])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6707 6714])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6715 6722])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6723 6730])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6731 6738]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [6549 6827])
+                            ("Synchronizer" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil)
+                                    ("F8" type (:type "class") nil nil))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6945 6966])
+                                    ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6967 6974])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6975 6982])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6983 6990])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6991 6998])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6999 7006])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7007 7014])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7015 7022])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7023 7030])
+                                    ("f8" variable
+                                       (:reference 1
+                                        :type ("F8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7031 7038]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [6831 7131])
+                            ("Synchronizer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("policy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Policy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7148 7169]))                                  
+                                :type ("Synchronizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7135 7208])
+                            ("Synchronizer" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7212 7256])
+                            ("init" function (:type "void") (reparse-symbol classsubparts) [7260 7309])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7362 7369])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7370 7377]))                                  )
+                                (reparse-symbol classsubparts) [7313 7438])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7501 7508])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7509 7516])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7517 7524]))                                  )
+                                (reparse-symbol classsubparts) [7442 7589])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7662 7669])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7670 7677])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7678 7685])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7686 7693]))                                  )
+                                (reparse-symbol classsubparts) [7593 7762])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7845 7852])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7853 7860])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7861 7868])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7869 7876])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7877 7884]))                                  )
+                                (reparse-symbol classsubparts) [7766 7957])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8050 8057])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8058 8065])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8066 8073])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8074 8081])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8082 8089])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8090 8097]))                                  )
+                                (reparse-symbol classsubparts) [7961 8174])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8277 8284])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8285 8292])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8293 8300])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8301 8308])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8309 8316])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8317 8324])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8325 8332]))                                  )
+                                (reparse-symbol classsubparts) [8178 8413])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8526 8533])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8534 8541])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8542 8549])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8550 8557])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8558 8565])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8566 8573])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8574 8581])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8582 8589]))                                  )
+                                (reparse-symbol classsubparts) [8417 8674])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F0" type (:type "class") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil)
+                                    ("F3" type (:type "class") nil nil)
+                                    ("F4" type (:type "class") nil nil)
+                                    ("F5" type (:type "class") nil nil)
+                                    ("F6" type (:type "class") nil nil)
+                                    ("F7" type (:type "class") nil nil)
+                                    ("F8" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f0" variable
+                                       (:reference 1
+                                        :type ("F0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8797 8804])
+                                    ("f1" variable
+                                       (:reference 1
+                                        :type ("F1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8805 8812])
+                                    ("f2" variable
+                                       (:reference 1
+                                        :type ("F2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8813 8820])
+                                    ("f3" variable
+                                       (:reference 1
+                                        :type ("F3" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8821 8828])
+                                    ("f4" variable
+                                       (:reference 1
+                                        :type ("F4" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8829 8836])
+                                    ("f5" variable
+                                       (:reference 1
+                                        :type ("F5" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8837 8844])
+                                    ("f6" variable
+                                       (:reference 1
+                                        :type ("F6" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8845 8852])
+                                    ("f7" variable
+                                       (:reference 1
+                                        :type ("F7" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8853 8860])
+                                    ("f8" variable
+                                       (:reference 1
+                                        :type ("F8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8861 8868]))                                  )
+                                (reparse-symbol classsubparts) [8678 10176])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10228 10240]))                                  )
+                                (reparse-symbol classsubparts) [10180 10290])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10342 10360]))                                  )
+                                (reparse-symbol classsubparts) [10294 10410])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil)
+                                    ("T" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10474 10492])
+                                    ("t" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10493 10498]))                                  )
+                                (reparse-symbol classsubparts) [10414 10551])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil)
+                                    ("T" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10615 10627])
+                                    ("t" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10628 10633]))                                  )
+                                (reparse-symbol classsubparts) [10555 10686])
+                            ("setName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10703 10727]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10690 10745])
+                            ("getName" function
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10748 10794])
+                            ("signal" function
+                               (:arguments 
+                                  ( ("e0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M0Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10811 10829])
+                                    ("e1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M1Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10830 10848])
+                                    ("e2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M2Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10849 10867])
+                                    ("e3" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M3Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10868 10886])
+                                    ("e4" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M4Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10887 10905])
+                                    ("e5" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M5Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10920 10938])
+                                    ("e6" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M6Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10939 10957])
+                                    ("e7" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M7Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10958 10976])
+                                    ("e8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M8Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10977 10995]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10799 11057])
+                            ("getPolicy" function
+                               (:pointer 1
+                                :type ("Policy" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11061 11119])
+                            ("Policy::add" variable (:type "int") (reparse-symbol classsubparts) [11129 11141])
+                            ("add" function
+                               (:template 
+                                  ( ("int" type (:typevar "i") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::shared_ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11172 11196])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :constant-flag t
+                                        :type ("mpl::at_c::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11196 11240])
+                                    ("" variable (:type ("msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11242 11246]))                                  )
+                                (reparse-symbol classsubparts) [11145 11323])
+                            ("private" label nil (reparse-symbol classsubparts) [11325 11333])
+                            ("disconnectAll" function (:type "void") (reparse-symbol classsubparts) [11337 11462])
+                            ("cb" function
+                               (:template 
+                                  ( ("int" type (:typevar "i") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("evt" variable
+                                       (:reference 1
+                                        :typemodifiers ("typename")
+                                        :constant-flag t
+                                        :type ("mpl::at_c::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11492 11539]))                                  )
+                                (reparse-symbol classsubparts) [11466 11570])
+                            ("queue_size_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11574 11595])
+                            ("signal_" variable (:type ("Signal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11599 11614])
+                            ("input_connections_" variable
+                               (:dereference 1
+                                :type ("Connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11618 11662])
+                            ("name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11666 11684]))                          
+                        :superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("Policy" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2560 11687])
+                    ("PolicyBase" type
+                       (:template 
+                          ( ("M0" type (:type "class") nil nil)
+                            ("M1" type (:type "class") nil nil)
+                            ("M2" type (:type "class") nil nil)
+                            ("M3" type (:type "class") nil nil)
+                            ("M4" type (:type "class") nil nil)
+                            ("M5" type (:type "class") nil nil)
+                            ("M6" type (:type "class") nil nil)
+                            ("M7" type (:type "class") nil nil)
+                            ("M8" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Messages" type
+                               (:typedef ("mpl::vector" type
+                                     (:template-specifier 
+                                        ( ("M0" type nil nil nil)
+                                          ("M1" type nil nil nil)
+                                          ("M2" type nil nil nil)
+                                          ("M3" type nil nil nil)
+                                          ("M4" type nil nil nil)
+                                          ("M5" type nil nil nil)
+                                          ("M6" type nil nil nil)
+                                          ("M7" type nil nil nil)
+                                          ("M8" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [11846 11911])
+                            ("Signal" type
+                               (:typedef ("Signal9" type
+                                     (:template-specifier 
+                                        ( ("M0" type nil nil nil)
+                                          ("M1" type nil nil nil)
+                                          ("M2" type nil nil nil)
+                                          ("M3" type nil nil nil)
+                                          ("M4" type nil nil nil)
+                                          ("M5" type nil nil nil)
+                                          ("M6" type nil nil nil)
+                                          ("M7" type nil nil nil)
+                                          ("M8" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [11914 11973])
+                            ("Events" type
+                               (:typedef ("mpl::vector" type
+                                     (:template-specifier 
+                                        ( ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M0" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M1" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M2" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M3" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M4" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M5" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M6" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M7" type (:constant-flag t) nil nil))                                            ) nil nil)
+                                          ("ros::MessageEvent" type (:template-specifier 
+                                            ( ("M8" type (:constant-flag t) nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [11976 12309])
+                            ("RealTypeCount" type
+                               (:typedef ("mpl::fold::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12312 12470])
+                            ("M0Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12473 12525])
+                            ("M1Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12528 12580])
+                            ("M2Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12583 12635])
+                            ("M3Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12638 12690])
+                            ("M4Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12693 12745])
+                            ("M5Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12748 12800])
+                            ("M6Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12803 12855])
+                            ("M7Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12858 12910])
+                            ("M8Event" type
+                               (:typedef ("mpl::at_c::type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12913 12965]))                          )
+                        (reparse-symbol namespacesubparts) [11689 12968]))                  
+                :type "namespace")
+                nil [2502 12971]))          
+      :file "synchronizer.h"
+      :pointmax 13043
+      :fsize 13042
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax '((punctuation 11240 . 11241) (punctuation 11239 . 11240) (punctuation 11195 . 11196) (USING 11123 . 11128))
+      :lexical-table 
+        '(("MESSAGE_FILTERS_SYNCHRONIZER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_CONNECTION_H" variable (:constant-flag t) nil [1817 1845])
+            ("boost/function.hpp" include (:system-flag t) nil [1847 1876])
+            ("boost/signals/connection.hpp" include (:system-flag t) nil [1877 1916])
+            ("macros.h" include nil nil [1917 1936])
+            ("message_filters" type
+               (:members 
+                  ( ("Connection" variable (:type ("MESSAGE_FILTERS_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2072 2739]))                  
+                :type "namespace")
+                nil [1938 2742]))          
+      :file "connection.h"
+      :pointmax 2783
+      :fsize 2782
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MESSAGE_FILTERS_CONNECTION_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_SIMPLE_FILTER_H" variable (:constant-flag t) nil [1820 1851])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1853 1885])
+            ("connection.h" include nil nil [1887 1910])
+            ("signal1.h" include nil nil [1911 1931])
+            ("ros/message_event.h" include (:system-flag t) nil [1932 1962])
+            ("ros/subscription_callback_helper.h" include (:system-flag t) nil [1963 2008])
+            ("boost/bind.hpp" include (:system-flag t) nil [2010 2035])
+            ("string" include (:system-flag t) nil [2037 2054])
+            ("message_filters" type
+               (:members 
+                  ( ("SimpleFilter" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2445 2452])
+                            ("MConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2455 2500])
+                            ("Callback" variable (:type "int") (reparse-symbol classsubparts) [2551 2560])
+                            ("EventType" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2563 2608])
+                            ("EventCallback" variable (:type "int") (reparse-symbol classsubparts) [2659 2673])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2855 2873]))                                  )
+                                (reparse-symbol classsubparts) [2804 3047])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3229 3251])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3251 3258])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3261 3270]))                                  )
+                                (reparse-symbol classsubparts) [3178 3380])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3578 3580]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [3511 3691])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3904 3906])) :type "void") (reparse-symbol arg-sub-list) [3885 3907]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3908 3913])))
+                                (reparse-symbol classsubparts) [3822 4109])
+                            ("setName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4199 4223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4186 4241])
+                            ("getName" function
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4317 4363])
+                            ("protected" label nil (reparse-symbol classsubparts) [4365 4375])
+                            ("signalMessage" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4487 4508]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4468 4585])
+                            ("signalMessage" function
+                               (:arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4698 4738]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4679 4771])
+                            ("private" label nil (reparse-symbol classsubparts) [4773 4781])
+                            ("Signal" type
+                               (:typedef ("Signal1" type
+                                     (:template-specifier 
+                                        ( ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4784 4810])
+                            ("signal_" variable (:type ("Signal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4814 4829])
+                            ("name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4833 4851]))                          
+                        :superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2378 4854]))                  
+                :type "namespace")
+                nil [2056 4857]))          
+      :file "simple_filter.h"
+      :pointmax 4867
+      :fsize 4866
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax '((punctuation 3259 . 3260) (punctuation 3258 . 3259) (semantic-list 3255 . 3258) (punctuation 3250 . 3251) (punctuation 2657 . 2658) (semantic-list 2639 . 2657) (VOID 2635 . 2639) (punctuation 2634 . 2635) (symbol 2626 . 2634) (punctuation 2625 . 2626) (punctuation 2624 . 2625) (symbol 2619 . 2624) (TYPEDEF 2611 . 2618) (punctuation 2549 . 2550) (semantic-list 2531 . 2549) (VOID 2527 . 2531) (punctuation 2526 . 2527) (symbol 2518 . 2526) (punctuation 2517 . 2518) (punctuation 2516 . 2517) (symbol 2511 . 2516) (TYPEDEF 2503 . 2510))
+      :lexical-table 
+        '(("MESSAGE_FILTERS_SIMPLE_FILTER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_NULL_TYPES_H" variable (:constant-flag t) nil [1817 1845])
+            ("connection.h" include nil nil [1847 1870])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [1872 1903])
+            ("ros/time.h" include (:system-flag t) nil [1904 1925])
+            ("ros/message_traits.h" include (:system-flag t) nil [1927 1958])
+            ("message_filters" type
+               (:members 
+                  ( ("NullType" type (:type "struct") (reparse-symbol namespacesubparts) [1989 2009])
+                    ("NullTypeConstPtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("NullType" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2010 2069])
+                    ("NullFilter" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2162 2180]))                                  )
+                                (reparse-symbol classsubparts) [2111 2213])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2268 2290])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [2290 2297])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2300 2309]))                                  )
+                                (reparse-symbol classsubparts) [2217 2342]))                          )
+                        (reparse-symbol namespacesubparts) [2071 2345]))                  
+                :type "namespace")
+                nil [1960 2347])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("TimeStamp" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("message_filters::NullType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2474 2507]))                                          
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2451 2539]))                                  
+                                :template-specifier 
+                                  ( ("message_filters::NullType" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2392 2542]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2365 2544]))                  
+                :type "namespace")
+                nil [2349 2546]))          
+      :file "null_types.h"
+      :pointmax 2587
+      :fsize 2586
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax '((punctuation 2298 . 2299) (punctuation 2297 . 2298) (semantic-list 2294 . 2297) (punctuation 2289 . 2290))
+      :lexical-table 
+        '(("MESSAGE_FILTERS_NULL_TYPES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_SIGNAL9_H" variable (:constant-flag t) nil [1814 1839])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1841 1873])
+            ("connection.h" include nil nil [1875 1898])
+            ("null_types.h" include nil nil [1899 1922])
+            ("ros/message_event.h" include (:system-flag t) nil [1923 1953])
+            ("ros/parameter_adapter.h" include (:system-flag t) nil [1954 1988])
+            ("boost/bind.hpp" include (:system-flag t) nil [1990 2015])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [2016 2049])
+            ("message_filters" type
+               (:members 
+                  ( ("ros::ParameterAdapter" using (:type ("ros::ParameterAdapter" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2079 2107])
+                    ("CallbackHelper9" type
+                       (:template 
+                          ( ("M0" type (:type "class") nil nil)
+                            ("M1" type (:type "class") nil nil)
+                            ("M2" type (:type "class") nil nil)
+                            ("M3" type (:type "class") nil nil)
+                            ("M4" type (:type "class") nil nil)
+                            ("M5" type (:type "class") nil nil)
+                            ("M6" type (:type "class") nil nil)
+                            ("M7" type (:type "class") nil nil)
+                            ("M8" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2259 2266])
+                            ("M0Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M0" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2269 2313])
+                            ("M1Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M1" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2316 2360])
+                            ("M2Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M2" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2363 2407])
+                            ("M3Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M3" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2410 2454])
+                            ("M4Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M4" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2457 2501])
+                            ("M5Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M5" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2504 2548])
+                            ("M6Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M6" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2551 2595])
+                            ("M7Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M7" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2598 2642])
+                            ("M8Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M8" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2645 2689])
+                            ("CallbackHelper9" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2693 2722])
+                            ("call" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("nonconst_force_copy" variable (:type "bool") (reparse-symbol arg-sub-list) [2744 2769])
+                                    ("e0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M0Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2770 2788])
+                                    ("e1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M1Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2789 2807])
+                                    ("e2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M2Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2808 2826])
+                                    ("e3" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M3Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2827 2845])
+                                    ("e4" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M4Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2866 2884])
+                                    ("e5" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M5Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2885 2903])
+                                    ("e6" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M6Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2904 2922])
+                                    ("e7" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M7Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2923 2941])
+                                    ("e8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M8Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2942 2960]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2726 2965])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper9" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2969 3016]))                          )
+                        (reparse-symbol namespacesubparts) [2109 3019])
+                    ("Signal9" type
+                       (:template 
+                          ( ("M0" type (:type "class") nil nil)
+                            ("M1" type (:type "class") nil nil)
+                            ("M2" type (:type "class") nil nil)
+                            ("M3" type (:type "class") nil nil)
+                            ("M4" type (:type "class") nil nil)
+                            ("M5" type (:type "class") nil nil)
+                            ("M6" type (:type "class") nil nil)
+                            ("M7" type (:type "class") nil nil)
+                            ("M8" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("CallbackHelper9Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper9" type (:template-specifier 
+                                            ( ("M0" type nil nil nil)
+                                              ("M1" type nil nil nil)
+                                              ("M2" type nil nil nil)
+                                              ("M3" type nil nil nil)
+                                              ("M4" type nil nil nil)
+                                              ("M5" type nil nil nil)
+                                              ("M6" type nil nil nil)
+                                              ("M7" type nil nil nil)
+                                              ("M8" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6192 6291])
+                            ("V_CallbackHelper9" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper9Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6294 6352])
+                            ("public" label nil (reparse-symbol classsubparts) [6354 6361])
+                            ("M0Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M0" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6364 6408])
+                            ("M1Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M1" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6411 6455])
+                            ("M2Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M2" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6458 6502])
+                            ("M3Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M3" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6505 6549])
+                            ("M4Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M4" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6552 6596])
+                            ("M5Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M5" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6599 6643])
+                            ("M6Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M6" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6646 6690])
+                            ("M7Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M7" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6693 6737])
+                            ("M8Event" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M8" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6740 6784])
+                            ("M0ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M0" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6787 6834])
+                            ("M1ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M1" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6837 6884])
+                            ("M2ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M2" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6887 6934])
+                            ("M3ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M3" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6937 6984])
+                            ("M4ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M4" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6987 7034])
+                            ("M5ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M5" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7037 7084])
+                            ("M6ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M6" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7087 7134])
+                            ("M7ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M7" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7137 7184])
+                            ("M8ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M8" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7187 7234])
+                            ("NullP" variable
+                               (:constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("NullType" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7245 7292])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil)
+                                    ("P7" type (:type "class") nil nil)
+                                    ("P8" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7447 7469])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [7469 7509])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7512 7521]))                                  )
+                                (reparse-symbol classsubparts) [7296 7850])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7930 7933])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7934 7937]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [7854 8081])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8174 8177])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8178 8181])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8182 8185]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [8085 8330])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8436 8439])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8440 8443])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8444 8447])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8448 8451]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [8334 8597])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8716 8719])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8720 8723])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8724 8727])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8728 8731])
+                                            ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8732 8735]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [8601 8882])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9014 9017])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9018 9021])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9022 9025])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9026 9029])
+                                            ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9030 9033])
+                                            ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9034 9037]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [8886 9185])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9330 9333])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9334 9337])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9338 9341])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9342 9345])
+                                            ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9346 9349])
+                                            ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9350 9353])
+                                            ("" variable (:type ("P6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9354 9357]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [9189 9506])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil)
+                                    ("P7" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9664 9667])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9668 9671])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9672 9675])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9676 9679])
+                                            ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9680 9683])
+                                            ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9684 9687])
+                                            ("" variable (:type ("P6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9688 9691])
+                                            ("" variable (:type ("P7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9692 9695]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [9510 9845])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil)
+                                    ("P7" type (:type "class") nil nil)
+                                    ("P8" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10016 10019])
+                                            ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10020 10023])
+                                            ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10024 10027])
+                                            ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10028 10031])
+                                            ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10032 10035])
+                                            ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10036 10039])
+                                            ("" variable (:type ("P6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10040 10043])
+                                            ("" variable (:type ("P7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10044 10047])
+                                            ("" variable (:type ("P8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10048 10051]))                                          
+                                        :type "void")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [9849 10202])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10297 10300]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10301 10304])) :type "void") (reparse-symbol arg-sub-list) [10278 10305]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10306 10311])))
+                                (reparse-symbol classsubparts) [10206 10457])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10565 10568]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10569 10572]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10573 10576])) :type "void") (reparse-symbol arg-sub-list) [10546 10577]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10578 10583])))
+                                (reparse-symbol classsubparts) [10461 10730])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10851 10854]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10855 10858]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10859 10862]) ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10863 10866])) :type "void") (reparse-symbol arg-sub-list) [10832 10867]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10868 10873])))
+                                (reparse-symbol classsubparts) [10734 11021])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11155 11158]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11159 11162]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11163 11166]) ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11167 11170]) ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11171 11174])) :type "void") (reparse-symbol arg-sub-list) [11136 11175]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11176 11181])))
+                                (reparse-symbol classsubparts) [11025 11330])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11477 11480]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11481 11484]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11485 11488]) ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11489 11492]) ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11493 11496]) ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11497 11500])) :type "void") (reparse-symbol arg-sub-list) [11458 11501]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11502 11507])))
+                                (reparse-symbol classsubparts) [11334 11657])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11817 11820]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11821 11824]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11825 11828]) ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11829 11832]) ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11833 11836]) ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11837 11840]) ("" variable (:type ("P6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11841 11844])) :type "void") (reparse-symbol arg-sub-list) [11798 11845]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11846 11851])))
+                                (reparse-symbol classsubparts) [11661 12002])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P0" type (:type "class") nil nil)
+                                    ("P1" type (:type "class") nil nil)
+                                    ("P2" type (:type "class") nil nil)
+                                    ("P3" type (:type "class") nil nil)
+                                    ("P4" type (:type "class") nil nil)
+                                    ("P5" type (:type "class") nil nil)
+                                    ("P6" type (:type "class") nil nil)
+                                    ("P7" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments ((nil variable (:pointer (("" variable (:type ("P0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12175 12178]) ("" variable (:type ("P1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12179 12182]) ("" variable (:type ("P2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12183 12186]) ("" variable (:type ("P3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12187 12190]) ("" variable (:type ("P4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12191 12194]) ("" variable (:type ("P5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12195 12198]) ("" variable (:type ("P6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12199 12202]) ("" variable (:type ("P7" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12203 12206])) :type "void") (reparse-symbol arg-sub-list) [12156 12207]) ("t" variable (:pointer 1 :type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12208 12213])))
+                                (reparse-symbol classsubparts) [12006 12365])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12416 12428]))                                  )
+                                (reparse-symbol classsubparts) [12369 12858])
+                            ("removeCallback" function
+                               (:arguments 
+                                  ( ("helper" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CallbackHelper9Ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12882 12915]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12862 13142])
+                            ("call" function
+                               (:arguments 
+                                  ( ("e0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M0Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13156 13174])
+                                    ("e1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M1Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13175 13193])
+                                    ("e2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M2Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13194 13212])
+                                    ("e3" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M3Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13213 13231])
+                                    ("e4" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M4Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13232 13250])
+                                    ("e5" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M5Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13263 13281])
+                                    ("e6" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M6Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13282 13300])
+                                    ("e7" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M7Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13301 13319])
+                                    ("e8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("M8Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13320 13338]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13146 13738])
+                            ("private" label nil (reparse-symbol classsubparts) [13740 13748])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13751 13771])
+                            ("callbacks_" variable (:type ("V_CallbackHelper9" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13774 13803]))                          )
+                        (reparse-symbol namespacesubparts) [6048 13806]))                  
+                :type "namespace")
+                nil [2051 13809]))          
+      :file "signal9.h"
+      :pointmax 13868
+      :fsize 13867
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax '((punctuation 7510 . 7511) (punctuation 7509 . 7510) (semantic-list 7473 . 7509) (punctuation 7468 . 7469) (TYPEDEF 7237 . 7244) (punctuation 6045 . 6046) (semantic-list 3757 . 6045) (punctuation 3755 . 3756) (symbol 3748 . 3755) (punctuation 3747 . 3748) (punctuation 3746 . 3747) (punctuation 3745 . 3746) (symbol 3743 . 3745) (punctuation 3742 . 3743) (symbol 3726 . 3742) (TYPENAME 3717 . 3725) (punctuation 3690 . 3691) (symbol 3683 . 3690) (punctuation 3682 . 3683) (punctuation 3681 . 3682) (punctuation 3680 . 3681) (symbol 3678 . 3680) (punctuation 3677 . 3678) (symbol 3661 . 3677) (TYPENAME 3652 . 3660) (punctuation 3625 . 3626) (symbol 3618 . 3625) (punctuation 3617 . 3618) (punctuation 3616 . 3617) (punctuation 3615 . 3616) (symbol 3613 . 3615) (punctuation 3612 . 3613) (symbol 3596 . 3612) (TYPENAME 3587 . 3595) (punctuation 3560 . 3561) (symbol 3553 . 3560) (punctuation 3552 . 3553) (punctuation 3551 . 3552) (punctuation 3550 . 3551) (symbol 3548 . 3550) (punctuation 3547 . 3548) (symbol 3531 . 3547) (TYPENAME 3522 . 3530) (punctuation 3495 . 3496) (symbol 3488 . 3495) (punctuation 3487 . 3488) (punctuation 3486 . 3487) (punctuation 3485 . 3486) (symbol 3483 . 3485) (punctuation 3482 . 3483) (symbol 3466 . 3482) (TYPENAME 3457 . 3465) (punctuation 3430 . 3431) (symbol 3423 . 3430) (punctuation 3422 . 3423) (punctuation 3421 . 3422) (punctuation 3420 . 3421) (symbol 3418 . 3420) (punctuation 3417 . 3418) (symbol 3401 . 3417) (TYPENAME 3392 . 3400) (punctuation 3365 . 3366) (symbol 3358 . 3365) (punctuation 3357 . 3358) (punctuation 3356 . 3357) (punctuation 3355 . 3356) (symbol 3353 . 3355) (punctuation 3352 . 3353) (symbol 3336 . 3352) (TYPENAME 3327 . 3335) (punctuation 3300 . 3301) (symbol 3293 . 3300) (punctuation 3292 . 3293) (punctuation 3291 . 3292) (punctuation 3290 . 3291) (symbol 3288 . 3290) (punctuation 3287 . 3288) (symbol 3271 . 3287) (TYPENAME 3262 . 3270) (punctuation 3235 . 3236) (symbol 3228 . 3235) (punctuation 3227 . 3228) (punctuation 3226 . 3227) (punctuation 3225 . 3226) (symbol 3223 . 3225) (punctuation 3222 . 3223) (symbol 3206 . 3222) (TYPENAME 3197 . 3205) (punctuation 3196 . 3197) (symbol 3181 . 3196) (PUBLIC 3174 . 3180) (punctuation 3170 . 3171) (symbol 3153 . 3169) (CLASS 3147 . 3152) (punctuation 3145 . 3146) (symbol 3143 . 3145) (TYPENAME 3134 . 3142) (punctuation 3132 . 3133) (symbol 3130 . 3132) (TYPENAME 3121 . 3129) (punctuation 3119 . 3120) (symbol 3117 . 3119) (TYPENAME 3108 . 3116) (punctuation 3106 . 3107) (symbol 3104 . 3106) (TYPENAME 3095 . 3103) (punctuation 3093 . 3094) (symbol 3091 . 3093) (TYPENAME 3082 . 3090) (punctuation 3080 . 3081) (symbol 3078 . 3080) (TYPENAME 3069 . 3077) (punctuation 3067 . 3068) (symbol 3065 . 3067) (TYPENAME 3056 . 3064) (punctuation 3054 . 3055) (symbol 3052 . 3054) (TYPENAME 3043 . 3051) (punctuation 3041 . 3042) (symbol 3039 . 3041) (TYPENAME 3030 . 3038) (punctuation 3029 . 3030) (TEMPLATE 3021 . 3029))
+      :lexical-table 
+        '(("MESSAGE_FILTERS_SIGNAL9_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_MACROS_H_" variable (:constant-flag t) nil [1632 1657])
+            ("ros/macros.h" include (:system-flag t) nil [1659 1682])
+            ("MESSAGE_FILTERS_DECL" variable (:constant-flag t) nil [2135 2155]))          
+      :file "macros.h"
+      :pointmax 2203
+      :fsize 2202
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MESSAGE_FILTERS_DECL")
+          ("MESSAGE_FILTERS_MACROS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MESSAGE_FILTERS_SIGNAL1_H" variable (:constant-flag t) nil [1814 1839])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1841 1873])
+            ("connection.h" include nil nil [1875 1898])
+            ("ros/message_event.h" include (:system-flag t) nil [1899 1929])
+            ("ros/parameter_adapter.h" include (:system-flag t) nil [1930 1964])
+            ("boost/bind.hpp" include (:system-flag t) nil [1966 1991])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1992 2025])
+            ("message_filters" type
+               (:members 
+                  ( ("CallbackHelper1" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2097 2104])
+                            ("CallbackHelper1" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2107 2136])
+                            ("call" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2158 2198])
+                                    ("nonconst_need_copy" variable (:type "bool") (reparse-symbol arg-sub-list) [2199 2223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2140 2228])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1" type (:template-specifier 
+                                            ( ("M" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2232 2283]))                          )
+                        (reparse-symbol namespacesubparts) [2055 2286])
+                    ("CallbackHelper1T" type
+                       (:template 
+                          ( ("P" type (:type "class") nil nil)
+                            ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2374 2381])
+                            ("Adapter" type
+                               (:typedef ("ros::ParameterAdapter" type
+                                     (:template-specifier 
+                                        ( ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2384 2425])
+                            ("Callback" variable (:type "int") (reparse-symbol classsubparts) [2487 2496])
+                            ("Event" type
+                               (:typedef ("Adapter::Event" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2499 2537])
+                            ("CallbackHelper1T" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Callback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2558 2577]))                                  
+                                :type ("CallbackHelper1T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2541 2603])
+                            ("call" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2625 2665])
+                                    ("nonconst_force_copy" variable (:type "bool") (reparse-symbol arg-sub-list) [2666 2691]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2607 2823])
+                            ("private" label nil (reparse-symbol classsubparts) [2825 2833])
+                            ("callback_" variable (:type ("Callback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2836 2855]))                          
+                        :superclasses 
+                          ( ("CallbackHelper1" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2288 2858])
+                    ("Signal1" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("CallbackHelper1Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1" type (:template-specifier 
+                                            ( ("M" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2896 2962])
+                            ("V_CallbackHelper1" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2965 3023])
+                            ("public" label nil (reparse-symbol classsubparts) [3025 3032])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("CallbackHelper1Ptr" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3089 3111])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3111 3118])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3121 3130]))                                  )
+                                (reparse-symbol classsubparts) [3035 3342])
+                            ("removeCallback" function
+                               (:arguments 
+                                  ( ("helper" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CallbackHelper1Ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3366 3399]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3346 3626])
+                            ("call" function
+                               (:arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3640 3680]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3630 4051])
+                            ("private" label nil (reparse-symbol classsubparts) [4053 4061])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4064 4084])
+                            ("callbacks_" variable (:type ("V_CallbackHelper1" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4087 4116]))                          )
+                        (reparse-symbol namespacesubparts) [2860 4119]))                  
+                :type "namespace")
+                nil [2027 4122]))          
+      :file "signal1.h"
+      :pointmax 4181
+      :fsize 4180
+      :lastmodtime '(21665 43575 0 0)
+      :unmatched-syntax '((punctuation 3119 . 3120) (punctuation 3118 . 3119) (semantic-list 3115 . 3118) (punctuation 3110 . 3111) (punctuation 2485 . 2486) (semantic-list 2456 . 2485) (VOID 2452 . 2456) (punctuation 2451 . 2452) (symbol 2443 . 2451) (punctuation 2442 . 2443) (punctuation 2441 . 2442) (symbol 2436 . 2441) (TYPEDEF 2428 . 2435))
+      :lexical-table 
+        '(("MESSAGE_FILTERS_SIGNAL1_H")
+          )
+))
+  :file "!opt!ros!hydro!include!message_filters!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

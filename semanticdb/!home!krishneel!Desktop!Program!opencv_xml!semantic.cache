@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/core/core.hpp" include (:system-flag t) nil [2 34])
+            ("iostream" include (:system-flag t) nil [35 54])
+            ("string" include (:system-flag t) nil [55 72])
+            ("writeFile" function
+               (:arguments 
+                  ( ("fs" variable
+                       (:reference 1
+                        :type ("cv::FileStorage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90 110]))                  
+                :type "void")
+                nil [75 786])
+            ("readFile" function
+               (:arguments 
+                  ( ("fs" variable
+                       (:reference 1
+                        :type ("cv::FileStorage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [802 822]))                  
+                :type "void")
+                nil [788 1669])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1680 1689])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1690 1703]))                  
+                :type "int")
+                nil [1671 2033]))          
+      :file "main.cpp"
+      :pointmax 2035
+      :fsize 2030
+      :lastmodtime '(21833 46045 130248 416000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!opencv_xml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

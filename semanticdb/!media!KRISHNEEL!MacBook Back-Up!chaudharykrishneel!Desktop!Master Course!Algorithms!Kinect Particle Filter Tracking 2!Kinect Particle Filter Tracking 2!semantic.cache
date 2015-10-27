@@ -1,0 +1,89 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("constants.h" include nil nil [174 196])
+            ("Tracker.h" include nil nil [197 217])
+            ("g_nPlayer" variable
+               (:default-value "0"
+                :type ("XnUserID" type (:type "class") nil nil))
+                nil [220 243])
+            ("g_bCalibrated" variable
+               (:default-value "FALSE"
+                :type ("XnBool" type (:type "class") nil nil))
+                nil [244 273])
+            ("g_strPose" variable
+               (:dereference 1
+                :default-value "\"\""
+                :type ("XnChar" type (:type "class") nil nil))
+                nil [274 300])
+            ("doImageWrite" variable
+               (:default-value "FALSE"
+                :type ("XnBool" type (:type "class") nil nil))
+                nil [301 329])
+            ("previousPosition" variable (:type ("XnPoint3D" type (:type "class") nil nil)) nil [330 357])
+            ("g_context" variable (:type ("Context" type (:type "class") nil nil)) nil [412 430])
+            ("g_scriptNode" variable (:type ("xn::ScriptNode" type (:type "class") nil nil)) nil [431 459])
+            ("g_depth" variable (:type ("xn::DepthGenerator" type (:type "class") nil nil)) nil [460 487])
+            ("g_image" variable (:type ("xn::ImageGenerator" type (:type "class") nil nil)) nil [488 515])
+            ("g_sceneMetaData" variable (:type ("xn::SceneMetaData" type (:type "class") nil nil)) nil [516 550])
+            ("sceneAnalyzer" variable (:type ("xn::SceneAnalyzer" type (:type "class") nil nil)) nil [551 583])
+            ("g_UsersGenerator" variable (:type ("xn::UserGenerator" type (:type "class") nil nil)) nil [584 619])
+            ("particleFilterTracker" variable
+               (:default-value "new Tracker()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("Tracker" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [621 672])
+            ("onMouse" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [694 704])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [705 711])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [712 718])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [719 723])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [724 731]))                  
+                :type "void")
+                nil [673 732])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [743 752])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [753 773]))                  
+                :type "int")
+                nil [734 4906])
+            ("onMouse" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [4929 4939])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4940 4946])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4947 4953])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4954 4958])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4959 4966]))                  
+                :type "void")
+                nil [4908 6138]))          
+      :file "main.cpp"
+      :pointmax 6139
+      :fsize 6138
+      :lastmodtime '(21306 27808 0 0)
+      :unmatched-syntax nil))
+  :file "!media!KRISHNEEL!MacBook Back-Up!chaudharykrishneel!Desktop!Master Course!Algorithms!Kinect Particle Filter Tracking 2!Kinect Particle Filter Tracking 2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

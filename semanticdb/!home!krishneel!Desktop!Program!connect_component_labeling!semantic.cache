@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [28 57])
+            ("iostream" include (:system-flag t) nil [58 77])
+            ("UnionFind" type
+               (:members 
+                  ( ("Node" type
+                       (:members 
+                          ( ("parent" variable (:type "int") (reparse-symbol classsubparts) [122 133])
+                            ("rank" variable (:type "int") (reparse-symbol classsubparts) [141 150]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [101 157])
+                    ("private" label nil (reparse-symbol classsubparts) [159 167])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [172 183])
+                    ("public" label nil (reparse-symbol classsubparts) [189 196])
+                    ("UnionFind" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [220 226]))                          
+                        :type ("UnionFind" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [210 227])
+                    ("findUF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [243 249]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [232 250])
+                    ("unionUF" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [268 274])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [275 281]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [255 282]))                  
+                :type "class")
+                nil [79 285])
+            ("UnionFind" function
+               (:constructor-flag t
+                :parent "UnionFind"
+                :arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [319 325]))                  
+                :type ("UnionFind" type (:type "class") nil nil))
+                nil [298 463])
+            ("findUF" function
+               (:parent "UnionFind"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [498 504]))                  
+                :type "int")
+                nil [476 651])
+            ("unionUF" function
+               (:parent "UnionFind"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [688 694])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [695 701]))                  
+                :type "void")
+                nil [664 1144])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1155 1164])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1165 1178]))                  
+                :type "int")
+                nil [1146 1202]))          
+      :file "main.cpp"
+      :pointmax 1204
+      :fsize 1180
+      :lastmodtime '(21765 13340 811962 149000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!connect_component_labeling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

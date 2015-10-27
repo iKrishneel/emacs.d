@@ -1,0 +1,177 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debris_detection/rgb_image_processing.h" include nil nil [2 52])
+            ("ImageProcessing" function
+               (:destructor-flag t
+                :parent "ImageProcessing"
+                :type "void")
+                nil [75 151])
+            ("cvVisualization" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [208 248])
+                    ("wname" variable
+                       (:default-value "\"segmented\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [253 284])
+                    ("size" variable
+                       (:constant-flag t
+                        :default-value "cv::Size(640, 480)"
+                        :type ("cv::Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [290 330]))                  
+                :type "void")
+                nil [175 1508])
+            ("imageCallBack" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1585 1623]))                  
+                :type "void")
+                nil [1544 1959])
+            ("depthCallBack" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2035 2073]))                  
+                :type "void")
+                nil [1994 2414])
+            ("publishROSImage" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2498 2511])
+                    ("dep" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2512 2525]))                  
+                :type "void")
+                nil [2460 3075])
+            ("getDepthEdge" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3160 3179])
+                    ("edgeMap" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3184 3201])
+                    ("isbinary" variable (:type "bool") (reparse-symbol arg-sub-list) [3206 3220]))                  
+                :type "void")
+                nil [3120 4559])
+            ("cvMorphologicalOperations" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4689 4708])
+                    ("erosion_dst" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4713 4734])
+                    ("iserrode" variable (:type "bool") (reparse-symbol arg-sub-list) [4739 4753]))                  
+                :type "void")
+                nil [4636 5305])
+            ("getRGBEdge" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5392 5411])
+                    ("edgeMap" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5416 5433])
+                    ("issobel" variable (:type "bool") (reparse-symbol arg-sub-list) [5438 5451]))                  
+                :type "void")
+                nil [5354 6413])
+            ("cvGetLabelImagePatch" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6524 6543])
+                    ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6548 6588])
+                    ("cell_size" variable (:type ("cv::Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6593 6612]))                  
+                :type "void")
+                nil [6476 7740])
+            ("cvLabelImagePatch" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("in_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7873 7895])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7900 7917]))                  
+                :type "int")
+                nil [7829 8975])
+            ("getTotalClusterSize" function
+               (:parent "ImageProcessing"
+                :type "int")
+                nil [9028 9106])
+            ("edgeBoundaryAssignment" function (:type "void") nil [9244 9281])
+            ("cvLabelEgdeMap" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("edgeMap" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9384 9400])
+                    ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9405 9445]))                  
+                :type "void")
+                nil [9342 9756]))          
+      :file "rgb_image_processing.cpp"
+      :pointmax 9757
+      :fsize 9756
+      :lastmodtime '(21775 41779 456696 939000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!PhD!Program!debris_detection!debris_detection10!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

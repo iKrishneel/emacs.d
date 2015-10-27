@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_POINT_CLOUD_REGISTRATION_H_" variable (:constant-flag t) nil [47 75])
+            ("ros/ros.h" include (:system-flag t) nil [77 97])
+            ("ros/console.h" include (:system-flag t) nil [98 122])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [124 160])
+            ("PointCloudRegistration" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [530 537])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [544 576])
+                    ("PointCloudRegistration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PointCloudRegistration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [581 606])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [638 681]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [611 682])
+                    ("protected" label nil (reparse-symbol classsubparts) [688 698])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [703 717])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [722 739])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 763])
+                    ("private" label nil (reparse-symbol classsubparts) [769 777])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [782 802])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [807 833])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [838 865]))                  
+                :type "class")
+                nil [495 868]))          
+      :file "point_cloud_registration.h"
+      :pointmax 911
+      :fsize 910
+      :lastmodtime '(22043 48955 101642 634000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_POINT_CLOUD_REGISTRATION_H_")
+          )
+))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!point_cloud_registration!include!point_cloud_registration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

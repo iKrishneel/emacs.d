@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("temp_robot_node/temp_robot_node.h" include (:system-flag t) nil [52 96])
+            ("RobotNode" function
+               (:constructor-flag t
+                :parent "RobotNode"
+                :type ("RobotNode" type (:type "class") nil nil))
+                nil [98 199])
+            ("onInit" function
+               (:parent "RobotNode"
+                :type "void")
+                nil [201 366])
+            ("subsribe" function
+               (:parent "RobotNode"
+                :type "void")
+                nil [368 505])
+            ("signalCallback" function
+               (:parent "RobotNode"
+                :arguments 
+                  ( ("signal_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("point_cloud_scene_decomposer::signal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [543 598]))                  
+                :type "void")
+                nil [507 1115])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1126 1135])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1136 1149]))                  
+                :type "int")
+                nil [1117 1251]))          
+      :file "temp_robot_node.cpp"
+      :pointmax 1252
+      :fsize 1251
+      :lastmodtime '(22034 3556 711793 438000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!temp_robot_node!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

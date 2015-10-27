@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FUSION_CONVERT_10022005_1442" variable (:constant-flag t) nil [412 440])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("extension" type
+                               (:members 
+                                  ( ("convert_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [517 569]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [483 575])
+                            ("result_of" type
+                               (:members 
+                                  ( ("convert" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil)
+                                            ("Sequence" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("gen" type
+                                               (:typedef ("extension::convert_impl" type
+                                                     (:template-specifier 
+                                                        ( ("Tag" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [703 753])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [831 853]))                                          )
+                                        (reparse-symbol namespacesubparts) [615 864]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [581 870])
+                            ("convert" function
+                               (:template 
+                                  ( ("Tag" type (:type "class") nil nil)
+                                    ("Sequence" type (:type "class") nil nil))                                  
+                                :type ("result_of::convert::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [991 1005]))                                  
+                                :typemodifiers ("inline" "typename"))
+                                (reparse-symbol namespacesubparts) [876 1117])
+                            ("convert" function
+                               (:template 
+                                  ( ("Tag" type (:type "class") nil nil)
+                                    ("Sequence" type (:type "class") nil nil))                                  
+                                :type ("result_of::convert::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1244 1264]))                                  
+                                :typemodifiers ("inline" "typename"))
+                                (reparse-symbol namespacesubparts) [1123 1382]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [460 1384]))                  
+                :type "namespace")
+                nil [442 1385]))          
+      :file "convert.hpp"
+      :pointmax 1394
+      :fsize 1393
+      :lastmodtime '(20225 54176 0 0)
+      :unmatched-syntax '((punctuation 830 . 831) (punctuation 829 . 830) (punctuation 828 . 829) (symbol 820 . 828) (punctuation 819 . 820) (symbol 814 . 819) (TEMPLATE 805 . 813) (punctuation 804 . 805) (punctuation 803 . 804) (symbol 800 . 803) (TYPENAME 775 . 783) (TYPEDEF 767 . 774))
+      :lexical-table 
+        '(("FUSION_CONVERT_10022005_1442")
+          )
+))
+  :file "!usr!include!boost!fusion!sequence!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

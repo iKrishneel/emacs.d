@@ -1,0 +1,168 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("drc_drill_detection/drc_drill_detection_node.h" include (:system-flag t) nil [85 142])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [143 187])
+            ("jsk_drc_task" type
+               (:members 
+                  ( ("DrillDetection" function
+                       (:constructor-flag t
+                        :parent "DrillDetection"
+                        :type ("DrillDetection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [219 1047])
+                    ("cloud_cb" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1091 1143]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1053 2903])
+                    ("indices_cb" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("indices_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2949 3010]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2909 3387])
+                    ("segmentCloud" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3436 3477])
+                            ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3486 3532])
+                            ("cloud_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3541 3599])
+                            ("normal_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3608 3672])
+                            ("centroids" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3681 3727]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3393 5045])
+                    ("estimatePointCloudNormals" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5110 5151])
+                            ("s_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5159 5202])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5210 5222])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5230 5250])
+                            ("ksearch" variable (:type "bool") (reparse-symbol arg-sub-list) [5258 5271]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5055 5670])
+                    ("pclNearestNeigborSearch" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5728 5770])
+                            ("pointIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5777 5822])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5829 5841])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5848 5868])
+                            ("isneigbour" variable (:type "bool") (reparse-symbol arg-sub-list) [5875 5891]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5676 6589])
+                    ("semanticCloudLabel" function
+                       (:parent "DrillDetection"
+                        :arguments 
+                          ( ("cloud_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6646 6710])
+                            ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6718 6753])
+                            ("labelMD" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6761 6793])
+                            ("all_indices" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6801 6847]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6598 8074]))                  
+                :type "namespace")
+                nil [189 8077])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8115 8124])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8125 8138]))                  
+                :type "int")
+                nil [8106 8270]))          
+      :file "drc_drill_detection_node.cpp"
+      :pointmax 8271
+      :fsize 8270
+      :lastmodtime '(21807 7480 301570 636000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!drc_drill_detection!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

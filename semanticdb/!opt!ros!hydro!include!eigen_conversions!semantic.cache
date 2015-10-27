@@ -1,0 +1,274 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("EIGEN_MSG_CONVERSIONS_H" variable (:constant-flag t) nil [1686 1709])
+            ("std_msgs/Float64MultiArray.h" include (:system-flag t) nil [1711 1750])
+            ("geometry_msgs/Point.h" include (:system-flag t) nil [1751 1783])
+            ("geometry_msgs/Pose.h" include (:system-flag t) nil [1784 1815])
+            ("geometry_msgs/Quaternion.h" include (:system-flag t) nil [1816 1853])
+            ("geometry_msgs/Transform.h" include (:system-flag t) nil [1854 1890])
+            ("geometry_msgs/Twist.h" include (:system-flag t) nil [1891 1923])
+            ("geometry_msgs/Vector3.h" include (:system-flag t) nil [1924 1958])
+            ("geometry_msgs/Wrench.h" include (:system-flag t) nil [1959 1992])
+            ("Eigen/Core" include (:system-flag t) nil [1994 2015])
+            ("Eigen/Geometry" include (:system-flag t) nil [2016 2041])
+            ("tf" type
+               (:members 
+                  ( ("pointMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2130 2160])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2161 2180]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2109 2181])
+                    ("pointEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2254 2279])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2280 2304]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2233 2305])
+                    ("poseMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2379 2408])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2409 2428]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2359 2429])
+                    ("poseEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2503 2528])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2529 2552]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2483 2553])
+                    ("quaternionMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2640 2675])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Quaterniond" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2676 2698]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2614 2699])
+                    ("quaternionEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Quaterniond" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2786 2814])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2815 2844]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2760 2845])
+                    ("transformMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2929 2963])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2964 2983]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2904 2984])
+                    ("transformEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3068 3093])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3094 3122]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3043 3123])
+                    ("twistMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Twist" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3196 3226])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Matrix" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("6")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3227 3256]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3175 3257])
+                    ("twistEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Matrix" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("6")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3330 3365])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Twist" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3366 3390]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3309 3391])
+                    ("vectorMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3466 3498])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3499 3518]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3444 3519])
+                    ("vectorEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3594 3619])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3620 3646]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3572 3647])
+                    ("wrenchMsgToEigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::Wrench" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3722 3753])
+                            ("e" variable
+                               (:reference 1
+                                :type ("Eigen::Matrix" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("6")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3754 3783]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3700 3784])
+                    ("wrenchEigenToMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Matrix" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("6")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3859 3894])
+                            ("m" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Wrench" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3895 3920]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3837 3921])
+                    ("matrixEigenToMsg" function
+                       (:template 
+                          ( ("Derived" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::MatrixBase" type
+                                     (:template-specifier 
+                                        ( ("Derived" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4032 4068])
+                            ("m" variable
+                               (:reference 1
+                                :type ("std_msgs::Float64MultiArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4069 4100]))                          )
+                        (reparse-symbol namespacesubparts) [3985 4512]))                  
+                :type "namespace")
+                nil [2043 4515]))          
+      :file "eigen_msg.h"
+      :pointmax 4537
+      :fsize 4536
+      :lastmodtime '(21390 50986 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EIGEN_MSG_CONVERSIONS_H")
+          )
+))
+  :file "!opt!ros!hydro!include!eigen_conversions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

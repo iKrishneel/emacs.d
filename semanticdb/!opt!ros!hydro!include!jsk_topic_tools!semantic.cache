@@ -1,0 +1,648 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_DIAGNOSTIC_NODELET_" variable (:constant-flag t) nil [1861 1896])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1898 1948])
+            ("diagnostic_updater/publisher.h" include (:system-flag t) nil [1949 1990])
+            ("jsk_topic_tools/vital_checker.h" include (:system-flag t) nil [1991 2033])
+            ("jsk_topic_tools/connection_based_nodelet.h" include nil nil [2035 2088])
+            ("jsk_topic_tools/diagnostic_utils.h" include nil nil [2089 2134])
+            ("jsk_topic_tools/timered_diagnostic_updater.h" include nil nil [2135 2190])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("DiagnosticNodelet" type
+                       (:superclasses 
+                          ( ("ConnectionBasedNodelet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2766 2773])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("DiagnosticNodelet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2778 2827])
+                            ("DiagnosticNodelet" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2968 2992]))                                  
+                                :type ("DiagnosticNodelet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2950 2993])
+                            ("protected" label nil (reparse-symbol classsubparts) [2997 3007])
+                            ("onInit" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3128 3150])
+                            ("updateDiagnostic" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3485 3535]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3448 3536])
+                            ("name_" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3653 3677])
+                            ("diagnostic_updater_" variable (:type ("TimeredDiagnosticUpdater::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3852 3902])
+                            ("vital_checker_" variable (:type ("jsk_topic_tools::VitalChecker::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4002 4052])
+                            ("private" label nil (reparse-symbol classsubparts) [4056 4064]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2705 4074]))                  
+                :type "namespace")
+                nil [2192 4076]))          
+      :file "diagnostic_nodelet.h"
+      :pointmax 4085
+      :fsize 4084
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_DIAGNOSTIC_NODELET_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_VITAL_CHECKER_H_" variable (:constant-flag t) nil [1857 1889])
+            ("ros/time.h" include (:system-flag t) nil [1891 1912])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1913 1963])
+            ("boost/accumulators/accumulators.hpp" include (:system-flag t) nil [1964 2010])
+            ("boost/accumulators/statistics/stats.hpp" include (:system-flag t) nil [2011 2061])
+            ("boost/accumulators/statistics/min.hpp" include (:system-flag t) nil [2062 2110])
+            ("boost/accumulators/statistics/max.hpp" include (:system-flag t) nil [2111 2159])
+            ("boost/accumulators/statistics/variance.hpp" include (:system-flag t) nil [2160 2213])
+            ("boost/timer.hpp" include (:system-flag t) nil [2215 2241])
+            ("boost/thread.hpp" include (:system-flag t) nil [2243 2270])
+            ("boost/format.hpp" include (:system-flag t) nil [2271 2298])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("VitalChecker" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2378 2385])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("VitalChecker" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2390 2434])
+                            ("VitalChecker" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("dead_sec" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2452 2474]))                                  
+                                :type ("VitalChecker" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2439 2475])
+                            ("VitalChecker" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2480 2504])
+                            ("poke" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2509 2521])
+                            ("isAlive" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2526 2541])
+                            ("deadSec" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [2546 2563])
+                            ("lastAliveTimeRelative" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [2568 2599])
+                            ("registerStatInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2626 2676])
+                                    ("prefix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "std::string(\"last_poked_time\")"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2703 2761]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2604 2763])
+                            ("protected" label nil (reparse-symbol classsubparts) [2766 2776])
+                            ("last_alive_time_" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2781 2808])
+                            ("dead_sec_" variable (:type "double") (reparse-symbol classsubparts) [2813 2830])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2835 2855])
+                            ("private" label nil (reparse-symbol classsubparts) [2858 2866]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2353 2871]))                  
+                :type "namespace")
+                nil [2300 2873]))          
+      :file "vital_checker.h"
+      :pointmax 2882
+      :fsize 2881
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_VITAL_CHECKER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONNECTION_BASED_NODELET_H_" variable (:constant-flag t) nil [1853 1880])
+            ("ros/ros.h" include (:system-flag t) nil [1882 1902])
+            ("nodelet/nodelet.h" include (:system-flag t) nil [1903 1931])
+            ("boost/thread.hpp" include (:system-flag t) nil [1932 1959])
+            ("jsk_topic_tools/log_utils.h" include nil nil [1961 1999])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("ConnectionStatus" type
+                       (:members 
+                          ( ("NOT_INITIALIZED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2122 2138])
+                            ("NOT_SUBSCRIBED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2143 2158])
+                            ("SUBSCRIBED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2163 2177]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2092 2178])
+                    ("ConnectionBasedNodelet" type
+                       (:superclasses 
+                          ( ("nodelet::Nodelet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2620 2627])
+                            ("ConnectionBasedNodelet" function
+                               (:constructor-flag t
+                                :type ("ConnectionBasedNodelet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2632 2680])
+                            ("protected" label nil (reparse-symbol classsubparts) [2683 2693])
+                            ("onInit" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2831 2853])
+                            ("onInitPostProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3021 3054])
+                            ("connectionCallback" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pub" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::SingleSubscriberPublisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3185 3227]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3153 3228])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3381 3410])
+                            ("unsubscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3567 3598])
+                            ("advertise" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("ros::Publisher" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3959 3979])
+                                    ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3994 4012])
+                                    ("queue_size" variable (:type "int") (reparse-symbol arg-sub-list) [4013 4028]))                                  )
+                                (reparse-symbol classsubparts) [3912 4587])
+                            ("connection_mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4695 4726])
+                            ("publishers_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4794 4834])
+                            ("nh_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::NodeHandle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4900 4939])
+                            ("pnh_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ros::NodeHandle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5013 5053])
+                            ("subscribed_" variable (:type "bool") (reparse-symbol classsubparts) [5159 5176])
+                            ("always_subscribe_" variable (:type "bool") (reparse-symbol classsubparts) [5345 5368])
+                            ("connection_status_" variable (:type ("ConnectionStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5425 5461])
+                            ("private" label nil (reparse-symbol classsubparts) [5464 5472]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2560 5482]))                  
+                :type "namespace")
+                nil [2001 5484]))          
+      :file "connection_based_nodelet.h"
+      :pointmax 5493
+      :fsize 5492
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONNECTION_BASED_NODELET_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_DIAGNOSTIC_UTIL_H_" variable (:constant-flag t) nil [1860 1894])
+            ("string" include (:system-flag t) nil [1896 1913])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1914 1964])
+            ("jsk_topic_tools/time_accumulator.h" include nil nil [1965 2010])
+            ("jsk_topic_tools/vital_checker.h" include nil nil [2011 2053])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("addDiagnosticInformation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("string_prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2289 2322])
+                            ("accumulator" variable
+                               (:reference 1
+                                :type ("jsk_topic_tools::TimeAccumulator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2327 2373])
+                            ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2378 2428]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2254 2429])
+                    ("addDiagnosticErrorSummary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("string_prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2613 2646])
+                            ("vital_checker" variable (:type ("jsk_topic_tools::VitalChecker::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2651 2700])
+                            ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2705 2755]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2577 2756])
+                    ("addDiagnosticBooleanStat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("string_prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2945 2978])
+                            ("value" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2983 3000])
+                            ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3005 3055]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2910 3056]))                  
+                :type "namespace")
+                nil [2055 3061]))          
+      :file "diagnostic_utils.h"
+      :pointmax 3070
+      :fsize 3069
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_DIAGNOSTIC_UTIL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_TIMERED_DIAGNOSTIC_UPDATER_H_" variable (:constant-flag t) nil [1871 1916])
+            ("ros/ros.h" include (:system-flag t) nil [1918 1938])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1939 1989])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("TimeredDiagnosticUpdater" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2250 2257])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("TimeredDiagnosticUpdater" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2262 2318])
+                            ("TimeredDiagnosticUpdater" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2348 2368])
+                                    ("timer_duration" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2398 2434]))                                  
+                                :type ("TimeredDiagnosticUpdater" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2323 2435])
+                            ("TimeredDiagnosticUpdater" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2440 2476])
+                            ("add" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2552 2576])
+                                    ("f" variable (:type ("diagnostic_updater::TaskFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2598 2633]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2535 2634])
+                            ("start" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2704 2725])
+                            ("setHardwareID" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2757 2781]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2730 2782])
+                            ("update" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2787 2809])
+                            ("protected" label nil (reparse-symbol classsubparts) [2812 2822])
+                            ("timerCallback" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::TimerEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2854 2883]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2827 2884])
+                            ("timer_" variable (:type ("ros::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2889 2907])
+                            ("diagnostic_updater_" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("diagnostic_updater::Updater" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2912 2979])
+                            ("private" label nil (reparse-symbol classsubparts) [2982 2990]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2213 3000]))                  
+                :type "namespace")
+                nil [1991 3002]))          
+      :file "timered_diagnostic_updater.h"
+      :pointmax 3012
+      :fsize 3011
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_TIMERED_DIAGNOSTIC_UPDATER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_LOG_UTILS_H_" variable (:constant-flag t) nil [1854 1882])
+            ("ros/ros.h" include (:system-flag t) nil [1884 1904])
+            ("nodelet/nodelet.h" include (:system-flag t) nil [1905 1933])
+            ("JSK_NODELET_DEBUG" variable (:constant-flag t) nil [1943 1960])
+            ("JSK_NODELET_INFO" variable (:constant-flag t) nil [2044 2060])
+            ("JSK_NODELET_WARN" variable (:constant-flag t) nil [2143 2159])
+            ("JSK_NODELET_ERROR" variable (:constant-flag t) nil [2242 2259])
+            ("JSK_NODELET_FATAL" variable (:constant-flag t) nil [2343 2360])
+            ("JSK_NODELET_DEBUG_STREAM" variable (:constant-flag t) nil [2445 2469])
+            ("JSK_NODELET_INFO_STREAM" variable (:constant-flag t) nil [2558 2581])
+            ("JSK_NODELET_WARN_STREAM" variable (:constant-flag t) nil [2669 2692])
+            ("JSK_NODELET_ERROR_STREAM" variable (:constant-flag t) nil [2780 2804])
+            ("JSK_NODELET_FATAL_STREAM" variable (:constant-flag t) nil [2893 2917])
+            ("JSK_ROS_DEBUG" variable (:constant-flag t) nil [3007 3020])
+            ("JSK_ROS_INFO" variable (:constant-flag t) nil [3100 3112])
+            ("JSK_ROS_WARN" variable (:constant-flag t) nil [3191 3203])
+            ("JSK_ROS_ERROR" variable (:constant-flag t) nil [3282 3295])
+            ("JSK_ROS_FATAL" variable (:constant-flag t) nil [3375 3388])
+            ("JSK_ROS_DEBUG_STREAM" variable (:constant-flag t) nil [3469 3489])
+            ("JSK_ROS_INFO_STREAM" variable (:constant-flag t) nil [3574 3593])
+            ("JSK_ROS_WARN_STREAM" variable (:constant-flag t) nil [3677 3696])
+            ("JSK_ROS_ERROR_STREAM" variable (:constant-flag t) nil [3780 3800])
+            ("JSK_ROS_FATAL_STREAM" variable (:constant-flag t) nil [3885 3905]))          
+      :file "log_utils.h"
+      :pointmax 3990
+      :fsize 3989
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_NODELET_DEBUG_STREAM" (spp-arg-list ("...") 2469 . 2474) . ((symbol "NODELET_DEBUG_STREAM" 2479 . 2499) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 2499 . 2549)))
+          ("JSK_ROS_FATAL" (spp-arg-list ("str" "...") 3388 . 3397) . ((symbol "ROS_FATAL" 3402 . 3411) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 3411 . 3459)))
+          ("JSK_ROS_FATAL_STREAM" (spp-arg-list ("...") 3905 . 3910) . ((symbol "ROS_FATAL_STREAM" 3915 . 3931) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 3931 . 3981)))
+          ("JSK_NODELET_INFO" (spp-arg-list ("str" "...") 2060 . 2069) . ((symbol "NODELET_INFO" 2074 . 2086) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 2086 . 2134)))
+          ("JSK_NODELET_ERROR" (spp-arg-list ("str" "...") 2259 . 2268) . ((symbol "NODELET_ERROR" 2273 . 2286) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 2286 . 2334)))
+          ("JSK_NODELET_FATAL_STREAM" (spp-arg-list ("...") 2917 . 2922) . ((symbol "NODELET_FATAL_STREAM" 2927 . 2947) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 2947 . 2997)))
+          ("JSK_ROS_INFO" (spp-arg-list ("str" "...") 3112 . 3121) . ((symbol "ROS_INFO" 3126 . 3134) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 3134 . 3182)))
+          ("JSK_ROS_ERROR_STREAM" (spp-arg-list ("...") 3800 . 3805) . ((symbol "ROS_ERROR_STREAM" 3810 . 3826) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 3826 . 3876)))
+          ("JSK_NODELET_ERROR_STREAM" (spp-arg-list ("...") 2804 . 2809) . ((symbol "NODELET_ERROR_STREAM" 2814 . 2834) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 2834 . 2884)))
+          ("JSK_NODELET_DEBUG" (spp-arg-list ("str" "...") 1960 . 1969) . ((symbol "NODELET_DEBUG" 1974 . 1987) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 1987 . 2035)))
+          ("JSK_NODELET_INFO_STREAM" (spp-arg-list ("...") 2581 . 2586) . ((symbol "NODELET_INFO_STREAM" 2591 . 2610) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 2610 . 2660)))
+          ("JSK_ROS_INFO_STREAM" (spp-arg-list ("...") 3593 . 3598) . ((symbol "ROS_INFO_STREAM" 3603 . 3618) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 3618 . 3668)))
+          ("JSK_ROS_ERROR" (spp-arg-list ("str" "...") 3295 . 3304) . ((symbol "ROS_ERROR" 3309 . 3318) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 3318 . 3366)))
+          ("JSK_TOPIC_TOOLS_LOG_UTILS_H_")
+          ("JSK_NODELET_WARN_STREAM" (spp-arg-list ("...") 2692 . 2697) . ((symbol "NODELET_WARN_STREAM" 2702 . 2721) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 2721 . 2771)))
+          ("JSK_ROS_DEBUG" (spp-arg-list ("str" "...") 3020 . 3029) . ((symbol "ROS_DEBUG" 3034 . 3043) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 3043 . 3091)))
+          ("JSK_ROS_WARN_STREAM" (spp-arg-list ("...") 3696 . 3701) . ((symbol "ROS_WARN_STREAM" 3706 . 3721) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 3721 . 3771)))
+          ("JSK_NODELET_FATAL" (spp-arg-list ("str" "...") 2360 . 2369) . ((symbol "NODELET_FATAL" 2374 . 2387) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 2387 . 2435)))
+          ("JSK_NODELET_WARN" (spp-arg-list ("str" "...") 2159 . 2168) . ((symbol "NODELET_WARN" 2173 . 2185) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 2185 . 2233)))
+          ("JSK_ROS_WARN" (spp-arg-list ("str" "...") 3203 . 3212) . ((symbol "ROS_WARN" 3217 . 3225) (semantic-list "(\"[%s]\" str, __PRETTY_FUNCTION__, ##__VA_ARGS__)" 3225 . 3273)))
+          ("JSK_ROS_DEBUG_STREAM" (spp-arg-list ("...") 3489 . 3494) . ((symbol "ROS_DEBUG_STREAM" 3499 . 3515) (semantic-list "(\"[\" << __PRETTY_FUNCTION__ << \"]\" << __VA_ARGS__)" 3515 . 3565)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JSK_TOPIC_TOOLS_TIME_ACCUMULATOR_H_" variable (:constant-flag t) nil [1861 1896])
+            ("boost/accumulators/accumulators.hpp" include (:system-flag t) nil [1898 1944])
+            ("boost/accumulators/statistics/stats.hpp" include (:system-flag t) nil [1945 1995])
+            ("boost/accumulators/statistics/min.hpp" include (:system-flag t) nil [1996 2044])
+            ("boost/accumulators/statistics/max.hpp" include (:system-flag t) nil [2045 2093])
+            ("boost/accumulators/statistics/variance.hpp" include (:system-flag t) nil [2094 2147])
+            ("boost/accumulators/statistics/count.hpp" include (:system-flag t) nil [2148 2198])
+            ("ros/time.h" include (:system-flag t) nil [2200 2221])
+            ("jsk_topic_tools" type
+               (:members 
+                  ( ("ScopedTimer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2254 2272])
+                    ("TimeAccumulator" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2306 2313])
+                            ("Accumulator" type
+                               (:typedef ("boost::accumulators::accumulator_set" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("boost::accumulators::stats" type (:template-specifier 
+                                            ( ("boost::accumulators::tag::count" type nil nil nil)
+                                              ("boost::accumulators::tag::mean" type nil nil nil)
+                                              ("boost::accumulators::tag::min" type nil nil nil)
+                                              ("boost::accumulators::tag::max" type nil nil nil)
+                                              ("boost::accumulators::tag::variance" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2318 2708])
+                            ("TimeAccumulator" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("TimeAccumulator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2718 2736])
+                            ("TimeAccumulator" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2741 2768])
+                            ("scopedTimer" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ScopedTimer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2773 2807])
+                            ("registerTime" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("time" variable (:type "double") (reparse-symbol arg-sub-list) [2838 2850]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2812 2851])
+                            ("mean" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2856 2878])
+                            ("min" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2883 2904])
+                            ("max" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2909 2930])
+                            ("count" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2935 2955])
+                            ("variance" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2960 2986])
+                            ("protected" label nil (reparse-symbol classsubparts) [2989 2999])
+                            ("acc_" variable (:type ("Accumulator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3004 3021]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2278 3026])
+                    ("ScopedTimer" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3054 3061])
+                            ("ScopedTimer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("parent" variable
+                                       (:pointer 1
+                                        :type ("TimeAccumulator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3078 3102]))                                  
+                                :type ("ScopedTimer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3066 3103])
+                            ("ScopedTimer" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3108 3131])
+                            ("protected" label nil (reparse-symbol classsubparts) [3134 3144])
+                            ("parent_" variable
+                               (:pointer 1
+                                :type ("TimeAccumulator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3149 3174])
+                            ("start_time_" variable (:type ("ros::WallTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3179 3205]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3030 3210]))                  
+                :type "namespace")
+                nil [2224 3213]))          
+      :file "time_accumulator.h"
+      :pointmax 3222
+      :fsize 3221
+      :lastmodtime '(21937 62780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JSK_TOPIC_TOOLS_TIME_ACCUMULATOR_H_")
+          )
+))
+  :file "!opt!ros!hydro!include!jsk_topic_tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

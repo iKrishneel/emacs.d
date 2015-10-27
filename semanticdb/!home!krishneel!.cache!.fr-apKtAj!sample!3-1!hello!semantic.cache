@@ -1,0 +1,36 @@
+;; Object hello/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hello/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("amd" "apple" "intel" "nvidia")) nil [1 29])
+            ("is_64" variable (:default-value ("$(shell s=`uname -m`; if (echo $$s | grep x86_64 > /dev/null); then echo 1; fi)")) nil [30 116])
+            ("CFLAGS" variable (:default-value ("-Wall" "-W" "-O2")) nil [117 137])
+            ("PATH_TO_AMD_INC" variable (:default-value ("/opt/AMDAPP/include/")) nil [144 181])
+            ("PATH_TO_AMD_LIB" variable (:default-value ("/opt/AMDAPP/lib/x86_64/")) nil [200 240])
+            ("PATH_TO_AMD_LIB" variable (:default-value ("/opt/AMDAPP/lib/x86/")) nil [245 282])
+            ("PATH_TO_INTEL_INC" variable (:default-value ("/usr/include/")) nil [297 329])
+            ("PATH_TO_INTEL_LIB" variable (:default-value ("/usr/lib64/")) nil [348 378])
+            ("PATH_TO_NVIDIA_INC" variable (:default-value ("/usr/local/cuda/include/")) nil [394 438])
+            ("PATH_TO_NVIDIA_LIB" variable (:default-value ("/usr/lib/")) nil [438 467])
+            ("EXE_NAME" variable (:default-value ("$(patsubst %.cpp,%,$(wildcard *.cpp))")) nil [468 515])
+            ("amd" function (:arguments ("$(join $(EXE_NAME),.amd)")) nil [516 549])
+            ("apple" function (:arguments ("$(join $(EXE_NAME),.apple)")) nil [549 584])
+            ("intel" function (:arguments ("$(join $(EXE_NAME),.intel)")) nil [584 619])
+            ("nvidia" function (:arguments ("$(join $(EXE_NAME),.nvidia)")) nil [619 655])
+            ("%.amd" function (:arguments ("%.cpp")) nil [656 774])
+            ("%.apple" function (:arguments ("%.cpp")) nil [775 831])
+            ("%.intel" function (:arguments ("%.cpp")) nil [832 957])
+            ("%.nvidia" function (:arguments ("%.cpp")) nil [958 1054])
+            ("clean" function nil nil [1055 1104]))          
+      :file "Makefile"
+      :pointmax 1104
+      :fsize 1148
+      :lastmodtime '(20280 29304 0 0)
+      :unmatched-syntax '((shell-command 1063 . 1103) (bol 1062 . 1062))))
+  :file "!home!krishneel!.cache!.fr-apKtAj!sample!3-1!hello!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

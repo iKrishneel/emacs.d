@@ -1,0 +1,152 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("point_cloud_normal_gradient/point_cloud_normal_gradient.h" include (:system-flag t) nil [2 70])
+            ("iostream" include (:system-flag t) nil [71 90])
+            ("PointCloudNormalGradients" function
+               (:constructor-flag t
+                :parent "PointCloudNormalGradients"
+                :type ("PointCloudNormalGradients" type (:type "class") nil nil))
+                nil [92 193])
+            ("onInit" function
+               (:parent "PointCloudNormalGradients"
+                :type "void")
+                nil [195 608])
+            ("subscribe" function
+               (:parent "PointCloudNormalGradients"
+                :type "void")
+                nil [610 763])
+            ("unsubscribe" function
+               (:parent "PointCloudNormalGradients"
+                :type "void")
+                nil [765 847])
+            ("cloudCallback" function
+               (:parent "PointCloudNormalGradients"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [900 952]))                  
+                :type "void")
+                nil [849 2591])
+            ("estimatePointCloudNormals" function
+               (:parent "PointCloudNormalGradients"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2657 2698])
+                    ("s_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2703 2746])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2751 2763])
+                    ("radius" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2768 2788])
+                    ("ksearch" variable (:type "bool") (reparse-symbol arg-sub-list) [2793 2806]))                  
+                :type "void")
+                nil [2594 3265])
+            ("viewPointSurfaceNormalOrientation" function
+               (:parent "PointCloudNormalGradients"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3338 3373])
+                    ("cloud_normal" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3378 3431]))                  
+                :type "void")
+                nil [3267 4741])
+            ("localCurvatureBoundary" function
+               (:parent "PointCloudNormalGradients"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4803 4838])
+                    ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4843 4884]))                  
+                :type "void")
+                nil [4743 6978])
+            ("clear" function
+               (:prototype-flag t
+                :type "int")
+                nil [6901 6909])
+            ("copyPointCloud" function
+               (:template-specifier 
+                  ( ("PointT" type nil nil nil)
+                    ("PointT" type nil nil nil))                  
+                :prototype-flag t
+                :parent "pcl"
+                :arguments 
+                  ( ("" variable (:type ("curvature_cloud" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6951 6967])
+                    ("" variable (:type ("cloud" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6969 6975]))                  
+                :type "int")
+                nil [6914 6976])
+            ("kdtree" variable (:type ("pcl::KdTreeFLANN" type
+                 (:template-specifier 
+                    ( ("PointT" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [7299 7331])
+            ("setInputCloud" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cloud" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7357 7363]))                  
+                :type "int")
+                nil [7343 7364])
+            ("pointSquaredDistance" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("std::vector" type (:template-specifier 
+                        ( ("float" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [7369 7423])
+            ("resize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cloud" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8195 8201])
+                    ("" variable (:type ("points" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8202 8209])
+                    ("" variable (:type ("size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8209 8215]))                  
+                :type "int")
+                nil [8188 8217])
+            ("c" variable
+               (:default-value "cv::Scalar(1.0, 1.0, 1.0)"
+                :type ("cv::Scalar" type (:type "class") nil nil))
+                nil [8722 8763])
+            ("dv" variable (:type ("T" type (:type "class") nil nil)) nil [8778 8783])
+            ("v" variable
+               (:default-value "vmin"
+                :type "int")
+                nil [8809 8818])
+            ("v" variable
+               (:default-value "vmax"
+                :type "int")
+                nil [8844 8853])
+            ("dv" variable
+               (:default-value "vmax - vmin"
+                :type "int")
+                nil [8858 8875])
+            ("init" function
+               (:prototype-flag t
+                :parent "ros"
+                :arguments 
+                  ( ("" variable (:type ("argc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9360 9365])
+                    ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9366 9371]))                  
+                :type "int")
+                nil [9350 9403])
+            ("pcng" variable (:type ("PointCloudNormalGradients" type (:type "class") nil nil)) nil [9408 9439])
+            ("spin" function
+               (:prototype-flag t
+                :parent "ros"
+                :type "int")
+                nil [9444 9456]))          
+      :file "point_cloud_normal_gradient_node.cpp"
+      :pointmax 9473
+      :fsize 9472
+      :lastmodtime '(21884 7887 910068 863000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!point_cloud_normal_gradient!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,854 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__dynamic_tutorials__TUTORIALSCONFIG_H__" variable (:constant-flag t) nil [2213 2253])
+            ("dynamic_reconfigure/config_tools.h" include (:system-flag t) nil [2255 2300])
+            ("limits" include (:system-flag t) nil [2301 2318])
+            ("ros/node_handle.h" include (:system-flag t) nil [2319 2347])
+            ("dynamic_reconfigure/ConfigDescription.h" include (:system-flag t) nil [2348 2398])
+            ("dynamic_reconfigure/ParamDescription.h" include (:system-flag t) nil [2399 2448])
+            ("dynamic_reconfigure/Group.h" include (:system-flag t) nil [2449 2487])
+            ("dynamic_reconfigure/config_init_mutex.h" include (:system-flag t) nil [2488 2538])
+            ("boost/any.hpp" include (:system-flag t) nil [2539 2563])
+            ("dynamic_tutorials" type
+               (:members 
+                  ( ("TutorialsConfigStatics" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2597 2626])
+                    ("TutorialsConfig" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2660 2667])
+                            ("AbstractParamDescription" type
+                               (:superclasses 
+                                  ( ("dynamic_reconfigure::ParamDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2760 2767])
+                                    ("AbstractParamDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2799 2813])
+                                            ("t" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2814 2828])
+                                            ("l" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2829 2840])
+                                            ("d" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2852 2866])
+                                            ("e" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2867 2881]))                                          
+                                        :type ("AbstractParamDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2774 3002])
+                                    ("clamp" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3035 3059])
+                                            ("max" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3060 3087])
+                                            ("min" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3088 3115]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3016 3126])
+                                    ("calcLevel" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("level" variable
+                                               (:reference 1
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3156 3172])
+                                            ("config1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3173 3204])
+                                            ("config2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3205 3236]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3133 3247])
+                                    ("fromServer" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3278 3304])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3305 3329]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3254 3340])
+                                    ("toServer" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3369 3395])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3396 3426]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3347 3437])
+                                    ("fromMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3469 3508])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3509 3533]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3444 3544])
+                                    ("toMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3574 3607])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3608 3638]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3551 3649])
+                                    ("getValue" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3678 3708])
+                                            ("val" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3709 3725]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3656 3736]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [2672 3743])
+                            ("AbstractParamDescriptionPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescription" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3749 3829])
+                            ("AbstractParamDescriptionConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescription" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3834 3925])
+                            ("ParamDescription" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4025 4032])
+                                    ("ParamDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4056 4073])
+                                            ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4074 4091])
+                                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4092 4107])
+                                            ("description" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4119 4143])
+                                            ("edit_method" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4144 4168])
+                                            ("TutorialsConfig" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4169 4187])
+                                            ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4190 4192]))                                          
+                                        :type ("ParamDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4039 4299])
+                                    ("T" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("TutorialsConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4310 4326])
+                                            ("" variable (:type ("field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4329 4335]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4307 4336])
+                                    ("clamp" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4363 4387])
+                                            ("max" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4388 4415])
+                                            ("min" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4416 4443]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4344 4630])
+                                    ("calcLevel" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("comb_level" variable
+                                               (:reference 1
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4661 4682])
+                                            ("config1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4683 4714])
+                                            ("config2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4715 4746]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4638 4845])
+                                    ("fromServer" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4877 4903])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4904 4928]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4853 4992])
+                                    ("toServer" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5022 5048])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5049 5079]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5000 5143])
+                                    ("fromMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5176 5215])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5216 5240]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5151 5351])
+                                    ("toMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5382 5415])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5416 5446]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5359 5553])
+                                    ("getValue" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5583 5613])
+                                            ("val" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5614 5630]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5561 5681]))                                  
+                                :superclasses 
+                                  ( ("AbstractParamDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [3935 5688])
+                            ("AbstractGroupDescription" type
+                               (:superclasses 
+                                  ( ("dynamic_reconfigure::Group" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5773 5780])
+                                    ("AbstractGroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5812 5826])
+                                            ("t" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5827 5841])
+                                            ("p" variable (:type "int") (reparse-symbol arg-sub-list) [5842 5848])
+                                            ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5849 5855])
+                                            ("s" variable (:type "bool") (reparse-symbol arg-sub-list) [5856 5863]))                                          
+                                        :type ("AbstractGroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5787 5970])
+                                    ("abstract_parameters" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5978 6044])
+                                    ("state" variable (:type "bool") (reparse-symbol classsubparts) [6051 6062])
+                                    ("toMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6093 6126])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6127 6152]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6070 6163])
+                                    ("fromMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6195 6234])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6235 6254]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6170 6264])
+                                    ("updateParams" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6297 6313])
+                                            ("top" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6314 6335]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6271 6345])
+                                    ("setInitialState" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6381 6397]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6352 6408])
+                                    ("convertParams" function (:type "void") (reparse-symbol classsubparts) [6417 6693]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [5694 6700])
+                            ("AbstractGroupDescriptionPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescription" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6706 6786])
+                            ("AbstractGroupDescriptionConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescription" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6791 6882])
+                            ("GroupDescription" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("PT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6987 6994])
+                                    ("GroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7018 7035])
+                                            ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7036 7053])
+                                            ("parent" variable (:type "int") (reparse-symbol arg-sub-list) [7054 7065])
+                                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7066 7073])
+                                            ("s" variable (:type "bool") (reparse-symbol arg-sub-list) [7074 7081])
+                                            ("PT" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7082 7087])
+                                            ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7090 7092]))                                          
+                                        :type ("GroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7001 7172])
+                                    ("GroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("g" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("GroupDescription" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("PT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7197 7230]))                                          
+                                        :type ("GroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7180 7435])
+                                    ("fromMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7468 7507])
+                                            ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7508 7524]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7443 7982])
+                                    ("setInitialState" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8019 8035]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7990 8409])
+                                    ("updateParams" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8443 8459])
+                                            ("top" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8460 8481]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8417 8859])
+                                    ("toMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8890 8923])
+                                            ("cfg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8924 8946]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8867 9302])
+                                    ("T" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("PT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9313 9316])
+                                            ("" variable (:type ("field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9319 9325]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9310 9326])
+                                    ("groups" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("TutorialsConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9333 9403]))                                  
+                                :superclasses 
+                                  ( ("AbstractGroupDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [6888 9410])
+                            ("groups" variable (:type ("DEFAULT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9416 10367])
+                            ("DEFAULT" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9434 9441])
+                                    ("DEFAULT" function
+                                       (:constructor-flag t
+                                        :type ("DEFAULT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9446 9511])
+                                    ("setParams" function
+                                       (:arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9532 9556])
+                                            ("params" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9557 9616]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9517 10222])
+                                    ("int_param" variable (:type "int") (reparse-symbol classsubparts) [10228 10242])
+                                    ("double_param" variable (:type "double") (reparse-symbol classsubparts) [10243 10263])
+                                    ("str_param" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10264 10286])
+                                    ("bool_param" variable (:type "bool") (reparse-symbol classsubparts) [10287 10303])
+                                    ("size" variable (:type "int") (reparse-symbol classsubparts) [10304 10313])
+                                    ("state" variable (:type "bool") (reparse-symbol classsubparts) [10319 10330])
+                                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10335 10352]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [9416 10367])
+                            ("int_param" variable (:type "int") (reparse-symbol classsubparts) [10484 10498])
+                            ("double_param" variable (:type "double") (reparse-symbol classsubparts) [10612 10632])
+                            ("str_param" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10746 10768])
+                            ("bool_param" variable (:type "bool") (reparse-symbol classsubparts) [10882 10898])
+                            ("size" variable (:type "int") (reparse-symbol classsubparts) [11012 11021])
+                            ("__fromMessage__" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11144 11177]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11123 12879])
+                            ("__toMessage__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13040 13073])
+                                    ("__param_descriptions__" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13074 13150])
+                                    ("__group_descriptions__" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("AbstractGroupDescriptionConstPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13151 13227]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13021 13734])
+                            ("__toMessage__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13763 13796]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13744 14112])
+                            ("__toServer__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14140 14166]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14122 14480])
+                            ("__fromServer__" function
+                               (:arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14506 14532]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14486 15297])
+                            ("__clamp__" function (:type "void") (reparse-symbol classsubparts) [15303 15744])
+                            ("__level__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("config" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TutorialsConfig" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15769 15799]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15750 16171])
+                            ("__getDescriptionMessage__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16181 16262])
+                            ("__getDefault__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16267 16314])
+                            ("__getMax__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16319 16362])
+                            ("__getMin__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16367 16410])
+                            ("__getParamDescriptions__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [16415 16502])
+                            ("__getGroupDescriptions__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescriptionConstPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [16507 16594])
+                            ("private" label nil (reparse-symbol classsubparts) [16602 16610])
+                            ("__get_statics__" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("TutorialsConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16615 16670]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2632 16675])
+                    ("clamp" function
+                       (:type "void"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16801 16825])
+                            ("max" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16826 16853])
+                            ("min" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TutorialsConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16854 16881]))                          
+                        :typemodifiers ("inline")
+                        :parent "TutorialsConfig::ParamDescription"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [16681 16907])
+                    ("TutorialsConfigStatics" type
+                       (:members 
+                          ( ("TutorialsConfig" friend nil (reparse-symbol classsubparts) [16948 16976])
+                            ("TutorialsConfigStatics" function
+                               (:constructor-flag t
+                                :type ("TutorialsConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16987 25526])
+                            ("__param_descriptions__" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("TutorialsConfig::AbstractParamDescriptionConstPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [25531 25617])
+                            ("__group_descriptions__" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("TutorialsConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [25622 25708])
+                            ("__max__" variable (:type ("TutorialsConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25713 25737])
+                            ("__min__" variable (:type ("TutorialsConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25742 25766])
+                            ("__default__" variable (:type ("TutorialsConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25771 25799])
+                            ("__description_message__" variable (:type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25804 25867])
+                            ("get_instance" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("TutorialsConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25873 26235]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [16911 26240])
+                    ("__getDescriptionMessage__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26244 26405])
+                    ("__getDefault__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TutorialsConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26409 26523])
+                    ("__getMax__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TutorialsConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26529 26635])
+                    ("__getMin__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TutorialsConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26641 26747])
+                    ("__getParamDescriptions__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("TutorialsConfig::AbstractParamDescriptionConstPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [26753 26935])
+                    ("__getGroupDescriptions__" function
+                       (:parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("TutorialsConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [26939 27121])
+                    ("__get_statics__" function
+                       (:pointer 1
+                        :parent "TutorialsConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TutorialsConfigStatics" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27125 27532])
+                    ("Tutorials_Small" variable
+                       (:constant-flag t
+                        :default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27619 27649])
+                    ("Tutorials_Medium" variable
+                       (:constant-flag t
+                        :default-value "1"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27735 27766])
+                    ("Tutorials_Large" variable
+                       (:constant-flag t
+                        :default-value "2"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27852 27882])
+                    ("Tutorials_ExtraLarge" variable
+                       (:constant-flag t
+                        :default-value "3"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27968 28003]))                  
+                :type "namespace")
+                nil [2565 28005]))          
+      :file "TutorialsConfig.h"
+      :pointmax 28047
+      :fsize 28046
+      :lastmodtime '(21775 6114 790217 377000)
+      :unmatched-syntax '((punctuation 16976 . 16977) (punctuation 9317 . 9318) (punctuation 9316 . 9317) (punctuation 9315 . 9316) (punctuation 7088 . 7089) (punctuation 7087 . 7088) (punctuation 7086 . 7087) (punctuation 4327 . 4328) (punctuation 4326 . 4327) (punctuation 4325 . 4326) (punctuation 4188 . 4189) (punctuation 4187 . 4188) (punctuation 4186 . 4187))
+      :lexical-table 
+        '(("__dynamic_tutorials__TUTORIALSCONFIG_H__")
+          )
+))
+  :file "!home!krishneel!catkin_ws!devel!include!dynamic_tutorials!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

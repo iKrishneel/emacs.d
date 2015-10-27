@@ -1,0 +1,137 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_PCL_FILTER_UTILS_H_" variable (:constant-flag t) nil [39 59])
+            ("dynamic_reconfigure/server.h" include (:system-flag t) nil [61 100])
+            ("pcl_filter_utils/PointCloudFilterUtilsConfig.h" include (:system-flag t) nil [101 158])
+            ("ros/ros.h" include (:system-flag t) nil [160 180])
+            ("ros/console.h" include (:system-flag t) nil [181 205])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [207 236])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [238 271])
+            ("image_geometry/pinhole_camera_model.h" include (:system-flag t) nil [273 321])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [322 352])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [353 393])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [394 430])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [431 463])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [464 508])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [510 536])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [537 565])
+            ("pcl/point_types.h" include (:system-flag t) nil [566 594])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [595 631])
+            ("rosbag/bag.h" include (:system-flag t) nil [633 656])
+            ("string" include (:system-flag t) nil [657 674])
+            ("PointCloudFilterUtils" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [712 719])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [724 756])
+                    ("PointCloudFilterUtils" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PointCloudFilterUtils" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [766 790])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [831 874]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [795 875])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [881 903])
+                    ("subsribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [908 932])
+                    ("pclDistanceFilter" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("pcl::PCLPointCloud2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [977 1022])
+                            ("" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1031 1053]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [937 1054])
+                    ("configCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("pcl_filter_utils::PointCloudFilterUtilsConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1095 1143])
+                            ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1144 1153]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1059 1154])
+                    ("convertNumber2String" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1218 1220]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1160 1221])
+                    ("timeToStr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1270 1272]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1226 1273])
+                    ("protected" label nil (reparse-symbol classsubparts) [1279 1289])
+                    ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1294 1313])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1318 1339])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1344 1371])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1376 1402])
+                    ("server" variable (:type ("dynamic_reconfigure::Server" type
+                         (:template-specifier 
+                            ( ("pcl_filter_utils::PointCloudFilterUtilsConfig" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1408 1499])
+                    ("private" label nil (reparse-symbol classsubparts) [1506 1514])
+                    ("min_distance_" variable (:type "float") (reparse-symbol classsubparts) [1519 1539])
+                    ("max_distance_" variable (:type "float") (reparse-symbol classsubparts) [1544 1564])
+                    ("dataset_bag_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("rosbag::Bag" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1569 1613]))                  
+                :type "class")
+                nil [676 1616]))          
+      :file "pcl_filter_utils.h"
+      :pointmax 1650
+      :fsize 1649
+      :lastmodtime '(21998 50735 457081 59000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_PCL_FILTER_UTILS_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!pcl_filter_utils!include!pcl_filter_utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

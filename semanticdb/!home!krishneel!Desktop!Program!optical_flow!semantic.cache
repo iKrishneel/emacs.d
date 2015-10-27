@@ -1,0 +1,300 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [158 187])
+            ("opencv2/opencv_modules.hpp" include (:system-flag t) nil [188 225])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [226 264])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [265 303])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [304 336])
+            ("opencv2/video/tracking.hpp" include (:system-flag t) nil [337 374])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [375 419])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [420 461])
+            ("opencv2/legacy/legacy.hpp" include (:system-flag t) nil [462 498])
+            ("opencv2/videostab/videostab.hpp" include (:system-flag t) nil [499 541])
+            ("opencv2/videostab/global_motion.hpp" include (:system-flag t) nil [542 588])
+            ("opencv2/videostab/optical_flow.hpp" include (:system-flag t) nil [589 634])
+            ("opencv2/video/video.hpp" include (:system-flag t) nil [635 669])
+            ("iostream" include (:system-flag t) nil [671 690])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [692 711])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [712 732])
+            ("videostab" using (:type ("videostab" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [733 759])
+            ("buildImagePyramid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [784 796])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [797 811]))                  
+                :type "void")
+                nil [761 812])
+            ("getOpticalFlow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [833 845])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [846 858])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [879 897])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [898 916])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("uchar" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [917 933]))                  
+                :type "void")
+                nil [813 934])
+            ("drawFlowField" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [954 960])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [961 979])
+                    ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [980 998]))                  
+                :type "void")
+                nil [935 999])
+            ("float2string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [1020 1026]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1000 1027])
+            ("opticalFlowFromFile" function
+               (:prototype-flag t
+                :type "void")
+                nil [1029 1056])
+            ("computeAffineTransformation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1094 1118])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1119 1143]))                  
+                :type "void")
+                nil [1057 1144])
+            ("FEATURE_COUNT" variable (:constant-flag t) nil [1154 1167])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1182 1191])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1192 1212]))                  
+                :type "int")
+                nil [1173 1258])
+            ("computeKeyPoints" function
+               (:arguments 
+                  ( ("points" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1311 1335])
+                    ("keypoints" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1336 1364]))                  
+                :type "void")
+                nil [1284 1639])
+            ("opticalFlowFromFile" function (:type "void") nil [1642 6154])
+            ("buildImagePyramid" function
+               (:arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6184 6201])
+                    ("pyramid" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6202 6223]))                  
+                :type "void")
+                nil [6156 6499])
+            ("getOpticalFlow" function
+               (:arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6526 6543])
+                    ("prevFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6544 6565])
+                    ("nextPts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6570 6595])
+                    ("prevPts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6596 6621])
+                    ("status" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("uchar" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6626 6648]))                  
+                :type "void")
+                nil [6501 7555])
+            ("drawFlowField" function
+               (:arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7581 7592])
+                    ("nextPts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7593 7618])
+                    ("prevPts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7619 7644]))                  
+                :type "void")
+                nil [7562 8973])
+            ("computeAffineTransformation" function
+               (:arguments 
+                  ( ("nextPts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9008 9039])
+                    ("prevPts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9040 9071]))                  
+                :type "void")
+                nil [8975 9252])
+            ("float2string" function
+               (:arguments 
+                  ( ("c_frame" variable (:type "float") (reparse-symbol arg-sub-list) [9274 9288]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [9254 9424]))          
+      :file "main.cpp"
+      :pointmax 9425
+      :fsize 9424
+      :lastmodtime '(21916 9480 191606 477000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FEATURE_COUNT" . ((number "500" 1168 . 1171)))
+          )
+))
+  :file "!home!krishneel!Desktop!Program!optical_flow!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

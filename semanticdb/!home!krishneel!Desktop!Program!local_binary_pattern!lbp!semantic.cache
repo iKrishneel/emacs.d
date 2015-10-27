@@ -1,0 +1,729 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/opencv.hpp" include (:system-flag t) nil [2 31])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [32 70])
+            ("vector" include (:system-flag t) nil [72 89])
+            ("string" include (:system-flag t) nil [90 107])
+            ("lbp.hpp" include nil nil [109 127])
+            ("histogram.hpp" include nil nil [128 152])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [154 173])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [184 193])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [194 213]))                  
+                :type "int")
+                nil [175 3346]))          
+      :file "main.cpp"
+      :pointmax 3347
+      :fsize 3346
+      :lastmodtime '(21826 61665 526899 222000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LBP_HPP_" variable (:constant-flag t) nil [26 34])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [115 144])
+            ("limits" include (:system-flag t) nil [145 162])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [164 183])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [184 204])
+            ("lbp" type
+               (:members 
+                  ( ("OLBP_" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [281 300])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [301 314]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [246 315])
+                    ("ELBP_" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [352 371])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [372 385])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [386 400])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [402 419]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [317 421])
+                    ("VARLBP_" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [460 479])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [480 493])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [494 508])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [510 527]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [423 529])
+                    ("OLBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [562 577])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [578 587]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [552 588])
+                    ("ELBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [599 614])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [615 624])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [625 639])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [641 658]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [589 660])
+                    ("VARLBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [673 688])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [689 698])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [699 713])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [715 732]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [661 734])
+                    ("OLBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [774 789]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [765 790])
+                    ("ELBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [800 815])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [816 830])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [832 849]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [791 851])
+                    ("VARLBP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [863 878])
+                            ("radius" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [879 893])
+                            ("neighbors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [895 912]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [852 914]))                  
+                :type "namespace")
+                nil [206 917]))          
+      :file "lbp.hpp"
+      :pointmax 925
+      :fsize 924
+      :lastmodtime '(21826 8116 497582 395000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LBP_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("HISTOGRAM_HPP_" variable (:constant-flag t) nil [32 46])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [127 156])
+            ("cv.h" include (:system-flag t) nil [157 157])
+            ("limits" include (:system-flag t) nil [157 174])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [176 195])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [196 216])
+            ("lbp" type
+               (:members 
+                  ( ("histogram_" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [298 313])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [314 324])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [325 341]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [258 342])
+                    ("chi_square_" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "double"
+                        :arguments 
+                          ( ("histogram0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [387 409])
+                            ("histogram1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [410 432]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [344 433])
+                    ("spatial_histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [485 500])
+                            ("spatialhist" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [501 518])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [519 535])
+                            ("window" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [536 555])
+                            ("overlap" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [556 569]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [462 571])
+                    ("spatial_histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [617 632])
+                            ("spatialhist" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [633 650])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [651 667])
+                            ("gridx" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [668 679])
+                            ("gridy" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [681 692])
+                            ("overlap" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [694 707]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [594 709])
+                    ("histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [725 740])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [741 751])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [752 768]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [710 769])
+                    ("chi_square" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("histogram0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [788 810])
+                            ("histogram1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [811 833]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [770 834])
+                    ("histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [879 894])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [895 911]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [865 912])
+                    ("spatial_histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [935 950])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [951 967])
+                            ("window" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [968 987])
+                            ("overlap" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [988 1001]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [913 1003])
+                    ("spatial_histogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1026 1041])
+                            ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [1042 1058])
+                            ("gridx" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1059 1070])
+                            ("gridy" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1072 1083])
+                            ("overlap" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1085 1098]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1004 1100]))                  
+                :type "namespace")
+                nil [218 1102]))          
+      :file "histogram.hpp"
+      :pointmax 1110
+      :fsize 1109
+      :lastmodtime '(21826 8143 29583 385000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HISTOGRAM_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("lbp.hpp" include nil nil [1 19])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 40])
+            ("OLBP_" function
+               (:template 
+                  ( ("_Tp" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82 97])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98 107]))                  
+                :parent "lbp")
+                nil [42 724])
+            ("ELBP_" function
+               (:template 
+                  ( ("_Tp" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [766 781])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [782 791])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [792 803])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [804 818]))                  
+                :parent "lbp")
+                nil [726 2303])
+            ("VARLBP_" function
+               (:template 
+                  ( ("_Tp" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2347 2362])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2363 2372])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [2373 2384])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [2385 2399]))                  
+                :parent "lbp")
+                nil [2305 4125])
+            ("OLBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4171 4186])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4187 4196]))                  
+                :type "void")
+                nil [4156 4574])
+            ("ELBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4591 4606])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4607 4616])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [4617 4628])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [4629 4643]))                  
+                :type "void")
+                nil [4576 5154])
+            ("VARLBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5173 5188])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5189 5198])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [5199 5210])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [5211 5225]))                  
+                :type "void")
+                nil [5156 5750])
+            ("OLBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5798 5813]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [5784 5854])
+            ("ELBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5869 5884])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [5885 5896])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [5897 5911]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [5855 5971])
+            ("VARLBP" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5988 6003])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [6004 6015])
+                    ("neighbors" variable (:type "int") (reparse-symbol arg-sub-list) [6016 6030]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [5972 6092]))          
+      :file "lbp.cpp"
+      :pointmax 6097
+      :fsize 6096
+      :lastmodtime '(21826 7924 825575 240000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("histogram.hpp" include nil nil [1 25])
+            ("vector" include (:system-flag t) nil [26 43])
+            ("histogram_" function
+               (:template 
+                  ( ("_Tp" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90 105])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106 116])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [117 133]))                  
+                :parent "lbp")
+                nil [45 325])
+            ("chi_square_" function
+               (:template 
+                  ( ("_Tp" type (:type "class") nil nil))                  
+                :type "double"
+                :arguments 
+                  ( ("histogram0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [375 397])
+                    ("histogram1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 420]))                  
+                :parent "lbp")
+                nil [327 989])
+            ("spatial_histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1035])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1036 1046])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [1047 1063])
+                    ("window" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1064 1083])
+                    ("overlap" variable (:type "int") (reparse-symbol arg-sub-list) [1084 1096]))                  
+                :type "void")
+                nil [992 1803])
+            ("histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1837 1852])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1853 1863])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [1864 1880]))                  
+                :type "void")
+                nil [1817 2256])
+            ("chi_square" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("histogram0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2281 2303])
+                    ("histogram1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2304 2326]))                  
+                :type "double")
+                nil [2258 2745])
+            ("spatial_histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2775 2790])
+                    ("dst" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2791 2800])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [2801 2817])
+                    ("gridx" variable (:type "int") (reparse-symbol arg-sub-list) [2818 2828])
+                    ("gridy" variable (:type "int") (reparse-symbol arg-sub-list) [2829 2839])
+                    ("overlap" variable (:type "int") (reparse-symbol arg-sub-list) [2840 2852]))                  
+                :type "void")
+                nil [2747 3046])
+            ("histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3096 3111])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [3112 3128]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [3077 3193])
+            ("spatial_histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3223 3238])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [3239 3255])
+                    ("window" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3256 3275])
+                    ("overlap" variable (:type "int") (reparse-symbol arg-sub-list) [3276 3288]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [3196 3378])
+            ("spatial_histogram" function
+               (:parent "lbp"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3408 3423])
+                    ("numPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [3424 3440])
+                    ("gridx" variable (:type "int") (reparse-symbol arg-sub-list) [3441 3451])
+                    ("gridy" variable (:type "int") (reparse-symbol arg-sub-list) [3452 3462])
+                    ("overlap" variable (:type "int") (reparse-symbol arg-sub-list) [3463 3475]))                  
+                :type ("Mat" type (:type "class") nil nil))
+                nil [3381 3562]))          
+      :file "histogram.cpp"
+      :pointmax 3563
+      :fsize 3562
+      :lastmodtime '(21826 7924 829575 240000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!local_binary_pattern!lbp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

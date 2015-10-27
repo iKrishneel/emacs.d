@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("point_cloud_normal_gradient/incremental_icp_registeration.h" include (:system-flag t) nil [78 148])
+            ("IncrementalICPRegisteration" function
+               (:constructor-flag t
+                :parent "IncrementalICPRegisteration"
+                :type ("IncrementalICPRegisteration" type (:type "class") nil nil))
+                nil [150 346])
+            ("onInit" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [348 550])
+            ("subscribe" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [552 704])
+            ("unsubscribe" function
+               (:parent "IncrementalICPRegisteration"
+                :type "void")
+                nil [706 790])
+            ("callback" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [840 892]))                  
+                :type "void")
+                nil [792 1886])
+            ("icpAlignPointCloud" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("source" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1946 1988])
+                    ("target" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2035])
+                    ("output" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2040 2076])
+                    ("final_transform" variable
+                       (:reference 1
+                        :type ("Eigen::Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2077 2110]))                  
+                :type "bool")
+                nil [1888 3402])
+            ("downsampleCloud" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("input" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3459 3500])
+                    ("output" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3505 3541])
+                    ("leaf_size" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3542 3564]))                  
+                :type "void")
+                nil [3404 3713])
+            ("estimateNormal" function
+               (:parent "IncrementalICPRegisteration"
+                :arguments 
+                  ( ("input" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3769 3810])
+                    ("normal_out" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3815 3865])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3870 3882]))                  
+                :type "void")
+                nil [3715 4160])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4172 4181])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4182 4195]))                  
+                :type "int")
+                nil [4163 4329]))          
+      :file "incremental_icp_registeration_node.cpp"
+      :pointmax 4330
+      :fsize 4329
+      :lastmodtime '(22044 39523 635963 7000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!point_cloud_normal_gradient!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

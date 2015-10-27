@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [265 283])
+            ("opencv/cv.h" include (:system-flag t) nil [284 306])
+            ("opencv/highgui.h" include (:system-flag t) nil [307 334])
+            ("opencv/math.h" include (:system-flag t) nil [335 359])
+            ("pi" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3.14159265358979323846"
+                :type "double")
+                nil [361 409])
+            ("square" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [439 445]))                  
+                :type "double")
+                nil [411 464])
+            ("allocateOnDemand" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 2
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [849 864])
+                    ("size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [865 877])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [878 888])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [889 903]))                  
+                :type "void")
+                nil [812 1100])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1111 1120])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1121 1134]))                  
+                :type "int")
+                nil [1102 12352]))          
+      :file "main.cpp"
+      :pointmax 12354
+      :fsize 12353
+      :lastmodtime '(21163 5280 0 0)
+      :unmatched-syntax nil))
+  :file "!media!KRISHNEEL!MacBook Back-Up!Krishneel!Desktop!Programs!Image Optical Flow!Image Optical Flow!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

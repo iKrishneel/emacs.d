@@ -1,0 +1,122 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [1 21])
+            ("message_filters/subscriber.h" include (:system-flag t) nil [23 62])
+            ("message_filters/synchronizer.h" include (:system-flag t) nil [63 104])
+            ("message_filters/sync_policies/exact_time.h" include (:system-flag t) nil [105 158])
+            ("message_filters/sync_policies/approximate_time.h" include (:system-flag t) nil [159 218])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [220 250])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [251 286])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [287 323])
+            ("geometry_msgs/PointStamped.h" include (:system-flag t) nil [370 409])
+            ("geometry_msgs/PolygonStamped.h" include (:system-flag t) nil [410 451])
+            ("PointsRectExtractor" type
+               (:members 
+                  ( ("PolygonApproxSyncPolicy" type
+                       (:typedef ("message_filters::sync_policies::ApproximateTime" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::PointCloud2" type nil nil nil)
+                                  ("geometry_msgs::PolygonStamped" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [483 681])
+                    ("PointApproxSyncPolicy" type
+                       (:typedef ("message_filters::sync_policies::ApproximateTime" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::PointCloud2" type nil nil nil)
+                                  ("geometry_msgs::PointStamped" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [685 879])
+                    ("private" label nil (reparse-symbol classsubparts) [881 889])
+                    ("pnode_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [892 915])
+                    ("pub_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [918 938])
+                    ("queue_size" variable (:type "int") (reparse-symbol classsubparts) [941 956])
+                    ("crop_width" variable (:type "int") (reparse-symbol classsubparts) [959 974])
+                    ("points_sub_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("sensor_msgs::PointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [978 1047])
+                    ("rect_sub_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("geometry_msgs::PolygonStamped" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1050 1122])
+                    ("point_sub_" variable (:type ("message_filters::Subscriber" type
+                         (:template-specifier 
+                            ( ("geometry_msgs::PointStamped" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1125 1196])
+                    ("sync_a_polygon_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("message_filters::Synchronizer" type (:template-specifier 
+                                ( ("PolygonApproxSyncPolicy" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1200 1296])
+                    ("sync_a_point_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("message_filters::Synchronizer" type (:template-specifier 
+                                ( ("PointApproxSyncPolicy" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1299 1391])
+                    ("public" label nil (reparse-symbol classsubparts) [1393 1400])
+                    ("PointsRectExtractor" function
+                       (:constructor-flag t
+                        :type ("PointsRectExtractor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1403 2279])
+                    ("callback_point" function
+                       (:arguments 
+                          ( ("points_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2303 2354])
+                            ("array_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PointStampedConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2377 2430]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2283 3588])
+                    ("callback_polygon" function
+                       (:arguments 
+                          ( ("points_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3614 3665])
+                            ("array_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStampedConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3690 3745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3592 5080]))                  
+                :type "class")
+                nil [453 5083])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5095 5104])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5105 5117]))                  
+                :type "int")
+                nil [5085 5277]))          
+      :file "points_rectangle_extractor.cpp"
+      :pointmax 5278
+      :fsize 5277
+      :lastmodtime '(21752 20686 16234 556000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!jsk-ros-pkg!jsk_common!jsk_ros_patch!image_view2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

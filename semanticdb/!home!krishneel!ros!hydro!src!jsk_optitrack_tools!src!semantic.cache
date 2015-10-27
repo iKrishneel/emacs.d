@@ -1,0 +1,102 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2073 2093])
+            ("tf/transform_broadcaster.h" include (:system-flag t) nil [2094 2131])
+            ("geometry_msgs/TransformStamped.h" include (:system-flag t) nil [2132 2175])
+            ("stdio.h" include (:system-flag t) nil [2176 2194])
+            ("math.h" include (:system-flag t) nil [2195 2212])
+            ("jsk_optitrack_tools/vrpn_Connection.h" include (:system-flag t) nil [2214 2262])
+            ("vrpn_Tracker.h" include (:system-flag t) nil [2263 2288])
+            ("LinearMath/btQuaternion.h" include (:system-flag t) nil [2291 2327])
+            ("track_target" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2362 2377])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TRACKERCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2378 2401]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [2334 2402])
+            ("TargetState" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2423 2430])
+                    ("target" variable (:type ("geometry_msgs::TransformStamped" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2433 2472]))                  
+                :type "class")
+                nil [2404 2475])
+            ("prev_vrpn_data" variable (:type ("vrpn_TRACKERCB" type (:type "class") nil nil)) nil [2524 2554])
+            ("Rigid_Body" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [2575 2583])
+                    ("target_pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2586 2612])
+                    ("br" variable (:type ("tf::TransformBroadcaster" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2615 2643])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("vrpn_Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2646 2674])
+                    ("tracker" variable
+                       (:pointer 1
+                        :type ("vrpn_Tracker_Remote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2677 2706])
+                    ("public" label nil (reparse-symbol classsubparts) [2708 2715])
+                    ("Rigid_Body" function
+                       (:constructor-flag t
+                        :type ("Rigid_Body" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2718 2733])
+                    ("Rigid_Body" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("nh" variable
+                               (:reference 1
+                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2749 2769])
+                            ("server_ip" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2770 2792])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2806 2815])
+                            ("target_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2816 2840]))                          
+                        :type ("Rigid_Body" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2738 3353])
+                    ("publish_target_state" function (:type "void") (reparse-symbol classsubparts) [3357 3480])
+                    ("step_vrpn" function (:type "void") (reparse-symbol classsubparts) [3489 3578])
+                    ("target_state" variable (:type ("TargetState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3583 3608])
+                    ("fresh_data" variable (:type "bool") (reparse-symbol classsubparts) [3611 3627]))                  
+                :type "class")
+                nil [2556 3630])
+            ("track_target" function
+               (:arguments 
+                  ( ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3713 3728])
+                    ("t" variable
+                       (:constant-flag t
+                        :type ("vrpn_TRACKERCB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3729 3752]))                  
+                :type ("VRPN_CALLBACK" type (:type "class") nil nil))
+                nil [3685 5424])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5437 5446])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5447 5460]))                  
+                :type "int")
+                nil [5428 6529]))          
+      :file "trackables_publisher.cpp"
+      :pointmax 6533
+      :fsize 6532
+      :lastmodtime '(21998 40632 844041 310000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!jsk_optitrack_tools!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

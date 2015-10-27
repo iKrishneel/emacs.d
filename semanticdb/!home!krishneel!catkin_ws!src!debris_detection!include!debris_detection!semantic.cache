@@ -1,0 +1,1219 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_DEBRIS_DETECTION_INCLUDE_RGB_IMAGE_PROCESSING_H_" variable (:constant-flag t) nil [148 197])
+            ("debris_detection/constants.h" include (:system-flag t) nil [199 238])
+            ("debris_detection/connected.h" include (:system-flag t) nil [239 278])
+            ("debris_detection/contour_thinning.h" include (:system-flag t) nil [279 325])
+            ("cvPatch" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("k" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [417 421])
+                    ("patch" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [449 463])
+                    ("rect" variable (:type ("cv::Rect_" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [489 507]))                  )
+                nil [375 525])
+            ("ImageProcessing" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [553 561])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [566 586])
+                    ("it_" variable (:type ("image_transport::ImageTransport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [591 627])
+                    ("imageSubcriber" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [632 675])
+                    ("depthSubcriber" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [680 723])
+                    ("imagePublisher" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [728 770])
+                    ("depthPublisher" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [775 817])
+                    ("total_cluster" variable (:type "int") (reparse-symbol classsubparts) [826 844])
+                    ("isPub" variable (:type "bool") (reparse-symbol classsubparts) [849 860])
+                    ("rng" variable (:type ("cv::RNG" type (:type "class") nil nil)) (reparse-symbol classsubparts) [865 877])
+                    ("cell_size" variable (:type ("cv::Size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [882 901])
+                    ("protected" label nil (reparse-symbol classsubparts) [904 914])
+                    ("cvImgPtr" variable (:type ("cv_bridge::CvImagePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [919 950])
+                    ("cvDepPtr" variable (:type ("cv_bridge::CvImagePtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [955 986])
+                    ("connectedComponents" variable
+                       (:pointer 1
+                        :type ("ConnectedComponents" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [991 1032])
+                    ("public" label nil (reparse-symbol classsubparts) [1038 1045])
+                    ("it_" function
+                       (:arguments 
+                          ( ("" variable (:type ("nh_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1164 1168]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1160 2058])
+                    ("ImageProcessing" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2063 2082])
+                    ("imageCallBack" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2122 2157]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2087 2158])
+                    ("depthCallBack" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2233]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2163 2234])
+                    ("getDepthEdge" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2274 2290])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2291 2301])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2302 2313]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2240 2315])
+                    ("cvMorphologicalOperations" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2366 2382])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2383 2393])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2394 2405]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2320 2407])
+                    ("getRGBEdge" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2444 2460])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2462 2472])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2473 2496]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2412 2498])
+                    ("cvGetLabelImagePatch" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2545 2580])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2588 2604])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cvPatch" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2612 2641]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2503 2642])
+                    ("cvLabelImagePatch" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2685 2701])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2709 2719]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2647 2720])
+                    ("cvLabelEgdeMap" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2761 2796])
+                            ("" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2812])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cvPatch" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2820 2849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2725 2850])
+                    ("edgeBoundaryAssignment" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2898 2933])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2940 2956])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2963 2973])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Rect_" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2980 3001]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2855 3002])
+                    ("cvVisualization" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cvPatch" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3037 3066])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3074 3109])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3118 3149]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3008 3151])
+                    ("getTotalClusterSize" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3157 3183])
+                    ("publishROSImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3217 3227])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3228 3238]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3188 3239])
+                    ("image" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3248 3262])
+                    ("depth" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3267 3281])
+                    ("color" variable
+                       (:dereference 1
+                        :type ("cv::Scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3286 3310]))                  
+                :type "class")
+                nil [527 3313]))          
+      :file "rgb_image_processing.h"
+      :pointmax 3375
+      :fsize 3374
+      :lastmodtime '(21800 56156 437239 211000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_DEBRIS_DETECTION_INCLUDE_RGB_IMAGE_PROCESSING_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_DEBRIS_DETECTION_INCLUDE_CONSTANTS_H_" variable (:constant-flag t) nil [137 175])
+            ("ros/ros.h" include (:system-flag t) nil [177 197])
+            ("ros/console.h" include (:system-flag t) nil [198 222])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [264 308])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [309 341])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [342 382])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [383 419])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [449 487])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [488 526])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [553 579])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [580 624])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [625 653])
+            ("pcl/point_types.h" include (:system-flag t) nil [654 682])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [683 719])
+            ("pcl/kdtree/kdtree.h" include (:system-flag t) nil [720 750])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [751 787])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [788 827])
+            ("pcl/sample_consensus/method_types.h" include (:system-flag t) nil [828 874])
+            ("pcl/sample_consensus/model_types.h" include (:system-flag t) nil [875 920])
+            ("pcl/segmentation/sac_segmentation.h" include (:system-flag t) nil [921 967])
+            ("pcl/segmentation/extract_clusters.h" include (:system-flag t) nil [968 1014])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [1015 1055])
+            ("pcl/common/centroid.h" include (:system-flag t) nil [1056 1088])
+            ("pcl/common/impl/common.hpp" include (:system-flag t) nil [1089 1126])
+            ("pcl/registration/distances.h" include (:system-flag t) nil [1127 1166])
+            ("tf/transform_broadcaster.h" include (:system-flag t) nil [1192 1229])
+            ("iostream" include (:system-flag t) nil [1231 1250])
+            ("fstream" include (:system-flag t) nil [1251 1269])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1271 1291])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1292 1311])
+            ("RESET" variable (:constant-flag t) nil [1322 1327])
+            ("BLACK" variable (:constant-flag t) nil [1348 1353])
+            ("RED" variable (:constant-flag t) nil [1392 1395])
+            ("GREEN" variable (:constant-flag t) nil [1434 1439])
+            ("YELLOW" variable (:constant-flag t) nil [1478 1484])
+            ("BLUE" variable (:constant-flag t) nil [1523 1527])
+            ("MAGENTA" variable (:constant-flag t) nil [1566 1573])
+            ("CYAN" variable (:constant-flag t) nil [1612 1616])
+            ("WHITE" variable (:constant-flag t) nil [1655 1660])
+            ("BOLDBLACK" variable (:constant-flag t) nil [1699 1708])
+            ("BOLDRED" variable (:constant-flag t) nil [1759 1766])
+            ("BOLDGREEN" variable (:constant-flag t) nil [1817 1826])
+            ("BOLDYELLOW" variable (:constant-flag t) nil [1877 1887])
+            ("BOLDBLUE" variable (:constant-flag t) nil [1938 1946])
+            ("BOLDMAGENTA" variable (:constant-flag t) nil [1997 2008])
+            ("BOLDCYAN" variable (:constant-flag t) nil [2059 2067])
+            ("BOLDWHITE" variable (:constant-flag t) nil [2118 2127])
+            ("CLEAR" variable (:constant-flag t) nil [2178 2183])
+            ("PointT" type
+               (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2225 2257])
+            ("convertNumber2String" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c_frame" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2378 2388]))                  
+                :typemodifiers ("inline"))
+                nil [2317 2516])
+            ("JetColour" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("U" type (:type "class") nil nil)
+                    ("V" type (:type "class") nil nil))                  
+                :type ("cv::Scalar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2906 2910])
+                    ("vmin" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2911 2918])
+                    ("vmax" variable (:type ("V" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2919 2926]))                  
+                :typemodifiers ("inline"))
+                nil [2833 3522]))          
+      :file "constants.h"
+      :pointmax 3577
+      :fsize 3576
+      :lastmodtime '(21800 51831 177346 202000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAGENTA" . ((string "\"\\033[35m\"" 1574 . 1584)))
+          ("RESET" . ((string "\"\\033[0m\"" 1330 . 1339)))
+          ("BOLDBLACK" . ((string "\"\\033[1m\\033[30m\"" 1711 . 1728)))
+          ("BOLDGREEN" . ((string "\"\\033[1m\\033[32m\"" 1829 . 1846)))
+          ("BOLDBLUE" . ((string "\"\\033[1m\\033[34m\"" 1950 . 1967)))
+          ("BLACK" . ((string "\"\\033[30m\"" 1356 . 1366)))
+          ("_DEBRIS_DETECTION_INCLUDE_CONSTANTS_H_")
+          ("GREEN" . ((string "\"\\033[32m\"" 1442 . 1452)))
+          ("BOLDCYAN" . ((string "\"\\033[1m\\033[36m\"" 2071 . 2088)))
+          ("CLEAR" . ((string "\"\\033[2J\"" 2184 . 2193)))
+          ("BOLDRED" . ((string "\"\\033[1m\\033[31m\"" 1771 . 1788)))
+          ("BOLDYELLOW" . ((string "\"\\033[1m\\033[33m\"" 1889 . 1906)))
+          ("BLUE" . ((string "\"\\033[34m\"" 1531 . 1541)))
+          ("BOLDMAGENTA" . ((string "\"\\033[1m\\033[35m\"" 2009 . 2026)))
+          ("BOLDWHITE" . ((string "\"\\033[1m\\033[37m\"" 2130 . 2147)))
+          ("CYAN" . ((string "\"\\033[36m\"" 1620 . 1630)))
+          ("WHITE" . ((string "\"\\033[37m\"" 1663 . 1673)))
+          ("RED" . ((string "\"\\033[31m\"" 1400 . 1410)))
+          ("YELLOW" . ((string "\"\\033[33m\"" 1486 . 1496)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_CONNECTED_H_" variable (:constant-flag t) nil [112 125])
+            ("vector" include (:system-flag t) nil [127 144])
+            ("algorithm" include (:system-flag t) nil [145 165])
+            ("constant" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("T" type (:typevar "V") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("T" function
+                       (:methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [222 256]))                  )
+                nil [167 259])
+            ("ConnectedComponents" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [290 297])
+                    ("ConnectedComponents" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("soft_maxlabels" variable (:type "int") (reparse-symbol arg-sub-list) [331 350]))                          
+                        :type ("ConnectedComponents" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [311 400])
+                    ("clear" function (:type "void") (reparse-symbol classsubparts) [405 513])
+                    ("connected" function
+                       (:template 
+                          ( ("Tin" type (:type "class") nil nil)
+                            ("Tlabel" type (:type "class") nil nil)
+                            ("Comparator" type (:type "class") nil nil)
+                            ("Boolean" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Tin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [611 623])
+                            ("" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [624 633])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [634 638])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [639 643])
+                            ("" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [644 655])
+                            ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [656 664]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [518 665])
+                    ("private" label nil (reparse-symbol classsubparts) [668 676])
+                    ("Similarity" type
+                       (:members 
+                          ( ("Similarity" function
+                               (:constructor-flag t
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [708 742])
+                            ("Similarity" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [761 769])
+                                    ("_sameas" variable (:type "int") (reparse-symbol arg-sub-list) [770 782]))                                  
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [750 812])
+                            ("Similarity" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [840 848]))                                  
+                                :type ("Similarity" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [829 874])
+                            ("id" variable (:type "int") (reparse-symbol classsubparts) [882 902])
+                            ("sameas" variable (:type "int") (reparse-symbol classsubparts) [882 902])
+                            ("tag" variable (:type "int") (reparse-symbol classsubparts) [882 902]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [681 909])
+                    ("is_root_label" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [934 941]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [915 991])
+                    ("root_of" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1008 1015]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [996 1189])
+                    ("is_equivalent" function
+                       (:arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1213 1220])
+                            ("as" variable (:type "int") (reparse-symbol arg-sub-list) [1221 1228]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1194 1281])
+                    ("merge" function
+                       (:arguments 
+                          ( ("id1" variable (:type "int") (reparse-symbol arg-sub-list) [1297 1305])
+                            ("id2" variable (:type "int") (reparse-symbol arg-sub-list) [1306 1314]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1286 1468])
+                    ("new_label" function (:type "int") (reparse-symbol classsubparts) [1473 1722])
+                    ("label_image" function
+                       (:template 
+                          ( ("Tin" type (:type "class") nil nil)
+                            ("Tlabel" type (:type "class") nil nil)
+                            ("Comparator" type (:type "class") nil nil)
+                            ("Boolean" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("img" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Tin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1815 1830])
+                            ("out" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1831 1843])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1865 1875])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1876 1887])
+                            ("" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1888 1899])
+                            ("K8_connectivity" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1945]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1727 1946])
+                    ("relabel_image" function
+                       (:template 
+                          ( ("Tlabel" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("out" variable
+                               (:pointer 1
+                                :type ("Tlabel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1996 2008])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2009 2019])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2020 2031]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1951 2032])
+                    ("labels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Similarity" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2041 2072])
+                    ("highest_label" variable (:type "int") (reparse-symbol classsubparts) [2077 2095]))                  
+                :type "class")
+                nil [261 2098])
+            ("connected" function
+               (:template 
+                  ( ("Tin" type (:type "class") nil nil)
+                    ("Tlabel" type (:type "class") nil nil)
+                    ("Comparator" type (:type "class") nil nil)
+                    ("Boolean" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Tin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2217 2232])
+                    ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2238 2255])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2261 2271])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2277 2288])
+                    ("SAME" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2294 2310])
+                    ("K8_connectivity" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2316 2340]))                  
+                :parent "ConnectedComponents")
+                nil [2100 2479])
+            ("label_image" function
+               (:template 
+                  ( ("Tin" type (:type "class") nil nil)
+                    ("Tlabel" type (:type "class") nil nil)
+                    ("Comparator" type (:type "class") nil nil)
+                    ("Boolean" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Tin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2600 2615])
+                    ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2620 2637])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2643 2653])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2659 2670])
+                    ("SAME" variable (:type ("Comparator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2676 2692])
+                    ("K8_CONNECTIVITY" variable
+                       (:constant-flag t
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2698 2728]))                  
+                :parent "ConnectedComponents")
+                nil [2481 4333])
+            ("relabel_image" function
+               (:template 
+                  ( ("Tlabel" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("labelimg" variable
+                       (:pointer 1
+                        :type ("Tlabel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4404 4421])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4427 4437])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [4443 4454]))                  
+                :parent "ConnectedComponents")
+                nil [4336 4737]))          
+      :file "connected.h"
+      :pointmax 4764
+      :fsize 4763
+      :lastmodtime '(21771 39721 929193 778000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CONNECTED_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debris_detection/constants.h" include (:system-flag t) nil [200 239])
+            ("thinningIteration" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("im" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [466 478])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [483 492]))                  
+                :type "void")
+                nil [431 1618])
+            ("cvEdgeThinning" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("im" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1755 1767]))                  
+                :type "void")
+                nil [1723 2054]))          
+      :file "contour_thinning.h"
+      :pointmax 2055
+      :fsize 2056
+      :lastmodtime '(21780 54432 637543 899000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_DEBRIS_DETECTION_INCLUDE_POINT_CLOUD_PROCESSING_H_" variable (:constant-flag t) nil [150 201])
+            ("debris_detection/constants.h" include (:system-flag t) nil [203 242])
+            ("debris_detection/rgb_image_processing.h" include (:system-flag t) nil [243 293])
+            ("debris_detection/region_adjacency_graph.h" include (:system-flag t) nil [294 346])
+            ("PointCloudProcessing" type
+               (:superclasses 
+                  ( ("ImageProcessing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [402 410])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [415 435])
+                    ("publisher__" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [440 467])
+                    ("subscriber__" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [472 501])
+                    ("pcl_cloud__" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [510 551])
+                    ("filter_cloud__" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [556 600])
+                    ("MAX_DISTANCE" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [645 670])
+                    ("MIN_DISTANCE" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [675 700])
+                    ("pclNearestNeigborSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [746 782])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [790 823])
+                            ("isneigbour" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [831 853])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [862 875])
+                            ("" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [884 903]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [709 905])
+                    ("pointCloud2RGBDImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [944 973])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 991])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [999 1009]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [910 1010])
+                    ("semanticCloudLabel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1046 1096])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1103 1132])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1139 1164]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1015 1165])
+                    ("protected" label nil (reparse-symbol classsubparts) [1168 1178])
+                    ("input_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1183 1224])
+                    ("surface_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1256 1305])
+                    ("public" label nil (reparse-symbol classsubparts) [1311 1318])
+                    ("MIN_DISTANCE" function (:type "int") (reparse-symbol classsubparts) [1396 2064])
+                    ("cloudCallBack" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2100 2141]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2073 2142])
+                    ("pclDistanceFilter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("pcl::PCLPointCloud2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2178 2223])
+                            ("" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2231 2253]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2147 2254])
+                    ("estimatePointCloudNormals" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2298 2333])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2341 2375])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2383 2396])
+                            ("" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2405 2424])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2433 2444]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2259 2446])
+                    ("pointCloudLocalGradient" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2488 2523])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2531 2571])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2579 2589]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2451 2590])
+                    ("viewPointSurfaceNormalOrientation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2642 2677])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2685 2725])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2733 2743]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2595 2744])
+                    ("extractPointCloudClustersFrom2DMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2797 2832])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cvPatch" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2840 2875])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2883 2927])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2935 2984])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2992 3028]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2749 3029]))                  
+                :type "class")
+                nil [348 3032]))          
+      :file "point_cloud_processing.h"
+      :pointmax 3097
+      :fsize 3096
+      :lastmodtime '(21801 2991 344933 197000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_DEBRIS_DETECTION_INCLUDE_POINT_CLOUD_PROCESSING_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_DEBRIS_DETECTION_REGION_ADJACENCY_GRAPH_H_" variable (:constant-flag t) nil [146 189])
+            ("_DEBRIS_DETECTION_REGION_ADJACENCY_GRAPH_H_" variable (:constant-flag t) nil [146 189])
+            ("debris_detection/constants.h" include (:system-flag t) nil [191 230])
+            ("boost/graph/adjacency_list.hpp" include (:system-flag t) nil [259 300])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [301 333])
+            ("boost/config.hpp" include (:system-flag t) nil [334 361])
+            ("pcl/features/vfh.h" include (:system-flag t) nil [378 407])
+            ("pcl/features/fpfh.h" include (:system-flag t) nil [408 438])
+            ("vector" include (:system-flag t) nil [440 457])
+            ("RegionAdjacencyGraph" type
+               (:members 
+                  ( ("DEBUG" variable (:constant-flag t) (reparse-symbol classsubparts) [497 502])
+                    ("private" label nil (reparse-symbol classsubparts) [508 516])
+                    ("VertexProperty" type
+                       (:members 
+                          ( ("v_index" variable (:type "int") (reparse-symbol classsubparts) [552 564])
+                            ("v_center" variable (:type ("pcl::PointXYZ" type (:type "class") nil nil)) (reparse-symbol classsubparts) [572 595])
+                            ("v_label" variable (:type "int") (reparse-symbol classsubparts) [603 615])
+                            ("VertexProperty" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("i" variable
+                                       (:default-value "-1"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [657 667])
+                                    ("center" variable
+                                       (:default-value "pcl::PointXYZ(-1, -1, -1)"
+                                        :type ("pcl::PointXYZ" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [679 727])
+                                    ("label" variable
+                                       (:default-value "-1"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [739 753]))                                  
+                                :type ("VertexProperty" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [631 814]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [521 821])
+                    ("EdgeProperty" type
+                       (:typedef ("boost::property" type
+                             (:template-specifier 
+                                ( ("boost::edge_weight_t" type nil nil nil)
+                                  ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [826 892])
+                    ("Graph" type
+                       (:typedef ("boost::adjacency_list" type
+                             (:template-specifier 
+                                ( ("boost::vecS" type nil nil nil)
+                                  ("boost::vecS" type nil nil nil)
+                                  ("boost::undirectedS" type nil nil nil)
+                                  ("VertexProperty" type nil nil nil)
+                                  ("EdgeProperty" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [897 1190])
+                    ("AdjacencyIterator" type
+                       (:typedef ("boost::graph_traits::adjacency_iterator" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1195 1285])
+                    ("IndexMap" type
+                       (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1290 1379])
+                    ("EdgeDescriptor" type
+                       (:typedef ("boost::graph_traits::edge_descriptor" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1384 1468])
+                    ("EdgePropertyAccess" type
+                       (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1473 1572])
+                    ("EdgeValue" type
+                       (:typedef ("boost::property_traits::value_type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1577 1708])
+                    ("VertexIterator" type
+                       (:typedef ("boost::graph_traits::vertex_iterator" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1713 1797])
+                    ("VertexDescriptor" type
+                       (:typedef ("boost::graph_traits::vertex_descriptor" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1802 1890])
+                    ("graph" variable (:type ("Graph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1899 1911])
+                    ("sampleRandomPointsFromCloudCluster" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1964 1993])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2000 2034])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Eigen::Vector3f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2041 2072])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Eigen::Vector3f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2079 2110])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [2117 2124]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1917 2126])
+                    ("convexityCriterion" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2185 2209])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2217 2241])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2249 2273])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2281 2305]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2131 2306])
+                    ("getCloudClusterWeightFunction" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("Eigen::Vector3f" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2379 2430])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("Eigen::Vector3f" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2439 2490]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2312 2491])
+                    ("getVectorAngle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2719 2743])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2750 2774])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2781 2792]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [2691 2794])
+                    ("getCommonNeigbour" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2830 2855])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2864 2889]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2799 2890])
+                    ("computeCloudClusterRPYHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2942 2977])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2986 3026])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3035 3045]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2896 3046])
+                    ("public" label nil (reparse-symbol classsubparts) [3049 3056])
+                    ("RegionAdjacencyGraph" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RegionAdjacencyGraph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3061 3084])
+                    ("generateRAG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3123 3173])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3181 3236])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3244 3286])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3294 3327])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3335 3371]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3090 3373])
+                    ("splitMergeRAG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3405 3421]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3378 3423])
+                    ("getCloudClusterLabels" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3471 3490]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3428 3491])
+                    ("printGraph" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3528 3542]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3496 3543])
+                    ("concatenateRegionUsingRAGInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3605 3649])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3657 3706])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3714 3760]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3554 3761])
+                    ("mergePointCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3919 3954])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3962 3997])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4005 4034]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3890 4035])
+                    ("" type
+                       (:members 
+                          ( ("RAG_EDGE_WEIGHT_DISTANCE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4059 4084])
+                            ("RAG_EDGE_WEIGHT_CONVEX_CRITERIA" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4092 4129]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4045 4130]))                  
+                :type "class")
+                nil [459 4133]))          
+      :file "region_adjacency_graph.h"
+      :pointmax 4191
+      :fsize 4186
+      :lastmodtime '(21799 58599 343784 785000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_DEBRIS_DETECTION_REGION_ADJACENCY_GRAPH_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!debris_detection!include!debris_detection!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

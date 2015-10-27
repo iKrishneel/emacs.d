@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LISTENER_NODE_HPP_" variable (:constant-flag t) nil [313 331])
+            ("ros/ros.h" include (:system-flag t) nil [504 524])
+            ("qnode.hpp" include nil nil [576 596])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [597 641])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [642 674])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [675 715])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [716 754])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [755 793])
+            ("opencv/cv.h" include (:system-flag t) nil [794 816])
+            ("Listener" type
+               (:superclasses 
+                  ( ("QNode" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1028 1035])
+                    ("Listener" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1046 1055])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1056 1068]))                          
+                        :type ("Listener" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1037 1069])
+                    ("Listener" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1071 1093])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1095 1106])
+                    ("ros_comms_init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1108 1130])
+                    ("Update_Image" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("image" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("QPixmap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1161 1182]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1143 1183])
+                    ("private" label nil (reparse-symbol classsubparts) [1184 1192])
+                    ("image_sub_" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1195 1234])
+                    ("chatterCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1321 1359]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1300 1360])
+                    ("cvtCvMat2QImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1385 1407]))                          
+                        :type ("QImage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1362 1408]))                  
+                :type "class")
+                nil [985 1450]))          
+      :file "listener.hpp"
+      :pointmax 1484
+      :fsize 1483
+      :lastmodtime '(21447 31274 0 0)
+      :unmatched-syntax '((punctuation 1140 . 1141) (symbol 1131 . 1140) (symbol 1019 . 1027))
+      :lexical-table 
+        '(("LISTENER_NODE_HPP_")
+          )
+))
+  :file "!home!krishneel!.cache!.fr-Re8L0E!Qt_ROS1!include!Qt_ROS1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

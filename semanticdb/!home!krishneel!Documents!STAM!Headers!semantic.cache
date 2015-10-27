@@ -1,0 +1,429 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__Handheld_Object_Tracking__Color_Histogram_Descriptors__" variable (:constant-flag t) nil [260 317])
+            ("Headers/constants.h" include nil nil [319 349])
+            ("ColorHistogramDescriptors" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [386 394])
+                    ("h_bins" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "20"
+                        :type "int")
+                        (reparse-symbol classsubparts) [399 428])
+                    ("s_bins" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "20"
+                        :type "int")
+                        (reparse-symbol classsubparts) [433 462])
+                    ("public" label nil (reparse-symbol classsubparts) [468 475])
+                    ("imageHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [557 563])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [564 570])
+                            ("ch1" variable (:type "int") (reparse-symbol arg-sub-list) [571 589])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [579 594])
+                            ("ch2" variable (:type "int") (reparse-symbol arg-sub-list) [596 614])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 619])
+                            ("ch3" variable (:type "int") (reparse-symbol arg-sub-list) [621 639])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [629 644]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [524 646])
+                    ("HueSaturationHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 688])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [689 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [651 696])
+                    ("computeHistogramDescriptor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [781 793])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [794 800]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [748 801])
+                    ("computeHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [895 901])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [902 908])
+                            ("hBin" variable (:type "int") (reparse-symbol arg-sub-list) [909 928])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [918 932])
+                            ("sBin" variable (:type "int") (reparse-symbol arg-sub-list) [934 953])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [943 957])
+                            ("isNormalized" variable (:type "bool") (reparse-symbol arg-sub-list) [959 987])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [977 993]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [862 995])
+                    ("grayLevelHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1088 1094])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1095 1101]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1055 1102]))                  
+                :type "class")
+                nil [351 1105]))          
+      :file "Color_Histogram_Descriptors.h"
+      :pointmax 1187
+      :fsize 1186
+      :lastmodtime '(21688 36396 712413 193000)
+      :unmatched-syntax '((semantic-list 987 . 993) (semantic-list 953 . 957) (semantic-list 928 . 932) (semantic-list 639 . 644) (semantic-list 614 . 619) (semantic-list 589 . 594))
+      :lexical-table 
+        '(("__Handheld_Object_Tracking__Color_Histogram_Descriptors__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Handheld_Object_Tracking_constants_h" variable (:constant-flag t) nil [220 256])
+            ("iostream" include (:system-flag t) nil [399 418])
+            ("stdexcept" include (:system-flag t) nil [419 439])
+            ("time.h" include (:system-flag t) nil [440 457])
+            ("stdlib.h" include (:system-flag t) nil [458 477])
+            ("stdio.h" include (:system-flag t) nil [478 496])
+            ("fstream" include (:system-flag t) nil [497 515])
+            ("sys/timeb.h" include (:system-flag t) nil [516 538])
+            ("math.h" include (:system-flag t) nil [539 556])
+            ("pthread.h" include (:system-flag t) nil [557 577])
+            ("dirent.h" include (:system-flag t) nil [578 597])
+            ("sys/stat.h" include (:system-flag t) nil [598 619])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [620 640])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [763 792])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [793 831])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [832 870])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [871 915])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [916 957])
+            ("opencv2/legacy/legacy.hpp" include (:system-flag t) nil [958 994])
+            ("opencv2/ml/ml.hpp" include (:system-flag t) nil [995 1023])
+            ("opencv2/nonfree/nonfree.hpp" include (:system-flag t) nil [1024 1062])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1063 1082])
+            ("HOG_BLOCK_COLS" variable (:constant-flag t) nil [1213 1227])
+            ("HOG_BLOCK_ROWS" variable (:constant-flag t) nil [1240 1254])
+            ("HOG_BINS" variable (:constant-flag t) nil [1268 1276])
+            ("COLOR_BINS" variable (:constant-flag t) nil [1295 1305])
+            ("FileDirectory" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2159 2166])
+                    ("parentDirectory" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2175 2198])
+                    ("positionFolder" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2207 2230])
+                    ("modelFolder" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2239 2258])
+                    ("rgbSilhoutte" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2267 2287])
+                    ("mainfolder" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2296 2314])
+                    ("txtExtension" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2323 2343])
+                    ("imgExtension" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2352 2372])
+                    ("depthMask" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2381 2398])
+                    ("rgbImage" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2407 2423])
+                    ("svmSavePath" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2432 2451])
+                    ("FileDirectory" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FileDirectory" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2461 2477]))                  
+                :type "struct")
+                nil [1436 2480])
+            ("START" variable (:constant-flag t) nil [2612 2617])
+            ("END" variable (:constant-flag t) nil [2643 2646])
+            ("END" variable (:constant-flag t) nil [2643 2646])
+            ("END" variable (:constant-flag t) nil [2643 2646])
+            ("END" variable (:constant-flag t) nil [2643 2646])
+            ("END" variable (:constant-flag t) nil [2643 2646])
+            ("EXPERIMENT_FOLDER" variable (:constant-flag t) nil [2675 2692])
+            ("MATCHING_THRESHOLD" variable (:constant-flag t) nil [2706 2724])
+            ("MATCHING_THRESHOLD" variable (:constant-flag t) nil [2706 2724])
+            ("CV_BLACK" variable
+               (:constant-flag t
+                :default-value "Scalar(0,0,0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [2855 2893])
+            ("CV_BLUE" variable
+               (:constant-flag t
+                :default-value "Scalar(255,0,0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [2894 2934])
+            ("CV_RED" variable
+               (:constant-flag t
+                :default-value "Scalar(0,0,255)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [2935 2975])
+            ("CV_GREEN" variable
+               (:constant-flag t
+                :default-value "Scalar(0,255,0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [2976 3016])
+            ("CV_CRAY" variable
+               (:constant-flag t
+                :default-value "Scalar(255,128,128)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [3017 3061])
+            ("CV_PINK" variable
+               (:constant-flag t
+                :default-value "Scalar(230,130,255)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [3062 3106])
+            ("float2String" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("c_frame" variable (:type "float") (reparse-symbol arg-sub-list) [3257 3271]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [3230 3402])
+            ("drawCross" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3575 3584])
+                    ("center" variable (:type ("Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3585 3600])
+                    ("color" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3601 3614])
+                    ("lineWidth" variable (:type "int") (reparse-symbol arg-sub-list) [3615 3629]))                  
+                :type "void")
+                nil [3553 3835])
+            ("Histogram" type
+               (:members 
+                  ( ("rect" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4100 4110])
+                    ("weights" variable (:type "double") (reparse-symbol classsubparts) [4115 4130]))                  
+                :type "struct")
+                nil [4050 4133])
+            ("Patch" type
+               (:members 
+                  ( ("rect" variable (:type ("Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4366 4376])
+                    ("weights" variable (:type "double") (reparse-symbol classsubparts) [4381 4396]))                  
+                :type "struct")
+                nil [4348 4399])
+            ("SkeletonJoint" type
+               (:members 
+                  ( ("XN_SKEL_HEAD" variable
+                       (:constant-flag t
+                        :default-value (4619 4620)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4594 4621])
+                    ("XN_SKEL_NECK" variable
+                       (:constant-flag t
+                        :default-value (4652 4653)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4627 4654])
+                    ("XN_SKEL_LEFT_SHOULDER" variable
+                       (:constant-flag t
+                        :default-value (4685 4686)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4660 4687])
+                    ("XN_SKEL_LEFT_ELBOW" variable
+                       (:constant-flag t
+                        :default-value (4718 4719)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4693 4720])
+                    ("XN_SKEL_RIGHT_SHOULDER" variable
+                       (:constant-flag t
+                        :default-value (4751 4752)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4726 4753])
+                    ("XN_SKEL_RIGHT_ELBOW" variable
+                       (:constant-flag t
+                        :default-value (4784 4785)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4759 4786])
+                    ("XN_SKEL_TORSO" variable
+                       (:constant-flag t
+                        :default-value (4817 4818)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4792 4819])
+                    ("XN_SKEL_LEFT_HIP" variable
+                       (:constant-flag t
+                        :default-value (4850 4851)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4825 4852])
+                    ("XN_SKEL_LEFT_KNEE" variable
+                       (:constant-flag t
+                        :default-value (4883 4884)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4858 4885])
+                    ("XN_SKEL_LEFT_FOOT" variable
+                       (:constant-flag t
+                        :default-value (4916 4917)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4891 4918])
+                    ("XN_SKEL_RIGHT_HIP" variable
+                       (:constant-flag t
+                        :default-value (4949 4951)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4924 4952])
+                    ("XN_SKEL_RIGHT_KNEE" variable
+                       (:constant-flag t
+                        :default-value (4983 4985)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4958 4986])
+                    ("XN_SKEL_RIGHT_FOOT" variable
+                       (:constant-flag t
+                        :default-value (5017 5019)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4992 5020])
+                    ("XN_SKEL_LEFT_HAND" variable
+                       (:constant-flag t
+                        :default-value (5051 5053)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5026 5054])
+                    ("XN_SKEL_RIGHT_HAND" variable
+                       (:constant-flag t
+                        :default-value (5085 5087)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5060 5088]))                  
+                :type "enum")
+                nil [4569 5091])
+            ("PI" variable (:constant-flag t) nil [5252 5254])
+            ("SIGMA" variable (:constant-flag t) nil [5286 5291])
+            ("NUM_PARTICLES" variable (:constant-flag t) nil [5315 5328])
+            ("NUM_STATE" variable (:constant-flag t) nil [5343 5352])
+            ("Particle" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [5388 5397])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [5402 5411])
+                    ("dx" variable (:type "double") (reparse-symbol classsubparts) [5416 5426])
+                    ("dy" variable (:type "double") (reparse-symbol classsubparts) [5431 5441]))                  
+                :type "struct")
+                nil [5362 5444])
+            ("ROI_Condition" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6019 6030])
+                    ("imageSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6031 6046]))                  
+                :type "void")
+                nil [5993 6540]))          
+      :file "constants.h"
+      :pointmax 6550
+      :fsize 6549
+      :lastmodtime '(21919 29923 928206 192000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("START" . ((number "20" 2632 . 2634)))
+          ("END" . ((number "500" 2663 . 2666)))
+          ("EXPERIMENT_FOLDER" . ((number "7" 2695 . 2696)))
+          ("PI" . ((number "3.14159265358979323846" 5254 . 5276)))
+          ("HOG_BLOCK_ROWS" . ((number "16" 1256 . 1258)))
+          ("COLOR_BINS" . ((number "16" 1311 . 1313)))
+          ("HOG_BLOCK_COLS" . ((number "16" 1229 . 1231)))
+          ("Handheld_Object_Tracking_constants_h")
+          ("NUM_STATE" . ((number "4" 5358 . 5359)))
+          ("SIGMA" . ((number "15.0" 5301 . 5305)))
+          ("NUM_PARTICLES" . ((number "600" 5330 . 5333)))
+          ("HOG_BINS" . ((number "16" 1284 . 1286)))
+          ("MATCHING_THRESHOLD" . ((number "0.300f" 2726 . 2732)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__Handheld_Object_Tracking__Object_Boundary__" variable (:constant-flag t) nil [236 281])
+            ("Headers/constants.h" include nil nil [283 313])
+            ("cvMouseParam" type
+               (:members 
+                  ( ("x" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [353 361])
+                    ("y" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [366 374])
+                    ("winName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [379 399])
+                    ("image" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [404 414]))                  
+                :type "struct")
+                nil [315 434])
+            ("cvMouseParam" type
+               (:typedef ("cvMouseParam" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [315 434])
+            ("ObjectBoundary" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [460 468])
+                    ("cvMouseCallback" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [670 680])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [681 687])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [688 694])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [695 705])
+                            ("param" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [706 718]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [642 1839])
+                    ("mouseParam" variable
+                       (:pointer 1
+                        :type ("cvMouseParam" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1844 1869])
+                    ("public" label nil (reparse-symbol classsubparts) [1875 1882])
+                    ("cvGetobjectBoundary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1912 1924]))                          
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1887 1925])
+                    ("ObjectBoundary" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ObjectBoundary" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1931 1948]))                  
+                :type "class")
+                nil [436 1951]))          
+      :file "Object_Boundary.h"
+      :pointmax 2023
+      :fsize 2022
+      :lastmodtime '(21688 36396 680413 192000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__Handheld_Object_Tracking__Object_Boundary__")
+          )
+))
+  :file "!home!krishneel!Documents!STAM!Headers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

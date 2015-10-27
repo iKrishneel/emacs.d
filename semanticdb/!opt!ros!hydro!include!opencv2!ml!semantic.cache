@@ -1,0 +1,521 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__OPENCV_ML_HPP__" variable (:constant-flag t) nil [2064 2081])
+            ("opencv2/core/core.hpp" include nil nil [2083 2115])
+            ("limits.h" include (:system-flag t) nil [2116 2135])
+            ("map" include (:system-flag t) nil [2157 2171])
+            ("string" include (:system-flag t) nil [2172 2189])
+            ("iostream" include (:system-flag t) nil [2190 2209])
+            ("CV_LOG2PI" variable (:constant-flag t) nil [2645 2654])
+            ("CV_COL_SAMPLE" variable (:constant-flag t) nil [2757 2770])
+            ("CV_ROW_SAMPLE" variable (:constant-flag t) nil [2836 2849])
+            ("CV_IS_ROW_SAMPLE" variable (:constant-flag t) nil [2861 2877])
+            ("CvVectors" type
+               (:members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2935 2944])
+                    ("dims" variable (:type "int") (reparse-symbol classsubparts) [2949 2965])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [2949 2965])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("CvVectors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2970 2986])
+                    ("data" variable (:type ("" type
+                         (:members 
+                            ( ("ptr" variable
+                                 (:pointer 2
+                                  :type ("uchar" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [3011 3023])
+                              ("fl" variable
+                                 (:pointer 2
+                                  :type "float")
+                                  (reparse-symbol classsubparts) [3032 3043])
+                              ("db" variable
+                                 (:pointer 2
+                                  :type "double")
+                                  (reparse-symbol classsubparts) [3052 3064]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [2991 3076]))                  
+                :type "struct")
+                nil [2912 3079])
+            ("CV_VAR_NUMERICAL" variable (:constant-flag t) nil [3850 3866])
+            ("CV_VAR_ORDERED" variable (:constant-flag t) nil [3880 3894])
+            ("CV_VAR_CATEGORICAL" variable (:constant-flag t) nil [3910 3928])
+            ("CV_TYPE_NAME_ML_SVM" variable (:constant-flag t) nil [3941 3960])
+            ("CV_TYPE_NAME_ML_KNN" variable (:constant-flag t) nil [3993 4012])
+            ("CV_TYPE_NAME_ML_NBAYES" variable (:constant-flag t) nil [4045 4067])
+            ("CV_TYPE_NAME_ML_EM" variable (:constant-flag t) nil [4102 4120])
+            ("CV_TYPE_NAME_ML_BOOSTING" variable (:constant-flag t) nil [4153 4177])
+            ("CV_TYPE_NAME_ML_TREE" variable (:constant-flag t) nil [4212 4232])
+            ("CV_TYPE_NAME_ML_ANN_MLP" variable (:constant-flag t) nil [4265 4288])
+            ("CV_TYPE_NAME_ML_CNN" variable (:constant-flag t) nil [4321 4340])
+            ("CV_TYPE_NAME_ML_RTREES" variable (:constant-flag t) nil [4373 4395])
+            ("CV_TYPE_NAME_ML_ERTREES" variable (:constant-flag t) nil [4434 4457])
+            ("CV_TYPE_NAME_ML_GBT" variable (:constant-flag t) nil [4509 4528])
+            ("CV_TRAIN_ERROR" variable (:constant-flag t) nil [4582 4596])
+            ("CV_TEST_ERROR" variable (:constant-flag t) nil [4608 4621])
+            ("CvStatModel" variable (:type ("CV_EXPORTS_W" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [4627 5091])
+            ("CvMLData" type
+               (:prototype t
+                :type "class")
+                nil [5642 5657])
+            ("CvParamGrid" variable (:type ("CV_EXPORTS_W_MAP" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [5659 6090])
+            ("CvParamGrid" function
+               (:constructor-flag t
+                :parent "CvParamGrid"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("_min_val" variable (:type "double") (reparse-symbol arg-sub-list) [6125 6141])
+                    ("_max_val" variable (:type "double") (reparse-symbol arg-sub-list) [6142 6158])
+                    ("_log_step" variable (:type "double") (reparse-symbol arg-sub-list) [6159 6177]))                  
+                :type ("CvParamGrid" type (:type "class") nil nil))
+                nil [6092 6251])
+            ("CvStatModel" variable (:type "int") nil [6305 7702])
+            ("CvStatModel" variable (:type "int") nil [8041 10140])
+            ("CvSVMParams" variable (:type ("CV_EXPORTS_W_MAP" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [10443 11312])
+            ("CvSVMKernel" variable (:type ("CV_EXPORTS" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [11315 12692])
+            ("CvSVMKernelRow" type
+               (:members 
+                  ( ("prev" variable
+                       (:pointer 1
+                        :type ("CvSVMKernelRow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12723 12744])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("CvSVMKernelRow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12749 12770])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [12775 12787]))                  
+                :type "struct")
+                nil [12695 12790])
+            ("CvSVMSolutionInfo" type
+               (:members 
+                  ( ("obj" variable (:type "double") (reparse-symbol classsubparts) [12824 12835])
+                    ("rho" variable (:type "double") (reparse-symbol classsubparts) [12840 12851])
+                    ("upper_bound_p" variable (:type "double") (reparse-symbol classsubparts) [12856 12877])
+                    ("upper_bound_n" variable (:type "double") (reparse-symbol classsubparts) [12882 12903])
+                    ("r" variable (:type "double") (reparse-symbol classsubparts) [12908 12917]))                  
+                :type "struct")
+                nil [12793 12939])
+            ("CvSVMSolver" variable (:type ("CV_EXPORTS" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [12941 16357])
+            ("CvSVMDecisionFunc" type
+               (:members 
+                  ( ("rho" variable (:type "double") (reparse-symbol classsubparts) [16391 16402])
+                    ("sv_count" variable (:type "int") (reparse-symbol classsubparts) [16407 16420])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [16425 16439])
+                    ("sv_index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [16444 16458]))                  
+                :type "struct")
+                nil [16360 16461])
+            ("CvStatModel" variable (:type "int") nil [16511 21022])
+            ("cv" type
+               (:members 
+                  ( ("Algorithm" variable (:type "int") (reparse-symbol namespacesubparts) [21343 24182]))                  
+                :type "namespace")
+                nil [21297 24184])
+            ("CvPair16u32s" type
+               (:members 
+                  ( ("u" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [24502 24520])
+                    ("i" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [24525 24532]))                  
+                :type "struct")
+                nil [24476 24535])
+            ("CV_DTREE_CAT_DIR" variable (:constant-flag t) nil [24546 24562])
+            ("CvDTreeSplit" type
+               (:members 
+                  ( ("var_idx" variable (:type "int") (reparse-symbol classsubparts) [24658 24670])
+                    ("condensed_idx" variable (:type "int") (reparse-symbol classsubparts) [24675 24693])
+                    ("inversed" variable (:type "int") (reparse-symbol classsubparts) [24698 24711])
+                    ("quality" variable (:type "float") (reparse-symbol classsubparts) [24716 24730])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("CvDTreeSplit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24735 24754])
+                    ("" type
+                       (:members 
+                          ( ("subset" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol classsubparts) [24779 24793])
+                            ("ord" variable (:type ("" type
+                                 (:members 
+                                    ( ("c" variable (:type "float") (reparse-symbol classsubparts) [24831 24839])
+                                      ("split_point" variable (:type "int") (reparse-symbol classsubparts) [24852 24868]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [24802 24891]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [24759 24898]))                  
+                :type "struct")
+                nil [24632 24901])
+            ("CvDTreeNode" type
+               (:members 
+                  ( ("class_idx" variable (:type "int") (reparse-symbol classsubparts) [24928 24942])
+                    ("Tn" variable (:type "int") (reparse-symbol classsubparts) [24947 24954])
+                    ("value" variable (:type "double") (reparse-symbol classsubparts) [24959 24972])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("CvDTreeNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24978 24998])
+                    ("left" variable
+                       (:pointer 1
+                        :type ("CvDTreeNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25003 25021])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("CvDTreeNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25026 25045])
+                    ("split" variable
+                       (:pointer 1
+                        :type ("CvDTreeSplit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25051 25071])
+                    ("sample_count" variable (:type "int") (reparse-symbol classsubparts) [25077 25094])
+                    ("depth" variable (:type "int") (reparse-symbol classsubparts) [25099 25109])
+                    ("num_valid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [25114 25129])
+                    ("offset" variable (:type "int") (reparse-symbol classsubparts) [25134 25145])
+                    ("buf_idx" variable (:type "int") (reparse-symbol classsubparts) [25150 25162])
+                    ("maxlr" variable (:type "double") (reparse-symbol classsubparts) [25167 25180])
+                    ("complexity" variable (:type "int") (reparse-symbol classsubparts) [25213 25228])
+                    ("alpha" variable (:type "double") (reparse-symbol classsubparts) [25233 25246])
+                    ("node_risk" variable (:type "double") (reparse-symbol classsubparts) [25251 25291])
+                    ("tree_risk" variable (:type "double") (reparse-symbol classsubparts) [25251 25291])
+                    ("tree_error" variable (:type "double") (reparse-symbol classsubparts) [25251 25291])
+                    ("cv_Tn" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [25334 25345])
+                    ("cv_node_risk" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [25350 25371])
+                    ("cv_node_error" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [25376 25398])
+                    ("get_num_valid" function
+                       (:arguments 
+                          ( ("vi" variable (:type "int") (reparse-symbol arg-sub-list) [25422 25429]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [25404 25482])
+                    ("set_num_valid" function
+                       (:arguments 
+                          ( ("vi" variable (:type "int") (reparse-symbol arg-sub-list) [25506 25513])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [25514 25520]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25487 25559]))                  
+                :type "struct")
+                nil [24903 25562])
+            ("CvDTreeParams" variable (:type ("CV_EXPORTS_W_MAP" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [25565 26233])
+            ("CvDTreeTrainData" variable (:type ("CV_EXPORTS" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [26236 30241])
+            ("CvDTree" type
+               (:prototype t
+                :type "class")
+                nil [30243 30257])
+            ("CvForestTree" type
+               (:prototype t
+                :type "class")
+                nil [30258 30277])
+            ("cv" type
+               (:members 
+                  ( ("DTreeBestSplitFinder" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [30298 30326])
+                    ("ForestTreeBestSplitFinder" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [30331 30364]))                  
+                :type "namespace")
+                nil [30279 30366])
+            ("CvStatModel" variable (:type "int") nil [30404 34696])
+            ("CvRTrees" type
+               (:prototype t
+                :type "class")
+                nil [34973 34988])
+            ("CvDTree" variable (:type "int") nil [35028 36203])
+            ("CvDTreeParams" variable (:type "int") nil [36250 36809])
+            ("CvStatModel" variable (:type "int") nil [36849 39133])
+            ("CvDTreeTrainData" variable (:type "int") nil [39453 40651])
+            ("CvForestTree" variable (:type "int") nil [40694 41433])
+            ("CvRTrees" variable (:type "int") nil [41473 42417])
+            ("CvDTreeParams" variable (:type "int") nil [42741 43072])
+            ("CvBoost" type
+               (:prototype t
+                :type "class")
+                nil [43075 43089])
+            ("CvDTree" variable (:type "int") nil [43128 45183])
+            ("CvStatModel" variable (:type "int") nil [45222 48717])
+            ("CvDTreeParams" variable (:type "int") nil [49894 50227])
+            ("CvStatModel" variable (:type "int") nil [53032 68588])
+            ("CvANN_MLP_TrainParams" variable (:type ("CV_EXPORTS_W_MAP" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [68958 69498])
+            ("CvStatModel" variable (:type "int") nil [69539 73184])
+            ("cvRandMVNormal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mean" variable
+                       (:pointer 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73633 73645])
+                    ("cov" variable
+                       (:pointer 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73646 73657])
+                    ("sample" variable
+                       (:pointer 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73658 73672])
+                    ("rng" variable
+                       (:pointer 1
+                        :type ("CvRNG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73700 73721])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73711 73724]))                  
+                :type "int")
+                nil [73617 73727])
+            ("cvRandGaussMixture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("means" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73819 73834])
+                    ("covs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73866 73880])
+                    ("weights" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [73912 73928])
+                    ("clsnum" variable (:type "int") (reparse-symbol arg-sub-list) [73960 73971])
+                    ("sample" variable
+                       (:pointer 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74003 74017])
+                    ("sampClasses" variable
+                       (:pointer 1
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74049 74078])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74068 74081]))                  
+                :type "int")
+                nil [73799 74084])
+            ("CV_TS_CONCENTRIC_SPHERES" variable (:constant-flag t) nil [74094 74118])
+            ("cvCreateTestSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [74174 74183])
+                    ("samples" variable
+                       (:pointer 2
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74184 74200])
+                    ("num_samples" variable (:type "int") (reparse-symbol arg-sub-list) [74218 74234])
+                    ("num_features" variable (:type "int") (reparse-symbol arg-sub-list) [74252 74269])
+                    ("responses" variable
+                       (:pointer 2
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74287 74305])
+                    ("num_classes" variable (:type "int") (reparse-symbol arg-sub-list) [74323 74339])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [74340 74345]))                  
+                :type "int")
+                nil [74157 74346])
+            ("CV_COUNT" variable (:constant-flag t) nil [74629 74637])
+            ("CV_PORTION" variable (:constant-flag t) nil [74652 74662])
+            ("CvTrainTestSplit" variable (:type ("CV_EXPORTS" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [74668 74994])
+            ("CvMLData" variable (:type ("CV_EXPORTS" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [74996 77561])
+            ("cv" type
+               (:members 
+                  ( ("StatModel" type
+                       (:typedef ("CvStatModel" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77580 77610])
+                    ("ParamGrid" type
+                       (:typedef ("CvParamGrid" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77611 77641])
+                    ("NormalBayesClassifier" type
+                       (:typedef ("CvNormalBayesClassifier" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77642 77696])
+                    ("KNearest" type
+                       (:typedef ("CvKNearest" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77697 77725])
+                    ("SVMParams" type
+                       (:typedef ("CvSVMParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77726 77756])
+                    ("SVMKernel" type
+                       (:typedef ("CvSVMKernel" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77757 77787])
+                    ("SVMSolver" type
+                       (:typedef ("CvSVMSolver" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77788 77818])
+                    ("SVM" type
+                       (:typedef ("CvSVM" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77819 77837])
+                    ("DTreeParams" type
+                       (:typedef ("CvDTreeParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77838 77872])
+                    ("TrainData" type
+                       (:typedef ("CvMLData" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77873 77900])
+                    ("DecisionTree" type
+                       (:typedef ("CvDTree" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77901 77930])
+                    ("ForestTree" type
+                       (:typedef ("CvForestTree" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77931 77963])
+                    ("RandomTreeParams" type
+                       (:typedef ("CvRTParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [77964 78000])
+                    ("RandomTrees" type
+                       (:typedef ("CvRTrees" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78001 78030])
+                    ("ERTreeTRainData" type
+                       (:typedef ("CvERTreeTrainData" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78031 78073])
+                    ("ERTree" type
+                       (:typedef ("CvForestERTree" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78074 78104])
+                    ("ERTrees" type
+                       (:typedef ("CvERTrees" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78105 78131])
+                    ("BoostParams" type
+                       (:typedef ("CvBoostParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78132 78166])
+                    ("BoostTree" type
+                       (:typedef ("CvBoostTree" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78167 78197])
+                    ("Boost" type
+                       (:typedef ("CvBoost" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78198 78220])
+                    ("ANN_MLP_TrainParams" type
+                       (:typedef ("CvANN_MLP_TrainParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78221 78271])
+                    ("NeuralNet_MLP" type
+                       (:typedef ("CvANN_MLP" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78272 78304])
+                    ("GradientBoostingTreeParams" type
+                       (:typedef ("CvGBTreesParams" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78305 78356])
+                    ("GradientBoostingTrees" type
+                       (:typedef ("CvGBTrees" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [78357 78397])
+                    ("delete_obj" function
+                       (:prototype-flag t
+                        :parent "Ptr"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [78421 78458])
+                    ("initModule_ml" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [78490 78495]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [78471 78496]))                  
+                :type "namespace")
+                nil [77564 78499]))          
+      :file "ml.hpp"
+      :pointmax 78571
+      :fsize 78570
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((symbol 78460 . 78470) (symbol 78410 . 78420) (punctuation 78408 . 78409) (punctuation 78407 . 78408) (TEMPLATE 78399 . 78407) (semantic-list 74150 . 74156) (symbol 74145 . 74150) (semantic-list 74078 . 74081) (semantic-list 73792 . 73798) (symbol 73787 . 73792) (semantic-list 73721 . 73724) (semantic-list 73610 . 73616) (symbol 73605 . 73610) (PUBLIC 69532 . 69538) (punctuation 69530 . 69531) (symbol 69520 . 69529) (symbol 69507 . 69519) (CLASS 69501 . 69506) (PUBLIC 53025 . 53031) (punctuation 53023 . 53024) (symbol 53013 . 53022) (symbol 53000 . 53012) (CLASS 52994 . 52999) (PUBLIC 49887 . 49893) (punctuation 49885 . 49886) (symbol 49869 . 49884) (symbol 49852 . 49868) (STRUCT 49845 . 49851) (PUBLIC 45215 . 45221) (punctuation 45213 . 45214) (symbol 45205 . 45212) (symbol 45192 . 45204) (CLASS 45186 . 45191) (PUBLIC 43121 . 43127) (punctuation 43119 . 43120) (symbol 43108 . 43119) (symbol 43097 . 43107) (CLASS 43091 . 43096) (PUBLIC 42734 . 42740) (punctuation 42732 . 42733) (symbol 42718 . 42731) (symbol 42701 . 42717) (STRUCT 42694 . 42700) (PUBLIC 41466 . 41472) (punctuation 41464 . 41465) (symbol 41454 . 41463) (symbol 41441 . 41453) (CLASS 41435 . 41440) (PUBLIC 40687 . 40693) (punctuation 40685 . 40686) (symbol 40670 . 40684) (symbol 40659 . 40669) (CLASS 40653 . 40658) (PUBLIC 39446 . 39452) (punctuation 39444 . 39445) (symbol 39426 . 39443) (symbol 39415 . 39425) (STRUCT 39408 . 39414) (PUBLIC 36842 . 36848) (punctuation 36840 . 36841) (symbol 36831 . 36839) (symbol 36818 . 36830) (CLASS 36812 . 36817) (PUBLIC 36243 . 36249) (punctuation 36241 . 36242) (symbol 36230 . 36240) (symbol 36213 . 36229) (STRUCT 36206 . 36212) (PUBLIC 35021 . 35027) (punctuation 35019 . 35020) (symbol 35007 . 35019) (symbol 34996 . 35006) (CLASS 34990 . 34995) (PUBLIC 30397 . 30403) (punctuation 30395 . 30396) (symbol 30387 . 30394) (symbol 30374 . 30386) (CLASS 30368 . 30373) (PUBLIC 21336 . 21342) (punctuation 21334 . 21335) (symbol 21331 . 21333) (symbol 21318 . 21330) (CLASS 21312 . 21317) (PUBLIC 16504 . 16510) (punctuation 16502 . 16503) (symbol 16496 . 16501) (symbol 16483 . 16495) (CLASS 16477 . 16482) (PUBLIC 8034 . 8040) (punctuation 8032 . 8033) (symbol 8021 . 8031) (symbol 8008 . 8020) (CLASS 8002 . 8007) (PUBLIC 6298 . 6304) (punctuation 6296 . 6297) (symbol 6272 . 6295) (symbol 6259 . 6271) (CLASS 6253 . 6258))
+      :lexical-table 
+        '(("CV_IS_ROW_SAMPLE" (spp-arg-list ("flags") 2877 . 2884) . ((semantic-list "((flags) & CV_ROW_SAMPLE)" 2885 . 2910)))
+          ("CV_TYPE_NAME_ML_KNN" . ((string "\"opencv-ml-knn\"" 4021 . 4036)))
+          ("CV_TYPE_NAME_ML_EM" . ((string "\"opencv-ml-em\"" 4130 . 4144)))
+          ("CV_TYPE_NAME_ML_RTREES" . ((string "\"opencv-ml-random-trees\"" 4401 . 4425)))
+          ("CV_VAR_ORDERED" . ((number "0" 3900 . 3901)))
+          ("CV_TYPE_NAME_ML_ANN_MLP" . ((string "\"opencv-ml-ann-mlp\"" 4293 . 4312)))
+          ("CV_TS_CONCENTRIC_SPHERES" . ((number "0" 74119 . 74120)))
+          ("CV_TYPE_NAME_ML_SVM" . ((string "\"opencv-ml-svm\"" 3969 . 3984)))
+          ("CV_TYPE_NAME_ML_TREE" . ((string "\"opencv-ml-tree\"" 4240 . 4256)))
+          ("CV_DTREE_CAT_DIR" (spp-arg-list ("idx" "subset") 24562 . 24574) . ((semantic-list "(2*((subset[(idx)>>5]&(1 << ((idx) & 31)))==0)-1)" 24581 . 24630)))
+          ("CV_TYPE_NAME_ML_CNN" . ((string "\"opencv-ml-cnn\"" 4349 . 4364)))
+          ("CV_LOG2PI" . ((semantic-list "(1.8378770664093454835606594728112)" 2655 . 2690)))
+          ("CV_VAR_CATEGORICAL" . ((number "1" 3930 . 3931)))
+          ("CV_ROW_SAMPLE" . ((number "1" 2850 . 2851)))
+          ("CV_PORTION" . ((number "1" 74665 . 74666)))
+          ("CV_TYPE_NAME_ML_NBAYES" . ((string "\"opencv-ml-bayesian\"" 4073 . 4093)))
+          ("CV_TRAIN_ERROR" . ((number "0" 4598 . 4599)))
+          ("CV_COUNT" . ((number "0" 74642 . 74643)))
+          ("__OPENCV_ML_HPP__")
+          ("CV_TYPE_NAME_ML_BOOSTING" . ((string "\"opencv-ml-boost-tree\"" 4181 . 4203)))
+          ("CV_TYPE_NAME_ML_ERTREES" . ((string "\"opencv-ml-extremely-randomized-trees\"" 4462 . 4500)))
+          ("CV_TEST_ERROR" . ((number "1" 4624 . 4625)))
+          ("CV_COL_SAMPLE" . ((number "0" 2771 . 2772)))
+          ("CV_VAR_NUMERICAL" . ((number "0" 3870 . 3871)))
+          ("CV_TYPE_NAME_ML_GBT" . ((string "\"opencv-ml-gradient-boosting-trees\"" 4537 . 4572)))
+          )
+))
+  :file "!opt!ros!hydro!include!opencv2!ml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

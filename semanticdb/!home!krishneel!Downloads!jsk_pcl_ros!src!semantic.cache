@@ -1,0 +1,181 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/convex_connected_voxels.h" include (:system-flag t) nil [85 133])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [167 405])
+                    ("subscribe" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [411 778])
+                    ("unsubscribe" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [788 899])
+                    ("updateDiagnostic" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [962 1012]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [909 1319])
+                    ("cloud_cb" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1374 1426]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1329 3169])
+                    ("indices_cb" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("indices_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3223 3284]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3176 3692])
+                    ("segmentCloud" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3752 3793])
+                            ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3802 3848])
+                            ("cloud_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3857 3915])
+                            ("normal_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3924 3988])
+                            ("centroids" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3997 4043]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3702 5417])
+                    ("estimatePointCloudNormals" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5488 5529])
+                            ("s_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5537 5580])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5588 5600])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5608 5628])
+                            ("ksearch" variable (:type "bool") (reparse-symbol arg-sub-list) [5636 5649]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5426 6048])
+                    ("nearestNeigborSearch" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6110 6152])
+                            ("pointIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6159 6204])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6211 6223])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [6230 6250])
+                            ("isneigbour" variable (:type "bool") (reparse-symbol arg-sub-list) [6257 6273]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6054 6971])
+                    ("getConvexLabelCloudIndices" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7037 7101])
+                            ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7109 7144])
+                            ("labelMD" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7152 7184])
+                            ("all_indices" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7192 7238]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6974 8088]))                  
+                :type "namespace")
+                nil [135 8090])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [8118 8158])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::ConvexConnectedVoxels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8182 8217])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8218 8235]))                  
+                :type "int")
+                nil [8159 8236]))          
+      :file "convex_connected_voxels_nodelet.cpp"
+      :pointmax 8237
+      :fsize 8236
+      :lastmodtime '(21804 57990 696164 262000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Downloads!jsk_pcl_ros!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

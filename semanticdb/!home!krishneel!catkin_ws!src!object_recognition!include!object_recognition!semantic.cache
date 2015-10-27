@@ -1,0 +1,949 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_HISTOGRAM_OF_ORIENTED_GRADIENTS_H_" variable (:constant-flag t) nil [54 89])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [119 148])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [149 187])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [188 226])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [227 271])
+            ("opencv2/nonfree/features2d.hpp" include (:system-flag t) nil [272 313])
+            ("opencv2/legacy/legacy.hpp" include (:system-flag t) nil [314 350])
+            ("opencv2/ml/ml.hpp" include (:system-flag t) nil [351 379])
+            ("opencv2/nonfree/nonfree.hpp" include (:system-flag t) nil [380 418])
+            ("string" include (:system-flag t) nil [420 437])
+            ("HOGFeatureDescriptor" type
+               (:members 
+                  ( ("HOG_BLOCK_COLS" variable (:constant-flag t) (reparse-symbol classsubparts) [478 492])
+                    ("HOG_BLOCK_ROWS" variable (:constant-flag t) (reparse-symbol classsubparts) [504 518])
+                    ("N_BINS" variable (:constant-flag t) (reparse-symbol classsubparts) [530 536])
+                    ("ANGLE" variable (:constant-flag t) (reparse-symbol classsubparts) [547 552])
+                    ("BINS_ANGLE" variable (:constant-flag t) (reparse-symbol classsubparts) [567 577])
+                    ("CELL" variable (:constant-flag t) (reparse-symbol classsubparts) [591 595])
+                    ("BLOCK" variable (:constant-flag t) (reparse-symbol classsubparts) [606 611])
+                    ("private" label nil (reparse-symbol classsubparts) [616 624])
+                    ("public" label nil (reparse-symbol classsubparts) [627 634])
+                    ("HOGFeatureDescriptor" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("HOGFeatureDescriptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [639 662])
+                    ("weightedVoting" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [703 717])
+                            ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [718 724])
+                            ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [725 731]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [667 732])
+                    ("imageGradient" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [772 788])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [789 799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [737 800])
+                    ("blockGradient" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [842 852])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [853 863])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [864 874]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [804 875])
+                    ("orientationistogram" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [924 939])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [940 952])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [953 965])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [966 978]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [880 980])
+                    ("getHOG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1013 1029])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1041 1051]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [985 1052])
+                    ("computeHOG" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1092 1108]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1057 1109])
+                    ("computeHOGHistogramDistances" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1179 1195])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1196 1219])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1227 1260]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1115 1262]))                  
+                :type "class")
+                nil [440 1265]))          
+      :file "histogram_of_oriented_gradients.h"
+      :pointmax 1315
+      :fsize 1326
+      :lastmodtime '(21816 38523 414718 426000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ANGLE" . ((number "360.0" 553 . 558)))
+          ("BLOCK" . ((number "2" 612 . 613)))
+          ("HOG_BLOCK_ROWS" . ((number "16" 519 . 521)))
+          ("CELL" . ((number "8" 596 . 597)))
+          ("_HISTOGRAM_OF_ORIENTED_GRADIENTS_H_")
+          ("HOG_BLOCK_COLS" . ((number "16" 493 . 495)))
+          ("BINS_ANGLE" . ((number "40.0" 578 . 582)))
+          ("N_BINS" . ((number "9" 537 . 538)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_OBJECT_RECOGNITION_H_" variable (:constant-flag t) nil [41 63])
+            ("object_recognition/histogram_of_oriented_gradients.h" include (:system-flag t) nil [65 128])
+            ("object_recognition/local_binary_patterns.h" include (:system-flag t) nil [129 182])
+            ("object_recognition/svm.h" include (:system-flag t) nil [183 218])
+            ("jsk_recognition_msgs/ClusterPointIndices.h" include (:system-flag t) nil [220 273])
+            ("jsk_recognition_msgs/RectArray.h" include (:system-flag t) nil [274 317])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include (:system-flag t) nil [318 362])
+            ("dynamic_reconfigure/server.h" include (:system-flag t) nil [364 403])
+            ("object_recognition/ObjectDetectionConfig.h" include (:system-flag t) nil [404 457])
+            ("pcl/point_types.h" include (:system-flag t) nil [459 487])
+            ("ros/ros.h" include (:system-flag t) nil [489 509])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [510 554])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [555 587])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [588 628])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [629 665])
+            ("map" include (:system-flag t) nil [667 681])
+            ("vector" include (:system-flag t) nil [682 699])
+            ("string" include (:system-flag t) nil [700 717])
+            ("RESET" variable (:constant-flag t) nil [727 732])
+            ("BLACK" variable (:constant-flag t) nil [753 758])
+            ("RED" variable (:constant-flag t) nil [797 800])
+            ("GREEN" variable (:constant-flag t) nil [839 844])
+            ("YELLOW" variable (:constant-flag t) nil [883 889])
+            ("BLUE" variable (:constant-flag t) nil [928 932])
+            ("MAGENTA" variable (:constant-flag t) nil [971 978])
+            ("CYAN" variable (:constant-flag t) nil [1017 1021])
+            ("WHITE" variable (:constant-flag t) nil [1060 1065])
+            ("BOLDBLACK" variable (:constant-flag t) nil [1104 1113])
+            ("BOLDRED" variable (:constant-flag t) nil [1164 1171])
+            ("BOLDGREEN" variable (:constant-flag t) nil [1222 1231])
+            ("BOLDYELLOW" variable (:constant-flag t) nil [1282 1292])
+            ("BOLDBLUE" variable (:constant-flag t) nil [1343 1351])
+            ("BOLDMAGENTA" variable (:constant-flag t) nil [1402 1413])
+            ("BOLDCYAN" variable (:constant-flag t) nil [1464 1472])
+            ("BOLDWHITE" variable (:constant-flag t) nil [1523 1532])
+            ("CLEAR" variable (:constant-flag t) nil [1583 1588])
+            ("ObjectRecognition" type
+               (:superclasses 
+                  ( ("HOGFeatureDescriptor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("LocalBinaryPatterns" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1738 1746])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1752 1772])
+                    ("it_" variable (:type ("image_transport::ImageTransport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1777 1813])
+                    ("image_sub_" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1818 1857])
+                    ("image_pub_" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1862 1900])
+                    ("pub_indices_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1905 1933])
+                    ("pub_rects_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1938 1964])
+                    ("nms_client_" variable (:type ("ros::ServiceClient" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1969 2000])
+                    ("supportVectorMachine_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cv::SVM" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2009 2058])
+                    ("concatenateCVMat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2098 2114])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2115 2131])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2132 2142])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2143 2154]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2068 2156])
+                    ("readTrainingManifestFromDirectory" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2161 2202])
+                    ("public" label nil (reparse-symbol classsubparts) [2208 2215])
+                    ("ObjectRecognition" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ObjectRecognition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2220 2240])
+                    ("imageCb" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2274 2308]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2245 2309])
+                    ("runObjectRecognizer" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2388 2404])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2405 2420])
+                            ("" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2421 2433])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2434 2444])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2445 2455]))                          
+                        :type ("std::multimap" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("cv::Rect_" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2315 2456])
+                    ("objectRecognizer" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2501 2517])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2518 2558])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2566 2581])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2582 2596]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2463 2598])
+                    ("pyramidialScaling" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2642 2653])
+                            ("" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2654 2666]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2603 2667])
+                    ("nonMaximumSuppression" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2739 2779])
+                            ("" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2780 2792]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Rect_" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2672 2793])
+                    ("convertCvRectToJSKRectArray" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2839 2876])
+                            ("" variable
+                               (:reference 1
+                                :type ("jsk_recognition_msgs::RectArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2883 2917])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2918 2928])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2929 2944]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2798 2945])
+                    ("objectBoundingBoxPointCloudIndices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2998 3035])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3043 3076])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3084 3094])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3102 3117]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2950 3118])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3127 3152])
+                    ("configCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("object_recognition::ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3194 3238])
+                            ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3239 3248]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3157 3249])
+                    ("bootstrapFalsePositiveDetection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3308 3324])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3325 3337])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3338 3350])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("cv::Rect_" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3358 3404]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3255 3405])
+                    ("convertNumber2String" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3472 3474]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [3414 3475])
+                    ("computeHSHistogram" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3545 3555])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3556 3566])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3567 3581])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3583 3597])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3599 3610]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3505 3612])
+                    ("protected" label nil (reparse-symbol classsubparts) [3618 3628])
+                    ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3633 3653])
+                    ("scale_" variable (:type "float") (reparse-symbol classsubparts) [3662 3675])
+                    ("stack_size_" variable (:type "int") (reparse-symbol classsubparts) [3680 3696])
+                    ("incrementor_" variable (:type "int") (reparse-symbol classsubparts) [3701 3718])
+                    ("downsize_" variable (:type "int") (reparse-symbol classsubparts) [3723 3737])
+                    ("model_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3742 3766])
+                    ("swindow_x" variable (:type "int") (reparse-symbol classsubparts) [3771 3785])
+                    ("swindow_y" variable (:type "int") (reparse-symbol classsubparts) [3790 3804])
+                    ("server" variable (:type ("dynamic_reconfigure::Server" type
+                         (:template-specifier 
+                            ( ("object_recognition::ObjectDetectionConfig" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3810 3897])
+                    ("run_type_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3903 3925])
+                    ("trainer_manifest_filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3930 3969])
+                    ("object_dataset_filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3974 4011])
+                    ("nonobject_dataset_filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4016 4056])
+                    ("ndataset_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4061 4088]))                  
+                :type "class")
+                nil [1629 4091]))          
+      :file "object_recognition.h"
+      :pointmax 4127
+      :fsize 4126
+      :lastmodtime '(21838 2727 908796 40000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAGENTA" . ((string "\"\\033[35m\"" 979 . 989)))
+          ("RESET" . ((string "\"\\033[0m\"" 735 . 744)))
+          ("BOLDBLACK" . ((string "\"\\033[1m\\033[30m\"" 1116 . 1133)))
+          ("BOLDGREEN" . ((string "\"\\033[1m\\033[32m\"" 1234 . 1251)))
+          ("BOLDBLUE" . ((string "\"\\033[1m\\033[34m\"" 1355 . 1372)))
+          ("BLACK" . ((string "\"\\033[30m\"" 761 . 771)))
+          ("GREEN" . ((string "\"\\033[32m\"" 847 . 857)))
+          ("BOLDCYAN" . ((string "\"\\033[1m\\033[36m\"" 1476 . 1493)))
+          ("CLEAR" . ((string "\"\\033[2J\"" 1589 . 1598)))
+          ("BOLDRED" . ((string "\"\\033[1m\\033[31m\"" 1176 . 1193)))
+          ("BOLDYELLOW" . ((string "\"\\033[1m\\033[33m\"" 1294 . 1311)))
+          ("BLUE" . ((string "\"\\033[34m\"" 936 . 946)))
+          ("BOLDMAGENTA" . ((string "\"\\033[1m\\033[35m\"" 1414 . 1431)))
+          ("BOLDWHITE" . ((string "\"\\033[1m\\033[37m\"" 1535 . 1552)))
+          ("CYAN" . ((string "\"\\033[36m\"" 1025 . 1035)))
+          ("WHITE" . ((string "\"\\033[37m\"" 1068 . 1078)))
+          ("_OBJECT_RECOGNITION_H_")
+          ("RED" . ((string "\"\\033[31m\"" 805 . 815)))
+          ("YELLOW" . ((string "\"\\033[33m\"" 891 . 901)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_POINT_CLOUD_OBJECT_DETECTION_H_" variable (:constant-flag t) nil [51 83])
+            ("jsk_recognition_msgs/ClusterPointIndices.h" include (:system-flag t) nil [85 138])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include (:system-flag t) nil [139 183])
+            ("jsk_recognition_msgs/RectArray.h" include (:system-flag t) nil [184 227])
+            ("ros/ros.h" include (:system-flag t) nil [229 249])
+            ("ros/console.h" include (:system-flag t) nil [250 274])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [316 360])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [361 393])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [394 434])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [435 471])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [498 524])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [525 569])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [570 598])
+            ("pcl/point_types.h" include (:system-flag t) nil [599 627])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [628 664])
+            ("pcl/kdtree/kdtree.h" include (:system-flag t) nil [665 695])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [696 732])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [733 772])
+            ("pcl/sample_consensus/method_types.h" include (:system-flag t) nil [773 819])
+            ("pcl/sample_consensus/model_types.h" include (:system-flag t) nil [820 865])
+            ("pcl/segmentation/sac_segmentation.h" include (:system-flag t) nil [866 912])
+            ("pcl/segmentation/extract_clusters.h" include (:system-flag t) nil [913 959])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [960 1000])
+            ("pcl/common/centroid.h" include (:system-flag t) nil [1001 1033])
+            ("pcl/common/impl/common.hpp" include (:system-flag t) nil [1034 1071])
+            ("pcl/registration/distances.h" include (:system-flag t) nil [1072 1111])
+            ("jsk_pcl_ros/EuclideanSegment.h" include (:system-flag t) nil [1113 1154])
+            ("iostream" include (:system-flag t) nil [1156 1175])
+            ("vector" include (:system-flag t) nil [1176 1193])
+            ("PointCloudObjectDetection" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1231 1238])
+                    ("PointCloudObjectDetection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PointCloudObjectDetection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1243 1271])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1280 1312])
+                    ("private" label nil (reparse-symbol classsubparts) [1315 1323])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1328 1353])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1358 1385])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1425 1467]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1390 1468])
+                    ("jskRectArrayCb" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::RectArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1509 1549]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1473 1550])
+                    ("extractPointCloudIndicesFromJSKRect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("jsk_recognition_msgs::Rect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1613 1640])
+                            ("" variable (:type ("pcl::PointIndices::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1664]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1564 1665])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1675 1696])
+                    ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1701 1721])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1726 1753])
+                    ("sub_rects_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1758 1785])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1794 1820])
+                    ("cloud_width" variable (:type "int") (reparse-symbol classsubparts) [1867 1883])
+                    ("cloud_height" variable (:type "int") (reparse-symbol classsubparts) [1888 1905])
+                    ("filter_indices_" variable (:type ("pcl::PointIndices::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1911 1950]))                  
+                :type "class")
+                nil [1195 1953]))          
+      :file "point_cloud_object_detection.h"
+      :pointmax 1999
+      :fsize 1998
+      :lastmodtime '(21826 5727 705493 225000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_POINT_CLOUD_OBJECT_DETECTION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_LOCAL_BINARY_PATTERNS_H_" variable (:constant-flag t) nil [43 68])
+            ("ros/ros.h" include (:system-flag t) nil [70 90])
+            ("ros/console.h" include (:system-flag t) nil [91 115])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [117 146])
+            ("LocalBinaryPatterns" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [178 186])
+                    ("localBinaryPatterns" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [252 268])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [269 279]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [191 280])
+                    ("patchWiseLBP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [319 335])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [336 346])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [347 362])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [363 373])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [374 386]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [285 388])
+                    ("histogramLBP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [430 446])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [447 454])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [456 465])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [467 478]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [393 480])
+                    ("getLBP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [513 529])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [529 540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [485 541])
+                    ("public" label nil (reparse-symbol classsubparts) [547 554])
+                    ("LocalBinaryPatterns" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LocalBinaryPatterns" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [559 581])
+                    ("computeLBP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [621 637])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("cv::Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [638 671])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [680 693])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [695 707])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [709 721]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [586 723]))                  
+                :type "class")
+                nil [148 726]))          
+      :file "local_binary_patterns.h"
+      :pointmax 766
+      :fsize 765
+      :lastmodtime '(21826 61091 426873 544000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_LOCAL_BINARY_PATTERNS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_OBJECT_DETECTOR_TRAINER_H_" variable (:constant-flag t) nil [46 73])
+            ("object_recognition/histogram_of_oriented_gradients.h" include (:system-flag t) nil [75 138])
+            ("object_recognition/local_binary_patterns.h" include (:system-flag t) nil [139 192])
+            ("ros/ros.h" include (:system-flag t) nil [194 214])
+            ("ros/console.h" include (:system-flag t) nil [215 239])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [241 270])
+            ("vector" include (:system-flag t) nil [272 289])
+            ("string" include (:system-flag t) nil [290 307])
+            ("fstream" include (:system-flag t) nil [308 326])
+            ("RESET" variable (:constant-flag t) nil [336 341])
+            ("BLACK" variable (:constant-flag t) nil [362 367])
+            ("RED" variable (:constant-flag t) nil [406 409])
+            ("GREEN" variable (:constant-flag t) nil [448 453])
+            ("YELLOW" variable (:constant-flag t) nil [492 498])
+            ("BLUE" variable (:constant-flag t) nil [537 541])
+            ("MAGENTA" variable (:constant-flag t) nil [580 587])
+            ("CYAN" variable (:constant-flag t) nil [626 630])
+            ("WHITE" variable (:constant-flag t) nil [669 674])
+            ("BOLDBLACK" variable (:constant-flag t) nil [713 722])
+            ("BOLDRED" variable (:constant-flag t) nil [773 780])
+            ("BOLDGREEN" variable (:constant-flag t) nil [831 840])
+            ("BOLDYELLOW" variable (:constant-flag t) nil [891 901])
+            ("BOLDBLUE" variable (:constant-flag t) nil [952 960])
+            ("BOLDMAGENTA" variable (:constant-flag t) nil [1011 1022])
+            ("BOLDCYAN" variable (:constant-flag t) nil [1073 1081])
+            ("BOLDWHITE" variable (:constant-flag t) nil [1132 1141])
+            ("CLEAR" variable (:constant-flag t) nil [1192 1197])
+            ("ObjectDetectorTrainer" type
+               (:superclasses 
+                  ( ("HOGFeatureDescriptor" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("LocalBinaryPatterns" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1357 1365])
+                    ("swindow_x_" variable (:type "int") (reparse-symbol classsubparts) [1370 1385])
+                    ("swindow_y_" variable (:type "int") (reparse-symbol classsubparts) [1390 1405])
+                    ("dataset_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1410 1436])
+                    ("object_dataset_filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1442 1479])
+                    ("nonobject_dataset_filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1484 1524])
+                    ("trained_classifier_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1529 1566])
+                    ("supportVectorMachine_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cv::SVM" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1575 1624])
+                    ("public" label nil (reparse-symbol classsubparts) [1627 1634])
+                    ("ObjectDetectorTrainer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ObjectDetectorTrainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1639 1663])
+                    ("trainObjectClassifier" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1711 1723])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1724 1736]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1668 1737])
+                    ("readDataset" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1775 1787])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1788 1798])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1806 1816])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1817 1829])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1831 1844]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1742 1846])
+                    ("extractFeatures" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1888 1898])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1899 1909]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1851 1910])
+                    ("trainBinaryClassSVM" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1956 1972])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1973 1989]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1915 1990])
+                    ("concatenateCVMat" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2033 2049])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2050 2066])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2067 2077])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2078 2089]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1995 2091]))                  
+                :type "class")
+                nil [1238 2094]))          
+      :file "object_detector_trainer.h"
+      :pointmax 2136
+      :fsize 2197
+      :lastmodtime '(21834 9806 355291 753000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAGENTA" . ((string "\"\\033[35m\"" 588 . 598)))
+          ("RESET" . ((string "\"\\033[0m\"" 344 . 353)))
+          ("BOLDBLACK" . ((string "\"\\033[1m\\033[30m\"" 725 . 742)))
+          ("BOLDGREEN" . ((string "\"\\033[1m\\033[32m\"" 843 . 860)))
+          ("BOLDBLUE" . ((string "\"\\033[1m\\033[34m\"" 964 . 981)))
+          ("BLACK" . ((string "\"\\033[30m\"" 370 . 380)))
+          ("GREEN" . ((string "\"\\033[32m\"" 456 . 466)))
+          ("BOLDCYAN" . ((string "\"\\033[1m\\033[36m\"" 1085 . 1102)))
+          ("CLEAR" . ((string "\"\\033[2J\"" 1198 . 1207)))
+          ("BOLDRED" . ((string "\"\\033[1m\\033[31m\"" 785 . 802)))
+          ("BOLDYELLOW" . ((string "\"\\033[1m\\033[33m\"" 903 . 920)))
+          ("_OBJECT_DETECTOR_TRAINER_H_")
+          ("BLUE" . ((string "\"\\033[34m\"" 545 . 555)))
+          ("BOLDMAGENTA" . ((string "\"\\033[1m\\033[35m\"" 1023 . 1040)))
+          ("BOLDWHITE" . ((string "\"\\033[1m\\033[37m\"" 1144 . 1161)))
+          ("CYAN" . ((string "\"\\033[36m\"" 634 . 644)))
+          ("WHITE" . ((string "\"\\033[37m\"" 677 . 687)))
+          ("RED" . ((string "\"\\033[31m\"" 414 . 424)))
+          ("YELLOW" . ((string "\"\\033[33m\"" 500 . 510)))
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!object_recognition!include!object_recognition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

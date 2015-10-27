@@ -1,0 +1,131 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2 22])
+            ("ros/console.h" include (:system-flag t) nil [23 47])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [49 78])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [80 113])
+            ("image_geometry/pinhole_camera_model.h" include (:system-flag t) nil [115 163])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [164 194])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [195 235])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [236 272])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [273 305])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [306 350])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [352 380])
+            ("pcl/point_types.h" include (:system-flag t) nil [381 409])
+            ("PointCloudImageCreator" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [444 451])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [456 488])
+                    ("PointCloudImageCreator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PointCloudImageCreator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [494 519])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [560 603]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [525 604])
+                    ("cameraInfoCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [649 691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [609 692])
+                    ("projectPointCloudToImagePlane" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [743 778])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [786 828])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [829 839]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [697 840])
+                    ("interpolateImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [870 886])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [887 903]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [845 904])
+                    ("cvMorphologicalOperations" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [941 957])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [958 968])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [969 974]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [910 975])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [985 1007])
+                    ("subsribe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1012 1036])
+                    ("protected" label nil (reparse-symbol classsubparts) [1039 1049])
+                    ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1054 1073])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1078 1099])
+                    ("sub_cam_info_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1104 1134])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1139 1166])
+                    ("pub_image_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1171 1197])
+                    ("pub_iimage_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1202 1229])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1234 1260])
+                    ("camera_info_" variable (:type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1266 1313]))                  
+                :type "class")
+                nil [411 1316]))          
+      :file "point_cloud_image_creator.h"
+      :pointmax 1317
+      :fsize 1316
+      :lastmodtime '(21845 60233 372741 449000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!point_cloud_image_creator!include!point_cloud_image_creator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

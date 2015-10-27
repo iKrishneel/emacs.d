@@ -1,0 +1,191 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "constants.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__boundary_estimation__constants__" variable (:constant-flag t) nil [222 256])
+            ("iostream" include (:system-flag t) nil [258 277])
+            ("fstream" include (:system-flag t) nil [278 296])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [297 317])
+            ("ros/ros.h" include (:system-flag t) nil [319 339])
+            ("ros/console.h" include (:system-flag t) nil [340 364])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [365 401])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [403 447])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [448 480])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [481 521])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [523 555])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [556 594])
+            ("opencv2/calib3d/calib3d.hpp" include (:system-flag t) nil [595 633])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [634 672])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [673 692])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [695 721])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [722 766])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [767 795])
+            ("pcl/point_types.h" include (:system-flag t) nil [796 824])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [825 861])
+            ("PointT" type
+               (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                :type "typedef")
+                nil [863 895])
+            ("convertNumber2String" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c_frame" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1018 1028]))                  
+                :typemodifiers ("inline"))
+                nil [957 1151]))          
+      :file "constants.h"
+      :pointmax 1160
+      :fsize 1159
+      :lastmodtime '(21668 64052 251667 772000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__boundary_estimation__constants__")
+          )
+)
+    (semanticdb-table "Point_Cloud_Processing.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__boundary_estimation__Point_Cloud_Processing__" variable (:constant-flag t) nil [240 287])
+            ("../include/constants.h" include nil nil [289 322])
+            ("../include/kinect_camera_calib.h" include nil nil [323 366])
+            ("PointCloudProcessing" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [397 405])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [409 429])
+                    ("publisher__" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [433 460])
+                    ("subscriber__" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [464 493])
+                    ("pcl_cloud__" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [500 541])
+                    ("filter_cloud__" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [545 589])
+                    ("MAX_DISTANCE" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [632 657])
+                    ("MIN_DISTANCE" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [661 686])
+                    ("saveCounter" variable (:type "int") (reparse-symbol classsubparts) [691 707])
+                    ("capture" variable (:type ("VideoCapture" type (:type "class") nil nil)) (reparse-symbol classsubparts) [712 733])
+                    ("public" label nil (reparse-symbol classsubparts) [738 745])
+                    ("PointCloudProcessing" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("camIndex" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [770 792]))                          
+                        :type ("PointCloudProcessing" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 1533])
+                    ("cloudCallBack" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1620 1661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1601 1662])
+                    ("pointCloud2RGBDImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1692 1721])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1722 1728])
+                            ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1729 1735]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1666 1736])
+                    ("pclDistanceFilter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("pcl::PCLPointCloud2" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1763 1803])
+                            ("" variable
+                               (:reference 1
+                                :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1804 1827]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1740 1828])
+                    ("usbCameraCapture" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1902 1908]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1880 1909]))                  
+                :type "class")
+                nil [368 1912]))          
+      :file "Point_Cloud_Processing.h"
+      :pointmax 1983
+      :fsize 1982
+      :lastmodtime '(21670 27988 291389 119000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__boundary_estimation__Point_Cloud_Processing__")
+          )
+)
+    (semanticdb-table "kinect_camera_calib.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__kinect_camera_calibration_kinect_camera_calib__" variable (:constant-flag t) nil [253 302])
+            ("../include/constants.h" include nil nil [304 337])
+            ("KinectCameraCalibrate" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [371 379])
+                    ("krgb__" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [383 394])
+                    ("crgb__" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [435 446])
+                    ("public" label nil (reparse-symbol classsubparts) [481 488])
+                    ("setKinectRGBFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [515 521]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [492 522])
+                    ("setCameraRGBFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 555]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [526 556]))                  
+                :type "class")
+                nil [339 564]))          
+      :file "kinect_camera_calib.h"
+      :pointmax 573
+      :fsize 572
+      :lastmodtime '(21668 60023 227558 682000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__kinect_camera_calibration_kinect_camera_calib__")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!kinect_camera_calibration!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

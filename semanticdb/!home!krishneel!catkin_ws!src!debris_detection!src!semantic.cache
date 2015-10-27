@@ -1,0 +1,796 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2 22])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [23 59])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [60 104])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [105 133])
+            ("pcl/point_types.h" include (:system-flag t) nil [134 162])
+            ("../include/point_cloud_processing.h" include nil nil [164 210])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [221 230])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [231 243]))                  
+                :type "int")
+                nil [212 359]))          
+      :file "debris_detection_node.cpp"
+      :pointmax 360
+      :fsize 247
+      :lastmodtime '(21794 11123 457470 950000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debris_detection/point_cloud_processing.h" include (:system-flag t) nil [48 100])
+            ("pointNormalHistogram" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("cloud_cluster" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [141 198])
+                    ("normal_cluster" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [203 266]))                  
+                :type "void")
+                nil [103 2180])
+            ("plotPointCloud" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("cloud_cluster" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2215 2278])
+                    ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2283 2318]))                  
+                :type "void")
+                nil [2183 2550])
+            ("cloudCallBack" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2648 2698]))                  
+                :type "void")
+                nil [2602 7145])
+            ("pclDistanceFilter" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointCloud2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7271 7322])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7327 7363]))                  
+                :type "void")
+                nil [7221 7667])
+            ("estimatePointCloudNormals" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7782 7823])
+                    ("s_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7828 7871])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7876 7888])
+                    ("radius" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7893 7913])
+                    ("ksearch" variable (:type "bool") (reparse-symbol arg-sub-list) [7918 7931]))                  
+                :type "void")
+                nil [7724 8390])
+            ("pclNearestNeigborSearch" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8509 8551])
+                    ("pointIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8556 8601])
+                    ("isneigbour" variable (:type "bool") (reparse-symbol arg-sub-list) [8606 8622])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8627 8639])
+                    ("radius" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8644 8664]))                  
+                :type "void")
+                nil [8453 9433])
+            ("pointCloud2RGBDImage" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9557 9593])
+                    ("rgbImage" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9599 9617])
+                    ("depthImage" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9623 9643]))                  
+                :type "void")
+                nil [9503 10694])
+            ("pointCloudLocalGradient" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10810 10851])
+                    ("cloud_normal" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10856 10909])
+                    ("depth_img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10914 10933]))                  
+                :type "void")
+                nil [10754 13167])
+            ("viewPointSurfaceNormalOrientation" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13307 13348])
+                    ("cloud_normal" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13353 13406])
+                    ("n_edge" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13411 13427]))                  
+                :type "void")
+                nil [13241 14920])
+            ("extractPointCloudClustersFrom2DMap" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15074 15115])
+                    ("patch_label" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15120 15166])
+                    ("cloud_clusters" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15171 15229])
+                    ("normal_clusters" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15234 15298])
+                    ("centroids" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15303 15349]))                  
+                :type "void")
+                nil [15007 17790])
+            ("semanticCloudLabel" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud_clusters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17871 17935])
+                    ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17940 17975])
+                    ("labelMD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17980 18012]))                  
+                :type "void")
+                nil [17820 18528]))          
+      :file "point_cloud_processing.cpp"
+      :pointmax 18529
+      :fsize 18528
+      :lastmodtime '(21800 64555 93031 457000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [2 22])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [23 59])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [60 104])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [105 133])
+            ("pcl/point_types.h" include (:system-flag t) nil [134 162])
+            ("pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [164 183])
+            ("cloud_cb" function
+               (:arguments 
+                  ( ("input" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [199 245]))                  
+                :type "void")
+                nil [185 332])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [343 352])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [353 365]))                  
+                :type "int")
+                nil [334 592]))          
+      :file "debris_detection_node.cpp~"
+      :pointmax 593
+      :fsize 388
+      :lastmodtime '(21770 29392 210082 858000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("../include/point_cloud_processing.h" include nil nil [195 241])
+            ("cloudCallBack" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [331 381]))                  
+                :type "void")
+                nil [290 1566])
+            ("pclDistanceFilter" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("pcl::PCLPointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1688 1733])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1780 1816]))                  
+                :type "void")
+                nil [1643 2102])
+            ("pointCloudNormals" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2204 2239])
+                    ("cloud_normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2285 2333])
+                    ("k" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2379 2391]))                  
+                :type "void")
+                nil [2159 2864]))          
+      :file "point_cloud_processing.cpp~"
+      :pointmax 2865
+      :fsize 18729
+      :lastmodtime '(21800 3663 756162 288000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debris_detection/rgb_image_processing.h" include (:system-flag t) nil [82 132])
+            ("ImageProcessing" function
+               (:destructor-flag t
+                :parent "ImageProcessing"
+                :type "void")
+                nil [156 232])
+            ("cvVisualization" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [300 340])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("cv::Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [345 365])
+                    ("wname" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [370 394]))                  
+                :type "void")
+                nil [256 1398])
+            ("imageCallBack" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1475 1513]))                  
+                :type "void")
+                nil [1434 1849])
+            ("depthCallBack" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1925 1963]))                  
+                :type "void")
+                nil [1884 2304])
+            ("publishROSImage" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2388 2401])
+                    ("dep" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2402 2415]))                  
+                :type "void")
+                nil [2350 2965])
+            ("getDepthEdge" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3050 3069])
+                    ("edgeMap" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3074 3091])
+                    ("isbinary" variable (:type "bool") (reparse-symbol arg-sub-list) [3096 3110]))                  
+                :type "void")
+                nil [3010 4449])
+            ("cvMorphologicalOperations" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4579 4598])
+                    ("erosion_dst" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4603 4624])
+                    ("iserrode" variable (:type "bool") (reparse-symbol arg-sub-list) [4629 4643]))                  
+                :type "void")
+                nil [4526 5195])
+            ("getRGBEdge" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5282 5301])
+                    ("edgeMap" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5306 5323])
+                    ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5328 5345]))                  
+                :type "void")
+                nil [5244 6417])
+            ("cvGetLabelImagePatch" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6528 6569])
+                    ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6574 6593])
+                    ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6598 6638]))                  
+                :type "void")
+                nil [6480 9576])
+            ("cvLabelImagePatch" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("in_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9709 9731])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9736 9753]))                  
+                :type "int")
+                nil [9665 10811])
+            ("getTotalClusterSize" function
+               (:parent "ImageProcessing"
+                :type "int")
+                nil [10864 10942])
+            ("edgeBoundaryAssignment" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11130 11171])
+                    ("edgeMap" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11176 11199])
+                    ("labelMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11204 11221])
+                    ("rect" variable
+                       (:constant-flag t
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11226 11252]))                  
+                :type "void")
+                nil [11080 15612])
+            ("cvLabelEgdeMap" function
+               (:parent "ImageProcessing"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15715 15756])
+                    ("edgeMap" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15761 15777])
+                    ("patch_label" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cvPatch" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15782 15822]))                  
+                :type "void")
+                nil [15673 16287]))          
+      :file "rgb_image_processing.cpp"
+      :pointmax 16288
+      :fsize 16287
+      :lastmodtime '(21799 63918 163974 199000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("debris_detection/region_adjacency_graph.h" include (:system-flag t) nil [82 134])
+            ("map" include (:system-flag t) nil [135 149])
+            ("utility" include (:system-flag t) nil [150 168])
+            ("RegionAdjacencyGraph" function
+               (:constructor-flag t
+                :parent "RegionAdjacencyGraph"
+                :type ("RegionAdjacencyGraph" type (:type "class") nil nil))
+                nil [194 246])
+            ("generateRAG" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("cloud_clusters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [370 434])
+                    ("normal_clusters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [439 510])
+                    ("centroids" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [515 567])
+                    ("neigbor_indices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [572 620])
+                    ("edge_weight_criteria" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [625 656]))                  
+                :type "void")
+                nil [326 5254])
+            ("getCloudClusterWeightFunction" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("_points" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("Eigen::Vector3f" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5462 5520])
+                    ("_normal" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("Eigen::Vector3f" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5525 5583]))                  
+                :parent "RegionAdjacencyGraph")
+                nil [5382 7346])
+            ("getVectorAngle" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("vector1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8025 8056])
+                    ("vector2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8061 8092])
+                    ("indegree" variable (:type "bool") (reparse-symbol arg-sub-list) [8097 8111]))                  
+                :type "float")
+                nil [7977 8256])
+            ("convexityCriterion" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("center_point" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8426 8462])
+                    ("n1_point" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8467 8499])
+                    ("center_normal" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8504 8541])
+                    ("neigbour_normal" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8546 8585]))                  
+                :parent "RegionAdjacencyGraph")
+                nil [8357 8846])
+            ("sampleRandomPointsFromCloudCluster" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8927 8962])
+                    ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8967 9008])
+                    ("point_vector" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Eigen::Vector3f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9013 9056])
+                    ("normal_vector" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Eigen::Vector3f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9061 9105])
+                    ("gen_sz" variable (:type "int") (reparse-symbol arg-sub-list) [9110 9121]))                  
+                :type "void")
+                nil [8860 9518])
+            ("splitMergeRAG" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("_threshold" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9636 9657]))                  
+                :type "void")
+                nil [9595 11124])
+            ("getCommonNeigbour" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("c1_neigbour" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11251 11287])
+                    ("c2_neigbour" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11292 11328]))                  
+                :type "int")
+                nil [11202 11678])
+            ("getCloudClusterLabels" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("labelMD" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11791 11817]))                  
+                :type "void")
+                nil [11737 12007])
+            ("printGraph" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("_graph" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12078 12098]))                  
+                :type "void")
+                nil [12035 12351])
+            ("concatenateRegionUsingRAGInfo" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("cloud_clusters" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12463 12521])
+                    ("normal_clusters" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12526 12590])
+                    ("c_clusters" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12595 12651]))                  
+                :type "void")
+                nil [12401 13735])
+            ("mergePointCloud" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("m_cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14251 14294])
+                    ("c_cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14299 14342])
+                    ("n_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14347 14384]))                  
+                :type "void")
+                nil [14203 14827])
+            ("computeCloudClusterRPYHistogram" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("_cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15012 15054])
+                    ("_normal" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15059 15107])
+                    ("_histogram" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15112 15132]))                  
+                :type "void")
+                nil [14948 16037]))          
+      :file "region_adjacency_graph.cpp"
+      :pointmax 16040
+      :fsize 16039
+      :lastmodtime '(21800 53874 665295 654000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!debris_detection!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

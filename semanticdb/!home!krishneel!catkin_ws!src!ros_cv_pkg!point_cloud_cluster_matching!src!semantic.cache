@@ -1,0 +1,450 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("point_cloud_cluster_matching/point_cloud_cluster_matching.h" include (:system-flag t) nil [2 72])
+            ("vector" include (:system-flag t) nil [73 90])
+            ("PointCloudClusterMatching" function
+               (:constructor-flag t
+                :parent "PointCloudClusterMatching"
+                :type ("PointCloudClusterMatching" type (:type "class") nil nil))
+                nil [92 336])
+            ("onInit" function
+               (:parent "PointCloudClusterMatching"
+                :type "void")
+                nil [338 978])
+            ("subscribe" function
+               (:parent "PointCloudClusterMatching"
+                :type "void")
+                nil [980 2622])
+            ("unsubscribe" function
+               (:parent "PointCloudClusterMatching"
+                :type "void")
+                nil [2624 2857])
+            ("signalCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("signal_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("point_cloud_scene_decomposer::signal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2911 2966]))                  
+                :type "void")
+                nil [2859 3002])
+            ("gripperEndPoseCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("end_pose_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::PoseStamped" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3064 3112]))                  
+                :type "void")
+                nil [3004 3156])
+            ("boundingBoxCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("bba_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("jsk_recognition_msgs::BoundingBoxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3281 3335]))                  
+                :type "void")
+                nil [3224 3366])
+            ("manipulatedClusterCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("manip_cluster_index_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std_msgs::Int64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3487 3534]))                  
+                :type "void")
+                nil [3423 3607])
+            ("imageCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3723 3769]))                  
+                :type "void")
+                nil [3672 4080])
+            ("imagePrevCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4137 4183]))                  
+                :type "void")
+                nil [4082 4493])
+            ("imageMaskCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4615 4661]))                  
+                :type "void")
+                nil [4560 5096])
+            ("imageMaskPrevCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5157 5203]))                  
+                :type "void")
+                nil [5098 5643])
+            ("indicesCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("indices_msgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5698 5760]))                  
+                :type "void")
+                nil [5645 6016])
+            ("cloudPrevCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6133 6183]))                  
+                :type "void")
+                nil [6078 6471])
+            ("cloudCallback" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6524 6574]))                  
+                :type "void")
+                nil [6473 13836])
+            ("clusterMovedObjectROI" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("in_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13897 13935])
+                    ("indices" variable (:type ("pcl::PointIndices::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13940 13971])
+                    ("moved_indices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13976 14022])
+                    ("min_cluster_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14027 14054])
+                    ("min_distance_threshold" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [14059 14094]))                  
+                :type "void")
+                nil [13838 16533])
+            ("getKnownObjectRegion" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("manipulated_obj_centroids" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Eigen::Vector3f" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16676 16738])
+                    ("known_object_bbox" variable
+                       (:reference 1
+                        :type ("jsk_recognition_msgs::BoundingBoxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16743 16801])
+                    ("min_assignment_threshold" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [16806 16843]))                  
+                :type "void")
+                nil [16618 17961])
+            ("contourSmoothing" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("mask_img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18017 18035]))                  
+                :type "void")
+                nil [17963 18754])
+            ("cvMorphologicalOperations" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18820 18839])
+                    ("erosion_dst" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18840 18861])
+                    ("is_errode" variable (:type "bool") (reparse-symbol arg-sub-list) [18866 18881])
+                    ("erosion_size" variable (:type "int") (reparse-symbol arg-sub-list) [18882 18899]))                  
+                :type "void")
+                nil [18757 19460])
+            ("convertToROSPointIndices" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("cluster_indices" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19555 19608])
+                    ("header" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std_msgs::Header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19613 19644]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("pcl_msgs::PointIndices" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19462 19928])
+            ("extractObjectROIIndices" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20001 20023])
+                    ("cluster_indices" variable (:type ("pcl::PointIndices::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20028 20067])
+                    ("image_size" variable
+                       (:constant-flag t
+                        :type ("cv::Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20072 20098]))                  
+                :type "void")
+                nil [19940 20683])
+            ("objectCloudClusters" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("cloud" variable
+                       (:constant-flag t
+                        :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20742 20783])
+                    ("cluster_indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20788 20842])
+                    ("cloud_clusters" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20847 20905]))                  
+                :type "void")
+                nil [20685 21448])
+            ("createImageFromObjectClusters" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("cloud_clusters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointCloud::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21517 21581])
+                    ("camera_info" variable
+                       (:constant-flag t
+                        :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21586 21638])
+                    ("prev_image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21643 21669])
+                    ("image_patches" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21674 21710])
+                    ("regions" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Rect_" type (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21715 21753]))                  
+                :type "void")
+                nil [21450 22556])
+            ("getObjectRegionMask" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22615 22630])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22631 22652]))                  
+                :type "void")
+                nil [22558 24232])
+            ("extractKeyPointsAndDescriptors" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24302 24323])
+                    ("descriptor" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24324 24344])
+                    ("keypoints" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24349 24386]))                  
+                :type "void")
+                nil [24234 24660])
+            ("computeFeatureMatch" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("img_object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24719 24745])
+                    ("img_scene" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24746 24770])
+                    ("descriptors_object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24775 24809])
+                    ("descriptors_scene" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24810 24843])
+                    ("keypoints_object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24848 24898])
+                    ("keypoints_scene" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24903 24952])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24957 24978]))                  
+                :type "void")
+                nil [24662 28692])
+            ("detectMatchROI" function
+               (:parent "PointCloudClusterMatching"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28757 28778])
+                    ("corner_top_left" variable
+                       (:reference 1
+                        :type ("cv::Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28779 28808])
+                    ("corner_top_right" variable
+                       (:reference 1
+                        :type ("cv::Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28813 28843])
+                    ("corner_bottom_right" variable
+                       (:reference 1
+                        :type ("cv::Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28844 28877])
+                    ("corner_bottom_left" variable
+                       (:reference 1
+                        :type ("cv::Point2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28882 28914]))                  
+                :type ("cv::Rect_" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [28695 31390])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31404 31413])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31414 31427]))                  
+                :type "int")
+                nil [31395 31558]))          
+      :file "point_cloud_cluster_matching_node.cpp"
+      :pointmax 31559
+      :fsize 31558
+      :lastmodtime '(21901 16145 241603 147000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!point_cloud_cluster_matching!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

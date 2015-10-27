@@ -1,0 +1,543 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("math.h" include (:system-flag t) nil [21 38])
+            ("fstream" include (:system-flag t) nil [39 57])
+            ("ctime" include (:system-flag t) nil [58 74])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [76 105])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [106 144])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [145 177])
+            ("Object_Boundary.h" include nil nil [179 207])
+            ("RGBD_Image_Processing.h" include nil nil [208 242])
+            ("contour_thinning.h" include nil nil [243 272])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [274 294])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [295 314])
+            ("colorRangeMIN" variable
+               (:constant-flag t
+                :default-value "cv::Scalar(0, 56, 5)"
+                :type ("cv::Scalar" type (:type "class") nil nil))
+                nil [316 370])
+            ("colorRangeMAX" variable
+               (:constant-flag t
+                :default-value "cv::Scalar(64, 119, 103)"
+                :type ("cv::Scalar" type (:type "class") nil nil))
+                nil [371 429])
+            ("getOrientation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [453 469])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [470 476]))                  
+                :type "double")
+                nil [431 477])
+            ("getObjectROI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [496 502]))                  
+                :type "bool")
+                nil [478 503])
+            ("computeImageGradient" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [530 536]))                  
+                :type "void")
+                nil [504 537])
+            ("colorFilterTrackerBar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [565 571]))                  
+                :type "void")
+                nil [538 572])
+            ("colorFilter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [590 596])
+                    ("" variable (:type ("cv::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [597 608])
+                    ("" variable (:type ("cv::Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [609 620])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [621 633]))                  
+                :type "void")
+                nil [573 635])
+            ("getImageContours" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 664])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [665 673]))                  
+                :type "void")
+                nil [636 675])
+            ("imageMorphologicalOp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [702 708])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [709 720]))                  
+                :type "void")
+                nil [676 722])
+            ("img_proc" variable
+               (:pointer 1
+                :default-value "new RGBDImageProcessing()"
+                :type ("RGBDImageProcessing" type (:type "class") nil nil))
+                nil [724 783])
+            ("original_img" variable (:type ("Mat" type (:type "class") nil nil)) nil [784 801])
+            ("EdgeParam" type
+               (:members 
+                  ( ("index" variable (:type ("cv::Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [897 913])
+                    ("orientation" variable (:type "float") (reparse-symbol classsubparts) [962 980])
+                    ("contour_position" variable (:type "int") (reparse-symbol classsubparts) [1015 1036])
+                    ("flag" variable (:type "bool") (reparse-symbol classsubparts) [1072 1082]))                  
+                :type "struct")
+                nil [875 1128])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1163 1172])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1173 1186]))                  
+                :type "int")
+                nil [1154 3413])
+            ("getOrientation" function
+               (:arguments 
+                  ( ("pts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3548 3567])
+                    ("img" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3568 3577]))                  
+                :type "double")
+                nil [3526 4936])
+            ("computeImageGradient" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5061 5072]))                  
+                :type "void")
+                nil [5035 5678])
+            ("getObjectROI" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5758 5769]))                  
+                :type "bool")
+                nil [5740 6413])
+            ("colorFilter" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6517 6528])
+                    ("colorMin" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6529 6545])
+                    ("colorMax" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6546 6562])
+                    ("isFind" variable (:type "bool") (reparse-symbol arg-sub-list) [6563 6575]))                  
+                :type "void")
+                nil [6500 7085])
+            ("min_valR" variable
+               (:default-value "0"
+                :type "int")
+                nil [7156 7173])
+            ("max_valR" variable
+               (:default-value "255"
+                :type "int")
+                nil [7174 7193])
+            ("min_valG" variable
+               (:default-value "0"
+                :type "int")
+                nil [7195 7212])
+            ("max_valG" variable
+               (:default-value "255"
+                :type "int")
+                nil [7213 7232])
+            ("min_valB" variable
+               (:default-value "0"
+                :type "int")
+                nil [7234 7251])
+            ("max_valB" variable
+               (:default-value "255"
+                :type "int")
+                nil [7252 7271])
+            ("dst" variable (:type ("Mat" type (:type "class") nil nil)) nil [7273 7281])
+            ("img" variable (:type ("Mat" type (:type "class") nil nil)) nil [7282 7290])
+            ("window_name" variable
+               (:default-value "\"Result\""
+                :type ("string" type (:type "class") nil nil))
+                nil [7292 7322])
+            ("threshCallBack" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7343 7347])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7348 7354]))                  
+                :type "void")
+                nil [7323 7956])
+            ("colorFilterTrackerBar" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7985 7996]))                  
+                :type "void")
+                nil [7958 8628])
+            ("getImageContours" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8692 8703])
+                    ("contour_thresh" variable (:type "int") (reparse-symbol arg-sub-list) [8704 8723]))                  
+                :type "void")
+                nil [8670 9332])
+            ("cvCreateBinaryImage" function
+               (:arguments 
+                  ( ("image" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9437 9447])
+                    ("img_bw" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9448 9460])
+                    ("lowerb" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9461 9475]))                  
+                :type "void")
+                nil [9412 9757])
+            ("computeEdgeCurvatureOrientation" function
+               (:arguments 
+                  ( ("contours_tangent" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9856 9911])
+                    ("contours" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9949 9996])
+                    ("orientation_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10034 10081])
+                    ("is_normalize" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10119 10143]))                  
+                :type "void")
+                nil [9819 10765])
+            ("computeEdgeCurvature" function
+               (:arguments 
+                  ( ("contours" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10959 11006])
+                    ("tangents" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11033 11080])
+                    ("orientation_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11107 11154])
+                    ("hcurvature_pts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11181 11220]))                  
+                :type "void")
+                nil [10933 13695])
+            ("filterJunctionPoints" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13867 13883])
+                    ("hcurvature_pts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13910 13949])
+                    ("junction_pts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13976 14013])
+                    ("radius_" variable
+                       (:constant-flag t
+                        :default-value "5"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14040 14061])
+                    ("j_thresh" variable
+                       (:constant-flag t
+                        :default-value "0.450f"
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [14089 14118]))                  
+                :type "void")
+                nil [13841 15787])
+            ("filterEndPoints" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15877 15893])
+                    ("hcurvature_pts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15920 15959])
+                    ("radius_" variable
+                       (:constant-flag t
+                        :default-value "10"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15986 16008]))                  
+                :type "void")
+                nil [15856 16714])
+            ("traverseJunction2EndPoint" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16866 16878])
+                    ("contours_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16910 16958])
+                    ("tangents_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16990 17038])
+                    ("orientation_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17070 17117])
+                    ("junction_points" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17149 17189])
+                    ("end_points" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17221 17256]))                  
+                :type "void")
+                nil [16835 21098])
+            ("plotGradientOrientation" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21187 21199])
+                    ("contours_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21229 21277])
+                    ("tangents_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21307 21355])
+                    ("orientation_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21385 21432]))                  
+                :type "void")
+                nil [21158 22147])
+            ("cvJunctionEstimation" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22311 22323])
+                    ("contours_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22350 22398])
+                    ("tangents_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("cv::Point" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22425 22473])
+                    ("orientation_" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22500 22547])
+                    ("hcurvature_pts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("EdgeParam" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22574 22613]))                  
+                :type "void")
+                nil [22285 24217])
+            ("branchEstimation" function
+               (:arguments 
+                  ( ("img_bw" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24375 24387]))                  
+                :type "void")
+                nil [24353 25262])
+            ("imageMorphologicalOp" function
+               (:arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25327 25340])
+                    ("is_errode" variable (:type "bool") (reparse-symbol arg-sub-list) [25341 25356]))                  
+                :type "void")
+                nil [25301 26389]))          
+      :file "main.cpp"
+      :pointmax 26390
+      :fsize 26389
+      :lastmodtime '(21704 36345 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Object_Boundary.h"
+      :fsize 2153
+      :lastmodtime '(21691 19752 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "RGBD_Image_Processing.h"
+      :fsize 1204
+      :lastmodtime '(21696 40953 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "contour_thinning.h"
+      :fsize 1901
+      :lastmodtime '(21700 31974 0 0)))
+  :file "!media!KRISHNEEL!W540!Desktop!pca_rot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

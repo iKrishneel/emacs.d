@@ -1,0 +1,2938 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/intermittent_image_annotator.h" include nil nil [1814 1867])
+            ("tf_conversions/tf_eigen.h" include (:system-flag t) nil [1868 1904])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [1905 1937])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [1938 1978])
+            ("eigen_conversions/eigen_msg.h" include (:system-flag t) nil [1979 2019])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "IntermittentImageAnnotator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2047 3369])
+                    ("subscribe" function
+                       (:parent "IntermittentImageAnnotator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3424 3476])
+                    ("unsubscribe" function
+                       (:parent "IntermittentImageAnnotator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3480 3534])
+                    ("rectCallback" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("rect" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3589 3641]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3538 6500])
+                    ("cameraCallback" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("image_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6561 6607])
+                            ("info_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6614 6664]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6506 7455])
+                    ("shutterCallback" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7513 7543])
+                            ("res" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7548 7579]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7459 9471])
+                    ("clearCallback" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9527 9557])
+                            ("res" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9562 9593]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9475 9675])
+                    ("requestCallback" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9733 9763])
+                            ("res" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9768 9799]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9679 10604])
+                    ("updateDiagnostic" function
+                       (:parent "IntermittentImageAnnotator"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10663 10713]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10608 11008]))                  
+                :type "namespace")
+                nil [2021 11010])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [11012 11052])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::IntermittentImageAnnotator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11077 11117])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11118 11135]))                  
+                :type "int")
+                nil [11053 11136]))          
+      :file "intermittent_image_annotator_nodelet.cpp"
+      :pointmax 11137
+      :fsize 18639
+      :lastmodtime '(21838 12459 828654 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/organized_multi_plane_segmentation.h" include nil nil [1824 1883])
+            ("jsk_recognition_msgs/ModelCoefficientsArray.h" include nil nil [1884 1940])
+            ("pcl/segmentation/impl/organized_multi_plane_segmentation.hpp" include (:system-flag t) nil [1941 2012])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [2013 2053])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [2054 2090])
+            ("set" include (:system-flag t) nil [2091 2105])
+            ("Eigen/StdVector" include (:system-flag t) nil [2106 2132])
+            ("pcl/surface/convex_hull.h" include (:system-flag t) nil [2133 2169])
+            ("pcl/filters/project_inliers.h" include (:system-flag t) nil [2170 2210])
+            ("pcl/features/integral_image_normal.h" include (:system-flag t) nil [2211 2258])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [2260 2304])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [2305 2345])
+            ("boost/format.hpp" include (:system-flag t) nil [2347 2374])
+            ("pcl/common/centroid.h" include (:system-flag t) nil [2375 2407])
+            ("visualization_msgs/Marker.h" include (:system-flag t) nil [2408 2446])
+            ("jsk_pcl_ros/geo_util.h" include nil nil [2447 2480])
+            ("pcl/sample_consensus/method_types.h" include (:system-flag t) nil [2482 2528])
+            ("pcl/sample_consensus/model_types.h" include (:system-flag t) nil [2529 2574])
+            ("pcl/segmentation/sac_segmentation.h" include (:system-flag t) nil [2575 2621])
+            ("pcl/surface/convex_hull.h" include (:system-flag t) nil [2622 2658])
+            ("jsk_topic_tools/color_utils.h" include (:system-flag t) nil [2660 2700])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2729 5789])
+                    ("forceToDirectOrigin" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5856 5912])
+                            ("output_coefficients" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5917 5974]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5793 6601])
+                    ("subscribe" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6605 6778])
+                    ("unsubscribe" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6782 6862])
+                    ("configCallback" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6919 6934])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6935 6950]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6866 8023])
+                    ("connectPlanesMap" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8089 8131])
+                            ("model_coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8136 8198])
+                            ("boundary_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8203 8258])
+                            ("connection_map" variable
+                               (:reference 1
+                                :type ("IntegerGraphMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8263 8295]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8029 11404])
+                    ("pclIndicesArrayToClusterPointIndices" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("inlier_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11488 11541])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11546 11577])
+                            ("output_indices" variable
+                               (:reference 1
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11582 11640]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11408 11936])
+                    ("pointCloudToPolygon" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12005 12042])
+                            ("polygon" variable
+                               (:reference 1
+                                :type ("geometry_msgs::Polygon" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12047 12079]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11942 12328])
+                    ("buildConnectedPlanes" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12398 12440])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12445 12476])
+                            ("inlier_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12481 12534])
+                            ("boundary_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12539 12594])
+                            ("model_coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12599 12661])
+                            ("connection_map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IntegerGraphMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12666 12704])
+                            ("output_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12709 12756])
+                            ("output_coefficients" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12761 12818])
+                            ("output_boundary_clouds" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud" type (:template-specifier 
+                                            ( ("PointT" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12823 12885]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12334 15585])
+                    ("segmentOrganizedMultiPlanes" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15802 15837])
+                            ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15842 15883])
+                            ("regions" variable
+                               (:reference 1
+                                :type ("PlanarRegionVector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15888 15916])
+                            ("model_coefficients" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15921 15977])
+                            ("inlier_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15982 16029])
+                            ("labels" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16034 16075])
+                            ("label_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16080 16126])
+                            ("boundary_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16131 16180]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15731 16786])
+                    ("publishSegmentationInformation" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16866 16897])
+                            ("input" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16902 16943])
+                            ("indices_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16948 16976])
+                            ("polygon_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16981 17009])
+                            ("coefficients_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17014 17047])
+                            ("inlier_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17052 17105])
+                            ("boundaries" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud" type (:template-specifier 
+                                            ( ("PointT" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17110 17166])
+                            ("model_coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17171 17233]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16792 18752])
+                    ("publishSegmentationInformation" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18832 18863])
+                            ("input" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18868 18909])
+                            ("indices_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18914 18942])
+                            ("polygon_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18947 18975])
+                            ("coefficients_pub" variable
+                               (:reference 1
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18980 19013])
+                            ("inlier_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19018 19071])
+                            ("boundary_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19076 19131])
+                            ("model_coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19136 19198]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18758 19956])
+                    ("publishMarkerOfConnection" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("connection_map" variable (:type ("IntegerGraphMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20029 20060])
+                            ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20065 20106])
+                            ("inliers" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20111 20157])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20162 20193]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19960 22645])
+                    ("segmentFromNormals" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22713 22748])
+                            ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22753 22794])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22799 22830]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22651 26767])
+                    ("refineBasedOnRANSAC" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26834 26875])
+                            ("input_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [26880 26932])
+                            ("input_coefficients" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [26937 26999])
+                            ("output_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [27004 27051])
+                            ("output_coefficients" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::ModelCoefficients" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [27056 27113])
+                            ("output_convexes" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ConvexPolygon::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [27118 27167]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26771 29217])
+                    ("estimateNormal" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("input" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29274 29309])
+                            ("output" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29365 29406]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29221 30580])
+                    ("segment" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30635 30681]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30586 31568])
+                    ("updateDiagnosticNormalEstimation" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31648 31698]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31572 33461])
+                    ("updateDiagnosticPlaneSegmentation" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33542 33592]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33465 35115])
+                    ("updateDiagnostics" function
+                       (:parent "OrganizedMultiPlaneSegmentation"
+                        :arguments 
+                          ( ("event" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::TimerEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35180 35209]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35119 35296]))                  
+                :type "namespace")
+                nil [2702 35301])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::OrganizedMultiPlaneSegmentation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35326 35371])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35396 35413]))                  
+                :type "int")
+                nil [35302 35414]))          
+      :file "organized_multi_plane_segmentation_nodelet.cpp"
+      :pointmax 35415
+      :fsize 35446
+      :lastmodtime '(21838 12459 832654 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_MAX_ARITY" variable (:constant-flag t) nil [1816 1841])
+            ("jsk_pcl_ros/supervoxel_segmentation.h" include nil nil [1844 1892])
+            ("pcl/segmentation/supervoxel_clustering.h" include (:system-flag t) nil [1893 1944])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "SupervoxelSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1971 2491])
+                    ("subscribe" function
+                       (:parent "SupervoxelSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2495 2623])
+                    ("unsubscribe" function
+                       (:parent "SupervoxelSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2627 2698])
+                    ("updateDiagnostic" function
+                       (:parent "SupervoxelSegmentation"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2753 2803]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2702 3090])
+                    ("segment" function
+                       (:parent "SupervoxelSegmentation"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3136 3188]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3094 5005])
+                    ("configCallback" function
+                       (:parent "SupervoxelSegmentation"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5054 5069])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5070 5085]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5009 5429]))                  
+                :type "namespace")
+                nil [1945 5431])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [5434 5474])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::SupervoxelSegmentation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5499 5535])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5536 5553]))                  
+                :type "int")
+                nil [5475 5554]))          
+      :file "supervoxel_segmentation_nodelet.cpp"
+      :pointmax 5555
+      :fsize 5554
+      :lastmodtime '(21947 29847 988419 383000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_MAX_ARITY" . ((number "7" 1842 . 1843)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_MAX_ARITY" variable (:constant-flag t) nil [1815 1840])
+            ("jsk_pcl_ros/hinted_stick_finder.h" include nil nil [1843 1887])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [1888 1932])
+            ("pcl/sample_consensus/method_types.h" include (:system-flag t) nil [1933 1979])
+            ("pcl/sample_consensus/model_types.h" include (:system-flag t) nil [1980 2025])
+            ("pcl/segmentation/sac_segmentation.h" include (:system-flag t) nil [2026 2072])
+            ("pcl/filters/project_inliers.h" include (:system-flag t) nil [2073 2113])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [2114 2154])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [2155 2194])
+            ("visualization_msgs/Marker.h" include (:system-flag t) nil [2195 2233])
+            ("geometry_msgs/PoseStamped.h" include (:system-flag t) nil [2234 2272])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "HintedStickFinder"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2300 3347])
+                    ("subscribe" function
+                       (:parent "HintedStickFinder"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3351 4236])
+                    ("cloudCallback" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4286 4338]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4241 4652])
+                    ("hintCallback" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("hint_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4699 4755]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4657 4836])
+                    ("infoCallback" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("info_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4882 4932]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4840 5020])
+                    ("unsubscribe" function
+                       (:parent "HintedStickFinder"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5029 5342])
+                    ("detect" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("polygon_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5382 5441])
+                            ("camera_info_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5446 5503])
+                            ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5508 5560]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5346 7243])
+                    ("normalEstimate" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7291 7340])
+                            ("indices" variable
+                               (:constant-flag t
+                                :type ("pcl::PointIndices::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7345 7382])
+                            ("normals" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("pcl::Normal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7387 7425])
+                            ("normals_cloud" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointXYZ" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7430 7476]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7247 7919])
+                    ("rejected2DHint" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("cylinder" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Cylinder::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7967 7997])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8002 8027])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8032 8057]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7923 8420])
+                    ("fittingCylinder" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("filtered_cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8471 8529])
+                            ("cloud_normals" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8534 8589])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8594 8619])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8624 8649]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8426 12080])
+                    ("filterPointCloud" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12132 12181])
+                            ("polygon" variable
+                               (:constant-flag t
+                                :type ("ConvexPolygon::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12186 12219])
+                            ("output_indices" variable
+                               (:reference 1
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12224 12258]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12086 12874])
+                    ("polygonFromLine" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("polygon_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12938 12997])
+                            ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("image_geometry::PinholeCameraModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13002 13050])
+                            ("a" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13055 13074])
+                            ("b" variable
+                               (:reference 1
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13079 13098]))                          
+                        :type ("ConvexPolygon::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12879 13893])
+                    ("configCallback" function
+                       (:parent "HintedStickFinder"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13936 13951])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13952 13967]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13897 14457]))                  
+                :type "namespace")
+                nil [2274 14459])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [14461 14501])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::HintedStickFinder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14526 14557])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14558 14575]))                  
+                :type "int")
+                nil [14502 14576]))          
+      :file "hinted_stick_finder_nodelet.cpp"
+      :pointmax 14577
+      :fsize 14592
+      :lastmodtime '(21838 12459 828654 983000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_MAX_ARITY" . ((number "7" 1841 . 1842)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/depth_calibration.h" include nil nil [1808 1850])
+            ("jsk_topic_tools/rosparam_utils.h" include (:system-flag t) nil [1851 1894])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [1895 1927])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [1928 1968])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "DepthCalibration"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1996 3010])
+                    ("printModel" function
+                       (:parent "DepthCalibration"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3016 3690])
+                    ("setCalibrationParameter" function
+                       (:parent "DepthCalibration"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :type ("SetDepthCalibrationParameter::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3746 3789])
+                            ("res" variable
+                               (:reference 1
+                                :type ("SetDepthCalibrationParameter::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3794 3838]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3694 4113])
+                    ("subscribe" function
+                       (:parent "DepthCalibration"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4117 4493])
+                    ("unsubscribe" function
+                       (:parent "DepthCalibration"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4499 4613])
+                    ("calibrate" function
+                       (:parent "DepthCalibration"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4657 4697])
+                            ("camera_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4704 4757]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4617 5701])
+                    ("updateDiagnostic" function
+                       (:parent "DepthCalibration"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5752 5802]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5705 5810]))                  
+                :type "namespace")
+                nil [1970 5813])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [5814 5854])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::DepthCalibration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5879 5909])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5936 5953]))                  
+                :type "int")
+                nil [5855 5954]))          
+      :file "depth_calibration_nodelet.cpp"
+      :pointmax 5955
+      :fsize 5982
+      :lastmodtime '(21838 12459 824654 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/region_growing_segmentation.h" include nil nil [1824 1876])
+            ("jsk_recognition_msgs/ClusterPointIndices.h" include nil nil [1878 1931])
+            ("pcl/segmentation/impl/region_growing.hpp" include (:system-flag t) nil [1932 1983])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [1984 2024])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [2026 2070])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "RegionGrowingSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2099 2511])
+                    ("subscribe" function
+                       (:parent "RegionGrowingSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2515 2649])
+                    ("unsubscribe" function
+                       (:parent "RegionGrowingSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2653 2727])
+                    ("configCallback" function
+                       (:parent "RegionGrowingSegmentation"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2778 2793])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2794 2809]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2731 3403])
+                    ("segment" function
+                       (:parent "RegionGrowingSegmentation"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3447 3493]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3407 4652]))                  
+                :type "namespace")
+                nil [2072 4657])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::RegionGrowingSegmentation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4683 4722])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4747 4764]))                  
+                :type "int")
+                nil [4659 4765]))          
+      :file "region_growing_segmentation_nodelet.cpp"
+      :pointmax 4766
+      :fsize 4765
+      :lastmodtime '(21821 44195 609685 588000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [1808 1852])
+            ("jsk_pcl_ros/geo_util.h" include nil nil [1853 1886])
+            ("jsk_pcl_ros/region_growing_multiple_plane_segmentation.h" include nil nil [1887 1954])
+            ("pcl/segmentation/conditional_euclidean_clustering.h" include (:system-flag t) nil [1955 2017])
+            ("pcl/sample_consensus/method_types.h" include (:system-flag t) nil [2018 2064])
+            ("pcl/sample_consensus/model_types.h" include (:system-flag t) nil [2065 2110])
+            ("pcl/segmentation/sac_segmentation.h" include (:system-flag t) nil [2111 2157])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2186 2877])
+                    ("subscribe" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2881 3324])
+                    ("unsubscribe" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3328 3455])
+                    ("configCallback" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3524 3539])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3540 3555]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3459 4053])
+                    ("ransacEstimation" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4124 4176])
+                            ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointIndices::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4181 4219])
+                            ("inliers" variable
+                               (:reference 1
+                                :type ("pcl::PointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4224 4251])
+                            ("coefficient" variable
+                               (:reference 1
+                                :type ("pcl::ModelCoefficients" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4256 4292]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4057 4703])
+                    ("segment" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4767 4813])
+                            ("normal_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4818 4871]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4709 8378])
+                    ("updateDiagnostic" function
+                       (:parent "RegionGrowingMultiplePlaneSegmentation"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8451 8501]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8382 8510])
+                    ("RegionGrowingMultiplePlaneSegmentation::global_angular_threshold" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8516 8594])
+                    ("RegionGrowingMultiplePlaneSegmentation::global_distance_threshold" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [8597 8676])
+                    ("RegionGrowingMultiplePlaneSegmentation::global_custom_condigion_function_mutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [8679 8771]))                  
+                :type "namespace")
+                nil [2159 8773])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [8775 8815])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::RegionGrowingMultiplePlaneSegmentation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8840 8892])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8893 8910]))                  
+                :type "int")
+                nil [8816 8911]))          
+      :file "region_growing_multiple_plane_segmentation_nodelet.cpp"
+      :pointmax 8912
+      :fsize 10768
+      :lastmodtime '(22050 16662 384907 532000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/color_filter.h" include nil nil [1787 1824])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [1826 1866])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "RGBColorFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1912 2079])
+                    ("updateCondition" function
+                       (:parent "RGBColorFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2083 3728])
+                    ("configCallback" function
+                       (:parent "RGBColorFilter"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("jsk_pcl_ros::RGBColorFilterConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3768 3810])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3811 3826]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3732 4100])
+                    ("onInit" function
+                       (:parent "HSIColorFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4120 4291])
+                    ("updateCondition" function
+                       (:parent "HSIColorFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4295 5936])
+                    ("configCallback" function
+                       (:parent "HSIColorFilter"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("jsk_pcl_ros::HSIColorFilterConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5976 6018])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6019 6034]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5940 6308])
+                    ("filter" function
+                       (:template 
+                          ( ("PackedComparison" type (:type "class") nil nil)
+                            ("Config" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6440 6486])
+                            ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PCLIndicesMsg::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6517 6556]))                          
+                        :parent "ColorFilter")
+                        (reparse-symbol namespacesubparts) [6336 7091])
+                    ("filter" function
+                       (:template 
+                          ( ("PackedComparison" type (:type "class") nil nil)
+                            ("Config" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7199 7245]))                          
+                        :parent "ColorFilter")
+                        (reparse-symbol namespacesubparts) [7095 7299])
+                    ("onInit" function
+                       (:template 
+                          ( ("PackedComparison" type (:type "class") nil nil)
+                            ("Config" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "ColorFilter")
+                        (reparse-symbol namespacesubparts) [7303 7909])
+                    ("subscribe" function
+                       (:template 
+                          ( ("PackedComparison" type (:type "class") nil nil)
+                            ("Config" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "ColorFilter")
+                        (reparse-symbol namespacesubparts) [7913 8531])
+                    ("unsubscribe" function
+                       (:template 
+                          ( ("PackedComparison" type (:type "class") nil nil)
+                            ("Config" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "ColorFilter")
+                        (reparse-symbol namespacesubparts) [8535 8747]))                  
+                :type "namespace")
+                nil [1868 8752])
+            ("RGBColorFilter" type
+               (:typedef ("jsk_pcl_ros::RGBColorFilter" type (:type "class") nil nil)
+                :type "typedef")
+                nil [8754 8805])
+            ("HSIColorFilter" type
+               (:typedef ("jsk_pcl_ros::HSIColorFilter" type (:type "class") nil nil)
+                :type "typedef")
+                nil [8806 8857])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::RGBColorFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8882 8910])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8911 8928]))                  
+                :type "int")
+                nil [8858 8929])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::HSIColorFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8954 8982])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8983 9000]))                  
+                :type "int")
+                nil [8930 9001]))          
+      :file "color_filter_nodelet.cpp"
+      :pointmax 9002
+      :fsize 9001
+      :lastmodtime '(21821 44195 605685 587000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/color_histogram_matcher.h" include nil nil [1808 1856])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [1857 1897])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [1898 1938])
+            ("pcl/point_types_conversion.h" include (:system-flag t) nil [1939 1978])
+            ("pcl/common/centroid.h" include (:system-flag t) nil [1979 2011])
+            ("geometry_msgs/PoseStamped.h" include (:system-flag t) nil [2012 2050])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "ColorHistogramMatcher"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2078 3017])
+                    ("subscribe" function
+                       (:parent "ColorHistogramMatcher"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3021 3749])
+                    ("unsubscribe" function
+                       (:parent "ColorHistogramMatcher"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3753 3936])
+                    ("configCallback" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3983 3998])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3999 4014]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3940 5024])
+                    ("feature" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("input_cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5074 5128])
+                            ("input_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndices::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5135 5208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5031 10751])
+                    ("bhattacharyyaCoefficient" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10810 10838])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10839 10867]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [10755 11115])
+                    ("computeHistogram" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointXYZHSV" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11171 11218])
+                            ("output" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11223 11250])
+                            ("policy" variable
+                               (:constant-flag t
+                                :type ("ComparePolicy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11255 11282]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11121 12861])
+                    ("reference" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("input_cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12910 12964]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12867 13601])
+                    ("referenceHistogram" function
+                       (:parent "ColorHistogramMatcher"
+                        :arguments 
+                          ( ("input_histogram" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ColorHistogram::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13659 13729]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13607 13956]))                  
+                :type "namespace")
+                nil [2052 13961])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::ColorHistogramMatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13987 14022])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14047 14064]))                  
+                :type "int")
+                nil [13963 14065]))          
+      :file "color_histogram_matcher_nodelet.cpp"
+      :pointmax 14066
+      :fsize 14097
+      :lastmodtime '(21838 12459 824654 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/region_adjacency_graph.h" include (:system-flag t) nil [1808 1855])
+            ("jsk_topic_tools/log_utils.h" include (:system-flag t) nil [1856 1894])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("RegionAdjacencyGraph" function
+                       (:constructor-flag t
+                        :parent "RegionAdjacencyGraph"
+                        :type ("RegionAdjacencyGraph" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1925 2012])
+                    ("generateRAG" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("cloud_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2136 2200])
+                            ("normal_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2205 2276])
+                            ("centroids" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2281 2333])
+                            ("neigbor_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2338 2386])
+                            ("edge_weight_criteria" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2391 2422]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2092 7695])
+                    ("getCloudClusterWeightFunction" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("_points" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("Eigen::Vector3f" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7903 7961])
+                            ("_normal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("Eigen::Vector3f" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7966 8024]))                          
+                        :parent "RegionAdjacencyGraph")
+                        (reparse-symbol namespacesubparts) [7823 9787])
+                    ("getVectorAngle" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("vector1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10466 10497])
+                            ("vector2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10502 10533])
+                            ("indegree" variable (:type "bool") (reparse-symbol arg-sub-list) [10538 10552]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [10418 10697])
+                    ("convexityCriterion" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("center_point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10867 10903])
+                            ("n1_point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10908 10940])
+                            ("center_normal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10945 10982])
+                            ("neigbour_normal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10987 11026]))                          
+                        :parent "RegionAdjacencyGraph")
+                        (reparse-symbol namespacesubparts) [10798 11287])
+                    ("sampleRandomPointsFromCloudCluster" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11368 11403])
+                            ("normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11408 11449])
+                            ("point_vector" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Eigen::Vector3f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11454 11497])
+                            ("normal_vector" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Eigen::Vector3f" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11502 11546])
+                            ("gen_sz" variable (:type "int") (reparse-symbol arg-sub-list) [11551 11562]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11301 11959])
+                    ("splitMergeRAG" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("c_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12082 12142])
+                            ("n_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12147 12213])
+                            ("edge_weight_criteria" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [12218 12249])
+                            ("_threshold" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [12254 12275]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12036 20898])
+                    ("getEdgeWeight" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("rpy_1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20951 20972])
+                            ("rpy_2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20973 20994])
+                            ("color_1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20999 21022])
+                            ("color_2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21023 21046]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [20904 21345])
+                    ("mergePointCloud" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("cloud_1" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21453 21496])
+                            ("cloud_2" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21501 21544])
+                            ("normal_1" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21549 21598])
+                            ("normal_2" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21603 21652])
+                            ("out_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21657 21696])
+                            ("out_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21701 21746]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21405 22422])
+                    ("getCommonNeigbour" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("c1_neigbour" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22552 22588])
+                            ("c2_neigbour" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22593 22629]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [22503 22979])
+                    ("getCloudClusterLabels" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("labelMD" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23091 23117]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23037 23307])
+                    ("printGraph" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("_graph" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23378 23398]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23335 23651])
+                    ("computeCloudClusterRPYHistogram" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("_cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23837 23879])
+                            ("_normal" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23884 23932])
+                            ("_histogram" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23937 23957]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23773 24648])
+                    ("computeColorHistogram" function
+                       (:parent "RegionAdjacencyGraph"
+                        :arguments 
+                          ( ("_cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24705 24747])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24752 24766])
+                            ("hBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [24767 24782])
+                            ("sBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [24783 24798])
+                            ("is_norm" variable (:type "bool") (reparse-symbol arg-sub-list) [24799 24812]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24651 25594]))                  
+                :type "namespace")
+                nil [1896 25596]))          
+      :file "region_adjacency_graph.cpp"
+      :pointmax 25623
+      :fsize 15226
+      :lastmodtime '(21890 59387 843906 559000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/convex_connected_voxels.h" include (:system-flag t) nil [1808 1856])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1889 2133])
+                    ("subscribe" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2139 2514])
+                    ("unsubscribe" function
+                       (:parent "ConvexConnectedVoxels"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2523 2638])
+                    ("updateDiagnostic" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2697 2747]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2644 3058])
+                    ("cloud_cb" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3112 3164]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3067 4963])
+                    ("indices_cb" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("indices_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5016 5077]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4969 5492])
+                    ("segmentCloud" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5551 5592])
+                            ("indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5601 5647])
+                            ("cloud_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5656 5714])
+                            ("normal_clusters" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5723 5787])
+                            ("centroids" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5796 5842]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5501 7218])
+                    ("estimatePointCloudNormals" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7289 7330])
+                            ("s_normal" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7338 7381])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7389 7401])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [7402 7422])
+                            ("ksearch" variable (:type "bool") (reparse-symbol arg-sub-list) [7423 7436]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7227 7839])
+                    ("nearestNeigborSearch" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7901 7943])
+                            ("pointIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7950 7995])
+                            ("k" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8002 8014])
+                            ("radius" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8015 8035])
+                            ("isneigbour" variable (:type "bool") (reparse-symbol arg-sub-list) [8036 8052]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7845 8754])
+                    ("getConvexLabelCloudIndices" function
+                       (:parent "ConvexConnectedVoxels"
+                        :arguments 
+                          ( ("cloud_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("pcl::PointCloud::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8822 8886])
+                            ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8894 8929])
+                            ("labelMD" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8937 8969])
+                            ("all_indices" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil)
+                                          ("pcl::PointIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8977 9023]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8759 9876]))                  
+                :type "namespace")
+                nil [1858 9878])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [9906 9946])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::ConvexConnectedVoxels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9970 10005])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10006 10023]))                  
+                :type "int")
+                nil [9947 10024]))          
+      :file "convex_connected_voxels_nodelet.cpp"
+      :pointmax 10025
+      :fsize 10059
+      :lastmodtime '(21934 16209 760017 127000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_MAX_ARITY" variable (:constant-flag t) nil [1816 1841])
+            ("jsk_pcl_ros/mask_image_filter.h" include nil nil [1844 1886])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [1887 1919])
+            ("image_geometry/pinhole_camera_model.h" include (:system-flag t) nil [1920 1968])
+            ("jsk_pcl_ros/pcl_conversion_util.h" include nil nil [1969 2013])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [2014 2054])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "MaskImageFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2082 2264])
+                    ("subscribe" function
+                       (:parent "MaskImageFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2268 2635])
+                    ("unsubscribe" function
+                       (:parent "MaskImageFilter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2639 2761])
+                    ("infoCalback" function
+                       (:parent "MaskImageFilter"
+                        :arguments 
+                          ( ("info_ms" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::CameraInfo::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2806 2855]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2767 2935])
+                    ("imageCalback" function
+                       (:parent "MaskImageFilter"
+                        :arguments 
+                          ( ("mask_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2979 3024]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2939 3219])
+                    ("filter" function
+                       (:parent "MaskImageFilter"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3257 3309]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3223 4175]))                  
+                :type "namespace")
+                nil [2056 4177])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [4179 4219])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::MaskImageFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4244 4273])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4274 4291]))                  
+                :type "int")
+                nil [4220 4292]))          
+      :file "mask_image_filter_nodelet.cpp"
+      :pointmax 4295
+      :fsize 4291
+      :lastmodtime '(21890 58802 87909 707000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_MAX_ARITY" . ((number "7" 1842 . 1843)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_topic_tools/log_utils.h" include (:system-flag t) nil [1804 1842])
+            ("jsk_pcl_ros/particle_filter_tracking.h" include nil nil [1843 1892])
+            ("pcl/tracking/impl/distance_coherence.hpp" include (:system-flag t) nil [1893 1944])
+            ("pcl/tracking/impl/approx_nearest_pair_point_cloud_coherence.hpp" include (:system-flag t) nil [1945 2019])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [2020 2060])
+            ("jsk_topic_tools/rosparam_utils.h" include (:system-flag t) nil [2061 2104])
+            ("pcl::tracking" using (:type ("pcl::tracking" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2106 2136])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("onInit" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2203 2208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2167 8325])
+                    ("config_callback" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8374 8389])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8390 8405]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8329 9782])
+                    ("publish_particles" function
+                       (:parent "ParticleFilterTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9822 10771])
+                    ("publish_result" function
+                       (:parent "ParticleFilterTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10814 12261])
+                    ("reference_frame_id" function
+                       (:parent "ParticleFilterTracking"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12267 12454])
+                    ("reset_tracking_target_model" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("recieved_target_cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12522 12585]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12460 14239])
+                    ("change_pointcloud_frame" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14313 14348]))                          
+                        :type ("tf::Transform" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14246 15306])
+                    ("cloud_cb" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("pc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15396 15431]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15358 16271])
+                    ("renew_model_topic_cb" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("pc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16330 16365]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16275 16593])
+                    ("renew_model_with_marker_topic_cb" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("marker" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("visualization_msgs::Marker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16659 16700]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16597 17491])
+                    ("renew_model_with_box_topic_cb" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("pc_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17559 17608])
+                            ("bb_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::BoundingBox::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17613 17671]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17495 17966])
+                    ("renew_model_cb" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :type ("jsk_pcl_ros::SetPointCloud2::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18021 18063])
+                            ("res" variable
+                               (:reference 1
+                                :type ("jsk_pcl_ros::SetPointCloud2::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18068 18111]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [17972 18363])
+                    ("tracker_set_trans" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("trans" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18419 18448]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18367 18691])
+                    ("tracker_set_step_noise_covariance" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("covariance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18763 18801]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18695 18966])
+                    ("tracker_set_initial_noise_covariance" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("covariance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19041 19079]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18970 19250])
+                    ("tracker_set_initial_noise_mean" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("mean" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19319 19351]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19254 19498])
+                    ("tracker_set_iteration_num" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("num" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19557 19571]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19502 19708])
+                    ("tracker_set_particle_num" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("num" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19766 19780]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19712 19915])
+                    ("tracker_set_resample_likelihood_thr" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("thr" variable (:type "double") (reparse-symbol arg-sub-list) [19984 19995]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19919 20150])
+                    ("tracker_set_use_normal" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("use_normal" variable (:type "bool") (reparse-symbol arg-sub-list) [20206 20222]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20154 20367])
+                    ("tracker_set_cloud_coherence" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("" variable (:type ("ApproxNearestPairPointCloudCoherence" type
+                                 (:template-specifier 
+                                    ( ("PointT" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [20435 20480])
+                            ("coherence" variable (:type ("Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20481 20495]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20373 20648])
+                    ("tracker_set_maximum_particle_num" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [20714 20722]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20652 20802])
+                    ("tracker_set_delta" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("delta" variable (:type "double") (reparse-symbol arg-sub-list) [20855 20868]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20808 20937])
+                    ("tracker_set_epsilon" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("epsilon" variable (:type "double") (reparse-symbol arg-sub-list) [20992 21007]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20943 21080])
+                    ("tracker_set_bin_size" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("bin_size" variable
+                               (:constant-flag t
+                                :type ("ParticleXYZRPY" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21141 21171]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21086 21245])
+                    ("tracker_get_particles" function
+                       (:parent "ParticleFilterTracking"
+                        :type ("ParticleFilterTracking::PointCloudStatePtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21249 21481])
+                    ("tracker_get_result" function
+                       (:parent "ParticleFilterTracking"
+                        :type ("ParticleXYZRPY" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21485 21678])
+                    ("tracker_to_eigen_matrix" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("result" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParticleXYZRPY" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21751 21780]))                          
+                        :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21682 21934])
+                    ("tracker_get_reference_cloud" function
+                       (:parent "ParticleFilterTracking"
+                        :type ("pcl::PointCloud::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21938 22201])
+                    ("tracker_set_reference_cloud" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("ref" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22267 22300]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22205 22442])
+                    ("tracker_reset_tracking" function
+                       (:parent "ParticleFilterTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22446 22627])
+                    ("tracker_set_input_cloud" function
+                       (:parent "ParticleFilterTracking"
+                        :arguments 
+                          ( ("input" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22689 22724]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22631 22862])
+                    ("tracker_compute" function
+                       (:parent "ParticleFilterTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22865 23027]))                  
+                :type "namespace")
+                nil [2138 23029])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::ParticleFilterTracking" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23055 23091])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23092 23109]))                  
+                :type "int")
+                nil [23031 23110]))          
+      :file "particle_filter_tracking_nodelet.cpp"
+      :pointmax 23111
+      :fsize 23110
+      :lastmodtime '(21981 48061 768182 168000)
+      :unmatched-syntax '((punctuation 20480 . 20481) (punctuation 20479 . 20480)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("jsk_pcl_ros/target_adaptive_tracking.h" include (:system-flag t) nil [91 140])
+            ("map" include (:system-flag t) nil [141 155])
+            ("jsk_pcl_ros" type
+               (:members 
+                  ( ("TargetAdaptiveTracking" function
+                       (:constructor-flag t
+                        :parent "TargetAdaptiveTracking"
+                        :type ("TargetAdaptiveTracking" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [185 589])
+                    ("onInit" function
+                       (:parent "TargetAdaptiveTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [594 2450])
+                    ("subscribe" function
+                       (:parent "TargetAdaptiveTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2455 3456])
+                    ("unsubscribe" function
+                       (:parent "TargetAdaptiveTracking"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3461 3671])
+                    ("updateDiagnostic" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("stat" variable
+                               (:reference 1
+                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3730 3780]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3676 4092])
+                    ("objInitCallback" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4149 4201])
+                            ("bkgd_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4208 4259])
+                            ("pose_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PoseStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4266 4319]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4097 5650])
+                    ("processInitCloud" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5708 5749])
+                            ("object_reference" variable (:type ("ModelsPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5756 5783]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5655 6760])
+                    ("callback" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6810 6862])
+                            ("pose_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PoseStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6869 6922]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6765 11884])
+                    ("voxelizeAndProcessPointCloud" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11954 11995])
+                            ("supervoxel_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12002 12086])
+                            ("supervoxel_adjacency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12093 12155])
+                            ("supervoxel_list" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AdjacentInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12162 12205])
+                            ("models" variable
+                               (:reference 1
+                                :type ("TargetAdaptiveTracking::ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12212 12254])
+                            ("norm_flag" variable (:type "bool") (reparse-symbol arg-sub-list) [12261 12276])
+                            ("feat_flag" variable (:type "bool") (reparse-symbol arg-sub-list) [12277 12292])
+                            ("cent_flag" variable (:type "bool") (reparse-symbol arg-sub-list) [12293 12308])
+                            ("neigh_pfh" variable (:type "bool") (reparse-symbol arg-sub-list) [12309 12324]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11889 15555])
+                    ("targetDescriptiveSurfelsEstimationAndUpdate" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15640 15675])
+                            ("transformation_matrix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15682 15727])
+                            ("motion_disp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TargetAdaptiveTracking::PointXYZRPY" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15734 15789])
+                            ("header" variable
+                               (:constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15796 15826]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15560 49465])
+                    ("processVoxelForReferenceModel" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("supervoxel_clusters" variable
+                               (:constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [49536 49612])
+                            ("supervoxel_adjacency" variable
+                               (:constant-flag t
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [49619 49680])
+                            ("match_index" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [49687 49714])
+                            ("ref_model" variable
+                               (:pointer 1
+                                :type ("TargetAdaptiveTracking::ReferenceModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [49721 49771]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [49470 51794])
+                    ("targetCandidateToReferenceLikelihood" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("reference_model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TargetAdaptiveTracking::ReferenceModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51890 51952])
+                            ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51959 52000])
+                            ("normal" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [52007 52054])
+                            ("centroid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [52061 52093])
+                            ("voxel_model" variable
+                               (:pointer 1
+                                :type ("ReferenceModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [52100 52128]))                          
+                        :parent "TargetAdaptiveTracking")
+                        (reparse-symbol namespacesubparts) [51799 53544])
+                    ("localVoxelConvexityLikelihood" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("c_centroid" variable (:type ("Eigen::Vector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53633 53660])
+                            ("c_normal" variable (:type ("Eigen::Vector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53667 53692])
+                            ("n_centroid" variable (:type ("Eigen::Vector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53699 53726])
+                            ("n_normal" variable (:type ("Eigen::Vector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53733 53758]))                          
+                        :parent "TargetAdaptiveTracking")
+                        (reparse-symbol namespacesubparts) [53549 54292])
+                    ("backgroundReferenceLikelihood" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("background_reference" variable
+                               (:constant-flag t
+                                :type ("ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [54363 54400])
+                            ("target_voxels" variable
+                               (:constant-flag t
+                                :type ("ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [54407 54437])
+                            ("max_prob" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("uint32_t" type nil nil nil)
+                                      ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [54444 54479]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [54297 55337])
+                    ("estimatePointCloudNormals" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [55425 55466])
+                            ("normals" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55473 55515])
+                            ("k" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [55522 55532])
+                            ("use_knn" variable (:type "bool") (reparse-symbol arg-sub-list) [55533 55546]))                          
+                        :parent "TargetAdaptiveTracking"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [55342 56033])
+                    ("computeCloudClusterRPYHistogram" function
+                       (:methodconst-flag t
+                        :parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56106 56147])
+                            ("normal" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56154 56201])
+                            ("histogram" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56208 56227]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56038 59007])
+                    ("computeColorHistogram" function
+                       (:methodconst-flag t
+                        :parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [59070 59111])
+                            ("hist" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [59118 59132])
+                            ("hBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [59133 59148])
+                            ("sBin" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [59149 59164])
+                            ("is_norm" variable (:type "bool") (reparse-symbol arg-sub-list) [59165 59178]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [59012 60013])
+                    ("computePointFPFH" function
+                       (:methodconst-flag t
+                        :parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [60071 60112])
+                            ("normals" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [60119 60167])
+                            ("histogram" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [60174 60193])
+                            ("holistic" variable (:type "bool") (reparse-symbol arg-sub-list) [60194 60208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [60018 61500])
+                    ("clusterPointIndicesToPointIndices" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("indices_mgs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndicesConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [61609 61678]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices::Ptr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [61505 62055])
+                    ("estimatedPFPose" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("pose_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PoseStamped::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [62112 62165])
+                            ("motion_displacement" variable
+                               (:reference 1
+                                :type ("PointXYZRPY" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [62172 62205]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [62060 63901])
+                    ("compute3DCentroids" function
+                       (:methodconst-flag t
+                        :parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [63961 64002])
+                            ("centre" variable
+                               (:reference 1
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64009 64033]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [63906 64418])
+                    ("cloudMeanNormal" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("normal" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64486 64533])
+                            ("isnorm" variable (:type "bool") (reparse-symbol arg-sub-list) [64540 64552]))                          
+                        :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [64423 65385])
+                    ("computeScatterMatrix" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [65447 65488])
+                            ("centroid" variable
+                               (:constant-flag t
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [65495 65526]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [65390 66416])
+                    ("computeCoherency" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("dist" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [66475 66492])
+                            ("weight" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [66493 66512]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [66421 66645])
+                    ("convertVector4fToPointXyzRgbNormal" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("centroid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [66742 66774])
+                            ("normal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [66781 66811])
+                            ("color" variable
+                               (:constant-flag t
+                                :type ("cv::Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [66818 66841]))                          
+                        :type ("pcl::PointXYZRGBNormal" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66650 67150])
+                    ("getRotationMatrixFromRPY" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("motion_displacement" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointXYZRPY" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67240 67279])
+                            ("rotation" variable
+                               (:reference 1
+                                :type ("Eigen::Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("3")
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [67286 67319]))                          
+                        :parent "TargetAdaptiveTracking")
+                        (reparse-symbol namespacesubparts) [67155 67802])
+                    ("computeLocalPairwiseFeautures" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("supervoxel_clusters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [67873 67957])
+                            ("adjacency_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("std::vector" type (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [67958 68030])
+                            ("histogram" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68031 68050])
+                            ("feature_count" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [68051 68075]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [67807 72400])
+                    ("templateCloudFilterLenght" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [72469 72510]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [72406 72964])
+                    ("filterPointCloud" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73022 73057])
+                            ("tracker_position" variable
+                               (:constant-flag t
+                                :type ("Eigen::Vector4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73064 73103])
+                            ("template_model" variable
+                               (:constant-flag t
+                                :type ("ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73110 73141])
+                            ("scaling_factor" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [73148 73175]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [72969 74860])
+                    ("transformModelPrimitives" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("obj_ref" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [74926 74951])
+                            ("trans_models" variable (:type ("ModelsPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74958 74981])
+                            ("transform_model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Affine3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [74988 75027]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [74865 75791])
+                    ("filterCloudForBoundingBoxViz" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75861 75896])
+                            ("background_reference" variable
+                               (:constant-flag t
+                                :type ("ModelsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [75903 75940])
+                            ("threshold" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [75947 75969]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [75796 77777])
+                    ("plotJetColour" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("U" type (:type "class") nil nil)
+                            ("V" type (:type "class") nil nil))                          
+                        :type ("cv::Scalar" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("v" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77886 77890])
+                            ("vmin" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77891 77898])
+                            ("vmax" variable (:type ("V" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77899 77906]))                          
+                        :parent "TargetAdaptiveTracking")
+                        (reparse-symbol namespacesubparts) [77782 78538])
+                    ("supervoxelSegmentation" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [78602 78643])
+                            ("supervoxel_clusters" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [78650 78721])
+                            ("supervoxel_adjacency" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [78728 78784])
+                            ("seed_resolution" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [78791 78819]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [78543 79511])
+                    ("supervoxelSegmentation" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("cloud" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [79575 79616])
+                            ("supervoxel_clusters" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [79623 79694])
+                            ("supervoxel_adjacency" variable
+                               (:reference 1
+                                :type ("std::multimap" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [79701 79757]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [79516 80448])
+                    ("publishSupervoxel" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("supervoxel_clusters" variable
+                               (:constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil)
+                                          ("pcl::Supervoxel::Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [80507 80582])
+                            ("ros_cloud" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80589 80625])
+                            ("ros_indices" variable
+                               (:reference 1
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80632 80687])
+                            ("header" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::Header" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80694 80725]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [80453 81759])
+                    ("targetDescriptiveSurfelsIndices" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("sv_indices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81832 81892])
+                            ("tdp_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [81899 81937])
+                            ("ros_indices" variable
+                               (:reference 1
+                                :type ("jsk_recognition_msgs::ClusterPointIndices" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81944 81999]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [81764 82300])
+                    ("configCallback" function
+                       (:parent "TargetAdaptiveTracking"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("Config" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [82359 82374])
+                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82375 82390]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [82308 83568]))                  
+                :type "namespace")
+                nil [157 83570])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [83572 83612])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_pcl_ros::TargetAdaptiveTracking" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83636 83672])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83673 83690]))                  
+                :type "int")
+                nil [83613 83691]))          
+      :file "target_adaptive_tracking_nodelet.cpp"
+      :pointmax 83692
+      :fsize 83691
+      :lastmodtime '(22053 2255 446117 613000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!jsk-ros-pkg!jsk_recognition!jsk_pcl_ros!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

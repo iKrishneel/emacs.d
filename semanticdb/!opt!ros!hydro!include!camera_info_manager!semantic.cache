@@ -1,0 +1,259 @@
+;; Object camera_info_manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "camera_info_manager/"
+  :tables
+  (list
+    (semanticdb-table "camera_info_manager.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CAMERA_INFO_MANAGER_H_" variable (:constant-flag t) nil [1826 1849])
+            ("ros/ros.h" include (:system-flag t) nil [1851 1871])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1872 1905])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [1906 1941])
+            ("sensor_msgs/SetCameraInfo.h" include (:system-flag t) nil [1942 1980])
+            ("camera_info_manager" type
+               (:members 
+                  ( ("CameraInfoManager" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6818 6825])
+                            ("CameraInfoManager" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6847 6866])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"camera\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6887 6920])
+                                    ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6942 6967]))                                  
+                                :type ("CameraInfoManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6829 6969])
+                            ("getCameraInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7011 7016]))                                  
+                                :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6973 7017])
+                            ("isCalibrated" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7038 7043]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7020 7044])
+                            ("loadCameraInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7067 7090]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7047 7091])
+                            ("resolveURL" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7117 7140])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7166 7191]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7094 7192])
+                            ("setCameraName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7214 7239]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7195 7240])
+                            ("setCameraInfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("camera_info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7262 7305]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7243 7306])
+                            ("validateURL" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7326 7349]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7309 7350])
+                            ("private" label nil (reparse-symbol classsubparts) [7353 7361])
+                            ("url_type_t" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("URL_empty" variable
+                                             (:constant-flag t
+                                              :default-value (7452 7453)
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [7440 7453])
+                                          ("URL_file" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [7489 7498])
+                                          ("URL_package" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [7531 7543])
+                                          ("URL_invalid" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [7605 7617])
+                                          ("URL_flash" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [7664 7674]))                                        
+                                      :type "enum")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7391 7719])
+                            ("getPackageFileName" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7775 7798]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7744 7799])
+                            ("loadCalibration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7823 7846])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7870 7895]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7802 7896])
+                            ("loadCalibrationFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7924 7952])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7980 8005]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7899 8006])
+                            ("parseURL" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8029 8052]))                                  
+                                :type ("url_type_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8009 8053])
+                            ("saveCalibration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("new_info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8077 8117])
+                                    ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8141 8164])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8188 8213]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8056 8214])
+                            ("saveCalibrationFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("new_info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::CameraInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8242 8282])
+                                    ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8310 8338])
+                                    ("cname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8366 8391]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8217 8392])
+                            ("setCameraInfoService" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("req" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::SetCameraInfo::Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8421 8462])
+                                    ("rsp" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::SetCameraInfo::Response" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8491 8533]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8395 8534])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8928 8948])
+                            ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8970 8990])
+                            ("info_service_" variable (:type ("ros::ServiceServer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9039 9072])
+                            ("camera_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9108 9133])
+                            ("url_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9165 9182])
+                            ("cam_info_" variable (:type ("sensor_msgs::CameraInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9235 9269])
+                            ("loaded_cam_info_" variable (:type "bool") (reparse-symbol classsubparts) [9299 9321]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6791 9370]))                  
+                :type "namespace")
+                nil [2063 9400]))          
+      :file "camera_info_manager.h"
+      :pointmax 9470
+      :fsize 9469
+      :lastmodtime '(21534 41540 0 0)
+      :unmatched-syntax '((punctuation 9400 . 9401))
+      :lexical-table 
+        '(("_CAMERA_INFO_MANAGER_H_")
+          )
+))
+  :file "!opt!ros!hydro!include!camera_info_manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

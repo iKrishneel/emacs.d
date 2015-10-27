@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("test_icp/test_icp.h" include (:system-flag t) nil [2 32])
+            ("TestICP" function
+               (:constructor-flag t
+                :parent "TestICP"
+                :type ("TestICP" type (:type "class") nil nil))
+                nil [34 60])
+            ("onInit" function
+               (:parent "TestICP"
+                :type "void")
+                nil [62 92])
+            ("subscribe" function
+               (:parent "TestICP"
+                :type "void")
+                nil [94 127])
+            ("unsubscribe" function
+               (:parent "TestICP"
+                :type "void")
+                nil [129 164])
+            ("cloudCallback" function
+               (:parent "TestICP"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [199 252]))                  
+                :type "void")
+                nil [166 260])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [272 281])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [282 295]))                  
+                :type "int")
+                nil [263 386]))          
+      :file "test_icp_node.cpp"
+      :pointmax 387
+      :fsize 386
+      :lastmodtime '(22043 42167 305679 118000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!test_icp!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

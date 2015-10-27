@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LATEX" variable (:default-value ("pdflatex")) nil [29 46])
+            ("BIBTEX" variable (:default-value ("bibtex")) nil [46 62])
+            ("MAKEINDEX" variable (:default-value ("makeindex")) nil [62 84])
+            ("RERUN" variable (:default-value ("\"(There were undefined references|Rerun to get (cross-references|the bars) right)\"")) nil [85 176])
+            ("RERUNBIB" variable (:default-value ("\"No file.*\\.bbl|Citation.*undefined\"")) nil [176 224])
+            ("MAKEIDX" variable (:default-value ("\"^[^%]*\\\\makeindex\"")) nil [224 254])
+            ("MPRINT" variable (:default-value ("\"^[^%]*print\"")) nil [254 277])
+            ("USETHUMBS" variable (:default-value ("\"^[^%]*thumbpdf\"")) nil [277 306])
+            ("SRC" variable (:default-value ("$(shell egrep -l '^[^%]*\\\\begin\\{document\\}' *.tex)")) nil [307 366])
+            ("BIBFILE" variable (:default-value ("$(shell perl -ne '($$_)=/^[^%]*\\\\bibliography\\{(.*?)\\}/;@_=split /,/;foreach $$b (@_) {print \"$$b.bib \"}' $(SRC))")) nil [366 491])
+            ("PDFPICS" variable (:default-value ("$(shell perl -ne '@foo=/^[^%]*\\\\(includegraphics)(\\[.*?\\])?\\{(.*?)\\}/g;
+	if (defined($$foo[2])) { if ($$foo[2] =~ /.pdf $$/) { print \"$$foo[2] \"; } 
+	else { print \"$$foo[2].pdf \"; }}' *.tex)")) nil [492 694])
+            ("DEP" variable (:default-value ("*.tex")) nil [694 706])
+            ("TRG" variable (:default-value ("$(SRC:%.tex=%.pdf)")) nil [707 732])
+            ("RM" variable (:default-value ("rm" "-f")) nil [820 831])
+            ("OUTDATED" variable (:default-value ("echo" "\"EPS-file is out-of-date!\"" "&&" "false")) nil [831 883])
+            ("all" function (:arguments ("$(TRG)")) nil [885 899])
+            ("$(TRG)" function (:arguments ("%.pdf" ":" "%.tex" "$(DEP)" "$(PDFPICS)" "$(BIBFILE)")) nil [1483 1552])
+            ("clean" function nil nil [1553 1687])
+            (".PHONY" function (:arguments ("all" "show" "clean" "ps" "pdf" "showps")) nil [1688 1726])
+            ("view" function nil nil [1727 1750])
+            ("osx" function nil nil [1751 1769])
+            ("%.pdf" function (:arguments ("%.eps")) nil [1878 1923]))          
+      :file "Makefile"
+      :pointmax 1923
+      :fsize 1917
+      :lastmodtime '(21710 8662 151969 343000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!PhD!Publications!Conference!ICRA2015!ieeeconf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

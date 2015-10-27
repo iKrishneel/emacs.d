@@ -1,0 +1,131 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("opencv/cv.h" include (:system-flag t) nil [41 63])
+            ("opencv/highgui.h" include (:system-flag t) nil [64 91])
+            ("Color" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("r" variable (:type "unsigned char") (reparse-symbol classsubparts) [114 130])
+                          ("g" variable (:type "unsigned char") (reparse-symbol classsubparts) [135 151])
+                          ("b" variable (:type "unsigned char") (reparse-symbol classsubparts) [156 172]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [93 181])
+            ("PosList" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [213 219])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [224 230])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("PosList" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [235 256]))                  
+                :type "struct")
+                nil [184 267])
+            ("PosList" type
+               (:typedef ("PosList" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [184 267])
+            ("colordiff" function
+               (:arguments 
+                  ( ("a" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [283 291])
+                    ("b" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [292 300]))                  
+                :type "int")
+                nil [269 524])
+            ("newnode" function
+               (:pointer 1
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [544 550])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [551 557]))                  
+                :type ("PosList" type (:type "class") nil nil))
+                nil [526 697])
+            ("delnode" function
+               (:arguments 
+                  ( ("pos" variable
+                       (:pointer 2
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [712 726]))                  
+                :type "void")
+                nil [699 763])
+            ("pl_push" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 2
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [778 793])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [794 807]))                  
+                :type "void")
+                nil [765 851])
+            ("pl_pop" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 2
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [870 885]))                  
+                :type ("PosList" type (:type "class") nil nil))
+                nil [853 968])
+            ("dellist" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 2
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [983 998]))                  
+                :type "void")
+                nil [970 1125])
+            ("contains" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("PosList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1140 1154])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1155 1161])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1162 1168]))                  
+                :type "int")
+                nil [1127 1310])
+            ("rgrow" function
+               (:arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1323 1340])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1341 1356])
+                    ("color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1357 1369])
+                    ("threshold" variable (:type "int") (reparse-symbol arg-sub-list) [1370 1384]))                  
+                :type "void")
+                nil [1312 4142])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4153 4162])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4163 4176]))                  
+                :type "int")
+                nil [4144 5405]))          
+      :file "rgrow.c"
+      :pointmax 5406
+      :fsize 5405
+      :lastmodtime '(21764 7853 352915 859000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!region_growing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

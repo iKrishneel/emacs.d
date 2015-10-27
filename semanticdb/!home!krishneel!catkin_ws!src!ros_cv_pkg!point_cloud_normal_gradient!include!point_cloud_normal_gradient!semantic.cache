@@ -1,0 +1,168 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_POINT_CLOUD_NORMAL_GRADIENT_H_" variable (:constant-flag t) nil [50 81])
+            ("ros/ros.h" include (:system-flag t) nil [83 103])
+            ("ros/console.h" include (:system-flag t) nil [104 128])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [130 166])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [167 196])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [198 224])
+            ("pcl_conversions/pcl_conversions.h" include (:system-flag t) nil [225 269])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [270 298])
+            ("pcl/point_types.h" include (:system-flag t) nil [299 327])
+            ("pcl/kdtree/kdtree_flann.h" include (:system-flag t) nil [328 364])
+            ("pcl/kdtree/kdtree.h" include (:system-flag t) nil [365 395])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [396 432])
+            ("pcl/features/normal_3d_omp.h" include (:system-flag t) nil [433 472])
+            ("PointCloudNormalGradients" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [512 519])
+                    ("PointT" type
+                       (:typedef ("pcl::PointXYZRGB" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [524 556])
+                    ("PointCloudNormalGradients" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PointCloudNormalGradients" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [561 589])
+                    ("cloudCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [621 664]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [594 665])
+                    ("viewPointSurfaceNormalOrientation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [717 746])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [754 794]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [670 795])
+                    ("estimatePointCloudNormals" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [839 874])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [882 916])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [924 937])
+                            ("" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [946 965])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [974 985]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [800 987])
+                    ("localCurvatureBoundary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1057])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1064 1104]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [993 1105])
+                    ("pclNearestNeigborSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1147 1176])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1177 1210])
+                            ("isneigbour" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1218 1240])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1242 1255])
+                            ("" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1257 1276]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1110 1278])
+                    ("convertToRvizNormalDisplay" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1322 1357])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("pcl::PointCloud::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1364 1404])
+                            ("" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1411 1456]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1283 1457])
+                    ("protected" label nil (reparse-symbol classsubparts) [1467 1477])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1482 1496])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1501 1518])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1523 1542])
+                    ("private" label nil (reparse-symbol classsubparts) [1548 1556])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1561 1581])
+                    ("pub_norm_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1586 1611])
+                    ("pub_cloud_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1616 1642])
+                    ("pub_norm_xyz_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1647 1676])
+                    ("sub_cloud_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1681 1708])
+                    ("JetColour" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("U" type (:type "class") nil nil)
+                            ("V" type (:type "class") nil nil))                          
+                        :type ("cv::Scalar" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1787 1789])
+                            ("" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1790 1792])
+                            ("" variable (:type ("V" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1793 1795]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1717 1796]))                  
+                :type "class")
+                nil [474 1799]))          
+      :file "point_cloud_normal_gradient.h"
+      :pointmax 1845
+      :fsize 1844
+      :lastmodtime '(21848 42464 944592 912000)
+      :unmatched-syntax '((symbol 1400 . 1403) (punctuation 1399 . 1400) (punctuation 1398 . 1399) (punctuation 1374 . 1375) (punctuation 1373 . 1374))
+      :lexical-table 
+        '(("_POINT_CLOUD_NORMAL_GRADIENT_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!ros_cv_pkg!point_cloud_normal_gradient!include!point_cloud_normal_gradient!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bounding_box_estimation/bounding_box_estimation.h" include (:system-flag t) nil [92 152])
+            ("BoundingBoxEstimation" function
+               (:constructor-flag t
+                :parent "BoundingBoxEstimation"
+                :type ("BoundingBoxEstimation" type (:type "class") nil nil))
+                nil [154 224])
+            ("onInit" function
+               (:parent "BoundingBoxEstimation"
+                :type "void")
+                nil [226 548])
+            ("subscribe" function
+               (:parent "BoundingBoxEstimation"
+                :type "void")
+                nil [550 818])
+            ("callback" function
+               (:parent "BoundingBoxEstimation"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [863 915]))                  
+                :type "void")
+                nil [821 3502])
+            ("orientation" function
+               (:parent "BoundingBoxEstimation"
+                :arguments 
+                  ( ("pose_mgs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::PoseStamped::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3549 3603]))                  
+                :type "void")
+                nil [3504 3688])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3699 3708])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3709 3722]))                  
+                :type "int")
+                nil [3690 3828]))          
+      :file "bounding_box_estimation_node.cpp"
+      :pointmax 3830
+      :fsize 3829
+      :lastmodtime '(22005 7917 931185 296000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!bounding_box_estimation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

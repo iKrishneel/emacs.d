@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("pcl/console/parse.h" include (:system-flag t) nil [21 51])
+            ("pcl/filters/extract_indices.h" include (:system-flag t) nil [52 92])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [93 119])
+            ("pcl/point_types.h" include (:system-flag t) nil [120 148])
+            ("pcl/sample_consensus/ransac.h" include (:system-flag t) nil [149 189])
+            ("pcl/sample_consensus/sac_model_plane.h" include (:system-flag t) nil [190 239])
+            ("pcl/sample_consensus/sac_model_sphere.h" include (:system-flag t) nil [240 290])
+            ("pcl/visualization/pcl_visualizer.h" include (:system-flag t) nil [291 336])
+            ("boost/thread/thread.hpp" include (:system-flag t) nil [337 371])
+            ("simpleVis" function
+               (:arguments 
+                  ( ("cloud" variable (:type ("pcl::PointCloud::ConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [437 484]))                  
+                :type ("boost::shared_ptr" type
+                     (:template-specifier 
+                        ( ("pcl::visualization::PCLVisualizer" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [373 1084])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1095 1104])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1105 1117]))                  
+                :type "int")
+                nil [1086 4303]))          
+      :file "main.cpp"
+      :pointmax 4304
+      :fsize 4303
+      :lastmodtime '(21633 12858 0 0)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!ransac!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

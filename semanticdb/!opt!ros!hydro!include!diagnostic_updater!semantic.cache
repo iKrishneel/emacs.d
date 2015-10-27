@@ -1,0 +1,939 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGNOSTICUPDATER_HH" variable (:constant-flag t) nil [1845 1865])
+            ("stdexcept" include (:system-flag t) nil [1867 1887])
+            ("vector" include (:system-flag t) nil [1888 1905])
+            ("string" include (:system-flag t) nil [1906 1923])
+            ("ros/node_handle.h" include nil nil [1925 1953])
+            ("ros/this_node.h" include nil nil [1954 1980])
+            ("diagnostic_msgs/DiagnosticArray.h" include nil nil [1982 2026])
+            ("diagnostic_updater/DiagnosticStatusWrapper.h" include nil nil [2027 2082])
+            ("boost/thread.hpp" include (:system-flag t) nil [2084 2111])
+            ("diagnostic_updater" type
+               (:members 
+                  ( ("TaskFunction" variable (:type "int") (reparse-symbol namespacesubparts) [2203 2216])
+                    ("UnwrappedTaskFunction" variable (:type "int") (reparse-symbol namespacesubparts) [2285 2307])
+                    ("DiagnosticTask" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2629 2636])
+                            ("DiagnosticTask" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2755 2778]))                                  
+                                :type ("DiagnosticTask" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2740 2801])
+                            ("getName" function
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2885 2951])
+                            ("run" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3059 3109]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3042 3114])
+                            ("DiagnosticTask" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3195 3229])
+                            ("private" label nil (reparse-symbol classsubparts) [3235 3243])
+                            ("name_" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3250 3274]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2600 3279])
+                    ("GenericFunctionDiagnosticTask" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3715 3722])
+                            ("GenericFunctionDiagnosticTask" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4016 4040])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4041 4057])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [4057 4065])
+                                    ("" variable (:type ("fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4067 4070]))                                  
+                                :type ("GenericFunctionDiagnosticTask" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3986 4120])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4145 4175]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4128 4210])
+                            ("private" label nil (reparse-symbol classsubparts) [4216 4224])
+                            ("name_" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4231 4255])
+                            ("fn_" variable
+                               (:constant-flag t
+                                :type ("TaskFunction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4262 4285]))                          
+                        :superclasses 
+                          ( ("DiagnosticTask" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3626 4290])
+                    ("UnwrappedFunctionDiagnosticTask" type
+                       (:typedef ("GenericFunctionDiagnosticTask" type
+                             (:template-specifier 
+                                ( ("diagnostic_msgs::DiagnosticStatus" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4294 4399])
+                    ("FunctionDiagnosticTask" type
+                       (:typedef ("GenericFunctionDiagnosticTask" type
+                             (:template-specifier 
+                                ( ("DiagnosticStatusWrapper" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4402 4488])
+                    ("CompositeDiagnosticTask" type
+                       (:superclasses 
+                          ( ("DiagnosticTask" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5050 5057])
+                            ("CompositeDiagnosticTask" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5182 5205]))                                  
+                                :type ("CompositeDiagnosticTask" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5158 5237])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5340 5370]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5323 6044])
+                            ("addTask" function
+                               (:arguments 
+                                  ( ("t" variable
+                                       (:pointer 1
+                                        :type ("DiagnosticTask" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6257 6275]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6244 6320])
+                            ("private" label nil (reparse-symbol classsubparts) [6326 6334])
+                            ("tasks_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("DiagnosticTask" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6341 6378]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4988 6383])
+                    ("DiagnosticTaskVector" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [6710 6720])
+                            ("DiagnosticTaskInternal" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6895 6902])
+                                    ("DiagnosticTaskInternal" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6936 6959])
+                                            ("f" variable (:type ("TaskFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6960 6975]))                                          
+                                        :type ("DiagnosticTaskInternal" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6913 7020])
+                                    ("run" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("stat" variable
+                                               (:reference 1
+                                                :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7041 7091]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7032 7175])
+                                    ("getName" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7187 7271])
+                                    ("private" label nil (reparse-symbol classsubparts) [7281 7289])
+                                    ("name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7300 7318])
+                                    ("fn_" variable (:type ("TaskFunction" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7329 7346]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [6850 7355])
+                            ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7363 7382])
+                            ("getTasks" function
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("DiagnosticTaskInternal" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7455 7547])
+                            ("public" label nil (reparse-symbol classsubparts) [7553 7560])
+                            ("add" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8082 8106])
+                                    ("f" variable (:type ("TaskFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8107 8122]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8073 8219])
+                            ("add" function
+                               (:arguments 
+                                  ( ("task" variable
+                                       (:reference 1
+                                        :type ("DiagnosticTask" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8557 8578]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8548 8697])
+                            ("add" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("name" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9309 9332])
+                                    ("c" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9333 9338])
+                                    (nil variable (:pointer (("" variable (:reference 1 :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9352 9397])) :type "void") (reparse-symbol arg-sub-list) [9339 9398]))                                  )
+                                (reparse-symbol classsubparts) [9273 9523])
+                            ("removeByName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9890 9913]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9872 10368])
+                            ("private" label nil (reparse-symbol classsubparts) [10374 10382])
+                            ("addedTaskCallback" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("DiagnosticTaskInternal" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10618 10643]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10587 10652])
+                            ("tasks_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("DiagnosticTaskInternal" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10659 10702])
+                            ("protected" label nil (reparse-symbol classsubparts) [10708 10718])
+                            ("addInternal" function
+                               (:arguments 
+                                  ( ("task" variable
+                                       (:reference 1
+                                        :type ("DiagnosticTaskInternal" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10804 10833]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10787 10962]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6675 10967])
+                    ("Updater" type
+                       (:superclasses 
+                          ( ("DiagnosticTaskVector" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [11721 11728])
+                            ("verbose_" variable (:type "bool") (reparse-symbol classsubparts) [11735 11749])
+                            ("Updater" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("h" variable
+                                       (:default-value "ros::NodeHandle()"
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11927 11964])
+                                    ("ph" variable
+                                       (:default-value "ros::NodeHandle(\"~\")"
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11966 12007])
+                                    ("node_name" variable
+                                       (:default-value "ros::this_node::getName()"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12009 12058]))                                  
+                                :type ("Updater" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11919 12153])
+                            ("update" function (:type "void") (reparse-symbol classsubparts) [12287 12582])
+                            ("force_update" function (:type "void") (reparse-symbol classsubparts) [12781 14479])
+                            ("getPeriod" function (:type "double") (reparse-symbol classsubparts) [14562 14620])
+                            ("broadcast" function
+                               (:arguments 
+                                  ( ("lvl" variable (:type "int") (reparse-symbol arg-sub-list) [15381 15389])
+                                    ("msg" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15390 15412]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15366 15926])
+                            ("setHardwareIDf" function
+                               (:arguments 
+                                  ( ("format" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [15954 15973])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [15974 15978]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15934 16305])
+                            ("setHardwareID" function
+                               (:arguments 
+                                  ( ("hwid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16332 16356]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16313 16394])
+                            ("private" label nil (reparse-symbol classsubparts) [16400 16408])
+                            ("update_diagnostic_period" function (:type "void") (reparse-symbol classsubparts) [16509 16748])
+                            ("publish" function
+                               (:arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_msgs::DiagnosticStatus" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16836 16876]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16823 17024])
+                            ("publish" function
+                               (:arguments 
+                                  ( ("status_vec" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("diagnostic_msgs::DiagnosticStatus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17117 17176]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17104 17635])
+                            ("setup" function (:type "void") (reparse-symbol classsubparts) [17741 18053])
+                            ("addedTaskCallback" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("task" variable
+                                       (:reference 1
+                                        :type ("DiagnosticTaskInternal" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18238 18267]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18207 18425])
+                            ("private_node_handle_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18433 18470])
+                            ("node_handle_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18477 18506])
+                            ("publisher_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18513 18539])
+                            ("next_time_" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18547 18568])
+                            ("period_" variable (:type "double") (reparse-symbol classsubparts) [18576 18591])
+                            ("hwid_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18598 18616])
+                            ("node_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18623 18646])
+                            ("warn_nohwid_done_" variable (:type "bool") (reparse-symbol classsubparts) [18653 18676]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [11669 18681]))                  
+                :type "namespace")
+                nil [2113 18684]))          
+      :file "diagnostic_updater.h"
+      :pointmax 18694
+      :fsize 18693
+      :lastmodtime '(21956 11904 0 0)
+      :unmatched-syntax '((punctuation 18684 . 18685) (punctuation 4065 . 4066) (semantic-list 4061 . 4065) (punctuation 4056 . 4057) (punctuation 2283 . 2284) (semantic-list 2247 . 2283) (VOID 2243 . 2247) (punctuation 2242 . 2243) (symbol 2234 . 2242) (punctuation 2233 . 2234) (punctuation 2232 . 2233) (symbol 2227 . 2232) (TYPEDEF 2219 . 2226) (punctuation 2201 . 2202) (semantic-list 2175 . 2201) (VOID 2171 . 2175) (punctuation 2170 . 2171) (symbol 2162 . 2170) (punctuation 2161 . 2162) (punctuation 2160 . 2161) (symbol 2155 . 2160) (TYPEDEF 2147 . 2154))
+      :lexical-table 
+        '(("DIAGNOSTICUPDATER_HH")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__DIAGNOSTIC_UPDATER__DRIVER_H__" variable (:constant-flag t) nil [1879 1911])
+            ("ros/publisher.h" include (:system-flag t) nil [1913 1939])
+            ("ros/subscription.h" include (:system-flag t) nil [1940 1969])
+            ("diagnostic_updater/update_functions.h" include (:system-flag t) nil [1970 2018])
+            ("diagnostic_updater" type
+               (:members 
+                  ( ("HeaderlessTopicDiagnostic" type
+                       (:superclasses 
+                          ( ("CompositeDiagnosticTask" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2434 2441])
+                            ("HeaderlessTopicDiagnostic" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2819])
+                                    ("diag" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::Updater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2826 2860])
+                                    ("freq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_updater::FrequencyStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2867 2920]))                                  
+                                :type ("HeaderlessTopicDiagnostic" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2769 3042])
+                            ("HeaderlessTopicDiagnostic" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3046 3087])
+                            ("tick" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3157 3202])
+                            ("clear_window" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3264 3318])
+                            ("private" label nil (reparse-symbol classsubparts) [3320 3328])
+                            ("freq_" variable (:type ("diagnostic_updater::FrequencyStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3331 3373]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2367 3376])
+                    ("TopicDiagnostic" type
+                       (:superclasses 
+                          ( ("HeaderlessTopicDiagnostic" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3558 3565])
+                            ("TopicDiagnostic" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4009 4026])
+                                    ("diag" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::Updater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4033 4067])
+                                    ("freq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_updater::FrequencyStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4074 4127])
+                                    ("stamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_updater::TimeStampStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4134 4188]))                                  
+                                :type ("TopicDiagnostic" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3986 4289])
+                            ("TopicDiagnostic" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4295 4326])
+                            ("tick" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4559 4699])
+                            ("tick" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4887 4910]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4869 4981])
+                            ("private" label nil (reparse-symbol classsubparts) [4985 4993])
+                            ("stamp_" variable (:type ("TimeStampStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4996 5019]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3499 5022])
+                    ("DiagnosedPublisher" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5302 5309])
+                            ("DiagnosedPublisher" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("pub" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Publisher" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5759 5785])
+                                    ("diag" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::Updater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5792 5826])
+                                    ("freq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_updater::FrequencyStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5834 5887])
+                                    ("stamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_updater::TimeStampStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5895 5949]))                                  
+                                :type ("DiagnosedPublisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5740 6033])
+                            ("DiagnosedPublisher" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6037 6071])
+                            ("publish" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6277 6313]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6256 6377])
+                            ("publish" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6582 6599]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6561 6662])
+                            ("getPublisher" function
+                               (:methodconst-flag t
+                                :type ("ros::Publisher" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6711 6777])
+                            ("setPublisher" function
+                               (:arguments 
+                                  ( ("pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6844 6863]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6826 6893])
+                            ("private" label nil (reparse-symbol classsubparts) [6895 6903])
+                            ("publisher_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6906 6932]))                          
+                        :superclasses 
+                          ( ("TopicDiagnostic" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5232 6935]))                  
+                :type "namespace")
+                nil [2020 6938]))          
+      :file "publisher.h"
+      :pointmax 6948
+      :fsize 6947
+      :lastmodtime '(21956 11904 0 0)
+      :unmatched-syntax '((punctuation 6938 . 6939))
+      :lexical-table 
+        '(("__DIAGNOSTIC_UPDATER__DRIVER_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGNOSTICMESSAGEWRAPPER_HH" variable (:constant-flag t) nil [1855 1882])
+            ("vector" include (:system-flag t) nil [1884 1901])
+            ("string" include (:system-flag t) nil [1902 1919])
+            ("sstream" include (:system-flag t) nil [1920 1938])
+            ("stdarg.h" include (:system-flag t) nil [1939 1958])
+            ("cstdio" include (:system-flag t) nil [1959 1976])
+            ("ros/ros.h" include nil nil [1978 1998])
+            ("diagnostic_msgs/DiagnosticStatus.h" include nil nil [2000 2045])
+            ("diagnostic_updater" type
+               (:members 
+                  ( ("DiagnosticStatusWrapper" type
+                       (:superclasses 
+                          ( ("diagnostic_msgs::DiagnosticStatus" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2560 2567])
+                            ("summary" function
+                               (:arguments 
+                                  ( ("lvl" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2821 2839])
+                                    ("s" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2840 2860]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2808 2918])
+                            ("mergeSummary" function
+                               (:arguments 
+                                  ( ("lvl" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3894 3912])
+                                    ("s" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3913 3933]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3876 4190])
+                            ("mergeSummary" function
+                               (:arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_msgs::DiagnosticStatus" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4429 4474]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4411 4536])
+                            ("mergeSummaryf" function
+                               (:arguments 
+                                  ( ("lvl" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5018 5036])
+                                    ("format" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5037 5056])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5057 5061]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4999 5447])
+                            ("summaryf" function
+                               (:arguments 
+                                  ( ("lvl" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5887 5905])
+                                    ("format" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5906 5925])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5926 5930]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5873 6311])
+                            ("clearSummary" function (:type "void") (reparse-symbol classsubparts) [6456 6515])
+                            ("summary" function
+                               (:arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("diagnostic_msgs::DiagnosticStatus" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6698 6743]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6685 6800])
+                            ("add" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7175 7198])
+                                    ("val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7199 7212]))                                  )
+                                (reparse-symbol classsubparts) [7140 7350])
+                            ("addf" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7636 7659])
+                                    ("format" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7660 7679])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [7680 7684]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7626 7685])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [7882 7934]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2479 7939])
+                    ("add" function
+                       (:type "void"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8012 8035])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8036 8057]))                          
+                        :typemodifiers ("inline")
+                        :parent "DiagnosticStatusWrapper"
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7943 8173])
+                    ("add" function
+                       (:type "void"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8291 8314])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [8315 8329]))                          
+                        :typemodifiers ("inline")
+                        :parent "DiagnosticStatusWrapper"
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8233 8441])
+                    ("addf" function
+                       (:parent "DiagnosticStatusWrapper"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8632 8655])
+                            ("format" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8656 8675])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [8676 8680]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8590 9063]))                  
+                :type "namespace")
+                nil [2047 9067]))          
+      :file "DiagnosticStatusWrapper.h"
+      :pointmax 9075
+      :fsize 9074
+      :lastmodtime '(21956 11904 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAGNOSTICMESSAGEWRAPPER_HH")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__DIAGNOSTIC_STATUS__UPDATE_FUNCTIONS_H__" variable (:constant-flag t) nil [1890 1931])
+            ("diagnostic_updater/diagnostic_updater.h" include (:system-flag t) nil [1933 1983])
+            ("math.h" include (:system-flag t) nil [1984 2001])
+            ("diagnostic_updater" type
+               (:members 
+                  ( ("FrequencyStatusParam" type
+                       (:members 
+                          ( ("FrequencyStatusParam" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("min_freq" variable
+                                       (:pointer 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2278 2295])
+                                    ("max_freq" variable
+                                       (:pointer 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2296 2313])
+                                    ("tolerance" variable
+                                       (:default-value "0.1"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2314 2336])
+                                    ("window_size" variable
+                                       (:default-value "5"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2338 2357]))                                  
+                                :type ("FrequencyStatusParam" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2257 2464])
+                            ("min_freq_" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol classsubparts) [2597 2615])
+                            ("max_freq_" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol classsubparts) [2748 2766])
+                            ("tolerance_" variable (:type "double") (reparse-symbol classsubparts) [3089 3107])
+                            ("window_size_" variable (:type "int") (reparse-symbol classsubparts) [3191 3208]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2147 3213])
+                    ("FrequencyStatus" type
+                       (:superclasses 
+                          ( ("DiagnosticTask" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [3635 3643])
+                            ("params_" variable
+                               (:constant-flag t
+                                :type ("FrequencyStatusParam" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3691 3726])
+                            ("count_" variable (:type "int") (reparse-symbol classsubparts) [3734 3745])
+                            ("times_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Time" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3752 3783])
+                            ("seq_nums_" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3790 3818])
+                            ("hist_indx_" variable (:type "int") (reparse-symbol classsubparts) [3825 3840])
+                            ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3847 3866])
+                            ("public" label nil (reparse-symbol classsubparts) [3872 3879])
+                            ("FrequencyStatus" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FrequencyStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4001 4036]))                                  
+                                :type ("FrequencyStatus" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3985 4198])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [4266 4572])
+                            ("tick" function (:type "void") (reparse-symbol classsubparts) [4652 4784])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4809 4859]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4792 6431]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3581 6436])
+                    ("TimeStampStatusParam" type
+                       (:members 
+                          ( ("TimeStampStatusParam" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("min_acceptable" variable
+                                       (:constant-flag t
+                                        :default-value "-1"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [6682 6714])
+                                    ("max_acceptable" variable
+                                       (:constant-flag t
+                                        :default-value "5"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [6716 6747]))                                  
+                                :type ("TimeStampStatusParam" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [6661 6828])
+                            ("max_acceptable_" variable (:type "double") (reparse-symbol classsubparts) [6919 6942])
+                            ("min_acceptable_" variable (:type "double") (reparse-symbol classsubparts) [7033 7056]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6551 7062])
+                    ("DefaultTimeStampStatusParam" variable
+                       (:typemodifiers ("static")
+                        :default-value "TimeStampStatusParam()"
+                        :type ("TimeStampStatusParam" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7182 7263])
+                    ("TimeStampStatus" type
+                       (:superclasses 
+                          ( ("DiagnosticTask" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [7818 7826])
+                            ("init" function (:type "void") (reparse-symbol classsubparts) [7833 8043])
+                            ("public" label nil (reparse-symbol classsubparts) [8049 8056])
+                            ("TimeStampStatus" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TimeStampStatusParam" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8174 8209]))                                  
+                                :type ("TimeStampStatus" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8158 8307])
+                            ("TimeStampStatus" function
+                               (:constructor-flag t
+                                :type ("TimeStampStatus" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8412 8502])
+                            ("tick" function
+                               (:arguments 
+                                  ( ("stamp" variable (:type "double") (reparse-symbol arg-sub-list) [8714 8727]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8704 9159])
+                            ("tick" function
+                               (:arguments 
+                                  ( ("t" variable
+                                       (:constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9337 9355]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9327 9396])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stat" variable
+                                       (:reference 1
+                                        :type ("diagnostic_updater::DiagnosticStatusWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9421 9471]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9404 10819])
+                            ("private" label nil (reparse-symbol classsubparts) [10825 10833])
+                            ("params_" variable (:type ("TimeStampStatusParam" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10840 10869])
+                            ("early_count_" variable (:type "int") (reparse-symbol classsubparts) [10876 10893])
+                            ("late_count_" variable (:type "int") (reparse-symbol classsubparts) [10900 10916])
+                            ("zero_count_" variable (:type "int") (reparse-symbol classsubparts) [10923 10939])
+                            ("zero_seen_" variable (:type "bool") (reparse-symbol classsubparts) [10946 10962])
+                            ("max_delta_" variable (:type "double") (reparse-symbol classsubparts) [10969 10987])
+                            ("min_delta_" variable (:type "double") (reparse-symbol classsubparts) [10994 11012])
+                            ("deltas_valid_" variable (:type "bool") (reparse-symbol classsubparts) [11019 11038])
+                            ("lock_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11045 11064]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7764 11069]))                  
+                :type "namespace")
+                nil [2003 11072]))          
+      :file "update_functions.h"
+      :pointmax 11082
+      :fsize 11081
+      :lastmodtime '(21956 11904 0 0)
+      :unmatched-syntax '((punctuation 11072 . 11073))
+      :lexical-table 
+        '(("__DIAGNOSTIC_STATUS__UPDATE_FUNCTIONS_H__")
+          )
+))
+  :file "!opt!ros!hydro!include!diagnostic_updater!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

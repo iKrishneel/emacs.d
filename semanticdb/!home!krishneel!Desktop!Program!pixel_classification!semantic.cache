@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/core/core.hpp" include (:system-flag t) nil [2 34])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [35 64])
+            ("omp.h" include (:system-flag t) nil [66 82])
+            ("iostream" include (:system-flag t) nil [84 103])
+            ("string" include (:system-flag t) nil [104 121])
+            ("readImage" function
+               (:arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141 158]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [123 314])
+            ("likelihood" function
+               (:arguments 
+                  ( ("distance" variable (:type "double") (reparse-symbol arg-sub-list) [334 350])
+                    ("w" variable (:type "double") (reparse-symbol arg-sub-list) [351 360]))                  
+                :type "double")
+                nil [316 426])
+            ("classifyPixel" function
+               (:arguments 
+                  ( ("pixel" variable
+                       (:constant-flag t
+                        :type ("cv::Vec3b" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [450 472])
+                    ("model" variable
+                       (:constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [473 493]))                  
+                :type "double")
+                nil [429 1077])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1089 1098])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1099 1112]))                  
+                :type "int")
+                nil [1080 1726]))          
+      :file "main.cpp"
+      :pointmax 1728
+      :fsize 1781
+      :lastmodtime '(22033 1232 177645 768000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Desktop!Program!pixel_classification!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

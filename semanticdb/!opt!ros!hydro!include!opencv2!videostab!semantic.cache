@@ -1,0 +1,581 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_HPP__" variable (:constant-flag t) nil [2204 2228])
+            ("opencv2/videostab/stabilizer.hpp" include nil nil [2230 2273]))          
+      :file "videostab.hpp"
+      :pointmax 2282
+      :fsize 2281
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_GLOBAL_MOTION_HPP__" variable (:constant-flag t) nil [2218 2256])
+            ("vector" include (:system-flag t) nil [2258 2275])
+            ("opencv2/core/core.hpp" include nil nil [2276 2308])
+            ("opencv2/features2d/features2d.hpp" include nil nil [2309 2353])
+            ("opencv2/videostab/optical_flow.hpp" include nil nil [2354 2399])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("MotionModel" type
+                               (:members 
+                                  ( ("TRANSLATION" variable
+                                       (:constant-flag t
+                                        :default-value (2476 2477)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2462 2477])
+                                    ("TRANSLATION_AND_SCALE" variable
+                                       (:constant-flag t
+                                        :default-value (2507 2508)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2483 2508])
+                                    ("LINEAR_SIMILARITY" variable
+                                       (:constant-flag t
+                                        :default-value (2534 2535)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2514 2535])
+                                    ("AFFINE" variable
+                                       (:constant-flag t
+                                        :default-value (2550 2551)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2541 2551]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2439 2554])
+                            ("estimateGlobalMotionLeastSquares" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("points0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Point2f" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2613 2649])
+                                    ("points1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Point2f" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2650 2686])
+                                    ("model" variable
+                                       (:default-value "AFFINE"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2695 2713])
+                                    ("rmse" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [2715 2730]))                                  
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2567 2732])
+                            ("RansacParams" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2734 3454])
+                            ("estimateGlobalMotionRobust" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("points0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Point2f" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3507 3543])
+                                    ("points1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Point2f" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3544 3580])
+                                    ("model" variable
+                                       (:default-value "AFFINE"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3589 3607])
+                                    ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "RansacParams::affine2dMotionStd()"
+                                        :type ("RansacParams" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3609 3671])
+                                    ("rmse" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [3681 3696])
+                                    ("ninliers" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3698 3715]))                                  
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3467 3717])
+                            ("IGlobalMotionEstimator" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3719 3880])
+                            ("IGlobalMotionEstimator" variable (:type "int") (reparse-symbol namespacesubparts) [3935 5259])
+                            ("getMotion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("from" variable (:type "int") (reparse-symbol arg-sub-list) [5286 5295])
+                                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [5296 5303])
+                                    ("motions" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5304 5323])
+                                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [5324 5333]))                                  
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5272 5334])
+                            ("getMotion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("from" variable (:type "int") (reparse-symbol arg-sub-list) [5361 5370])
+                                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [5371 5378])
+                                    ("motions" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Mat" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5379 5411]))                                  
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5347 5412]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2416 5415]))                  
+                :type "namespace")
+                nil [2401 5440]))          
+      :file "global_motion.hpp"
+      :pointmax 5465
+      :fsize 5464
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((symbol 5336 . 5346) (symbol 5261 . 5271) (PUBLIC 3928 . 3934) (punctuation 3926 . 3927) (symbol 3899 . 3925) (symbol 3888 . 3898) (CLASS 3882 . 3887) (symbol 3456 . 3466) (symbol 2556 . 2566))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_GLOBAL_MOTION_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_OPTICAL_FLOW_HPP__" variable (:constant-flag t) nil [2217 2254])
+            ("opencv2/core/core.hpp" include nil nil [2256 2288])
+            ("opencv2/opencv_modules.hpp" include nil nil [2289 2326])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("ISparseOptFlowEstimator" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2457 2727])
+                            ("IDenseOptFlowEstimator" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2729 2979])
+                            ("PyrLkOptFlowEstimatorBase" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2981 3360])
+                            ("ISparseOptFlowEstimator" variable (:type "int") (reparse-symbol namespacesubparts) [3458 3665]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2434 4164]))                  
+                :type "namespace")
+                nil [2419 4189]))          
+      :file "optical_flow.hpp"
+      :pointmax 4214
+      :fsize 4213
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((PUBLIC 3451 . 3457) (punctuation 3449 . 3450) (symbol 3424 . 3449) (PUBLIC 3417 . 3423) (punctuation 3415 . 3416) (symbol 3379 . 3406) (symbol 3368 . 3378) (CLASS 3362 . 3367))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_OPTICAL_FLOW_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_STABILIZER_HPP__" variable (:constant-flag t) nil [2215 2250])
+            ("vector" include (:system-flag t) nil [2252 2269])
+            ("opencv2/core/core.hpp" include nil nil [2270 2302])
+            ("opencv2/imgproc/imgproc.hpp" include nil nil [2303 2341])
+            ("opencv2/videostab/global_motion.hpp" include nil nil [2342 2388])
+            ("opencv2/videostab/motion_stabilizing.hpp" include nil nil [2389 2440])
+            ("opencv2/videostab/frame_source.hpp" include nil nil [2441 2486])
+            ("opencv2/videostab/log.hpp" include nil nil [2487 2523])
+            ("opencv2/videostab/inpainting.hpp" include nil nil [2524 2567])
+            ("opencv2/videostab/deblurring.hpp" include nil nil [2568 2611])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("StabilizerBase" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2651 4925])
+                            ("IFrameSource" variable (:type "int") (reparse-symbol namespacesubparts) [4994 5486])
+                            ("IFrameSource" variable (:type "int") (reparse-symbol namespacesubparts) [5555 6433]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2628 6436]))                  
+                :type "namespace")
+                nil [2613 6461]))          
+      :file "stabilizer.hpp"
+      :pointmax 6486
+      :fsize 6485
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((PUBLIC 5548 . 5554) (punctuation 5546 . 5547) (symbol 5532 . 5546) (PUBLIC 5525 . 5531) (punctuation 5523 . 5524) (symbol 5505 . 5522) (symbol 5494 . 5504) (CLASS 5488 . 5493) (PUBLIC 4987 . 4993) (punctuation 4985 . 4986) (symbol 4971 . 4985) (PUBLIC 4964 . 4970) (punctuation 4962 . 4963) (symbol 4944 . 4961) (symbol 4933 . 4943) (CLASS 4927 . 4932))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_STABILIZER_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_MOTION_STABILIZING_HPP__" variable (:constant-flag t) nil [2223 2266])
+            ("vector" include (:system-flag t) nil [2268 2285])
+            ("opencv2/core/core.hpp" include nil nil [2286 2318])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("IMotionStabilizer" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2358 2589])
+                            ("IMotionStabilizer" variable (:type "int") (reparse-symbol namespacesubparts) [2634 3074])
+                            ("MotionFilterBase" variable (:type "int") (reparse-symbol namespacesubparts) [3123 3451])
+                            ("ensureInclusionConstraint" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3494 3507])
+                                    ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3508 3518])
+                                    ("trimRatio" variable (:type "float") (reparse-symbol arg-sub-list) [3519 3535]))                                  
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3464 3536])
+                            ("estimateOptimalTrimRatio" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3580 3593])
+                                    ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3594 3604]))                                  
+                                :type "float")
+                                (reparse-symbol namespacesubparts) [3549 3605]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2335 3608]))                  
+                :type "namespace")
+                nil [2320 3633]))          
+      :file "motion_stabilizing.hpp"
+      :pointmax 3655
+      :fsize 3654
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((symbol 3538 . 3548) (symbol 3453 . 3463) (PUBLIC 3116 . 3122) (punctuation 3114 . 3115) (symbol 3093 . 3113) (symbol 3082 . 3092) (CLASS 3076 . 3081) (PUBLIC 2627 . 2633) (punctuation 2625 . 2626) (symbol 2608 . 2624) (symbol 2597 . 2607) (CLASS 2591 . 2596))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_MOTION_STABILIZING_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_FRAME_SOURCE_HPP__" variable (:constant-flag t) nil [2217 2254])
+            ("vector" include (:system-flag t) nil [2256 2273])
+            ("string" include (:system-flag t) nil [2274 2291])
+            ("opencv2/core/core.hpp" include nil nil [2292 2324])
+            ("opencv2/highgui/highgui.hpp" include nil nil [2325 2363])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("IFrameSource" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2403 2539])
+                            ("IFrameSource" variable (:type "int") (reparse-symbol namespacesubparts) [2583 2682])
+                            ("IFrameSource" variable (:type "int") (reparse-symbol namespacesubparts) [2726 3112]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2380 3115]))                  
+                :type "namespace")
+                nil [2365 3140]))          
+      :file "frame_source.hpp"
+      :pointmax 3165
+      :fsize 3164
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((PUBLIC 2719 . 2725) (punctuation 2717 . 2718) (symbol 2701 . 2716) (symbol 2690 . 2700) (CLASS 2684 . 2689) (PUBLIC 2576 . 2582) (punctuation 2574 . 2575) (symbol 2558 . 2573) (symbol 2547 . 2557) (CLASS 2541 . 2546))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_FRAME_SOURCE_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_LOG_HPP__" variable (:constant-flag t) nil [2208 2236])
+            ("opencv2/core/core.hpp" include nil nil [2238 2270])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("ILog" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2310 2420])
+                            ("ILog" variable (:type "int") (reparse-symbol namespacesubparts) [2456 2529])
+                            ("ILog" variable (:type "int") (reparse-symbol namespacesubparts) [2569 2635]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2287 2638]))                  
+                :type "namespace")
+                nil [2272 2663]))          
+      :file "log.hpp"
+      :pointmax 2688
+      :fsize 2687
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((PUBLIC 2562 . 2568) (punctuation 2560 . 2561) (symbol 2548 . 2559) (symbol 2537 . 2547) (CLASS 2531 . 2536) (PUBLIC 2449 . 2455) (punctuation 2447 . 2448) (symbol 2439 . 2446) (symbol 2428 . 2438) (CLASS 2422 . 2427))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_LOG_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_INPAINTINT_HPP__" variable (:constant-flag t) nil [2215 2250])
+            ("vector" include (:system-flag t) nil [2252 2269])
+            ("opencv2/core/core.hpp" include nil nil [2270 2302])
+            ("opencv2/videostab/optical_flow.hpp" include nil nil [2303 2348])
+            ("opencv2/videostab/fast_marching.hpp" include nil nil [2349 2395])
+            ("opencv2/photo/photo.hpp" include nil nil [2396 2430])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("InpainterBase" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2470 3771])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [3813 3911])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [3958 4563])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [4617 4884])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [4928 5949])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [5999 6122])
+                            ("InpainterBase" variable (:type "int") (reparse-symbol namespacesubparts) [6165 6430])
+                            ("calcFlowMask" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("flowX" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6470 6487])
+                                    ("flowY" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6488 6505])
+                                    ("errors" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6506 6524])
+                                    ("maxError" variable (:type "float") (reparse-symbol arg-sub-list) [6525 6540])
+                                    ("mask0" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6549 6566])
+                                    ("mask1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6567 6584])
+                                    ("flowMask" variable
+                                       (:reference 1
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6585 6599]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6443 6600])
+                            ("completeFrameAccordingToFlow" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("flowMask" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6656 6676])
+                                    ("flowX" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6677 6694])
+                                    ("flowY" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6695 6712])
+                                    ("frame1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6713 6731])
+                                    ("mask1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6732 6749])
+                                    ("distThresh" variable (:type "float") (reparse-symbol arg-sub-list) [6758 6775])
+                                    ("frame0" variable
+                                       (:reference 1
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6776 6788])
+                                    ("mask0" variable
+                                       (:reference 1
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6789 6800]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6613 6801]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2447 6804]))                  
+                :type "namespace")
+                nil [2432 6829]))          
+      :file "inpainting.hpp"
+      :pointmax 6854
+      :fsize 6853
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((symbol 6602 . 6612) (symbol 6432 . 6442) (PUBLIC 6158 . 6164) (punctuation 6156 . 6157) (symbol 6141 . 6155) (symbol 6130 . 6140) (CLASS 6124 . 6129) (PUBLIC 5992 . 5998) (punctuation 5990 . 5991) (symbol 5968 . 5989) (symbol 5957 . 5967) (CLASS 5951 . 5956) (PUBLIC 4921 . 4927) (punctuation 4919 . 4920) (symbol 4903 . 4918) (symbol 4892 . 4902) (CLASS 4886 . 4891) (PUBLIC 4610 . 4616) (punctuation 4608 . 4609) (symbol 4582 . 4607) (symbol 4571 . 4581) (CLASS 4565 . 4570) (PUBLIC 3951 . 3957) (punctuation 3949 . 3950) (symbol 3930 . 3948) (symbol 3919 . 3929) (CLASS 3913 . 3918) (PUBLIC 3806 . 3812) (punctuation 3804 . 3805) (symbol 3790 . 3803) (symbol 3779 . 3789) (CLASS 3773 . 3778))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_INPAINTINT_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_DEBLURRING_HPP__" variable (:constant-flag t) nil [2215 2250])
+            ("vector" include (:system-flag t) nil [2252 2269])
+            ("opencv2/core/core.hpp" include nil nil [2270 2302])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("calcBlurriness" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2374 2391]))                                  
+                                :type "float")
+                                (reparse-symbol namespacesubparts) [2353 2392])
+                            ("DeblurerBase" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2394 3359])
+                            ("DeblurerBase" variable (:type "int") (reparse-symbol namespacesubparts) [3400 3481])
+                            ("DeblurerBase" variable (:type "int") (reparse-symbol namespacesubparts) [3527 3817]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2319 3820]))                  
+                :type "namespace")
+                nil [2304 3845]))          
+      :file "deblurring.hpp"
+      :pointmax 3870
+      :fsize 3869
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((PUBLIC 3520 . 3526) (punctuation 3518 . 3519) (symbol 3500 . 3517) (symbol 3489 . 3499) (CLASS 3483 . 3488) (PUBLIC 3393 . 3399) (punctuation 3391 . 3392) (symbol 3378 . 3390) (symbol 3367 . 3377) (CLASS 3361 . 3366) (symbol 2342 . 2352))
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_DEBLURRING_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_FAST_MARCHING_HPP__" variable (:constant-flag t) nil [2218 2256])
+            ("cmath" include (:system-flag t) nil [2258 2274])
+            ("queue" include (:system-flag t) nil [2275 2291])
+            ("algorithm" include (:system-flag t) nil [2292 2312])
+            ("opencv2/core/core.hpp" include nil nil [2313 2345])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("FastMarchingMethod" variable (:type ("CV_EXPORTS" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2477 3498]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2362 3501]))                  
+                :type "namespace")
+                nil [2347 3526])
+            ("fast_marching_inl.hpp" include nil nil [3544 3576]))          
+      :file "fast_marching.hpp"
+      :pointmax 3585
+      :fsize 3584
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_FAST_MARCHING_HPP__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_VIDEOSTAB_FAST_MARCHING_INL_HPP__" variable (:constant-flag t) nil [2222 2264])
+            ("opencv2/videostab/fast_marching.hpp" include nil nil [2266 2312])
+            ("cv" type
+               (:members 
+                  ( ("videostab" type
+                       (:members 
+                          ( ("run" function
+                               (:template 
+                                  ( ("Inpaint" type (:type "class") nil nil))                                  
+                                :type ("Inpaint" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("mask" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cv::Mat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2412 2432])
+                                    ("inpaint" variable (:type ("Inpaint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2433 2449]))                                  
+                                :parent "FastMarchingMethod")
+                                (reparse-symbol namespacesubparts) [2352 5415]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2329 5418]))                  
+                :type "namespace")
+                nil [2314 5443]))          
+      :file "fast_marching_inl.hpp"
+      :pointmax 5468
+      :fsize 5467
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__OPENCV_VIDEOSTAB_FAST_MARCHING_INL_HPP__")
+          )
+))
+  :file "!opt!ros!hydro!include!opencv2!videostab!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

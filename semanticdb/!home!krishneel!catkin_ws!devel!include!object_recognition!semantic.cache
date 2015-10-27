@@ -1,0 +1,841 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__object_recognition__OBJECTDETECTIONCONFIG_H__" variable (:constant-flag t) nil [2221 2268])
+            ("dynamic_reconfigure/config_tools.h" include (:system-flag t) nil [2270 2315])
+            ("limits" include (:system-flag t) nil [2316 2333])
+            ("ros/node_handle.h" include (:system-flag t) nil [2334 2362])
+            ("dynamic_reconfigure/ConfigDescription.h" include (:system-flag t) nil [2363 2413])
+            ("dynamic_reconfigure/ParamDescription.h" include (:system-flag t) nil [2414 2463])
+            ("dynamic_reconfigure/Group.h" include (:system-flag t) nil [2464 2502])
+            ("dynamic_reconfigure/config_init_mutex.h" include (:system-flag t) nil [2503 2553])
+            ("boost/any.hpp" include (:system-flag t) nil [2554 2578])
+            ("object_recognition" type
+               (:members 
+                  ( ("ObjectDetectionConfigStatics" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2613 2648])
+                    ("ObjectDetectionConfig" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2688 2695])
+                            ("AbstractParamDescription" type
+                               (:superclasses 
+                                  ( ("dynamic_reconfigure::ParamDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2788 2795])
+                                    ("AbstractParamDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2827 2841])
+                                            ("t" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2842 2856])
+                                            ("l" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2857 2868])
+                                            ("d" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2880 2894])
+                                            ("e" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2895 2909]))                                          
+                                        :type ("AbstractParamDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2802 3030])
+                                    ("clamp" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3063 3093])
+                                            ("max" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3094 3127])
+                                            ("min" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3128 3161]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3044 3172])
+                                    ("calcLevel" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("level" variable
+                                               (:reference 1
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3202 3218])
+                                            ("config1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3219 3256])
+                                            ("config2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3257 3294]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3179 3305])
+                                    ("fromServer" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3336 3362])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3363 3393]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3312 3404])
+                                    ("toServer" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3433 3459])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3460 3496]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3411 3507])
+                                    ("fromMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3539 3578])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3579 3609]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3514 3620])
+                                    ("toMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3650 3683])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3684 3720]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3627 3731])
+                                    ("getValue" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3760 3796])
+                                            ("val" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3797 3813]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3738 3824]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [2700 3831])
+                            ("AbstractParamDescriptionPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescription" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3837 3917])
+                            ("AbstractParamDescriptionConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescription" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3922 4013])
+                            ("ParamDescription" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4113 4120])
+                                    ("ParamDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4144 4161])
+                                            ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4162 4179])
+                                            ("level" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4180 4195])
+                                            ("description" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4207 4231])
+                                            ("edit_method" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4232 4256])
+                                            ("ObjectDetectionConfig" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4257 4281])
+                                            ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4284 4286]))                                          
+                                        :type ("ParamDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4127 4393])
+                                    ("T" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("ObjectDetectionConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4404 4426])
+                                            ("" variable (:type ("field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4429 4435]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4401 4436])
+                                    ("clamp" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4463 4493])
+                                            ("max" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4494 4527])
+                                            ("min" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4528 4561]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4444 4748])
+                                    ("calcLevel" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("comb_level" variable
+                                               (:reference 1
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4779 4800])
+                                            ("config1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4801 4838])
+                                            ("config2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4839 4876]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4756 4975])
+                                    ("fromServer" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5007 5033])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5034 5064]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4983 5128])
+                                    ("toServer" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("nh" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5158 5184])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5185 5221]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5136 5285])
+                                    ("fromMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5318 5357])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5358 5388]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5293 5499])
+                                    ("toMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5530 5563])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5564 5600]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5507 5707])
+                                    ("getValue" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5737 5773])
+                                            ("val" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5774 5790]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5715 5841]))                                  
+                                :superclasses 
+                                  ( ("AbstractParamDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [4023 5848])
+                            ("AbstractGroupDescription" type
+                               (:superclasses 
+                                  ( ("dynamic_reconfigure::Group" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [5933 5940])
+                                    ("AbstractGroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5972 5986])
+                                            ("t" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5987 6001])
+                                            ("p" variable (:type "int") (reparse-symbol arg-sub-list) [6002 6008])
+                                            ("i" variable (:type "int") (reparse-symbol arg-sub-list) [6009 6015])
+                                            ("s" variable (:type "bool") (reparse-symbol arg-sub-list) [6016 6023]))                                          
+                                        :type ("AbstractGroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5947 6130])
+                                    ("abstract_parameters" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6138 6204])
+                                    ("state" variable (:type "bool") (reparse-symbol classsubparts) [6211 6222])
+                                    ("toMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6253 6286])
+                                            ("config" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6287 6312]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6230 6323])
+                                    ("fromMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6355 6394])
+                                            ("config" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6395 6414]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6330 6424])
+                                    ("updateParams" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6457 6473])
+                                            ("top" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6474 6501]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6431 6511])
+                                    ("setInitialState" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6547 6563]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6518 6574])
+                                    ("convertParams" function (:type "void") (reparse-symbol classsubparts) [6583 6859]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [5854 6866])
+                            ("AbstractGroupDescriptionPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescription" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6872 6952])
+                            ("AbstractGroupDescriptionConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescription" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6957 7048])
+                            ("GroupDescription" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("PT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [7153 7160])
+                                    ("GroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7184 7201])
+                                            ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7202 7219])
+                                            ("parent" variable (:type "int") (reparse-symbol arg-sub-list) [7220 7231])
+                                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7232 7239])
+                                            ("s" variable (:type "bool") (reparse-symbol arg-sub-list) [7240 7247])
+                                            ("PT" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7248 7253])
+                                            ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7256 7258]))                                          
+                                        :type ("GroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7167 7338])
+                                    ("GroupDescription" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("g" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("GroupDescription" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("PT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7363 7396]))                                          
+                                        :type ("GroupDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7346 7601])
+                                    ("fromMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7634 7673])
+                                            ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7674 7690]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [7609 8148])
+                                    ("setInitialState" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8185 8201]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8156 8575])
+                                    ("updateParams" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("cfg" variable
+                                               (:reference 1
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8609 8625])
+                                            ("top" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8626 8653]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8583 9031])
+                                    ("toMessage" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9062 9095])
+                                            ("cfg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::any" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9096 9118]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9039 9474])
+                                    ("T" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("PT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9485 9488])
+                                            ("" variable (:type ("field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9491 9497]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9482 9498])
+                                    ("groups" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("ObjectDetectionConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9505 9581]))                                  
+                                :superclasses 
+                                  ( ("AbstractGroupDescription" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol classsubparts) [7054 9588])
+                            ("groups" variable (:type ("DEFAULT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9594 11030])
+                            ("DEFAULT" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9612 9619])
+                                    ("DEFAULT" function
+                                       (:constructor-flag t
+                                        :type ("DEFAULT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9624 9689])
+                                    ("setParams" function
+                                       (:arguments 
+                                          ( ("config" variable
+                                               (:reference 1
+                                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9710 9740])
+                                            ("params" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9741 9800]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9695 10770])
+                                    ("sliding_window_width" variable (:type "int") (reparse-symbol classsubparts) [10776 10801])
+                                    ("sliding_window_height" variable (:type "int") (reparse-symbol classsubparts) [10802 10828])
+                                    ("image_downsize" variable (:type "int") (reparse-symbol classsubparts) [10829 10848])
+                                    ("svm_model_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10849 10876])
+                                    ("dataset_directory" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10877 10907])
+                                    ("scaling_factor" variable (:type "double") (reparse-symbol classsubparts) [10908 10930])
+                                    ("stack_size" variable (:type "int") (reparse-symbol classsubparts) [10931 10946])
+                                    ("sliding_window_increment" variable (:type "int") (reparse-symbol classsubparts) [10947 10976])
+                                    ("state" variable (:type "bool") (reparse-symbol classsubparts) [10982 10993])
+                                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10998 11015]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [9594 11030])
+                            ("sliding_window_width" variable (:type "int") (reparse-symbol classsubparts) [11147 11172])
+                            ("sliding_window_height" variable (:type "int") (reparse-symbol classsubparts) [11286 11312])
+                            ("image_downsize" variable (:type "int") (reparse-symbol classsubparts) [11426 11445])
+                            ("svm_model_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11559 11586])
+                            ("dataset_directory" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11700 11730])
+                            ("scaling_factor" variable (:type "double") (reparse-symbol classsubparts) [11844 11866])
+                            ("stack_size" variable (:type "int") (reparse-symbol classsubparts) [11980 11995])
+                            ("sliding_window_increment" variable (:type "int") (reparse-symbol classsubparts) [12109 12138])
+                            ("__fromMessage__" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12261 12294]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12240 14002])
+                            ("__toMessage__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14163 14196])
+                                    ("__param_descriptions__" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14197 14273])
+                                    ("__group_descriptions__" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("AbstractGroupDescriptionConstPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14274 14350]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14144 14857])
+                            ("__toMessage__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("dynamic_reconfigure::Config" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14886 14919]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14867 15235])
+                            ("__toServer__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15263 15289]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15245 15603])
+                            ("__fromServer__" function
+                               (:arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15629 15655]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15609 16420])
+                            ("__clamp__" function (:type "void") (reparse-symbol classsubparts) [16426 16879])
+                            ("__level__" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("config" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16904 16940]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16885 17312])
+                            ("__getDescriptionMessage__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17322 17403])
+                            ("__getDefault__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17408 17461])
+                            ("__getMax__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17466 17515])
+                            ("__getMin__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17520 17569])
+                            ("__getParamDescriptions__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractParamDescriptionConstPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [17574 17661])
+                            ("__getGroupDescriptions__" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("AbstractGroupDescriptionConstPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [17666 17753])
+                            ("private" label nil (reparse-symbol classsubparts) [17761 17769])
+                            ("__get_statics__" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("ObjectDetectionConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17774 17835]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2654 17840])
+                    ("clamp" function
+                       (:type "void"
+                        :arguments 
+                          ( ("config" variable
+                               (:reference 1
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17972 18002])
+                            ("max" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18003 18036])
+                            ("min" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18037 18070]))                          
+                        :typemodifiers ("inline")
+                        :parent "ObjectDetectionConfig::ParamDescription"
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [17846 18096])
+                    ("ObjectDetectionConfigStatics" type
+                       (:members 
+                          ( ("ObjectDetectionConfig" friend nil (reparse-symbol classsubparts) [18143 18177])
+                            ("ObjectDetectionConfigStatics" function
+                               (:constructor-flag t
+                                :type ("ObjectDetectionConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18188 29012])
+                            ("__param_descriptions__" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ObjectDetectionConfig::AbstractParamDescriptionConstPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [29017 29109])
+                            ("__group_descriptions__" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ObjectDetectionConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [29114 29206])
+                            ("__max__" variable (:type ("ObjectDetectionConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29211 29241])
+                            ("__min__" variable (:type ("ObjectDetectionConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29246 29276])
+                            ("__default__" variable (:type ("ObjectDetectionConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29281 29315])
+                            ("__description_message__" variable (:type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29320 29383])
+                            ("get_instance" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :type ("ObjectDetectionConfigStatics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29389 29763]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [18100 29768])
+                    ("__getDescriptionMessage__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("dynamic_reconfigure::ConfigDescription" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29772 29939])
+                    ("__getDefault__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29943 30069])
+                    ("__getMax__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30075 30193])
+                    ("__getMin__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ObjectDetectionConfig" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30199 30317])
+                    ("__getParamDescriptions__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("ObjectDetectionConfig::AbstractParamDescriptionConstPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30323 30517])
+                    ("__getGroupDescriptions__" function
+                       (:parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("ObjectDetectionConfig::AbstractGroupDescriptionConstPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30521 30715])
+                    ("__get_statics__" function
+                       (:pointer 1
+                        :parent "ObjectDetectionConfig"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ObjectDetectionConfigStatics" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30719 31150]))                  
+                :type "namespace")
+                nil [2580 31154]))          
+      :file "ObjectDetectionConfig.h"
+      :pointmax 31202
+      :fsize 31201
+      :lastmodtime '(21832 52264 660933 926000)
+      :unmatched-syntax '((punctuation 18177 . 18178) (punctuation 9489 . 9490) (punctuation 9488 . 9489) (punctuation 9487 . 9488) (punctuation 7254 . 7255) (punctuation 7253 . 7254) (punctuation 7252 . 7253) (punctuation 4427 . 4428) (punctuation 4426 . 4427) (punctuation 4425 . 4426) (punctuation 4282 . 4283) (punctuation 4281 . 4282) (punctuation 4280 . 4281))
+      :lexical-table 
+        '(("__object_recognition__OBJECTDETECTIONCONFIG_H__")
+          )
+))
+  :file "!home!krishneel!catkin_ws!devel!include!object_recognition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

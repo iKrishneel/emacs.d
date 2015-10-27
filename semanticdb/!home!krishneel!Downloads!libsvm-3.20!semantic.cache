@@ -1,0 +1,1786 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("stdio.h" include (:system-flag t) nil [19 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("ctype.h" include (:system-flag t) nil [58 76])
+            ("float.h" include (:system-flag t) nil [77 95])
+            ("string.h" include (:system-flag t) nil [96 115])
+            ("stdarg.h" include (:system-flag t) nil [116 135])
+            ("limits.h" include (:system-flag t) nil [136 155])
+            ("locale.h" include (:system-flag t) nil [156 175])
+            ("svm.h" include nil nil [176 192])
+            ("libsvm_version" variable
+               (:default-value "LIBSVM_VERSION"
+                :type "int")
+                nil [193 229])
+            ("Qfloat" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [230 251])
+            ("schar" type
+               (:typedef ("signed char")
+                :type "typedef")
+                nil [252 278])
+            ("min" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [330 334])
+                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 338]))                  
+                :typemodifiers ("static" "inline"))
+                nil [291 360])
+            ("max" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [419 423])
+                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [423 427]))                  
+                :typemodifiers ("static" "inline"))
+                nil [380 449])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [500 505])
+                    ("y" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [506 511]))                  
+                :typemodifiers ("static" "inline"))
+                nil [457 532])
+            ("clone" function
+               (:template 
+                  ( ("S" type (:type "class") nil nil)
+                    ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [586 589])
+                    ("" variable (:type ("dst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [590 594])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("S" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 602])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [603 609]))                  
+                :typemodifiers ("static" "inline"))
+                nil [533 676])
+            ("powi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("base" variable (:type "double") (reparse-symbol arg-sub-list) [703 715])
+                    ("times" variable (:type "int") (reparse-symbol arg-sub-list) [716 726]))                  
+                :type "double")
+                nil [677 852])
+            ("INF" variable (:constant-flag t) nil [861 864])
+            ("TAU" variable (:constant-flag t) nil [882 885])
+            ("Malloc" variable (:constant-flag t) nil [900 906])
+            ("print_string_stdout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [981 995]))                  
+                :type "void")
+                nil [949 1034])
+            ("print_string_stdout" variable (:type "int") nil [1084 1105])
+            ("info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1291 1307])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1307 1311]))                  
+                :type "void")
+                nil [1274 1314])
+            ("Cache" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1442 1449])
+                    ("Cache" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [1457 1463])
+                            ("size" variable (:type "long int") (reparse-symbol arg-sub-list) [1463 1477]))                          
+                        :type ("Cache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1451 1478])
+                    ("Cache" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1480 1489])
+                    ("get_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1634 1650])
+                            ("data" variable
+                               (:pointer 2
+                                :type ("Qfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1651 1665])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1666 1674]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1621 1675])
+                    ("swap_index" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1693 1699])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [1700 1706]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1677 1707])
+                    ("private" label nil (reparse-symbol classsubparts) [1708 1716])
+                    ("l" variable (:type "int") (reparse-symbol classsubparts) [1718 1724])
+                    ("size" variable (:type "long int") (reparse-symbol classsubparts) [1726 1740])
+                    ("head_t" type
+                       (:members 
+                          ( ("prev" variable
+                               (:pointer 1
+                                :type ("head_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1761 1781])
+                            ("next" variable
+                               (:pointer 1
+                                :type ("head_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1761 1781])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("Qfloat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1803 1816])
+                            ("len" variable (:type "int") (reparse-symbol classsubparts) [1819 1827]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1742 1871])
+                    ("head" variable
+                       (:pointer 1
+                        :type ("head_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1874 1887])
+                    ("lru_head" variable (:type ("head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1889 1905])
+                    ("lru_delete" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("h" variable
+                               (:pointer 1
+                                :type ("head_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1923 1933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1907 1934])
+                    ("lru_insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("h" variable
+                               (:pointer 1
+                                :type ("head_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1952 1962]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1936 1963]))                  
+                :type "class")
+                nil [1428 1966])
+            ("Cache" function
+               (:constructor-flag t
+                :parent "Cache"
+                :arguments 
+                  ( ("l_" variable (:type "int") (reparse-symbol arg-sub-list) [1981 1988])
+                    ("size_" variable (:type "long int") (reparse-symbol arg-sub-list) [1988 2003]))                  
+                :type ("Cache" type (:type "class") nil nil))
+                nil [1968 2287])
+            ("Cache" function
+               (:destructor-flag t
+                :parent "Cache"
+                :type "void")
+                nil [2289 2397])
+            ("lru_delete" function
+               (:parent "Cache"
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("head_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2422 2432]))                  
+                :type "void")
+                nil [2399 2521])
+            ("lru_insert" function
+               (:parent "Cache"
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("head_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2546 2556]))                  
+                :type "void")
+                nil [2523 2676])
+            ("get_data" function
+               (:parent "Cache"
+                :arguments 
+                  ( ("index" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2698 2714])
+                    ("data" variable
+                       (:pointer 2
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2715 2729])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2730 2738]))                  
+                :type "int")
+                nil [2678 3188])
+            ("swap_index" function
+               (:parent "Cache"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3213 3219])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [3220 3226]))                  
+                :type "void")
+                nil [3190 3755])
+            ("QMatrix" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4019 4026])
+                    ("get_Q" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("column" variable (:type "int") (reparse-symbol arg-sub-list) [4050 4061])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4062 4070]))                          
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4028 4081])
+                    ("get_QD" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [4083 4118])
+                    ("swap_index" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4144 4150])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [4151 4157]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4120 4168])
+                    ("QMatrix" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4170 4191]))                  
+                :type "class")
+                nil [4003 4194])
+            ("Kernel" type
+               (:superclasses 
+                  ( ("QMatrix" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4227 4234])
+                    ("Kernel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [4243 4249])
+                            ("x" variable
+                               (:pointer 2
+                                :type ("svm_node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4250 4271])
+                            ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_parameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4272 4299]))                          
+                        :type ("Kernel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4236 4300])
+                    ("Kernel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4302 4320])
+                    ("k_function" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("svm_node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4348 4366])
+                            ("y" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("svm_node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4367 4385])
+                            ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_parameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4391 4418]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [4323 4419])
+                    ("get_Q" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("column" variable (:type "int") (reparse-symbol arg-sub-list) [4443 4454])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4455 4463]))                          
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4421 4474])
+                    ("get_QD" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [4476 4511])
+                    ("swap_index" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4537 4543])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [4544 4550]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4513 4645])
+                    ("protected" label nil (reparse-symbol classsubparts) [4646 4656])
+                    ("private" label nil (reparse-symbol classsubparts) [4715 4723])
+                    ("x" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4725 4744])
+                    ("x_square" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [4746 4763])
+                    ("kernel_type" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4784 4806])
+                    ("degree" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4808 4825])
+                    ("gamma" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [4827 4846])
+                    ("coef0" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [4848 4867])
+                    ("dot" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("px" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("svm_node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4888 4907])
+                            ("py" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("svm_node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4908 4927]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [4870 4928])
+                    ("kernel_linear" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4951 4957])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [4958 4964]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [4930 5001])
+                    ("kernel_poly" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5022 5028])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [5029 5035]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5003 5097])
+                    ("kernel_rbf" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5117 5123])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [5124 5130]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5099 5207])
+                    ("kernel_sigmoid" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5231 5237])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [5238 5244]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5209 5299])
+                    ("kernel_precomputed" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [5327 5333])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [5334 5340]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5301 5395]))                  
+                :type "class")
+                nil [4196 5398])
+            ("Kernel" function
+               (:constructor-flag t
+                :parent "Kernel"
+                :arguments 
+                  ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [5415 5421])
+                    ("x_" variable
+                       (:pointer 2
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5422 5444])
+                    ("param" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5445 5472]))                  
+                :type ("Kernel" type (:type "class") nil nil))
+                nil [5400 6104])
+            ("Kernel" function
+               (:destructor-flag t
+                :parent "Kernel"
+                :type "void")
+                nil [6106 6160])
+            ("dot" function
+               (:parent "Kernel"
+                :arguments 
+                  ( ("px" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6181 6200])
+                    ("py" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6201 6220]))                  
+                :type "double")
+                nil [6162 6466])
+            ("k_function" function
+               (:parent "Kernel"
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6494 6512])
+                    ("y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6513 6531])
+                    ("param" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6537 6564]))                  
+                :type "double")
+                nil [6468 7482])
+            ("Solver" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7959 7966])
+                    ("Solver" function
+                       (:constructor-flag t
+                        :type ("Solver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7968 7979])
+                    ("Solver" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7982 8002])
+                    ("SolutionInfo" type
+                       (:members 
+                          ( ("obj" variable (:type "double") (reparse-symbol classsubparts) [8030 8041])
+                            ("rho" variable (:type "double") (reparse-symbol classsubparts) [8044 8055])
+                            ("upper_bound_p" variable (:type "double") (reparse-symbol classsubparts) [8058 8079])
+                            ("upper_bound_n" variable (:type "double") (reparse-symbol classsubparts) [8082 8103])
+                            ("r" variable (:type "double") (reparse-symbol classsubparts) [8106 8115]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [8006 8136])
+                    ("Solve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [8150 8156])
+                            ("Q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QMatrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8157 8174])
+                            ("p_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8175 8192])
+                            ("y_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("schar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8193 8209])
+                            ("alpha_" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8215 8230])
+                            ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [8231 8241])
+                            ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [8242 8252])
+                            ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [8253 8264])
+                            ("si" variable
+                               (:pointer 1
+                                :type ("SolutionInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8270 8287])
+                            ("shrinking" variable (:type "int") (reparse-symbol arg-sub-list) [8288 8302]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8139 8303])
+                    ("protected" label nil (reparse-symbol classsubparts) [8304 8314])
+                    ("active_size" variable (:type "int") (reparse-symbol classsubparts) [8316 8332])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("schar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8334 8343])
+                    ("G" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [8345 8355])
+                    ("" type
+                       (:members 
+                          ( ("LOWER_BOUND" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8399 8411])
+                            ("UPPER_BOUND" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8412 8424])
+                            ("FREE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8425 8431]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [8392 8432])
+                    ("alpha_status" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8434 8453])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [8489 8503])
+                    ("Q" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8505 8522])
+                    ("QD" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [8524 8541])
+                    ("eps" variable (:type "double") (reparse-symbol classsubparts) [8543 8554])
+                    ("Cp" variable (:type "double") (reparse-symbol classsubparts) [8556 8569])
+                    ("Cn" variable (:type "double") (reparse-symbol classsubparts) [8556 8569])
+                    ("p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [8571 8581])
+                    ("active_set" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [8583 8599])
+                    ("G_bar" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [8601 8615])
+                    ("l" variable (:type "int") (reparse-symbol classsubparts) [8663 8669])
+                    ("unshrink" variable (:type "bool") (reparse-symbol classsubparts) [8671 8685])
+                    ("get_C" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8708 8714]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [8695 8750])
+                    ("update_alpha_status" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8777 8783]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8752 8940])
+                    ("is_upper_bound" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8962 8968]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8942 9011])
+                    ("is_lower_bound" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9033 9039]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9013 9082])
+                    ("is_free" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9097 9103]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9084 9139])
+                    ("swap_index" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9157 9163])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9164 9170]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9141 9171])
+                    ("reconstruct_gradient" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9173 9201])
+                    ("select_working_set" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [9234 9241])
+                            ("j" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [9242 9249]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9203 9250])
+                    ("calculate_rho" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [9252 9283])
+                    ("do_shrinking" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9285 9313])
+                    ("private" label nil (reparse-symbol classsubparts) [9314 9322])
+                    ("be_shrunk" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9339 9345])
+                            ("Gmax1" variable (:type "double") (reparse-symbol arg-sub-list) [9346 9359])
+                            ("Gmax2" variable (:type "double") (reparse-symbol arg-sub-list) [9360 9373]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9324 9374]))                  
+                :type "class")
+                nil [7944 9377])
+            ("swap_index" function
+               (:parent "Solver"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [9403 9409])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [9410 9416]))                  
+                :type "void")
+                nil [9379 9623])
+            ("reconstruct_gradient" function
+               (:parent "Solver"
+                :type "void")
+                nil [9625 10409])
+            ("Solve" function
+               (:parent "Solver"
+                :arguments 
+                  ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [10430 10436])
+                    ("Q" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10437 10454])
+                    ("p_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10455 10472])
+                    ("y_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("schar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10473 10489])
+                    ("alpha_" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10495 10510])
+                    ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [10511 10521])
+                    ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [10522 10532])
+                    ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [10533 10544])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10550 10567])
+                    ("shrinking" variable (:type "int") (reparse-symbol arg-sub-list) [10568 10582]))                  
+                :type "void")
+                nil [10411 15283])
+            ("select_working_set" function
+               (:parent "Solver"
+                :arguments 
+                  ( ("out_i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15367 15378])
+                    ("out_j" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15379 15390]))                  
+                :type "int")
+                nil [15336 17215])
+            ("be_shrunk" function
+               (:parent "Solver"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [17240 17246])
+                    ("Gmax1" variable (:type "double") (reparse-symbol arg-sub-list) [17247 17260])
+                    ("Gmax2" variable (:type "double") (reparse-symbol arg-sub-list) [17261 17274]))                  
+                :type "bool")
+                nil [17217 17511])
+            ("do_shrinking" function
+               (:parent "Solver"
+                :type "void")
+                nil [17513 18506])
+            ("calculate_rho" function
+               (:parent "Solver"
+                :type "double")
+                nil [18508 19002])
+            ("Solver_NU" type
+               (:superclasses 
+                  ( ("Solver" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [19145 19152])
+                    ("Solver_NU" function
+                       (:constructor-flag t
+                        :type ("Solver_NU" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19154 19168])
+                    ("Solve" function
+                       (:arguments 
+                          ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [19181 19187])
+                            ("Q" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QMatrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19188 19205])
+                            ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [19206 19222])
+                            ("y" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("schar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19223 19238])
+                            ("alpha" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [19244 19258])
+                            ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [19259 19269])
+                            ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [19270 19280])
+                            ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [19281 19292])
+                            ("si" variable
+                               (:pointer 1
+                                :type ("SolutionInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19298 19315])
+                            ("shrinking" variable (:type "int") (reparse-symbol arg-sub-list) [19316 19330]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19170 19408])
+                    ("private" label nil (reparse-symbol classsubparts) [19409 19417])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19419 19436])
+                    ("select_working_set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19461 19468])
+                            ("j" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19469 19476]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19438 19477])
+                    ("calculate_rho" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [19479 19502])
+                    ("be_shrunk" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [19519 19525])
+                            ("Gmax1" variable (:type "double") (reparse-symbol arg-sub-list) [19526 19539])
+                            ("Gmax2" variable (:type "double") (reparse-symbol arg-sub-list) [19540 19553])
+                            ("Gmax3" variable (:type "double") (reparse-symbol arg-sub-list) [19554 19567])
+                            ("Gmax4" variable (:type "double") (reparse-symbol arg-sub-list) [19568 19581]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [19504 19582])
+                    ("do_shrinking" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19584 19604]))                  
+                :type "class")
+                nil [19112 19607])
+            ("select_working_set" function
+               (:parent "Solver_NU"
+                :arguments 
+                  ( ("out_i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19694 19705])
+                    ("out_j" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19706 19717]))                  
+                :type "int")
+                nil [19660 21808])
+            ("be_shrunk" function
+               (:parent "Solver_NU"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [21836 21842])
+                    ("Gmax1" variable (:type "double") (reparse-symbol arg-sub-list) [21843 21856])
+                    ("Gmax2" variable (:type "double") (reparse-symbol arg-sub-list) [21857 21870])
+                    ("Gmax3" variable (:type "double") (reparse-symbol arg-sub-list) [21871 21884])
+                    ("Gmax4" variable (:type "double") (reparse-symbol arg-sub-list) [21885 21898]))                  
+                :type "bool")
+                nil [21810 22136])
+            ("do_shrinking" function
+               (:parent "Solver_NU"
+                :type "void")
+                nil [22138 23257])
+            ("calculate_rho" function
+               (:parent "Solver_NU"
+                :type "double")
+                nil [23259 24030])
+            ("SVC_Q" type
+               (:superclasses 
+                  ( ("Kernel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [24107 24114])
+                    ("SVC_Q" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("prob" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_problem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24122 24146])
+                            ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_parameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24147 24174])
+                            ("y_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("schar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24175 24191]))                          
+                        :type ("SVC_Q" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24116 24414])
+                    ("get_Q" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [24432 24438])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [24439 24447]))                          
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24418 24656])
+                    ("get_QD" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [24659 24700])
+                    ("swap_index" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [24719 24725])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [24726 24732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [24703 24837])
+                    ("SVC_Q" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [24840 24899])
+                    ("private" label nil (reparse-symbol classsubparts) [24900 24908])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("schar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24910 24919])
+                    ("cache" variable
+                       (:pointer 1
+                        :type ("Cache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24921 24934])
+                    ("QD" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [24936 24947]))                  
+                :type "class")
+                nil [24077 24950])
+            ("ONE_CLASS_Q" type
+               (:superclasses 
+                  ( ("Kernel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [24987 24994])
+                    ("ONE_CLASS_Q" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("prob" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_problem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25008 25032])
+                            ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_parameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25033 25060]))                          
+                        :type ("ONE_CLASS_Q" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24996 25261])
+                    ("get_Q" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [25279 25285])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [25286 25294]))                          
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25265 25491])
+                    ("get_QD" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [25494 25535])
+                    ("swap_index" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [25554 25560])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [25561 25567]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [25538 25653])
+                    ("ONE_CLASS_Q" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [25656 25707])
+                    ("private" label nil (reparse-symbol classsubparts) [25708 25716])
+                    ("cache" variable
+                       (:pointer 1
+                        :type ("Cache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25718 25731])
+                    ("QD" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [25733 25744]))                  
+                :type "class")
+                nil [24952 25747])
+            ("SVR_Q" type
+               (:superclasses 
+                  ( ("Kernel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [25779 25786])
+                    ("SVR_Q" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("prob" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_problem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25794 25818])
+                            ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("svm_parameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25819 25846]))                          
+                        :type ("SVR_Q" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25788 26277])
+                    ("swap_index" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [26296 26302])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [26303 26309]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [26280 26394])
+                    ("get_Q" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [26412 26418])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [26419 26427]))                          
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [26398 26822])
+                    ("get_QD" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [26825 26866])
+                    ("SVR_Q" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [26869 26993])
+                    ("private" label nil (reparse-symbol classsubparts) [26994 27002])
+                    ("l" variable (:type "int") (reparse-symbol classsubparts) [27004 27010])
+                    ("cache" variable
+                       (:pointer 1
+                        :type ("Cache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [27012 27025])
+                    ("sign" variable
+                       (:pointer 1
+                        :type ("schar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [27027 27039])
+                    ("index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [27041 27052])
+                    ("next_buffer" variable
+                       (:typemodifiers ("mutable")
+                        :type "int")
+                        (reparse-symbol classsubparts) [27054 27078])
+                    ("buffer" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("Qfloat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [27080 27098])
+                    ("QD" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [27100 27111]))                  
+                :type "class")
+                nil [25749 27114])
+            ("solve_c_svc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27192 27216])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27217 27244])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [27246 27260])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("Solver::SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27261 27286])
+                    ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [27287 27297])
+                    ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [27298 27308]))                  
+                :type "void")
+                nil [27166 27826])
+            ("solve_nu_svc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27855 27879])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27880 27907])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [27909 27923])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("Solver::SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27924 27949]))                  
+                :type "void")
+                nil [27828 28712])
+            ("solve_one_class" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28744 28768])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28769 28796])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [28798 28812])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("Solver::SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28813 28838]))                  
+                :type "void")
+                nil [28714 29328])
+            ("solve_epsilon_svr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29362 29386])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29387 29414])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [29416 29430])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("Solver::SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29431 29456]))                  
+                :type "void")
+                nil [29330 30107])
+            ("solve_nu_svr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30136 30160])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30161 30188])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [30190 30204])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("Solver::SolutionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30205 30230]))                  
+                :type "void")
+                nil [30109 30864])
+            ("decision_function" type
+               (:members 
+                  ( ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [30921 30935])
+                    ("rho" variable (:type "double") (reparse-symbol classsubparts) [30937 30948]))                  
+                :type "struct")
+                nil [30893 30951])
+            ("svm_train_one" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30994 31018])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31019 31046])
+                    ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [31048 31058])
+                    ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [31059 31069]))                  
+                :type ("decision_function" type (:type "class") nil nil))
+                nil [30953 31953])
+            ("sigmoid_train" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("l" variable (:type "int") (reparse-symbol arg-sub-list) [32057 32063])
+                    ("dec_values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [32064 32089])
+                    ("labels" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [32090 32111])
+                    ("A" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [32114 32124])
+                    ("B" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [32125 32135]))                  
+                :type "void")
+                nil [32029 34475])
+            ("sigmoid_predict" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("decision_value" variable (:type "double") (reparse-symbol arg-sub-list) [34507 34529])
+                    ("A" variable (:type "double") (reparse-symbol arg-sub-list) [34530 34539])
+                    ("B" variable (:type "double") (reparse-symbol arg-sub-list) [34540 34549]))                  
+                :type "double")
+                nil [34477 34729])
+            ("multiclass_probability" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [34830 34836])
+                    ("r" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [34837 34848])
+                    ("p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [34849 34859]))                  
+                :type "void")
+                nil [34795 35995])
+            ("svm_binary_svc_probability" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36100 36124])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36125 36152])
+                    ("Cp" variable (:type "double") (reparse-symbol arg-sub-list) [36154 36164])
+                    ("Cn" variable (:type "double") (reparse-symbol arg-sub-list) [36165 36175])
+                    ("probA" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36176 36190])
+                    ("probB" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36191 36205]))                  
+                :type "void")
+                nil [36059 38143])
+            ("svm_svr_probability" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38228 38252])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38253 38280]))                  
+                :type "double")
+                nil [38192 38919])
+            ("svm_group_classes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39130 39154])
+                    ("nr_class_ret" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39155 39173])
+                    ("label_ret" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39174 39190])
+                    ("start_ret" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39191 39207])
+                    ("count_ret" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39208 39224])
+                    ("perm" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [39225 39235]))                  
+                :type "void")
+                nil [39100 40770])
+            ("svm_train" function
+               (:pointer 1
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40822 40846])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40847 40874]))                  
+                :type ("svm_model" type (:type "class") nil nil))
+                nil [40801 46471])
+            ("svm_cross_validation" function
+               (:arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46530 46554])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46555 46582])
+                    ("nr_fold" variable (:type "int") (reparse-symbol arg-sub-list) [46583 46595])
+                    ("target" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [46596 46611]))                  
+                :type "void")
+                nil [46504 49480])
+            ("svm_get_svm_type" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49504 49527]))                  
+                :type "int")
+                nil [49483 49562])
+            ("svm_get_nr_class" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49585 49608]))                  
+                :type "int")
+                nil [49564 49637])
+            ("svm_get_labels" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49659 49682])
+                    ("label" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [49683 49694]))                  
+                :type "void")
+                nil [49639 49793])
+            ("svm_get_sv_indices" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49819 49842])
+                    ("indices" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [49843 49856]))                  
+                :type "void")
+                nil [49795 49960])
+            ("svm_get_nr_sv" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49980 50003]))                  
+                :type "int")
+                nil [49962 50025])
+            ("svm_get_svr_probability" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50058 50081]))                  
+                :type "double")
+                nil [50027 50329])
+            ("svm_predict_values" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50357 50380])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50381 50399])
+                    ("dec_values" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [50400 50419]))                  
+                :type "double")
+                nil [50331 51981])
+            ("svm_predict" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52002 52025])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52026 52044]))                  
+                :type "double")
+                nil [51983 52426])
+            ("svm_predict_probability" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52461 52484])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52485 52503])
+                    ("prob_estimates" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [52504 52527]))                  
+                :type "double")
+                nil [52428 53579])
+            ("svm_type_table" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	\"c_svc\",\"nu_svc\",\"one_class\",\"epsilon_svr\",\"nu_svr\",NULL
+}"
+                :type "char")
+                nil [53581 53681])
+            ("kernel_type_table" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	\"linear\",\"polynomial\",\"rbf\",\"sigmoid\",\"precomputed\",NULL
+}"
+                :type "char")
+                nil [53683 53785])
+            ("svm_save_model" function
+               (:arguments 
+                  ( ("model_file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53806 53834])
+                    ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53835 53858]))                  
+                :type "int")
+                nil [53787 55927])
+            ("line" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [55929 55954])
+            ("max_line_len" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [55955 55979])
+            ("readline" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56003 56015]))                  
+                :type "char")
+                nil [55981 56303])
+            ("FSCANF" variable (:constant-flag t) nil [56449 56455])
+            ("read_model_header" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56572 56581])
+                    ("model" variable
+                       (:pointer 1
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56582 56599]))                  
+                :type "bool")
+                nil [56549 58832])
+            ("svm_load_model" function
+               (:pointer 1
+                :arguments 
+                  ( ("model_file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58860 58888]))                  
+                :type ("svm_model" type (:type "class") nil nil))
+                nil [58834 60772])
+            ("svm_free_model_content" function
+               (:arguments 
+                  ( ("model_ptr" variable
+                       (:pointer 1
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60802 60823]))                  
+                :type "void")
+                nil [60774 61451])
+            ("svm_free_and_destroy_model" function
+               (:arguments 
+                  ( ("model_ptr_ptr" variable
+                       (:pointer 2
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61485 61511]))                  
+                :type "void")
+                nil [61453 61665])
+            ("svm_destroy_param" function
+               (:arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61690 61711]))                  
+                :type "void")
+                nil [61667 61765])
+            ("svm_check_parameter" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("prob" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_problem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61799 61823])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_parameter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61824 61851]))                  
+                :type "char")
+                nil [61767 64230])
+            ("svm_check_probability_model" function
+               (:arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("svm_model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64264 64287]))                  
+                :type "int")
+                nil [64232 64522])
+            ("svm_set_print_string_function" function
+               (:arguments 
+                  ( ("print_func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [64578 64591]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [64524 64702]))          
+      :file "svm.cpp"
+      :pointmax 64703
+      :fsize 64702
+      :lastmodtime '(21606 34705 0 0)
+      :unmatched-syntax '((punctuation 8002 . 8003) (punctuation 7979 . 7980) (punctuation 4712 . 4713) (CONST 4707 . 4712) (semantic-list 4692 . 4706) (semantic-list 4666 . 4692) (DOUBLE 4659 . 4665) (punctuation 1082 . 1083) (semantic-list 1067 . 1081) (semantic-list 1047 . 1066) (VOID 1042 . 1046) (STATIC 1035 . 1041) (punctuation 588 . 589))
+      :lexical-table 
+        '(("Malloc" (spp-arg-list ("type" "n") 906 . 914) . 
+              ((semantic-list "(type *)" 915 . 923) (symbol "malloc" 923 . 929) (semantic-list "((n)*sizeof(type))" 929 . 947)))
+          ("FSCANF" (spp-arg-list ("_stream" "_format" "_var") 56455 . 56479) . 
+              ((DO "do" 56480 . 56482) (semantic-list "{ if (fscanf(_stream, _format, _var) != 1) return false; }" 56482 . 56540) (WHILE "while" 56540 . 56545) (semantic-list "(0)" 56545 . 56548)))
+          ("TAU" . ((number "1e-12" 886 . 891)))
+          ("INF" . ((symbol "HUGE_VAL" 865 . 873)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("ctype.h" include (:system-flag t) nil [60 78])
+            ("errno.h" include (:system-flag t) nil [79 97])
+            ("svm.h" include nil nil [98 114])
+            ("Malloc" variable (:constant-flag t) nil [123 129])
+            ("print_null" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [188 202]))                  
+                :type "void")
+                nil [172 205])
+            ("exit_with_help" function (:type "void") nil [207 1789])
+            ("exit_input_error" function
+               (:arguments 
+                  ( ("line_num" variable (:type "int") (reparse-symbol arg-sub-list) [1813 1826]))                  
+                :type "void")
+                nil [1791 1902])
+            ("parse_command_line" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1928 1937])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1938 1950])
+                    ("input_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1951 1973])
+                    ("model_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1974 1996]))                  
+                :type "void")
+                nil [1904 1997])
+            ("read_problem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2016 2037]))                  
+                :type "void")
+                nil [1998 2038])
+            ("do_cross_validation" function
+               (:prototype-flag t
+                :type "void")
+                nil [2039 2066])
+            ("param" variable (:type ("svm_parameter" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2068 2095])
+            ("prob" variable (:type ("svm_problem" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2126 2150])
+            ("model" variable
+               (:pointer 1
+                :type ("svm_model" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2175 2199])
+            ("x_space" variable
+               (:pointer 1
+                :type ("svm_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2200 2225])
+            ("cross_validation" variable (:type "int") nil [2226 2247])
+            ("nr_fold" variable (:type "int") nil [2248 2260])
+            ("line" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [2262 2287])
+            ("max_line_len" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2288 2312])
+            ("readline" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2336 2348]))                  
+                :type "char")
+                nil [2314 2637])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2648 2657])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2658 2670]))                  
+                :type "int")
+                nil [2639 3352])
+            ("do_cross_validation" function (:type "void") nil [3354 4298])
+            ("parse_command_line" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4324 4333])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4334 4346])
+                    ("input_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4347 4369])
+                    ("model_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4370 4392]))                  
+                :type "void")
+                nil [4300 6706])
+            ("read_problem" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6769 6790]))                  
+                :type "void")
+                nil [6751 8986]))          
+      :file "svm-train.c"
+      :pointmax 8987
+      :fsize 8986
+      :lastmodtime '(21606 34705 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Malloc" (spp-arg-list ("type" "n") 129 . 137) . 
+              ((semantic-list "(type *)" 138 . 146) (symbol "malloc" 146 . 152) (semantic-list "((n)*sizeof(type))" 152 . 170)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "svm.h"
+      :fsize 3382
+      :lastmodtime '(21606 34705 0 0)))
+  :file "!home!krishneel!Downloads!libsvm-3.20!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,372 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("opencv2/imgproc/imgproc.hpp" include nil nil [41 79])
+            ("opencv2/highgui/highgui.hpp" include nil nil [116 154])
+            ("iostream" include (:system-flag t) nil [155 174])
+            ("../connectedcomponents.h" include nil nil [175 210])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [212 231])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [232 252])
+            ("img" variable (:type ("Mat" type (:type "class") nil nil)) nil [254 262])
+            ("threshval" variable
+               (:default-value "100"
+                :type "int")
+                nil [263 283])
+            ("on_trackbar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [309 313])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [314 320]))                  
+                :type "void")
+                nil [285 1018])
+            ("help" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1020 1439])
+            ("keys" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "{
+    \"{@image|../data/stuff.jpg|image for converting to a grayscale}\"
+}"
+                :type "char")
+                nil [1441 1533])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1545 1554])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1555 1574]))                  
+                :type "int")
+                nil [1535 2111]))          
+      :file "main.cpp"
+      :pointmax 2112
+      :fsize 2110
+      :lastmodtime '(21764 10932 905025 529000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("precomp.hpp" include (:system-flag t) nil [2130 2152])
+            ("vector" include (:system-flag t) nil [2153 2170])
+            ("cv" type
+               (:members 
+                  ( ("connectedcomponents" type
+                       (:members 
+                          ( ("NoOp" type
+                               (:members 
+                                  ( ("NoOp" function
+                                       (:constructor-flag t
+                                        :type ("NoOp" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2247 2264])
+                                    ("init" function
+                                       (:arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2283 2298]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2273 2309])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [2349 2355])
+                                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2356 2362])
+                                            ("l" variable (:type "int") (reparse-symbol arg-sub-list) [2363 2369]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2318 2446])
+                                    ("finish" function (:type "void") (reparse-symbol classsubparts) [2455 2470]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2226 2477])
+                            ("Point2ui64" type
+                               (:members 
+                                  ( ("x" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2509 2521])
+                                    ("y" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2509 2521])
+                                    ("Point2ui64" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("_x" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2541 2551])
+                                            ("_y" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2552 2562]))                                          
+                                        :type ("Point2ui64" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2530 2577]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2482 2584])
+                            ("CCStatsOp" type
+                               (:members 
+                                  ( ("_mstatsv" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("_OutputArray" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2616 2645])
+                                    ("statsv" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2654 2669])
+                                    ("_mcentroidsv" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("_OutputArray" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2678 2711])
+                                    ("centroidsv" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2720 2739])
+                                    ("integrals" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Point2ui64" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2748 2782])
+                                    ("CCStatsOp" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("_statsv" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2822])
+                                            ("_centroidsv" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2823 2847]))                                          
+                                        :type ("CCStatsOp" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2792 2906])
+                                    ("init" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("nlabels" variable (:type "int") (reparse-symbol arg-sub-list) [2940 2952]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2915 3627])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3652 3658])
+                                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3659 3665])
+                                            ("l" variable (:type "int") (reparse-symbol arg-sub-list) [3666 3672]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3636 4109])
+                                    ("finish" function (:type "void") (reparse-symbol classsubparts) [4118 4714]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2590 4721])
+                            ("findRoot" function
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil))                                  
+                                :type ("LabelT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4833 4849])
+                                    ("i" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4850 4859]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol namespacesubparts) [4769 4981])
+                            ("setRoot" function
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5105 5115])
+                                    ("i" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5116 5125])
+                                    ("root" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5126 5138]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol namespacesubparts) [5044 5274])
+                            ("find" function
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil))                                  
+                                :type ("LabelT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5423 5433])
+                                    ("i" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5434 5443]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol namespacesubparts) [5363 5538])
+                            ("set_union" function
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil))                                  
+                                :type ("LabelT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5684 5694])
+                                    ("i" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5695 5704])
+                                    ("j" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5705 5714]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol namespacesubparts) [5619 5989])
+                            ("flattenL" function
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil))                                  
+                                :type ("LabelT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("P" variable
+                                       (:pointer 1
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6120 6130])
+                                    ("length" variable (:type ("LabelT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6131 6145]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol namespacesubparts) [6056 6374])
+                            ("G4" variable
+                               (:dereference 2
+                                :constant-flag t
+                                :default-value "{{1, 0}, {0, -1}}"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6698 6737])
+                            ("G8" variable
+                               (:dereference 2
+                                :constant-flag t
+                                :default-value "{{1, -1}, {1, 0}, {1, 1}, {0, -1}}"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [6854 6910])
+                            ("LabelingImpl" type
+                               (:template 
+                                  ( ("LabelT" type (:type "class") nil nil)
+                                    ("PixelT" type (:type "class") nil nil)
+                                    ("StatsOp" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("I" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cv::Mat" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7057 7074])
+                                            ("L" variable
+                                               (:reference 1
+                                                :type ("cv::Mat" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7075 7086])
+                                            ("connectivity" variable (:type "int") (reparse-symbol arg-sub-list) [7087 7104])
+                                            ("sop" variable
+                                               (:reference 1
+                                                :type ("StatsOp" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7105 7118]))                                          
+                                        :type ("LabelT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7039 13210]))                                  )
+                                (reparse-symbol namespacesubparts) [6941 13256]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2190 13283])
+                    ("connectedComponents_sub1" function
+                       (:template 
+                          ( ("StatsOp" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("I" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13455 13472])
+                            ("L" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13473 13484])
+                            ("connectivity" variable (:type "int") (reparse-symbol arg-sub-list) [13485 13502])
+                            ("sop" variable
+                               (:reference 1
+                                :type ("StatsOp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13503 13516]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol namespacesubparts) [13392 14466]))                  
+                :type "namespace")
+                nil [2172 14469])
+            ("connectedComponents" function
+               (:parent "cv"
+                :arguments 
+                  ( ("_img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14499 14515])
+                    ("_labels" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14516 14536])
+                    ("connectivity" variable (:type "int") (reparse-symbol arg-sub-list) [14537 14554])
+                    ("ltype" variable (:type "int") (reparse-symbol arg-sub-list) [14555 14565]))                  
+                :type "int")
+                nil [14471 15055])
+            ("connectedComponentsWithStats" function
+               (:parent "cv"
+                :arguments 
+                  ( ("_img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15094 15110])
+                    ("_labels" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15111 15131])
+                    ("statsv" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15132 15151])
+                    ("centroids" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15189 15211])
+                    ("connectivity" variable (:type "int") (reparse-symbol arg-sub-list) [15212 15229])
+                    ("ltype" variable (:type "int") (reparse-symbol arg-sub-list) [15230 15240]))                  
+                :type "int")
+                nil [15057 15755]))          
+      :file "connectedcomponents.cpp"
+      :pointmax 15756
+      :fsize 15755
+      :lastmodtime '(21764 11223 669035 883000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__OPENCV_PRECOMP_H__" variable (:constant-flag t) nil [2194 2214])
+            ("opencv2/imgproc/imgproc.hpp" include nil nil [2216 2254])
+            ("opencv2/imgproc/imgproc_c.h" include nil nil [2295 2333])
+            ("math.h" include (:system-flag t) nil [2407 2424])
+            ("assert.h" include (:system-flag t) nil [2425 2444])
+            ("string.h" include (:system-flag t) nil [2445 2464])
+            ("stdlib.h" include (:system-flag t) nil [2465 2484])
+            ("stdio.h" include (:system-flag t) nil [2485 2503])
+            ("limits.h" include (:system-flag t) nil [2504 2523])
+            ("float.h" include (:system-flag t) nil [2524 2542])
+            ("GET_OPTIMIZED" variable (:constant-flag t) nil [2634 2647])
+            ("icvSaturate8u_cv" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("uchar" type (:type "class") nil nil))
+                nil [2689 2727])
+            ("CV_FAST_CAST_8U" variable (:constant-flag t) nil [2736 2751])
+            ("CV_CALC_MIN_8U" variable (:constant-flag t) nil [2827 2841])
+            ("CV_CALC_MAX_8U" variable (:constant-flag t) nil [2889 2903])
+            ("icv8x32fTab_cv" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "float")
+                nil [2964 3000])
+            ("CV_8TO32F" variable (:constant-flag t) nil [3009 3018])
+            ("icv8x32fSqrTab" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "float")
+                nil [3076 3112])
+            ("CV_8TO32F_SQR" variable (:constant-flag t) nil [3121 3134])
+            ("CV_COPY" variable (:constant-flag t) nil [3173 3180])
+            ("CV_SET" variable (:constant-flag t) nil [3283 3289])
+            ("CV_CALC_MIN" variable (:constant-flag t) nil [3409 3420])
+            ("CV_CALC_MAX" variable (:constant-flag t) nil [3482 3493])
+            ("filterengine.hpp" include nil nil [3546 3573]))          
+      :file "precomp.hpp"
+      :pointmax 3610
+      :fsize 3609
+      :lastmodtime '(21764 11333 913039 809000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CV_CALC_MAX_8U" (spp-arg-list ("a" "b") 2903 . 2908) . 
+              ((semantic-list "(a)" 2909 . 2912) (punctuation "+" 2913 . 2914) (punctuation "=" 2914 . 2915) (symbol "CV_FAST_CAST_8U" 2916 . 2931) (semantic-list "((b) - (a))" 2931 . 2942)))
+          ("CV_8TO32F" (spp-arg-list ("x") 3018 . 3021) . ((symbol "icv8x32fTab_cv" 3023 . 3037) (semantic-list "[(x)+256]" 3037 . 3046)))
+          ("CV_CALC_MIN_8U" (spp-arg-list ("a" "b") 2841 . 2846) . 
+              ((semantic-list "(a)" 2847 . 2850) (punctuation "-" 2851 . 2852) (punctuation "=" 2852 . 2853) (symbol "CV_FAST_CAST_8U" 2854 . 2869) (semantic-list "((a) - (b))" 2869 . 2880)))
+          ("__OPENCV_PRECOMP_H__")
+          ("CV_SET" (spp-arg-list ("dst" "val" "len" "idx") 3289 . 3311) . 
+              ((FOR "for" 3319 . 3322) (semantic-list "( (idx) = 0; (idx) < (len); (idx)++)" 3322 . 3358) (semantic-list "(dst)" 3359 . 3364) (semantic-list "[idx]" 3364 . 3369) (punctuation "=" 3370 . 3371) (semantic-list "(val)" 3372 . 3377)))
+          ("CV_FAST_CAST_8U" (spp-arg-list ("t") 2751 . 2754) . ((semantic-list "(assert(-256 <= (t) && (t) <= 512), icvSaturate8u_cv[(t)+256])" 2756 . 2818)))
+          ("CV_8TO32F_SQR" (spp-arg-list ("x") 3134 . 3137) . ((symbol "icv8x32fSqrTab" 3139 . 3153) (semantic-list "[(x)+128]" 3153 . 3162)))
+          ("CV_COPY" (spp-arg-list ("dst" "src" "len" "idx") 3180 . 3202) . 
+              ((FOR "for" 3209 . 3212) (semantic-list "( (idx) = 0; (idx) < (len); (idx)++)" 3212 . 3248) (semantic-list "(dst)" 3249 . 3254) (semantic-list "[idx]" 3254 . 3259) (punctuation "=" 3260 . 3261) (semantic-list "(src)" 3262 . 3267) (semantic-list "[idx]" 3267 . 3272)))
+          ("CV_CALC_MAX" (spp-arg-list ("a" "b") 3493 . 3499) . 
+              ((IF "if" 3500 . 3502) (semantic-list "((a) < (b))" 3502 . 3513) (semantic-list "(a)" 3514 . 3517) (punctuation "=" 3518 . 3519) (semantic-list "(b)" 3520 . 3523)))
+          ("CV_CALC_MIN" (spp-arg-list ("a" "b") 3420 . 3426) . 
+              ((IF "if" 3427 . 3429) (semantic-list "((a) > (b))" 3429 . 3440) (semantic-list "(a)" 3441 . 3444) (punctuation "=" 3445 . 3446) (semantic-list "(b)" 3447 . 3450)))
+          ("GET_OPTIMIZED" (spp-arg-list ("func") 2647 . 2653) . ((semantic-list "(func)" 2654 . 2660)))
+          )
+))
+  :file "!home!krishneel!Desktop!Program!connect_component!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

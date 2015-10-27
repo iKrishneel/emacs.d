@@ -1,0 +1,198 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/make_shared.hpp" include (:system-flag t) nil [1 33])
+            ("pcl/point_types.h" include (:system-flag t) nil [34 62])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [63 91])
+            ("pcl/point_representation.h" include (:system-flag t) nil [92 129])
+            ("pcl/io/pcd_io.h" include (:system-flag t) nil [131 157])
+            ("pcl/filters/voxel_grid.h" include (:system-flag t) nil [159 194])
+            ("pcl/filters/filter.h" include (:system-flag t) nil [195 226])
+            ("pcl/features/normal_3d.h" include (:system-flag t) nil [228 263])
+            ("pcl/registration/icp.h" include (:system-flag t) nil [265 298])
+            ("pcl/registration/icp_nl.h" include (:system-flag t) nil [299 335])
+            ("pcl/registration/transforms.h" include (:system-flag t) nil [336 376])
+            ("pcl/visualization/pcl_visualizer.h" include (:system-flag t) nil [378 423])
+            ("pcl::visualization::PointCloudColorHandlerGenericField" using (:type ("pcl::visualization::PointCloudColorHandlerGenericField" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [425 486])
+            ("pcl::visualization::PointCloudColorHandlerCustom" using (:type ("pcl::visualization::PointCloudColorHandlerCustom" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [487 542])
+            ("PointT" type
+               (:typedef ("pcl::PointXYZ" type (:type "class") nil nil)
+                :type "typedef")
+                nil [566 595])
+            ("PointCloud" type
+               (:typedef ("pcl::PointCloud" type
+                     (:template-specifier 
+                        ( ("PointT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [596 639])
+            ("PointNormalT" type
+               (:typedef ("pcl::PointNormal" type (:type "class") nil nil)
+                :type "typedef")
+                nil [640 678])
+            ("PointCloudWithNormals" type
+               (:typedef ("pcl::PointCloud" type
+                     (:template-specifier 
+                        ( ("PointNormalT" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [679 739])
+            ("p" variable
+               (:pointer 1
+                :type ("pcl::visualization::PCLVisualizer" type (:type "class") nil nil))
+                nil [824 861])
+            ("vp_1" variable (:type "int") nil [895 910])
+            ("vp_2" variable (:type "int") nil [895 910])
+            ("PCD" type
+               (:members 
+                  ( ("cloud" variable (:type ("PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [976 998])
+                    ("f_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1001 1020])
+                    ("PCD" function
+                       (:constructor-flag t
+                        :type ("PCD" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1024 1057]))                  
+                :type "struct")
+                nil [961 1061])
+            ("PCDComparator" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("p1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PCD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1106 1120])
+                            ("p2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PCD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1121 1135]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1088 1179]))                  
+                :type "struct")
+                nil [1063 1182])
+            ("MyPointRepresentation" type
+               (:superclasses 
+                  ( ("pcl::PointRepresentation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("pcl::PointRepresentation::nr_dimensions_" variable (:type "int") (reparse-symbol classsubparts) [1336 1391])
+                    ("public" label nil (reparse-symbol classsubparts) [1392 1399])
+                    ("MyPointRepresentation" function
+                       (:constructor-flag t
+                        :type ("MyPointRepresentation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1402 1497])
+                    ("copyToFloatArray" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointNormalT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1603 1625])
+                            ("out" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1626 1638]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1572 1762]))                  
+                :type "class")
+                nil [1249 1765])
+            ("showCloudsLeft" function
+               (:arguments 
+                  ( ("cloud_target" variable
+                       (:constant-flag t
+                        :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1953 1988])
+                    ("cloud_source" variable
+                       (:constant-flag t
+                        :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1989 2024]))                  
+                :type "void")
+                nil [1933 2441])
+            ("showCloudsRight" function
+               (:arguments 
+                  ( ("cloud_target" variable
+                       (:constant-flag t
+                        :type ("PointCloudWithNormals::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2631 2677])
+                    ("cloud_source" variable
+                       (:constant-flag t
+                        :type ("PointCloudWithNormals::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2678 2724]))                  
+                :type "void")
+                nil [2610 3351])
+            ("loadData" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3716 3725])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3726 3738])
+                    ("models" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("PCD" type nil nil nil)
+                                  ("Eigen::aligned_allocator" type (:template-specifier 
+                                    ( ("PCD" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3739 3796]))                  
+                :type "void")
+                nil [3701 4638])
+            ("pairAlign" function
+               (:arguments 
+                  ( ("cloud_src" variable
+                       (:constant-flag t
+                        :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5033 5065])
+                    ("cloud_tgt" variable
+                       (:constant-flag t
+                        :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5066 5098])
+                    ("output" variable (:type ("PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5099 5122])
+                    ("final_transform" variable
+                       (:reference 1
+                        :type ("Eigen::Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5123 5156])
+                    ("downsample" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5157 5180]))                  
+                :type "void")
+                nil [5017 9097])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9121 9130])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9131 9143]))                  
+                :type "int")
+                nil [9111 10760]))          
+      :file "interactive_icp.cpp"
+      :pointmax 10761
+      :fsize 10760
+      :lastmodtime '(22026 36707 759961 497000)
+      :unmatched-syntax '((USING 1330 . 1335) (punctuation 1057 . 1058))))
+  :file "!home!krishneel!Desktop!Program!pcl_icp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

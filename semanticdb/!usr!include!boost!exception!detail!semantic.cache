@@ -1,0 +1,679 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_61531AB0680611DEADD5846855D89593" variable (:constant-flag t) nil [271 308])
+            ("BOOST_ATTRIBUTE_NORETURN" variable (:constant-flag t) nil [483 507]))          
+      :file "attribute_noreturn.hpp"
+      :pointmax 523
+      :fsize 522
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UUID_61531AB0680611DEADD5846855D89593")
+          ("BOOST_ATTRIBUTE_NORETURN")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_618474C2DE1511DEB74A388C56D89593" variable (:constant-flag t) nil [276 313])
+            ("boost/config.hpp" include (:system-flag t) nil [513 540])
+            ("boost/exception/exception.hpp" include (:system-flag t) nil [637 677])
+            ("boost/exception/info.hpp" include (:system-flag t) nil [678 713])
+            ("boost/exception/diagnostic_information.hpp" include (:system-flag t) nil [714 767])
+            ("boost/exception/detail/type_info.hpp" include (:system-flag t) nil [768 815])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [816 847])
+            ("stdexcept" include (:system-flag t) nil [848 868])
+            ("new" include (:system-flag t) nil [869 883])
+            ("ios" include (:system-flag t) nil [884 898])
+            ("boost" type
+               (:members 
+                  ( ("exception_ptr" type
+                       (:typedef ("shared_ptr" type
+                             (:template-specifier 
+                                ( ("exception_detail::clone_base" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [926 995])
+                    ("current_exception" function
+                       (:prototype-flag t
+                        :type ("exception_ptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1001 1035])
+                    ("copy_exception" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("exception_ptr" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1109 1122]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1041 1326])
+                    ("original_exception_type" type
+                       (:typedef ("error_info" type
+                             (:template-specifier 
+                                ( ("tag_original_exception_type" type (:type "struct") nil nil)
+                                  ("std::type_info" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1354 1456])
+                    ("to_string" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("original_exception_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1500 1535]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1462 1589])
+                    ("exception_detail" type
+                       (:members 
+                          ( ("bad_alloc_" type
+                               (:superclasses 
+                                  ( ("boost::exception" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil)
+                                    ("std::bad_alloc" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1651 1771])
+                            ("get_bad_alloc" function
+                               (:template 
+                                  ( ("int" type (:typevar "Dummy") nil nil))                                  
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1781 2224])
+                            ("exception_ptr_bad_alloc" type
+                               (:template 
+                                  ( ("int" type (:typevar "Dummy") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("e" variable
+                                       (:typemodifiers ("static")
+                                        :type ("exception_ptr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2328 2357]))                                  )
+                                (reparse-symbol namespacesubparts) [2234 2372])
+                            ("exception_ptr_bad_alloc::e" variable
+                               (:default-value "get_bad_alloc<Dummy>()"
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2382 2507]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1602 2517])
+                    ("unknown_exception" type
+                       (:superclasses 
+                          ( ("boost::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2633 2640])
+                            ("unknown_exception" function
+                               (:constructor-flag t
+                                :type ("unknown_exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2650 2697])
+                            ("unknown_exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2743 2769]))                                  
+                                :type ("unknown_exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2724 2831])
+                            ("unknown_exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2877 2905]))                                  
+                                :type ("unknown_exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2858 3000])
+                            ("unknown_exception" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3010 3066])
+                            ("private" label nil (reparse-symbol classsubparts) [3076 3084])
+                            ("add_original_type" function
+                               (:template 
+                                  ( ("E" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("E" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3153 3166]))                                  )
+                                (reparse-symbol classsubparts) [3094 3283]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2523 3294])
+                    ("exception_detail" type
+                       (:members 
+                          ( ("current_exception_std_exception_wrapper" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3515 3522])
+                                    ("current_exception_std_exception_wrapper" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("e1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3598 3612]))                                          
+                                        :type ("current_exception_std_exception_wrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3557 3710])
+                                    ("current_exception_std_exception_wrapper" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("e1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3765 3778])
+                                            ("e2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::exception" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3779 3808]))                                          
+                                        :type ("current_exception_std_exception_wrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3724 3944])
+                                    ("current_exception_std_exception_wrapper" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3958 4044])
+                                    ("private" label nil (reparse-symbol classsubparts) [4058 4066])
+                                    ("add_original_type" function
+                                       (:template 
+                                          ( ("E" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("e" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("E" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4147 4160]))                                          )
+                                        (reparse-symbol classsubparts) [4080 4289]))                                  
+                                :superclasses 
+                                  ( ("T" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("boost::exception" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3349 4304])
+                            ("get_boost_exception" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("boost::exception" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("x" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4828 4841]))                                  
+                                :pointer 1)
+                                (reparse-symbol namespacesubparts) [4747 4931])
+                            ("current_exception_std_exception" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("exception_ptr" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("e1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5045 5059]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [4948 5369])
+                            ("current_exception_unknown_exception" function
+                               (:typemodifiers ("inline")
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5379 5544])
+                            ("current_exception_unknown_boost_exception" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5634 5662]))                                  
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5554 5754])
+                            ("current_exception_unknown_std_exception" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5842 5868]))                                  
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5764 6124])
+                            ("current_exception_impl" function
+                               (:typemodifiers ("inline")
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6134 9340]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3300 9350])
+                    ("current_exception" function
+                       (:typemodifiers ("inline")
+                        :type ("exception_ptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9356 10226])
+                    ("rethrow_exception" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10271 10296]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10232 10363])
+                    ("diagnostic_information" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10420 10445]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10369 10737])
+                    ("to_string" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("exception_ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10781 10806]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10743 11196]))                  
+                :type "namespace")
+                nil [900 11202]))          
+      :file "exception_ptr.hpp"
+      :pointmax 11306
+      :fsize 11305
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax '((EXPLICIT 3536 . 3544) (EXPLICIT 2841 . 2849) (EXPLICIT 2707 . 2715) (symbol 393 . 406) (symbol 389 . 392) (symbol 382 . 388) (punctuation 381 . 382))
+      :lexical-table 
+        '(("UUID_618474C2DE1511DEB74A388C56D89593")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_C3E1741C754311DDB2834CCA55D89593" variable (:constant-flag t) nil [276 313])
+            ("boost/detail/sp_typeinfo.hpp" include (:system-flag t) nil [513 552])
+            ("boost/current_function.hpp" include (:system-flag t) nil [553 590])
+            ("boost/config.hpp" include (:system-flag t) nil [591 618])
+            ("boost/units/detail/utility.hpp" include (:system-flag t) nil [643 684])
+            ("string" include (:system-flag t) nil [692 709])
+            ("boost" type
+               (:members 
+                  ( ("tag_type_name" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [737 956])
+                    ("type_name" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [962 1176])
+                    ("exception_detail" type
+                       (:members 
+                          ( ("type_info_" type
+                               (:members 
+                                  ( ("type_" variable (:type ("detail::sp_typeinfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1283 1317])
+                                    ("type_info_" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("type" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("detail::sp_typeinfo" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1364 1398]))                                          
+                                        :type ("type_info_" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1352 1463])
+                                    ("<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("type_info_" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1524 1545])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("type_info_" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1546 1568]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1477 1657]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1231 1672]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1182 1682]))                  
+                :type "namespace")
+                nil [711 1688])
+            ("BOOST_EXCEPTION_STATIC_TYPEID" variable (:constant-flag t) nil [1698 1727])
+            ("BOOST_EXCEPTION_DYNAMIC_TYPEID" variable (:constant-flag t) nil [1820 1850]))          
+      :file "type_info.hpp"
+      :pointmax 2013
+      :fsize 2012
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax '((EXPLICIT 1331 . 1339) (symbol 393 . 406) (symbol 389 . 392) (symbol 382 . 388) (punctuation 381 . 382))
+      :lexical-table 
+        '(("BOOST_EXCEPTION_STATIC_TYPEID" (spp-arg-list ("T") 1727 . 1730) . 
+              ((punctuation ":" 1731 . 1732) (punctuation ":" 1732 . 1733) (symbol "boost" 1733 . 1738) (punctuation ":" 1738 . 1739) (punctuation ":" 1739 . 1740) (symbol "exception_detail" 1740 . 1756) (punctuation ":" 1756 . 1757) (punctuation ":" 1757 . 1758) (symbol "type_info_" 1758 . 1768) (semantic-list "(BOOST_SP_TYPEID(T))" 1768 . 1788)))
+          ("BOOST_EXCEPTION_DYNAMIC_TYPEID" (spp-arg-list ("x") 1850 . 1853) . 
+              ((punctuation ":" 1854 . 1855) (punctuation ":" 1855 . 1856) (symbol "boost" 1856 . 1861) (punctuation ":" 1861 . 1862) (punctuation ":" 1862 . 1863) (symbol "exception_detail" 1863 . 1879) (punctuation ":" 1879 . 1880) (punctuation ":" 1880 . 1881) (symbol "type_info_" 1881 . 1891) (semantic-list "(typeid(x))" 1891 . 1902)))
+          ("UUID_C3E1741C754311DDB2834CCA55D89593")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_CE6983AC753411DDA764247956D89593" variable (:constant-flag t) nil [276 313])
+            ("string" include (:system-flag t) nil [513 530])
+            ("boost" type
+               (:members 
+                  ( ("exception_detail" type
+                       (:members 
+                          ( ("error_info_base" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [663 670])
+                                    ("tag_typeid_name" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [684 732])
+                                    ("value_as_string" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [745 793])
+                                    ("protected" label nil (reparse-symbol classsubparts) [807 817])
+                                    ("error_info_base" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [831 893]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [607 908]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [558 918])
+                    ("error_info" type
+                       (:template 
+                          ( ("Tag" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1046 1053])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1063 1084])
+                            ("error_info" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1106 1132]))                                  
+                                :type ("error_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1094 1133])
+                            ("error_info" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1142 1164])
+                            ("value" function
+                               (:methodconst-flag t
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1174 1269])
+                            ("value" function (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1279 1362])
+                            ("private" label nil (reparse-symbol classsubparts) [1372 1380])
+                            ("tag_typeid_name" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1390 1426])
+                            ("value_as_string" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1435 1471])
+                            ("value_" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1481 1499]))                          
+                        :superclasses 
+                          ( ("exception_detail::error_info_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [924 1510]))                  
+                :type "namespace")
+                nil [532 1516]))          
+      :file "error_info_impl.hpp"
+      :pointmax 1620
+      :fsize 1619
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax '((symbol 393 . 406) (symbol 389 . 392) (symbol 382 . 388) (punctuation 381 . 382))
+      :lexical-table 
+        '(("UUID_CE6983AC753411DDA764247956D89593")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_6F463AC838DF11DDA3E6909F56D89593" variable (:constant-flag t) nil [276 313])
+            ("boost/exception/detail/type_info.hpp" include (:system-flag t) nil [513 560])
+            ("iomanip" include (:system-flag t) nil [561 579])
+            ("ios" include (:system-flag t) nil [580 594])
+            ("string" include (:system-flag t) nil [595 612])
+            ("sstream" include (:system-flag t) nil [613 631])
+            ("cstdlib" include (:system-flag t) nil [632 650])
+            ("boost" type
+               (:members 
+                  ( ("exception_detail" type
+                       (:members 
+                          ( ("object_hex_dump" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [806 818])
+                                    ("max_size" variable
+                                       (:default-value "16"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [819 842]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [727 1408]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [678 1418]))                  
+                :type "namespace")
+                nil [652 1424]))          
+      :file "object_hex_dump.hpp"
+      :pointmax 1528
+      :fsize 1527
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax '((symbol 393 . 406) (symbol 389 . 392) (symbol 382 . 388) (punctuation 381 . 382))
+      :lexical-table 
+        '(("UUID_6F463AC838DF11DDA3E6909F56D89593")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_898984B4076411DD973EDFA055D89593" variable (:constant-flag t) nil [276 313])
+            ("ostream" include (:system-flag t) nil [513 531])
+            ("boost" type
+               (:members 
+                  ( ("to_string_detail" type
+                       (:members 
+                          ( ("partial_ordering_helper1" type
+                               (:members 
+                                  ( ("partial_ordering_helper1" function
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type ("partial_ordering_helper1" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("CharT" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [748 784]))                                          
+                                        :constructor-flag t
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [674 785]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [608 800])
+                            ("partial_ordering_helper2" type
+                               (:members 
+                                  ( ("partial_ordering_helper2" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("partial_ordering_helper2" type (:type "struct") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [933 944]))                                          
+                                        :constructor-flag t
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [876 945]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [810 960])
+                            ("<<" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("partial_ordering_helper1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [987 1012])
+                                    ("" variable (:type ("partial_ordering_helper2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1039]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [970 1040])
+                            ("is_output_streamable_impl" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("f" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1169 1215])
+                                    ("g" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1228 1249])
+                                    ("e" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (1277 1278)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1271 1278]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [1262 1301]))                                  )
+                                (reparse-symbol namespacesubparts) [1050 1316]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [559 1326])
+                    ("is_output_streamable" type
+                       (:members 
+                          ( ("e" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1477 1493)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1471 1493])
+                                    ("is_output_streamable_impl" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1495 1521])
+                                    ("T" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1521 1523])
+                                    ("CharT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1523 1529])
+                                    ("Traits" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1529 1536])
+                                    ("value" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1538 1545]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1462 1546]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1412 1557]))                  
+                :type "namespace")
+                nil [533 1563]))          
+      :file "is_output_streamable.hpp"
+      :pointmax 1667
+      :fsize 1666
+      :lastmodtime '(20225 54175 0 0)
+      :unmatched-syntax '((punctuation 1537 . 1538) (punctuation 1536 . 1537) (punctuation 1535 . 1536) (punctuation 1520 . 1521) (punctuation 1494 . 1495) (punctuation 1493 . 1494) (punctuation 1537 . 1538) (punctuation 1536 . 1537) (punctuation 1535 . 1536) (punctuation 1520 . 1521) (punctuation 1494 . 1495) (punctuation 1493 . 1494) (punctuation 1406 . 1407) (punctuation 1404 . 1405) (symbol 1399 . 1404) (punctuation 1398 . 1399) (symbol 1387 . 1398) (punctuation 1386 . 1387) (punctuation 1385 . 1386) (symbol 1382 . 1385) (punctuation 1381 . 1382) (symbol 1375 . 1381) (CLASS 1369 . 1374) (punctuation 1367 . 1368) (CHAR 1363 . 1367) (punctuation 1362 . 1363) (symbol 1357 . 1362) (CLASS 1351 . 1356) (punctuation 1349 . 1350) (symbol 1348 . 1349) (CLASS 1342 . 1347) (punctuation 1341 . 1342) (TEMPLATE 1332 . 1340) (semantic-list 1280 . 1298) (punctuation 1279 . 1280) (punctuation 1278 . 1279) (semantic-list 1280 . 1298) (punctuation 1279 . 1280) (punctuation 1278 . 1279) (symbol 393 . 406) (symbol 389 . 392) (symbol 382 . 388) (punctuation 381 . 382))
+      :lexical-table 
+        '(("UUID_898984B4076411DD973EDFA055D89593")
+          )
+))
+  :file "!usr!include!boost!exception!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

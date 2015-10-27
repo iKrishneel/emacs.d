@@ -1,0 +1,739 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_ROS_TRANSFORMBROADCASTER_H" variable (:constant-flag t) nil [1692 1722])
+            ("ros/ros.h" include nil nil [1726 1746])
+            ("geometry_msgs/TransformStamped.h" include nil nil [1747 1790])
+            ("tf2_ros" type
+               (:members 
+                  ( ("TransformBroadcaster" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2093 2100])
+                            ("TransformBroadcaster" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("TransformBroadcaster" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2161 2184])
+                            ("sendTransform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("transform" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2741 2791]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2722 2792])
+                            ("sendTransform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("transforms" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("geometry_msgs::TransformStamped" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2959 3023]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2940 3024])
+                            ("private" label nil (reparse-symbol classsubparts) [3026 3034])
+                            ("node_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3075 3097])
+                            ("publisher_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3100 3126]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2065 3130]))                  
+                :type "namespace")
+                nil [1791 3133]))          
+      :file "transform_broadcaster.h"
+      :pointmax 3170
+      :fsize 3169
+      :lastmodtime '(21531 10859 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF2_ROS_TRANSFORMBROADCASTER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_ROS_BUFFER_H" variable (:constant-flag t) nil [1675 1691])
+            ("tf2_ros/buffer_interface.h" include (:system-flag t) nil [1693 1730])
+            ("tf2/buffer_core.h" include (:system-flag t) nil [1731 1759])
+            ("tf2_msgs/FrameGraph.h" include (:system-flag t) nil [1760 1792])
+            ("ros/ros.h" include (:system-flag t) nil [1793 1813])
+            ("tf2/convert.h" include (:system-flag t) nil [1814 1838])
+            ("tf2_ros" type
+               (:members 
+                  ( ("Buffer" type
+                       (:superclasses 
+                          ( ("BufferInterface" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("tf2::BufferCore" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1990 1997])
+                            ("tf2::BufferCore::lookupTransform" variable (:type "int") (reparse-symbol classsubparts) [2008 2041])
+                            ("tf2::BufferCore::canTransform" variable (:type "int") (reparse-symbol classsubparts) [2052 2082])
+                            ("Buffer" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cache_time" variable
+                                       (:default-value "ros::Duration(BufferCore::DEFAULT_CACHE_TIME)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2356 2428])
+                                    ("debug" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2430 2448]))                                  
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2349 2450])
+                            ("lookupTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3081 3113])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3114 3146])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3155 3177])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3178 3206]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3018 3213])
+                            ("lookupTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4060 4092])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4093 4122])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4129 4161])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4162 4191])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4198 4229])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4230 4258]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3999 4265])
+                            ("canTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4760 4792])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4793 4825])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4832 4861])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4862 4890])
+                                    ("errstr" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4891 4917]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4728 4925])
+                            ("canTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5579 5611])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5612 5641])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5647 5679])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5680 5709])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5715 5746])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5747 5775])
+                                    ("errstr" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5776 5802]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5547 5810])
+                            ("private" label nil (reparse-symbol classsubparts) [5825 5833])
+                            ("getFrames" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("req" variable
+                                       (:reference 1
+                                        :type ("tf2_msgs::FrameGraph::Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5853 5888])
+                                    ("res" variable
+                                       (:reference 1
+                                        :type ("tf2_msgs::FrameGraph::Response" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5889 5925]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5838 5927])
+                            ("checkAndErrorDedicatedThreadPresent" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("errstr" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6029 6049]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5988 6056])
+                            ("frames_server_" variable (:type ("ros::ServiceServer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6062 6096]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1923 6103])
+                    ("threading_error" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "\"Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a seperate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6115 6441]))                  
+                :type "namespace")
+                nil [1841 6447]))          
+      :file "buffer.h"
+      :pointmax 6489
+      :fsize 6488
+      :lastmodtime '(21531 10859 0 0)
+      :unmatched-syntax '((USING 2046 . 2051) (USING 2002 . 2007))
+      :lexical-table 
+        '(("TF2_ROS_BUFFER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_ROS_BUFFER_INTERFACE_H" variable (:constant-flag t) nil [1685 1711])
+            ("tf2/buffer_core.h" include (:system-flag t) nil [1713 1741])
+            ("tf2/transform_datatypes.h" include (:system-flag t) nil [1742 1778])
+            ("tf2/exceptions.h" include (:system-flag t) nil [1779 1806])
+            ("geometry_msgs/TransformStamped.h" include (:system-flag t) nil [1807 1850])
+            ("sstream" include (:system-flag t) nil [1851 1869])
+            ("tf2/convert.h" include (:system-flag t) nil [1870 1894])
+            ("tf2_ros" type
+               (:members 
+                  ( ("BufferInterface" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1991 1998])
+                            ("lookupTransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2604 2636])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2637 2669])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2677 2699])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2700 2728]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2544 2739])
+                            ("lookupTransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3560 3592])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3593 3622])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3629 3661])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3662 3691])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3698 3729])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3730 3758]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3499 3769])
+                            ("canTransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4244 4276])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4277 4309])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4314 4336])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4337 4365])
+                                    ("errstr" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4366 4392]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4214 4404])
+                            ("canTransform" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5030 5062])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5063 5092])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5096 5128])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5129 5158])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5162 5193])
+                                    ("timeout" variable
+                                       (:constant-flag t
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5194 5222])
+                                    ("errstr" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5223 5249]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5000 5261])
+                            ("transform" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("T" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5349 5361])
+                                    ("out" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5362 5369])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5374 5406])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5407 5447]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [5313 5617])
+                            ("transform" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("T" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5703 5715])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5719 5751])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5752 5792]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [5668 5872])
+                            ("transform" function
+                               (:template 
+                                  ( ("A" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type ("B" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("A" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5980 5992])
+                                    ("out" variable
+                                       (:reference 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5993 6000])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6009 6041])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6042 6082]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [5935 6193])
+                            ("transform" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("T" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6283 6295])
+                                    ("out" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6296 6303])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6308 6340])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6341 6370])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6374 6405])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6406 6446]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [6247 6736])
+                            ("transform" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("T" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6824 6836])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6841 6873])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6874 6903])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6907 6938])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6939 6979]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [6789 7085])
+                            ("transform" function
+                               (:template 
+                                  ( ("A" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type ("B" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("A" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7201 7213])
+                                    ("out" variable
+                                       (:reference 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7214 7221])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7226 7258])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7259 7288])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7292 7323])
+                                    ("timeout" variable
+                                       (:default-value "ros::Duration(0.0)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7324 7364]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [7156 7525]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1967 7531]))                  
+                :type "namespace")
+                nil [1896 7544]))          
+      :file "buffer_interface.h"
+      :pointmax 7596
+      :fsize 7595
+      :lastmodtime '(21531 10859 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF2_ROS_BUFFER_INTERFACE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_ROS_TRANSFORMLISTENER_H" variable (:constant-flag t) nil [1685 1712])
+            ("std_msgs/Empty.h" include nil nil [1714 1741])
+            ("tf2_msgs/TFMessage.h" include nil nil [1742 1773])
+            ("ros/ros.h" include nil nil [1774 1794])
+            ("ros/callback_queue.h" include nil nil [1795 1826])
+            ("tf2_ros/buffer.h" include nil nil [1828 1855])
+            ("boost/thread.hpp" include nil nil [1857 1884])
+            ("tf2_ros" type
+               (:members 
+                  ( ("TransformListener" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1934 1941])
+                            ("TransformListener" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("buffer" variable
+                                       (:reference 1
+                                        :type ("tf2::BufferCore" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2012 2036])
+                                    ("spin_thread" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2037 2060]))                                  
+                                :type ("TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1994 2062])
+                            ("TransformListener" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("buffer" variable
+                                       (:reference 1
+                                        :type ("tf2::BufferCore" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2083 2107])
+                                    ("nh" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2108 2134])
+                                    ("spin_thread" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2135 2158]))                                  
+                                :type ("TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2065 2160])
+                            ("TransformListener" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2164 2185])
+                            ("private" label nil (reparse-symbol classsubparts) [2187 2195])
+                            ("init" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2281 2293])
+                            ("initWithThread" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2296 2318])
+                            ("subscription_callback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tf2_msgs::TFMessageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2402 2441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2375 2442])
+                            ("static_subscription_callback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tf2_msgs::TFMessageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2479 2518]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2445 2519])
+                            ("subscription_callback_impl" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tf2_msgs::TFMessageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2554 2593])
+                                    ("is_static" variable (:type "bool") (reparse-symbol arg-sub-list) [2594 2609]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2522 2610])
+                            ("tf_message_callback_queue_" variable (:type ("ros::CallbackQueue" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2614 2660])
+                            ("dedicated_listener_thread_" variable
+                               (:pointer 1
+                                :type ("boost::thread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2663 2705])
+                            ("node_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2708 2730])
+                            ("message_subscriber_tf_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2733 2772])
+                            ("message_subscriber_tf_static_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2775 2821])
+                            ("buffer_" variable (:type ("tf2::BufferCore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2824 2849])
+                            ("last_update_" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2852 2875])
+                            ("using_dedicated_thread_" variable (:type "bool") (reparse-symbol classsubparts) [2878 2907])
+                            ("dedicatedListenerThread" function (:type "void") (reparse-symbol classsubparts) [2912 3071]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1906 3076]))                  
+                :type "namespace")
+                nil [1886 3078]))          
+      :file "transform_listener.h"
+      :pointmax 3112
+      :fsize 3111
+      :lastmodtime '(21531 10859 0 0)
+      :unmatched-syntax '((punctuation 3071 . 3072))
+      :lexical-table 
+        '(("TF2_ROS_TRANSFORMLISTENER_H")
+          )
+))
+  :file "!opt!ros!hydro!include!tf2_ros!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

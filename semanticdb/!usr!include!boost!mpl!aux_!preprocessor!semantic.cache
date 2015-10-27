@@ -1,0 +1,179 @@
+;; Object preprocessor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "preprocessor/"
+  :tables
+  (list
+    (semanticdb-table "params.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_PARAMS_HPP_INCLUDED" variable (:constant-flag t) nil [65 111])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [512 561])
+            ("boost/preprocessor/comma_if.hpp" include (:system-flag t) nil [1494 1539])
+            ("boost/preprocessor/repeat.hpp" include (:system-flag t) nil [1540 1583])
+            ("boost/preprocessor/inc.hpp" include (:system-flag t) nil [1584 1624])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [1625 1665])
+            ("BOOST_MPL_PP_AUX_PARAM_FUNC" variable (:constant-flag t) nil [1678 1705])
+            ("BOOST_MPL_PP_PARAMS" variable (:constant-flag t) nil [1817 1836]))          
+      :file "params.hpp"
+      :pointmax 2032
+      :fsize 2031
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_PP_AUX_PARAM_FUNC" (spp-arg-list ("unused" "i" "param") 1705 . 1723) . 
+              ((symbol "BOOST_PP_COMMA_IF" 1730 . 1747) (semantic-list "(i)" 1747 . 1750) (symbol "BOOST_PP_CAT" 1757 . 1769) (semantic-list "(param, BOOST_PP_INC(i))" 1769 . 1793)))
+          ("BOOST_MPL_AUX_PREPROCESSOR_PARAMS_HPP_INCLUDED")
+          ("BOOST_MPL_PP_PARAMS" (spp-arg-list ("n" "param") 1836 . 1846) . ((symbol "BOOST_PP_REPEAT" 1853 . 1868) (semantic-list "( \\
+          n \\
+        , BOOST_MPL_PP_AUX_PARAM_FUNC \\
+        , param \\
+        )" 1868 . 1953)))
+          )
+)
+    (semanticdb-table "ext_params.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_EXT_PARAMS_HPP_INCLUDED" variable (:constant-flag t) nil [69 119])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [524 573])
+            ("boost/preprocessor/arithmetic/add.hpp" include (:system-flag t) nil [2248 2299])
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:system-flag t) nil [2300 2351])
+            ("boost/preprocessor/comma_if.hpp" include (:system-flag t) nil [2352 2397])
+            ("boost/preprocessor/repeat.hpp" include (:system-flag t) nil [2398 2441])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [2442 2489])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [2490 2530])
+            ("BOOST_MPL_PP_AUX_EXT_PARAM_FUNC" variable (:constant-flag t) nil [2543 2574])
+            ("BOOST_MPL_PP_EXT_PARAMS" variable (:constant-flag t) nil [2774 2797]))          
+      :file "ext_params.hpp"
+      :pointmax 3027
+      :fsize 3026
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_PREPROCESSOR_EXT_PARAMS_HPP_INCLUDED")
+          ("BOOST_MPL_PP_AUX_EXT_PARAM_FUNC" (spp-arg-list ("unused" "i" "op") 2574 . 2589) . 
+              ((symbol "BOOST_PP_COMMA_IF" 2596 . 2613) (semantic-list "(i)" 2613 . 2616) (symbol "BOOST_PP_CAT" 2623 . 2635) (semantic-list "( \\
+          BOOST_PP_TUPLE_ELEM(2,1,op) \\
+        , BOOST_PP_ADD_D(1, i, BOOST_PP_TUPLE_ELEM(2,0,op)) \\
+        )" 2635 . 2750)))
+          ("BOOST_MPL_PP_EXT_PARAMS" (spp-arg-list ("i" "j" "param") 2797 . 2810) . ((symbol "BOOST_PP_REPEAT" 2817 . 2832) (semantic-list "( \\
+          BOOST_PP_SUB_D(1,j,i) \\
+        , BOOST_MPL_PP_AUX_EXT_PARAM_FUNC \\
+        , (i,param) \\
+        )" 2832 . 2945)))
+          )
+)
+    (semanticdb-table "def_params_tail.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_DEF_PARAMS_TAIL_HPP_INCLUDED" variable (:constant-flag t) nil [74 129])
+            ("boost/mpl/limits/arity.hpp" include (:system-flag t) nil [539 576])
+            ("boost/mpl/aux_/config/dtp.hpp" include (:system-flag t) nil [577 617])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [618 667])
+            ("boost/preprocessor/comma_if.hpp" include (:system-flag t) nil [669 711])
+            ("boost/preprocessor/logical/and.hpp" include (:system-flag t) nil [712 757])
+            ("boost/preprocessor/identity.hpp" include (:system-flag t) nil [758 800])
+            ("boost/preprocessor/empty.hpp" include (:system-flag t) nil [801 840])
+            ("boost/preprocessor/arithmetic/add.hpp" include (:system-flag t) nil [3156 3207])
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:system-flag t) nil [3208 3259])
+            ("boost/preprocessor/inc.hpp" include (:system-flag t) nil [3260 3300])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [3301 3348])
+            ("boost/preprocessor/repeat.hpp" include (:system-flag t) nil [3349 3392])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [3393 3433])
+            ("BOOST_MPL_PP_AUX_TAIL_PARAM_FUNC" variable (:constant-flag t) nil [3446 3478])
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" variable (:constant-flag t) nil [3703 3736])
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL" variable (:constant-flag t) nil [4010 4038])
+            ("BOOST_MPL_PP_NESTED_DEF_PARAMS_TAIL" variable (:constant-flag t) nil [4384 4419]))          
+      :file "def_params_tail.hpp"
+      :pointmax 4588
+      :fsize 4587
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_PP_DEF_PARAMS_TAIL" (spp-arg-list ("i" "param" "value") 4038 . 4055) . ((symbol "BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" 4062 . 4095) (semantic-list "(i, param, BOOST_PP_IDENTITY(=value))" 4095 . 4132)))
+          ("BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" (spp-arg-list ("i" "param" "value_func") 3736 . 3758) . ((symbol "BOOST_PP_REPEAT" 3765 . 3780) (semantic-list "( \\
+          BOOST_PP_SUB_D(1, BOOST_MPL_LIMIT_METAFUNCTION_ARITY, i) \\
+        , BOOST_MPL_PP_AUX_TAIL_PARAM_FUNC \\
+        , (i, param, value_func) \\
+        )" 3780 . 3942)))
+          ("BOOST_MPL_AUX_PREPROCESSOR_DEF_PARAMS_TAIL_HPP_INCLUDED")
+          ("BOOST_MPL_PP_NESTED_DEF_PARAMS_TAIL" (spp-arg-list ("i" "param" "value") 4419 . 4436) . ((symbol "BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" 4443 . 4476) (semantic-list "(i, param, BOOST_PP_EMPTY)" 4476 . 4502)))
+          ("BOOST_MPL_PP_AUX_TAIL_PARAM_FUNC" (spp-arg-list ("unused" "i" "op") 3478 . 3493) . 
+              ((punctuation "," 3500 . 3501) (symbol "BOOST_PP_CAT" 3502 . 3514) (semantic-list "( \\
+          BOOST_PP_TUPLE_ELEM(3, 1, op) \\
+        , BOOST_PP_ADD_D(1, i, BOOST_PP_INC(BOOST_PP_TUPLE_ELEM(3, 0, op))) \\
+        )" 3514 . 3647) (symbol "BOOST_PP_TUPLE_ELEM" 3648 . 3667) (semantic-list "(3, 2, op)" 3667 . 3677) (semantic-list "()" 3677 . 3679)))
+          )
+)
+    (semanticdb-table "enum.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_ENUM_HPP_INCLUDED" variable (:constant-flag t) nil [63 107])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [506 555])
+            ("boost/preprocessor/comma_if.hpp" include (:system-flag t) nil [1348 1393])
+            ("boost/preprocessor/repeat.hpp" include (:system-flag t) nil [1394 1437])
+            ("BOOST_MPL_PP_AUX_ENUM_FUNC" variable (:constant-flag t) nil [1450 1476])
+            ("BOOST_MPL_PP_ENUM" variable (:constant-flag t) nil [1551 1568]))          
+      :file "enum.hpp"
+      :pointmax 1760
+      :fsize 1759
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_AUX_PREPROCESSOR_ENUM_HPP_INCLUDED")
+          ("BOOST_MPL_PP_ENUM" (spp-arg-list ("n" "param") 1568 . 1578) . ((symbol "BOOST_PP_REPEAT" 1585 . 1600) (semantic-list "( \\
+          n \\
+        , BOOST_MPL_PP_AUX_ENUM_FUNC \\
+        , param \\
+        )" 1600 . 1684)))
+          ("BOOST_MPL_PP_AUX_ENUM_FUNC" (spp-arg-list ("unused" "i" "param") 1476 . 1494) . 
+              ((symbol "BOOST_PP_COMMA_IF" 1501 . 1518) (semantic-list "(i)" 1518 . 1521) (symbol "param" 1522 . 1527)))
+          )
+)
+    (semanticdb-table "sub.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_SUB_HPP_INCLUDED" variable (:constant-flag t) nil [62 105])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [503 552])
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:system-flag t) nil [1758 1809])
+            ("BOOST_MPL_PP_SUB" variable (:constant-flag t) nil [1822 1838]))          
+      :file "sub.hpp"
+      :pointmax 1946
+      :fsize 1945
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_PP_SUB" (spp-arg-list ("i" "j") 1838 . 1843) . ((symbol "BOOST_PP_SUB" 1850 . 1862) (semantic-list "(i,j)" 1862 . 1867)))
+          ("BOOST_MPL_AUX_PREPROCESSOR_SUB_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "default_params.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_DEFAULT_PARAMS_HPP_INCLUDED" variable (:constant-flag t) nil [73 127])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [536 585])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [1816 1863])
+            ("boost/preprocessor/comma_if.hpp" include (:system-flag t) nil [1864 1909])
+            ("boost/preprocessor/repeat.hpp" include (:system-flag t) nil [1910 1953])
+            ("boost/preprocessor/inc.hpp" include (:system-flag t) nil [1954 1994])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [1995 2035])
+            ("BOOST_MPL_PP_AUX_DEFAULT_PARAM_FUNC" variable (:constant-flag t) nil [2048 2083])
+            ("BOOST_MPL_PP_DEFAULT_PARAMS" variable (:constant-flag t) nil [2256 2283]))          
+      :file "default_params.hpp"
+      :pointmax 2509
+      :fsize 2508
+      :lastmodtime '(20225 54187 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_PP_AUX_DEFAULT_PARAM_FUNC" (spp-arg-list ("unused" "i" "pv") 2083 . 2098) . 
+              ((symbol "BOOST_PP_COMMA_IF" 2105 . 2122) (semantic-list "(i)" 2122 . 2125) (symbol "BOOST_PP_CAT" 2132 . 2144) (semantic-list "( BOOST_PP_TUPLE_ELEM(2,0,pv), BOOST_PP_INC(i) )" 2144 . 2192) (punctuation "=" 2203 . 2204) (symbol "BOOST_PP_TUPLE_ELEM" 2205 . 2224) (semantic-list "(2,1,pv)" 2224 . 2232)))
+          ("BOOST_MPL_PP_DEFAULT_PARAMS" (spp-arg-list ("n" "param" "value") 2283 . 2300) . ((symbol "BOOST_PP_REPEAT" 2307 . 2322) (semantic-list "( \\
+          n \\
+        , BOOST_MPL_PP_AUX_DEFAULT_PARAM_FUNC \\
+        , (param,value) \\
+        )" 2322 . 2423)))
+          ("BOOST_MPL_AUX_PREPROCESSOR_DEFAULT_PARAMS_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!mpl!aux_!preprocessor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

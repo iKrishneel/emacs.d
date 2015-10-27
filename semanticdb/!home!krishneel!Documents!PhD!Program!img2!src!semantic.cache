@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("image_annotation_annotation/image_annotation_tool.h" include (:system-flag t) nil [2 64])
+            ("jsk_perception" type
+               (:members 
+                  ( ("ImageAnnotationTool" function
+                       (:constructor-flag t
+                        :parent "ImageAnnotationTool"
+                        :type ("ImageAnnotationTool" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [98 206])
+                    ("onInit" function
+                       (:parent "ImageAnnotationTool"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [215 401])
+                    ("subscribe" function
+                       (:parent "ImageAnnotationTool"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [410 589])
+                    ("unsubscribe" function
+                       (:parent "ImageAnnotationTool"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [595 720])
+                    ("image_cb" function
+                       (:parent "ImageAnnotationTool"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [769 807]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [726 1123]))                  
+                :type "namespace")
+                nil [66 1129])
+            ("pluginlib/class_list_macros.h" include (:system-flag t) nil [1160 1200])
+            ("PLUGINLIB_EXPORT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("jsk_perception::ImageAnnotationTool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1224 1260])
+                    ("" variable (:type ("nodelet::Nodelet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1261 1278]))                  
+                :type "int")
+                nil [1201 1279]))          
+      :file "image_annotation_tool_nodelet.cpp"
+      :pointmax 1523
+      :fsize 1522
+      :lastmodtime '(21807 17393 985912 405000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!Documents!PhD!Program!img2!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

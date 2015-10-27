@@ -1,0 +1,497 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("particle_filter_tracking/particle_filter.h" include (:system-flag t) nil [114 167])
+            ("ParticleFilter" function
+               (:constructor-flag t
+                :parent "ParticleFilter"
+                :type ("ParticleFilter" type (:type "class") nil nil))
+                nil [169 223])
+            ("state_transition" function
+               (:parent "ParticleFilter"
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [225 778])
+            ("initialize_particles" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("rng" variable
+                       (:reference 1
+                        :type ("cv::RNG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [844 857])
+                    ("lowerX" variable (:type "double") (reparse-symbol arg-sub-list) [858 872])
+                    ("lowerY" variable (:type "double") (reparse-symbol arg-sub-list) [873 887])
+                    ("upperX" variable (:type "double") (reparse-symbol arg-sub-list) [892 906])
+                    ("upperY" variable (:type "double") (reparse-symbol arg-sub-list) [907 921]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("Particle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [780 1628])
+            ("transition" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1684 1709])
+                    ("dynamics" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1710 1728])
+                    ("rng" variable
+                       (:reference 1
+                        :type ("cv::RNG" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1729 1742]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("Particle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1630 2926])
+            ("normalizeWeight" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("z" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2985 3008]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2928 3622])
+            ("gaussianNoise" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [3666 3675])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [3676 3685]))                  
+                :type "double")
+                nil [3624 3741])
+            ("cumulativeSum" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("nWeights" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3798 3828]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3743 4055])
+            ("reSampling" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("x_P" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4094 4121])
+                    ("xP_Update" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4122 4155])
+                    ("nWeights" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4160 4190]))                  
+                :type "void")
+                nil [4057 5274])
+            ("meanArr" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("xP_Update" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5314 5347]))                  
+                :type ("Particle" type (:type "class") nil nil))
+                nil [5276 6216])
+            ("printParticles" function
+               (:parent "ParticleFilter"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6259 6272])
+                    ("p" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6273 6298]))                  
+                :type "void")
+                nil [6218 6557]))          
+      :file "particle_filter.cpp"
+      :pointmax 6558
+      :fsize 6557
+      :lastmodtime '(22032 49712 41737 442000)
+      :unmatched-syntax '((semantic-list 3686 . 3741) (semantic-list 3660 . 3685) (semantic-list 3009 . 3622) (semantic-list 2979 . 3008) (semantic-list 3687 . 3742) (semantic-list 3661 . 3686) (semantic-list 3010 . 3623) (semantic-list 2980 . 3009)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("particle_filter_tracking/color_histogram.h" include (:system-flag t) nil [117 170])
+            ("ColorHistogram" function
+               (:constructor-flag t
+                :parent "ColorHistogram"
+                :type ("ColorHistogram" type (:type "class") nil nil))
+                nil [172 239])
+            ("computeHistogram" function
+               (:parent "ColorHistogram"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 297])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [298 312])
+                    ("isNormalized" variable (:type "bool") (reparse-symbol arg-sub-list) [313 331]))                  
+                :type "void")
+                nil [241 786])
+            ("computeHistogramDistances" function
+               (:parent "ColorHistogram"
+                :arguments 
+                  ( ("hist" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [842 856])
+                    ("hist_MD" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [857 888])
+                    ("h_D" variable
+                       (:pointer 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [889 903]))                  
+                :type "double")
+                nil [788 1604]))          
+      :file "color_histogram.cpp"
+      :pointmax 1605
+      :fsize 1604
+      :lastmodtime '(22032 57707 673694 467000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("particle_filter_tracking/particle_filter_tracking.h" include (:system-flag t) nil [84 146])
+            ("ParticleFilterTracking" function
+               (:constructor-flag t
+                :parent "ParticleFilterTracking"
+                :type ("ParticleFilterTracking" type (:type "class") nil nil))
+                nil [148 339])
+            ("onInit" function
+               (:parent "ParticleFilterTracking"
+                :type "void")
+                nil [341 462])
+            ("subscribe" function
+               (:parent "ParticleFilterTracking"
+                :type "void")
+                nil [464 747])
+            ("unsubscribe" function
+               (:parent "ParticleFilterTracking"
+                :type "void")
+                nil [749 828])
+            ("screenPointCallback" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("screen_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::PolygonStamped" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [884 932]))                  
+                :type "void")
+                nil [830 1437])
+            ("imageCallback" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("image_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Image::ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1487 1533]))                  
+                :type "void")
+                nil [1439 2782])
+            ("initializeTracker" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2836 2857])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2873]))                  
+                :type "void")
+                nil [2784 3756])
+            ("runObjectTracker" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3809 3822])
+                    ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3823 3838]))                  
+                :type "void")
+                nil [3758 5164])
+            ("colorHistogramLikelihood" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("obj_patch" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5240 5272]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5166 5934])
+            ("particleHistogram" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6004 6019])
+                    ("p" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Particle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6020 6045]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("cv::Mat" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5936 7145])
+            ("imagePatchHistogram" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7217 7232]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("cv::Mat" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7147 8050])
+            ("roiCondition" function
+               (:parent "ParticleFilterTracking"
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :type ("cv::Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8099 8114])
+                    ("imageSize" variable (:type ("cv::Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8115 8134]))                  
+                :type "void")
+                nil [8052 8612])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8623 8632])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8633 8646]))                  
+                :type "int")
+                nil [8614 8768]))          
+      :file "particle_filter_tracking_node.cpp"
+      :pointmax 8769
+      :fsize 8806
+      :lastmodtime '(22032 50880 801731 160000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("particle_filter_tracking/histogram_of_oriented_gradients.h" include (:system-flag t) nil [2 71])
+            ("HOGFeatureDescriptor" function
+               (:constructor-flag t
+                :parent "HOGFeatureDescriptor"
+                :type ("HOGFeatureDescriptor" type (:type "class") nil nil))
+                nil [73 125])
+            ("weightedVoting" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("angle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [174 193])
+                    ("lower_index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [194 211])
+                    ("higher_index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [212 230]))                  
+                :type "void")
+                nil [127 776])
+            ("imageGradient" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [824 845])
+                    ("hog_bins" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [846 864]))                  
+                :type "void")
+                nil [778 2609])
+            ("blockGradient" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("col" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2660 2674])
+                    ("row" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2675 2689])
+                    ("bins" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2690 2704]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [2611 3119])
+            ("getHOG" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3160 3181])
+                    ("bins" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3182 3196])
+                    ("featureMD" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3197 3216]))                  
+                :type "void")
+                nil [3121 3698])
+            ("computeHOG" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3746 3765]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [3700 4067])
+            ("orientationistogram" function
+               (:parent "HOGFeatureDescriptor"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4124 4143])
+                    ("min_val" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4144 4163])
+                    ("max_val" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4164 4183])
+                    ("normed" variable (:type "bool") (reparse-symbol arg-sub-list) [4184 4196]))                  
+                :type ("cv::Mat" type (:type "class") nil nil))
+                nil [4069 4616])
+            ("computeHOGHistogramDistances" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("patch" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4697 4718])
+                    ("imageHOG" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4719 4750])
+                    ("distance_type" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4755 4779]))                  
+                :parent "HOGFeatureDescriptor")
+                nil [4618 5152]))          
+      :file "histogram_of_oriented_gradients.cpp"
+      :pointmax 5153
+      :fsize 5073
+      :lastmodtime '(22031 50788 38954 301000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!ros!hydro!src!ros_cv_pkg!particle_filter_tracking!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,373 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_DETAIL_PROPERTY_HPP" variable (:constant-flag t) nil [239 264])
+            ("utility" include (:system-flag t) nil [266 284])
+            ("boost/type_traits/same_traits.hpp" include (:system-flag t) nil [302 346])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("same_property" type
+                               (:template 
+                                  ( ("PropertyTag1" type (:type "class") nil nil)
+                                    ("PropertyTag2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :default-value (506 513)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [498 513])
+                                            ("PropertyTag1" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [514 527])
+                                            ("PropertyTag2" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [527 540])
+                                            ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [542 549]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [491 550]))                                  )
+                                (reparse-symbol namespacesubparts) [408 557])
+                            ("error_property_not_found" type (:type "struct") (reparse-symbol namespacesubparts) [563 599])
+                            ("property_value_dispatch" type
+                               (:template 
+                                  ( ("int" type (:typevar "TagMatched") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("get_value" function
+                                       (:template 
+                                          ( ("PropertyTag" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :type ("PropertyTag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [756 771])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [772 775])
+                                            ("" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [776 780]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [674 817])
+                                    ("const_get_value" function
+                                       (:template 
+                                          ( ("PropertyTag" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PropertyTag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [918 939])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [940 943])
+                                            ("" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [944 948]))                                          
+                                        :constant-flag t
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [824 985]))                                  )
+                                (reparse-symbol namespacesubparts) [605 992])
+                            ("property_value_end" type
+                               (:template 
+                                  ( ("PropertyList" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("result" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1101 1116]))                                          )
+                                        (reparse-symbol classsubparts) [1066 1119])
+                                    ("get_value" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :type ("PropertyList" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1190 1206])
+                                            ("t" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1207 1212])
+                                            ("tag" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1213 1221]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [1127 1497])
+                                    ("const_get_value" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PropertyList" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1579 1601])
+                                            ("t" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1602 1607])
+                                            ("tag" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1608 1616]))                                          
+                                        :constant-flag t
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [1504 1904]))                                  )
+                                (reparse-symbol namespacesubparts) [998 1911])
+                            ("property_value_end" type
+                               (:type "struct"
+                                :members 
+                                  ( ("result" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("detail::error_property_not_found" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2023 2069]))                                          )
+                                        (reparse-symbol classsubparts) [1979 2079])
+                                    ("get_value" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("detail::error_property_not_found" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("no_property" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2232 2245])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2246 2249])
+                                            ("" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2250 2254]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [2132 2355])
+                                    ("const_get_value" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("Tag" type (:type "class") nil nil))                                          
+                                        :type ("detail::error_property_not_found" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("no_property" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2474 2493])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2494 2497])
+                                            ("" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2498 2502]))                                          
+                                        :constant-flag t
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [2362 2603]))                                  
+                                :template-specifier 
+                                  ( ("no_property" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1916 2610])
+                            ("property_value_dispatch" type
+                               (:type "struct"
+                                :members 
+                                  ( ("get_value" function
+                                       (:arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :type ("PropertyList" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2829 2845])
+                                            ("t" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2846 2851])
+                                            ("tag" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2852 2860]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2807 2941])
+                                    ("const_get_value" function
+                                       (:arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PropertyList" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3115 3137])
+                                            ("t" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3138 3143])
+                                            ("tag" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3144 3152]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3087 3239]))                                  
+                                :template-specifier (("0")))
+                                (reparse-symbol namespacesubparts) [2616 3246])
+                            ("build_property_tag_value_alist" type
+                               (:template 
+                                  ( ("PropertyList" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("NextProperty" type
+                                       (:typedef ("PropertyList::next_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3336 3390])
+                                    ("Value" type
+                                       (:typedef ("PropertyList::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3397 3445])
+                                    ("Tag" type
+                                       (:typedef ("PropertyList::tag_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3452 3496])
+                                    ("Next" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3566 3576])
+                                    ("type" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("std::pair" type (:template-specifier 
+                                                    ( ("Tag" type nil nil nil)
+                                                      ("Value" type nil nil nil))                                                    ) nil nil)
+                                                  ("Next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3583 3635]))                                  )
+                                (reparse-symbol namespacesubparts) [3252 3642])
+                            ("build_property_tag_value_alist" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("no_property" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3726 3751]))                                  
+                                :template-specifier 
+                                  ( ("no_property" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3647 3758])
+                            ("recursive_extract" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4629 4654])
+                            ("end_extract" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4659 4678])
+                            ("ev_selector" type
+                               (:template 
+                                  ( ("TagValueAList" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("recursive_extract" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4740 4771]))                                  )
+                                (reparse-symbol namespacesubparts) [4684 4774])
+                            ("ev_selector" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("end_extract" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4829 4854]))                                  
+                                :template-specifier 
+                                  ( ("no_property" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4779 4857])
+                            ("recursive_extract" type
+                               (:members 
+                                  ( ("bind_" type
+                                       (:template 
+                                          ( ("TagValueAList" type (:type "class") nil nil)
+                                            ("Tag1" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("AListFirst" type
+                                               (:typedef ("TagValueAList::first_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4968 5022])
+                                            ("Tag2" type
+                                               (:typedef ("AListFirst::first_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5031 5076])
+                                            ("Value" type
+                                               (:typedef ("AListFirst::second_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5085 5132])
+                                            ("" type
+                                               (:members 
+                                                  ( ("match" variable
+                                                       (:constant-flag t
+                                                        :default-value (5156 5169)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5148 5169])
+                                                    ("Tag1" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5170 5175])
+                                                    ("Tag2" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5175 5180])
+                                                    ("value" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5182 5189]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [5141 5190])
+                                            ("Next" type
+                                               (:typedef ("TagValueAList::second_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5199 5248])
+                                            ("Extractor" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5293 5308])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5436 5446]))                                          )
+                                        (reparse-symbol classsubparts) [4896 5455]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4863 5462])
+                            ("end_extract" type
+                               (:members 
+                                  ( ("bind_" type
+                                       (:template 
+                                          ( ("AList" type (:type "class") nil nil)
+                                            ("Tag1" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("error_property_not_found" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5558 5596]))                                          )
+                                        (reparse-symbol classsubparts) [5494 5605]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [5467 5612]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [384 5676]))                  
+                :type "namespace")
+                nil [363 5699]))          
+      :file "property.hpp"
+      :pointmax 5756
+      :fsize 5755
+      :lastmodtime '(20225 54179 0 0)
+      :unmatched-syntax '((punctuation 5435 . 5436) (punctuation 5434 . 5435) (punctuation 5433 . 5434) (symbol 5420 . 5424) (punctuation 5419 . 5420) (punctuation 5418 . 5419) (punctuation 5417 . 5418) (symbol 5413 . 5417) (punctuation 5412 . 5413) (symbol 5408 . 5412) (punctuation 5407 . 5408) (symbol 5402 . 5407) (TEMPLATE 5393 . 5401) (punctuation 5392 . 5393) (punctuation 5391 . 5392) (symbol 5382 . 5391) (TYPENAME 5373 . 5381) (punctuation 5360 . 5361) (symbol 5355 . 5360) (punctuation 5353 . 5354) (symbol 5348 . 5353) (punctuation 5346 . 5347) (symbol 5341 . 5346) (punctuation 5340 . 5341) (punctuation 5339 . 5340) (symbol 5334 . 5339) (TYPENAME 5325 . 5333) (TYPEDEF 5317 . 5324) (punctuation 5292 . 5293) (punctuation 5291 . 5292) (punctuation 5290 . 5291) (symbol 5286 . 5290) (punctuation 5285 . 5286) (symbol 5274 . 5285) (TYPENAME 5265 . 5273) (TYPEDEF 5257 . 5264) (punctuation 5181 . 5182) (punctuation 5180 . 5181) (punctuation 5179 . 5180) (punctuation 5169 . 5170) (punctuation 5181 . 5182) (punctuation 5180 . 5181) (punctuation 5179 . 5180) (punctuation 5169 . 5170) (punctuation 3565 . 3566) (punctuation 3564 . 3565) (punctuation 3563 . 3564) (symbol 3551 . 3563) (punctuation 3550 . 3551) (symbol 3520 . 3550) (TYPENAME 3511 . 3519) (TYPEDEF 3503 . 3510) (punctuation 3086 . 3087) (punctuation 3085 . 3086) (punctuation 3084 . 3085) (symbol 3083 . 3084) (punctuation 3082 . 3083) (symbol 3076 . 3082) (TEMPLATE 3067 . 3075) (punctuation 3066 . 3067) (punctuation 3065 . 3066) (punctuation 3064 . 3065) (symbol 3052 . 3064) (punctuation 3051 . 3052) (symbol 3033 . 3051) (TYPENAME 3024 . 3032) (CONST 3018 . 3023) (STATIC 3011 . 3017) (INLINE 3004 . 3010) (punctuation 2996 . 2997) (symbol 2993 . 2996) (CLASS 2987 . 2992) (punctuation 2985 . 2986) (symbol 2984 . 2985) (CLASS 2978 . 2983) (punctuation 2976 . 2977) (symbol 2964 . 2976) (CLASS 2958 . 2963) (punctuation 2957 . 2958) (TEMPLATE 2948 . 2956) (punctuation 2806 . 2807) (punctuation 2805 . 2806) (punctuation 2804 . 2805) (symbol 2803 . 2804) (punctuation 2802 . 2803) (symbol 2796 . 2802) (TEMPLATE 2787 . 2795) (punctuation 2786 . 2787) (punctuation 2785 . 2786) (punctuation 2784 . 2785) (symbol 2772 . 2784) (punctuation 2771 . 2772) (symbol 2753 . 2771) (TYPENAME 2744 . 2752) (STATIC 2737 . 2743) (INLINE 2730 . 2736) (punctuation 2722 . 2723) (symbol 2719 . 2722) (CLASS 2713 . 2718) (punctuation 2711 . 2712) (symbol 2710 . 2711) (CLASS 2704 . 2709) (punctuation 2702 . 2703) (symbol 2690 . 2702) (CLASS 2684 . 2689) (punctuation 2683 . 2684) (TEMPLATE 2674 . 2682) (punctuation 541 . 542) (punctuation 540 . 541) (punctuation 539 . 540) (punctuation 513 . 514) (punctuation 541 . 542) (punctuation 540 . 541) (punctuation 539 . 540) (punctuation 513 . 514))
+      :lexical-table 
+        '(("BOOST_DETAIL_PROPERTY_HPP")
+          )
+))
+  :file "!usr!include!boost!pending!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,306 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CLUSTER_H" variable (:constant-flag t) nil [27 36])
+            ("set" include (:system-flag t) nil [40 54])
+            ("vector" include (:system-flag t) nil [55 72])
+            ("iostream" include (:system-flag t) nil [73 92])
+            ("boost/unordered_map.hpp" include (:system-flag t) nil [94 128])
+            ("boost/foreach.hpp" include (:system-flag t) nil [129 157])
+            ("Clustering" type
+               (:members 
+                  ( ("Coord" type
+                       (:typedef ("double")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [184 205])
+                    ("Distance" type
+                       (:typedef ("double")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [235 259])
+                    ("Dimensions" type
+                       (:typedef ("unsigned int")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [282 314])
+                    ("PointId" type
+                       (:typedef ("unsigned int")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [340 369])
+                    ("ClusterId" type
+                       (:typedef ("unsigned int")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [399 430])
+                    ("Point" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Coord" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [461 494])
+                    ("Points" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [524 558])
+                    ("SetPoints" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("PointId" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [588 624])
+                    ("ClustersToPoints" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("SetPoints" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [700 748])
+                    ("PointsToClusters" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("ClusterId" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [777 825])
+                    ("Centroids" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [852 889])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [948 965])
+                            ("p" variable
+                               (:reference 1
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [966 975]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [921 976])
+                    ("distance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1041 1057])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1058 1074]))                          
+                        :type ("Distance" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1023 1075])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1164])
+                            ("cps" variable
+                               (:reference 1
+                                :type ("Points" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1165 1177]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1120 1178])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1245 1262])
+                            ("sp" variable
+                               (:reference 1
+                                :type ("SetPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1263 1278]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1218 1279])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1344 1361])
+                            ("cp" variable
+                               (:reference 1
+                                :type ("Centroids" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1362 1377]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1317 1378])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1449 1466])
+                            ("cp" variable
+                               (:reference 1
+                                :type ("ClustersToPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1467 1489]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1422 1490])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1558 1575])
+                            ("pc" variable
+                               (:reference 1
+                                :type ("PointsToClusters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1576 1598]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1531 1599])
+                    ("PointsSpace" type
+                       (:members 
+                          ( ("<<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1780 1797])
+                                    ("ps" variable
+                                       (:reference 1
+                                        :type ("PointsSpace" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1798 1815]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1746 1976])
+                            ("public" label nil (reparse-symbol classsubparts) [1981 1988])
+                            ("PointsSpace" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("num_points" variable (:type ("PointId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2006 2025])
+                                    ("num_dimensions" variable (:type ("Dimensions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2026 2052]))                                  
+                                :type ("PointsSpace" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1994 2141])
+                            ("getNumPoints" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("PointId" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2148 2212])
+                            ("getNumDimensions" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("PointId" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2217 2289])
+                            ("getPoint" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("pid" variable (:type ("PointId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2335]))                                  
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2294 2366])
+                            ("private" label nil (reparse-symbol classsubparts) [2371 2379])
+                            ("init_points" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2431 2450])
+                            ("num_points__" variable (:type ("PointId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2460 2481])
+                            ("num_dimensions__" variable (:type ("Dimensions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2486 2514])
+                            ("points__" variable (:type ("Points" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2519 2535]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1675 2540])
+                    ("Clusters" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2614 2622])
+                            ("num_clusters__" variable (:type ("ClusterId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2631 2656])
+                            ("ps__" variable (:type ("PointsSpace" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2686 2704])
+                            ("num_dimensions__" variable (:type ("Dimensions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2738 2766])
+                            ("num_points__" variable (:type ("PointId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2800 2821])
+                            ("clusters_to_points__" variable (:type ("ClustersToPoints" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2859 2897])
+                            ("points_to_clusters__" variable (:type ("PointsToClusters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2902 2940])
+                            ("centroids__" variable (:type ("Centroids" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2945 2967])
+                            ("zero_centroids" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3009 3031])
+                            ("compute_centroids" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3078 3103])
+                            ("initial_partition_points" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3189 3221])
+                            ("public" label nil (reparse-symbol classsubparts) [3225 3232])
+                            ("<<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3318 3335])
+                                    ("cl" variable
+                                       (:reference 1
+                                        :type ("Clusters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3336 3350]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3284 3671])
+                            ("Clusters" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("num_clusters" variable (:type ("ClusterId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3691 3714])
+                                    ("ps" variable
+                                       (:reference 1
+                                        :type ("PointsSpace" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3715 3732]))                                  
+                                :type ("Clusters" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3682 4530])
+                            ("k_means" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4584 4589]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4570 4590]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2594 4595]))                  
+                :type "namespace")
+                nil [159 4598]))          
+      :file "cluster.hpp"
+      :pointmax 4609
+      :fsize 4608
+      :lastmodtime '(18861 894 0 0)
+      :unmatched-syntax '((punctuation 4598 . 4599) (punctuation 4530 . 4531) (punctuation 2141 . 2142) (punctuation 1976 . 1977))
+      :lexical-table 
+        '(("CLUSTER_H" . ((number "1" 37 . 38)))
+          )
+))
+  :file "!home!krishneel!.cache!.fr-hOhAo7!K-means!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

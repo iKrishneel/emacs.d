@@ -1,0 +1,358 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/graph/adjacency_list.hpp" include (:system-flag t) nil [2 43])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [44 76])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [78 107])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [108 146])
+            ("boost/config.hpp" include (:system-flag t) nil [148 175])
+            ("iostream" include (:system-flag t) nil [176 195])
+            ("vector" include (:system-flag t) nil [196 213])
+            ("string" include (:system-flag t) nil [214 231])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [233 253])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [254 273])
+            ("RegionAdjacencyGraph" type
+               (:members 
+                  ( ("THRESHOLD" variable (:constant-flag t) (reparse-symbol classsubparts) [315 324])
+                    ("private" label nil (reparse-symbol classsubparts) [337 345])
+                    ("VertexProperty" type
+                       (:members 
+                          ( ("v_index" variable (:type "int") (reparse-symbol classsubparts) [381 393])
+                            ("v_center" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [401 422])
+                            ("v_label" variable (:type "int") (reparse-symbol classsubparts) [430 442])
+                            ("VertexProperty" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("i" variable
+                                       (:default-value "-1"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [484 494])
+                                    ("center" variable
+                                       (:default-value "cv::Point2f(-1, -1)"
+                                        :type ("cv::Point2f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [506 546])
+                                    ("label" variable
+                                       (:default-value "-1"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [558 572]))                                  
+                                :type ("VertexProperty" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [458 633]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [350 640])
+                    ("EdgeProperty" type
+                       (:typedef ("boost::property" type
+                             (:template-specifier 
+                                ( ("boost::edge_weight_t" type nil nil nil)
+                                  ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [645 711])
+                    ("Graph" type
+                       (:typedef ("boost::adjacency_list" type
+                             (:template-specifier 
+                                ( ("boost::vecS" type nil nil nil)
+                                  ("boost::vecS" type nil nil nil)
+                                  ("boost::undirectedS" type nil nil nil)
+                                  ("VertexProperty" type nil nil nil)
+                                  ("EdgeProperty" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [716 1009])
+                    ("AdjacencyIterator" type
+                       (:typedef ("boost::graph_traits::adjacency_iterator" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1014 1104])
+                    ("IndexMap" type
+                       (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1109 1198])
+                    ("EdgeDescriptor" type
+                       (:typedef ("boost::graph_traits::edge_descriptor" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1203 1287])
+                    ("EdgePropertyAccess" type
+                       (:typedef ("boost::property_map::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1292 1391])
+                    ("EdgeValue" type
+                       (:typedef ("boost::property_traits::value_type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1396 1527])
+                    ("VertexIterator" type
+                       (:typedef ("boost::graph_traits::vertex_iterator" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1532 1616])
+                    ("VertexDescriptor" type
+                       (:typedef ("boost::graph_traits::vertex_descriptor" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1621 1709])
+                    ("graph" variable (:type ("Graph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1718 1730])
+                    ("public" label nil (reparse-symbol classsubparts) [1740 1747])
+                    ("RegionAdjacencyGraph" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RegionAdjacencyGraph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1752 1775])
+                    ("generateRAG" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1805 1829])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1830 1846])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1847 1863]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1780 1864])
+                    ("regionMergingGraph" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("cv::Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1901 1925])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1926 1942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1869 1943])
+                    ("printGraph" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1964 1978]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1948 1979])
+                    ("computeHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2013 2029])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2030 2040])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2041 2052]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1984 2054])
+                    ("concatenateRegion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2089 2105])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Point2i" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2106 2126])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2127 2137]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2059 2138])
+                    ("getImageGridLabels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2167 2186]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2143 2187]))                  
+                :type "class")
+                nil [277 2194])
+            ("RegionAdjacencyGraph" function
+               (:constructor-flag t
+                :parent "RegionAdjacencyGraph"
+                :type ("RegionAdjacencyGraph" type (:type "class") nil nil))
+                nil [2219 2271])
+            ("generateRAG" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("patches" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2318 2349])
+                    ("neigbours" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2354 2379])
+                    ("centroids" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2384 2409]))                  
+                :type "void")
+                nil [2274 3943])
+            ("regionMergingGraph" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("patches" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("cv::Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4036 4067])
+                    ("centroids" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4072 4093]))                  
+                :type "void")
+                nil [3985 5488])
+            ("printGraph" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("_graph" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5560 5580]))                  
+                :type "void")
+                nil [5517 6615])
+            ("concatenateRegion" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("n_region" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6744 6768])
+                    ("centroids" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Point2i" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6773 6802])
+                    ("out_img" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6807 6824]))                  
+                :type "void")
+                nil [6694 7131])
+            ("computeHistogram" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7215 7234])
+                    ("hist" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7239 7253])
+                    ("isNormalized" variable (:type "bool") (reparse-symbol arg-sub-list) [7258 7276]))                  
+                :type "void")
+                nil [7166 7742])
+            ("getImageGridLabels" function
+               (:parent "RegionAdjacencyGraph"
+                :arguments 
+                  ( ("labelMD" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7802 7828]))                  
+                :type "void")
+                nil [7756 8000])
+            ("makeLabelImage" function
+               (:arguments 
+                  ( ("labelMD" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8061 8093])
+                    ("region" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Rect_" type (:template-specifier 
+                                ( ("float" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8098 8132])
+                    ("_sz" variable (:type ("cv::Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8133 8146]))                  
+                :type "void")
+                nil [8036 8773])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8796 8805])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8806 8825]))                  
+                :type "int")
+                nil [8787 10581]))          
+      :file "main.cpp"
+      :pointmax 10582
+      :fsize 10581
+      :lastmodtime '(21798 37093 759917 955000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("THRESHOLD" . ((semantic-list "(0.5)" 325 . 330)))
+          )
+))
+  :file "!home!krishneel!Desktop!Program!region_adjacency_graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

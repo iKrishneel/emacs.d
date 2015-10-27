@@ -1,0 +1,2938 @@
+;; Object highgui/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "highgui/"
+  :tables
+  (list
+    (semanticdb-table "highgui.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__OPENCV_HIGHGUI_HPP__" variable (:constant-flag t) nil [2196 2218])
+            ("opencv2/core/core.hpp" include nil nil [2220 2252])
+            ("opencv2/highgui/highgui_c.h" include nil nil [2253 2291])
+            ("CvCapture" type
+               (:prototype t
+                :type "struct")
+                nil [2313 2330])
+            ("CvVideoWriter" type
+               (:prototype t
+                :type "struct")
+                nil [2331 2352])
+            ("cv" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("WINDOW_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (2428 2444)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2410 2444])
+                            ("WINDOW_AUTOSIZE" variable
+                               (:constant-flag t
+                                :default-value (2578 2596)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2560 2596])
+                            ("WINDOW_OPENGL" variable
+                               (:constant-flag t
+                                :default-value (2706 2722)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2688 2722])
+                            ("WND_PROP_FULLSCREEN" variable
+                               (:constant-flag t
+                                :default-value (2826 2848)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2802 2848])
+                            ("WND_PROP_AUTOSIZE" variable
+                               (:constant-flag t
+                                :default-value (2902 2922)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2878 2922])
+                            ("WND_PROP_ASPECT_RATIO" variable
+                               (:constant-flag t
+                                :default-value (2976 2999)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2952 2999])
+                            ("WND_PROP_OPENGL" variable
+                               (:constant-flag t
+                                :default-value (3055 3073)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3031 3073]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2370 3100])
+                    ("namedWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3132 3154])
+                            ("flags" variable
+                               (:default-value "WINDOW_AUTOSIZE"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3155 3182]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3115 3184])
+                    ("destroyWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3217 3239]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3198 3240])
+                    ("destroyAllWindows" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3254 3279])
+                    ("startWindowThread" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3294 3318])
+                    ("waitKey" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delay" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3345 3358]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3333 3360])
+                    ("imshow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3387 3409])
+                            ("mat" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3410 3425]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3375 3426])
+                    ("resizeWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3459 3481])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3482 3492])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3493 3504]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3441 3505])
+                    ("moveWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3535 3557])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3558 3564])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3565 3571]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3519 3572])
+                    ("setWindowProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3610 3632])
+                            ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [3633 3645])
+                            ("prop_value" variable (:type "double") (reparse-symbol arg-sub-list) [3646 3664]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3587 3665])
+                    ("getWindowProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3708 3730])
+                            ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [3731 3743]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [3683 3744])
+                    ("" type
+                       (:members 
+                          ( ("EVENT_MOUSEMOVE" variable
+                               (:constant-flag t
+                                :default-value (3783 3784)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3761 3784])
+                            ("EVENT_LBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (3812 3813)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3790 3813])
+                            ("EVENT_RBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (3841 3842)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3819 3842])
+                            ("EVENT_MBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (3870 3871)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3848 3871])
+                            ("EVENT_LBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (3899 3900)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3877 3900])
+                            ("EVENT_RBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (3928 3929)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3906 3929])
+                            ("EVENT_MBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (3957 3958)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3935 3958])
+                            ("EVENT_LBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (3986 3987)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3964 3987])
+                            ("EVENT_RBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (4015 4016)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3993 4016])
+                            ("EVENT_MBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (4044 4045)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4022 4045]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3750 4048])
+                    ("" type
+                       (:members 
+                          ( ("EVENT_FLAG_LBUTTON" variable
+                               (:constant-flag t
+                                :default-value (4083 4084)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4061 4084])
+                            ("EVENT_FLAG_RBUTTON" variable
+                               (:constant-flag t
+                                :default-value (4112 4113)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4090 4113])
+                            ("EVENT_FLAG_MBUTTON" variable
+                               (:constant-flag t
+                                :default-value (4141 4142)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4119 4142])
+                            ("EVENT_FLAG_CTRLKEY" variable
+                               (:constant-flag t
+                                :default-value (4170 4171)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4148 4171])
+                            ("EVENT_FLAG_SHIFTKEY" variable
+                               (:constant-flag t
+                                :default-value (4199 4201)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4177 4201])
+                            ("EVENT_FLAG_ALTKEY" variable
+                               (:constant-flag t
+                                :default-value (4229 4231)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4207 4231]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [4050 4234])
+                    ("MouseCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [4266 4276])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4277 4283])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4284 4290])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [4291 4301])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4302 4317]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4244 4318])
+                    ("setMouseCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4391 4413])
+                            ("onMouse" variable (:type ("MouseCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4414 4436])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4437 4455]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4369 4457])
+                    ("createTrackbar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4559 4586])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4587 4609])
+                            ("value" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4640 4651])
+                            ("count" variable (:type "int") (reparse-symbol arg-sub-list) [4652 4662])
+                            ("onChange" variable
+                               (:default-value "0"
+                                :type ("TrackbarCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4693 4722])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4754 4772]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4540 4774])
+                    ("getTrackbarPos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4808 4835])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4836 4858]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4789 4859])
+                    ("setTrackbarPos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4893 4920])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4921 4943])
+                            ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [4944 4952]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4873 4953])
+                    ("OpenGlDrawCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5009 5024]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4982 5025])
+                    ("setOpenGlDrawCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5064 5086])
+                            ("onOpenGlDraw" variable (:type ("OpenGlDrawCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5087 5119])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5120 5138]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5037 5140])
+                    ("setOpenGlContext" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5175 5197]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5153 5198])
+                    ("updateWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5229 5251]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5211 5252])
+                    ("pointCloudShow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5302 5324])
+                            ("camera" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GlCamera" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5325 5348])
+                            ("arr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GlArrays" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5349 5369]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5282 5370])
+                    ("pointCloudShow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5402 5424])
+                            ("camera" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GlCamera" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5425 5448])
+                            ("points" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5449 5467])
+                            ("colors" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5468 5497]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5382 5499])
+                    ("fontQt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nameFont" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5546 5569])
+                            ("pointSize" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5570 5586])
+                            ("color" variable
+                               (:default-value "Scalar::all(0)"
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5613 5640])
+                            ("weight" variable
+                               (:default-value "CV_FONT_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5642 5667])
+                            ("style" variable
+                               (:default-value "CV_STYLE_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5694 5719])
+                            ("spacing" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5721 5734]))                          
+                        :type ("CvFont" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5532 5736])
+                    ("addText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5762 5777])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5778 5797])
+                            ("org" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5798 5808])
+                            ("font" variable (:type ("CvFont" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5809 5821]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5748 5822])
+                    ("displayOverlay" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5855 5877])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5878 5897])
+                            ("delayms" variable (:type "int") (reparse-symbol arg-sub-list) [5898 5920])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5910 5923]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5835 5925])
+                    ("displayStatusBar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5959 5981])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5982 6001])
+                            ("delayms" variable (:type "int") (reparse-symbol arg-sub-list) [6002 6024])
+                            ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6014 6027]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5937 6029])
+                    ("saveWindowParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6068 6093]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6042 6094])
+                    ("loadWindowParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6132 6157]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6106 6158])
+                    ("startLoop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt2Func" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6200 6209])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6210 6223]))                                  
+                                :type "int")
+                                nil nil)
+                            ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6225 6234])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6235 6248]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6171 6249])
+                    ("stopLoop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6262 6278])
+                    ("createButton" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bar_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6377 6400])
+                            ("on_change" variable (:type ("ButtonCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6401 6426])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6456 6475])
+                            ("type" variable
+                               (:default-value "CV_PUSH_BUTTON"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6477 6500])
+                            ("initial_button_state" variable
+                               (:default-value "0"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6531 6558]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6359 6560])
+                    ("" type
+                       (:members 
+                          ( ("IMREAD_UNCHANGED" variable
+                               (:constant-flag t
+                                :default-value (6647 6649)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6628 6649])
+                            ("IMREAD_GRAYSCALE" variable
+                               (:constant-flag t
+                                :default-value (6692 6693)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6673 6693])
+                            ("IMREAD_COLOR" variable
+                               (:constant-flag t
+                                :default-value (6734 6735)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6715 6735])
+                            ("IMREAD_ANYDEPTH" variable
+                               (:constant-flag t
+                                :default-value (6780 6781)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6761 6781])
+                            ("IMREAD_ANYCOLOR" variable
+                               (:constant-flag t
+                                :default-value (6826 6827)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6807 6827]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6591 6830])
+                    ("" type
+                       (:members 
+                          ( ("IMWRITE_JPEG_QUALITY" variable
+                               (:constant-flag t
+                                :default-value (6865 6866)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6843 6866])
+                            ("IMWRITE_PNG_COMPRESSION" variable
+                               (:constant-flag t
+                                :default-value (6897 6899)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6872 6899])
+                            ("IMWRITE_PNG_STRATEGY" variable
+                               (:constant-flag t
+                                :default-value (6927 6929)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6905 6929])
+                            ("IMWRITE_PNG_BILEVEL" variable
+                               (:constant-flag t
+                                :default-value (6956 6958)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6935 6958])
+                            ("IMWRITE_PNG_STRATEGY_DEFAULT" variable
+                               (:constant-flag t
+                                :default-value (6994 6995)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6964 6995])
+                            ("IMWRITE_PNG_STRATEGY_FILTERED" variable
+                               (:constant-flag t
+                                :default-value (7032 7033)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7001 7033])
+                            ("IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY" variable
+                               (:constant-flag t
+                                :default-value (7074 7075)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7039 7075])
+                            ("IMWRITE_PNG_STRATEGY_RLE" variable
+                               (:constant-flag t
+                                :default-value (7107 7108)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7081 7108])
+                            ("IMWRITE_PNG_STRATEGY_FIXED" variable
+                               (:constant-flag t
+                                :default-value (7142 7143)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7114 7143])
+                            ("IMWRITE_PXM_BINARY" variable
+                               (:constant-flag t
+                                :default-value (7169 7171)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7149 7171]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6832 7174])
+                    ("imread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7201 7224])
+                            ("flags" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7225 7236]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7189 7239])
+                    ("imwrite" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7267 7290])
+                            ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7291 7306])
+                            ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "vector<int>()"
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7321 7360]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7253 7362])
+                    ("imdecode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("buf" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7390 7405])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7406 7417]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7376 7418])
+                    ("imdecode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("buf" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7444 7459])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7460 7470])
+                            ("dst" variable
+                               (:pointer 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7471 7481]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7430 7482])
+                    ("imencode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7511 7529])
+                            ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7530 7545])
+                            ("vector" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7574 7595])
+                            ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7596 7600])
+                            ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "vector<int>()"
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7629 7668]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7496 7670])
+                    ("delete_obj" function
+                       (:prototype-flag t
+                        :parent "Ptr"
+                        :type ("CV_EXPORTS" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7725 7765])
+                    ("delete_obj" function
+                       (:prototype-flag t
+                        :parent "Ptr"
+                        :type ("CV_EXPORTS" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7782 7826])
+                    ("VideoCapture" variable (:type ("CV_EXPORTS_W" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [7828 8544])
+                    ("VideoWriter" variable (:type ("CV_EXPORTS_W" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [8547 9135]))                  
+                :type "namespace")
+                nil [2354 9146]))          
+      :file "highgui.hpp"
+      :pointmax 9163
+      :fsize 9162
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((VOID 7777 . 7781) (punctuation 7775 . 7776) (punctuation 7774 . 7775) (TEMPLATE 7766 . 7774) (VOID 7720 . 7724) (punctuation 7718 . 7719) (punctuation 7717 . 7718) (TEMPLATE 7709 . 7717) (punctuation 7594 . 7595) (symbol 7483 . 7495) (symbol 7419 . 7429) (symbol 7363 . 7375) (symbol 7240 . 7252) (symbol 7176 . 7188) (symbol 6348 . 6358) (punctuation 6346 . 6347) (semantic-list 6319 . 6346) (semantic-list 6293 . 6319) (VOID 6288 . 6292) (TYPEDEF 6280 . 6287) (symbol 6250 . 6260) (symbol 6159 . 6169) (symbol 6095 . 6105) (symbol 6031 . 6041) (semantic-list 6024 . 6027) (symbol 5926 . 5936) (semantic-list 5920 . 5923) (symbol 5824 . 5834) (symbol 5737 . 5747) (symbol 5521 . 5531) (symbol 5371 . 5381) (symbol 5271 . 5281) (symbol 5200 . 5210) (symbol 5142 . 5152) (symbol 5026 . 5036) (TYPEDEF 4974 . 4981) (symbol 4860 . 4872) (symbol 4776 . 4788) (symbol 4529 . 4539) (punctuation 4526 . 4527) (semantic-list 4501 . 4526) (semantic-list 4473 . 4501) (VOID 4468 . 4472) (TYPEDEF 4460 . 4467) (symbol 4358 . 4368) (TYPEDEF 4236 . 4243) (symbol 3670 . 3682) (symbol 3574 . 3586) (symbol 3506 . 3518) (symbol 3428 . 3440) (symbol 3362 . 3374) (symbol 3320 . 3332) (symbol 3281 . 3293) (symbol 3241 . 3253) (symbol 3185 . 3197) (symbol 3102 . 3114))
+      :lexical-table 
+        '(("__OPENCV_HIGHGUI_HPP__")
+          )
+)
+    (semanticdb-table "highgui_c.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__OPENCV_HIGHGUI_H__" variable (:constant-flag t) nil [2125 2145])
+            ("opencv2/core/core_c.h" include nil nil [2147 2179])
+            ("set_postprocess_func" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27337 27357])
+            ("set_preprocess_func" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27284 27303])
+            ("HG_AUTOSIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27245 27256])
+            ("cvvConvertImage" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27206 27221])
+            ("cvvWaitKeyEx" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27156 27168])
+            ("cvvWaitKey" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27118 27128])
+            ("cvvAddSearchPath" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27077 27093])
+            ("cvvSaveImage" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27044 27056])
+            ("cvvLoadImage" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26995 27007])
+            ("cvvCreateTrackbar" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26952 26969])
+            ("cvvDestroyWindow" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26911 26927])
+            ("cvvResizeWindow" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26872 26887])
+            ("cvvShowImage" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26839 26851])
+            ("cvvNamedWindow" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26802 26816])
+            ("cvvInitSystem" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26767 26780])
+            ("cvAddSearchPath" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26737 26752])
+            ("cvWriteToAVI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26703 26715])
+            ("cvCreateAVIWriter" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26657 26674])
+            ("cvCaptureFromAVI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26614 26630])
+            ("cvCaptureFromCAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26567 26583])
+            ("cvCaptureFromFile" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26521 26538])
+            ("cvReleaseVideoWriter" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 2
+                        :type ("CvVideoWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26212 26236]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26190 26237])
+            ("cvWriteFrame" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("writer" variable
+                       (:pointer 1
+                        :type ("CvVideoWriter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26099 26121])
+                    ("image" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26122 26145]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26085 26146])
+            ("cvCreateVideoWriter" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25703 25724])
+                    ("fourcc" variable (:type "int") (reparse-symbol arg-sub-list) [25725 25736])
+                    ("fps" variable (:type "double") (reparse-symbol arg-sub-list) [25780 25791])
+                    ("frame_size" variable (:type ("CvSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25792 25810])
+                    ("is_color" variable (:type "int") (reparse-symbol arg-sub-list) [25854 25877])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25867 25880]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25682 25882])
+            ("CV_FOURCC_DEFAULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25516 25533])
+            ("CV_FOURCC_PROMPT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25438 25454])
+            ("CV_FOURCC" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("c1" variable (:type "char") (reparse-symbol arg-sub-list) [25345 25353])
+                    ("c2" variable (:type "char") (reparse-symbol arg-sub-list) [25354 25362])
+                    ("c3" variable (:type "char") (reparse-symbol arg-sub-list) [25363 25371])
+                    ("c4" variable (:type "char") (reparse-symbol arg-sub-list) [25372 25380]))                  )
+                (reparse-symbol extern-c-contents) [25331 25428])
+            ("CV_FOURCC_MACRO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25205 25220])
+            ("CvVideoWriter" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("CvVideoWriter" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [25152 25195])
+            ("cvGetCaptureDomain" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25084 25103]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25064 25104])
+            ("cvSetCaptureProperty" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24884 24903])
+                    ("property_id" variable (:type "int") (reparse-symbol arg-sub-list) [24904 24920])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [24921 24935]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24862 24936])
+            ("cvGetCaptureProperty" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24809 24828])
+                    ("property_id" variable (:type "int") (reparse-symbol arg-sub-list) [24829 24846]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24787 24847])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_INTELPERC_DEPTH_MAP" variable
+                       (:constant-flag t
+                        :default-value (24200 24201)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24158 24201])
+                    ("CV_CAP_INTELPERC_UVDEPTH_MAP" variable
+                       (:constant-flag t
+                        :default-value (24381 24382)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24339 24382])
+                    ("CV_CAP_INTELPERC_IR_MAP" variable
+                       (:constant-flag t
+                        :default-value (24579 24580)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24537 24580])
+                    ("CV_CAP_INTELPERC_IMAGE" variable
+                       (:constant-flag t
+                        :default-value (24726 24727)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24684 24727]))                  )
+                (reparse-symbol extern-c-contents) [24147 24730])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANDROID_ANTIBANDING_50HZ" variable
+                       (:constant-flag t
+                        :default-value (24031 24032)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23997 24032])
+                    ("CV_CAP_ANDROID_ANTIBANDING_60HZ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24038 24070])
+                    ("CV_CAP_ANDROID_ANTIBANDING_AUTO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24075 24107])
+                    ("CV_CAP_ANDROID_ANTIBANDING_OFF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24112 24144]))                  )
+                (reparse-symbol extern-c-contents) [23986 24145])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANDROID_WHITE_BALANCE_AUTO" variable
+                       (:constant-flag t
+                        :default-value (23614 23615)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23578 23615])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23621 23666])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23671 23709])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23714 23755])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23760 23802])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_SHADE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23807 23842])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23847 23885])
+                    ("CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23890 23937]))                  )
+                (reparse-symbol extern-c-contents) [23567 23938])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANDROID_FOCUS_MODE_AUTO" variable
+                       (:constant-flag t
+                        :default-value (23265 23266)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23232 23266])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23272 23317])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23322 23365])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_EDOF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23370 23401])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_FIXED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23406 23438])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_INFINITY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23443 23478])
+                    ("CV_CAP_ANDROID_FOCUS_MODE_MACRO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23483 23516]))                  )
+                (reparse-symbol extern-c-contents) [23221 23517])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANDROID_FLASH_MODE_AUTO" variable
+                       (:constant-flag t
+                        :default-value (23030 23031)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22997 23031])
+                    ("CV_CAP_ANDROID_FLASH_MODE_OFF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23037 23067])
+                    ("CV_CAP_ANDROID_FLASH_MODE_ON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23072 23101])
+                    ("CV_CAP_ANDROID_FLASH_MODE_RED_EYE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23106 23140])
+                    ("CV_CAP_ANDROID_FLASH_MODE_TORCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23145 23178]))                  )
+                (reparse-symbol extern-c-contents) [22986 23179])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANDROID_COLOR_FRAME_BGR" variable
+                       (:constant-flag t
+                        :default-value (22706 22707)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22673 22707])
+                    ("CV_CAP_ANDROID_COLOR_FRAME" variable
+                       (:constant-flag t
+                        :default-value (22748 22778)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22719 22778])
+                    ("CV_CAP_ANDROID_GREY_FRAME" variable
+                       (:constant-flag t
+                        :default-value (22813 22814)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22784 22814])
+                    ("CV_CAP_ANDROID_COLOR_FRAME_RGB" variable
+                       (:constant-flag t
+                        :default-value (22858 22859)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22825 22859])
+                    ("CV_CAP_ANDROID_COLOR_FRAME_BGRA" variable
+                       (:constant-flag t
+                        :default-value (22899 22900)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22865 22900])
+                    ("CV_CAP_ANDROID_COLOR_FRAME_RGBA" variable
+                       (:constant-flag t
+                        :default-value (22940 22941)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22906 22941]))                  )
+                (reparse-symbol extern-c-contents) [22662 22944])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_OPENNI_VGA_30HZ" variable
+                       (:constant-flag t
+                        :default-value (22467 22468)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22438 22468])
+                    ("CV_CAP_OPENNI_SXGA_15HZ" variable
+                       (:constant-flag t
+                        :default-value (22503 22504)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22474 22504])
+                    ("CV_CAP_OPENNI_SXGA_30HZ" variable
+                       (:constant-flag t
+                        :default-value (22539 22540)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22510 22540])
+                    ("CV_CAP_OPENNI_QVGA_30HZ" variable
+                       (:constant-flag t
+                        :default-value (22575 22576)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22546 22576])
+                    ("CV_CAP_OPENNI_QVGA_60HZ" variable
+                       (:constant-flag t
+                        :default-value (22611 22612)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22582 22612]))                  )
+                (reparse-symbol extern-c-contents) [22427 22615])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_OPENNI_DEPTH_MAP" variable
+                       (:constant-flag t
+                        :default-value (21891 21892)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21849 21892])
+                    ("CV_CAP_OPENNI_POINT_CLOUD_MAP" variable
+                       (:constant-flag t
+                        :default-value (21973 21974)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21931 21974])
+                    ("CV_CAP_OPENNI_DISPARITY_MAP" variable
+                       (:constant-flag t
+                        :default-value (22050 22051)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22008 22051])
+                    ("CV_CAP_OPENNI_DISPARITY_MAP_32F" variable
+                       (:constant-flag t
+                        :default-value (22132 22133)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22090 22133])
+                    ("CV_CAP_OPENNI_VALID_DEPTH_MASK" variable
+                       (:constant-flag t
+                        :default-value (22215 22216)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22173 22216])
+                    ("CV_CAP_OPENNI_BGR_IMAGE" variable
+                       (:constant-flag t
+                        :default-value (22320 22321)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22278 22321])
+                    ("CV_CAP_OPENNI_GRAY_IMAGE" variable
+                       (:constant-flag t
+                        :default-value (22369 22370)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22327 22370]))                  )
+                (reparse-symbol extern-c-contents) [21798 22373])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_PROP_DC1394_OFF" variable
+                       (:constant-flag t
+                        :default-value (13735 13737)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13702 13737])
+                    ("CV_CAP_PROP_DC1394_MODE_MANUAL" variable
+                       (:constant-flag t
+                        :default-value (13844 13846)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13811 13846])
+                    ("CV_CAP_PROP_DC1394_MODE_AUTO" variable
+                       (:constant-flag t
+                        :default-value (13950 13952)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13919 13952])
+                    ("CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO" variable
+                       (:constant-flag t
+                        :default-value (13998 14000)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13958 14000])
+                    ("CV_CAP_PROP_POS_MSEC" variable
+                       (:constant-flag t
+                        :default-value (14034 14035)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14006 14035])
+                    ("CV_CAP_PROP_POS_FRAMES" variable
+                       (:constant-flag t
+                        :default-value (14069 14070)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14041 14070])
+                    ("CV_CAP_PROP_POS_AVI_RATIO" variable
+                       (:constant-flag t
+                        :default-value (14104 14105)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14076 14105])
+                    ("CV_CAP_PROP_FRAME_WIDTH" variable
+                       (:constant-flag t
+                        :default-value (14139 14140)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14111 14140])
+                    ("CV_CAP_PROP_FRAME_HEIGHT" variable
+                       (:constant-flag t
+                        :default-value (14174 14175)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14146 14175])
+                    ("CV_CAP_PROP_FPS" variable
+                       (:constant-flag t
+                        :default-value (14209 14210)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14181 14210])
+                    ("CV_CAP_PROP_FOURCC" variable
+                       (:constant-flag t
+                        :default-value (14244 14245)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14216 14245])
+                    ("CV_CAP_PROP_FRAME_COUNT" variable
+                       (:constant-flag t
+                        :default-value (14279 14280)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14251 14280])
+                    ("CV_CAP_PROP_FORMAT" variable
+                       (:constant-flag t
+                        :default-value (14314 14315)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14286 14315])
+                    ("CV_CAP_PROP_MODE" variable
+                       (:constant-flag t
+                        :default-value (14349 14350)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14321 14350])
+                    ("CV_CAP_PROP_BRIGHTNESS" variable
+                       (:constant-flag t
+                        :default-value (14383 14385)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14356 14385])
+                    ("CV_CAP_PROP_CONTRAST" variable
+                       (:constant-flag t
+                        :default-value (14418 14420)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14391 14420])
+                    ("CV_CAP_PROP_SATURATION" variable
+                       (:constant-flag t
+                        :default-value (14453 14455)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14426 14455])
+                    ("CV_CAP_PROP_HUE" variable
+                       (:constant-flag t
+                        :default-value (14488 14490)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14461 14490])
+                    ("CV_CAP_PROP_GAIN" variable
+                       (:constant-flag t
+                        :default-value (14523 14525)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14496 14525])
+                    ("CV_CAP_PROP_EXPOSURE" variable
+                       (:constant-flag t
+                        :default-value (14558 14560)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14531 14560])
+                    ("CV_CAP_PROP_CONVERT_RGB" variable
+                       (:constant-flag t
+                        :default-value (14593 14595)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14566 14595])
+                    ("CV_CAP_PROP_WHITE_BALANCE_BLUE_U" variable
+                       (:constant-flag t
+                        :default-value (14635 14637)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14601 14637])
+                    ("CV_CAP_PROP_RECTIFICATION" variable
+                       (:constant-flag t
+                        :default-value (14670 14672)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14643 14672])
+                    ("CV_CAP_PROP_MONOCROME" variable
+                       (:constant-flag t
+                        :default-value (14705 14707)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14678 14707])
+                    ("CV_CAP_PROP_SHARPNESS" variable
+                       (:constant-flag t
+                        :default-value (14740 14742)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14713 14742])
+                    ("CV_CAP_PROP_AUTO_EXPOSURE" variable
+                       (:constant-flag t
+                        :default-value (14775 14777)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14748 14777])
+                    ("CV_CAP_PROP_GAMMA" variable
+                       (:constant-flag t
+                        :default-value (14972 14974)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14945 14974])
+                    ("CV_CAP_PROP_TEMPERATURE" variable
+                       (:constant-flag t
+                        :default-value (15007 15009)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14980 15009])
+                    ("CV_CAP_PROP_TRIGGER" variable
+                       (:constant-flag t
+                        :default-value (15042 15044)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15015 15044])
+                    ("CV_CAP_PROP_TRIGGER_DELAY" variable
+                       (:constant-flag t
+                        :default-value (15077 15079)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15050 15079])
+                    ("CV_CAP_PROP_WHITE_BALANCE_RED_V" variable
+                       (:constant-flag t
+                        :default-value (15118 15120)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15085 15120])
+                    ("CV_CAP_PROP_ZOOM" variable
+                       (:constant-flag t
+                        :default-value (15153 15155)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15126 15155])
+                    ("CV_CAP_PROP_FOCUS" variable
+                       (:constant-flag t
+                        :default-value (15188 15190)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15161 15190])
+                    ("CV_CAP_PROP_GUID" variable
+                       (:constant-flag t
+                        :default-value (15223 15225)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15196 15225])
+                    ("CV_CAP_PROP_ISO_SPEED" variable
+                       (:constant-flag t
+                        :default-value (15258 15260)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15231 15260])
+                    ("CV_CAP_PROP_MAX_DC1394" variable
+                       (:constant-flag t
+                        :default-value (15293 15295)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15266 15295])
+                    ("CV_CAP_PROP_BACKLIGHT" variable
+                       (:constant-flag t
+                        :default-value (15328 15330)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15301 15330])
+                    ("CV_CAP_PROP_PAN" variable
+                       (:constant-flag t
+                        :default-value (15363 15365)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15336 15365])
+                    ("CV_CAP_PROP_TILT" variable
+                       (:constant-flag t
+                        :default-value (15398 15400)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15371 15400])
+                    ("CV_CAP_PROP_ROLL" variable
+                       (:constant-flag t
+                        :default-value (15433 15435)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15406 15435])
+                    ("CV_CAP_PROP_IRIS" variable
+                       (:constant-flag t
+                        :default-value (15468 15470)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15441 15470])
+                    ("CV_CAP_PROP_SETTINGS" variable
+                       (:constant-flag t
+                        :default-value (15503 15505)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15476 15505])
+                    ("CV_CAP_PROP_AUTOGRAB" variable
+                       (:constant-flag t
+                        :default-value (15539 15543)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15512 15543])
+                    ("CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING" variable
+                       (:constant-flag t
+                        :default-value (15645 15649)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15602 15649])
+                    ("CV_CAP_PROP_PREVIEW_FORMAT" variable
+                       (:constant-flag t
+                        :default-value (15739 15743)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15712 15743])
+                    ("CV_CAP_OPENNI_DEPTH_GENERATOR" variable
+                       (:constant-flag t
+                        :default-value (15868 15869)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15836 15869])
+                    ("CV_CAP_OPENNI_IMAGE_GENERATOR" variable
+                       (:constant-flag t
+                        :default-value (15913 15914)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15881 15914])
+                    ("CV_CAP_OPENNI_GENERATORS_MASK" variable
+                       (:constant-flag t
+                        :default-value (15958 16019)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15926 16019])
+                    ("CV_CAP_PROP_OPENNI_OUTPUT_MODE" variable
+                       (:constant-flag t
+                        :default-value (16128 16131)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16091 16131])
+                    ("CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH" variable
+                       (:constant-flag t
+                        :default-value (16174 16177)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16137 16177])
+                    ("CV_CAP_PROP_OPENNI_BASELINE" variable
+                       (:constant-flag t
+                        :default-value (16229 16232)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16192 16232])
+                    ("CV_CAP_PROP_OPENNI_FOCAL_LENGTH" variable
+                       (:constant-flag t
+                        :default-value (16284 16287)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16247 16287])
+                    ("CV_CAP_PROP_OPENNI_REGISTRATION" variable
+                       (:constant-flag t
+                        :default-value (16343 16346)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16306 16346])
+                    ("CV_CAP_PROP_OPENNI_REGISTRATION_ON" variable
+                       (:constant-flag t
+                        :default-value (16397 16428)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16360 16428])
+                    ("CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC" variable
+                       (:constant-flag t
+                        :default-value (16819 16822)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16780 16822])
+                    ("CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE" variable
+                       (:constant-flag t
+                        :default-value (16867 16870)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16828 16870])
+                    ("CV_CAP_PROP_OPENNI_CIRCLE_BUFFER" variable
+                       (:constant-flag t
+                        :default-value (16915 16918)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16876 16918])
+                    ("CV_CAP_PROP_OPENNI_MAX_TIME_DURATION" variable
+                       (:constant-flag t
+                        :default-value (16963 16966)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16924 16966])
+                    ("CV_CAP_PROP_OPENNI_GENERATOR_PRESENT" variable
+                       (:constant-flag t
+                        :default-value (17012 17015)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16973 17015])
+                    ("CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT" variable
+                       (:constant-flag t
+                        :default-value (17070 17138)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17022 17138])
+                    ("CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE" variable
+                       (:constant-flag t
+                        :default-value (17192 17254)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17144 17254])
+                    ("CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE" variable
+                       (:constant-flag t
+                        :default-value (17308 17367)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17260 17367])
+                    ("CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH" variable
+                       (:constant-flag t
+                        :default-value (17421 17484)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17373 17484])
+                    ("CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION" variable
+                       (:constant-flag t
+                        :default-value (17538 17601)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17490 17601])
+                    ("CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON" variable
+                       (:constant-flag t
+                        :default-value (17655 17697)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17607 17697])
+                    ("CV_CAP_GSTREAMER_QUEUE_LENGTH" variable
+                       (:constant-flag t
+                        :default-value (17805 17808)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17771 17808])
+                    ("CV_CAP_PROP_PVAPI_MULTICASTIP" variable
+                       (:constant-flag t
+                        :default-value (17864 17867)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17830 17867])
+                    ("CV_CAP_PROP_XI_DOWNSAMPLING" variable
+                       (:constant-flag t
+                        :default-value (18036 18039)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18005 18039])
+                    ("CV_CAP_PROP_XI_DATA_FORMAT" variable
+                       (:constant-flag t
+                        :default-value (18132 18135)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18101 18135])
+                    ("CV_CAP_PROP_XI_OFFSET_X" variable
+                       (:constant-flag t
+                        :default-value (18201 18204)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18170 18204])
+                    ("CV_CAP_PROP_XI_OFFSET_Y" variable
+                       (:constant-flag t
+                        :default-value (18320 18323)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18289 18323])
+                    ("CV_CAP_PROP_XI_TRG_SOURCE" variable
+                       (:constant-flag t
+                        :default-value (18437 18440)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18406 18440])
+                    ("CV_CAP_PROP_XI_TRG_SOFTWARE" variable
+                       (:constant-flag t
+                        :default-value (18512 18515)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18481 18515])
+                    ("CV_CAP_PROP_XI_GPI_SELECTOR" variable
+                       (:constant-flag t
+                        :default-value (18635 18638)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18604 18638])
+                    ("CV_CAP_PROP_XI_GPI_MODE" variable
+                       (:constant-flag t
+                        :default-value (18713 18716)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18682 18716])
+                    ("CV_CAP_PROP_XI_GPI_LEVEL" variable
+                       (:constant-flag t
+                        :default-value (18792 18795)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18761 18795])
+                    ("CV_CAP_PROP_XI_GPO_SELECTOR" variable
+                       (:constant-flag t
+                        :default-value (18866 18869)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18835 18869])
+                    ("CV_CAP_PROP_XI_GPO_MODE" variable
+                       (:constant-flag t
+                        :default-value (18945 18948)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18914 18948])
+                    ("CV_CAP_PROP_XI_LED_SELECTOR" variable
+                       (:constant-flag t
+                        :default-value (19025 19028)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18994 19028])
+                    ("CV_CAP_PROP_XI_LED_MODE" variable
+                       (:constant-flag t
+                        :default-value (19103 19106)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19072 19106])
+                    ("CV_CAP_PROP_XI_MANUAL_WB" variable
+                       (:constant-flag t
+                        :default-value (19194 19197)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19163 19197])
+                    ("CV_CAP_PROP_XI_AUTO_WB" variable
+                       (:constant-flag t
+                        :default-value (19302 19305)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19271 19305])
+                    ("CV_CAP_PROP_XI_AEAG" variable
+                       (:constant-flag t
+                        :default-value (19374 19377)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19343 19377])
+                    ("CV_CAP_PROP_XI_EXP_PRIORITY" variable
+                       (:constant-flag t
+                        :default-value (19446 19449)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19415 19449])
+                    ("CV_CAP_PROP_XI_AE_MAX_LIMIT" variable
+                       (:constant-flag t
+                        :default-value (19544 19547)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19513 19547])
+                    ("CV_CAP_PROP_XI_AG_MAX_LIMIT" variable
+                       (:constant-flag t
+                        :default-value (19636 19639)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19605 19639])
+                    ("CV_CAP_PROP_XI_AEAG_LEVEL" variable
+                       (:constant-flag t
+                        :default-value (19724 19727)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19693 19727])
+                    ("CV_CAP_PROP_XI_TIMEOUT" variable
+                       (:constant-flag t
+                        :default-value (19834 19837)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19803 19837])
+                    ("CV_CAP_PROP_ANDROID_FLASH_MODE" variable
+                       (:constant-flag t
+                        :default-value (19962 19966)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19929 19966])
+                    ("CV_CAP_PROP_ANDROID_FOCUS_MODE" variable
+                       (:constant-flag t
+                        :default-value (20005 20009)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19972 20009])
+                    ("CV_CAP_PROP_ANDROID_WHITE_BALANCE" variable
+                       (:constant-flag t
+                        :default-value (20051 20055)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20015 20055])
+                    ("CV_CAP_PROP_ANDROID_ANTIBANDING" variable
+                       (:constant-flag t
+                        :default-value (20095 20099)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20061 20099])
+                    ("CV_CAP_PROP_ANDROID_FOCAL_LENGTH" variable
+                       (:constant-flag t
+                        :default-value (20140 20144)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20105 20144])
+                    ("CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR" variable
+                       (:constant-flag t
+                        :default-value (20192 20196)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20150 20196])
+                    ("CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL" variable
+                       (:constant-flag t
+                        :default-value (20247 20251)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20202 20251])
+                    ("CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR" variable
+                       (:constant-flag t
+                        :default-value (20298 20302)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20257 20302])
+                    ("CV_CAP_PROP_ANDROID_EXPOSE_LOCK" variable
+                       (:constant-flag t
+                        :default-value (20342 20346)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20308 20346])
+                    ("CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK" variable
+                       (:constant-flag t
+                        :default-value (20392 20396)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20352 20396])
+                    ("CV_CAP_PROP_IOS_DEVICE_FOCUS" variable
+                       (:constant-flag t
+                        :default-value (20504 20508)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20473 20508])
+                    ("CV_CAP_PROP_IOS_DEVICE_EXPOSURE" variable
+                       (:constant-flag t
+                        :default-value (20548 20552)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20514 20552])
+                    ("CV_CAP_PROP_IOS_DEVICE_FLASH" variable
+                       (:constant-flag t
+                        :default-value (20589 20593)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20558 20593])
+                    ("CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE" variable
+                       (:constant-flag t
+                        :default-value (20637 20641)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20599 20641])
+                    ("CV_CAP_PROP_IOS_DEVICE_TORCH" variable
+                       (:constant-flag t
+                        :default-value (20678 20682)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20647 20682])
+                    ("CV_CAP_PROP_GIGA_FRAME_OFFSET_X" variable
+                       (:constant-flag t
+                        :default-value (20884 20889)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20850 20889])
+                    ("CV_CAP_PROP_GIGA_FRAME_OFFSET_Y" variable
+                       (:constant-flag t
+                        :default-value (20929 20934)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20895 20934])
+                    ("CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX" variable
+                       (:constant-flag t
+                        :default-value (20975 20980)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20940 20980])
+                    ("CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX" variable
+                       (:constant-flag t
+                        :default-value (21021 21026)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20986 21026])
+                    ("CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH" variable
+                       (:constant-flag t
+                        :default-value (21068 21073)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21032 21073])
+                    ("CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH" variable
+                       (:constant-flag t
+                        :default-value (21115 21120)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21079 21120])
+                    ("CV_CAP_PROP_INTELPERC_PROFILE_COUNT" variable
+                       (:constant-flag t
+                        :default-value (21179 21184)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21127 21184])
+                    ("CV_CAP_PROP_INTELPERC_PROFILE_IDX" variable
+                       (:constant-flag t
+                        :default-value (21242 21247)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21190 21247])
+                    ("CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE" variable
+                       (:constant-flag t
+                        :default-value (21305 21310)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21253 21310])
+                    ("CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE" variable
+                       (:constant-flag t
+                        :default-value (21368 21373)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21316 21373])
+                    ("CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD" variable
+                       (:constant-flag t
+                        :default-value (21431 21436)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21379 21436])
+                    ("CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ" variable
+                       (:constant-flag t
+                        :default-value (21494 21499)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21442 21499])
+                    ("CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT" variable
+                       (:constant-flag t
+                        :default-value (21557 21562)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21505 21562])
+                    ("CV_CAP_INTELPERC_DEPTH_GENERATOR" variable
+                       (:constant-flag t
+                        :default-value (21630 21631)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21595 21631])
+                    ("CV_CAP_INTELPERC_IMAGE_GENERATOR" variable
+                       (:constant-flag t
+                        :default-value (21678 21679)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21643 21679])
+                    ("CV_CAP_INTELPERC_GENERATORS_MASK" variable
+                       (:constant-flag t
+                        :default-value (21726 21793)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21691 21793]))                  )
+                (reparse-symbol extern-c-contents) [13499 21796])
+            ("cvReleaseCapture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 2
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13475 13496]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13457 13497])
+            ("cvQueryFrame" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13374 13394]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13360 13395])
+            ("cvRetrieveFrame" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13172 13191])
+                    ("streamIdx" variable (:type "int") (reparse-symbol arg-sub-list) [13192 13216])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13206 13219]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13155 13222])
+            ("cvGrabFrame" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("capture" variable
+                       (:pointer 1
+                        :type ("CvCapture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12923 12943]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12910 12944])
+            ("cvCreateCameraCapture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [12781 12792]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12758 12793])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CAP_ANY" variable
+                       (:constant-flag t
+                        :default-value (11278 11279)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11261 11279])
+                    ("CV_CAP_MIL" variable
+                       (:constant-flag t
+                        :default-value (11321 11324)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11304 11324])
+                    ("CV_CAP_VFW" variable
+                       (:constant-flag t
+                        :default-value (11377 11380)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11360 11380])
+                    ("CV_CAP_V4L" variable
+                       (:constant-flag t
+                        :default-value (11424 11427)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11407 11427])
+                    ("CV_CAP_V4L2" variable
+                       (:constant-flag t
+                        :default-value (11450 11453)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11433 11453])
+                    ("CV_CAP_FIREWARE" variable
+                       (:constant-flag t
+                        :default-value (11477 11480)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11460 11480])
+                    ("CV_CAP_FIREWIRE" variable
+                       (:constant-flag t
+                        :default-value (11526 11529)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11509 11529])
+                    ("CV_CAP_IEEE1394" variable
+                       (:constant-flag t
+                        :default-value (11552 11555)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11535 11555])
+                    ("CV_CAP_DC1394" variable
+                       (:constant-flag t
+                        :default-value (11578 11581)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11561 11581])
+                    ("CV_CAP_CMU1394" variable
+                       (:constant-flag t
+                        :default-value (11604 11607)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11587 11607])
+                    ("CV_CAP_STEREO" variable
+                       (:constant-flag t
+                        :default-value (11631 11634)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11614 11634])
+                    ("CV_CAP_TYZX" variable
+                       (:constant-flag t
+                        :default-value (11687 11690)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11670 11690])
+                    ("CV_TYZX_LEFT" variable
+                       (:constant-flag t
+                        :default-value (11713 11716)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11696 11716])
+                    ("CV_TYZX_RIGHT" variable
+                       (:constant-flag t
+                        :default-value (11739 11742)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11722 11742])
+                    ("CV_TYZX_COLOR" variable
+                       (:constant-flag t
+                        :default-value (11765 11768)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11748 11768])
+                    ("CV_TYZX_Z" variable
+                       (:constant-flag t
+                        :default-value (11791 11794)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11774 11794])
+                    ("CV_CAP_QT" variable
+                       (:constant-flag t
+                        :default-value (11818 11821)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11801 11821])
+                    ("CV_CAP_UNICAP" variable
+                       (:constant-flag t
+                        :default-value (11860 11863)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11843 11863])
+                    ("CV_CAP_DSHOW" variable
+                       (:constant-flag t
+                        :default-value (11907 11910)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11890 11910])
+                    ("CV_CAP_MSMF" variable
+                       (:constant-flag t
+                        :default-value (11966 11970)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11949 11970])
+                    ("CV_CAP_PVAPI" variable
+                       (:constant-flag t
+                        :default-value (12042 12045)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12025 12045])
+                    ("CV_CAP_OPENNI" variable
+                       (:constant-flag t
+                        :default-value (12100 12103)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12083 12103])
+                    ("CV_CAP_OPENNI_ASUS" variable
+                       (:constant-flag t
+                        :default-value (12154 12157)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12134 12157])
+                    ("CV_CAP_ANDROID" variable
+                       (:constant-flag t
+                        :default-value (12210 12214)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12193 12214])
+                    ("CV_CAP_ANDROID_BACK" variable
+                       (:constant-flag t
+                        :default-value (12253 12270)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12232 12270])
+                    ("CV_CAP_ANDROID_FRONT" variable
+                       (:constant-flag t
+                        :default-value (12321 12338)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12299 12338])
+                    ("CV_CAP_XIAPI" variable
+                       (:constant-flag t
+                        :default-value (12386 12390)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12369 12390])
+                    ("CV_CAP_AVFOUNDATION" variable
+                       (:constant-flag t
+                        :default-value (12441 12445)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12419 12445])
+                    ("CV_CAP_GIGANETIX" variable
+                       (:constant-flag t
+                        :default-value (12541 12545)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12522 12545])
+                    ("CV_CAP_INTELPERC" variable
+                       (:constant-flag t
+                        :default-value (12607 12611)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12588 12611]))                  )
+                (reparse-symbol extern-c-contents) [11250 12648])
+            ("cvCreateFileCapture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11225 11247]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11204 11248])
+            ("CvCapture" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("CvCapture" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [11104 11139])
+            ("cvUpdateWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10766 10790]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10751 10791])
+            ("cvSetOpenGlContext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10713 10737]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10694 10738])
+            ("cvSetOpenGlDrawCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10591 10615])
+                    ("callback" variable (:type ("CvOpenGlDrawCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10616 10646])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10647 10672])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10662 10678]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10567 10680])
+            ("cvWaitKey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("delay" variable (:type "int") (reparse-symbol arg-sub-list) [10446 10466])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10456 10469]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10436 10471])
+            ("cvConvertImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10293 10310])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10311 10322])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [10323 10343])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10333 10346]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10277 10348])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_CVTIMG_FLIP" variable
+                       (:constant-flag t
+                        :default-value (10150 10151)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10129 10151])
+                    ("CV_CVTIMG_SWAP_RB" variable
+                       (:constant-flag t
+                        :default-value (10178 10179)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10157 10179]))                  )
+                (reparse-symbol extern-c-contents) [10118 10182])
+            ("cvEncodeImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10016 10032])
+                    ("image" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10033 10052])
+                    ("params" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10082 10110])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10100 10113]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10001 10116])
+            ("cvDecodeImageM" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9840 9857])
+                    ("iscolor" variable (:type "int") (reparse-symbol arg-sub-list) [9858 9880])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9870 9901]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9824 9903])
+            ("cvDecodeImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvMat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9746 9763])
+                    ("iscolor" variable (:type "int") (reparse-symbol arg-sub-list) [9764 9786])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9776 9807]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9731 9809])
+            ("cvSaveImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9572 9593])
+                    ("image" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9594 9613])
+                    ("params" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9638 9666])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9656 9669]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9559 9672])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_IMWRITE_JPEG_QUALITY" variable
+                       (:constant-flag t
+                        :default-value (9185 9186)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9160 9186])
+                    ("CV_IMWRITE_PNG_COMPRESSION" variable
+                       (:constant-flag t
+                        :default-value (9220 9222)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9192 9222])
+                    ("CV_IMWRITE_PNG_STRATEGY" variable
+                       (:constant-flag t
+                        :default-value (9253 9255)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9228 9255])
+                    ("CV_IMWRITE_PNG_BILEVEL" variable
+                       (:constant-flag t
+                        :default-value (9285 9287)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9261 9287])
+                    ("CV_IMWRITE_PNG_STRATEGY_DEFAULT" variable
+                       (:constant-flag t
+                        :default-value (9326 9327)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9293 9327])
+                    ("CV_IMWRITE_PNG_STRATEGY_FILTERED" variable
+                       (:constant-flag t
+                        :default-value (9367 9368)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9333 9368])
+                    ("CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY" variable
+                       (:constant-flag t
+                        :default-value (9412 9413)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9374 9413])
+                    ("CV_IMWRITE_PNG_STRATEGY_RLE" variable
+                       (:constant-flag t
+                        :default-value (9448 9449)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9419 9449])
+                    ("CV_IMWRITE_PNG_STRATEGY_FIXED" variable
+                       (:constant-flag t
+                        :default-value (9486 9487)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9455 9487])
+                    ("CV_IMWRITE_PXM_BINARY" variable
+                       (:constant-flag t
+                        :default-value (9516 9518)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9493 9518]))                  )
+                (reparse-symbol extern-c-contents) [9149 9521])
+            ("cvLoadImageM" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9080 9101])
+                    ("iscolor" variable (:type "int") (reparse-symbol arg-sub-list) [9102 9124])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9114 9145]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9066 9147])
+            ("cvLoadImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8984 9005])
+                    ("iscolor" variable (:type "int") (reparse-symbol arg-sub-list) [9006 9028])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9018 9049]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8971 9051])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_LOAD_IMAGE_UNCHANGED" variable
+                       (:constant-flag t
+                        :default-value (8462 8464)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8436 8464])
+                    ("CV_LOAD_IMAGE_GRAYSCALE" variable
+                       (:constant-flag t
+                        :default-value (8513 8514)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8487 8514])
+                    ("CV_LOAD_IMAGE_COLOR" variable
+                       (:constant-flag t
+                        :default-value (8561 8562)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8535 8562])
+                    ("CV_LOAD_IMAGE_ANYDEPTH" variable
+                       (:constant-flag t
+                        :default-value (8613 8614)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8587 8614])
+                    ("CV_LOAD_IMAGE_ANYCOLOR" variable
+                       (:constant-flag t
+                        :default-value (8665 8666)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8639 8666]))                  )
+                (reparse-symbol extern-c-contents) [8400 8669])
+            ("cvSetMouseCallback" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8285 8309])
+                    ("on_mouse" variable (:type ("CvMouseCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8310 8335])
+                    ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8368 8390])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8380 8396]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8265 8398])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_EVENT_FLAG_LBUTTON" variable
+                       (:constant-flag t
+                        :default-value (7953 7954)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7928 7954])
+                    ("CV_EVENT_FLAG_RBUTTON" variable
+                       (:constant-flag t
+                        :default-value (7985 7986)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7960 7986])
+                    ("CV_EVENT_FLAG_MBUTTON" variable
+                       (:constant-flag t
+                        :default-value (8017 8018)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7992 8018])
+                    ("CV_EVENT_FLAG_CTRLKEY" variable
+                       (:constant-flag t
+                        :default-value (8049 8050)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8024 8050])
+                    ("CV_EVENT_FLAG_SHIFTKEY" variable
+                       (:constant-flag t
+                        :default-value (8081 8083)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8056 8083])
+                    ("CV_EVENT_FLAG_ALTKEY" variable
+                       (:constant-flag t
+                        :default-value (8114 8116)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8089 8116]))                  )
+                (reparse-symbol extern-c-contents) [7917 8119])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_EVENT_MOUSEMOVE" variable
+                       (:constant-flag t
+                        :default-value (7623 7624)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7598 7624])
+                    ("CV_EVENT_LBUTTONDOWN" variable
+                       (:constant-flag t
+                        :default-value (7655 7656)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7630 7656])
+                    ("CV_EVENT_RBUTTONDOWN" variable
+                       (:constant-flag t
+                        :default-value (7687 7688)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7662 7688])
+                    ("CV_EVENT_MBUTTONDOWN" variable
+                       (:constant-flag t
+                        :default-value (7719 7720)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7694 7720])
+                    ("CV_EVENT_LBUTTONUP" variable
+                       (:constant-flag t
+                        :default-value (7751 7752)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7726 7752])
+                    ("CV_EVENT_RBUTTONUP" variable
+                       (:constant-flag t
+                        :default-value (7783 7784)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7758 7784])
+                    ("CV_EVENT_MBUTTONUP" variable
+                       (:constant-flag t
+                        :default-value (7815 7816)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7790 7816])
+                    ("CV_EVENT_LBUTTONDBLCLK" variable
+                       (:constant-flag t
+                        :default-value (7847 7848)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7822 7848])
+                    ("CV_EVENT_RBUTTONDBLCLK" variable
+                       (:constant-flag t
+                        :default-value (7879 7880)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7854 7880])
+                    ("CV_EVENT_MBUTTONDBLCLK" variable
+                       (:constant-flag t
+                        :default-value (7911 7912)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7886 7912]))                  )
+                (reparse-symbol extern-c-contents) [7587 7915])
+            ("cvSetTrackbarPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("trackbar_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7523 7549])
+                    ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7550 7574])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [7575 7584]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7505 7585])
+            ("cvGetTrackbarPos" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("trackbar_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7439 7465])
+                    ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7466 7491]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7421 7492])
+            ("cvCreateTrackbar2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("trackbar_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7172 7198])
+                    ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7199 7223])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7254 7265])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [7266 7276])
+                    ("on_change" variable (:type ("CvTrackbarCallback2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7277 7307])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7338 7363])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7353 7366]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7153 7368])
+            ("cvCreateTrackbar" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("trackbar_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6917 6943])
+                    ("window_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6944 6968])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6998 7009])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [7010 7020])
+                    ("on_change" variable (:type ("CvTrackbarCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7021 7060])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7050 7066]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6899 7068])
+            ("cvGetWindowName" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("window_handle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6734 6755]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6717 6756])
+            ("cvGetWindowHandle" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6620 6638]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6601 6639])
+            ("cvDestroyAllWindows" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6494 6499]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6474 6500])
+            ("cvDestroyWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6441 6459]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6424 6460])
+            ("cvMoveWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6315 6332])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6333 6339])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6340 6347]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6301 6348])
+            ("cvResizeWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6246 6263])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6264 6274])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6275 6287]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6230 6288])
+            ("cvShowImage" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6152 6169])
+                    ("image" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6170 6190]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6139 6191])
+            ("cvGetWindowProperty" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6019 6036])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [6037 6049]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5999 6050])
+            ("cvSetWindowProperty" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5934 5951])
+                    ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [5952 5964])
+                    ("prop_value" variable (:type "double") (reparse-symbol arg-sub-list) [5965 5983]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5914 5984])
+            ("cvNamedWindow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5798 5815])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [5816 5836])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5826 5856]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5783 5859])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_WND_PROP_FULLSCREEN" variable
+                       (:constant-flag t
+                        :default-value (4579 4580)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4554 4580])
+                    ("CV_WND_PROP_AUTOSIZE" variable
+                       (:constant-flag t
+                        :default-value (4656 4657)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4631 4657])
+                    ("CV_WND_PROP_ASPECTRATIO" variable
+                       (:constant-flag t
+                        :default-value (4731 4732)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4706 4732])
+                    ("CV_WND_PROP_OPENGL" variable
+                       (:constant-flag t
+                        :default-value (4809 4810)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4784 4810])
+                    ("CV_WINDOW_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (4956 4966)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4931 4966])
+                    ("CV_WINDOW_AUTOSIZE" variable
+                       (:constant-flag t
+                        :default-value (5105 5115)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5080 5115])
+                    ("CV_WINDOW_OPENGL" variable
+                       (:constant-flag t
+                        :default-value (5231 5241)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5206 5241])
+                    ("CV_GUI_EXPANDED" variable
+                       (:constant-flag t
+                        :default-value (5337 5347)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5311 5347])
+                    ("CV_GUI_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (5405 5415)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5379 5415])
+                    ("CV_WINDOW_FULLSCREEN" variable
+                       (:constant-flag t
+                        :default-value (5540 5541)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5515 5541])
+                    ("CV_WINDOW_FREERATIO" variable
+                       (:constant-flag t
+                        :default-value (5605 5615)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5580 5615])
+                    ("CV_WINDOW_KEEPRATIO" variable
+                       (:constant-flag t
+                        :default-value (5705 5715)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5680 5715]))                  )
+                (reparse-symbol extern-c-contents) [4487 5750])
+            ("cvStartWindowThread" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4451 4457]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4430 4458])
+            ("cvInitSystem" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4393 4402])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4403 4416]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4379 4417])
+            ("cvCreateButton" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("button_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4056 4090])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4080 4096])
+                    ("on_change" variable (:type ("CvButtonCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4097 4134])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4124 4140])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4142 4167])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4157 4173])
+                    ("button_type" variable (:type "int") (reparse-symbol arg-sub-list) [4176 4202])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4192 4218])
+                    ("initial_button_state" variable (:type "int") (reparse-symbol arg-sub-list) [4220 4255])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4245 4258]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4040 4260])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_PUSH_BUTTON" variable
+                       (:constant-flag t
+                        :default-value (3991 3992)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3974 3992])
+                    ("CV_CHECKBOX" variable
+                       (:constant-flag t
+                        :default-value (4008 4009)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3994 4009])
+                    ("CV_RADIOBOX" variable
+                       (:constant-flag t
+                        :default-value (4025 4026)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4011 4026]))                  )
+                (reparse-symbol extern-c-contents) [3968 4028])
+            ("cvStopLoop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3889 3895]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3877 3896])
+            ("cvStartLoop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pt2Func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3815 3824])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3825 3838]))                          
+                        :type "int")
+                        nil nil)
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3840 3849])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3850 3863]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3788 3864])
+            ("cvLoadWindowParameters" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3758 3775]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3735 3776])
+            ("cvSaveWindowParameters" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3704 3721]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3681 3722])
+            ("cvDisplayStatusBar" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3604 3621])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3622 3639])
+                    ("delayms" variable (:type "int") (reparse-symbol arg-sub-list) [3640 3662])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3652 3665]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3585 3667])
+            ("cvDisplayOverlay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3509 3526])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3527 3544])
+                    ("delayms" variable (:type "int") (reparse-symbol arg-sub-list) [3545 3567])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3557 3570]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3492 3572])
+            ("cvAddText" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CvArr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3415 3432])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3433 3450])
+                    ("org" variable (:type ("CvPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3451 3463])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type ("CvFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3464 3477]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3405 3478])
+            ("cvFontQt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("nameFont" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3190 3211])
+                    ("pointSize" variable (:type "int") (reparse-symbol arg-sub-list) [3212 3236])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3240])
+                    ("color" variable (:type ("CvScalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3242 3267])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3257 3283])
+                    ("weight" variable (:type "int") (reparse-symbol arg-sub-list) [3285 3306])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3296 3322])
+                    ("style" variable (:type "int") (reparse-symbol arg-sub-list) [3325 3345])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3335 3362])
+                    ("spacing" variable (:type "int") (reparse-symbol arg-sub-list) [3364 3386])
+                    ("" variable (:type ("CV_DEFAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3376 3389]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3181 3391])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_STYLE_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (2861 2862)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2835 2862])
+                    ("CV_STYLE_ITALIC" variable
+                       (:constant-flag t
+                        :default-value (2919 2920)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2893 2920])
+                    ("CV_STYLE_OBLIQUE" variable
+                       (:constant-flag t
+                        :default-value (2977 2978)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2951 2978]))                  )
+                (reparse-symbol extern-c-contents) [2827 3003])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("CV_FONT_LIGHT" variable
+                       (:constant-flag t
+                        :default-value (2590 2592)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2564 2592])
+                    ("CV_FONT_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (2643 2645)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2617 2645])
+                    ("CV_FONT_DEMIBOLD" variable
+                       (:constant-flag t
+                        :default-value (2697 2699)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2671 2699])
+                    ("CV_FONT_BOLD" variable
+                       (:constant-flag t
+                        :default-value (2753 2755)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2727 2755])
+                    ("CV_FONT_BLACK" variable
+                       (:constant-flag t
+                        :default-value (2805 2807)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2779 2807]))                  )
+                (reparse-symbol extern-c-contents) [2556 2825]))          
+      :file "highgui_c.h"
+      :pointmax 27780
+      :fsize 27779
+      :lastmodtime '(21408 8056 0 0)
+      :unmatched-syntax '((semantic-list 26183 . 26189) (symbol 26178 . 26183) (semantic-list 26079 . 26084) (symbol 26074 . 26079) (semantic-list 25877 . 25880) (semantic-list 25665 . 25681) (symbol 25660 . 25665) (symbol 25321 . 25330) (semantic-list 25055 . 25060) (symbol 25050 . 25055) (semantic-list 24853 . 24858) (symbol 24848 . 24853) (semantic-list 24778 . 24786) (symbol 24773 . 24778) (number 21683 . 21685) (punctuation 21681 . 21682) (punctuation 21680 . 21681) (number 21635 . 21637) (punctuation 21633 . 21634) (punctuation 21632 . 21633) (number 15918 . 15920) (punctuation 15916 . 15917) (punctuation 15915 . 15916) (number 15873 . 15875) (punctuation 15871 . 15872) (punctuation 15870 . 15871) (semantic-list 13450 . 13456) (symbol 13445 . 13450) (semantic-list 13348 . 13359) (symbol 13343 . 13348) (semantic-list 13216 . 13219) (semantic-list 13143 . 13154) (symbol 13138 . 13143) (semantic-list 12904 . 12909) (symbol 12899 . 12904) (semantic-list 12745 . 12757) (symbol 12740 . 12745) (semantic-list 11191 . 11203) (symbol 11186 . 11191) (semantic-list 10744 . 10750) (symbol 10739 . 10744) (semantic-list 10687 . 10693) (symbol 10682 . 10687) (semantic-list 10672 . 10678) (semantic-list 10560 . 10566) (symbol 10555 . 10560) (punctuation 10553 . 10554) (semantic-list 10537 . 10553) (semantic-list 10505 . 10537) (VOID 10500 . 10504) (TYPEDEF 10492 . 10499) (semantic-list 10466 . 10469) (semantic-list 10430 . 10435) (symbol 10425 . 10430) (semantic-list 10343 . 10346) (semantic-list 10270 . 10276) (symbol 10265 . 10270) (semantic-list 10110 . 10113) (semantic-list 9992 . 10000) (symbol 9987 . 9992) (semantic-list 9880 . 9901) (semantic-list 9815 . 9823) (symbol 9810 . 9815) (semantic-list 9786 . 9807) (semantic-list 9719 . 9730) (symbol 9714 . 9719) (semantic-list 9666 . 9669) (semantic-list 9553 . 9558) (symbol 9548 . 9553) (semantic-list 9124 . 9145) (semantic-list 9057 . 9065) (symbol 9052 . 9057) (semantic-list 9028 . 9049) (semantic-list 8959 . 8970) (symbol 8954 . 8959) (semantic-list 8390 . 8396) (semantic-list 8258 . 8264) (symbol 8253 . 8258) (punctuation 8211 . 8212) (semantic-list 8162 . 8211) (semantic-list 8134 . 8162) (VOID 8129 . 8133) (TYPEDEF 8121 . 8128) (semantic-list 7498 . 7504) (symbol 7493 . 7498) (semantic-list 7415 . 7420) (symbol 7410 . 7415) (semantic-list 7363 . 7366) (semantic-list 7147 . 7152) (symbol 7142 . 7147) (punctuation 7139 . 7140) (semantic-list 7114 . 7139) (semantic-list 7083 . 7114) (VOID 7078 . 7082) (TYPEDEF 7070 . 7077) (semantic-list 7060 . 7066) (semantic-list 6893 . 6898) (symbol 6888 . 6893) (punctuation 6811 . 6812) (semantic-list 6802 . 6811) (semantic-list 6772 . 6802) (VOID 6767 . 6771) (TYPEDEF 6759 . 6766) (semantic-list 6703 . 6716) (symbol 6698 . 6703) (semantic-list 6593 . 6600) (symbol 6588 . 6593) (semantic-list 6467 . 6473) (symbol 6462 . 6467) (semantic-list 6417 . 6423) (symbol 6412 . 6417) (semantic-list 6294 . 6300) (symbol 6289 . 6294) (semantic-list 6223 . 6229) (symbol 6218 . 6223) (semantic-list 6132 . 6138) (symbol 6127 . 6132) (semantic-list 5990 . 5998) (symbol 5985 . 5990) (semantic-list 5907 . 5913) (symbol 5902 . 5907) (semantic-list 5836 . 5856) (semantic-list 5777 . 5782) (symbol 5772 . 5777) (semantic-list 4424 . 4429) (symbol 4419 . 4424) (semantic-list 4373 . 4378) (symbol 4368 . 4373) (semantic-list 4255 . 4258) (semantic-list 4202 . 4218) (semantic-list 4167 . 4173) (semantic-list 4134 . 4140) (semantic-list 4090 . 4096) (semantic-list 4034 . 4039) (symbol 4029 . 4034) (punctuation 3966 . 3967) (semantic-list 3939 . 3966) (semantic-list 3911 . 3939) (VOID 3906 . 3910) (TYPEDEF 3898 . 3905) (semantic-list 3870 . 3876) (symbol 3865 . 3870) (semantic-list 3782 . 3787) (symbol 3777 . 3782) (semantic-list 3728 . 3734) (symbol 3723 . 3728) (semantic-list 3674 . 3680) (symbol 3669 . 3674) (semantic-list 3662 . 3665) (semantic-list 3578 . 3584) (symbol 3573 . 3578) (semantic-list 3567 . 3570) (semantic-list 3485 . 3491) (symbol 3480 . 3485) (semantic-list 3398 . 3404) (symbol 3393 . 3398) (semantic-list 3386 . 3389) (semantic-list 3345 . 3362) (semantic-list 3306 . 3322) (semantic-list 3267 . 3283) (semantic-list 3236 . 3240) (semantic-list 3172 . 3180) (symbol 3167 . 3172))
+      :lexical-table 
+        '(("cvvDestroyWindow" . ((symbol "cvDestroyWindow" 26928 . 26943)))
+          ("cvvAddSearchPath" . ((symbol "cvAddSearchPath" 27094 . 27109)))
+          ("CV_FOURCC_MACRO" (spp-arg-list ("c1" "c2" "c3" "c4") 25220 . 25236) . ((semantic-list "(((c1) & 255) + (((c2) & 255) << 8) + (((c3) & 255) << 16) + (((c4) & 255) << 24))" 25237 . 25319)))
+          ("cvvCreateTrackbar" . ((symbol "cvCreateTrackbar" 26970 . 26986)))
+          ("cvvWaitKey" (spp-arg-list ("name") 27128 . 27134) . ((symbol "cvWaitKey" 27135 . 27144) (semantic-list "(0)" 27144 . 27147)))
+          ("cvAddSearchPath" (spp-arg-list ("path") 26752 . 26758))
+          ("cvvShowImage" . ((symbol "cvShowImage" 26852 . 26863)))
+          ("set_postprocess_func" . ((symbol "cvSetPostprocessFuncWin32" 27358 . 27383)))
+          ("CV_FOURCC_DEFAULT" . ((symbol "CV_FOURCC" 25534 . 25543) (semantic-list "('I', 'Y', 'U', 'V')" 25543 . 25563)))
+          ("cvCreateAVIWriter" . ((symbol "cvCreateVideoWriter" 26675 . 26694)))
+          ("cvvResizeWindow" . ((symbol "cvResizeWindow" 26888 . 26902)))
+          ("cvvConvertImage" . ((symbol "cvConvertImage" 27222 . 27236)))
+          ("set_preprocess_func" . ((symbol "cvSetPreprocessFuncWin32" 27304 . 27328)))
+          ("cvCaptureFromCAM" . ((symbol "cvCreateCameraCapture" 26584 . 26605)))
+          ("cvvNamedWindow" . ((symbol "cvNamedWindow" 26817 . 26830)))
+          ("__OPENCV_HIGHGUI_H__")
+          ("cvCaptureFromAVI" . ((symbol "cvCaptureFromFile" 26631 . 26648)))
+          ("cvvSaveImage" . ((symbol "cvSaveImage" 27057 . 27068)))
+          ("cvCaptureFromFile" . ((symbol "cvCreateFileCapture" 26539 . 26558)))
+          ("cvvInitSystem" . ((symbol "cvInitSystem" 26781 . 26793)))
+          ("cvvLoadImage" (spp-arg-list ("name") 27007 . 27013) . ((symbol "cvLoadImage" 27014 . 27025) (semantic-list "((name),1)" 27025 . 27035)))
+          ("CV_FOURCC_PROMPT" . ((punctuation "-" 25455 . 25456) (number "1" 25456 . 25457)))
+          ("HG_AUTOSIZE" . ((symbol "CV_WINDOW_AUTOSIZE" 27257 . 27275)))
+          ("cvWriteToAVI" . ((symbol "cvWriteFrame" 26716 . 26728)))
+          ("cvvWaitKeyEx" (spp-arg-list ("name" "delay") 27168 . 27180) . ((symbol "cvWaitKey" 27181 . 27190) (semantic-list "(delay)" 27190 . 27197)))
+          )
+))
+  :file "!opt!ros!hydro!include!opencv2!highgui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_IMAGE_ANNOTATION_TOOL_H_" variable (:constant-flag t) nil [44 69])
+            ("jsk_topic_tools/diagnostic_nodelet.h" include (:system-flag t) nil [71 118])
+            ("nodelet/nodelet.h" include (:system-flag t) nil [119 147])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [149 178])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [179 211])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [212 252])
+            ("jsk_perception" type
+               (:members 
+                  ( ("ImageAnnotationTool" type
+                       (:superclasses 
+                          ( ("jsk_topic_tools::DiagnosticNodelet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [362 369])
+                            ("ImageAnnotationTool" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ImageAnnotationTool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [376 398])
+                            ("protected" label nil (reparse-symbol classsubparts) [417 427])
+                            ("onInit" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [434 456])
+                            ("subscribe" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [463 488])
+                            ("unsubscribe" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [495 522])
+                            ("image_cb" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [562 596]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [530 597])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [611 631])
+                            ("sub_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [638 659])
+                            ("sub_info_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [666 692])
+                            ("pub_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [699 719])
+                            ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [726 746]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [286 752]))                  
+                :type "namespace")
+                nil [255 754]))          
+      :file "image_annotation_tool.h"
+      :pointmax 821
+      :fsize 820
+      :lastmodtime '(21807 16567 349883 908000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_IMAGE_ANNOTATION_TOOL_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!image_annotation_tool!include!image_dataset_annotation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

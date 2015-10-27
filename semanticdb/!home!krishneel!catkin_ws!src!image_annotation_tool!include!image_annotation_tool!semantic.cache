@@ -1,0 +1,297 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_IMAGE_ANNOTATION_TOOL_H_" variable (:constant-flag t) nil [44 69])
+            ("ros/ros.h" include (:system-flag t) nil [71 91])
+            ("rosbag/bag.h" include (:system-flag t) nil [92 115])
+            ("rosbag/view.h" include (:system-flag t) nil [116 140])
+            ("image_transport/image_transport.h" include (:system-flag t) nil [142 186])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [187 219])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [220 260])
+            ("geometry_msgs/PolygonStamped.h" include (:system-flag t) nil [261 302])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [304 342])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [343 381])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [382 426])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [428 459])
+            ("boost/date_time/local_time/local_time.hpp" include (:system-flag t) nil [460 512])
+            ("fstream" include (:system-flag t) nil [514 531])
+            ("dirent.h" include (:system-flag t) nil [532 551])
+            ("ImageAnnotationTool" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [583 591])
+                    ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [596 616])
+                    ("it_" variable (:type ("image_transport::ImageTransport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [621 657])
+                    ("image_sub_" variable (:type ("image_transport::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [662 701])
+                    ("image_pub_" variable (:type ("image_transport::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [706 744])
+                    ("screenpt_sub_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [749 779])
+                    ("fore_histogram_" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [788 812])
+                    ("back_histogram_" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [817 841])
+                    ("iteration_counter_" variable (:type "int") (reparse-symbol classsubparts) [846 869])
+                    ("template_image" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [874 897])
+                    ("mark_model_" variable (:type "bool") (reparse-symbol classsubparts) [902 919])
+                    ("obj_rect_" variable (:type ("cv::Rect_" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [924 949])
+                    ("run_type_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1010])
+                    ("save_folder_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1015 1045])
+                    ("background_mask_" variable (:type "bool") (reparse-symbol classsubparts) [1050 1072])
+                    ("swindow_x_" variable (:type "int") (reparse-symbol classsubparts) [1077 1092])
+                    ("swindow_y_" variable (:type "int") (reparse-symbol classsubparts) [1097 1112])
+                    ("dataset_bag_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("rosbag::Bag" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1121 1165])
+                    ("public" label nil (reparse-symbol classsubparts) [1171 1178])
+                    ("ImageAnnotationTool" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1212 1230]))                          
+                        :type ("ImageAnnotationTool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1192 1231])
+                    ("imageCb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::ImageConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1257 1291]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1236 1292])
+                    ("screenRectangleCb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PolygonStamped::Ptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1329 1372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1297 1373])
+                    ("processFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1407 1423])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1431 1447]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1378 1448])
+                    ("shapeProbabilityMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1489 1505]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1453 1506])
+                    ("pixelWiseClassification" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1551 1567]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1511 1568])
+                    ("computeHistogram" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1603 1619])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1627 1637])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1645 1656]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1573 1658])
+                    ("cvTemplateMatching" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1698 1714])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1722 1738])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1746 1770]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1663 1772])
+                    ("constructColorModel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1810 1826])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1834 1851])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1859 1871]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1777 1873])
+                    ("cvMorphologicalOperation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1916 1926])
+                            ("" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1934 1947])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1956 1968]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1878 1970])
+                    ("segmentationProbabilityMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2018 2028])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2036 2046]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1975 2047])
+                    ("graphCutSegmentation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2090 2106])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2114 2124])
+                            ("" variable
+                               (:reference 1
+                                :type ("cv::Rect_" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2132 2149]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2053 2150])
+                    ("createMaskImage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2187 2197]))                          
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2155 2198])
+                    ("modelResize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2238 2254]))                          
+                        :type ("cv::Rect_" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2203 2255])
+                    ("convertNumber2String" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2318 2320]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2260 2321])
+                    ("directoryExists" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2348 2360]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2327 2361])
+                    ("saveDirectoryHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2401 2419])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2420 2434]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2366 2435])
+                    ("timeToStr" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2484 2486]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2440 2487])
+                    ("protected" label nil (reparse-symbol classsubparts) [2494 2504])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2509 2526]))                  
+                :type "class")
+                nil [553 2533]))          
+      :file "image_annotation_tool.h"
+      :pointmax 2572
+      :fsize 2571
+      :lastmodtime '(21836 62661 887887 779000)
+      :unmatched-syntax '((EXPLICIT 1183 . 1191))
+      :lexical-table 
+        '(("_IMAGE_ANNOTATION_TOOL_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!image_annotation_tool!include!image_annotation_tool!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

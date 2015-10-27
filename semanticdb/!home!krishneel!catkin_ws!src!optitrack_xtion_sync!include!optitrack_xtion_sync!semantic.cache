@@ -1,0 +1,114 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_OPTITRACK_XTION_SYNC_H_" variable (:constant-flag t) nil [133 157])
+            ("ros/ros.h" include (:system-flag t) nil [159 179])
+            ("ros/console.h" include (:system-flag t) nil [180 204])
+            ("tf/transform_listener.h" include (:system-flag t) nil [205 239])
+            ("tf/transform_broadcaster.h" include (:system-flag t) nil [240 277])
+            ("tf_conversions/tf_eigen.h" include (:system-flag t) nil [278 314])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [317 347])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [348 388])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [389 425])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [426 458])
+            ("geometry_msgs/PolygonStamped.h" include (:system-flag t) nil [460 501])
+            ("geometry_msgs/PoseStamped.h" include (:system-flag t) nil [502 540])
+            ("OptiTrackXtionSync" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [570 578])
+                    ("pnh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [584 605])
+                    ("pub_pose_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [610 635])
+                    ("sub_pose_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [640 666])
+                    ("protected" label nil (reparse-symbol classsubparts) [672 682])
+                    ("onInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [687 701])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [706 723])
+                    ("unsubscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [728 747])
+                    ("public" label nil (reparse-symbol classsubparts) [753 760])
+                    ("OptiTrackXtionSync" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("OptiTrackXtionSync" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [765 786])
+                    ("callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::PoseStampedConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [805 848]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [791 849])
+                    ("getXtionToObjectWorld" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [886 905])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [906 924])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [925 941])
+                            ("" variable
+                               (:reference 1
+                                :type ("tf::StampedTransform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [949 972]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [854 973])
+                    ("adjustmentXtionWorldToXtion" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [978 1013])
+                    ("sendNewTFFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trans" variable
+                               (:constant-flag t
+                                :type ("tf::Vector3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1043 1067])
+                            ("quat" variable
+                               (:constant-flag t
+                                :type ("tf::Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1068 1094])
+                            ("now" variable
+                               (:constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1102 1122])
+                            ("parent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1123 1142])
+                            ("new_frame" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1143 1165])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1173 1185]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1018 1187]))                  
+                :type "class")
+                nil [542 1191]))          
+      :file "optitrack_xtion_sync.h"
+      :pointmax 1229
+      :fsize 1231
+      :lastmodtime '(22001 10364 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_OPTITRACK_XTION_SYNC_H_")
+          )
+))
+  :file "!home!krishneel!catkin_ws!src!optitrack_xtion_sync!include!optitrack_xtion_sync!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

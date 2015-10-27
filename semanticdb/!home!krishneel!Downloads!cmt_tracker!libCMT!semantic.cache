@@ -1,0 +1,300 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CMT.h" include nil nil [1 17])
+            ("cstdio" include (:system-flag t) nil [19 36])
+            ("string" include (:system-flag t) nil [104 121])
+            ("fstream" include (:system-flag t) nil [122 140])
+            ("num2str" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [155 165])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [166 177])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [178 186]))                  
+                :type "void")
+                nil [142 320])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [331 340])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [341 354]))                  
+                :type "int")
+                nil [322 3222]))          
+      :file "main.cpp"
+      :pointmax 3223
+      :fsize 3222
+      :lastmodtime '(22006 58427 919979 168000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CMT_H" variable (:constant-flag t) nil [23 28])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [30 59])
+            ("opencv2/features2d/features2d.hpp" include (:system-flag t) nil [60 104])
+            ("CMT" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [120 127])
+                    ("detectorType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [132 157])
+                    ("descriptorType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [162 189])
+                    ("matcherType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [194 218])
+                    ("descriptorLength" variable (:type "int") (reparse-symbol classsubparts) [223 244])
+                    ("thrOutlier" variable (:type "int") (reparse-symbol classsubparts) [249 264])
+                    ("thrConf" variable (:type "float") (reparse-symbol classsubparts) [269 283])
+                    ("thrRatio" variable (:type "float") (reparse-symbol classsubparts) [288 303])
+                    ("estimateScale" variable (:type "bool") (reparse-symbol classsubparts) [309 328])
+                    ("estimateRotation" variable (:type "bool") (reparse-symbol classsubparts) [333 355])
+                    ("detector" variable (:type ("cv::Ptr" type
+                         (:template-specifier 
+                            ( ("cv::FeatureDetector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [361 399])
+                    ("descriptorExtractor" variable (:type ("cv::Ptr" type
+                         (:template-specifier 
+                            ( ("cv::DescriptorExtractor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [404 457])
+                    ("descriptorMatcher" variable (:type ("cv::Ptr" type
+                         (:template-specifier 
+                            ( ("cv::DescriptorMatcher" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [462 511])
+                    ("selectedFeatures" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [517 542])
+                    ("selectedClasses" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [547 580])
+                    ("featuresDatabase" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [585 610])
+                    ("classesDatabase" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [615 648])
+                    ("squareForm" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type (:template-specifier 
+                                ( ("float" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [654 698])
+                    ("angles" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type (:template-specifier 
+                                ( ("float" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [703 743])
+                    ("topLeft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [749 769])
+                    ("topRight" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [774 795])
+                    ("bottomRight" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [800 824])
+                    ("bottomLeft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [829 852])
+                    ("boundingbox" variable (:type ("cv::Rect_" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [858 887])
+                    ("hasResult" variable (:type "bool") (reparse-symbol classsubparts) [892 907])
+                    ("centerToTopLeft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [914 942])
+                    ("centerToTopRight" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [947 976])
+                    ("centerToBottomRight" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [981 1013])
+                    ("centerToBottomLeft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1018 1049])
+                    ("springs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Point2f" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1055 1088])
+                    ("im_prev" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1094 1110])
+                    ("activeKeypoints" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::pair" type (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil)
+                                  ("int" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1115 1173])
+                    ("trackedKeypoints" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::pair" type (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil)
+                                  ("int" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1178 1237])
+                    ("nbInitialKeypoints" variable (:type "unsigned int") (reparse-symbol classsubparts) [1243 1275])
+                    ("votes" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("cv::Point2f" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1281 1312])
+                    ("outliers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::pair" type (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil)
+                                  ("int" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1318 1370])
+                    ("CMT" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CMT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1376 1382])
+                    ("initialise" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("im_gray0" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1403 1420])
+                            ("topleft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1441])
+                            ("bottomright" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1442 1466]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1387 1467])
+                    ("estimate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("keypointsIN" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("cv::KeyPoint" type nil nil nil)
+                                              ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1486 1548])
+                            ("center" variable
+                               (:reference 1
+                                :type ("cv::Point2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1569])
+                            ("scaleEstimate" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1570 1591])
+                            ("medRot" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1592 1606])
+                            ("keypoints" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("cv::KeyPoint" type nil nil nil)
+                                              ("int" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1607 1661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1472 1662])
+                    ("processFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("im_gray" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1685 1701]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1667 1702]))                  
+                :type "class")
+                nil [108 1705])
+            ("Cluster" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1723 1730])
+                    ("first" variable (:type "int") (reparse-symbol classsubparts) [1735 1753])
+                    ("second" variable (:type "int") (reparse-symbol classsubparts) [1735 1753])
+                    ("dist" variable (:type "float") (reparse-symbol classsubparts) [1770 1781])
+                    ("num" variable (:type "int") (reparse-symbol classsubparts) [1786 1794]))                  
+                :type "class")
+                nil [1707 1797])
+            ("inout_rect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("keypoints" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1815 1858])
+                    ("topleft" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1859 1879])
+                    ("bottomright" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1880 1904])
+                    ("in" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1905 1935])
+                    ("out" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("cv::KeyPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1936 1967]))                  
+                :type "void")
+                nil [1799 1968])
+            ("track" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("im_prev" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 1996])
+                    ("im_gray" variable (:type ("cv::Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1997 2013])
+                    ("keypointsIN" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type (:template-specifier 
+                                    ( ("cv::KeyPoint" type nil nil nil)
+                                      ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2014 2076])
+                    ("keypointsTracked" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type (:template-specifier 
+                                    ( ("cv::KeyPoint" type nil nil nil)
+                                      ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2077 2138])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unsigned char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2139 2174])
+                    ("THR_FB" variable
+                       (:default-value "20"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2175 2190]))                  
+                :type "void")
+                nil [1969 2192])
+            ("rotate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable (:type ("cv::Point2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2212 2226])
+                    ("rad" variable (:type "float") (reparse-symbol arg-sub-list) [2227 2237]))                  
+                :type ("cv::Point2f" type (:type "class") nil nil))
+                nil [2193 2238]))          
+      :file "CMT.h"
+      :pointmax 2255
+      :fsize 2254
+      :lastmodtime '(21981 52728 776390 915000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CMT_H")
+          )
+))
+  :file "!home!krishneel!Downloads!cmt_tracker!libCMT!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

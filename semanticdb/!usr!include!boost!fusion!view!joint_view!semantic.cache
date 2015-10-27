@@ -1,0 +1,280 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FUSION_JOINT_VIEW_07162005_0140" variable (:constant-flag t) nil [416 447])
+            ("boost/fusion/support/detail/access.hpp" include (:system-flag t) nil [449 498])
+            ("boost/fusion/support/is_view.hpp" include (:system-flag t) nil [499 542])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [543 595])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [596 646])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [647 698])
+            ("boost/fusion/view/joint_view/joint_view_iterator.hpp" include (:system-flag t) nil [699 762])
+            ("boost/fusion/view/joint_view/detail/begin_impl.hpp" include (:system-flag t) nil [763 824])
+            ("boost/fusion/view/joint_view/detail/end_impl.hpp" include (:system-flag t) nil [825 884])
+            ("boost/fusion/support/sequence_base.hpp" include (:system-flag t) nil [885 934])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [935 962])
+            ("boost/mpl/plus.hpp" include (:system-flag t) nil [963 992])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [993 1022])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [1023 1055])
+            ("boost/mpl/inherit.hpp" include (:system-flag t) nil [1056 1088])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [1089 1122])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("joint_view_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1165 1187])
+                            ("forward_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1192 1221])
+                            ("fusion_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1226 1253])
+                            ("joint_view" type
+                               (:template 
+                                  ( ("Sequence1" type (:type "class") nil nil)
+                                    ("Sequence2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("fusion_tag" type
+                                       (:typedef ("joint_view_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1396 1430])
+                                    ("tag" type
+                                       (:typedef ("fusion_sequence_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1439 1471])
+                                    ("category" type
+                                       (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1510 1865])
+                                    ("is_view" type
+                                       (:typedef ("mpl::true_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1874 1901])
+                                    ("first_type" type
+                                       (:typedef ("result_of::begin::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1911 1973])
+                                    ("last_type" type
+                                       (:typedef ("result_of::end::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1982 2041])
+                                    ("concat_type" type
+                                       (:typedef ("result_of::begin::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2050 2113])
+                                    ("concat_last_type" type
+                                       (:typedef ("result_of::end::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2122 2188])
+                                    ("size" type
+                                       (:typedef ("mpl::plus::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2197 2292])
+                                    ("joint_view" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in_seq1" variable
+                                               (:reference 1
+                                                :type ("Sequence1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2313 2332])
+                                            ("in_seq2" variable
+                                               (:reference 1
+                                                :type ("Sequence2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2333 2352]))                                          
+                                        :type ("joint_view" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2302 2419])
+                                    ("first" function
+                                       (:methodconst-flag t
+                                        :type ("first_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2429 2485])
+                                    ("concat" function
+                                       (:methodconst-flag t
+                                        :type ("concat_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2494 2552])
+                                    ("concat_last" function
+                                       (:methodconst-flag t
+                                        :type ("concat_last_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2561 2627])
+                                    ("private" label nil (reparse-symbol classsubparts) [2633 2641])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("joint_view" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2755 2773]))                                          
+                                        :type ("joint_view" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2732 2774])
+                                    ("seq1" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("mpl::if_::type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2784 2864])
+                                    ("seq2" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("mpl::if_::type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2873 2953]))                                  
+                                :superclasses 
+                                  ( ("sequence_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1259 2960]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1142 2962]))                  
+                :type "namespace")
+                nil [1124 2963]))          
+      :file "joint_view.hpp"
+      :pointmax 2974
+      :fsize 2973
+      :lastmodtime '(20225 54186 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_JOINT_VIEW_07162005_0140")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FUSION_JOINT_VIEW_ITERATOR_07162005_0140" variable (:constant-flag t) nil [424 464])
+            ("boost/fusion/support/iterator_base.hpp" include (:system-flag t) nil [466 515])
+            ("boost/fusion/iterator/equal_to.hpp" include (:system-flag t) nil [516 561])
+            ("boost/fusion/iterator/mpl/convert_iterator.hpp" include (:system-flag t) nil [562 619])
+            ("boost/fusion/adapted/mpl/mpl_iterator.hpp" include (:system-flag t) nil [620 672])
+            ("boost/fusion/view/joint_view/detail/deref_impl.hpp" include (:system-flag t) nil [673 734])
+            ("boost/fusion/view/joint_view/detail/next_impl.hpp" include (:system-flag t) nil [735 795])
+            ("boost/fusion/view/joint_view/detail/value_of_impl.hpp" include (:system-flag t) nil [796 860])
+            ("boost/fusion/view/joint_view/detail/deref_data_impl.hpp" include (:system-flag t) nil [861 927])
+            ("boost/fusion/view/joint_view/detail/value_of_data_impl.hpp" include (:system-flag t) nil [928 997])
+            ("boost/fusion/view/joint_view/detail/key_of_impl.hpp" include (:system-flag t) nil [998 1060])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [1061 1095])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("joint_view_iterator_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1138 1169])
+                            ("forward_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1174 1203])
+                            ("joint_view_iterator" type
+                               (:template 
+                                  ( ("Category" type (:type "class") nil nil)
+                                    ("First" type (:type "class") nil nil)
+                                    ("Last" type (:type "class") nil nil)
+                                    ("Concat" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("first_converter" type
+                                       (:typedef ("convert_iterator" type
+                                             (:template-specifier 
+                                                ( ("First" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1408 1456])
+                                    ("last_converter" type
+                                       (:typedef ("convert_iterator" type
+                                             (:template-specifier 
+                                                ( ("Last" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1465 1511])
+                                    ("concat_converter" type
+                                       (:typedef ("convert_iterator" type
+                                             (:template-specifier 
+                                                ( ("Concat" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1520 1570])
+                                    ("first_type" type
+                                       (:typedef ("first_converter::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1580 1630])
+                                    ("last_type" type
+                                       (:typedef ("last_converter::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1639 1687])
+                                    ("concat_type" type
+                                       (:typedef ("concat_converter::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1696 1748])
+                                    ("fusion_tag" type
+                                       (:typedef ("joint_view_iterator_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1758 1801])
+                                    ("category" type
+                                       (:typedef ("Category" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1810 1836])
+                                    ("BOOST_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1845 1919])
+                                    ("joint_view_iterator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in_first" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("First" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1949 1971])
+                                            ("in_concat" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Concat" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1972 1996]))                                          
+                                        :type ("joint_view_iterator" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1929 2116])
+                                    ("first" variable (:type ("first_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2126 2143])
+                                    ("concat" variable (:type ("concat_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2152 2171])
+                                    ("private" label nil (reparse-symbol classsubparts) [2177 2185])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("joint_view_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2308 2335]))                                          
+                                        :type ("joint_view_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2276 2336]))                                  
+                                :superclasses 
+                                  ( ("iterator_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1209 2343]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1115 2345]))                  
+                :type "namespace")
+                nil [1097 2346]))          
+      :file "joint_view_iterator.hpp"
+      :pointmax 2357
+      :fsize 2356
+      :lastmodtime '(20225 54186 0 0)
+      :unmatched-syntax '((semantic-list 1865 . 1917))
+      :lexical-table 
+        '(("FUSION_JOINT_VIEW_ITERATOR_07162005_0140")
+          )
+))
+  :file "!usr!include!boost!fusion!view!joint_view!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,391 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCVALUE_H_" variable (:constant-flag t) nil [34 49])
+            ("XmlRpcDecl.h" include nil nil [214 237])
+            ("map" include (:system-flag t) nil [258 273])
+            ("string" include (:system-flag t) nil [274 292])
+            ("vector" include (:system-flag t) nil [293 311])
+            ("time.h" include (:system-flag t) nil [312 330])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcValue" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [466 6437]))                  
+                :type "namespace")
+                nil [339 6439])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6487 6504])
+                    ("v" variable
+                       (:reference 1
+                        :type ("XmlRpc::XmlRpcValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6505 6528]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [6462 6529]))          
+      :file "XmlRpcValue.h"
+      :pointmax 6558
+      :fsize 6557
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCVALUE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("XMLRPCPP_DECL_H_INCLUDED" variable (:constant-flag t) nil [1852 1876])
+            ("ros/macros.h" include (:system-flag t) nil [1878 1901])
+            ("XMLRPCPP_DECL" variable (:constant-flag t) nil [2238 2251]))          
+      :file "XmlRpcDecl.h"
+      :pointmax 2298
+      :fsize 2297
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("XMLRPCPP_DECL")
+          ("XMLRPCPP_DECL_H_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPC_H_" variable (:constant-flag t) nil [127 137])
+            ("string" include (:system-flag t) nil [1056 1074])
+            ("XmlRpcClient.h" include nil nil [1083 1108])
+            ("XmlRpcException.h" include nil nil [1109 1137])
+            ("XmlRpcServer.h" include nil nil [1138 1163])
+            ("XmlRpcServerMethod.h" include nil nil [1164 1195])
+            ("XmlRpcValue.h" include nil nil [1196 1220])
+            ("XmlRpcUtil.h" include nil nil [1221 1244])
+            ("stdexcept" include (:system-flag t) nil [1246 1266])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcErrorHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1392 1399])
+                            ("XmlRpcErrorHandler" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1404 1437])
+                            ("getErrorHandler" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("XmlRpcErrorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1519 1594])
+                            ("setErrorHandler" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("eh" variable
+                                       (:pointer 1
+                                        :type ("XmlRpcErrorHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1665 1688]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1637 1716])
+                            ("error" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1815 1831]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1796 1836])
+                            ("protected" label nil (reparse-symbol classsubparts) [1840 1850])
+                            ("_errorHandler" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("XmlRpcErrorHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1855 1896]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1363 1901])
+                    ("XmlRpcLogHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2012 2019])
+                            ("XmlRpcLogHandler" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2024 2055])
+                            ("getLogHandler" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("XmlRpcLogHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2140 2209])
+                            ("setLogHandler" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("lh" variable
+                                       (:pointer 1
+                                        :type ("XmlRpcLogHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2280 2301]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2254 2327])
+                            ("getVerbosity" function
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2434 2487])
+                            ("setVerbosity" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [2619 2625]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2594 2650])
+                            ("log" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [2748 2758])
+                                    ("msg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2759 2775]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2731 2780])
+                            ("protected" label nil (reparse-symbol classsubparts) [2784 2794])
+                            ("_logHandler" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("XmlRpcLogHandler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2799 2836])
+                            ("_verbosity" variable
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2841 2863]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1985 2868])
+                    ("getVerbosity" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2960 2979])
+                    ("setVerbosity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [3090 3100]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3072 3101])
+                    ("XMLRPC_VERSION" variable
+                       (:dereference 1
+                        :typemodifiers ("extern")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [3131 3166]))                  
+                :type "namespace")
+                nil [1268 3169]))          
+      :file "XmlRpc.h"
+      :pointmax 3212
+      :fsize 3211
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPC_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCCLIENT_H_" variable (:constant-flag t) nil [35 51])
+            ("string" include (:system-flag t) nil [236 254])
+            ("XmlRpcDispatch.h" include nil nil [263 290])
+            ("XmlRpcSource.h" include nil nil [291 316])
+            ("XmlRpcDecl.h" include nil nil [317 340])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcValue" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [423 441])
+                    ("XmlRpcSource" variable (:type "int") (reparse-symbol namespacesubparts) [562 4352]))                  
+                :type "namespace")
+                nil [342 4377]))          
+      :file "XmlRpcClient.h"
+      :pointmax 4426
+      :fsize 4425
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax '((PUBLIC 555 . 561) (punctuation 553 . 554) (symbol 540 . 552) (symbol 526 . 539) (CLASS 520 . 525))
+      :lexical-table 
+        '(("_XMLRPCCLIENT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCEXCEPTION_H_" variable (:constant-flag t) nil [38 57])
+            ("string" include (:system-flag t) nil [241 259])
+            ("XmlRpcDecl.h" include nil nil [268 291])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcException" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [449 953]))                  
+                :type "namespace")
+                nil [294 956]))          
+      :file "XmlRpcException.h"
+      :pointmax 988
+      :fsize 987
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCEXCEPTION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCSERVER_H_" variable (:constant-flag t) nil [192 208])
+            ("map" include (:system-flag t) nil [392 407])
+            ("string" include (:system-flag t) nil [408 426])
+            ("XmlRpcDispatch.h" include nil nil [435 462])
+            ("XmlRpcSource.h" include nil nil [463 488])
+            ("XmlRpcDecl.h" include nil nil [489 512])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcServerMethod" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [587 612])
+                    ("XmlRpcServerConnection" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [672 701])
+                    ("XmlRpcValue" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [756 774])
+                    ("XmlRpcSource" variable (:type "int") (reparse-symbol namespacesubparts) [862 3090]))                  
+                :type "namespace")
+                nil [514 3092]))          
+      :file "XmlRpcServer.h"
+      :pointmax 3140
+      :fsize 3139
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax '((PUBLIC 855 . 861) (punctuation 853 . 854) (symbol 840 . 852) (symbol 826 . 839) (CLASS 820 . 825))
+      :lexical-table 
+        '(("_XMLRPCSERVER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCSERVERMETHOD_H_" variable (:constant-flag t) nil [41 63])
+            ("XmlRpcDecl.h" include nil nil [228 251])
+            ("string" include (:system-flag t) nil [272 290])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcValue" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [372 390])
+                    ("XmlRpcServer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [455 474])
+                    ("XmlRpcServerMethod" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [532 1218]))                  
+                :type "namespace")
+                nil [299 1220]))          
+      :file "XmlRpcServerMethod.h"
+      :pointmax 1275
+      :fsize 1274
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCSERVERMETHOD_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCUTIL_H_" variable (:constant-flag t) nil [32 46])
+            ("string" include (:system-flag t) nil [230 248])
+            ("XmlRpcDecl.h" include nil nil [257 280])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcUtil" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [629 1862]))                  
+                :type "namespace")
+                nil [529 1864]))          
+      :file "XmlRpcUtil.h"
+      :pointmax 1911
+      :fsize 1910
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCUTIL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCDISPATCH_H_" variable (:constant-flag t) nil [37 55])
+            ("XmlRpcDecl.h" include nil nil [220 243])
+            ("list" include (:system-flag t) nil [264 280])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcSource" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [370 389])
+                    ("XmlRpcDispatch" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [513 2487]))                  
+                :type "namespace")
+                nil [289 2489]))          
+      :file "XmlRpcDispatch.h"
+      :pointmax 2541
+      :fsize 2540
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCDISPATCH_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCSOURCE_H_" variable (:constant-flag t) nil [35 51])
+            ("XmlRpcDecl.h" include nil nil [216 239])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcSource" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [323 1785]))                  
+                :type "namespace")
+                nil [241 1787]))          
+      :file "XmlRpcSource.h"
+      :pointmax 1835
+      :fsize 1834
+      :lastmodtime '(21665 43657 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCSOURCE_H_")
+          )
+))
+  :file "!opt!ros!hydro!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

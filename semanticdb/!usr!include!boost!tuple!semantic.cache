@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TUPLE_HPP" variable (:constant-flag t) nil [457 472])
+            ("boost/config.hpp" include nil nil [741 768])
+            ("boost/static_assert.hpp" include nil nil [769 803])
+            ("boost/ref.hpp" include nil nil [967 991])
+            ("boost/tuple/detail/tuple_basic.hpp" include nil nil [992 1037])
+            ("boost" type
+               (:members 
+                  ( ("tuples::tuple" using (:type ("tuples::tuple" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1114 1134])
+                    ("tuples::make_tuple" using (:type ("tuples::make_tuple" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1135 1160])
+                    ("tuples::tie" using (:type ("tuples::tie" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1161 1179])
+                    ("get" function
+                       (:template 
+                          ( ("int" type (:typevar "N") nil nil)
+                            ("Head" type (:type "class") nil nil)
+                            ("Tail" type (:type "class") nil nil))                          
+                        :type ("tuples::detail::element_ref::RET" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :type ("tuples::cons" type
+                                     (:template-specifier 
+                                        ( ("Head" type nil nil nil)
+                                          ("Tail" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2387 2415])
+                            ("" variable
+                               (:pointer 1
+                                :type ("tuples::detail::workaround_holder" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2416 2457]))                          
+                        :typemodifiers ("typename"))
+                        (reparse-symbol namespacesubparts) [2265 2510])
+                    ("get" function
+                       (:template 
+                          ( ("int" type (:typevar "N") nil nil)
+                            ("Head" type (:type "class") nil nil)
+                            ("Tail" type (:type "class") nil nil))                          
+                        :type ("tuples::detail::element_const_ref::RET" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tuples::cons" type
+                                     (:template-specifier 
+                                        ( ("Head" type nil nil nil)
+                                          ("Tail" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2640 2674])
+                            ("" variable
+                               (:pointer 1
+                                :type ("tuples::detail::workaround_holder" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2675 2716]))                          
+                        :typemodifiers ("typename"))
+                        (reparse-symbol namespacesubparts) [2512 2769]))                  
+                :type "namespace")
+                nil [1091 2809]))          
+      :file "tuple.hpp"
+      :pointmax 2861
+      :fsize 2860
+      :lastmodtime '(20225 54172 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TUPLE_HPP")
+          )
+))
+  :file "!usr!include!boost!tuple!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

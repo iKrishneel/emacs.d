@@ -1,0 +1,560 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/constants.h" include nil nil [96 129])
+            ("../include/Point_Cloud_Processing.h" include nil nil [130 176])
+            ("CameraParam" type
+               (:members 
+                  ( ("cameraMatrix" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [250 267])
+                    ("disCoeffs" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [271 285])
+                    ("rvects" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [289 308])
+                    ("tvects" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [312 331])
+                    ("rms_distance" variable (:type "double") (reparse-symbol classsubparts) [335 355])
+                    ("image_points" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type (:template-specifier 
+                                ( ("Point2f" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [360 398])
+                    ("obj_points" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type (:template-specifier 
+                                ( ("Point3_" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [402 446]))                  
+                :type "struct")
+                nil [226 449])
+            ("StereoParam" type
+               (:members 
+                  ( ("R" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [520 536])
+                    ("T" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [520 536])
+                    ("E" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [520 536])
+                    ("F" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [520 536])
+                    ("cameraMatrix" variable
+                       (:dereference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [540 560])
+                    ("distCoeffs" variable
+                       (:dereference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [564 582])
+                    ("image_points" variable
+                       (:dereference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:template-specifier 
+                                    ( ("Point2f" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [587 628])
+                    ("obj_points" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type (:template-specifier 
+                                ( ("Point3_" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [632 676]))                  
+                :type "struct")
+                nil [496 679])
+            ("directory" variable
+               (:default-value "\"/home/krishneel/catkin_ws/src/kinect_camera_calibration/images/\""
+                :type ("string" type (:type "class") nil nil))
+                nil [681 766])
+            ("patternSize" variable
+               (:constant-flag t
+                :default-value "Size(10, 7)"
+                :type ("Size" type (:type "class") nil nil))
+                nil [798 835])
+            ("squareLenght" variable
+               (:default-value "25"
+                :type "int")
+                nil [837 859])
+            ("runCalibration" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [948 954]))                  
+                :type "void")
+                nil [890 955])
+            ("readImageFiles" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1014 1028])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1029 1036]))                  
+                :type "void")
+                nil [956 1037])
+            ("getCheckerBoardCorners" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1096 1102])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1103 1115])
+                    ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1117 1135]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Point2f" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1038 1137])
+            ("getObjectPoints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point3_" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1196 1222]))                  
+                :type "void")
+                nil [1138 1223])
+            ("undistortImage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1282 1296])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1297 1303])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1304 1310]))                  
+                :type "void")
+                nil [1224 1311])
+            ("computeCameraParameters" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1370 1384])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1385 1399]))                  
+                :type "void")
+                nil [1312 1400])
+            ("stereoCameraCalibrate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1459 1473])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1474 1488])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1489 1495]))                  
+                :type "void")
+                nil [1401 1496])
+            ("showCalibratedEpiLines" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1556 1562])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1563 1577])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1578 1584])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1585 1599])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1600 1605]))                  
+                :type "void")
+                nil [1498 1606])
+            ("rgbCameraCapture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1665 1676]))                  
+                :type "void")
+                nil [1607 1691])
+            ("stereoRectification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1750 1756])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1771])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1772 1778])
+                    ("" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1779 1793])
+                    ("" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1794 1800]))                  
+                :type "void")
+                nil [1692 1801])
+            ("openCVStereoCalibration" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cam1" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1832 1850])
+                    ("cam2" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1851 1869])
+                    ("img_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1870 1892]))                  
+                :type "void")
+                nil [1803 1893])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1929 1938])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1939 1952]))                  
+                :type "int")
+                nil [1920 2216])
+            ("runCalibration" function
+               (:arguments 
+                  ( ("fundamentalMatrix" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2281 2304]))                  
+                :type "void")
+                nil [2261 3493])
+            ("stereoCameraCalibrate" function
+               (:arguments 
+                  ( ("cam_param_1" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3600 3625])
+                    ("cam_param_2" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3653 3678])
+                    ("fundamentalMatrix" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3706 3729]))                  
+                :type "void")
+                nil [3573 5085])
+            ("computeCameraParameters" function
+               (:arguments 
+                  ( ("image_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5164 5188])
+                    ("cam_param" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5218 5241]))                  
+                :type "void")
+                nil [5135 7687])
+            ("getObjectPoints" function
+               (:arguments 
+                  ( ("object_points" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point3_" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7760 7799]))                  
+                :type "void")
+                nil [7739 8178])
+            ("getCheckerBoardCorners" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8284 8295])
+                    ("isPlot" variable (:type "bool") (reparse-symbol arg-sub-list) [8335 8347])
+                    ("wname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8387 8400]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Point2f" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8245 9259])
+            ("readImageFiles" function
+               (:arguments 
+                  ( ("image_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9339 9363])
+                    ("rlist" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9384 9397]))                  
+                :type "void")
+                nil [9319 10185])
+            ("rgbCameraCapture" function
+               (:arguments 
+                  ( ("camIndex" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10277 10296]))                  
+                :type "void")
+                nil [10255 10669])
+            ("undistortImage" function
+               (:arguments 
+                  ( ("image_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10762 10786])
+                    ("cameraMatrix" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10807 10825])
+                    ("disCoeffs" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10846 10861]))                  
+                :type "void")
+                nil [10742 11204])
+            ("drawEpiLines" function
+               (:arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11281 11292])
+                    ("line_params" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point3_" type (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11293 11330])
+                    ("wname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11331 11344]))                  
+                :type "void")
+                nil [11263 11670])
+            ("showCalibratedEpiLines" function
+               (:arguments 
+                  ( ("img_1" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11801 11812])
+                    ("cam_param_1" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11813 11838])
+                    ("img_2" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11867 11878])
+                    ("cam_param_2" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11879 11904])
+                    ("fundamentalMatrix" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11933 11956]))                  
+                :type "void")
+                nil [11773 12425])
+            ("plotRectification" function
+               (:arguments 
+                  ( ("cameraMatrix" variable
+                       (:pointer 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12456 12474])
+                    ("distCoeffs" variable
+                       (:pointer 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12475 12491])
+                    ("R1" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12515 12522])
+                    ("R2" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12523 12530])
+                    ("P1" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12531 12538])
+                    ("P2" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12539 12546])
+                    ("imageSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12547 12562])
+                    ("image_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12586 12610]))                  
+                :type "void")
+                nil [12433 14703])
+            ("openCVStereoCalibration" function
+               (:arguments 
+                  ( ("cam1" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14766 14784])
+                    ("cam2" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14785 14803])
+                    ("img_list" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Mat" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14804 14826]))                  
+                :type "void")
+                nil [14737 16674])
+            ("stereoRectification" function
+               (:arguments 
+                  ( ("img_1" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16772 16783])
+                    ("cam_param_1" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16784 16809])
+                    ("img_2" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16835 16846])
+                    ("cam_param_2" variable
+                       (:reference 1
+                        :type ("CameraParam" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16847 16872])
+                    ("fundamentalMatrix" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16898 16921]))                  
+                :type "void")
+                nil [16747 17501]))          
+      :file "main.cpp"
+      :pointmax 17502
+      :fsize 17501
+      :lastmodtime '(21683 49880 927547 993000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/Point_Cloud_Processing.h" include nil nil [189 235])
+            ("cloudCallBack" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::PointCloud2ConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [535 585]))                  
+                :type "void")
+                nil [494 2296])
+            ("pclDistanceFilter" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("cloud" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("pcl::PCLPointCloud2" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2628 2673])
+                    ("cloud_filtered" variable
+                       (:reference 1
+                        :type ("pcl::PCLPointCloud2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2719 2755]))                  
+                :type "void")
+                nil [2583 3034])
+            ("pointCloud2RGBDImage" function
+               (:parent "PointCloudProcessing"
+                :arguments 
+                  ( ("_cloud" variable (:type ("pcl::PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3376 3412])
+                    ("rgbImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3461 3475])
+                    ("depthImage" variable
+                       (:reference 1
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3524 3540]))                  
+                :type "void")
+                nil [3328 5434])
+            ("usbCameraCapture" function
+               (:parent "PointCloudProcessing"
+                :type "void")
+                nil [5439 5793]))          
+      :file "Point_Cloud_Processing.cpp"
+      :pointmax 5794
+      :fsize 5991
+      :lastmodtime '(21670 28127 531394 317000)
+      :unmatched-syntax nil))
+  :file "!home!krishneel!catkin_ws!src!kinect_camera_calibration!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
